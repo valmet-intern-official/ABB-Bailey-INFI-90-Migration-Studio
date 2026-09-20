@@ -14,7 +14,7 @@
     "@infi90/exporters": "*",
     "@infi90/parsers": "*",
     "@infi90/renderers": "*",
-    "next": "15.5.2",
+    "next": "^15.5.24",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
@@ -25,7 +25,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.5.2",
+    "eslint-config-next": "^15.5.24",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
