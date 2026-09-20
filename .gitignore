@@ -1,0 +1,30 @@
+node_modules
+.next
+dist
+*.tsbuildinfo
+.env
+.env.local
+.env.*.local
+!.env.example
+apps/web/prisma/*.db
+apps/web/prisma/*.db-journal
+apps/web/data
+data/
+uploads
+.DS_Store
+*.log
+.vercel
+.render
+coverage
+tmp
+temp
+*.pem
+*.key
+.credentials
+
+# Large plant dumps — keep local only (not part of the deployable app)
+Raw Data from Controller/
+Output/
+
+# Scratch / generated marketing assets not used by the app
+ChatGPT Image*.png

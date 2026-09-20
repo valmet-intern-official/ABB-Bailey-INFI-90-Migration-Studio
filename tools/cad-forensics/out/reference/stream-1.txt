@@ -1,0 +1,4 @@
+BT
+0 g 0 Tc 0 Tw 100 Tz 0 Tr/F0 10 Tf 36 26.95 Td
+(001)Tj
+ET

@@ -1,0 +1,1128 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f6f8f7;
+  --ink: #15231c;
+  --muted: #5b6b62;
+  --panel: #ffffff;
+  --accent: #1f7a4d;
+  --accent-dark: #0b3d28;
+  --accent-soft: #e8f3ec;
+  --line: #dce5df;
+  --shadow: 0 8px 24px rgba(15, 40, 28, 0.06);
+  --radius: 14px;
+}
+
+body {
+  background: #ffffff;
+  color: var(--ink);
+  font-family: var(--font-sans), "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: #ffffff;
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header__inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.brand__logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.brand__divider {
+  color: var(--line);
+  font-weight: 300;
+  font-size: 1.35rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.brand__product {
+  display: none;
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+@media (min-width: 720px) {
+  .brand__product {
+    display: inline;
+  }
+}
+
+@media (min-width: 1100px) {
+  .brand__product {
+    font-size: 0.98rem;
+  }
+}
+
+.site-nav {
+  display: none;
+  margin-left: auto;
+  gap: 1.5rem;
+  font-size: 0.92rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+@media (min-width: 860px) {
+  .site-nav {
+    display: inline-flex;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background: var(--accent);
+  color: white;
+  border-radius: 10px;
+  padding: 0.7rem 1.15rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.btn:hover:not(:disabled) {
+  background: var(--accent-dark);
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.btn-sm {
+  padding: 0.5rem 0.95rem;
+  font-size: 0.88rem;
+  margin-left: auto;
+}
+
+@media (min-width: 860px) {
+  .btn-sm {
+    margin-left: 0;
+  }
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: var(--bg-soft);
+  color: var(--ink);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, white);
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.feature-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0.7rem;
+  display: grid;
+  place-items: center;
+  background: var(--accent-soft);
+  color: var(--accent);
+  margin-bottom: 0.85rem;
+}
+
+.hero-media {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: #0b1a12;
+  animation: rise-in 0.7s ease both;
+}
+
+.hero-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.anim-fade-up {
+  animation: fade-up 0.55s ease both;
+}
+
+.anim-delay-1 {
+  animation-delay: 0.08s;
+}
+
+.section-head {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 44rem;
+}
+
+.section-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.section-title {
+  margin-top: 0.45rem;
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+  font-size: clamp(1.75rem, 2.4vw, 2.35rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.section-rule {
+  display: block;
+  width: 2.75rem;
+  height: 3px;
+  margin: 0.85rem auto 0;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+.section-lead {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  line-height: 1.65;
+  font-size: 1rem;
+}
+
+.upload-card {
+  margin-top: 2rem;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, #ffffff 0%, #fbfdfb 100%);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.8) inset,
+    0 18px 40px rgba(15, 40, 28, 0.07);
+  overflow: hidden;
+}
+
+.upload-card__top {
+  display: flex;
+  justify-content: center;
+  padding: 1.35rem 1.5rem 1.15rem;
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(500px 120px at 50% 0%, #e8f3ec 0%, transparent 60%),
+    #ffffff;
+}
+
+.upload-card__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.upload-card__body {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.upload-card__title {
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+  font-size: 1.35rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.upload-card__desc {
+  margin: 0.4rem auto 0;
+  max-width: 40rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.upload-actions {
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.dropzone {
+  border: 1.5px dashed color-mix(in srgb, var(--accent) 45%, var(--line));
+  border-radius: 16px;
+  background:
+    linear-gradient(180deg, #f7fbf8 0%, #f2f7f4 100%);
+  padding: 2.5rem 1.25rem;
+  text-align: center;
+  transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+}
+
+.dropzone:hover,
+.dropzone--active {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  box-shadow: 0 0 0 4px rgba(31, 122, 77, 0.08);
+}
+
+.dropzone__icon {
+  width: 3.4rem;
+  height: 3.4rem;
+  margin: 0 auto 0.95rem;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, white);
+  box-shadow: 0 6px 16px rgba(15, 40, 28, 0.06);
+}
+
+.workflow-card {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  min-height: 0;
+  padding: 1.15rem 1.1rem;
+  border-radius: 14px;
+  border: 1px solid #e6ebe8;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(15, 40, 28, 0.04);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.workflow-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(15, 40, 28, 0.07);
+}
+
+.workflow-card__icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.75rem;
+  display: grid;
+  place-items: center;
+  background: #e8f3ec;
+  color: #1f7a4d;
+  flex-shrink: 0;
+  margin-bottom: 0.75rem;
+}
+
+.workflow-card__title {
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: #15231c;
+  line-height: 1.25;
+  flex-shrink: 0;
+}
+
+.workflow-card__body {
+  margin-top: 0.45rem;
+  max-width: 16rem;
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: #6b7a72;
+}
+
+.table-wrap {
+  overflow: auto;
+  max-height: 70vh;
+}
+
+table.data {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+table.data th,
+table.data td {
+  border-bottom: 1px solid var(--line);
+  padding: 0.45rem 0.55rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+table.data th {
+  position: sticky;
+  top: 0;
+  background: #eef4ef;
+  z-index: 1;
+}
+
+table.data tr:hover td {
+  background: #f3faf6;
+}
+
+.tab-btn {
+  border-radius: 10px;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.tab-btn--active {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  border-color: color-mix(in srgb, var(--accent) 25%, white);
+  font-weight: 600;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  background: #ffffff;
+  padding: 1.5rem 0;
+}
+
+.site-footer__inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+@media (min-width: 768px) {
+  .site-footer__inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.site-header__inner--wide {
+  max-width: none;
+  width: 100%;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.workspace-shell {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.workspace-export {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: flex-end;
+}
+
+.workspace-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: calc(100vh - 73px);
+  position: relative;
+}
+
+@media (min-width: 960px) {
+  .workspace-layout {
+    grid-template-columns: 240px 1fr;
+    transition: grid-template-columns 0.2s ease;
+  }
+
+  .workspace-layout--collapsed {
+    grid-template-columns: 64px 1fr;
+  }
+}
+
+.workspace-sidebar {
+  border-bottom: 1px solid var(--line);
+  background: #fbfdfb;
+  padding: 1rem;
+}
+
+@media (min-width: 960px) {
+  .workspace-sidebar {
+    border-bottom: none;
+    border-right: 1px solid var(--line);
+    padding: 1.25rem 0.9rem;
+    position: sticky;
+    top: 73px;
+    height: calc(100vh - 73px);
+    overflow: auto;
+  }
+
+  .workspace-layout--collapsed .workspace-sidebar {
+    padding: 0.85rem 0.45rem;
+  }
+}
+
+.workspace-sidebar__top {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.35rem;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 0.75rem;
+}
+
+.workspace-sidebar__meta {
+  flex: 1;
+  min-width: 0;
+  padding: 0.35rem 0.35rem 1rem 0.65rem;
+}
+
+.workspace-layout--collapsed .workspace-sidebar__meta {
+  display: none;
+}
+
+.workspace-layout--collapsed .workspace-sidebar__top {
+  justify-content: center;
+  padding-bottom: 0.65rem;
+  margin-bottom: 0.55rem;
+}
+
+.workspace-sidebar__collapse {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.workspace-sidebar__collapse:hover {
+  background: var(--accent-soft);
+  border-color: color-mix(in srgb, var(--accent) 28%, white);
+  color: var(--accent-dark);
+}
+
+@media (max-width: 959px) {
+  .workspace-sidebar__collapse {
+    display: none;
+  }
+}
+
+.workspace-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+@media (min-width: 960px) {
+  .workspace-nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+.workspace-nav__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  text-align: left;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  border-radius: 10px;
+  padding: 0.7rem 0.85rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.workspace-nav__icon {
+  flex-shrink: 0;
+  width: 1.35rem;
+  height: 1.35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  line-height: 1;
+  color: inherit;
+}
+
+.workspace-nav__label {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 960px) {
+  .workspace-layout--collapsed .workspace-nav__item {
+    width: 100%;
+    justify-content: center;
+    padding: 0.72rem 0.35rem;
+    gap: 0;
+  }
+
+  .workspace-layout--collapsed .workspace-nav__label {
+    display: none;
+  }
+
+  .workspace-layout--collapsed .workspace-nav__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 959px) {
+  .workspace-nav__item {
+    width: auto;
+  }
+}
+
+.workspace-nav__item:hover {
+  background: #ffffff;
+  color: var(--ink);
+}
+
+.workspace-nav__item--active {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  border-color: color-mix(in srgb, var(--accent) 22%, white);
+}
+
+.workspace-main {
+  width: 100%;
+  padding: 1.25rem;
+  min-width: 0;
+}
+
+@media (min-width: 960px) {
+  .workspace-main {
+    padding: 1.5rem 1.75rem 2rem;
+  }
+}
+
+.workspace-main:has(.cad-viewer) {
+  padding: 0;
+}
+
+.cad-viewer {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: calc(100vh - 73px);
+  background: #f4f7f5;
+}
+
+@media (min-width: 1100px) {
+  .cad-viewer {
+    grid-template-columns: 260px minmax(0, 1fr) 380px;
+    height: calc(100vh - 73px);
+    min-height: calc(100vh - 73px);
+  }
+}
+
+.cad-viewer__left,
+.cad-viewer__middle,
+.cad-viewer__right {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: #ffffff;
+  border-bottom: 1px solid var(--line);
+}
+
+@media (min-width: 1100px) {
+  .cad-viewer__left,
+  .cad-viewer__middle,
+  .cad-viewer__right {
+    border-bottom: none;
+    height: 100%;
+  }
+
+  .cad-viewer__left {
+    border-right: 1px solid var(--line);
+  }
+
+  .cad-viewer__right {
+    border-left: 1px solid var(--line);
+  }
+}
+
+.cad-viewer__pane-head {
+  padding: 0.95rem 1rem;
+  border-bottom: 1px solid var(--line);
+  background: #fbfdfb;
+  flex-shrink: 0;
+}
+
+.cad-viewer__pane-head h3 {
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.cad-viewer__pane-head p {
+  margin-top: 0.15rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.cad-viewer__middle .cad-viewer__pane-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.cad-viewer__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.cad-viewer__stats span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.cad-viewer__search {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
+}
+
+.cad-viewer__search input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.cad-viewer__search input:focus {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
+  box-shadow: 0 0 0 3px rgba(31, 122, 77, 0.1);
+}
+
+.cad-viewer__list {
+  overflow: auto;
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.cad-viewer__sheet {
+  width: 100%;
+  text-align: left;
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 10px;
+  padding: 0.65rem 0.7rem;
+  cursor: pointer;
+  margin-bottom: 0.25rem;
+}
+
+.cad-viewer__sheet:hover {
+  background: var(--bg-soft);
+}
+
+.cad-viewer__sheet--active {
+  background: var(--accent-soft);
+  border-color: color-mix(in srgb, var(--accent) 25%, white);
+}
+
+.cad-viewer__sheet-name {
+  display: block;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.cad-viewer__sheet--active .cad-viewer__sheet-name {
+  color: var(--accent-dark);
+}
+
+.cad-viewer__sheet-title {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.72rem;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cad-viewer__canvas {
+  flex: 1;
+  overflow: auto;
+  padding: 1rem;
+  background:
+    linear-gradient(90deg, rgba(31, 122, 77, 0.03) 1px, transparent 1px),
+    linear-gradient(rgba(31, 122, 77, 0.03) 1px, transparent 1px),
+    #f7faf8;
+  background-size: 24px 24px;
+}
+
+.cad-viewer__canvas img,
+.cad-viewer__svg-host {
+  display: block;
+  width: max-content;
+  min-width: 100%;
+  height: auto;
+  max-width: none;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(15, 40, 28, 0.06);
+  overflow: visible;
+}
+
+.cad-viewer__svg-host svg {
+  display: block;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+/* Fit the whole sheet in the pane — the default, so nothing is cropped.
+   Decoded sheets are ~1600 source-scaled units wide. */
+.cad-viewer__svg-host--fit,
+.cad-viewer__svg-host--fit svg {
+  width: 100%;
+  min-width: 0;
+  height: auto;
+}
+
+.cad-viewer__svg-host .cad-block--selected rect {
+  stroke: #1f7a4d;
+  stroke-width: 2.4;
+  fill: #e8f5ee;
+}
+
+.cad-viewer__svg-host .cad-wire--selected {
+  stroke: #1f7a4d !important;
+  stroke-width: 2.6 !important;
+}
+
+.cad-viewer__block-detail {
+  background: #f3f8f5;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.75rem;
+}
+
+.cad-viewer__subhead {
+  margin-top: 0.75rem;
+  font-size: 0.78rem;
+}
+
+.cad-viewer__empty,
+.cad-viewer__muted {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.cad-viewer__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding: 0.55rem 0.65rem;
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
+}
+
+.cad-viewer__tabs button {
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  border-radius: 8px;
+  padding: 0.4rem 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.cad-viewer__tabs button.is-active {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  border-color: color-mix(in srgb, var(--accent) 22%, white);
+}
+
+.cad-viewer__detail-body {
+  flex: 1;
+  overflow: auto;
+  padding: 0.85rem;
+}
+
+.cad-viewer__sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cad-viewer__sections h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  margin-bottom: 0.45rem;
+}
+
+.cad-viewer__meta {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.cad-viewer__meta > div {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+}
+
+.cad-viewer__meta dt {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.cad-viewer__meta dd {
+  color: var(--ink);
+  word-break: break-word;
+}
+
+.cad-viewer__bullets {
+  list-style: disc;
+  padding-left: 1.1rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.cad-viewer__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.cad-viewer__chips span {
+  display: inline-flex;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 0.72rem;
+  font-weight: 650;
+}
+
+.cad-viewer__mini-table-wrap {
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  max-height: 280px;
+}
+
+.cad-viewer__mini-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+}
+
+.cad-viewer__mini-table th,
+.cad-viewer__mini-table td {
+  border-bottom: 1px solid var(--line);
+  padding: 0.4rem 0.45rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.cad-viewer__mini-table th {
+  position: sticky;
+  top: 0;
+  background: #eef4ef;
+  font-weight: 700;
+}
+
+.cad-viewer__link {
+  color: var(--accent);
+  text-decoration: underline;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.inventory-table {
+  table-layout: fixed;
+}
+
+.inventory-table col {
+  width: 20%;
+}
+
+.inventory-table th,
+.inventory-table td {
+  width: 20%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.excel-wrap {
+  max-height: min(75vh, 820px);
+  border-top: 1px solid #c5d0c8;
+}
+
+.excel-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  background: #ffffff;
+  --excel-cols: 7;
+}
+
+.excel-table col {
+  width: calc(100% / var(--excel-cols));
+}
+
+.excel-table th,
+.excel-table td {
+  width: calc(100% / var(--excel-cols));
+  border: 1px solid #cfd8d2;
+  padding: 0.45rem 0.55rem;
+  text-align: left;
+  vertical-align: top;
+  white-space: normal;
+  overflow: visible;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.excel-table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #e8f3ec;
+  color: #15231c;
+  font-weight: 700;
+  border-bottom: 1px solid #b7c8bc;
+}
+
+.excel-table tbody tr:nth-child(even) td {
+  background: #f7faf8;
+}
+
+.excel-table tbody tr:hover td {
+  background: #eef6f0;
+}
+
+.excel-merge-cell {
+  vertical-align: middle !important;
+  background: #f3f8f5 !important;
+  font-weight: 600;
+  white-space: normal !important;
+}

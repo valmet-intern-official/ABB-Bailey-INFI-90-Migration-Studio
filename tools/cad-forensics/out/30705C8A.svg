@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3512 2305" width="1600" height="1050" font-family="Consolas,monospace">
+<rect width="3512" height="2305" fill="#ffffff"/>
+<g stroke-width="2" fill="none">
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705C8A.CAD" data-source-offset="256" data-symbol="DBORDH">
+<rect x="60.0" y="60.0" width="3392" height="2185" fill="none" stroke="#111827"/>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705C8A.CAD" data-source-offset="306" data-symbol="LINE">
+<rect x="534.0" y="84.0" width="2481" height="1791" fill="none" stroke="#9ca3af"/>
+<text x="542.0" y="114.0" font-size="26" fill="#9ca3af" stroke="none">LINE</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705C8A.CAD" data-source-offset="356" data-symbol="IREF">
+<rect x="594.0" y="394.0" width="221" height="41" fill="#eff6ff" stroke="#1d4ed8"/>
+<text x="602.0" y="424.0" font-size="26" fill="#1d4ed8" stroke="none">IREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705C8A.CAD" data-source-offset="430" data-symbol="RDI01B1">
+<rect x="534.0" y="289.0" width="221" height="171" fill="#f9fafb" stroke="#6b7280"/>
+<text x="542.0" y="319.0" font-size="26" fill="#6b7280" stroke="none">RDI01B1</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705C8A.CAD" data-source-offset="510" data-symbol="DI1SYS">
+<rect x="573.0" y="340.0" width="146" height="83" fill="#f9fafb" stroke="#6b7280"/>
+<text x="581.0" y="370.0" font-size="26" fill="#6b7280" stroke="none">DI1SYS</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705C8A.CAD" data-source-offset="576" data-symbol="DO/L">
+<rect x="2449.0" y="375.0" width="178" height="80" fill="#f9fafb" stroke="#6b7280"/>
+<text x="2457.0" y="405.0" font-size="26" fill="#6b7280" stroke="none">DO/L</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705C8A.CAD" data-source-offset="888" data-symbol="IREF">
+<rect x="594.0" y="794.0" width="221" height="41" fill="#eff6ff" stroke="#1d4ed8"/>
+<text x="602.0" y="824.0" font-size="26" fill="#1d4ed8" stroke="none">IREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705C8A.CAD" data-source-offset="992" data-symbol="DI1SYS">
+<rect x="573.0" y="740.0" width="146" height="83" fill="#f9fafb" stroke="#6b7280"/>
+<text x="581.0" y="770.0" font-size="26" fill="#6b7280" stroke="none">DI1SYS</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705C8A.CAD" data-source-offset="1058" data-symbol="DO/L">
+<rect x="2449.0" y="775.0" width="178" height="80" fill="#f9fafb" stroke="#6b7280"/>
+<text x="2457.0" y="805.0" font-size="26" fill="#6b7280" stroke="none">DO/L</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705C8A.CAD" data-source-offset="1094" data-symbol="IREF">
+<rect x="594.0" y="1194.0" width="221" height="41" fill="#eff6ff" stroke="#1d4ed8"/>
+<text x="602.0" y="1224.0" font-size="26" fill="#1d4ed8" stroke="none">IREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705C8A.CAD" data-source-offset="1198" data-symbol="DI1SYS">
+<rect x="573.0" y="1140.0" width="146" height="83" fill="#f9fafb" stroke="#6b7280"/>
+<text x="581.0" y="1170.0" font-size="26" fill="#6b7280" stroke="none">DI1SYS</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705C8A.CAD" data-source-offset="1248" data-symbol="DO/L">
+<rect x="2449.0" y="1175.0" width="178" height="80" fill="#f9fafb" stroke="#6b7280"/>
+<text x="2457.0" y="1205.0" font-size="26" fill="#6b7280" stroke="none">DO/L</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705C8A.CAD" data-source-offset="1284" data-symbol="IREF">
+<rect x="594.0" y="1594.0" width="221" height="41" fill="#eff6ff" stroke="#1d4ed8"/>
+<text x="602.0" y="1624.0" font-size="26" fill="#1d4ed8" stroke="none">IREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705C8A.CAD" data-source-offset="1388" data-symbol="DI1SYS">
+<rect x="573.0" y="1540.0" width="146" height="83" fill="#f9fafb" stroke="#6b7280"/>
+<text x="581.0" y="1570.0" font-size="26" fill="#6b7280" stroke="none">DI1SYS</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705C8A.CAD" data-source-offset="1454" data-symbol="DO/L">
+<rect x="2449.0" y="1575.0" width="178" height="80" fill="#f9fafb" stroke="#6b7280"/>
+<text x="2457.0" y="1605.0" font-size="26" fill="#6b7280" stroke="none">DO/L</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705C8A.CAD" data-source-offset="1634" data-symbol="RDI01B2">
+<rect x="534.0" y="689.0" width="221" height="171" fill="#f9fafb" stroke="#6b7280"/>
+<text x="542.0" y="719.0" font-size="26" fill="#6b7280" stroke="none">RDI01B2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705C8A.CAD" data-source-offset="1684" data-symbol="RDI01B3">
+<rect x="534.0" y="1089.0" width="221" height="171" fill="#f9fafb" stroke="#6b7280"/>
+<text x="542.0" y="1119.0" font-size="26" fill="#6b7280" stroke="none">RDI01B3</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705C8A.CAD" data-source-offset="2108" data-symbol="RDI01B7">
+<rect x="534.0" y="1489.0" width="221" height="171" fill="#f9fafb" stroke="#6b7280"/>
+<text x="542.0" y="1519.0" font-size="26" fill="#6b7280" stroke="none">RDI01B7</text>
+</g>
+</g>
+<text x="20" y="34" font-size="30" fill="#111827">30705C8A — geometry proof · 18 placed symbols of 65 records decoded</text>
+</svg>

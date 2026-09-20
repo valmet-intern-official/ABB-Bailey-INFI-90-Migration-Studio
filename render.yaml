@@ -1,0 +1,33 @@
+# Render Blueprint — ABB Bailey INFI 90 Migration Studio
+# Deploys the Next.js app (UI + migration API) with persistent disk storage.
+# Account: valmet.intern@gmail.com
+
+services:
+  - type: web
+    name: infi90-migration-api
+    runtime: node
+    plan: starter
+    region: oregon
+    rootDir: .
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start -w @infi90/web -- -H 0.0.0.0 -p $PORT
+    healthCheckPath: /api/v1/health
+    disk:
+      name: infi90-data
+      mountPath: /data
+      sizeGB: 10
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SERVICE_NAME
+        value: infi90-migration-api
+      - key: STORAGE_ROOT
+        value: /data
+      - key: MAX_UPLOAD_MB
+        value: "100"
+      - key: CORS_ORIGINS
+        sync: false
+      - key: FRONTEND_ORIGIN
+        sync: false
+      - key: NEXT_PUBLIC_API_BASE_URL
+        value: ""

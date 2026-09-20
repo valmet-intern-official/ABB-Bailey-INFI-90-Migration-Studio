@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1099" viewBox="0 0 1600 1099" data-cad="30705C8A.CAD">
+<rect width="100%" height="100%" fill="#f7f4ef"/>
+<rect x="12" y="12" width="1576" height="1075" fill="none" stroke="#1f2a24" stroke-width="1.5"/>
+<text x="28" y="36" font-family="Consolas, monospace" font-size="14" fill="#1f2a24" font-weight="700">30705C8A.CAD — DEBARKER #1 DRIVE GEAR LUB PRESS</text>
+<g data-layer="wires">
+<line data-connection-id="conn_db69p5bi_mtzgznkk" data-signal="" data-source-block="block_xxks0u79_mtzgznki" data-target-block="block_0qoseadi_mtzgznkg" x1="1117.72" y1="207.59" x2="371.21" y2="207.59" stroke="#3d4f45" stroke-width="1.4"/>
+<line data-connection-id="conn_eqpyur24_mtzgznkk" data-signal="" data-source-block="block_r4v07tgh_mtzgznkj" data-target-block="block_xdulvleo_mtzgznki" x1="1117.72" y1="389.67" x2="371.21" y2="389.67" stroke="#3d4f45" stroke-width="1.4"/>
+<line data-connection-id="conn_odghiy8n_mtzgznkk" data-signal="" data-source-block="block_bl4d3iic_mtzgznkj" data-target-block="block_fkwtqqxx_mtzgznkj" x1="1117.72" y1="753.82" x2="371.21" y2="753.82" stroke="#3d4f45" stroke-width="1.4"/>
+<line data-connection-id="conn_21aehkc1_mtzgznkk" data-signal="" data-source-block="block_mgbbkotr_mtzgznkj" data-target-block="block_e5yi3wwl_mtzgznkj" x1="1117.72" y1="571.74" x2="371.21" y2="571.74" stroke="#3d4f45" stroke-width="1.4"/>
+<line data-connection-id="conn_qpr8uncl_mtzgznkk" data-signal="" data-source-block="" data-target-block="" x1="243.76" y1="280.42" x2="1372.63" y2="280.42" stroke="#3d4f45" stroke-width="1.4"/>
+<line data-connection-id="conn_lfktveyx_mtzgznkk" data-signal="" data-source-block="" data-target-block="" x1="243.76" y1="462.5" x2="1372.63" y2="462.5" stroke="#3d4f45" stroke-width="1.4"/>
+<line data-connection-id="conn_krg5pjli_mtzgznkl" data-signal="" data-source-block="" data-target-block="" x1="243.76" y1="644.57" x2="1372.63" y2="644.57" stroke="#3d4f45" stroke-width="1.4"/>
+</g>
+<g data-layer="blocks">
+<g data-block-id="block_0qoseadi_mtzgznkg" data-entity-type="function-block" data-function-code="IREF" data-block-number="" data-source-file="30705C8A.CAD" data-source-offset="356" class="cad-block" style="cursor:pointer">
+<rect x="271.07" y="198.03" width="100.6" height="18.66" fill="#eef4ff" stroke="#1d4ed8" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_lfw5foys_mtzgznki" data-entity-type="function-block" data-function-code="RDI01B1" data-block-number="" data-source-file="30705C8A.CAD" data-source-offset="430" class="cad-block" style="cursor:pointer">
+<rect x="243.76" y="150.24" width="100.6" height="77.84" fill="#f4f6f5" stroke="#3d4f45" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_dwtbb4rb_mtzgznki" data-entity-type="function-block" data-function-code="DI1SYS" data-block-number="" data-source-file="30705C8A.CAD" data-source-offset="510" class="cad-block" style="cursor:pointer">
+<rect x="261.51" y="173.45" width="66.46" height="37.78" fill="#f4f6f5" stroke="#3d4f45" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_xxks0u79_mtzgznki" data-entity-type="function-block" data-function-code="DO/L" data-block-number="46" data-source-file="30705C8A.CAD" data-source-offset="576" class="cad-block" style="cursor:pointer">
+<rect x="1115.45" y="189.38" width="81.02" height="36.42" fill="#f4f6f5" stroke="#3d4f45" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_xdulvleo_mtzgznki" data-entity-type="function-block" data-function-code="IREF" data-block-number="" data-source-file="30705C8A.CAD" data-source-offset="888" class="cad-block" style="cursor:pointer">
+<rect x="271.07" y="380.11" width="100.6" height="18.66" fill="#eef4ff" stroke="#1d4ed8" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_txse5lhj_mtzgznkj" data-entity-type="function-block" data-function-code="DI1SYS" data-block-number="" data-source-file="30705C8A.CAD" data-source-offset="992" class="cad-block" style="cursor:pointer">
+<rect x="261.51" y="355.53" width="66.46" height="37.78" fill="#f4f6f5" stroke="#3d4f45" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_r4v07tgh_mtzgznkj" data-entity-type="function-block" data-function-code="DO/L" data-block-number="47" data-source-file="30705C8A.CAD" data-source-offset="1058" class="cad-block" style="cursor:pointer">
+<rect x="1115.45" y="371.46" width="81.02" height="36.42" fill="#f4f6f5" stroke="#3d4f45" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_e5yi3wwl_mtzgznkj" data-entity-type="function-block" data-function-code="IREF" data-block-number="" data-source-file="30705C8A.CAD" data-source-offset="1094" class="cad-block" style="cursor:pointer">
+<rect x="271.07" y="562.18" width="100.6" height="18.66" fill="#eef4ff" stroke="#1d4ed8" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_s1pktpnh_mtzgznkj" data-entity-type="function-block" data-function-code="DI1SYS" data-block-number="" data-source-file="30705C8A.CAD" data-source-offset="1198" class="cad-block" style="cursor:pointer">
+<rect x="261.51" y="537.6" width="66.46" height="37.78" fill="#f4f6f5" stroke="#3d4f45" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_mgbbkotr_mtzgznkj" data-entity-type="function-block" data-function-code="DO/L" data-block-number="48" data-source-file="30705C8A.CAD" data-source-offset="1248" class="cad-block" style="cursor:pointer">
+<rect x="1115.45" y="553.54" width="81.02" height="36.42" fill="#f4f6f5" stroke="#3d4f45" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_fkwtqqxx_mtzgznkj" data-entity-type="function-block" data-function-code="IREF" data-block-number="" data-source-file="30705C8A.CAD" data-source-offset="1284" class="cad-block" style="cursor:pointer">
+<rect x="271.07" y="744.26" width="100.6" height="18.66" fill="#eef4ff" stroke="#1d4ed8" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_kfi0sbaf_mtzgznkj" data-entity-type="function-block" data-function-code="DI1SYS" data-block-number="" data-source-file="30705C8A.CAD" data-source-offset="1388" class="cad-block" style="cursor:pointer">
+<rect x="261.51" y="719.68" width="66.46" height="37.78" fill="#f4f6f5" stroke="#3d4f45" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_bl4d3iic_mtzgznkj" data-entity-type="function-block" data-function-code="DO/L" data-block-number="49" data-source-file="30705C8A.CAD" data-source-offset="1454" class="cad-block" style="cursor:pointer">
+<rect x="1115.45" y="735.61" width="81.02" height="36.42" fill="#f4f6f5" stroke="#3d4f45" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_ubg37qtf_mtzgznkk" data-entity-type="function-block" data-function-code="RDI01B2" data-block-number="" data-source-file="30705C8A.CAD" data-source-offset="1634" class="cad-block" style="cursor:pointer">
+<rect x="243.76" y="332.31" width="100.6" height="77.84" fill="#f4f6f5" stroke="#3d4f45" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_dus3gn98_mtzgznkk" data-entity-type="function-block" data-function-code="RDI01B3" data-block-number="" data-source-file="30705C8A.CAD" data-source-offset="1684" class="cad-block" style="cursor:pointer">
+<rect x="243.76" y="514.39" width="100.6" height="77.84" fill="#f4f6f5" stroke="#3d4f45" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_d46cz4cx_mtzgznkk" data-entity-type="function-block" data-function-code="RDI01B7" data-block-number="" data-source-file="30705C8A.CAD" data-source-offset="2108" class="cad-block" style="cursor:pointer">
+<rect x="243.76" y="696.46" width="100.6" height="77.84" fill="#f4f6f5" stroke="#3d4f45" stroke-width="1.3" rx="1"/>
+</g>
+</g>
+<g data-layer="fc">
+<text x="274.1" y="206.5" font-family="Consolas, monospace" font-size="7" font-weight="700" fill="#1d3a8a">IREF</text>
+<text x="274.1" y="215" font-family="Consolas, monospace" font-size="7" font-weight="400" fill="#1d3a8a">DI1-31B/322PSL155</text>
+<text x="246.8" y="162.2" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">RDI01B1</text>
+<text x="264.5" y="185.5" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">DI1SYS</text>
+<text x="1118.5" y="201.4" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">DO/L</text>
+<text x="1118.5" y="213.4" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#46</text>
+<text x="274.1" y="388.6" font-family="Consolas, monospace" font-size="7" font-weight="700" fill="#1d3a8a">IREF</text>
+<text x="274.1" y="397.1" font-family="Consolas, monospace" font-size="7" font-weight="400" fill="#1d3a8a">DI2-31B/322PSL156</text>
+<text x="264.5" y="367.5" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">DI1SYS</text>
+<text x="1118.5" y="383.5" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">DO/L</text>
+<text x="1118.5" y="395.5" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#47</text>
+<text x="274.1" y="570.7" font-family="Consolas, monospace" font-size="7" font-weight="700" fill="#1d3a8a">IREF</text>
+<text x="274.1" y="579.2" font-family="Consolas, monospace" font-size="7" font-weight="400" fill="#1d3a8a">DI3-31B/322LSL157</text>
+<text x="264.5" y="549.6" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">DI1SYS</text>
+<text x="1118.5" y="565.5" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">DO/L</text>
+<text x="1118.5" y="577.5" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#48</text>
+<text x="274.1" y="752.8" font-family="Consolas, monospace" font-size="7" font-weight="700" fill="#1d3a8a">IREF</text>
+<text x="274.1" y="761.3" font-family="Consolas, monospace" font-size="7" font-weight="400" fill="#1d3a8a">DI7-31B/322LSL158</text>
+<text x="264.5" y="731.7" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">DI1SYS</text>
+<text x="1118.5" y="747.6" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">DO/L</text>
+<text x="1118.5" y="759.6" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#49</text>
+<text x="246.8" y="344.3" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">RDI01B2</text>
+<text x="246.8" y="526.4" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">RDI01B3</text>
+<text x="246.8" y="708.5" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">RDI01B7</text>
+</g>
+<g data-layer="annotations">
+<text data-entity-type="annotation" data-source-offset="632" x="1281.6" y="949.6" font-family="Consolas, monospace" font-size="13.7" fill="#1f2a24">DEBARKER #1 DRIVE GEAR LUB PRESS</text>
+<text data-entity-type="annotation" data-source-offset="1872" x="680.7" y="262.2" font-family="Consolas, monospace" font-size="13.7" fill="#1f2a24">DEBARKER #1 DRIVE GEAR LUB PRESS</text>
+<text data-entity-type="annotation" data-source-offset="1922" x="680.7" y="444.3" font-family="Consolas, monospace" font-size="13.7" fill="#1f2a24">DEBARKER #2 DRIVE GEAR LUB PRESS</text>
+<text data-entity-type="annotation" data-source-offset="1972" x="680.7" y="626.4" font-family="Consolas, monospace" font-size="13.7" fill="#1f2a24">DEBARKER #1 DRIVE GREASE LEVEL</text>
+<text data-entity-type="annotation" data-source-offset="2020" x="680.7" y="854" font-family="Consolas, monospace" font-size="13.7" fill="#1f2a24">DEBARKER #2 DRIVE GREASE LEVEL</text>
+<text data-entity-type="annotation" data-source-offset="2068" x="1386.3" y="1026.9" font-family="Consolas, monospace" font-size="13.7" fill="#1f2a24">322-155,156,157,158.0</text>
+<text data-entity-type="annotation" data-source-offset="1756" x="353" y="228.7" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">USE = 322-150.0</text>
+<text data-entity-type="annotation" data-source-offset="1790" x="353" y="410.8" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">USE = 322-152.0</text>
+<text data-entity-type="annotation" data-source-offset="682" x="1281.6" y="932.9" font-family="Consolas, monospace" font-size="13.7" fill="#1f2a24">NO. 2 WOODYARD</text>
+<text data-entity-type="annotation" data-source-offset="802" x="1390.8" y="917.7" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">MILL EXPANSION</text>
+<text data-entity-type="annotation" data-source-offset="480" x="280.2" y="147.1" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">062-05/06-B1</text>
+<text data-entity-type="annotation" data-source-offset="962" x="280.2" y="329.2" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">062-05/06-B1</text>
+<text data-entity-type="annotation" data-source-offset="1168" x="280.2" y="511.2" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">062-05/06-B1</text>
+<text data-entity-type="annotation" data-source-offset="1358" x="280.2" y="693.3" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">062-05/06-B1</text>
+<text data-entity-type="annotation" data-source-offset="2180" x="275.6" y="237.2" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">3-07-05-31.0</text>
+<text data-entity-type="annotation" data-source-offset="2210" x="275.6" y="419.3" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">3-07-05-31.0</text>
+<text data-entity-type="annotation" data-source-offset="2240" x="275.6" y="601.3" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">3-07-05-31.0</text>
+<text data-entity-type="annotation" data-source-offset="2270" x="275.6" y="783.4" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">3-07-05-31.0</text>
+<text data-entity-type="annotation" data-source-offset="860" x="1115.5" y="180.3" font-family="Consolas, monospace" font-size="13.7" fill="#1f2a24">322PAL-155</text>
+<text data-entity-type="annotation" data-source-offset="1490" x="1113.2" y="362.4" font-family="Consolas, monospace" font-size="13.7" fill="#1f2a24">322PAL-156</text>
+<text data-entity-type="annotation" data-source-offset="1518" x="1115.5" y="544.4" font-family="Consolas, monospace" font-size="13.7" fill="#1f2a24">322LAL-157</text>
+<text data-entity-type="annotation" data-source-offset="1546" x="1117.7" y="724.2" font-family="Consolas, monospace" font-size="13.7" fill="#1f2a24">322LAL-158</text>
+<text data-entity-type="annotation" data-source-offset="2326" x="1454.6" y="999.6" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">MARC/2005</text>
+<text data-entity-type="annotation" data-source-offset="2414" x="1090.4" y="990.5" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">MARC/2005</text>
+<text data-entity-type="annotation" data-source-offset="834" x="1399.9" y="999.6" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">C216560</text>
+<text data-entity-type="annotation" data-source-offset="2300" x="1281.6" y="999.6" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">30705C8</text>
+<text data-entity-type="annotation" data-source-offset="758" x="1336.2" y="999.6" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">920327</text>
+<text data-entity-type="annotation" data-source-offset="734" x="1318" y="1026.9" font-family="Consolas, monospace" font-size="18.2" fill="#1f2a24">92165</text>
+<text data-entity-type="annotation" data-source-offset="1590" x="316.6" y="431.9" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">1571</text>
+<text data-entity-type="annotation" data-source-offset="1612" x="316.6" y="614" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">1572</text>
+<text data-entity-type="annotation" data-source-offset="1734" x="316.6" y="249.8" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">1570</text>
+<text data-entity-type="annotation" data-source-offset="2158" x="316.6" y="796" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">1576</text>
+<text data-entity-type="annotation" data-source-offset="2354" x="1527.4" y="972.3" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">RP</text>
+<text data-entity-type="annotation" data-source-offset="2442" x="1217.9" y="990.5" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">RP</text>
+<text data-entity-type="annotation" data-source-offset="2462" x="1236.1" y="990.5" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">RP</text>
+<text data-entity-type="annotation" data-source-offset="612" x="1281.6" y="1026.9" font-family="Consolas, monospace" font-size="18.2" fill="#1f2a24">P</text>
+<text data-entity-type="annotation" data-source-offset="714" x="1299.8" y="1026.9" font-family="Consolas, monospace" font-size="18.2" fill="#1f2a24">B</text>
+<text data-entity-type="annotation" data-source-offset="782" x="1372.6" y="1005.9" font-family="Consolas, monospace" font-size="18.2" fill="#1f2a24">L</text>
+<text data-entity-type="annotation" data-source-offset="2374" x="1566.7" y="1026.9" font-family="Consolas, monospace" font-size="18.2" fill="#1f2a24">A</text>
+<text data-entity-type="annotation" data-source-offset="2394" x="1072.2" y="990.5" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">A</text>
+</g>
+<text x="28" y="1085" font-family="Consolas, monospace" font-size="9" fill="#5a6b62">blocks:16  conn:7  tags:4  xref:4  unresolved:0  status:COMPLETED_WITH_WARNINGS</text>
+</svg>

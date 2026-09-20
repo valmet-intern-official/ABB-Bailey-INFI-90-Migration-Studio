@@ -1,0 +1,22 @@
+{
+  "name": "infi90-migration-studio",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @infi90/web",
+    "build": "npm run build -w @infi90/web",
+    "db:push": "npm run db:push -w @infi90/web",
+    "test": "npm run test -w @infi90/parsers",
+    "smoke:m5": "tsx scripts/smoke-m5.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

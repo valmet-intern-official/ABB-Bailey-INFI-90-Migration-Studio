@@ -1,0 +1,15 @@
+node_modules
+.next
+.git
+data
+apps/web/data
+.env
+.env.local
+*.log
+Input
+Output
+"Raw Data from Controller"
+fixtures
+docs/cad-engine-trace-report.json
+*.png
+!apps/web/public/**

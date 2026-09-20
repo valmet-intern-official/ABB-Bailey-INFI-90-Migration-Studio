@@ -1,0 +1,12 @@
+==========================================================================
+Verify Report                           Tue Apr 18 16:22:09 2017
+Source Type    : CFG file       (Loop:  2  PCU: 12   Module: 10)
+Source File    : C:\BAILEY~1\CAD\PROJECT\L2\P12\M10\21210.CFG
+Reference Type : CFG file       (Loop:  2  PCU: 12   Module: 10)
+Reference File : C:\BAILEY~1\WCADCFG\LOOP2~1\21210.CFG
+==========================================================================
+
+    Source    Blocks Total :  1893
+    Reference Blocks Total :  1893
+    No Differences Detected During Verify Operation
+Tue Apr 18 16:22:11 2017 - Verification Complete

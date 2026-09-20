@@ -1,0 +1,581 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3500 2300" width="1600" height="1051" font-family="Consolas,monospace">
+<rect width="3500" height="2300" fill="#ffffff"/>
+<g stroke-width="2" fill="none">
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705D6A.CAD" data-source-offset="256" data-symbol="DBORDH">
+<rect x="60.0" y="60.0" width="3380" height="2180" fill="none" stroke="#111827"/>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705D6A.CAD" data-source-offset="306" data-symbol="LINE">
+<rect x="90.0" y="10.0" width="3000" height="1900" fill="none" stroke="#9ca3af"/>
+<text x="98.0" y="40.0" font-size="26" fill="#9ca3af" stroke="none">LINE</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="356" data-symbol="IREF">
+<rect x="590.0" y="1590.0" width="535" height="40" fill="#eff6ff" stroke="#1d4ed8"/>
+<text x="598.0" y="1620.0" font-size="26" fill="#1d4ed8" stroke="none">IREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="430" data-symbol="IREF">
+<rect x="590.0" y="1190.0" width="535" height="40" fill="#eff6ff" stroke="#1d4ed8"/>
+<text x="598.0" y="1220.0" font-size="26" fill="#1d4ed8" stroke="none">IREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705D6A.CAD" data-source-offset="504" data-symbol="RDI01A3">
+<rect x="490.0" y="1010.0" width="300" height="300" fill="#f9fafb" stroke="#6b7280"/>
+<text x="498.0" y="1040.0" font-size="26" fill="#6b7280" stroke="none">RDI01A3</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="554" data-symbol="IREF">
+<rect x="590.0" y="910.0" width="535" height="40" fill="#eff6ff" stroke="#1d4ed8"/>
+<text x="598.0" y="940.0" font-size="26" fill="#1d4ed8" stroke="none">IREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705D6A.CAD" data-source-offset="628" data-symbol="RDI01A1">
+<rect x="490.0" y="730.0" width="300" height="300" fill="#f9fafb" stroke="#6b7280"/>
+<text x="498.0" y="760.0" font-size="26" fill="#6b7280" stroke="none">RDI01A1</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="678" data-symbol="IREF">
+<rect x="590.0" y="630.0" width="535" height="40" fill="#eff6ff" stroke="#1d4ed8"/>
+<text x="598.0" y="660.0" font-size="26" fill="#1d4ed8" stroke="none">IREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705D6A.CAD" data-source-offset="752" data-symbol="RDI01A2">
+<rect x="490.0" y="450.0" width="300" height="300" fill="#f9fafb" stroke="#6b7280"/>
+<text x="498.0" y="480.0" font-size="26" fill="#6b7280" stroke="none">RDI01A2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="802" data-symbol="IREF">
+<rect x="590.0" y="350.0" width="535" height="40" fill="#eff6ff" stroke="#1d4ed8"/>
+<text x="598.0" y="380.0" font-size="26" fill="#1d4ed8" stroke="none">IREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705D6A.CAD" data-source-offset="876" data-symbol="RDI01A7">
+<rect x="490.0" y="170.0" width="300" height="300" fill="#f9fafb" stroke="#6b7280"/>
+<text x="498.0" y="200.0" font-size="26" fill="#6b7280" stroke="none">RDI01A7</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="926" data-symbol="IREF">
+<rect x="590.0" y="190.0" width="535" height="40" fill="#eff6ff" stroke="#1d4ed8"/>
+<text x="598.0" y="220.0" font-size="26" fill="#1d4ed8" stroke="none">IREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="1000" data-symbol="IREF">
+<rect x="590.0" y="130.0" width="535" height="40" fill="#eff6ff" stroke="#1d4ed8"/>
+<text x="598.0" y="160.0" font-size="26" fill="#1d4ed8" stroke="none">IREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705D6A.CAD" data-source-offset="1194" data-symbol="DI1SYS">
+<rect x="490.0" y="1110.0" width="300" height="200" fill="#f9fafb" stroke="#6b7280"/>
+<text x="498.0" y="1140.0" font-size="26" fill="#6b7280" stroke="none">DI1SYS</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705D6A.CAD" data-source-offset="1244" data-symbol="DI1SYS">
+<rect x="490.0" y="830.0" width="300" height="200" fill="#f9fafb" stroke="#6b7280"/>
+<text x="498.0" y="860.0" font-size="26" fill="#6b7280" stroke="none">DI1SYS</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705D6A.CAD" data-source-offset="1294" data-symbol="DI1SYS">
+<rect x="490.0" y="550.0" width="300" height="200" fill="#f9fafb" stroke="#6b7280"/>
+<text x="498.0" y="580.0" font-size="26" fill="#6b7280" stroke="none">DI1SYS</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705D6A.CAD" data-source-offset="1344" data-symbol="DI1SYS">
+<rect x="490.0" y="270.0" width="300" height="200" fill="#f9fafb" stroke="#6b7280"/>
+<text x="498.0" y="300.0" font-size="26" fill="#6b7280" stroke="none">DI1SYS</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="1482" data-symbol="OR2">
+<rect x="1085.0" y="1000.0" width="135" height="60" fill="#ecfdf5" stroke="#047857"/>
+<text x="1093.0" y="1030.0" font-size="26" fill="#047857" stroke="none">OR2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="1518" data-symbol="OR2">
+<rect x="1085.0" y="720.0" width="135" height="60" fill="#ecfdf5" stroke="#047857"/>
+<text x="1093.0" y="750.0" font-size="26" fill="#047857" stroke="none">OR2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="1554" data-symbol="OR2">
+<rect x="1085.0" y="440.0" width="135" height="60" fill="#ecfdf5" stroke="#047857"/>
+<text x="1093.0" y="470.0" font-size="26" fill="#047857" stroke="none">OR2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="1590" data-symbol="OR2">
+<rect x="1085.0" y="160.0" width="135" height="60" fill="#ecfdf5" stroke="#047857"/>
+<text x="1093.0" y="190.0" font-size="26" fill="#047857" stroke="none">OR2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="1626" data-symbol="NOT">
+<rect x="1245.0" y="1110.0" width="135" height="40" fill="#ecfdf5" stroke="#047857"/>
+<text x="1253.0" y="1140.0" font-size="26" fill="#047857" stroke="none">NOT</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="1662" data-symbol="SR">
+<rect x="1245.0" y="970.0" width="135" height="125" fill="#ecfdf5" stroke="#047857"/>
+<text x="1253.0" y="1000.0" font-size="26" fill="#047857" stroke="none">SR</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="1698" data-symbol="NOT">
+<rect x="1245.0" y="830.0" width="135" height="40" fill="#ecfdf5" stroke="#047857"/>
+<text x="1253.0" y="860.0" font-size="26" fill="#047857" stroke="none">NOT</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="1734" data-symbol="SR">
+<rect x="1245.0" y="690.0" width="135" height="125" fill="#ecfdf5" stroke="#047857"/>
+<text x="1253.0" y="720.0" font-size="26" fill="#047857" stroke="none">SR</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="1770" data-symbol="NOT">
+<rect x="1245.0" y="550.0" width="135" height="40" fill="#ecfdf5" stroke="#047857"/>
+<text x="1253.0" y="580.0" font-size="26" fill="#047857" stroke="none">NOT</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="1806" data-symbol="SR">
+<rect x="1245.0" y="410.0" width="135" height="125" fill="#ecfdf5" stroke="#047857"/>
+<text x="1253.0" y="440.0" font-size="26" fill="#047857" stroke="none">SR</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="1842" data-symbol="NOT">
+<rect x="1245.0" y="270.0" width="135" height="40" fill="#ecfdf5" stroke="#047857"/>
+<text x="1253.0" y="300.0" font-size="26" fill="#047857" stroke="none">NOT</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="1878" data-symbol="SR">
+<rect x="1245.0" y="130.0" width="135" height="125" fill="#ecfdf5" stroke="#047857"/>
+<text x="1253.0" y="160.0" font-size="26" fill="#047857" stroke="none">SR</text>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="1914" data-symbol="N90CNECT">
+<circle cx="1491.0" cy="150.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="1968" data-symbol="AND2">
+<rect x="1545.0" y="1140.0" width="135" height="100" fill="#ecfdf5" stroke="#047857"/>
+<text x="1553.0" y="1170.0" font-size="26" fill="#047857" stroke="none">AND2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2004" data-symbol="AND2">
+<rect x="1545.0" y="860.0" width="135" height="100" fill="#ecfdf5" stroke="#047857"/>
+<text x="1553.0" y="890.0" font-size="26" fill="#047857" stroke="none">AND2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2040" data-symbol="AND2">
+<rect x="1545.0" y="580.0" width="135" height="100" fill="#ecfdf5" stroke="#047857"/>
+<text x="1553.0" y="610.0" font-size="26" fill="#047857" stroke="none">AND2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2076" data-symbol="AND2">
+<rect x="1545.0" y="300.0" width="135" height="100" fill="#ecfdf5" stroke="#047857"/>
+<text x="1553.0" y="330.0" font-size="26" fill="#047857" stroke="none">AND2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2112" data-symbol="AND2">
+<rect x="1645.0" y="1040.0" width="135" height="100" fill="#ecfdf5" stroke="#047857"/>
+<text x="1653.0" y="1070.0" font-size="26" fill="#047857" stroke="none">AND2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2148" data-symbol="AND2">
+<rect x="1645.0" y="480.0" width="135" height="100" fill="#ecfdf5" stroke="#047857"/>
+<text x="1653.0" y="510.0" font-size="26" fill="#047857" stroke="none">AND2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2184" data-symbol="AND2">
+<rect x="1645.0" y="200.0" width="135" height="100" fill="#ecfdf5" stroke="#047857"/>
+<text x="1653.0" y="230.0" font-size="26" fill="#047857" stroke="none">AND2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="2220" data-symbol="N90CNECT">
+<circle cx="1811.0" cy="250.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2254" data-symbol="TD-DIG">
+<rect x="1845.0" y="1110.0" width="175" height="80" fill="#ecfdf5" stroke="#047857"/>
+<text x="1853.0" y="1140.0" font-size="26" fill="#047857" stroke="none">TD-DIG</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2316" data-symbol="TD-DIG">
+<rect x="1845.0" y="830.0" width="175" height="80" fill="#ecfdf5" stroke="#047857"/>
+<text x="1853.0" y="860.0" font-size="26" fill="#047857" stroke="none">TD-DIG</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2378" data-symbol="TD-DIG">
+<rect x="1845.0" y="550.0" width="175" height="80" fill="#ecfdf5" stroke="#047857"/>
+<text x="1853.0" y="580.0" font-size="26" fill="#047857" stroke="none">TD-DIG</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2440" data-symbol="TD-DIG">
+<rect x="1845.0" y="270.0" width="175" height="80" fill="#ecfdf5" stroke="#047857"/>
+<text x="1853.0" y="300.0" font-size="26" fill="#047857" stroke="none">TD-DIG</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2504" data-symbol="NOT">
+<rect x="2085.0" y="1130.0" width="135" height="40" fill="#ecfdf5" stroke="#047857"/>
+<text x="2093.0" y="1160.0" font-size="26" fill="#047857" stroke="none">NOT</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2540" data-symbol="NOT">
+<rect x="2085.0" y="850.0" width="135" height="40" fill="#ecfdf5" stroke="#047857"/>
+<text x="2093.0" y="880.0" font-size="26" fill="#047857" stroke="none">NOT</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2576" data-symbol="NOT">
+<rect x="2085.0" y="570.0" width="135" height="40" fill="#ecfdf5" stroke="#047857"/>
+<text x="2093.0" y="600.0" font-size="26" fill="#047857" stroke="none">NOT</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2612" data-symbol="NOT">
+<rect x="2085.0" y="290.0" width="135" height="40" fill="#ecfdf5" stroke="#047857"/>
+<text x="2093.0" y="320.0" font-size="26" fill="#047857" stroke="none">NOT</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2648" data-symbol="AND2">
+<rect x="2325.0" y="1060.0" width="135" height="100" fill="#ecfdf5" stroke="#047857"/>
+<text x="2333.0" y="1090.0" font-size="26" fill="#047857" stroke="none">AND2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2684" data-symbol="NOT">
+<rect x="2085.0" y="1030.0" width="135" height="40" fill="#ecfdf5" stroke="#047857"/>
+<text x="2093.0" y="1060.0" font-size="26" fill="#047857" stroke="none">NOT</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2720" data-symbol="TD-DIG">
+<rect x="2325.0" y="950.0" width="175" height="80" fill="#ecfdf5" stroke="#047857"/>
+<text x="2333.0" y="980.0" font-size="26" fill="#047857" stroke="none">TD-DIG</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2784" data-symbol="AND2">
+<rect x="2325.0" y="780.0" width="135" height="100" fill="#ecfdf5" stroke="#047857"/>
+<text x="2333.0" y="810.0" font-size="26" fill="#047857" stroke="none">AND2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2820" data-symbol="NOT">
+<rect x="2085.0" y="750.0" width="135" height="40" fill="#ecfdf5" stroke="#047857"/>
+<text x="2093.0" y="780.0" font-size="26" fill="#047857" stroke="none">NOT</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2856" data-symbol="TD-DIG">
+<rect x="2325.0" y="670.0" width="175" height="80" fill="#ecfdf5" stroke="#047857"/>
+<text x="2333.0" y="700.0" font-size="26" fill="#047857" stroke="none">TD-DIG</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2920" data-symbol="AND2">
+<rect x="2325.0" y="500.0" width="135" height="100" fill="#ecfdf5" stroke="#047857"/>
+<text x="2333.0" y="530.0" font-size="26" fill="#047857" stroke="none">AND2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2956" data-symbol="NOT">
+<rect x="2085.0" y="470.0" width="135" height="40" fill="#ecfdf5" stroke="#047857"/>
+<text x="2093.0" y="500.0" font-size="26" fill="#047857" stroke="none">NOT</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="2992" data-symbol="TD-DIG">
+<rect x="2325.0" y="390.0" width="175" height="80" fill="#ecfdf5" stroke="#047857"/>
+<text x="2333.0" y="420.0" font-size="26" fill="#047857" stroke="none">TD-DIG</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="3056" data-symbol="AND2">
+<rect x="2325.0" y="220.0" width="135" height="100" fill="#ecfdf5" stroke="#047857"/>
+<text x="2333.0" y="250.0" font-size="26" fill="#047857" stroke="none">AND2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="3092" data-symbol="NOT">
+<rect x="2085.0" y="190.0" width="135" height="40" fill="#ecfdf5" stroke="#047857"/>
+<text x="2093.0" y="220.0" font-size="26" fill="#047857" stroke="none">NOT</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="3128" data-symbol="TD-DIG">
+<rect x="2325.0" y="110.0" width="175" height="80" fill="#ecfdf5" stroke="#047857"/>
+<text x="2333.0" y="140.0" font-size="26" fill="#047857" stroke="none">TD-DIG</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="3192" data-symbol="OREF">
+<rect x="2400.0" y="1790.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="1820.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="3266" data-symbol="OREF">
+<rect x="2400.0" y="1170.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="1200.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="3340" data-symbol="OREF">
+<rect x="2400.0" y="1090.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="1120.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="3414" data-symbol="OREF">
+<rect x="2400.0" y="1030.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="1060.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="3488" data-symbol="OREF">
+<rect x="2400.0" y="970.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="1000.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="3562" data-symbol="OREF">
+<rect x="2400.0" y="890.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="920.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="3636" data-symbol="OREF">
+<rect x="2400.0" y="810.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="840.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="3710" data-symbol="OREF">
+<rect x="2400.0" y="750.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="780.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="3784" data-symbol="OREF">
+<rect x="2400.0" y="690.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="720.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="3858" data-symbol="OREF">
+<rect x="2400.0" y="610.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="640.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="3932" data-symbol="OREF">
+<rect x="2400.0" y="530.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="560.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="4006" data-symbol="OREF">
+<rect x="2400.0" y="470.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="500.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="4080" data-symbol="OREF">
+<rect x="2400.0" y="410.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="440.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="4154" data-symbol="OREF">
+<rect x="2400.0" y="330.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="360.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="4228" data-symbol="OREF">
+<rect x="2400.0" y="250.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="280.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="4302" data-symbol="OREF">
+<rect x="2400.0" y="190.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="220.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="4376" data-symbol="OREF">
+<rect x="2400.0" y="130.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="160.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="5074" data-symbol="N90CNECT">
+<circle cx="1211.0" cy="370.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="5168" data-symbol="N90CNECT">
+<circle cx="1491.0" cy="250.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="5242" data-symbol="N90CNECT">
+<circle cx="1451.0" cy="430.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="5320" data-symbol="AND2">
+<rect x="1645.0" y="760.0" width="135" height="100" fill="#ecfdf5" stroke="#047857"/>
+<text x="1653.0" y="790.0" font-size="26" fill="#047857" stroke="none">AND2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="5676" data-symbol="N90CNECT">
+<circle cx="1451.0" cy="1270.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="5710" data-symbol="N90CNECT">
+<circle cx="1451.0" cy="990.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="5744" data-symbol="N90CNECT">
+<circle cx="1451.0" cy="710.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="5778" data-symbol="N90CNECT">
+<circle cx="1491.0" cy="430.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="5812" data-symbol="N90CNECT">
+<circle cx="1491.0" cy="710.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="5846" data-symbol="N90CNECT">
+<circle cx="1491.0" cy="990.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="5880" data-symbol="N90CNECT">
+<circle cx="1491.0" cy="1270.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="6258" data-symbol="N90CNECT">
+<circle cx="1811.0" cy="1090.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="6292" data-symbol="N90CNECT">
+<circle cx="2051.0" cy="1150.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="6398" data-symbol="N90CNECT">
+<circle cx="2051.0" cy="990.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="6952" data-symbol="N90CNECT">
+<circle cx="2051.0" cy="870.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="6986" data-symbol="N90CNECT">
+<circle cx="2051.0" cy="590.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="7020" data-symbol="N90CNECT">
+<circle cx="2051.0" cy="310.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="7054" data-symbol="N90CNECT">
+<circle cx="1811.0" cy="530.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="7088" data-symbol="N90CNECT">
+<circle cx="1811.0" cy="810.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="7122" data-symbol="N90CNECT">
+<circle cx="2051.0" cy="710.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="7156" data-symbol="N90CNECT">
+<circle cx="2051.0" cy="430.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="7190" data-symbol="N90CNECT">
+<circle cx="2051.0" cy="150.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="7284" data-symbol="IREF">
+<rect x="590.0" y="1750.0" width="535" height="40" fill="#eff6ff" stroke="#1d4ed8"/>
+<text x="598.0" y="1780.0" font-size="26" fill="#1d4ed8" stroke="none">IREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="7358" data-symbol="IREF">
+<rect x="590.0" y="1470.0" width="535" height="40" fill="#eff6ff" stroke="#1d4ed8"/>
+<text x="598.0" y="1500.0" font-size="26" fill="#1d4ed8" stroke="none">IREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705D6A.CAD" data-source-offset="7492" data-symbol="DI1SYS">
+<rect x="490.0" y="1670.0" width="300" height="200" fill="#f9fafb" stroke="#6b7280"/>
+<text x="498.0" y="1700.0" font-size="26" fill="#6b7280" stroke="none">DI1SYS</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705D6A.CAD" data-source-offset="7542" data-symbol="DI1SYS">
+<rect x="490.0" y="1390.0" width="300" height="200" fill="#f9fafb" stroke="#6b7280"/>
+<text x="498.0" y="1420.0" font-size="26" fill="#6b7280" stroke="none">DI1SYS</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="7592" data-symbol="OR2">
+<rect x="1085.0" y="1560.0" width="135" height="60" fill="#ecfdf5" stroke="#047857"/>
+<text x="1093.0" y="1590.0" font-size="26" fill="#047857" stroke="none">OR2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="7628" data-symbol="OR2">
+<rect x="1085.0" y="1280.0" width="135" height="60" fill="#ecfdf5" stroke="#047857"/>
+<text x="1093.0" y="1310.0" font-size="26" fill="#047857" stroke="none">OR2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="7664" data-symbol="NOT">
+<rect x="1245.0" y="1670.0" width="135" height="40" fill="#ecfdf5" stroke="#047857"/>
+<text x="1253.0" y="1700.0" font-size="26" fill="#047857" stroke="none">NOT</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="7700" data-symbol="SR">
+<rect x="1245.0" y="1530.0" width="135" height="125" fill="#ecfdf5" stroke="#047857"/>
+<text x="1253.0" y="1560.0" font-size="26" fill="#047857" stroke="none">SR</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="7736" data-symbol="NOT">
+<rect x="1245.0" y="1390.0" width="135" height="40" fill="#ecfdf5" stroke="#047857"/>
+<text x="1253.0" y="1420.0" font-size="26" fill="#047857" stroke="none">NOT</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="7772" data-symbol="SR">
+<rect x="1245.0" y="1250.0" width="135" height="125" fill="#ecfdf5" stroke="#047857"/>
+<text x="1253.0" y="1280.0" font-size="26" fill="#047857" stroke="none">SR</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="7808" data-symbol="AND2">
+<rect x="1545.0" y="1700.0" width="135" height="100" fill="#ecfdf5" stroke="#047857"/>
+<text x="1553.0" y="1730.0" font-size="26" fill="#047857" stroke="none">AND2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="7844" data-symbol="AND2">
+<rect x="1545.0" y="1420.0" width="135" height="100" fill="#ecfdf5" stroke="#047857"/>
+<text x="1553.0" y="1450.0" font-size="26" fill="#047857" stroke="none">AND2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="7880" data-symbol="AND2">
+<rect x="1645.0" y="1600.0" width="135" height="100" fill="#ecfdf5" stroke="#047857"/>
+<text x="1653.0" y="1630.0" font-size="26" fill="#047857" stroke="none">AND2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="7916" data-symbol="TD-DIG">
+<rect x="1845.0" y="1670.0" width="175" height="80" fill="#ecfdf5" stroke="#047857"/>
+<text x="1853.0" y="1700.0" font-size="26" fill="#047857" stroke="none">TD-DIG</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="7978" data-symbol="TD-DIG">
+<rect x="1845.0" y="1390.0" width="175" height="80" fill="#ecfdf5" stroke="#047857"/>
+<text x="1853.0" y="1420.0" font-size="26" fill="#047857" stroke="none">TD-DIG</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="8040" data-symbol="NOT">
+<rect x="2085.0" y="1690.0" width="135" height="40" fill="#ecfdf5" stroke="#047857"/>
+<text x="2093.0" y="1720.0" font-size="26" fill="#047857" stroke="none">NOT</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="8076" data-symbol="NOT">
+<rect x="2085.0" y="1410.0" width="135" height="40" fill="#ecfdf5" stroke="#047857"/>
+<text x="2093.0" y="1440.0" font-size="26" fill="#047857" stroke="none">NOT</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="8112" data-symbol="AND2">
+<rect x="2325.0" y="1620.0" width="135" height="100" fill="#ecfdf5" stroke="#047857"/>
+<text x="2333.0" y="1650.0" font-size="26" fill="#047857" stroke="none">AND2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="8148" data-symbol="NOT">
+<rect x="2085.0" y="1590.0" width="135" height="40" fill="#ecfdf5" stroke="#047857"/>
+<text x="2093.0" y="1620.0" font-size="26" fill="#047857" stroke="none">NOT</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="8184" data-symbol="TD-DIG">
+<rect x="2325.0" y="1510.0" width="175" height="80" fill="#ecfdf5" stroke="#047857"/>
+<text x="2333.0" y="1540.0" font-size="26" fill="#047857" stroke="none">TD-DIG</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="8248" data-symbol="AND2">
+<rect x="2325.0" y="1340.0" width="135" height="100" fill="#ecfdf5" stroke="#047857"/>
+<text x="2333.0" y="1370.0" font-size="26" fill="#047857" stroke="none">AND2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="8284" data-symbol="NOT">
+<rect x="2085.0" y="1310.0" width="135" height="40" fill="#ecfdf5" stroke="#047857"/>
+<text x="2093.0" y="1340.0" font-size="26" fill="#047857" stroke="none">NOT</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="8320" data-symbol="TD-DIG">
+<rect x="2325.0" y="1230.0" width="175" height="80" fill="#ecfdf5" stroke="#047857"/>
+<text x="2333.0" y="1260.0" font-size="26" fill="#047857" stroke="none">TD-DIG</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="8384" data-symbol="OREF">
+<rect x="2400.0" y="1730.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="1760.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="8458" data-symbol="OREF">
+<rect x="2400.0" y="1650.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="1680.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="8532" data-symbol="OREF">
+<rect x="2400.0" y="1590.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="1620.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="8606" data-symbol="OREF">
+<rect x="2400.0" y="1530.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="1560.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="8680" data-symbol="OREF">
+<rect x="2400.0" y="1450.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="1480.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="8754" data-symbol="OREF">
+<rect x="2400.0" y="1370.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="1400.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="8828" data-symbol="OREF">
+<rect x="2400.0" y="1310.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="1340.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="8" data-source-file="30705D6A.CAD" data-source-offset="8902" data-symbol="OREF">
+<rect x="2400.0" y="1250.0" width="550" height="45" fill="#fffbeb" stroke="#b45309"/>
+<text x="2408.0" y="1280.0" font-size="26" fill="#b45309" stroke="none">OREF</text>
+</g>
+<g data-entity-type="symbol" data-record-type="6" data-source-file="30705D6A.CAD" data-source-offset="8976" data-symbol="AND2">
+<rect x="1645.0" y="1320.0" width="135" height="100" fill="#ecfdf5" stroke="#047857"/>
+<text x="1653.0" y="1350.0" font-size="26" fill="#047857" stroke="none">AND2</text>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="9192" data-symbol="N90CNECT">
+<circle cx="1451.0" cy="1550.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="9226" data-symbol="N90CNECT">
+<circle cx="1451.0" cy="1270.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="9260" data-symbol="N90CNECT">
+<circle cx="1491.0" cy="1270.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="9294" data-symbol="N90CNECT">
+<circle cx="1491.0" cy="1550.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="9524" data-symbol="N90CNECT">
+<circle cx="1811.0" cy="1650.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="9558" data-symbol="N90CNECT">
+<circle cx="2051.0" cy="1710.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="9664" data-symbol="N90CNECT">
+<circle cx="2051.0" cy="1550.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="9898" data-symbol="N90CNECT">
+<circle cx="2051.0" cy="1430.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="9932" data-symbol="N90CNECT">
+<circle cx="1811.0" cy="1370.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="9966" data-symbol="N90CNECT">
+<circle cx="2051.0" cy="1270.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="10060" data-symbol="N90CNECT">
+<circle cx="1211.0" cy="1770.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="10094" data-symbol="N90CNECT">
+<circle cx="1211.0" cy="1490.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="10128" data-symbol="N90CNECT">
+<circle cx="1211.0" cy="1210.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="10162" data-symbol="N90CNECT">
+<circle cx="1211.0" cy="930.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="10196" data-symbol="N90CNECT">
+<circle cx="1211.0" cy="650.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705D6A.CAD" data-source-offset="10278" data-symbol="RDI01A5">
+<rect x="490.0" y="1290.0" width="300" height="300" fill="#f9fafb" stroke="#6b7280"/>
+<text x="498.0" y="1320.0" font-size="26" fill="#6b7280" stroke="none">RDI01A5</text>
+</g>
+<g data-entity-type="symbol" data-record-type="9" data-source-file="30705D6A.CAD" data-source-offset="10372" data-symbol="RDI01A6">
+<rect x="490.0" y="1570.0" width="300" height="300" fill="#f9fafb" stroke="#6b7280"/>
+<text x="498.0" y="1600.0" font-size="26" fill="#6b7280" stroke="none">RDI01A6</text>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="10722" data-symbol="N90CNECT">
+<circle cx="1011.0" cy="210.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="10756" data-symbol="N90CNECT">
+<circle cx="1011.0" cy="470.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="10790" data-symbol="N90CNECT">
+<circle cx="1011.0" cy="750.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="10824" data-symbol="N90CNECT">
+<circle cx="1011.0" cy="1030.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="10858" data-symbol="N90CNECT">
+<circle cx="1011.0" cy="1310.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="10956" data-symbol="N90CNECT">
+<circle cx="1491.0" cy="1090.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="10990" data-symbol="N90CNECT">
+<circle cx="1491.0" cy="810.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="11024" data-symbol="N90CNECT">
+<circle cx="1491.0" cy="1650.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="11058" data-symbol="N90CNECT">
+<circle cx="1491.0" cy="1370.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+<g data-entity-type="symbol" data-record-type="11" data-source-file="30705D6A.CAD" data-source-offset="11092" data-symbol="N90CNECT">
+<circle cx="1491.0" cy="530.5" r="5" fill="#dc2626" stroke="none"/>
+</g>
+</g>
+<text x="20" y="34" font-size="30" fill="#111827">30705D6A — geometry proof · 156 placed symbols of 359 records decoded</text>
+</svg>

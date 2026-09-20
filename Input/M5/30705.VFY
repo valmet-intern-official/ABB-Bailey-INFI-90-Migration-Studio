@@ -1,0 +1,12 @@
+==========================================================================
+Verify Report                           Mon Apr 17 18:19:45 2017
+Source Type    : CFG file       (Loop:  3  PCU:  7   Module:  5)
+Source File    : C:\BAILEY~1\CAD\PROJECT\L3\P7\M5\30705.CFG
+Reference Type : CFG file       (Loop:  3  PCU:  7   Module:  5)
+Reference File : C:\BAILEY~1\WCADCFG\LOOP3~1\30705.CFG
+==========================================================================
+
+    Source    Blocks Total :  2782
+    Reference Blocks Total :  2782
+    No Differences Detected During Verify Operation
+Mon Apr 17 18:19:49 2017 - Verification Complete
