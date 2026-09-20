@@ -23,6 +23,12 @@ ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV STORAGE_ROOT=/data
 ENV PORT=3000
+ENV SERVICE_NAME=infi90-migration-api
+ENV MAX_UPLOAD_MB=100
+ENV CORS_ORIGINS=https://infi90-migration-studio.vercel.app
+ENV FRONTEND_ORIGIN=https://infi90-migration-studio.vercel.app
+ENV NEXT_PUBLIC_API_BASE_URL=
+
 RUN mkdir -p /data && chown -R node:node /data
 COPY --from=builder /app ./
 USER node
