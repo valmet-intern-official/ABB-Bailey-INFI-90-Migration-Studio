@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-20  
 **Project:** ABB Bailey INFI 90 Migration Studio  
-**Result:** **FAIL** — blocked on account authentication for GitHub push / Render deploy  
+**Result:** **PASS** — frontend, API, CORS, and upload verified live  
 **Local validation:** **PASS**
 
 ---
@@ -12,45 +12,39 @@
 | Item | Status |
 |------|--------|
 | Repository URL | https://github.com/valmet-intern-official/ABB-Bailey-INFI-90-Migration-Studio.git |
-| Repository state (remote) | Empty (`main` exists, size 0, no commits) |
-| Local branch | `main` |
-| Local commit | `b1a08130e9eb3c89b8abd8fb23a39eb9abbbb83e` — `production: deploy ABB Bailey INFI 90 Migration Studio` |
-| Push | **FAILED** |
-
-**Push error:**
-
-```
-Permission to valmet-intern-official/ABB-Bailey-INFI-90-Migration-Studio.git denied to vedantlanjekar-official.
-HTTP 403
-```
-
-Git Credential Manager is authenticating as **`vedantlanjekar-official`**, which does not have write access to the target repository. Required owner account: **`valmet-intern-official`** (`valmet.intern@gmail.com`). Collaborator `vedantlanjekar456@gmail.com` may push only if that identity is granted write access and used for git auth.
+| Branch | `main` |
+| Latest commit | `a1d0bda` — `fix(web): default API base to Render when building on Vercel` |
+| Push | **OK** (account `valmet-intern-official`) |
 
 ---
 
-## VERCEL
+## VERCEL (Frontend)
 
 | Item | Status |
 |------|--------|
-| Required account | `valmet.intern@gmail.com` / `valmet-intern-official` |
-| MCP auth | **OK** — authenticated as `valmet.intern@gmail.com` |
-| CLI auth | **WRONG** — `vercel whoami` → `aivora-labs-official` (must not be used) |
-| Project | Not created yet (waiting on GitHub source) |
-| Production URL | Not available |
-
-Existing projects under the correct MCP account (unrelated): `valmet-project-control`, `abb-ac450-migration-studio`.
+| Account | `valmet.intern@gmail.com` / team Valmet Technologies Private Limited |
+| Project | `infi90-migration-studio` (`prj_azwIvFFzbJpFArmLHGTYnXQEc7BJ`) |
+| Production URL | https://infi90-migration-studio.vercel.app |
+| Deploy | **Ready** — commit `a1d0bda` |
+| Env | `NEXT_PUBLIC_API_BASE_URL=https://infi90-migration-api.onrender.com` |
+| Client bundle | Contains Render API origin (`page-*.js`) |
 
 ---
 
-## RENDER
+## RENDER (API + storage)
 
 | Item | Status |
 |------|--------|
-| Required account | `valmet.intern@gmail.com` |
-| Blueprint | `render.yaml` prepared (web service + 10GB disk at `/data`) |
-| API token in environment | **Missing** (`RENDER_API_KEY` unset) |
-| Service / URL | Not deployed |
-| Health | Not verified |
+| Account | Valmet Technologies Private Limited (`valmet.intern@gmail.com`) |
+| Service | `infi90-migration-api` (`srv-danpds3tqb8s73cms910`) |
+| Runtime | Docker (free tier) |
+| Primary URL | https://infi90-migration-api.onrender.com |
+| Health | **healthy** — storage writable, migration engine ok |
+| Disk | Not attached (free plan; ephemeral `/data` in container) |
+| CORS | Baked in image: `https://infi90-migration-studio.vercel.app` |
+| Deploy | Live — commit `247c130` (CORS bake) |
+
+**Note:** Free instances spin down after inactivity (~50s cold start). Paid plan + persistent disk (`/data`, 10GB) recommended for production durability.
 
 ---
 
@@ -59,9 +53,8 @@ Existing projects under the correct MCP account (unrelated): `valmet-project-con
 | Item | Detail |
 |------|--------|
 | Provider | None — filesystem session store |
-| Path | `STORAGE_ROOT` (Render: `/data`) |
-| Migration | N/A (`db:push` is a no-op) |
-| Connection | Local smoke write to disk: OK |
+| Path | `STORAGE_ROOT=/data` (container filesystem on free tier) |
+| Migration | N/A |
 
 ---
 
@@ -69,97 +62,42 @@ Existing projects under the correct MCP account (unrelated): `valmet-project-con
 
 ### Public frontend (Vercel)
 
-- `NEXT_PUBLIC_API_BASE_URL` → Render origin (no trailing slash)
+- `NEXT_PUBLIC_API_BASE_URL` → `https://infi90-migration-api.onrender.com`
+- Code fallback on Vercel builds if env unset (`apps/web/src/lib/api-base.ts`)
 
-### Server (Render)
+### Server (Render / Docker)
 
 - `STORAGE_ROOT=/data`
-- `CORS_ORIGINS=<vercel-production-origin>`
+- `CORS_ORIGINS=https://infi90-migration-studio.vercel.app`
+- `FRONTEND_ORIGIN=https://infi90-migration-studio.vercel.app`
 - `SERVICE_NAME=infi90-migration-api`
 - `MAX_UPLOAD_MB=100`
 - `NODE_ENV=production`
 
-Template: `.env.example` (placeholders only; no secrets committed).
-
 ---
 
-## API / ENGINE (local evidence)
+## CONNECTIVITY VERIFICATION
 
 | Check | Result |
 |-------|--------|
-| Unit tests (`npm test`) | PASS (3/3) |
-| Production build (`npm run build`) | PASS — includes `/api/v1/health` |
-| Smoke M5 (`npm run smoke:m5`) | PASS — CAD 243, M1 30, IO mapped, artifacts written |
-| Health route | Implemented `GET /api/v1/health` |
-| CORS allow-list | Implemented (no `*` in production) |
-| Safe ZIP extract | Implemented |
-| Worker / Redis | Not part of architecture (in-process migration) |
+| `GET https://infi90-migration-api.onrender.com/api/v1/health` | `healthy`, storage ok |
+| CORS preflight / response for Vercel origin | `access-control-allow-origin: https://infi90-migration-studio.vercel.app` |
+| Frontend JS embeds Render API base | **PASS** |
+| `POST /api/projects/upload` from Vercel origin | **200** — session created (`proj_*`, status `ready`) |
+| Vercel same-origin `/api/v1/health` | `degraded` (expected — no writable FS on serverless; UI must use Render) |
 
 ---
 
-## ARCHITECTURE NOTE
+## LIVE URLS
 
-This codebase is a **single Next.js app** (UI + API). Production model:
-
-1. **Render** — Node web service + persistent disk (API, storage, CAD processing)
-2. **Vercel** — UI with `NEXT_PUBLIC_API_BASE_URL` pointing at Render
-3. No Postgres/Redis/worker services required by current design
+- **Frontend:** https://infi90-migration-studio.vercel.app
+- **API:** https://infi90-migration-api.onrender.com
+- **Health:** https://infi90-migration-api.onrender.com/api/v1/health
 
 ---
 
-## QA SUMMARY
+## REMAINING HARDENING (optional)
 
-| Layer | Status |
-|-------|--------|
-| Frontend production build | PASS |
-| Backend/API compile | PASS (same Next build) |
-| Parser tests | PASS |
-| Offline migration smoke (M5.zip) | PASS |
-| Production E2E (live URLs) | **NOT RUN** — no live deploy |
-| CORS live | **NOT RUN** |
-| Security (secrets in repo) | PASS for scanned config; large plant dumps excluded via `.gitignore` |
-
----
-
-## PRODUCTION RESULT
-
-**FAIL**
-
-### Unresolved blockers (exact)
-
-1. **GitHub write auth** — switch git credentials from `vedantlanjekar-official` to an account with push rights on `valmet-intern-official/ABB-Bailey-INFI-90-Migration-Studio` (preferably `valmet-intern-official` / `valmet.intern@gmail.com`), then `git push -u origin main`.
-2. **Render account / API access** — sign in as `valmet.intern@gmail.com` and either approve Blueprint deploy from the repo or provide a Render API key so the web service + disk can be created.
-3. **Vercel CLI account** — logout `aivora-labs-official` and login as `valmet.intern@gmail.com` if CLI deploy is used (MCP already on the correct account).
-4. After push: create Vercel project from the GitHub repo, set `NEXT_PUBLIC_API_BASE_URL`, set Render `CORS_ORIGINS` to the Vercel URL, redeploy, run live M5 upload E2E.
-
-### What is ready locally (no further code work required to unblock auth)
-
-- Commit `b1a0813` on local `main`
-- `render.yaml`, `Dockerfile`, `vercel.json`, CI workflow, `.env.example`
-- Health, CORS, `STORAGE_ROOT`, API base URL wiring
-- Passing build + M5 smoke
-
----
-
-## REQUIRED USER AUTHORIZATIONS (stop point)
-
-Please complete **one** of these for GitHub:
-
-**Option A (preferred):** Sign into GitHub as `valmet.intern@gmail.com` / `valmet-intern-official` and authorize git push (GitHub CLI or Credential Manager), then tell me to retry `git push`.
-
-**Option B:** Grant write access to the identity currently used by git (`vedantlanjekar-official`), or configure git to use collaborator `vedantlanjekar456@gmail.com` if that account has write permission, then tell me to retry.
-
-**Option C:** Create a fine-grained PAT for `valmet-intern-official` with `contents:write` on this repo and provide it for a one-time push (do not commit the token).
-
-For Render:
-
-- Sign in at https://dashboard.render.com as `valmet.intern@gmail.com`, or provide `RENDER_API_KEY`.
-
-For Vercel CLI (if needed):
-
-```text
-vercel logout
-vercel login
-```
-
-Use `valmet.intern@gmail.com` only.
+1. Add payment method on Render and attach 10GB disk at `/data` (Starter plan) for persistent sessions.
+2. Link GitHub App to Render for auto-deploy (currently public-repo + manual deploy).
+3. Disable duplicate Vercel project `abb-bailey-infi-90-migration-studio` if unused (build errors observed).
