@@ -25,8 +25,8 @@ ENV STORAGE_ROOT=/data
 ENV PORT=3000
 ENV SERVICE_NAME=infi90-migration-api
 ENV MAX_UPLOAD_MB=100
-ENV CORS_ORIGINS=https://infi90-migration-studio.vercel.app
-ENV FRONTEND_ORIGIN=https://infi90-migration-studio.vercel.app
+ENV CORS_ORIGINS=https://abb-bailey-infi90-migration-studio.vercel.app,https://infi90-migration-studio.vercel.app,https://abb-bailey-infi-90-migration-studio.vercel.app
+ENV FRONTEND_ORIGIN=https://abb-bailey-infi90-migration-studio.vercel.app
 ENV NEXT_PUBLIC_API_BASE_URL=
 
 RUN mkdir -p /data && chown -R node:node /data

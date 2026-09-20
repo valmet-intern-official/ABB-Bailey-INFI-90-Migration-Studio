@@ -12,16 +12,7 @@ export function getStorageRoot(): string {
   return path.join(process.cwd(), "data");
 }
 
-/** Allowed browser origins for CORS (comma-separated). */
-export function getCorsOrigins(): string[] {
-  const raw =
-    process.env.CORS_ORIGINS?.trim() || process.env.FRONTEND_ORIGIN?.trim();
-  if (!raw) return [];
-  return raw
-    .split(",")
-    .map((s) => s.trim())
-    .filter(Boolean);
-}
+export { getCorsOrigins } from "@/lib/cors-origins";
 
 export function isProduction(): boolean {
   return process.env.NODE_ENV === "production";

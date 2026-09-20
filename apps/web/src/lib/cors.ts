@@ -1,28 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getCorsOrigins, isProduction } from "@/lib/env";
-
-function resolveAllowedOrigin(requestOrigin: string | null): string | null {
-  if (!requestOrigin) return null;
-  const allowed = getCorsOrigins();
-  if (allowed.includes(requestOrigin)) return requestOrigin;
-  // Local development convenience when CORS_ORIGINS is unset
-  if (!isProduction() && allowed.length === 0) {
-    if (
-      requestOrigin.startsWith("http://localhost:") ||
-      requestOrigin.startsWith("http://127.0.0.1:")
-    ) {
-      return requestOrigin;
-    }
-  }
-  return null;
-}
+import { resolveCorsOrigin } from "@/lib/cors-origins";
 
 export function applyCorsHeaders(
   req: NextRequest,
   res: NextResponse
 ): NextResponse {
   const origin = req.headers.get("origin");
-  const allowed = resolveAllowedOrigin(origin);
+  const allowed = resolveCorsOrigin(origin);
   if (allowed) {
     res.headers.set("Access-Control-Allow-Origin", allowed);
     res.headers.set("Vary", "Origin");

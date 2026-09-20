@@ -26,8 +26,8 @@ services:
       - key: MAX_UPLOAD_MB
         value: "100"
       - key: CORS_ORIGINS
-        sync: false
+        value: https://abb-bailey-infi90-migration-studio.vercel.app,https://infi90-migration-studio.vercel.app,https://abb-bailey-infi-90-migration-studio.vercel.app
       - key: FRONTEND_ORIGIN
-        sync: false
+        value: https://abb-bailey-infi90-migration-studio.vercel.app
       - key: NEXT_PUBLIC_API_BASE_URL
         value: ""
