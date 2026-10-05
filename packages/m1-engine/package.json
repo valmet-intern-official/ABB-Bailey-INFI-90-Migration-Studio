@@ -9,7 +9,7 @@
     ".": "./src/index.ts"
   },
   "scripts": {
-    "test": "tsx --test test/*.test.ts",
+    "test": "tsx --test \"test/*.test.ts\"",
     "typecheck": "tsc --noEmit",
     "extract": "tsx src/cli.ts",
     "golden:update": "tsx scripts/update-golden.ts"
