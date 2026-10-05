@@ -1,0 +1,64 @@
+[
+  {
+    "file": "3070561A.CAD",
+    "title": "LOADING DECK 1 GROUP START",
+    "blocks": 123,
+    "connections": 96,
+    "laidOutBlocks": 123,
+    "laidOutConnections": 96,
+    "countsMatch": true,
+    "validation": {
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "metrics": {
+        "nodeOverlaps": 0,
+        "diagonalSegments": 0,
+        "wireThroughNodes": 0,
+        "outOfBounds": 0,
+        "missingEndpoints": 0,
+        "connectionCount": 96,
+        "blockCount": 123
+      }
+    },
+    "score": 1010.115,
+    "diagonals": 0,
+    "overlaps": 0,
+    "wireThrough": 0,
+    "page": {
+      "width": 1536,
+      "height": 2776
+    }
+  },
+  {
+    "file": "3070563A.CAD",
+    "title": "LOADING DECK 2 GROUP START",
+    "blocks": 121,
+    "connections": 95,
+    "laidOutBlocks": 121,
+    "laidOutConnections": 95,
+    "countsMatch": true,
+    "validation": {
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "metrics": {
+        "nodeOverlaps": 0,
+        "diagonalSegments": 0,
+        "wireThroughNodes": 0,
+        "outOfBounds": 0,
+        "missingEndpoints": 0,
+        "connectionCount": 95,
+        "blockCount": 121
+      }
+    },
+    "score": 1043.27,
+    "diagonals": 0,
+    "overlaps": 0,
+    "wireThrough": 0,
+    "page": {
+      "width": 2080,
+      "height": 2424
+    }
+  }
+]

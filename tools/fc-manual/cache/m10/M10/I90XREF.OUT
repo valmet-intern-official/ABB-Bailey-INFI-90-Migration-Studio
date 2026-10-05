@@ -1,0 +1,3965 @@
+
+C:\EWS\PROJECT\L2\P7\M10\2071000C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+NOT                             AD00-04.26      ADA1-10.07 20710A1C  
+
+TOT RESET A                     AD00-07.26      ADH0-08.07 20710H0C  ADB7-11.07 20710B7C  ADB4-03.07 20710B4C  ADB0-03.07 20710B0C  
+                                                ADA7-04.07 20710A7C  AD98-03.07 2071098C  AD94-12.07 2071094C  
+
+TOT RESET B                     AD00-08.26      ADH0-09.07 20710H0C  ADB7-12.07 20710B7C  ADB4-05.07 20710B4C  ADB0-04.07 20710B0C  
+                                                ADA7-05.07 20710A7C  AD98-04.07 2071098C  AD94-14.07 2071094C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071000C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071002C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071002C.CAD Inputs
+------------------------------
+AIR21/                          AD02-01.08      AD21-02.21 2071021C  
+
+AIR22/                          AD02-02.08      AD22-02.21 2071022C  
+
+AIR23/                          AD02-02.08      AD23-02.21 2071023C  
+
+AIR44/                          AD02-06.08      AD42-02.14 2071042C  
+
+AIR45/                          AD02-06.08      AD43-02.15 2071043C  
+
+AOR24/                          AD02-02.08      AD24-03.06 2071024C  
+
+AOR46/                          AD02-07.08      AD44-05.08 2071044C  
+
+DIR25A/                         AD02-03.08      AD25-04.12 2071025C  
+
+DIR25B/                         AD02-03.08      AD25-04.26 2071025C  
+
+DIR26A/                         AD02-04.08      AD26-04.12 2071026C  
+
+DIR26B/                         AD02-04.08      AD26-04.26 2071026C  
+
+DIR28A/                         AD02-04.08      AD28-04.12 2071028C  
+
+DIR28B/                         AD02-05.08      AD28-04.26 2071028C  
+
+DIR31A/                         AD02-14.08      AD31-04.12 2071031C  
+
+DIR31B/                         AD02-15.08      AD31-05.26 2071031C  
+
+DIR32A/                         AD02-08.08      AD32-04.14 2071032C  
+
+DIR32B/                         AD02-08.08      AD32-04.22 2071032C  
+
+DIR33A/                         AD02-09.08      AD33-04.11 2071033C  
+
+DIR33B/                         AD02-09.08      AD33-04.19 2071033C  
+
+DIR34A/                         AD02-10.08      AD34-05.13 2071034C  
+
+DIR34B/                         AD02-10.08      AD34-04.23 2071034C  
+
+DIR35A/                         AD02-10.08      AD35-05.14 2071035C  
+
+DIR35B/                         AD02-11.08      AD35-04.23 2071035C  
+
+DIR36A/                         AD02-11.08      AD36-06.17 2071036C  
+
+DIR36B/                         AD02-12.08      AD36-07.27 2071036C  
+
+DOR29A/                         AD02-05.08      AD29-14.14 2071029C  
+
+DOR29B/                         AD02-06.08      AD29-14.30 2071029C  
+
+DOR38A/                         AD02-12.08      AD38-14.14 2071038C  
+
+DOR38B/                         AD02-12.08      AD38-15.25 2071038C  
+
+DOR39A/                         AD02-13.08      AD39-14.13 2071039C  
+
+DOR39B/                         AD02-13.08      AD39-14.29 2071039C  
+
+DOR40/                          AD02-14.08      AD40-14.13 2071040C  
+
+DOR43/                          AD02-14.08      AD41-14.14 2071041C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071003C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AI1-3/131LT103                  AD03-03.21      AD47-06.07 2071047C  
+
+AI10-3/131LT171                 AD03-10.21      AD82-09.07 2071082C  
+
+AI11-3/131LT173                 AD03-12.21      AD83-09.07 2071083C  
+
+AI12-SL3/131SC-120              AD03-12.21      AD53-11.07 2071053C  
+
+AI14-SL3/131SC-109              AD03-14.21      AD52-05.07 2071052C  
+
+AI15-SL3/131LT-104              AD03-14.21      AD47-13.07 2071047C  
+
+AI2-3/131AT104                  AD03-04.21      AD50-09.07 2071050C  AD49-08.07 2071049C  AD48-05.07 2071048C  
+
+AI3-3/131CT-254                 AD03-04.21      AD95-10.07 2071095C  
+
+AI4-3/131WT120                  AD03-05.21      AD54-09.07 2071054C  
+
+AI5-SL3/131TT-456               AD03-05.21      ADC4-09.07 20710C4C  
+
+AI6-3/131WT147                  AD03-07.21      AD70-09.07 2071070C  
+
+AI7-3/131FT155                  AD03-08.21      AD74-09.07 2071074C  
+
+AI8-3/131LT160                  AD03-09.21      AD77-09.07 2071077C  
+
+AI9-3/131FT163                  AD03-09.21      AD78-09.07 2071078C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071003C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071004C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AI1-4/131LT215                  AD04-03.21      AD91-04.07 2071091C  
+
+AI10-4/131IT-M106               AD04-10.21      ADH3-15.07 20710H3C  
+
+AI11-4/131IT-M107               AD04-12.21      ADH5-09.07 20710H5C  ADH4-16.07 20710H4C  
+
+AI12-SL4/131AI-555              AD04-12.21      ADT5-09.07 20710T5C  ADD5-08.07 20710D5C  
+
+AI13-4/131NT-256                AD04-13.21      AD96-08.07 2071096C  
+
+AI15-4/131WT-130                AD04-13.21      AD60-09.07 2071060C  
+
+AI2-4/131LT216                  AD04-04.21      AD91-11.07 2071091C  
+
+AI3-4/131AT211                  AD04-04.21      AD89-05.07 2071089C  
+
+AI4-4/131NT-255                 AD04-05.21      AD96-03.07 2071096C  
+
+AI6-4/131IT-M102                AD04-07.21      ADG2-09.07 20710G2C  ADG1-17.07 20710G1C  
+
+AI7-4/131IT-M103                AD04-08.21      ADG5-09.07 20710G5C  ADG4-17.07 20710G4C  
+
+AI8-4/131NT-257                 AD04-09.21      AD96-13.07 2071096C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071004C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071005C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DI1-5A/131ZSH121                AD05-05.12      AD55-08.07 2071055C  
+
+DI1-5B/131LSL145A               AD05-05.26      AD67-08.07 2071067C  
+
+DI2-5A/131ZSL121                AD05-06.12      AD55-10.07 2071055C  
+
+DI2-5B/131ZSO153                AD05-06.26      AD72-08.07 2071072C  
+
+DI3-5A/131LSL123A               AD05-07.12      ADG1-16.07 20710G1C  AD56-08.07 2071056C  
+
+DI3-5B/131ZSC153                AD05-07.26      AD72-11.07 2071072C  
+
+DI4-5A/131ZSO156                AD05-08.12      AD75-08.07 2071075C  
+
+DI5-5A/131ZSC156                AD05-09.12      AD75-11.07 2071075C  
+
+DI5-5B/131LSHH180               AD05-09.26      AD85-08.07 2071085C  
+
+DI6-5A/131ZSO180A               AD05-10.12      AD86-08.07 2071086C  
+
+DI6-5B/131LSHH181               AD05-10.26      AD88-08.07 2071088C  
+
+DI7-5A/131ZSO180B               AD05-11.12      AD87-08.07 2071087C  
+
+DI7-5B/131XS107alrm             AD05-11.26      ADH6-04.07 20710H6C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071005C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071006C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DI1-6A/131ZSH148                AD06-05.12      AD71-08.07 2071071C  
+
+DI1-6B/131LSHH215               AD06-05.26      AD91-07.07 2071091C  
+
+DI2-6A/131ZSL148                AD06-06.12      AD71-10.07 2071071C  
+
+DI2-6B/131LSHH216               AD06-06.26      AD91-14.07 2071091C  
+
+DI3-6A/131ZSL131                AD06-07.12      AD61-10.07 2071061C  
+
+DI3-6B/131XS102alrm             AD06-07.26      ADG3-03.07 20710G3C  
+
+DI4-6A/131ZSH131                AD06-08.12      AD61-08.07 2071061C  
+
+DI5-6A/131LSL133A               AD06-09.12      AD62-08.07 2071062C  
+
+DI5-6B/13WT102                  AD06-09.26      ADG1-15.07 20710G1C  
+
+DI6-6A/131LSL175                AD06-10.12      AD84-08.07 2071084C  
+
+DI6-6B/131LSL-145B              AD06-10.26      AD68-08.07 2071068C  
+
+DI7-6B/131XS102                 AD06-11.26      ADG1-16.07 20710G1C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071006C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071007C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DI1-7A/131XS-M101rf             AD07-05.12      ADG0-08.07 20710G0C  
+
+DI1-SL7B/131FS-120              AD07-05.26      AD53-09.07 2071053C  
+
+DI2-7A/131XS-M101f              AD07-06.12      ADG0-05.07 20710G0C  
+
+DI2-7B/131XS-M103CrfL           AD07-06.26      ADG6-14.07 20710G6C  
+
+DI3-7A/131XS-M102rf             AD07-07.12      ADG3-12.07 20710G3C  ADG1-08.07 20710G1C  
+
+DI3-7B/131XS-M103Cf             AD07-07.26      ADG6-09.07 20710G6C  
+
+DI4-7A/131XS-M102f              AD07-08.12      ADG1-05.07 20710G1C  
+
+DI4-7B/131XS-M104rf             AD07-08.26      ADG7-08.07 20710G7C  AD72-14.07 2071072C  AD58-15.07 2071058C  AD52-03.07 2071052C  
+                                                
+DI5-7A/131XS-M102lst            AD07-09.12      ADG1-11.07 20710G1C  
+
+DI5-7B/131XS-M104f              AD07-09.26      ADG7-05.07 20710G7C  
+
+DI6-7A/131XS-M102lsp            AD07-10.12      ADG1-14.07 20710G1C  
+
+DI6-7B/131XS-M104lst            AD07-10.26      ADG7-11.07 20710G7C  
+
+DI7-7A/131XS-M103CrfH           AD07-11.12      ADG6-11.07 20710G6C  
+
+DI7-7B/131XS-M104lsp            AD07-11.26      ADG7-14.07 20710G7C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071007C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071008C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DI1-8A/131XS-M105rf             AD08-05.12      ADG9-08.07 20710G9C  AD75-14.07 2071075C  AD63-15.07 2071063C  
+
+DI1-8B/131XS-M106lsp            AD08-05.26      ADH2-14.07 20710H2C  
+
+DI2-8A/131XS-M105f              AD08-06.12      ADG9-05.07 20710G9C  
+
+DI2-8B/131XS-M103rf             AD08-06.26      ADG6-15.07 20710G6C  ADG4-08.07 20710G4C  
+
+DI3-8A/131XS-M105lst            AD08-07.12      ADG9-11.07 20710G9C  
+
+DI3-8B/131XS-M103f              AD08-07.26      ADG4-05.07 20710G4C  
+
+DI4-8A/131XS-M105lsp            AD08-08.12      ADG9-14.07 20710G9C  
+
+DI4-8B/131XS-M103lst            AD08-08.26      ADG4-11.07 20710G4C  
+
+DI5-8A/131XS-M106rf             AD08-09.12      ADH2-08.07 20710H2C  AD65-15.07 2071065C  
+
+DI5-8B/131XS-M103lsp            AD08-09.26      ADG4-14.07 20710G4C  
+
+DI6-8A/131XS-M106f              AD08-10.12      ADH2-05.07 20710H2C  
+
+DI6-8B/131XS-M121rf             AD08-10.26      ADI8-08.07 20710I8C  ADH9-16.07 20710H9C  ADH7-16.07 20710H7C  
+
+DI7-8A/131XS-M106lst            AD08-11.12      ADH2-11.07 20710H2C  
+
+DI7-8B/131XS-M121f              AD08-11.26      ADI8-05.07 20710I8C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071008C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071009C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071009C.CAD Inputs
+------------------------------
+DO1-9A/131HS-217                AD09-05.05      AD92-02.26 2071092C  
+
+DO1-9B/131XY-M506mc             AD09-05.21      ADS1-08.26 20710S1C  
+
+DO2-9A/131XY-M102mc             AD09-06.05      ADG1-08.26 20710G1C  
+
+DO2-9B/131XY-M107mc             AD09-06.21      ADH4-08.26 20710H4C  
+
+DO3-9A/131XY-M105mc             AD09-07.05      ADG9-08.26 20710G9C  
+
+DO3-9B/131XY-M507mc             AD09-07.21      ADS3-08.26 20710S3C  
+
+DO4-9A/131XY-M103CmcL           AD09-08.05      ADG6-08.26 20710G6C  
+
+DO4-9B/131XY-M508mc             AD09-08.21      ADS5-08.26 20710S5C  
+
+DO5-9A/131XY-M103CmcH           AD09-09.05      ADG6-10.26 20710G6C  
+
+DO5-9B/131XY-M114mc             AD09-09.21      ADI4-08.26 20710I4C  
+
+DO6-9A/131XY-M104mc             AD09-10.05      ADG7-08.26 20710G7C  
+
+DO6-9B/131XY-M117mc             AD09-10.21      ADI5-08.26 20710I5C  
+
+DO7-9A/131XY-M106mc             AD09-11.05      ADH2-08.26 20710H2C  
+
+DO7-9B/131XY-M120mc             AD09-11.21      ADI7-08.26 20710I7C  
+
+DO8-9B/131XY-M109mc             AD09-12.21      ADH7-08.26 20710H7C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071010C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071010C.CAD Inputs
+------------------------------
+DO1-10A/131XY-M121mc            AD10-05.05      ADI8-08.26 20710I8C  
+
+DO1-10B/131XY-M103mc            AD10-05.21      ADG4-08.26 20710G4C  
+
+DO2-10A/131XY-M122mc            AD10-06.05      ADI9-13.26 20710I9C  
+
+DO2-10B/131XY-M110mc            AD10-06.21      ADH9-08.26 20710H9C  
+
+DO3-10A/131XY-M123mc            AD10-07.05      ADJ1-08.26 20710J1C  
+
+DO3-10B/131XY-M102CmcL          AD10-07.21      ADG3-08.26 20710G3C  
+
+DO4-10A/131XY-M125mc            AD10-08.05      ADJ2-08.26 20710J2C  
+
+DO4-10B/131XY-M102CmcH          AD10-08.21      ADG3-10.26 20710G3C  
+
+DO5-10B/131XY-M112mc            AD10-09.21      ADI2-08.26 20710I2C  
+
+DO5-SL10A/131HV-105             AD10-09.05      ADH0-03.26 20710H0C  
+
+DO6-10A/131XY-M210mc            AD10-10.05      ADJ9-08.26 20710J9C  
+
+DO6-10B/131XY-M107CmcH          AD10-10.21      ADH6-08.26 20710H6C  
+
+DO7-10A/131XY-M211mc            AD10-11.05      ADK0-08.26 20710K0C  
+
+DO7-10B/131XY-M107CmcL          AD10-11.21      ADH6-10.26 20710H6C  
+
+DO8-SL10A/131HV-106             AD10-12.05      ADH3-13.26 20710H3C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071011C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071011C.CAD Inputs
+------------------------------
+DO1-11/131LV103                 AD11-05.18      AD47-06.26 2071047C  
+
+DO2-11/131EV108                 AD11-06.18      AD51-08.26 2071051C  
+
+DO3-11/131HV127                 AD11-07.18      AD59-08.26 2071059C  
+
+DO5-11/131HV142                 AD11-09.18      AD66-08.26 2071066C  
+
+DO6-11/131HV170A                AD11-10.18      AD80-08.26 2071080C  
+
+DO7-11/131HV170B                AD11-11.18      AD81-08.26 2071081C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071012C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071012C.CAD Inputs
+------------------------------
+DO1-12/131HV153                 AD12-05.18      AD72-08.26 2071072C  
+
+DO2-12/131HV154                 AD12-06.18      AD73-08.26 2071073C  
+
+DO3-12/131HV180A                AD12-07.18      AD86-08.26 2071086C  
+
+DO5-12/131LV215                 AD12-09.18      AD91-04.26 2071091C  
+
+DO6-12/131LV216                 AD12-10.18      AD91-11.26 2071091C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071013C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071013C.CAD Inputs
+------------------------------
+DO1-13/131HV156                 AD13-05.18      AD75-08.26 2071075C  
+
+DO2-13/131HV157                 AD13-06.18      AD76-08.26 2071076C  
+
+DO3-13/131HV165                 AD13-07.18      AD79-08.26 2071079C  
+
+DO4-13/131HV180B                AD13-08.18      AD87-08.26 2071087C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071014C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AI10-14/131FT-105               AD14-10.21      ADH0-11.07 20710H0C  
+
+AI11-14/131AT-253               AD14-12.21      AD95-06.07 2071095C  
+
+AI12-14/131ST-511               AD14-12.21      ADC7-06.07 20710C7C  
+
+AI13-14/131FT-250               AD14-13.21      AD93-08.07 2071093C  
+
+AI14-14/131FT-251               AD14-14.21      AD94-04.07 2071094C  
+
+AI15-14/131FT-252               AD14-14.21      AD94-08.07 2071094C  
+
+AI2-14/131IT-M122               AD14-04.21      ADJ0-09.07 20710J0C  
+
+AI3-SL14/131ST-M105             AD14-04.21      ADH1-03.07 20710H1C  
+
+AI4-SL14/131IT-M105             AD14-05.21      ADH0-15.07 20710H0C  
+
+AI5-SL14/131ST-M110             AD14-05.21      ADI1-06.07 20710I1C  
+
+AI6-SL14/131IT-M110             AD14-07.21      ADI0-09.07 20710I0C  
+
+AI7-14/131IT-M507               AD14-08.21      ADS4-08.07 20710S4C  
+
+AI8-14/131IT-M508               AD14-09.21      ADS6-08.07 20710S6C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071014C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071015C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO10FB-15/131AV104C             AD15-07.20      AD49-10.07 2071049C  
+
+AO11FB-15/131HV126              AD15-08.20      AD58-12.07 2071058C  
+
+AO12FB-15/131HV141              AD15-09.20      AD65-12.07 2071065C  
+
+AO13FB-15/131FV163              AD15-11.20      AD78-11.07 2071078C  
+
+AO2FB-15/131SY-M117             AD15-06.06      ADI6-09.07 20710I6C  
+
+AO3FB-15/131SV-106              AD15-07.06      ADH3-08.07 20710H3C  
+
+AO4FB-15/131SV-109              AD15-08.06      AD52-11.07 2071052C  
+
+AO5FB-15/131AV-105              AD15-09.06      AD50-11.07 2071050C  
+
+AO7FB-15/131SV-511              AD15-12.06      ADC7-10.07 20710C7C  
+
+AO8FB-15/131AV104A              AD15-05.20      AD48-07.07 2071048C  
+
+AO9FB-15/131AV104B              AD15-06.20      AD48-13.07 2071048C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071015C.CAD Inputs
+------------------------------
+AO10-15/131AV104C               AD15-06.20      AD49-08.26 2071049C  
+
+AO11-15/131HV126                AD15-08.20      AD58-09.26 2071058C  
+
+AO12-15/131HV141                AD15-09.20      AD65-09.26 2071065C  
+
+AO13-15/131FV163                AD15-10.20      AD78-09.26 2071078C  
+
+AO2-15/131SY-M117               AD15-05.06      ADI6-07.26 20710I6C  
+
+AO3-15/131SV-106                AD15-06.06      ADH3-06.26 20710H3C  
+
+AO4-15/131SV-109                AD15-08.06      AD52-09.26 2071052C  
+
+AO5-15/131AV-105                AD15-09.06      AD50-09.26 2071050C  
+
+AO7-15/131SV-511                AD15-11.06      ADC7-08.26 20710C7C  
+
+AO8-15/131AV104A                AD15-04.20      AD48-05.26 2071048C  
+
+AO9-15/131AV104B                AD15-05.20      AD48-11.26 2071048C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071016C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO12FB-16/131HV136              AD16-09.20      AD63-12.07 2071063C  
+
+AO1FB-SL16/131SV-105            AD16-05.06      ADH1-09.07 20710H1C  
+
+AO2FB-SL16/131SV-110            AD16-06.06      ADI1-09.07 20710I1C  
+
+AO3FB-SL16/131SV-120            AD16-07.06      AD53-14.07 2071053C  
+
+AO4FB-SL16/431LV-247            AD16-08.06      AD92-09.07 2071092C  
+
+AO5FB-16/131AV211A              AD16-09.06      AD89-07.07 2071089C  
+
+AO6FB-16/131AV211B              AD16-11.06      AD89-13.07 2071089C  
+
+AO7FB-16/131SY-M146             AD16-12.06      AD69-09.07 2071069C  
+
+AO9FB-16/131SY-M505             AD16-06.20      ADC5-09.07 20710C5C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071016C.CAD Inputs
+------------------------------
+AO1-SL16/131SV-105              AD16-04.06      ADH1-07.26 20710H1C  
+
+AO12-16/131HV136                AD16-09.20      AD63-09.26 2071063C  
+
+AO2-SL16/131SV-110              AD16-05.06      ADI1-07.26 20710I1C  
+
+AO3-SL16/131SV-120              AD16-06.06      AD53-11.26 2071053C  
+
+AO4-SL16/431LV-247              AD16-08.06      AD92-07.26 2071092C  
+
+AO5-16/131AV211A                AD16-09.06      AD89-05.26 2071089C  
+
+AO6-16/131AV211B                AD16-10.06      AD89-11.26 2071089C  
+
+AO7-16/131SY-M146               AD16-11.06      AD69-07.26 2071069C  
+
+AO9-16/131SY-M505               AD16-05.20      ADC5-07.26 20710C5C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071017C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DI1-17A/131XS-M107rf            AD17-05.12      ADH6-15.07 20710H6C  ADH4-08.07 20710H4C  
+
+DI2-17A/131XS-M107f             AD17-06.12      ADH4-05.07 20710H4C  
+
+DI2-17B/131XS-M120rf            AD17-06.26      ADI8-11.07 20710I8C  ADI7-08.07 20710I7C  
+
+DI3-17A/131XS-M107lst           AD17-07.12      ADH4-11.07 20710H4C  
+
+DI3-17B/131XS-M120f             AD17-07.26      ADI7-05.07 20710I7C  
+
+DI4-17A/131XS-M107lsp           AD17-08.12      ADH4-14.07 20710H4C  
+
+DI5-17A/131XS-M110rf            AD17-09.12      ADH9-08.07 20710H9C  
+
+DI5-17B/131XS-M121jog           AD17-09.26      ADI8-06.07 20710I8C  
+
+DI6-17A/131XS-M110f             AD17-10.12      ADH9-05.07 20710H9C  
+
+DI6-17B/131XS-M122rf            AD17-10.26      ADI9-13.07 20710I9C  ADI7-16.07 20710I7C  
+
+DI7-17A/131XS-M110lst           AD17-11.12      ADH9-11.07 20710H9C  
+
+DI7-17B/131XS-M122f             AD17-11.26      ADI9-11.07 20710I9C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071017C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071018C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DI1-18A/131XS-M107CrfH          AD18-05.12      ADH6-11.07 20710H6C  
+
+DI1-18B/131XS-M123rf            AD18-05.26      ADJ1-08.07 20710J1C  
+
+DI2-18A/131XS-M107Crfl          AD18-06.12      ADH6-14.07 20710H6C  
+
+DI2-18B/131XS-M123f             AD18-06.26      ADJ1-05.07 20710J1C  
+
+DI3-18A/131XS-M107Cf            AD18-07.12      ADH6-08.07 20710H6C  
+
+DI3-18B/131XS-M125rf            AD18-07.26      ADJ2-08.07 20710J2C  ADI9-16.07 20710I9C  
+
+DI4-18A/131XS-M109rf            AD18-08.12      ADH7-08.07 20710H7C  
+
+DI4-18B/131XS-M125f             AD18-08.26      ADJ2-05.07 20710J2C  
+
+DI5-18A/131XS-M109f             AD18-09.12      ADH7-05.07 20710H7C  
+
+DI5-18B/131XS-M506rf            AD18-09.26      ADS1-08.07 20710S1C  
+
+DI6-18A/131XS-M109lst           AD18-10.12      ADH7-11.07 20710H7C  
+
+DI6-18B/131XS-M507rf            AD18-10.26      ADS3-08.07 20710S3C  
+
+DI7-18B/131XS-M508rf            AD18-11.26      ADS5-08.07 20710S5C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071018C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071019C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DI1-19B/131XS-M112jog           AD19-05.26      ADI2-14.07 20710I2C  
+
+DI1-SL19A/131LSH-556            AD19-05.12      ADD5-11.07 20710D5C  
+
+DI2-19B/131XS-M113rf            AD19-06.26      ADI3-08.07 20710I3C  
+
+DI3-19A/131XS-M211rf            AD19-07.12      ADK0-08.07 20710K0C  
+
+DI4-19A/131XS-M211f             AD19-08.12      ADK0-05.07 20710K0C  
+
+DI4-19B/131XS-M114rf            AD19-08.26      ADI4-08.07 20710I4C  
+
+DI5-19A/131XS-M112rf            AD19-09.12      ADI2-08.07 20710I2C  
+
+DI5-19B/131XS-M114f             AD19-09.26      ADI4-05.07 20710I4C  
+
+DI6-19A/131XS-M112f             AD19-10.12      ADI2-05.07 20710I2C  
+
+DI6-19B/131XS-M117rf            AD19-10.26      ADI6-12.07 20710I6C  ADI5-08.07 20710I5C  
+
+DI7-19A/131SSL-M112             AD19-11.12      ADI2-16.07 20710I2C  
+
+DI7-19B/131XS-M117f             AD19-11.26      ADI5-05.07 20710I5C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071019C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071020C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DI1-20A/131ZSC126               AD20-05.08      AD58-02.07 2071058C  
+
+DI1-20B/131UPS102               AD20-05.16      ADY2-08.07 20710Y2C  
+
+DI2-20A/131ZSC136               AD20-06.08      AD63-02.07 2071063C  
+
+DI2-20B/131LSL123C              AD20-06.16      AD57-08.07 2071057C  
+
+DI3-20A/131ZSC141               AD20-07.08      AD65-02.07 2071065C  
+
+DI3-20B/131XS-M102CrfH          AD20-07.16      ADG3-11.07 20710G3C  
+
+DI4-20A/131XS103alrm            AD20-08.08      ADG6-04.07 20710G6C  
+
+DI4-20B/131XS-M102CrfL          AD20-08.16      ADG3-14.07 20710G3C  
+
+DI5-20B/131XS-M102Cf            AD20-09.16      ADG3-09.07 20710G3C  
+
+DI6-20A/131XS103                AD20-10.08      ADG4-15.07 20710G4C  
+
+DI6-20B/131XS103                AD20-10.16      ADG4-16.07 20710G4C  
+
+DI7-20A/131LSL123B              AD20-11.08      AD57-12.07 2071057C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071020C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071021C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AI10-21/131AT-554               AD21-10.21      ADD4-08.07 20710D4C  
+
+AI11-21/131FT0427               AD21-12.21      ADB0-09.07 20710B0C  
+
+AI12-21/131FT0437               AD21-12.21      ADB4-09.07 20710B4C  
+
+AI13-21/131WT0412               AD21-13.21      ADA6-09.07 20710A6C  
+
+AI14-21/131WT0422               AD21-14.21      ADA9-09.07 20710A9C  
+
+AI2-21/131FT-553                AD21-04.21      ADD3-08.07 20710D3C  
+
+AI3-21/131WT-432                AD21-04.21      ADB3-09.07 20710B3C  
+
+AI5-21/131FT-312                AD21-05.21      AD98-08.07 2071098C  
+
+AI6-21/131FT-550                AD21-07.21      ADD1-05.07 20710D1C  
+
+AI7-21/131FT-551                AD21-08.21      ADD1-12.07 20710D1C  
+
+AI8-21/131FT-552                AD21-09.21      ADD2-08.07 20710D2C  
+
+AI9-21/131LT-301                AD21-09.21      AD97-09.07 2071097C  
+
+AIR21/                          AD21-02.21      AD02-01.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071021C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071022C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AI10-22/131PT0380               AD22-10.21      ADA0-09.07 20710A0C  
+
+AI11-22/131IT-M407              AD22-12.21      ADN9-09.07 20710N9C  
+
+AI12-22/131IT-M416              AD22-12.21      ADO4-09.07 20710O4C  
+
+AI13-22/131IT-M417              AD22-13.21      ADO6-09.07 20710O6C  
+
+AI14-22/131IT-M421              AD22-14.21      ADP1-09.07 20710P1C  
+
+AI15-22/131LT-454               AD22-14.21      ADC0-09.07 20710C0C  
+
+AI2-22/131LT0453                AD22-03.21      ADB8-09.07 20710B8C  
+
+AI3-22/131TT0455                AD22-04.21      ADC2-09.07 20710C2C  
+
+AI4-22/131LT381                 AD22-05.21      ADL6-13.07 20710L6C  ADA1-09.07 20710A1C  
+
+AI5-22/131LT382                 AD22-05.21      ADL9-16.07 20710L9C  ADA2-09.07 20710A2C  
+
+AI6-22/131AT0450                AD22-07.21      ADB6-05.07 20710B6C  
+
+AI7-22/131FT0451                AD22-08.21      ADZ2-13.07 20710Z2C  ADB7-09.07 20710B7C  
+
+AI8-22/131IT-M402               AD22-09.21      ADM9-09.07 20710M9C  
+
+AI9-22/131IT-M405               AD22-09.21      ADN5-09.07 20710N5C  
+
+AIR22/                          AD22-02.21      AD02-02.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071022C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071023C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AI1-SL23/131TT-0317             AD23-03.21      AD99-09.07 2071099C  
+
+AI10-23/131IT-M404              AD23-10.21      ADN3-09.07 20710N3C  
+
+AI11-23/131IT-M406              AD23-12.21      ADN7-09.07 20710N7C  
+
+AI12-23/131IT-M415              AD23-12.21      ADO2-09.07 20710O2C  
+
+AI13-23/131IT-M401              AD23-13.21      ADM7-09.07 20710M7C  
+
+AI14-23/131IT-M342A             AD23-14.21      ADM1-05.07 20710M1C  ADL9-12.07 20710L9C  
+
+AI14-23/131IT-M420              AD23-14.21      ADO9-15.07 20710O9C  
+
+AI15-23/131IT-M424              AD23-15.21      ADP3-15.07 20710P3C  
+
+AI2-23/131ST-420                AD23-04.21      ADO9-01.07 20710O9C  
+
+AI3-23/131ST-424                AD23-04.21      ADP3-01.07 20710P3C  
+
+AI4-23/131IT-M342B              AD23-05.21      ADM1-11.07 20710M1C  ADL9-13.07 20710L9C  
+
+AI5-23/131IT-M341B              AD23-05.21      ADL7-11.07 20710L7C  ADL6-12.07 20710L6C  
+
+AI6-23/131IT-M341A              AD23-07.21      ADL7-04.07 20710L7C  ADL6-11.07 20710L6C  
+
+AI9-23/131IT-M403               AD23-09.21      ADN1-09.07 20710N1C  
+
+AIR23/                          AD23-02.21      AD02-02.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071023C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071024C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO10FB-24/131SV-420             AD24-07.20      ADO9-08.07 20710O9C  
+
+AO11FB-24/131SV-424             AD24-08.20      ADP3-08.07 20710P3C  
+
+AO12FB-24/131FV0417             AD24-09.20      ADA7-11.07 20710A7C  
+
+AO13FB-24/131FV0427             AD24-11.20      ADB0-11.07 20710B0C  
+
+AO14FB-24/131FV0437             AD24-12.20      ADB4-11.07 20710B4C  
+
+AO1FB-24/131LV381               AD24-05.06      ADA1-11.07 20710A1C  
+
+AO2FB-24/131FV-312              AD24-06.06      AD98-11.07 2071098C  
+
+AO4FB-24/131AV0450A             AD24-08.06      ADB6-07.07 20710B6C  
+
+AO5FB-24/131AV0450B             AD24-09.06      ADB6-13.07 20710B6C  
+
+AO6FB-24/131LV382               AD24-11.06      ADA2-11.07 20710A2C  
+
+AO8FB-24/131SY-M312             AD24-05.20      ADK3-09.07 20710K3C  
+
+AO9FB-24/131SY-M313             AD24-06.20      ADK5-09.07 20710K5C  
+
+AOR24/                          AD24-03.06      AD02-02.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071024C.CAD Inputs
+------------------------------
+AO1-24/131LV381                 AD24-04.06      ADA1-09.26 20710A1C  
+
+AO10-24/131SV-420               AD24-06.20      ADO9-06.26 20710O9C  
+
+AO11-24/131SV-424               AD24-08.20      ADP3-06.26 20710P3C  
+
+AO12-24/131FV0417               AD24-09.20      ADA7-09.26 20710A7C  
+
+AO13-24/131FV0427               AD24-10.20      ADB0-09.26 20710B0C  
+
+AO14-24/131FV0437               AD24-11.20      ADB4-09.26 20710B4C  
+
+AO2-24/131FV-312                AD24-05.06      AD98-08.26 2071098C  
+
+AO4-24/131AV0450A               AD24-08.06      ADB6-05.26 20710B6C  
+
+AO5-24/131AV0450B               AD24-09.06      ADB6-11.26 20710B6C  
+
+AO6-24A/131LV382                AD24-10.06      ADA2-09.26 20710A2C  
+
+AO8-24/131SY-M312               AD24-04.20      ADK3-07.26 20710K3C  
+
+AO9-24/131SY-M313               AD24-05.20      ADK5-07.26 20710K5C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071025C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DI1-25A/131XS-M310rf            AD25-05.12      ADK1-08.07 20710K1C  
+
+DI1-25B/131XS-M404lst           AD25-05.26      ADN2-11.07 20710N2C  
+
+DI2-25A/131XS-M310f             AD25-06.12      ADK1-05.07 20710K1C  
+
+DI2-25B/131XS-M404lsp           AD25-06.26      ADN2-14.07 20710N2C  
+
+DI3-25A/131XS-M312rf            AD25-07.12      ADK3-12.07 20710K3C  ADK2-09.07 20710K2C  AD98-01.07 2071098C  AD98-13.07 2071098C  
+                                                
+DI3-25B/131XS-M405lst           AD25-07.26      ADN4-11.07 20710N4C  
+
+DI4-25B/131XS-M405lsp           AD25-08.26      ADN4-14.07 20710N4C  
+
+DI5-25A/131XS-M313rf            AD25-09.12      ADK5-12.07 20710K5C  ADK4-08.07 20710K4C  AD98-02.07 2071098C  AD98-14.07 2071098C  
+                                                
+DI5-25B/131XS-M415lst           AD25-09.26      ADO1-11.07 20710O1C  
+
+DI6-25A/131XS-M313f             AD25-10.12      ADK4-05.07 20710K4C  
+
+DI6-25B/131XS-M415lsp           AD25-10.26      ADO1-14.07 20710O1C  
+
+DI7-25A/131XS-M330rf            AD25-12.12      ADL4-08.07 20710L4C  
+
+DI7-25B/131XS-M330f             AD25-11.26      ADL4-06.07 20710L4C  
+
+DI7-SL25A/131AUX-M418           AD25-11.12      ADB5-03.08 20710B5C  
+
+DIR25A/                         AD25-04.12      AD02-03.08 2071002C  
+
+DIR25B/                         AD25-04.26      AD02-03.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071025C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071026C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DI1-26A/131XS-M201rf            AD26-05.12      ADJ3-08.07 20710J3C  
+
+DI1-26B/131XS-M342f             AD26-05.26      ADL9-04.07 20710L9C  
+
+DI2-26A/131XS-M201f             AD26-06.12      ADJ3-05.07 20710J3C  
+
+DI2-26B/131XS-M342rf            AD26-06.26      ADZ8-08.07 20710Z8C  ADM0-07.05 20710M0C  
+
+DI3-26A/131XS-M202rf            AD26-07.12      ADJ4-08.07 20710J4C  
+
+DI3-26B/131XS-SPARE             AD26-07.26      ADZ8-05.07 20710Z8C  
+
+DI4-26A/131XS-M202f             AD26-08.12      ADJ4-05.07 20710J4C  
+
+DI4-26B/131XS-M342rf            AD26-08.26      ADL9-08.07 20710L9C  
+
+DI5-26A/131XS-M203rf            AD26-09.12      ADJ5-08.07 20710J5C  
+
+DI6-26A/131XS-M203f             AD26-10.12      ADJ5-05.07 20710J5C  
+
+DI6-26B/131XS-M416lst           AD26-10.26      ADO3-11.07 20710O3C  
+
+DI7-26A/131XS-M312f             AD26-11.12      ADK2-06.07 20710K2C  
+
+DI7-26B/131XS-M416lsp           AD26-11.26      ADO3-14.07 20710O3C  
+
+DIR26A/                         AD26-04.12      AD02-04.08 2071002C  
+
+DIR26B/                         AD26-04.26      AD02-04.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071026C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071028C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DI1-28A/131XS-M321rf            AD28-05.12      ADK6-08.07 20710K6C  
+
+DI1-28B/131XS-M327f             AD28-05.26      ADL1-05.07 20710L1C  
+
+DI2-28A/131XS-M321f             AD28-06.12      ADK6-05.07 20710K6C  
+
+DI2-28B/131XS-M401rf            AD28-06.26      ADM6-08.07 20710M6C  
+
+DI3-28A/131XS-M322rf            AD28-07.12      ADK7-08.07 20710K7C  
+
+DI3-28B/131XS-M401f             AD28-07.26      ADM6-05.07 20710M6C  
+
+DI4-28A/131XS-M322f             AD28-08.12      ADK7-05.07 20710K7C  
+
+DI4-28B/131XS-M401lsp           AD28-08.26      ADM6-14.07 20710M6C  
+
+DI5-28A/131XS-M326rf            AD28-09.12      ADL0-08.07 20710L0C  
+
+DI5-28B/131XS-M401lst           AD28-09.26      ADZ2-08.07 20710Z2C  ADM6-11.07 20710M6C  
+
+DI6-28A/131XS-M326f             AD28-10.12      ADL0-05.07 20710L0C  
+
+DI6-28B/131XS-M327rf            AD28-10.26      ADL1-08.07 20710L1C  
+
+DI7-28B/131LSL411A              AD28-11.26      ADZ2-09.07 20710Z2C  ADA5-08.07 20710A5C  
+
+DIR28A/                         AD28-04.12      AD02-04.08 2071002C  
+
+DIR28B/                         AD28-04.26      AD02-05.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071028C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071029C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DOR29A/                         AD29-14.14      AD02-05.08 2071002C  
+
+DOR29B/                         AD29-14.30      AD02-06.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071029C.CAD Inputs
+------------------------------
+DO1-29A/131XY-M201mc            AD29-05.05      ADJ3-08.26 20710J3C  
+
+DO1-29B/131XY-M322mc            AD29-05.21      ADK7-08.26 20710K7C  
+
+DO2-29A/131XY-M202mc            AD29-06.05      ADJ4-08.26 20710J4C  
+
+DO2-29B/131XY-M326mc            AD29-06.21      ADL0-08.26 20710L0C  
+
+DO3-29A/131XY-M203mc            AD29-07.05      ADJ5-08.26 20710J5C  
+
+DO3-29B/131XY-M327mc            AD29-07.21      ADL1-08.26 20710L1C  
+
+DO4-SL29A/131HS-M418            AD29-08.05      ADB5-04.27 20710B5C  
+
+DO5-29A/131MC-SPARE             AD29-09.05      ADZ8-08.26 20710Z8C  
+
+DO5-29B/131XY-M401mc            AD29-09.21      ADM6-08.26 20710M6C  
+
+DO6-29A/131XY-M417mc            AD29-10.05      ADO5-08.26 20710O5C  
+
+DO6-29B/131XY-M406mc            AD29-10.21      ADN6-08.26 20710N6C  
+
+DO7-29A/131XY-M321mc            AD29-11.05      ADK6-08.26 20710K6C  
+
+DO7-29B/131XY-M342mc            AD29-11.21      ADL9-08.26 20710L9C  
+
+DO8-29A/131XY-M509Amc           AD29-12.05      ADZ2-08.26 20710Z2C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071031C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DI1-31A/131XS-M204rf            AD31-05.12      ADJ6-08.07 20710J6C  
+
+DI2-31A/131XS-M204f             AD31-06.12      ADJ6-05.07 20710J6C  
+
+DI2-31B/131XS-M341rf            AD31-06.26      ADZ6-08.07 20710Z6C  ADL6-08.07 20710L6C  
+
+DI3-31A/131XS-M205rf            AD31-07.12      ADJ7-08.07 20710J7C  
+
+DI3-31B/131XS-SPARE             AD31-07.26      ADZ6-05.07 20710Z6C  
+
+DI4-31A/131XS-M205f             AD31-08.12      ADJ7-05.07 20710J7C  
+
+DI4-31B/131XS-M341rf            AD31-08.26      ADZ7-05.07 20710Z7C  ADL8-07.05 20710L8C  ADL6-10.07 20710L6C  
+
+DI5-31A/131XS-M206rf            AD31-09.12      ADJ8-08.07 20710J8C  
+
+DI5-31B/131XS-M341f             AD31-09.26      ADZ7-08.07 20710Z7C  ADL6-06.07 20710L6C  
+
+DI6-31A/131XS-M206f             AD31-10.12      ADJ8-06.07 20710J8C  
+
+DI6-31B/131XS-M417lst           AD31-10.26      ADO5-11.07 20710O5C  
+
+DI7-31A/131XS-M342rf            AD31-11.12      ADL9-10.07 20710L9C  
+
+DI7-31B/131XS-M417lsp           AD31-11.26      ADO5-13.07 20710O5C  
+
+DIR31A/                         AD31-04.12      AD02-14.08 2071002C  
+
+DIR31B/                         AD31-05.26      AD02-15.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071031C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071032C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DI1-32A/131XS-M323rf            AD32-05.14      ADK8-08.07 20710K8C  
+
+DI1-32B/131XS-M329f             AD32-05.22      ADL3-05.07 20710L3C  
+
+DI2-32A/131XS-M323f             AD32-06.14      ADK8-05.07 20710K8C  
+
+DI2-32B/131XS-M331rf            AD32-06.22      ADL5-08.07 20710L5C  
+
+DI3-32A/131XS-M324rf            AD32-07.14      ADK9-08.07 20710K9C  
+
+DI3-32B/131XS-M404rf            AD32-07.22      ADN2-08.07 20710N2C  
+
+DI4-32A/131XS-M324f             AD32-08.14      ADK9-05.07 20710K9C  
+
+DI4-32B/131XS-M404f             AD32-08.22      ADN2-05.07 20710N2C  
+
+DI5-32A/131XS-M328rf            AD32-09.14      ADL2-08.07 20710L2C  
+
+DI5-32B/131XS-M331f             AD32-09.22      ADL5-05.07 20710L5C  
+
+DI6-32A/131XS-M328f             AD32-10.14      ADL2-05.07 20710L2C  
+
+DI6-32B/131XS-M417rf            AD32-10.22      ADO5-08.07 20710O5C  
+
+DI7-32A/131XS-M329rf            AD32-11.14      ADL3-08.07 20710L3C  
+
+DI7-32B/131XS-M417f             AD32-11.22      ADO5-06.07 20710O5C  
+
+DIR32A/                         AD32-04.14      AD02-08.08 2071002C  
+
+DIR32B/                         AD32-04.22      AD02-08.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071032C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071033C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DI1-33A/131XS-M402rf            AD33-05.11      ADM8-08.07 20710M8C  
+
+DI1-33B/131XS-M403lst           AD33-05.19      ADN0-11.07 20710N0C  
+
+DI2-33A/131XS-M402f             AD33-06.11      ADM8-05.07 20710M8C  
+
+DI3-33A/131XS-M402lsp           AD33-07.11      ADM8-14.07 20710M8C  
+
+DI3-33B/131XS-M509Lst           AD33-07.19      ADZ2-11.07 20710Z2C  
+
+DI4-33A/131XS-M402lst           AD33-08.11      ADM8-11.07 20710M8C  
+
+DI4-33B/131LSL421A              AD33-08.19      ADA8-08.07 20710A8C  
+
+DI5-33A/131XS-M403rf            AD33-09.11      ADN0-08.07 20710N0C  
+
+DI5-33B/131XS-M424              AD33-09.19      ADP3-12.07 20710P3C  
+
+DI6-33A/131XS-M403f             AD33-10.11      ADN0-05.07 20710N0C  
+
+DI6-33B/131XS-M420              AD33-10.19      ADO9-12.07 20710O9C  
+
+DI7-33A/131XS-M403lsp           AD33-11.11      ADN0-14.07 20710N0C  
+
+DI7-SL33B/131LSL-431A           AD33-11.19      ADZ3-12.07 20710Z3C  ADB2-08.07 20710B2C  
+
+DIR33A/                         AD33-04.11      AD02-09.08 2071002C  
+
+DIR33B/                         AD33-04.19      AD02-09.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071033C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071034C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DI1-34A/131XS-M406rf            AD34-05.13      ADN6-08.07 20710N6C  ADA7-14.07 20710A7C  
+
+DI1-34B/131XS-M420f             AD34-05.23      ADO8-06.07 20710O8C  
+
+DI2-34A/131XS-M406f             AD34-06.13      ADN6-05.07 20710N6C  
+
+DI3-34A/131XS-M509Lsp           AD34-07.13      ADZ2-11.07 20710Z2C  
+
+DI3-34B/131XS-M420lst           AD34-07.23      ADO8-11.07 20710O8C  
+
+DI4-34A/131AUX-M426rf           AD34-08.13      ADP6-08.07 20710P6C  
+
+DI4-34B/131XS-M424rf            AD34-08.23      ADP2-08.07 20710P2C  ADB4-14.07 20710B4C  AD99-11.07 2071099C  
+
+DI5-34A/131XS-M426f             AD34-09.13      ADP6-05.07 20710P6C  
+
+DI5-34B/131XS-M424f             AD34-09.23      ADP2-05.07 20710P2C  
+
+DI7-34A/131XS-M420rf            AD34-11.13      ADO8-08.07 20710O8C  ADB0-15.07 20710B0C  AD99-10.07 2071099C  
+
+DI7-34B/131XS-M424lst           AD34-11.23      ADP2-11.07 20710P2C  
+
+DIR34A/                         AD34-05.13      AD02-10.08 2071002C  
+
+DIR34B/                         AD34-04.23      AD02-10.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071034C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071035C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DI1-35A/131XS-M407rf            AD35-05.14      ADN8-08.07 20710N8C  ADA7-15.07 20710A7C  
+
+DI1-35B/131XS-M421f             AD35-05.23      ADP0-05.07 20710P0C  
+
+DI2-35A/131XS-M407f             AD35-06.14      ADN8-06.07 20710N8C  
+
+DI2-35B/131XS-M421lsp           AD35-06.23      ADP0-14.07 20710P0C  
+
+DI3-35B/131XS-M421lst           AD35-07.23      ADP0-11.07 20710P0C  
+
+DI3-SL35A/131XS-M418            AD35-07.14      ADB5-05.08 20710B5C  
+
+DI4-35A/131XS-M407lst           AD35-08.14      ADN8-11.07 20710N8C  
+
+DI4-35B/131XS-M425rf            AD35-08.23      ADP4-08.07 20710P4C  ADB4-15.07 20710B4C  AD99-11.07 2071099C  
+
+DI5-35A/131XS-M346rf            AD35-09.14      ADM5-08.07 20710M5C  
+
+DI5-35B/131XS-M425f             AD35-09.23      ADP4-05.07 20710P4C  
+
+DI6-35A/131XS-M346f             AD35-10.14      ADM5-06.07 20710M5C  
+
+DI6-35B/131XS-M425lsp           AD35-10.23      ADP4-14.07 20710P4C  
+
+DI7-35A/131XS-M421rf            AD35-11.14      ADP0-08.07 20710P0C  ADB0-15.07 20710B0C  AD99-10.07 2071099C  
+
+DI7-35B/131XS-M425lst           AD35-11.23      ADP4-11.07 20710P4C  
+
+DIR35A/                         AD35-05.14      AD02-10.08 2071002C  
+
+DIR35B/                         AD35-04.23      AD02-11.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071035C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071036C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DI1-36A/131LSHH0453             AD36-07.17      ADB9-08.07 20710B9C  
+
+DI1-36B/131XS-M405rf            AD36-07.27      ADN4-08.07 20710N4C  
+
+DI2-36A/131XS-M345f             AD36-08.17      ADM4-05.07 20710M4C  
+
+DI2-36B/131XS-M405f             AD36-08.27      ADN4-05.07 20710N4C  
+
+DI3-36A/131XS-M345rf            AD36-09.17      ADM4-08.07 20710M4C  
+
+DI3-36B/131XS-SPARE             AD36-09.27      ADZ7-16.07 20710Z7C  
+
+DI4-36A/131XS-M344f             AD36-10.17      ADM3-05.07 20710M3C  
+
+DI4-36B/131XS-M415rf            AD36-10.27      ADO1-08.07 20710O1C  
+
+DI5-36A/131XS-M344rf            AD36-11.17      ADM3-08.07 20710M3C  
+
+DI5-36B/131XS-M415f             AD36-11.27      ADO1-05.07 20710O1C  
+
+DI6-36B/131XS-M416rf            AD36-12.27      ADO3-08.07 20710O3C  
+
+DI7-36A/131XS-M343rf            AD36-13.17      ADM2-08.07 20710M2C  
+
+DI7-36B/131XS-M416f             AD36-13.27      ADO3-05.07 20710O3C  
+
+DI8-SL36A/131XS-M343f           AD36-14.17      ADM2-06.07 20710M2C  
+
+DIR36A/                         AD36-06.17      AD02-11.08 2071002C  
+
+DIR36B/                         AD36-07.27      AD02-12.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071036C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071038C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DOR38A/                         AD38-14.14      AD02-12.08 2071002C  
+
+DOR38B/                         AD38-15.25      AD02-12.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071038C.CAD Inputs
+------------------------------
+DO1-38A/131XY-M204mc            AD38-05.10      ADJ6-08.26 20710J6C  
+
+DO1-38B/131XY-M402mc            AD38-05.20      ADM8-08.26 20710M8C  
+
+DO2-38A/131XY-M205mc            AD38-06.10      ADJ7-08.26 20710J7C  
+
+DO2-38B/131XY-M403mc            AD38-06.20      ADN0-08.26 20710N0C  
+
+DO3-38A/131XY-M206mc            AD38-07.10      ADJ8-08.26 20710J8C  
+
+DO3-38B/131XY-M404mc            AD38-07.20      ADN2-08.26 20710N2C  
+
+DO4-38A/131XY-M341mc            AD38-08.10      ADL6-09.26 20710L6C  
+
+DO4-38B/131XY-M407mc            AD38-08.20      ADN8-08.26 20710N8C  
+
+DO5-38A/131XY-M341mc            AD38-09.10      ADL6-08.26 20710L6C  
+
+DO5-38B/131XY-M420mc            AD38-09.20      ADO8-08.26 20710O8C  
+
+DO6-38/131XY-M346mc             AD38-10.10      ADM5-08.26 20710M5C  
+
+DO6-38B/131XY-M424mc            AD38-10.20      ADP2-08.26 20710P2C  
+
+DO7-38A/131XY-M402le            AD38-11.10      ADM8-06.26 20710M8C  
+
+DO7-38B/131XY-M403le            AD38-11.20      ADN0-06.26 20710N0C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071039C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DOR39A/                         AD39-14.13      AD02-13.08 2071002C  
+
+DOR39B/                         AD39-14.29      AD02-13.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071039C.CAD Inputs
+------------------------------
+DO1-39A/131XY-M310mc            AD39-05.04      ADK1-08.26 20710K1C  
+
+DO1-39B/131XY-M331mc            AD39-05.20      ADL5-08.26 20710L5C  
+
+DO2-39A/131XY-M312mc            AD39-06.04      ADK2-09.26 20710K2C  
+
+DO2-39B/131XY-M405mc            AD39-06.20      ADN4-08.26 20710N4C  
+
+DO3-39A/131XY-M313mc            AD39-07.04      ADK4-08.26 20710K4C  
+
+DO3-39B/131XY-M415mc            AD39-07.20      ADO1-08.26 20710O1C  
+
+DO4-39A/131XY-M323mc            AD39-08.04      ADK8-08.26 20710K8C  
+
+DO4-39B/131XY-M416mc            AD39-08.20      ADO3-08.26 20710O3C  
+
+DO5-39A/131XY-M324mc            AD39-09.04      ADK9-08.26 20710K9C  
+
+DO5-39B/131XY-M426mc            AD39-09.20      ADP6-08.26 20710P6C  
+
+DO6-39A/131XY-M328mc            AD39-10.04      ADL2-08.26 20710L2C  
+
+DO6-39B/131XY-M421mc            AD39-10.20      ADP0-08.26 20710P0C  
+
+DO7-39A/131XY-M329mc            AD39-11.04      ADL3-08.26 20710L3C  
+
+DO7-39B/131XY-M425mc            AD39-11.20      ADP4-08.26 20710P4C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071040C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DOR40/                          AD40-14.13      AD02-14.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071040C.CAD Inputs
+------------------------------
+DO1-40/131XY-M345mc             AD40-05.09      ADM4-08.26 20710M4C  
+
+DO2-40A/131HV-384               AD40-06.09      ADA3-07.26 20710A3C  
+
+DO3-40A/131LV0453               AD40-07.09      ADB8-09.26 20710B8C  
+
+DO4-40A/131LV0454               AD40-08.09      ADC0-09.26 20710C0C  
+
+DO5-40/131XY-M344mc             AD40-09.09      ADM3-08.26 20710M3C  
+
+DO6-40A/131HV-385               AD40-10.09      ADA4-07.26 20710A4C  
+
+DO7-40/131XY-M343mc             AD40-11.09      ADM2-08.26 20710M2C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071041C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DOR43/                          AD41-14.14      AD02-14.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071041C.CAD Inputs
+------------------------------
+DO1-43/131XY-M407le             AD41-05.05      ADO0-07.26 20710O0C  
+
+DO2-43/131XY-M417le             AD41-06.05      ADO7-07.26 20710O7C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071042C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AIR44/                          AD42-02.14      AD02-06.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071042C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071043C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AIR45/                          AD43-02.15      AD02-06.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071043C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071044C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AOR46/                          AD44-05.08      AD02-07.08 2071002C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071044C.CAD Inputs
+------------------------------
+AO4-SL16/431LV-247              AD44-04.08      AD92-07.26 2071092C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071047C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO1-11/131LV103                 AD47-06.26      AD11-05.18 2071011C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071047C.CAD Inputs
+------------------------------
+AI1-3/131LT103                  AD47-06.07      AD03-03.21 2071003C  
+
+AI15-SL3/131LT-104              AD47-13.07      AD03-14.21 2071003C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071048C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+131-104B                        AD48-16.26      AD49-15.07 2071049C  
+
+AO8-15/131AV104A                AD48-05.26      AD15-04.20 2071015C  
+
+AO9-15/131AV104B                AD48-11.26      AD15-05.20 2071015C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071048C.CAD Inputs
+------------------------------
+AI2-3/131AT104                  AD48-05.07      AD03-04.21 2071003C  
+
+AO8FB-15/131AV104A              AD48-07.07      AD15-05.20 2071015C  
+
+AO9FB-15/131AV104B              AD48-13.07      AD15-06.20 2071015C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071049C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO10-15/131AV104C               AD49-08.26      AD15-06.20 2071015C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071049C.CAD Inputs
+------------------------------
+131-104B                        AD49-15.07      AD48-16.26 2071048C  
+
+AI2-3/131AT104                  AD49-08.07      AD03-04.21 2071003C  
+
+AO10FB-15/131AV104C             AD49-10.07      AD15-07.20 2071015C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071050C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO5-15/131AV-105                AD50-09.26      AD15-09.06 2071015C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071050C.CAD Inputs
+------------------------------
+AI2-3/131AT104                  AD50-09.07      AD03-04.21 2071003C  
+
+AO5FB-15/131AV-105              AD50-11.07      AD15-09.06 2071015C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071051C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO2-11/131EV108                 AD51-08.26      AD11-06.18 2071011C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071051C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071052C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO4-15/131SV-109                AD52-09.26      AD15-08.06 2071015C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071052C.CAD Inputs
+------------------------------
+131FI-250                       AD52-07.07      AD93-11.26 2071093C  
+
+131LC-122                       AD52-08.07      AD53-03.26 2071053C  
+
+AI14-SL3/131SC-109              AD52-05.07      AD03-14.21 2071003C  
+
+AO4FB-15/131SV-109              AD52-11.07      AD15-08.06 2071015C  
+
+DI4-7B/131XS-M104rf             AD52-03.07      AD07-08.26 2071007C  
+
+STATUS M109                     AD52-14.07      ADH7-04.26 20710H7C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071053C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+131LC-122                       AD53-03.26      ADI1-04.07 20710I1C  AD52-08.07 2071052C  
+
+AO3-SL16/131SV-120              AD53-11.26      AD16-06.06 2071016C  
+
+BYPASS_SHEET53                  AD53-17.26      ADY9-12.07 20710Y9C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071053C.CAD Inputs
+------------------------------
+131TqC-M122                     AD53-02.07      ADI9-02.26 20710I9C  
+
+AI12-SL3/131SC-120              AD53-11.07      AD03-12.21 2071003C  
+
+AO3FB-SL16/131SV-120            AD53-14.07      AD16-07.06 2071016C  
+
+DI1-SL7B/131FS-120              AD53-09.07      AD07-05.26 2071007C  
+
+STATUS M120                     AD53-16.07      ADI7-04.26 20710I7C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071054C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+131TQI-120_HIGH                 AD54-06.26      ADG3-07.07 20710G3C  
+
+WSHH-120                        AD54-07.26      ADG1-17.07 20710G1C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071054C.CAD Inputs
+------------------------------
+AI4-3/131WT120                  AD54-09.07      AD03-05.21 2071003C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071055C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071055C.CAD Inputs
+------------------------------
+DI1-5A/131ZSH121                AD55-08.07      AD05-05.12 2071005C  
+
+DI2-5A/131ZSL121                AD55-10.07      AD05-06.12 2071005C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071056C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071056C.CAD Inputs
+------------------------------
+DI3-5A/131LSL123A               AD56-08.07      AD05-07.12 2071005C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071057C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071057C.CAD Inputs
+------------------------------
+DI2-20B/131LSL123C              AD57-08.07      AD20-06.16 2071020C  
+
+DI7-20A/131LSL123B              AD57-12.07      AD20-11.08 2071020C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071058C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO11-15/131HV126                AD58-09.26      AD15-08.20 2071015C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071058C.CAD Inputs
+------------------------------
+AO11FB-15/131HV126              AD58-12.07      AD15-08.20 2071015C  
+
+DI1-20A/131ZSC126               AD58-02.07      AD20-05.08 2071020C  
+
+DI4-7B/131XS-M104rf             AD58-15.07      AD07-08.26 2071007C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071059C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO3-11/131HV127                 AD59-08.26      AD11-07.18 2071011C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071059C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071060C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+131TQI-130_HIGH                 AD60-07.26      ADG6-07.07 20710G6C  
+
+WSHH-130                        AD60-08.26      ADG4-17.07 20710G4C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071060C.CAD Inputs
+------------------------------
+AI15-4/131WT-130                AD60-09.07      AD04-13.21 2071004C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071061C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071061C.CAD Inputs
+------------------------------
+DI3-6A/131ZSL131                AD61-10.07      AD06-07.12 2071006C  
+
+DI4-6A/131ZSH131                AD61-08.07      AD06-08.12 2071006C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071062C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+OIL LEVEL 133A LOW              AD62-08.26      ADG4-16.07 20710G4C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071062C.CAD Inputs
+------------------------------
+DI5-6A/131LSL133A               AD62-08.07      AD06-09.12 2071006C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071063C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO12-16/131HV136                AD63-09.26      AD16-09.20 2071016C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071063C.CAD Inputs
+------------------------------
+AO12FB-16/131HV136              AD63-12.07      AD16-09.20 2071016C  
+
+DI1-8A/131XS-M105rf             AD63-15.07      AD08-05.12 2071008C  
+
+DI2-20A/131ZSC136               AD63-02.07      AD20-06.08 2071020C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071064C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071064C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071065C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO12-15/131HV141                AD65-09.26      AD15-09.20 2071015C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071065C.CAD Inputs
+------------------------------
+AO12FB-15/131HV141              AD65-12.07      AD15-09.20 2071015C  
+
+DI3-20A/131ZSC141               AD65-02.07      AD20-07.08 2071020C  
+
+DI5-8A/131XS-M106rf             AD65-15.07      AD08-09.12 2071008C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071066C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO5-11/131HV142                 AD66-08.26      AD11-09.18 2071011C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071066C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071067C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+OIL LEVEL 145A LOW              AD67-08.26      ADH4-17.07 20710H4C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071067C.CAD Inputs
+------------------------------
+DI1-5B/131LSL145A               AD67-08.07      AD05-05.26 2071005C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071068C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+OIL LEVEL 145B LOW              AD68-08.26      ADH4-17.07 20710H4C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071068C.CAD Inputs
+------------------------------
+DI6-6B/131LSL-145B              AD68-08.07      AD06-10.26 2071006C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071069C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO7-16/131SY-M146               AD69-07.26      AD16-11.06 2071016C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071069C.CAD Inputs
+------------------------------
+AO7FB-16/131SY-M146             AD69-09.07      AD16-12.06 2071016C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071070C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+TORQ HIGH                       AD70-11.26      ADH6-06.07 20710H6C  ADH6-15.07 20710H6C  
+
+TORQ LOW                        AD70-11.26      ADH4-16.07 20710H4C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071070C.CAD Inputs
+------------------------------
+AI6-3/131WT147                  AD70-09.07      AD03-07.21 2071003C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071071C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071071C.CAD Inputs
+------------------------------
+DI1-6A/131ZSH148                AD71-08.07      AD06-05.12 2071006C  
+
+DI2-6A/131ZSL148                AD71-10.07      AD06-06.12 2071006C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071072C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO1-12/131HV153                 AD72-08.26      AD12-05.18 2071012C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071072C.CAD Inputs
+------------------------------
+DI2-5B/131ZSO153                AD72-08.07      AD05-06.26 2071005C  
+
+DI3-5B/131ZSC153                AD72-11.07      AD05-07.26 2071005C  
+
+DI4-7B/131XS-M104rf             AD72-14.07      AD07-08.26 2071007C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071073C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO2-12/131HV154                 AD73-08.26      AD12-06.18 2071012C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071073C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071074C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071074C.CAD Inputs
+------------------------------
+AI7-3/131FT155                  AD74-09.07      AD03-08.21 2071003C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071075C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO1-13/131HV156                 AD75-08.26      AD13-05.18 2071013C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071075C.CAD Inputs
+------------------------------
+DI1-8A/131XS-M105rf             AD75-14.07      AD08-05.12 2071008C  
+
+DI4-5A/131ZSO156                AD75-08.07      AD05-08.12 2071005C  
+
+DI5-5A/131ZSC156                AD75-11.07      AD05-09.12 2071005C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071076C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO2-13/131HV157                 AD76-08.26      AD13-06.18 2071013C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071076C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071077C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071077C.CAD Inputs
+------------------------------
+AI8-3/131LT160                  AD77-09.07      AD03-09.21 2071003C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071078C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO13-15/131FV163                AD78-09.26      AD15-10.20 2071015C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071078C.CAD Inputs
+------------------------------
+AI9-3/131FT163                  AD78-09.07      AD03-09.21 2071003C  
+
+AO13FB-15/131FV163              AD78-11.07      AD15-11.20 2071015C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071079C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO3-13/131HV165                 AD79-08.26      AD13-07.18 2071013C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071079C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071080C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO6-11/131HV170A                AD80-08.26      AD11-10.18 2071011C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071080C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071081C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO7-11/131HV170B                AD81-08.26      AD11-11.18 2071011C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071081C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\2071082C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071082C.CAD Inputs
+------------------------------
+AI10-3/131LT171                 AD82-09.07      AD03-10.21 2071003C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071083C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071083C.CAD Inputs
+------------------------------
+AI11-3/131LT173                 AD83-09.07      AD03-12.21 2071003C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071084C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071084C.CAD Inputs
+------------------------------
+DI6-6A/131LSL175                AD84-08.07      AD06-10.12 2071006C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071085C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071085C.CAD Inputs
+------------------------------
+DI5-5B/131LSHH180               AD85-08.07      AD05-09.26 2071005C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071086C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO3-12/131HV180A                AD86-08.26      AD12-07.18 2071012C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071086C.CAD Inputs
+------------------------------
+DI6-5A/131ZSO180A               AD86-08.07      AD05-10.12 2071005C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071087C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO4-13/131HV180B                AD87-08.26      AD13-08.18 2071013C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071087C.CAD Inputs
+------------------------------
+DI7-5A/131ZSO180B               AD87-08.07      AD05-11.12 2071005C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071088C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071088C.CAD Inputs
+------------------------------
+DI6-5B/131LSHH181               AD88-08.07      AD05-10.26 2071005C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071089C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO5-16/131AV211A                AD89-05.26      AD16-09.06 2071016C  
+
+AO6-16/131AV211B                AD89-11.26      AD16-10.06 2071016C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071089C.CAD Inputs
+------------------------------
+AI3-4/131AT211                  AD89-05.07      AD04-04.21 2071004C  
+
+AO5FB-16/131AV211A              AD89-07.07      AD16-09.06 2071016C  
+
+AO6FB-16/131AV211B              AD89-13.07      AD16-11.06 2071016C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071091C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO5-12/131LV215                 AD91-04.26      AD12-09.18 2071012C  
+
+DO6-12/131LV216                 AD91-11.26      AD12-10.18 2071012C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071091C.CAD Inputs
+------------------------------
+AI1-4/131LT215                  AD91-04.07      AD04-03.21 2071004C  
+
+AI2-4/131LT216                  AD91-11.07      AD04-04.21 2071004C  
+
+DI1-6B/131LSHH215               AD91-07.07      AD06-05.26 2071006C  
+
+DI2-6B/131LSHH216               AD91-14.07      AD06-06.26 2071006C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071092C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO4-SL16/431LV-247              AD92-07.26      AD44-04.08 2071044C  AD16-08.06 2071016C  
+
+DO1-9A/131HS-217                AD92-02.26      AD09-05.05 2071009C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071092C.CAD Inputs
+------------------------------
+131AI-254 HIGH                  AD92-02.07      AD95-11.26 2071095C  
+
+AO4FB-SL16/431LV-247            AD92-09.07      AD16-08.06 2071016C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071093C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+131FI-250                       AD93-11.26      ADI1-03.07 20710I1C  AD52-07.07 2071052C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071093C.CAD Inputs
+------------------------------
+AI13-14/131FT-250               AD93-08.07      AD14-13.21 2071014C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071094C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071094C.CAD Inputs
+------------------------------
+AI14-14/131FT-251               AD94-04.07      AD14-14.21 2071014C  
+
+AI15-14/131FT-252               AD94-08.07      AD14-14.21 2071014C  
+
+TOT RESET A                     AD94-12.07      AD00-07.26 2071000C  
+
+TOT RESET B                     AD94-14.07      AD00-08.26 2071000C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071095C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+131AI-254 HIGH                  AD95-11.26      AD92-02.07 2071092C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071095C.CAD Inputs
+------------------------------
+AI11-14/131AT-253               AD95-06.07      AD14-12.21 2071014C  
+
+AI3-3/131CT-254                 AD95-10.07      AD03-04.21 2071003C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071096C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\2071096C.CAD Inputs
+------------------------------
+AI13-4/131NT-256                AD96-08.07      AD04-13.21 2071004C  
+
+AI4-4/131NT-255                 AD96-03.07      AD04-05.21 2071004C  
+
+AI8-4/131NT-257                 AD96-13.07      AD04-09.21 2071004C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071097C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+NUTRIENT FLOW                   AD97-10.26      ADK4-15.07 20710K4C  ADK2-13.07 20710K2C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071097C.CAD Inputs
+------------------------------
+AI9-21/131LT-301                AD97-09.07      AD21-09.21 2071021C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071098C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO2-24/131FV-312                AD98-08.26      AD24-05.06 2071024C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071098C.CAD Inputs
+------------------------------
+AI5-21/131FT-312                AD98-08.07      AD21-05.21 2071021C  
+
+AO2FB-24/131FV-312              AD98-11.07      AD24-06.06 2071024C  
+
+DI3-25A/131XS-M312rf            AD98-01.07      AD25-07.12 2071025C  
+
+DI3-25A/131XS-M312rf            AD98-13.07      AD25-07.12 2071025C  
+
+DI5-25A/131XS-M313rf            AD98-14.07      AD25-09.12 2071025C  
+
+DI5-25A/131XS-M313rf            AD98-02.07      AD25-09.12 2071025C  
+
+TOT RESET A                     AD98-03.07      AD00-07.26 2071000C  
+
+TOT RESET B                     AD98-04.07      AD00-08.26 2071000C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071099C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+131XS-M424rf /131XS-M425rf      AD99-11.26      ADZ3-11.07 20710Z3C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\2071099C.CAD Inputs
+------------------------------
+AI1-SL23/131TT-0317             AD99-09.07      AD23-03.21 2071023C  
+
+DI4-34B/131XS-M424rf            AD99-11.07      AD34-08.23 2071034C  
+
+DI4-35B/131XS-M425rf            AD99-11.07      AD35-08.23 2071035C  
+
+DI7-34A/131XS-M420rf            AD99-10.07      AD34-11.13 2071034C  
+
+DI7-35A/131XS-M421rf            AD99-10.07      AD35-11.14 2071035C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A0C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+PRESS NASH PUMP                 ADA0-07.26      ADL6-14.07 20710L6C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A0C.CAD Inputs
+------------------------------
+AI10-22/131PT0380               ADA0-09.07      AD22-10.21 2071022C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A1C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO1-24/131LV381                 ADA1-09.26      AD24-04.06 2071024C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A1C.CAD Inputs
+------------------------------
+AI4-22/131LT381                 ADA1-09.07      AD22-05.21 2071022C  
+
+AO1FB-24/131LV381               ADA1-11.07      AD24-05.06 2071024C  
+
+NOT                             ADA1-10.07      AD00-04.26 2071000C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A2C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO6-24A/131LV382                ADA2-09.26      AD24-10.06 2071024C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A2C.CAD Inputs
+------------------------------
+AI5-22/131LT382                 ADA2-09.07      AD22-05.21 2071022C  
+
+AO6FB-24/131LV382               ADA2-11.07      AD24-11.06 2071024C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A3C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO2-40A/131HV-384               ADA3-07.26      AD40-06.09 2071040C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A3C.CAD Inputs
+------------------------------
+131XY-M341mc                    ADA3-07.07      ADL6-06.26 20710L6C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A4C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO6-40A/131HV-385               ADA4-07.26      AD40-10.09 2071040C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A4C.CAD Inputs
+------------------------------
+DO7-29B/131XY-M342mc            ADA4-07.07      ADL9-08.26 20710L9C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A5C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+LEVEL OIL 411A LOW              ADA5-08.26      ADM6-16.07 20710M6C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A5C.CAD Inputs
+------------------------------
+DI7-28B/131LSL411A              ADA5-08.07      AD28-11.26 2071028C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A6C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710A6C.CAD Inputs
+------------------------------
+AI13-21/131WT0412               ADA6-09.07      AD21-13.21 2071021C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A7C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO12-24/131FV0417               ADA7-09.26      AD24-09.20 2071024C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A7C.CAD Inputs
+------------------------------
+AO12FB-24/131FV0417             ADA7-11.07      AD24-09.20 2071024C  
+
+DI1-34A/131XS-M406rf            ADA7-14.07      AD34-05.13 2071034C  
+
+DI1-35A/131XS-M407rf            ADA7-15.07      AD35-05.14 2071035C  
+
+TOT RESET A                     ADA7-04.07      AD00-07.26 2071000C  
+
+TOT RESET B                     ADA7-05.07      AD00-08.26 2071000C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A8C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+LEVEL OIL 421A LOW              ADA8-08.26      ADM8-16.07 20710M8C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A8C.CAD Inputs
+------------------------------
+DI4-33B/131LSL421A              ADA8-08.07      AD33-08.19 2071033C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A9C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+131TqI-422                      ADA9-06.26      ADM8-17.07 20710M8C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710A9C.CAD Inputs
+------------------------------
+AI14-21/131WT0422               ADA9-09.07      AD21-14.21 2071021C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710B0C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+131FT-427 PV                    ADB0-05.26      ADO9-05.07 20710O9C  ADC7-08.07 20710C7C  
+
+AO13-24/131FV0427               ADB0-09.26      AD24-10.20 2071024C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710B0C.CAD Inputs
+------------------------------
+AI11-21/131FT0427               ADB0-09.07      AD21-12.21 2071021C  
+
+AO13FB-24/131FV0427             ADB0-11.07      AD24-11.20 2071024C  
+
+DI7-34A/131XS-M420rf            ADB0-15.07      AD34-11.13 2071034C  
+
+DI7-35A/131XS-M421rf            ADB0-15.07      AD35-11.14 2071035C  
+
+TOT RESET A                     ADB0-03.07      AD00-07.26 2071000C  
+
+TOT RESET B                     ADB0-04.07      AD00-08.26 2071000C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710B2C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+LEVEL OIL 431A LOW              ADB2-08.26      ADN0-16.07 20710N0C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710B2C.CAD Inputs
+------------------------------
+DI7-SL33B/131LSL-431A           ADB2-08.07      AD33-11.19 2071033C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710B3C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+131TqI-432                      ADB3-06.26      ADN0-17.07 20710N0C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710B3C.CAD Inputs
+------------------------------
+AI3-21/131WT-432                ADB3-09.07      AD21-04.21 2071021C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710B4C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+131FT-437 PV                    ADB4-05.26      ADP3-05.07 20710P3C  ADC7-09.07 20710C7C  
+
+AO14-24/131FV0437               ADB4-09.26      AD24-11.20 2071024C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710B4C.CAD Inputs
+------------------------------
+AI12-21/131FT0437               ADB4-09.07      AD21-12.21 2071021C  
+
+AO14FB-24/131FV0437             ADB4-11.07      AD24-12.20 2071024C  
+
+DI4-34B/131XS-M424rf            ADB4-14.07      AD34-08.23 2071034C  
+
+DI4-35B/131XS-M425rf            ADB4-15.07      AD35-08.23 2071035C  
+
+TOT RESET A                     ADB4-03.07      AD00-07.26 2071000C  
+
+TOT RESET B                     ADB4-05.07      AD00-08.26 2071000C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710B5C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO4-SL29A/131HS-M418            ADB5-04.27      AD29-08.05 2071029C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710B5C.CAD Inputs
+------------------------------
+DI3-SL35A/131XS-M418            ADB5-05.08      AD35-07.14 2071035C  
+
+DI7-SL25A/131AUX-M418           ADB5-03.08      AD25-11.12 2071025C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710B6C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO4-24/131AV0450A               ADB6-05.26      AD24-08.06 2071024C  
+
+AO5-24/131AV0450B               ADB6-11.26      AD24-09.06 2071024C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710B6C.CAD Inputs
+------------------------------
+AI6-22/131AT0450                ADB6-05.07      AD22-07.21 2071022C  
+
+AO4FB-24/131AV0450A             ADB6-07.07      AD24-08.06 2071024C  
+
+AO5FB-24/131AV0450B             ADB6-13.07      AD24-09.06 2071024C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710B7C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710B7C.CAD Inputs
+------------------------------
+AI7-22/131FT0451                ADB7-09.07      AD22-08.21 2071022C  
+
+TOT RESET A                     ADB7-11.07      AD00-07.26 2071000C  
+
+TOT RESET B                     ADB7-12.07      AD00-08.26 2071000C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710B8C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO3-40A/131LV0453               ADB8-09.26      AD40-07.09 2071040C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710B8C.CAD Inputs
+------------------------------
+AI2-22/131LT0453                ADB8-09.07      AD22-03.21 2071022C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710B9C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710B9C.CAD Inputs
+------------------------------
+DI1-36A/131LSHH0453             ADB9-08.07      AD36-07.17 2071036C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710C0C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO4-40A/131LV0454               ADC0-09.26      AD40-08.09 2071040C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710C0C.CAD Inputs
+------------------------------
+AI15-22/131LT-454               ADC0-09.07      AD22-14.21 2071022C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710C2C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710C2C.CAD Inputs
+------------------------------
+AI3-22/131TT0455                ADC2-09.07      AD22-04.21 2071022C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710C4C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710C4C.CAD Inputs
+------------------------------
+AI5-SL3/131TT-456               ADC4-09.07      AD03-05.21 2071003C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710C5C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO9-16/131SY-M505               ADC5-07.26      AD16-05.20 2071016C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710C5C.CAD Inputs
+------------------------------
+AO9FB-16/131SY-M505             ADC5-09.07      AD16-06.20 2071016C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710C7C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO7-15/131SV-511                ADC7-08.26      AD15-11.06 2071015C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710C7C.CAD Inputs
+------------------------------
+131FT-105 PV                    ADC7-07.07      ADH0-09.26 20710H0C  
+
+131FT-427 PV                    ADC7-08.07      ADB0-05.26 20710B0C  
+
+131FT-437 PV                    ADC7-09.07      ADB4-05.26 20710B4C  
+
+AI12-14/131ST-511               ADC7-06.07      AD14-12.21 2071014C  
+
+AO7FB-15/131SV-511              ADC7-10.07      AD15-12.06 2071015C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710D1C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710D1C.CAD Inputs
+------------------------------
+AI6-21/131FT-550                ADD1-05.07      AD21-07.21 2071021C  
+
+AI7-21/131FT-551                ADD1-12.07      AD21-08.21 2071021C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710D2C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710D2C.CAD Inputs
+------------------------------
+AI8-21/131FT-552                ADD2-08.07      AD21-09.21 2071021C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710D3C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710D3C.CAD Inputs
+------------------------------
+AI2-21/131FT-553                ADD3-08.07      AD21-04.21 2071021C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710D4C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710D4C.CAD Inputs
+------------------------------
+AI10-21/131AT-554               ADD4-08.07      AD21-10.21 2071021C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710D5C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710D5C.CAD Inputs
+------------------------------
+AI12-SL4/131AI-555              ADD5-08.07      AD04-12.21 2071004C  
+
+DI1-SL19A/131LSH-556            ADD5-11.07      AD19-05.12 2071019C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710G0C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710G0C.CAD Inputs
+------------------------------
+DI1-7A/131XS-M101rf             ADG0-08.07      AD07-05.12 2071007C  
+
+DI2-7A/131XS-M101f              ADG0-05.07      AD07-06.12 2071007C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710G1C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO2-9A/131XY-M102mc             ADG1-08.26      AD09-06.05 2071009C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710G1C.CAD Inputs
+------------------------------
+AI6-4/131IT-M102                ADG1-17.07      AD04-07.21 2071004C  
+
+DI3-5A/131LSL123A               ADG1-16.07      AD05-07.12 2071005C  
+
+DI3-7A/131XS-M102rf             ADG1-08.07      AD07-07.12 2071007C  
+
+DI4-7A/131XS-M102f              ADG1-05.07      AD07-08.12 2071007C  
+
+DI5-6B/13WT102                  ADG1-15.07      AD06-09.26 2071006C  
+
+DI5-7A/131XS-M102lst            ADG1-11.07      AD07-09.12 2071007C  
+
+DI6-7A/131XS-M102lsp            ADG1-14.07      AD07-10.12 2071007C  
+
+DI7-6B/131XS102                 ADG1-16.07      AD06-11.26 2071006C  
+
+WSHH-120                        ADG1-17.07      AD54-07.26 2071054C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710G2C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710G2C.CAD Inputs
+------------------------------
+AI6-4/131IT-M102                ADG2-09.07      AD04-07.21 2071004C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710G3C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO3-10B/131XY-M102CmcL          ADG3-08.26      AD10-07.21 2071010C  
+
+DO4-10B/131XY-M102CmcH          ADG3-10.26      AD10-08.21 2071010C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710G3C.CAD Inputs
+------------------------------
+131TQI-120_HIGH                 ADG3-07.07      AD54-06.26 2071054C  
+
+DI3-20B/131XS-M102CrfH          ADG3-11.07      AD20-07.16 2071020C  
+
+DI3-6B/131XS102alrm             ADG3-03.07      AD06-07.26 2071006C  
+
+DI3-7A/131XS-M102rf             ADG3-12.07      AD07-07.12 2071007C  
+
+DI4-20B/131XS-M102CrfL          ADG3-14.07      AD20-08.16 2071020C  
+
+DI5-20B/131XS-M102Cf            ADG3-09.07      AD20-09.16 2071020C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710G4C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO1-10B/131XY-M103mc            ADG4-08.26      AD10-05.21 2071010C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710G4C.CAD Inputs
+------------------------------
+AI7-4/131IT-M103                ADG4-17.07      AD04-08.21 2071004C  
+
+DI2-8B/131XS-M103rf             ADG4-08.07      AD08-06.26 2071008C  
+
+DI3-8B/131XS-M103f              ADG4-05.07      AD08-07.26 2071008C  
+
+DI4-8B/131XS-M103lst            ADG4-11.07      AD08-08.26 2071008C  
+
+DI5-8B/131XS-M103lsp            ADG4-14.07      AD08-09.26 2071008C  
+
+DI6-20A/131XS103                ADG4-15.07      AD20-10.08 2071020C  
+
+DI6-20B/131XS103                ADG4-16.07      AD20-10.16 2071020C  
+
+OIL LEVEL 133A LOW              ADG4-16.07      AD62-08.26 2071062C  
+
+WSHH-130                        ADG4-17.07      AD60-08.26 2071060C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710G5C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710G5C.CAD Inputs
+------------------------------
+AI7-4/131IT-M103                ADG5-09.07      AD04-08.21 2071004C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710G6C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO4-9A/131XY-M103CmcL           ADG6-08.26      AD09-08.05 2071009C  
+
+DO5-9A/131XY-M103CmcH           ADG6-10.26      AD09-09.05 2071009C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710G6C.CAD Inputs
+------------------------------
+131TQI-130_HIGH                 ADG6-07.07      AD60-07.26 2071060C  
+
+DI2-7B/131XS-M103CrfL           ADG6-14.07      AD07-06.26 2071007C  
+
+DI2-8B/131XS-M103rf             ADG6-15.07      AD08-06.26 2071008C  
+
+DI3-7B/131XS-M103Cf             ADG6-09.07      AD07-07.26 2071007C  
+
+DI4-20A/131XS103alrm            ADG6-04.07      AD20-08.08 2071020C  
+
+DI7-7A/131XS-M103CrfH           ADG6-11.07      AD07-11.12 2071007C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710G7C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO6-9A/131XY-M104mc             ADG7-08.26      AD09-10.05 2071009C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710G7C.CAD Inputs
+------------------------------
+DI4-7B/131XS-M104rf             ADG7-08.07      AD07-08.26 2071007C  
+
+DI5-7B/131XS-M104f              ADG7-05.07      AD07-09.26 2071007C  
+
+DI6-7B/131XS-M104lst            ADG7-11.07      AD07-10.26 2071007C  
+
+DI7-7B/131XS-M104lsp            ADG7-14.07      AD07-11.26 2071007C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710G9C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO3-9A/131XY-M105mc             ADG9-08.26      AD09-07.05 2071009C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710G9C.CAD Inputs
+------------------------------
+DI1-8A/131XS-M105rf             ADG9-08.07      AD08-05.12 2071008C  
+
+DI2-8A/131XS-M105f              ADG9-05.07      AD08-06.12 2071008C  
+
+DI3-8A/131XS-M105lst            ADG9-11.07      AD08-07.12 2071008C  
+
+DI4-8A/131XS-M105lsp            ADG9-14.07      AD08-08.12 2071008C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710H0C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+131FT-105 PV                    ADH0-09.26      ADH3-05.07 20710H3C  ADH1-06.07 20710H1C  ADC7-07.07 20710C7C  
+
+DO5-SL10A/131HV-105             ADH0-03.26      AD10-09.05 2071010C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710H0C.CAD Inputs
+------------------------------
+AI10-14/131FT-105               ADH0-11.07      AD14-10.21 2071014C  
+
+AI4-SL14/131IT-M105             ADH0-15.07      AD14-05.21 2071014C  
+
+TOT RESET A                     ADH0-08.07      AD00-07.26 2071000C  
+
+TOT RESET B                     ADH0-09.07      AD00-08.26 2071000C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710H1C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO1-SL16/131SV-105              ADH1-07.26      AD16-04.06 2071016C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710H1C.CAD Inputs
+------------------------------
+131FT-105 PV                    ADH1-06.07      ADH0-09.26 20710H0C  
+
+AI3-SL14/131ST-M105             ADH1-03.07      AD14-04.21 2071014C  
+
+AO1FB-SL16/131SV-105            ADH1-09.07      AD16-05.06 2071016C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710H2C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO7-9A/131XY-M106mc             ADH2-08.26      AD09-11.05 2071009C  
+
+STATUS M106                     ADH2-13.26      ADH3-10.07 20710H3C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710H2C.CAD Inputs
+------------------------------
+DI1-8B/131XS-M106lsp            ADH2-14.07      AD08-05.26 2071008C  
+
+DI5-8A/131XS-M106rf             ADH2-08.07      AD08-09.12 2071008C  
+
+DI6-8A/131XS-M106f              ADH2-05.07      AD08-10.12 2071008C  
+
+DI7-8A/131XS-M106lst            ADH2-11.07      AD08-11.12 2071008C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710H3C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO3-15/131SV-106                ADH3-06.26      AD15-06.06 2071015C  
+
+DO8-SL10A/131HV-106             ADH3-13.26      AD10-12.05 2071010C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710H3C.CAD Inputs
+------------------------------
+131FT-105 PV                    ADH3-05.07      ADH0-09.26 20710H0C  
+
+AI10-4/131IT-M106               ADH3-15.07      AD04-10.21 2071004C  
+
+AO3FB-15/131SV-106              ADH3-08.07      AD15-07.06 2071015C  
+
+STATUS M106                     ADH3-10.07      ADH2-13.26 20710H2C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710H4C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO2-9B/131XY-M107mc             ADH4-08.26      AD09-06.21 2071009C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710H4C.CAD Inputs
+------------------------------
+AI11-4/131IT-M107               ADH4-16.07      AD04-12.21 2071004C  
+
+DI1-17A/131XS-M107rf            ADH4-08.07      AD17-05.12 2071017C  
+
+DI2-17A/131XS-M107f             ADH4-05.07      AD17-06.12 2071017C  
+
+DI3-17A/131XS-M107lst           ADH4-11.07      AD17-07.12 2071017C  
+
+DI4-17A/131XS-M107lsp           ADH4-14.07      AD17-08.12 2071017C  
+
+OIL LEVEL 145A LOW              ADH4-17.07      AD67-08.26 2071067C  
+
+OIL LEVEL 145B LOW              ADH4-17.07      AD68-08.26 2071068C  
+
+TORQ LOW                        ADH4-16.07      AD70-11.26 2071070C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710H5C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710H5C.CAD Inputs
+------------------------------
+AI11-4/131IT-M107               ADH5-09.07      AD04-12.21 2071004C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710H6C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO6-10B/131XY-M107CmcH          ADH6-08.26      AD10-10.21 2071010C  
+
+DO7-10B/131XY-M107CmcL          ADH6-10.26      AD10-11.21 2071010C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710H6C.CAD Inputs
+------------------------------
+DI1-17A/131XS-M107rf            ADH6-15.07      AD17-05.12 2071017C  
+
+DI1-18A/131XS-M107CrfH          ADH6-11.07      AD18-05.12 2071018C  
+
+DI2-18A/131XS-M107Crfl          ADH6-14.07      AD18-06.12 2071018C  
+
+DI3-18A/131XS-M107Cf            ADH6-08.07      AD18-07.12 2071018C  
+
+DI7-5B/131XS107alrm             ADH6-04.07      AD05-11.26 2071005C  
+
+TORQ HIGH                       ADH6-15.07      AD70-11.26 2071070C  
+
+TORQ HIGH                       ADH6-06.07      AD70-11.26 2071070C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710H7C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO8-9B/131XY-M109mc             ADH7-08.26      AD09-12.21 2071009C  
+
+STATUS M109                     ADH7-04.26      AD52-14.07 2071052C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710H7C.CAD Inputs
+------------------------------
+131TqC-M122 > 80                ADH7-17.07      ADI9-00.26 20710I9C  
+
+DI4-18A/131XS-M109rf            ADH7-08.07      AD18-08.12 2071018C  
+
+DI5-18A/131XS-M109f             ADH7-05.07      AD18-09.12 2071018C  
+
+DI6-18A/131XS-M109lst           ADH7-11.07      AD18-10.12 2071018C  
+
+DI6-8B/131XS-M121rf             ADH7-16.07      AD08-10.26 2071008C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710H9C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+131HS-M110 STATUS               ADH9-04.26      ADI1-12.07 20710I1C  
+
+DO2-10B/131XY-M110mc            ADH9-08.26      AD10-06.21 2071010C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710H9C.CAD Inputs
+------------------------------
+131TqC-M122 > 80                ADH9-17.07      ADI9-00.26 20710I9C  
+
+DI5-17A/131XS-M110rf            ADH9-08.07      AD17-09.12 2071017C  
+
+DI6-17A/131XS-M110f             ADH9-05.07      AD17-10.12 2071017C  
+
+DI6-8B/131XS-M121rf             ADH9-16.07      AD08-10.26 2071008C  
+
+DI7-17A/131XS-M110lst           ADH9-11.07      AD17-11.12 2071017C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710I0C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710I0C.CAD Inputs
+------------------------------
+AI6-SL14/131IT-M110             ADI0-09.07      AD14-07.21 2071014C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710I1C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO2-SL16/131SV-110              ADI1-07.26      AD16-05.06 2071016C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710I1C.CAD Inputs
+------------------------------
+131FI-250                       ADI1-03.07      AD93-11.26 2071093C  
+
+131HS-M110 STATUS               ADI1-12.07      ADH9-04.26 20710H9C  
+
+131LC-122                       ADI1-04.07      AD53-03.26 2071053C  
+
+AI5-SL14/131ST-M110             ADI1-06.07      AD14-05.21 2071014C  
+
+AO2FB-SL16/131SV-110            ADI1-09.07      AD16-06.06 2071016C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710I2C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO5-10B/131XY-M112mc            ADI2-08.26      AD10-09.21 2071010C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710I2C.CAD Inputs
+------------------------------
+DI1-19B/131XS-M112jog           ADI2-14.07      AD19-05.26 2071019C  
+
+DI5-19A/131XS-M112rf            ADI2-08.07      AD19-09.12 2071019C  
+
+DI6-19A/131XS-M112f             ADI2-05.07      AD19-10.12 2071019C  
+
+DI7-19A/131SSL-M112             ADI2-16.07      AD19-11.12 2071019C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710I3C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710I3C.CAD Inputs
+------------------------------
+DI2-19B/131XS-M113rf            ADI3-08.07      AD19-06.26 2071019C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710I4C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO5-9B/131XY-M114mc             ADI4-08.26      AD09-09.21 2071009C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710I4C.CAD Inputs
+------------------------------
+DI4-19B/131XS-M114rf            ADI4-08.07      AD19-08.26 2071019C  
+
+DI5-19B/131XS-M114f             ADI4-05.07      AD19-09.26 2071019C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710I5C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO6-9B/131XY-M117mc             ADI5-08.26      AD09-10.21 2071009C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710I5C.CAD Inputs
+------------------------------
+DI6-19B/131XS-M117rf            ADI5-08.07      AD19-10.26 2071019C  
+
+DI7-19B/131XS-M117f             ADI5-05.07      AD19-11.26 2071019C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710I6C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO2-15/131SY-M117               ADI6-07.26      AD15-05.06 2071015C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710I6C.CAD Inputs
+------------------------------
+AO2FB-15/131SY-M117             ADI6-09.07      AD15-06.06 2071015C  
+
+DI6-19B/131XS-M117rf            ADI6-12.07      AD19-10.26 2071019C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710I7C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO7-9B/131XY-M120mc             ADI7-08.26      AD09-11.21 2071009C  
+
+STATUS M120                     ADI7-04.26      ADP2-17.07 20710P2C  ADO8-16.07 20710O8C  AD53-16.07 2071053C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710I7C.CAD Inputs
+------------------------------
+DI2-17B/131XS-M120rf            ADI7-08.07      AD17-06.26 2071017C  
+
+DI3-17B/131XS-M120f             ADI7-05.07      AD17-07.26 2071017C  
+
+DI6-17B/131XS-M122rf            ADI7-16.07      AD17-10.26 2071017C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710I8C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO1-10A/131XY-M121mc            ADI8-08.26      AD10-05.05 2071010C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710I8C.CAD Inputs
+------------------------------
+DI2-17B/131XS-M120rf            ADI8-11.07      AD17-06.26 2071017C  
+
+DI5-17B/131XS-M121jog           ADI8-06.07      AD17-09.26 2071017C  
+
+DI6-8B/131XS-M121rf             ADI8-08.07      AD08-10.26 2071008C  
+
+DI7-8B/131XS-M121f              ADI8-05.07      AD08-11.26 2071008C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710I9C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+131TqC-M122                     ADI9-02.26      AD53-02.07 2071053C  
+
+131TqC-M122 > 80                ADI9-00.26      ADH9-17.07 20710H9C  ADH7-17.07 20710H7C  
+
+DO2-10A/131XY-M122mc            ADI9-13.26      AD10-06.05 2071010C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710I9C.CAD Inputs
+------------------------------
+DI3-18B/131XS-M125rf            ADI9-16.07      AD18-07.26 2071018C  
+
+DI6-17B/131XS-M122rf            ADI9-13.07      AD17-10.26 2071017C  
+
+DI7-17B/131XS-M122f             ADI9-11.07      AD17-11.26 2071017C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J0C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710J0C.CAD Inputs
+------------------------------
+AI2-14/131IT-M122               ADJ0-09.07      AD14-04.21 2071014C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J1C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO3-10A/131XY-M123mc            ADJ1-08.26      AD10-07.05 2071010C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J1C.CAD Inputs
+------------------------------
+DI1-18B/131XS-M123rf            ADJ1-08.07      AD18-05.26 2071018C  
+
+DI2-18B/131XS-M123f             ADJ1-05.07      AD18-06.26 2071018C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J2C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO4-10A/131XY-M125mc            ADJ2-08.26      AD10-08.05 2071010C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J2C.CAD Inputs
+------------------------------
+DI3-18B/131XS-M125rf            ADJ2-08.07      AD18-07.26 2071018C  
+
+DI4-18B/131XS-M125f             ADJ2-05.07      AD18-08.26 2071018C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J3C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO1-29A/131XY-M201mc            ADJ3-08.26      AD29-05.05 2071029C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J3C.CAD Inputs
+------------------------------
+DI1-26A/131XS-M201rf            ADJ3-08.07      AD26-05.12 2071026C  
+
+DI2-26A/131XS-M201f             ADJ3-05.07      AD26-06.12 2071026C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J4C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO2-29A/131XY-M202mc            ADJ4-08.26      AD29-06.05 2071029C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J4C.CAD Inputs
+------------------------------
+DI3-26A/131XS-M202rf            ADJ4-08.07      AD26-07.12 2071026C  
+
+DI4-26A/131XS-M202f             ADJ4-05.07      AD26-08.12 2071026C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J5C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO3-29A/131XY-M203mc            ADJ5-08.26      AD29-07.05 2071029C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J5C.CAD Inputs
+------------------------------
+DI5-26A/131XS-M203rf            ADJ5-08.07      AD26-09.12 2071026C  
+
+DI6-26A/131XS-M203f             ADJ5-05.07      AD26-10.12 2071026C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J6C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO1-38A/131XY-M204mc            ADJ6-08.26      AD38-05.10 2071038C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J6C.CAD Inputs
+------------------------------
+DI1-31A/131XS-M204rf            ADJ6-08.07      AD31-05.12 2071031C  
+
+DI2-31A/131XS-M204f             ADJ6-05.07      AD31-06.12 2071031C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J7C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO2-38A/131XY-M205mc            ADJ7-08.26      AD38-06.10 2071038C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J7C.CAD Inputs
+------------------------------
+DI3-31A/131XS-M205rf            ADJ7-08.07      AD31-07.12 2071031C  
+
+DI4-31A/131XS-M205f             ADJ7-05.07      AD31-08.12 2071031C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J8C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO3-38A/131XY-M206mc            ADJ8-08.26      AD38-07.10 2071038C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J8C.CAD Inputs
+------------------------------
+DI5-31A/131XS-M206rf            ADJ8-08.07      AD31-09.12 2071031C  
+
+DI6-31A/131XS-M206f             ADJ8-06.07      AD31-10.12 2071031C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J9C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO6-10A/131XY-M210mc            ADJ9-08.26      AD10-10.05 2071010C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710J9C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\20710K0C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO7-10A/131XY-M211mc            ADK0-08.26      AD10-11.05 2071010C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K0C.CAD Inputs
+------------------------------
+DI3-19A/131XS-M211rf            ADK0-08.07      AD19-07.12 2071019C  
+
+DI4-19A/131XS-M211f             ADK0-05.07      AD19-08.12 2071019C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K1C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO1-39A/131XY-M310mc            ADK1-08.26      AD39-05.04 2071039C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K1C.CAD Inputs
+------------------------------
+DI1-25A/131XS-M310rf            ADK1-08.07      AD25-05.12 2071025C  
+
+DI2-25A/131XS-M310f             ADK1-05.07      AD25-06.12 2071025C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K2C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO2-39A/131XY-M312mc            ADK2-09.26      AD39-06.04 2071039C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K2C.CAD Inputs
+------------------------------
+DI3-25A/131XS-M312rf            ADK2-09.07      AD25-07.12 2071025C  
+
+DI7-26A/131XS-M312f             ADK2-06.07      AD26-11.12 2071026C  
+
+NUTRIENT FLOW                   ADK2-13.07      AD97-10.26 2071097C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K3C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO8-24/131SY-M312               ADK3-07.26      AD24-04.20 2071024C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K3C.CAD Inputs
+------------------------------
+AO8FB-24/131SY-M312             ADK3-09.07      AD24-05.20 2071024C  
+
+DI3-25A/131XS-M312rf            ADK3-12.07      AD25-07.12 2071025C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K4C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO3-39A/131XY-M313mc            ADK4-08.26      AD39-07.04 2071039C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K4C.CAD Inputs
+------------------------------
+DI5-25A/131XS-M313rf            ADK4-08.07      AD25-09.12 2071025C  
+
+DI6-25A/131XS-M313f             ADK4-05.07      AD25-10.12 2071025C  
+
+NUTRIENT FLOW                   ADK4-15.07      AD97-10.26 2071097C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K5C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO9-24/131SY-M313               ADK5-07.26      AD24-05.20 2071024C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K5C.CAD Inputs
+------------------------------
+AO9FB-24/131SY-M313             ADK5-09.07      AD24-06.20 2071024C  
+
+DI5-25A/131XS-M313rf            ADK5-12.07      AD25-09.12 2071025C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K6C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO7-29A/131XY-M321mc            ADK6-08.26      AD29-11.05 2071029C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K6C.CAD Inputs
+------------------------------
+DI1-28A/131XS-M321rf            ADK6-08.07      AD28-05.12 2071028C  
+
+DI2-28A/131XS-M321f             ADK6-05.07      AD28-06.12 2071028C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K7C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO1-29B/131XY-M322mc            ADK7-08.26      AD29-05.21 2071029C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K7C.CAD Inputs
+------------------------------
+DI3-28A/131XS-M322rf            ADK7-08.07      AD28-07.12 2071028C  
+
+DI4-28A/131XS-M322f             ADK7-05.07      AD28-08.12 2071028C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K8C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO4-39A/131XY-M323mc            ADK8-08.26      AD39-08.04 2071039C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K8C.CAD Inputs
+------------------------------
+DI1-32A/131XS-M323rf            ADK8-08.07      AD32-05.14 2071032C  
+
+DI2-32A/131XS-M323f             ADK8-05.07      AD32-06.14 2071032C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K9C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO5-39A/131XY-M324mc            ADK9-08.26      AD39-09.04 2071039C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710K9C.CAD Inputs
+------------------------------
+DI3-32A/131XS-M324rf            ADK9-08.07      AD32-07.14 2071032C  
+
+DI4-32A/131XS-M324f             ADK9-05.07      AD32-08.14 2071032C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710L0C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO2-29B/131XY-M326mc            ADL0-08.26      AD29-06.21 2071029C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710L0C.CAD Inputs
+------------------------------
+DI5-28A/131XS-M326rf            ADL0-08.07      AD28-09.12 2071028C  
+
+DI6-28A/131XS-M326f             ADL0-05.07      AD28-10.12 2071028C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710L1C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO3-29B/131XY-M327mc            ADL1-08.26      AD29-07.21 2071029C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710L1C.CAD Inputs
+------------------------------
+DI1-28B/131XS-M327f             ADL1-05.07      AD28-05.26 2071028C  
+
+DI6-28B/131XS-M327rf            ADL1-08.07      AD28-10.26 2071028C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710L2C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO6-39A/131XY-M328mc            ADL2-08.26      AD39-10.04 2071039C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710L2C.CAD Inputs
+------------------------------
+DI5-32A/131XS-M328rf            ADL2-08.07      AD32-09.14 2071032C  
+
+DI6-32A/131XS-M328f             ADL2-05.07      AD32-10.14 2071032C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710L3C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO7-39A/131XY-M329mc            ADL3-08.26      AD39-11.04 2071039C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710L3C.CAD Inputs
+------------------------------
+DI1-32B/131XS-M329f             ADL3-05.07      AD32-05.22 2071032C  
+
+DI7-32A/131XS-M329rf            ADL3-08.07      AD32-11.14 2071032C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710L4C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710L4C.CAD Inputs
+------------------------------
+DI7-25A/131XS-M330rf            ADL4-08.07      AD25-12.12 2071025C  
+
+DI7-25B/131XS-M330f             ADL4-06.07      AD25-11.26 2071025C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710L5C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO1-39B/131XY-M331mc            ADL5-08.26      AD39-05.20 2071039C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710L5C.CAD Inputs
+------------------------------
+DI2-32B/131XS-M331rf            ADL5-08.07      AD32-06.22 2071032C  
+
+DI5-32B/131XS-M331f             ADL5-05.07      AD32-09.22 2071032C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710L6C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+131XY-M341mc                    ADL6-06.26      ADA3-07.07 20710A3C  
+
+DO4-38A/131XY-M341mc            ADL6-09.26      AD38-08.10 2071038C  
+
+DO5-38A/131XY-M341mc            ADL6-08.26      AD38-09.10 2071038C  
+
+PRESS MIN                       ADL6-14.26      ADL9-17.07 20710L9C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710L6C.CAD Inputs
+------------------------------
+AI4-22/131LT381                 ADL6-13.07      AD22-05.21 2071022C  
+
+AI5-23/131IT-M341B              ADL6-12.07      AD23-05.21 2071023C  
+
+AI6-23/131IT-M341A              ADL6-11.07      AD23-07.21 2071023C  
+
+DI2-31B/131XS-M341rf            ADL6-08.07      AD31-06.26 2071031C  
+
+DI4-31B/131XS-M341rf            ADL6-10.07      AD31-08.26 2071031C  
+
+DI5-31B/131XS-M341f             ADL6-06.07      AD31-09.26 2071031C  
+
+PRESS NASH PUMP                 ADL6-14.07      ADA0-07.26 20710A0C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710L7C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710L7C.CAD Inputs
+------------------------------
+AI5-23/131IT-M341B              ADL7-11.07      AD23-05.21 2071023C  
+
+AI6-23/131IT-M341A              ADL7-04.07      AD23-07.21 2071023C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710L8C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710L8C.CAD Inputs
+------------------------------
+DI4-31B/131XS-M341rf            ADL8-07.05      AD31-08.26 2071031C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710L9C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO7-29B/131XY-M342mc            ADL9-08.26      ADA4-07.07 20710A4C  AD29-11.21 2071029C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710L9C.CAD Inputs
+------------------------------
+AI14-23/131IT-M342A             ADL9-12.07      AD23-14.21 2071023C  
+
+AI4-23/131IT-M342B              ADL9-13.07      AD23-05.21 2071023C  
+
+AI5-22/131LT382                 ADL9-16.07      AD22-05.21 2071022C  
+
+DI1-26B/131XS-M342f             ADL9-04.07      AD26-05.26 2071026C  
+
+DI4-26B/131XS-M342rf            ADL9-08.07      AD26-08.26 2071026C  
+
+DI7-31A/131XS-M342rf            ADL9-10.07      AD31-11.12 2071031C  
+
+PRESS MIN                       ADL9-17.07      ADL6-14.26 20710L6C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710M0C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710M0C.CAD Inputs
+------------------------------
+DI2-26B/131XS-M342rf            ADM0-07.05      AD26-06.26 2071026C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710M1C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710M1C.CAD Inputs
+------------------------------
+AI14-23/131IT-M342A             ADM1-05.07      AD23-14.21 2071023C  
+
+AI4-23/131IT-M342B              ADM1-11.07      AD23-05.21 2071023C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710M2C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO7-40/131XY-M343mc             ADM2-08.26      AD40-11.09 2071040C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710M2C.CAD Inputs
+------------------------------
+DI7-36A/131XS-M343rf            ADM2-08.07      AD36-13.17 2071036C  
+
+DI8-SL36A/131XS-M343f           ADM2-06.07      AD36-14.17 2071036C  
+
+STATUS 131XS-M346F              ADM2-11.07      ADM5-05.26 20710M5C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710M3C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO5-40/131XY-M344mc             ADM3-08.26      AD40-09.09 2071040C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710M3C.CAD Inputs
+------------------------------
+DI4-36A/131XS-M344f             ADM3-05.07      AD36-10.17 2071036C  
+
+DI5-36A/131XS-M344rf            ADM3-08.07      AD36-11.17 2071036C  
+
+STATUS 131XS-M346F              ADM3-16.07      ADM5-05.26 20710M5C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710M4C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO1-40/131XY-M345mc             ADM4-08.26      AD40-05.09 2071040C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710M4C.CAD Inputs
+------------------------------
+DI2-36A/131XS-M345f             ADM4-05.07      AD36-08.17 2071036C  
+
+DI3-36A/131XS-M345rf            ADM4-08.07      AD36-09.17 2071036C  
+
+STATUS 131XS-M346F              ADM4-16.07      ADM5-05.26 20710M5C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710M5C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO6-38/131XY-M346mc             ADM5-08.26      AD38-10.10 2071038C  
+
+STATUS 131XS-M346F              ADM5-05.26      ADM4-16.07 20710M4C  ADM3-16.07 20710M3C  ADM2-11.07 20710M2C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710M5C.CAD Inputs
+------------------------------
+DI5-35A/131XS-M346rf            ADM5-08.07      AD35-09.14 2071035C  
+
+DI6-35A/131XS-M346f             ADM5-06.07      AD35-10.14 2071035C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710M6C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO5-29B/131XY-M401mc            ADM6-08.26      AD29-09.21 2071029C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710M6C.CAD Inputs
+------------------------------
+DI2-28B/131XS-M401rf            ADM6-08.07      AD28-06.26 2071028C  
+
+DI3-28B/131XS-M401f             ADM6-05.07      AD28-07.26 2071028C  
+
+DI4-28B/131XS-M401lsp           ADM6-14.07      AD28-08.26 2071028C  
+
+DI5-28B/131XS-M401lst           ADM6-11.07      AD28-09.26 2071028C  
+
+LEVEL OIL 411A LOW              ADM6-16.07      ADA5-08.26 20710A5C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710M7C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710M7C.CAD Inputs
+------------------------------
+AI13-23/131IT-M401              ADM7-09.07      AD23-13.21 2071023C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710M8C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO1-38B/131XY-M402mc            ADM8-08.26      AD38-05.20 2071038C  
+
+DO7-38A/131XY-M402le            ADM8-06.26      AD38-11.10 2071038C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710M8C.CAD Inputs
+------------------------------
+131TqI-422                      ADM8-17.07      ADA9-06.26 20710A9C  
+
+DI1-33A/131XS-M402rf            ADM8-08.07      AD33-05.11 2071033C  
+
+DI2-33A/131XS-M402f             ADM8-05.07      AD33-06.11 2071033C  
+
+DI3-33A/131XS-M402lsp           ADM8-14.07      AD33-07.11 2071033C  
+
+DI4-33A/131XS-M402lst           ADM8-11.07      AD33-08.11 2071033C  
+
+LEVEL OIL 421A LOW              ADM8-16.07      ADA8-08.26 20710A8C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710M9C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710M9C.CAD Inputs
+------------------------------
+AI8-22/131IT-M402               ADM9-09.07      AD22-09.21 2071022C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710N0C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO2-38B/131XY-M403mc            ADN0-08.26      AD38-06.20 2071038C  
+
+DO7-38B/131XY-M403le            ADN0-06.26      AD38-11.20 2071038C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710N0C.CAD Inputs
+------------------------------
+131TqI-432                      ADN0-17.07      ADB3-06.26 20710B3C  
+
+DI1-33B/131XS-M403lst           ADN0-11.07      AD33-05.19 2071033C  
+
+DI5-33A/131XS-M403rf            ADN0-08.07      AD33-09.11 2071033C  
+
+DI6-33A/131XS-M403f             ADN0-05.07      AD33-10.11 2071033C  
+
+DI7-33A/131XS-M403lsp           ADN0-14.07      AD33-11.11 2071033C  
+
+LEVEL OIL 431A LOW              ADN0-16.07      ADB2-08.26 20710B2C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710N1C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710N1C.CAD Inputs
+------------------------------
+AI9-23/131IT-M403               ADN1-09.07      AD23-09.21 2071023C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710N2C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO3-38B/131XY-M404mc            ADN2-08.26      AD38-07.20 2071038C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710N2C.CAD Inputs
+------------------------------
+DI1-25B/131XS-M404lst           ADN2-11.07      AD25-05.26 2071025C  
+
+DI2-25B/131XS-M404lsp           ADN2-14.07      AD25-06.26 2071025C  
+
+DI3-32B/131XS-M404rf            ADN2-08.07      AD32-07.22 2071032C  
+
+DI4-32B/131XS-M404f             ADN2-05.07      AD32-08.22 2071032C  
+
+LOCAL SWICTH A                  ADN2-03.07      ADO0-08.26 20710O0C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710N3C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710N3C.CAD Inputs
+------------------------------
+AI10-23/131IT-M404              ADN3-09.07      AD23-10.21 2071023C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710N4C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO2-39B/131XY-M405mc            ADN4-08.26      AD39-06.20 2071039C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710N4C.CAD Inputs
+------------------------------
+DI1-36B/131XS-M405rf            ADN4-08.07      AD36-07.27 2071036C  
+
+DI2-36B/131XS-M405f             ADN4-05.07      AD36-08.27 2071036C  
+
+DI3-25B/131XS-M405lst           ADN4-11.07      AD25-07.26 2071025C  
+
+DI4-25B/131XS-M405lsp           ADN4-14.07      AD25-08.26 2071025C  
+
+LOCAL SWICTH A                  ADN4-03.07      ADO0-08.26 20710O0C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710N5C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710N5C.CAD Inputs
+------------------------------
+AI9-22/131IT-M405               ADN5-09.07      AD22-09.21 2071022C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710N6C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO6-29B/131XY-M406mc            ADN6-08.26      AD29-10.21 2071029C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710N6C.CAD Inputs
+------------------------------
+DI1-34A/131XS-M406rf            ADN6-08.07      AD34-05.13 2071034C  
+
+DI2-34A/131XS-M406f             ADN6-05.07      AD34-06.13 2071034C  
+
+LOCAL SWICTH A                  ADN6-02.07      ADO0-08.26 20710O0C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710N7C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710N7C.CAD Inputs
+------------------------------
+AI11-23/131IT-M406              ADN7-09.07      AD23-12.21 2071023C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710N8C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO4-38B/131XY-M407mc            ADN8-08.26      AD38-08.20 2071038C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710N8C.CAD Inputs
+------------------------------
+DI1-35A/131XS-M407rf            ADN8-08.07      AD35-05.14 2071035C  
+
+DI2-35A/131XS-M407f             ADN8-06.07      AD35-06.14 2071035C  
+
+DI4-35A/131XS-M407lst           ADN8-11.07      AD35-08.14 2071035C  
+
+LOCAL SWICTH A                  ADN8-04.07      ADO0-08.26 20710O0C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710N9C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710N9C.CAD Inputs
+------------------------------
+AI11-22/131IT-M407              ADN9-09.07      AD22-12.21 2071022C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710O0C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO1-43/131XY-M407le             ADO0-07.26      AD41-05.05 2071041C  
+
+LOCAL SWICTH A                  ADO0-08.26      ADN8-04.07 20710N8C  ADN6-02.07 20710N6C  ADN4-03.07 20710N4C  ADN2-03.07 20710N2C  
+                                                
+
+C:\EWS\PROJECT\L2\P7\M10\20710O0C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\20710O1C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO3-39B/131XY-M415mc            ADO1-08.26      AD39-07.20 2071039C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710O1C.CAD Inputs
+------------------------------
+DI4-36B/131XS-M415rf            ADO1-08.07      AD36-10.27 2071036C  
+
+DI5-25B/131XS-M415lst           ADO1-11.07      AD25-09.26 2071025C  
+
+DI5-36B/131XS-M415f             ADO1-05.07      AD36-11.27 2071036C  
+
+DI6-25B/131XS-M415lsp           ADO1-14.07      AD25-10.26 2071025C  
+
+LOCAL SWICTH B                  ADO1-03.07      ADO7-08.26 20710O7C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710O2C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710O2C.CAD Inputs
+------------------------------
+AI12-23/131IT-M415              ADO2-09.07      AD23-12.21 2071023C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710O3C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO4-39B/131XY-M416mc            ADO3-08.26      AD39-08.20 2071039C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710O3C.CAD Inputs
+------------------------------
+DI6-26B/131XS-M416lst           ADO3-11.07      AD26-10.26 2071026C  
+
+DI6-36B/131XS-M416rf            ADO3-08.07      AD36-12.27 2071036C  
+
+DI7-26B/131XS-M416lsp           ADO3-14.07      AD26-11.26 2071026C  
+
+DI7-36B/131XS-M416f             ADO3-05.07      AD36-13.27 2071036C  
+
+LOCAL SWICTH B                  ADO3-02.07      ADO7-08.26 20710O7C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710O4C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710O4C.CAD Inputs
+------------------------------
+AI12-22/131IT-M416              ADO4-09.07      AD22-12.21 2071022C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710O5C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO6-29A/131XY-M417mc            ADO5-08.26      AD29-10.05 2071029C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710O5C.CAD Inputs
+------------------------------
+DI6-31B/131XS-M417lst           ADO5-11.07      AD31-10.26 2071031C  
+
+DI6-32B/131XS-M417rf            ADO5-08.07      AD32-10.22 2071032C  
+
+DI7-31B/131XS-M417lsp           ADO5-13.07      AD31-11.26 2071031C  
+
+DI7-32B/131XS-M417f             ADO5-06.07      AD32-11.22 2071032C  
+
+LOCAL SWICTH B                  ADO5-04.07      ADO7-08.26 20710O7C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710O6C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710O6C.CAD Inputs
+------------------------------
+AI13-22/131IT-M417              ADO6-09.07      AD22-13.21 2071022C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710O7C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO2-43/131XY-M417le             ADO7-07.26      AD41-06.05 2071041C  
+
+LOCAL SWICTH B                  ADO7-08.26      ADP4-02.07 20710P4C  ADP2-02.07 20710P2C  ADP0-02.07 20710P0C  ADO8-04.07 20710O8C  
+                                                ADO5-04.07 20710O5C  ADO3-02.07 20710O3C  ADO1-03.07 20710O1C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710O7C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\20710O8C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO5-38B/131XY-M420mc            ADO8-08.26      AD38-09.20 2071038C  
+
+STATUS M420                     ADO8-13.26      ADO9-10.07 20710O9C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710O8C.CAD Inputs
+------------------------------
+DI1-34B/131XS-M420f             ADO8-06.07      AD34-05.23 2071034C  
+
+DI3-34B/131XS-M420lst           ADO8-11.07      AD34-07.23 2071034C  
+
+DI7-34A/131XS-M420rf            ADO8-08.07      AD34-11.13 2071034C  
+
+FAULT FC420                     ADO8-15.07      ADO9-11.26 20710O9C  
+
+LOCAL SWICTH B                  ADO8-04.07      ADO7-08.26 20710O7C  
+
+STATUS M120                     ADO8-16.07      ADI7-04.26 20710I7C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710O9C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO10-24/131SV-420               ADO9-06.26      AD24-06.20 2071024C  
+
+FAULT FC420                     ADO9-11.26      ADZ8-11.07 20710Z8C  ADO8-15.07 20710O8C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710O9C.CAD Inputs
+------------------------------
+131FT-427 PV                    ADO9-05.07      ADB0-05.26 20710B0C  
+
+AI14-23/131IT-M420              ADO9-15.07      AD23-14.21 2071023C  
+
+AI2-23/131ST-420                ADO9-01.07      AD23-04.21 2071023C  
+
+AO10FB-24/131SV-420             ADO9-08.07      AD24-07.20 2071024C  
+
+DI6-33B/131XS-M420              ADO9-12.07      AD33-10.19 2071033C  
+
+STATUS M420                     ADO9-10.07      ADO8-13.26 20710O8C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710P0C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO6-39B/131XY-M421mc            ADP0-08.26      AD39-10.20 2071039C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710P0C.CAD Inputs
+------------------------------
+DI1-35B/131XS-M421f             ADP0-05.07      AD35-05.23 2071035C  
+
+DI2-35B/131XS-M421lsp           ADP0-14.07      AD35-06.23 2071035C  
+
+DI3-35B/131XS-M421lst           ADP0-11.07      AD35-07.23 2071035C  
+
+DI7-35A/131XS-M421rf            ADP0-08.07      AD35-11.14 2071035C  
+
+LOCAL SWICTH B                  ADP0-02.07      ADO7-08.26 20710O7C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710P1C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710P1C.CAD Inputs
+------------------------------
+AI14-22/131IT-M421              ADP1-09.07      AD22-14.21 2071022C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710P2C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO6-38B/131XY-M424mc            ADP2-08.26      AD38-10.20 2071038C  
+
+STATUS M424                     ADP2-13.26      ADP3-10.07 20710P3C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710P2C.CAD Inputs
+------------------------------
+DI4-34B/131XS-M424rf            ADP2-08.07      AD34-08.23 2071034C  
+
+DI5-34B/131XS-M424f             ADP2-05.07      AD34-09.23 2071034C  
+
+DI7-34B/131XS-M424lst           ADP2-11.07      AD34-11.23 2071034C  
+
+FAULT FC424                     ADP2-16.07      ADP3-11.26 20710P3C  
+
+LOCAL SWICTH B                  ADP2-02.07      ADO7-08.26 20710O7C  
+
+STATUS M120                     ADP2-17.07      ADI7-04.26 20710I7C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710P3C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+AO11-24/131SV-424               ADP3-06.26      AD24-08.20 2071024C  
+
+FAULT FC424                     ADP3-11.26      ADP2-16.07 20710P2C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710P3C.CAD Inputs
+------------------------------
+131FT-437 PV                    ADP3-05.07      ADB4-05.26 20710B4C  
+
+AI15-23/131IT-M424              ADP3-15.07      AD23-15.21 2071023C  
+
+AI3-23/131ST-424                ADP3-01.07      AD23-04.21 2071023C  
+
+AO11FB-24/131SV-424             ADP3-08.07      AD24-08.20 2071024C  
+
+DI5-33B/131XS-M424              ADP3-12.07      AD33-09.19 2071033C  
+
+STATUS M424                     ADP3-10.07      ADP2-13.26 20710P2C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710P4C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO7-39B/131XY-M425mc            ADP4-08.26      AD39-11.20 2071039C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710P4C.CAD Inputs
+------------------------------
+DI4-35B/131XS-M425rf            ADP4-08.07      AD35-08.23 2071035C  
+
+DI5-35B/131XS-M425f             ADP4-05.07      AD35-09.23 2071035C  
+
+DI6-35B/131XS-M425lsp           ADP4-14.07      AD35-10.23 2071035C  
+
+DI7-35B/131XS-M425lst           ADP4-11.07      AD35-11.23 2071035C  
+
+LOCAL SWICTH B                  ADP4-02.07      ADO7-08.26 20710O7C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710P6C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO5-39B/131XY-M426mc            ADP6-08.26      AD39-09.20 2071039C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710P6C.CAD Inputs
+------------------------------
+DI4-34A/131AUX-M426rf           ADP6-08.07      AD34-08.13 2071034C  
+
+DI5-34A/131XS-M426f             ADP6-05.07      AD34-09.13 2071034C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710S1C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO1-9B/131XY-M506mc             ADS1-08.26      AD09-05.21 2071009C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710S1C.CAD Inputs
+------------------------------
+DI5-18B/131XS-M506rf            ADS1-08.07      AD18-09.26 2071018C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710S3C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO3-9B/131XY-M507mc             ADS3-08.26      AD09-07.21 2071009C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710S3C.CAD Inputs
+------------------------------
+DI6-18B/131XS-M507rf            ADS3-08.07      AD18-10.26 2071018C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710S4C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710S4C.CAD Inputs
+------------------------------
+AI7-14/131IT-M507               ADS4-08.07      AD14-08.21 2071014C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710S5C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO4-9B/131XY-M508mc             ADS5-08.26      AD09-08.21 2071009C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710S5C.CAD Inputs
+------------------------------
+DI7-18B/131XS-M508rf            ADS5-08.07      AD18-11.26 2071018C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710S6C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710S6C.CAD Inputs
+------------------------------
+AI8-14/131IT-M508               ADS6-08.07      AD14-09.21 2071014C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710T3C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710T3C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\20710T5C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710T5C.CAD Inputs
+------------------------------
+AI12-SL4/131AI-555              ADT5-09.07      AD04-12.21 2071004C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710T7C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710T7C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\20710T8C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710T8C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\20710Y0C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710Y0C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\20710Y2C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710Y2C.CAD Inputs
+------------------------------
+DI1-20B/131UPS102               ADY2-08.07      AD20-05.16 2071020C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710Y9C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710Y9C.CAD Inputs
+------------------------------
+BYPASS_SHEET53                  ADY9-12.07      AD53-17.26 2071053C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710Z1C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710Z1C.CAD Inputs
+------------------------------
+
+C:\EWS\PROJECT\L2\P7\M10\20710Z2C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO8-29A/131XY-M509Amc           ADZ2-08.26      AD29-12.05 2071029C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710Z2C.CAD Inputs
+------------------------------
+AI7-22/131FT0451                ADZ2-13.07      AD22-08.21 2071022C  
+
+DI3-33B/131XS-M509Lst           ADZ2-11.07      AD33-07.19 2071033C  
+
+DI3-34A/131XS-M509Lsp           ADZ2-11.07      AD34-07.13 2071034C  
+
+DI5-28B/131XS-M401lst           ADZ2-08.07      AD28-09.26 2071028C  
+
+DI7-28B/131LSL411A              ADZ2-09.07      AD28-11.26 2071028C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710Z3C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710Z3C.CAD Inputs
+------------------------------
+131XS-M424rf /131XS-M425rf      ADZ3-11.07      AD99-11.26 2071099C  
+
+DI7-SL33B/131LSL-431A           ADZ3-12.07      AD33-11.19 2071033C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710Z6C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710Z6C.CAD Inputs
+------------------------------
+DI2-31B/131XS-M341rf            ADZ6-08.07      AD31-06.26 2071031C  
+
+DI3-31B/131XS-SPARE             ADZ6-05.07      AD31-07.26 2071031C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710Z7C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+
+C:\EWS\PROJECT\L2\P7\M10\20710Z7C.CAD Inputs
+------------------------------
+DI3-36B/131XS-SPARE             ADZ7-16.07      AD36-09.27 2071036C  
+
+DI4-31B/131XS-M341rf            ADZ7-05.07      AD31-08.26 2071031C  
+
+DI5-31B/131XS-M341f             ADZ7-08.07      AD31-09.26 2071031C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710Z8C.CAD Outputs
+------------------------------
+     Description                Source               Destination(s)
+DO5-29A/131MC-SPARE             ADZ8-08.26      AD29-09.05 2071029C  
+
+
+C:\EWS\PROJECT\L2\P7\M10\20710Z8C.CAD Inputs
+------------------------------
+DI2-26B/131XS-M342rf            ADZ8-08.07      AD26-06.26 2071026C  
+
+DI3-26B/131XS-SPARE             ADZ8-05.07      AD26-07.26 2071026C  
+
+FAULT FC420                     ADZ8-11.07      ADO9-11.26 20710O9C  
+

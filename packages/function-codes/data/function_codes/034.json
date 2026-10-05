@@ -1,0 +1,184 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 34,
+  "name": "Memory",
+  "description": "This function memorizes its previous output when both inputs are logic 0. Specification S1 is the set (S) input, and S2 is the reset (R) input. When both inputs have the value logic 1, the output assumes the override state specified by S4. Specification S3 is the initial state flag. The value specified in <S3> will be the output after power up or a controller reset. Table 34-1 shows that the initial state depends solely on the value of <S3>. The values of <S1>, <S2> and S4 have no effect on initial output. Table 34-2 shows the output for all other input combinations.",
+  "description_lines": [
+    "This function memorizes its previous output when both inputs",
+    "are logic 0. Specification S1 is the set (S) input, and S2 is the",
+    "reset (R) input. When both inputs have the value logic 1, the",
+    "output assumes the override state specified by S4. Specifica-",
+    "tion S3 is the initial state flag. The value specified in <S3> will",
+    "be the output after power up or a controller reset.",
+    "Table 34-1 shows that the initial state depends solely on the",
+    "value of <S3>. The values of <S1>, <S2> and S4 have no effect",
+    "on initial output.",
+    "Table 34-2 shows the output for all other input",
+    "combinations."
+  ],
+  "symbol": {
+    "title_raw": "S",
+    "title": "S",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 188.28,
+        "y": 597.66,
+        "s": "(3 4 )"
+      },
+      {
+        "x": 147.96,
+        "y": 596.46,
+        "s": "S 1"
+      },
+      {
+        "x": 172.92,
+        "y": 592.62,
+        "s": "S"
+      },
+      {
+        "x": 188.28,
+        "y": 588.72,
+        "s": "N"
+      },
+      {
+        "x": 147.96,
+        "y": 578.4,
+        "s": "S 2"
+      },
+      {
+        "x": 172.92,
+        "y": 574.8,
+        "s": "R"
+      },
+      {
+        "x": 147.96,
+        "y": 560.34,
+        "s": "S 3"
+      },
+      {
+        "x": 167.64,
+        "y": 556.02,
+        "s": "I"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Refer to Tables 34-1 and 34-2",
+      "description_lines": [
+        "Refer to Tables 34-1 and 34-2"
+      ],
+      "manual_page": 123
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of set input",
+      "description_lines": [
+        "Block address of set input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 123
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of reset input",
+      "description_lines": [
+        "Block address of reset input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 123
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of initial state",
+      "description_lines": [
+        "Block address of initial state"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 123
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "0 or 1",
+      "description": "Override value:; 0 = reset; 1 = set",
+      "description_lines": [
+        "Override value:",
+        "0 = reset",
+        "1 = set"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "reset"
+        },
+        {
+          "value": "1",
+          "meaning": "set"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 123
+    }
+  ],
+  "spec_count": 4,
+  "max_spec_number": 4,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 123,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 123,
+  "manual_pages": [
+    123,
+    124
+  ],
+  "manual_section": "Function Code 34 - Memory",
+  "diagnostics": []
+}

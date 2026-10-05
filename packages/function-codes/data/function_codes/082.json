@@ -1,0 +1,478 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 82,
+  "name": "Segment Control",
+  "description": "The segment control function code groups subsequent blocks into a scan cycle executed at a specified rate and priority. Each module can support up to eight segment control blocks. Each segment control block provides five outputs. Block address 15 contains one permanently configured segment control block. The other seven are configurable. NOTE: Online configuration allows changing the function block configuration during controller execution without interrupting the control process. For the HAC only, function code 82 can not be added or deleted via online configuration.",
+  "description_lines": [
+    "The segment control function code groups subsequent blocks",
+    "into a scan cycle executed at a specified rate and priority. Each",
+    "module can support up to eight segment control blocks. Each",
+    "segment control block provides five outputs. Block address 15",
+    "contains one permanently configured segment control block.",
+    "The other seven are configurable.",
+    "NOTE: Online configuration allows changing the function block configuration",
+    "during controller execution without interrupting the control process. For the",
+    "HAC only, function code 82 can not be added or deleted via online",
+    "configuration."
+  ],
+  "symbol": {
+    "title_raw": "S E G C R M",
+    "title": "SEGCRM",
+    "inputs": [],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3",
+      "N+4"
+    ],
+    "items": [
+      {
+        "x": 153.36,
+        "y": 594.06,
+        "s": "S E G C R M"
+      },
+      {
+        "x": 190.26,
+        "y": 588.78,
+        "s": "(8 2 )"
+      },
+      {
+        "x": 178.98,
+        "y": 583.98,
+        "s": "P T"
+      },
+      {
+        "x": 190.26,
+        "y": 579.9,
+        "s": "N"
+      },
+      {
+        "x": 178.98,
+        "y": 575.1,
+        "s": "E T"
+      },
+      {
+        "x": 190.26,
+        "y": 571.26,
+        "s": "N + 1"
+      },
+      {
+        "x": 178.74,
+        "y": 565.98,
+        "s": "U F"
+      },
+      {
+        "x": 190.26,
+        "y": 562.38,
+        "s": "N + 2"
+      },
+      {
+        "x": 178.08,
+        "y": 557.1,
+        "s": "D R"
+      },
+      {
+        "x": 190.26,
+        "y": 553.5,
+        "s": "N + 3"
+      },
+      {
+        "x": 178.74,
+        "y": 548.22,
+        "s": "C T"
+      },
+      {
+        "x": 190.26,
+        "y": 544.62,
+        "s": "N + 4"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Elapsed time of previous cycle in units set by S1",
+      "description_lines": [
+        "Elapsed time of previous cycle in units set by S1"
+      ],
+      "manual_page": 229
+    },
+    {
+      "blk": "N+1",
+      "type": "R",
+      "description": "Elapsed time of current cycle in units set by S1",
+      "description_lines": [
+        "Elapsed time of current cycle in units set by S1"
+      ],
+      "manual_page": 229
+    },
+    {
+      "blk": "N+2",
+      "type": "R",
+      "description": "Processor utilization (%)",
+      "description_lines": [
+        "Processor utilization (%)"
+      ],
+      "manual_page": 229
+    },
+    {
+      "blk": "N+3",
+      "type": "R",
+      "description": "Checkpoint overrun count number (number of cycles over that are specified in S4)",
+      "description_lines": [
+        "Checkpoint overrun count number (number of cycles over",
+        "that are specified in S4)"
+      ],
+      "manual_page": 229
+    },
+    {
+      "blk": "N+4",
+      "type": "R",
+      "description": "Cycle time overrun in units set by S1",
+      "description_lines": [
+        "Cycle time overrun in units set by S1"
+      ],
+      "manual_page": 229
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "01, 02, 11, 12, 21, 22, 31 or 32",
+      "description": "Segment attributes; tune and modify lock (1X, 2X and 3X can be unlocked with switch combinations via special operations) Tune :; 0X = tune and modify allowed; 1X = tuning not allowed; 2X = modify lock; 3X = tune and modify lock Target period time units :; X1 = seconds; X2 = minutes",
+      "description_lines": [
+        "Segment attributes; tune and modify lock (1X, 2X and",
+        "3X can be unlocked with switch combinations via",
+        "special operations)",
+        "Tune :",
+        "0X = tune and modify allowed",
+        "1X = tuning not allowed",
+        "2X = modify lock",
+        "3X = tune and modify lock",
+        "Target period time units :",
+        "X1 = seconds",
+        "X2 = minutes"
+      ],
+      "enumerations": [
+        {
+          "value": "0X",
+          "meaning": "tune and modify allowed"
+        },
+        {
+          "value": "1X",
+          "meaning": "tuning not allowed"
+        },
+        {
+          "value": "2X",
+          "meaning": "modify lock"
+        },
+        {
+          "value": "3X",
+          "meaning": "tune and modify lock"
+        },
+        {
+          "value": "X1",
+          "meaning": "seconds"
+        },
+        {
+          "value": "X2",
+          "meaning": "minutes"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 229
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.250",
+      "type": "R",
+      "range": "Full",
+      "description": "Target period (seconds or minutes as specified by S1)",
+      "description_lines": [
+        "Target period (seconds or minutes as specified by S1)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 229
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 255",
+      "description": "Segment priority (0 = lowest). Can not be modified through online configuration.",
+      "description_lines": [
+        "Segment priority (0 = lowest). Can not be modified",
+        "through online configuration."
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 229
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "0 - 32,767",
+      "description": "Checkpoint period (number of cycles per checkpoint)",
+      "description_lines": [
+        "Checkpoint period (number of cycles per checkpoint)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 230
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0, 1, or 2",
+      "description": "PID reset mode:; 0 = normal reset; 1 = auto selected external reset; 2 = external reset",
+      "description_lines": [
+        "PID reset mode:",
+        "0 = normal reset",
+        "1 = auto selected external reset",
+        "2 = external reset"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "normal reset"
+        },
+        {
+          "value": "1",
+          "meaning": "auto selected external reset"
+        },
+        {
+          "value": "2",
+          "meaning": "external reset"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 230
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "10.000",
+      "type": "R",
+      "range": "Full",
+      "description": "PID maximum derivative gain",
+      "description_lines": [
+        "PID maximum derivative gain"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 230
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1.000",
+      "type": "R",
+      "range": "0.0 - 9.2 E18",
+      "description": "Minimum report time for all exception reports in this segment (seconds or minutes as specified by S1)",
+      "description_lines": [
+        "Minimum report time for all exception reports in this",
+        "segment (seconds or minutes as specified by S1)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 230
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "60.000",
+      "type": "R",
+      "range": "0.0 - 9.2 E18",
+      "description": "Maximum report time for all exception reports in this segment (seconds or minutes as specified by S1)",
+      "description_lines": [
+        "Maximum report time for all exception reports in this",
+        "segment (seconds or minutes as specified by S1)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 230
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2.000",
+      "type": "R",
+      "range": "0.0 - 9.2 E18",
+      "description": "Significant change parameter for all control loop (i.e., station) exception reports in this segment (in % of span)",
+      "description_lines": [
+        "Significant change parameter for all control loop (i.e.,",
+        "station) exception reports in this segment (in % of",
+        "span)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 230
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1.000",
+      "type": "R",
+      "range": "0.0 - 9.2 E18",
+      "description": "Alarm deadband for all high and low alarm reports in this segment (in % of span)",
+      "description_lines": [
+        "Alarm deadband for all high and low alarm reports in",
+        "this segment (in % of span)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 230
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1.000",
+      "type": "R",
+      "range": "0.0 - 9.2 E18",
+      "description": "Alarm deadband for all deviation alarm reports in this segment (in % of span)",
+      "description_lines": [
+        "Alarm deadband for all deviation alarm reports in this",
+        "segment (in % of span)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 230
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Reserved",
+      "description_lines": [
+        "Reserved"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 230
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1.000",
+      "type": "R",
+      "range": "0.0 - 9.2 E18",
+      "description": "Periodic I/O sampling period for this segment (in seconds). This is a multiple of the extended executive block (function code 90, block 20, S2)",
+      "description_lines": [
+        "Periodic I/O sampling period for this segment",
+        "(in seconds). This is a multiple of the extended execu-",
+        "tive block (function code 90, block 20, S2)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 230
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "0.0 - 9.2 E18",
+      "description": "Segment cycle time alarm limit (seconds or minutes as specified by S1)",
+      "description_lines": [
+        "Segment cycle time alarm limit (seconds or minutes as",
+        "specified by S1)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 230
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Auto sequencing:; 0 = off; 1 = on",
+      "description_lines": [
+        "Auto sequencing:",
+        "0 = off",
+        "1 = on"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "off"
+        },
+        {
+          "value": "1",
+          "meaning": "on"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 230
+    }
+  ],
+  "spec_count": 15,
+  "max_spec_number": 15,
+  "notes": [],
+  "manual_page": 229,
+  "manual_pages": [
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238
+  ],
+  "manual_section": "Function Code 82 - Segment Control",
+  "diagnostics": []
+}

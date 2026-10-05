@@ -1,0 +1,1204 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 80,
+  "name": "Control Station",
+  "description": "There are three types of stations, each controllable through a digital (NDCS03) or analog (IISAC01) control station and/or a human system interface (HSI). The types include basic, cascade and ratio stations. A basic station generates a set point (SP) and provides manual/automatic transfers, control output adjustments in manual control mode, and set point adjustments in automatic control mode. A cascade station provides the same functions as a basic station plus an additional mode that allows the set point to be controlled by external input signal <S2>. A ratio station provides the same functions as a basic station, but differs from the cascade station in its method of set point generation while in the ratio mode. The wild variable <S2> multiplied by a ratio adjustment factor (ratio index) determines the set point output while in ratio mode. The initial ratio index value is calculated by the station to maintain the current set point output value when the station is placed into the ratio mode. While in the ratio mode, the ratio index value is displayed in place of the set point value and can be adjusted (ramped up or down) by the operator to obtain the desired set point output. Station control allows changing the mode, set point, ratio index and control output of a control station by manipulating a control station element. The control output (CO) value during startup is configurable. If S16 defines a DCS station (S16 equals zero through seven) or SAC station (S16 equals zero through 63), then the control output during startup tracks the displayed control output on the DCS station or SAC station. If a communication failure exists for the station (or S16 equals 255), then the control output tracks the CO track signal <S4> during startup. NOTE: Valid station addresses are zero through 63 and 100 through 163 for Harmony controllers at 40 kilobaud. The associated analog output (AO) <S28> generates auto-bypass when the AO has bad quality and communicates this state to the control interface module analog output.",
+  "description_lines": [
+    "There are three types of stations, each controllable through a",
+    "digital (NDCS03) or analog (IISAC01) control station and/or a",
+    "human system interface (HSI). The types include basic, cas-",
+    "cade and ratio stations.",
+    "A basic station generates a set point (SP) and provides man-",
+    "ual/automatic transfers, control output adjustments in man-",
+    "ual control mode, and set point adjustments in automatic",
+    "control mode.",
+    "A cascade station provides the same functions as a basic sta-",
+    "tion plus an additional mode that allows the set point to be",
+    "controlled by external input signal <S2>.",
+    "A ratio station provides the same functions as a basic station,",
+    "but differs from the cascade station in its method of set point",
+    "generation while in the ratio mode. The wild variable <S2>",
+    "multiplied by a ratio adjustment factor (ratio index) determines",
+    "the set point output while in ratio mode. The initial ratio index",
+    "value is calculated by the station to maintain the current set",
+    "point output value when the station is placed into the ratio",
+    "mode. While in the ratio mode, the ratio index value is dis-",
+    "played in place of the set point value and can be adjusted",
+    "(ramped up or down) by the operator to obtain the desired set",
+    "point output.",
+    "Station control allows changing the mode, set point, ratio",
+    "index and control output of a control station by manipulating",
+    "a control station element.",
+    "The control output (CO) value during startup is configurable. If",
+    "S16 defines a DCS station (S16 equals zero through seven) or",
+    "SAC station (S16 equals zero through 63), then the control",
+    "output during startup tracks the displayed control output on",
+    "the DCS station or SAC station. If a communication failure",
+    "exists for the station (or S16 equals 255), then the control out-",
+    "put tracks the CO track signal <S4> during startup.",
+    "NOTE: Valid station addresses are zero through 63 and 100 through 163 for",
+    "Harmony controllers at 40 kilobaud.",
+    "The associated analog output (AO) <S28> generates",
+    "auto-bypass when the AO has bad quality and communicates",
+    "this state to the control interface module analog output."
+  ],
+  "symbol": {
+    "title_raw": "M /A",
+    "title": "M/A",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S18",
+      "S19",
+      "S20",
+      "S21",
+      "S22",
+      "S24",
+      "S25",
+      "S26",
+      "S27",
+      "S28",
+      "S29",
+      "S30"
+    ],
+    "outputs": [
+      "N+1",
+      "N",
+      "N+2",
+      "N+4",
+      "N+3",
+      "N+5"
+    ],
+    "items": [
+      {
+        "x": 163.2,
+        "y": 594.78,
+        "s": "M /A"
+      },
+      {
+        "x": 158.64,
+        "y": 586.62,
+        "s": "M F C /P"
+      },
+      {
+        "x": 191.34,
+        "y": 580.14,
+        "s": "(8 0 )"
+      },
+      {
+        "x": 133.62,
+        "y": 578.7,
+        "s": "S 1"
+      },
+      {
+        "x": 179.52,
+        "y": 575.1,
+        "s": "S P"
+      },
+      {
+        "x": 152.88,
+        "y": 574.86,
+        "s": "P V"
+      },
+      {
+        "x": 191.34,
+        "y": 571.26,
+        "s": "N + 1"
+      },
+      {
+        "x": 133.62,
+        "y": 569.82,
+        "s": "S 2"
+      },
+      {
+        "x": 152.88,
+        "y": 565.98,
+        "s": "S P"
+      },
+      {
+        "x": 182.16,
+        "y": 565.98,
+        "s": "O"
+      },
+      {
+        "x": 191.34,
+        "y": 562.38,
+        "s": "N"
+      },
+      {
+        "x": 133.62,
+        "y": 560.94,
+        "s": "S 3"
+      },
+      {
+        "x": 152.88,
+        "y": 557.34,
+        "s": "A"
+      },
+      {
+        "x": 182.64,
+        "y": 557.1,
+        "s": "A"
+      },
+      {
+        "x": 191.34,
+        "y": 553.5,
+        "s": "N + 2"
+      },
+      {
+        "x": 133.62,
+        "y": 552.06,
+        "s": "S 4"
+      },
+      {
+        "x": 152.88,
+        "y": 548.46,
+        "s": "T R"
+      },
+      {
+        "x": 177.6,
+        "y": 548.22,
+        "s": "C /R"
+      },
+      {
+        "x": 191.34,
+        "y": 544.62,
+        "s": "N + 4"
+      },
+      {
+        "x": 133.62,
+        "y": 543.18,
+        "s": "S 5"
+      },
+      {
+        "x": 152.88,
+        "y": 539.58,
+        "s": "T S"
+      },
+      {
+        "x": 182.4,
+        "y": 539.1,
+        "s": "C"
+      },
+      {
+        "x": 191.34,
+        "y": 535.74,
+        "s": "N + 3"
+      },
+      {
+        "x": 133.62,
+        "y": 534.3,
+        "s": "S 1 8"
+      },
+      {
+        "x": 152.88,
+        "y": 530.7,
+        "s": "M I"
+      },
+      {
+        "x": 177.84,
+        "y": 530.22,
+        "s": "C -F"
+      },
+      {
+        "x": 191.34,
+        "y": 526.86,
+        "s": "N + 5"
+      },
+      {
+        "x": 133.62,
+        "y": 525.42,
+        "s": "S 1 9"
+      },
+      {
+        "x": 152.88,
+        "y": 521.82,
+        "s": "A X"
+      },
+      {
+        "x": 133.62,
+        "y": 516.54,
+        "s": "S 2 0"
+      },
+      {
+        "x": 152.88,
+        "y": 512.94,
+        "s": "C /R"
+      },
+      {
+        "x": 133.62,
+        "y": 507.72,
+        "s": "S 2 1"
+      },
+      {
+        "x": 152.88,
+        "y": 504.36,
+        "s": "L X"
+      },
+      {
+        "x": 133.62,
+        "y": 498.84,
+        "s": "S 2 2"
+      },
+      {
+        "x": 152.88,
+        "y": 495.48,
+        "s": "C X"
+      },
+      {
+        "x": 133.62,
+        "y": 489.96,
+        "s": "S 2 4"
+      },
+      {
+        "x": 152.88,
+        "y": 486.6,
+        "s": "H A A"
+      },
+      {
+        "x": 133.62,
+        "y": 481.08,
+        "s": "S 2 5"
+      },
+      {
+        "x": 152.88,
+        "y": 477.72,
+        "s": "L A A"
+      },
+      {
+        "x": 133.62,
+        "y": 472.2,
+        "s": "S 2 6"
+      },
+      {
+        "x": 152.88,
+        "y": 468.84,
+        "s": "H D A"
+      },
+      {
+        "x": 133.62,
+        "y": 463.32,
+        "s": "S 2 7"
+      },
+      {
+        "x": 152.88,
+        "y": 459.96,
+        "s": "L D A"
+      },
+      {
+        "x": 133.62,
+        "y": 454.44,
+        "s": "S 2 8"
+      },
+      {
+        "x": 152.88,
+        "y": 451.32,
+        "s": "A O"
+      },
+      {
+        "x": 133.62,
+        "y": 445.8,
+        "s": "S 2 9"
+      },
+      {
+        "x": 152.88,
+        "y": 442.44,
+        "s": "T R S 2"
+      },
+      {
+        "x": 133.62,
+        "y": 436.92,
+        "s": "S 3 0"
+      },
+      {
+        "x": 152.88,
+        "y": 433.56,
+        "s": "T R P V"
+      },
+      {
+        "x": 174.24,
+        "y": 433.56,
+        "s": "T"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Control output (0% to 100%)",
+      "description_lines": [
+        "Control output (0% to 100%)"
+      ],
+      "manual_page": 210
+    },
+    {
+      "blk": "N+1",
+      "type": "R",
+      "description": "Set point",
+      "description_lines": [
+        "Set point"
+      ],
+      "manual_page": 210
+    },
+    {
+      "blk": "N+2",
+      "type": "B",
+      "description": "Automatic mode flag:; 0 = manual; 1 = automatic",
+      "description_lines": [
+        "Automatic mode flag:",
+        "0 = manual",
+        "1 = automatic"
+      ],
+      "manual_page": 210
+    },
+    {
+      "blk": "N+3",
+      "type": "B",
+      "description": "Level flag:; 0 = local; 1 = computer",
+      "description_lines": [
+        "Level flag:",
+        "0 = local",
+        "1 = computer"
+      ],
+      "manual_page": 210
+    },
+    {
+      "blk": "N+4",
+      "type": "B",
+      "description": "Cascade/ratio mode flag:; 0 = basic; 1 = cascade/ratio",
+      "description_lines": [
+        "Cascade/ratio mode flag:",
+        "0 = basic",
+        "1 = cascade/ratio"
+      ],
+      "manual_page": 210
+    },
+    {
+      "blk": "N+5",
+      "type": "B",
+      "description": "Computer status flag:; 0 = computer OK; 1 = computer failed",
+      "description_lines": [
+        "Computer status flag:",
+        "0 = computer OK",
+        "1 = computer failed"
+      ],
+      "manual_page": 210
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input to be displayed on the PV scale of a station (can be used for SP track S30)",
+      "description_lines": [
+        "Block address of input to be displayed on the PV",
+        "scale of a station (can be used for SP track S30)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 210
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of SP track signal (S29 SP track switch)",
+      "description_lines": [
+        "Block address of SP track signal (S29 SP track",
+        "switch)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 210
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of auto signal",
+      "description_lines": [
+        "Block address of auto signal"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 210
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control output track signal (TR)",
+      "description_lines": [
+        "Block address of control output track signal (TR)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 210
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control output track switch (TS):; 0 = no track; 1 = track",
+      "description_lines": [
+        "Block address of control output track switch (TS):",
+        "0 = no track",
+        "1 = track"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no track"
+        },
+        {
+          "value": "1",
+          "meaning": "track"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 210
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "1, 2, 3, 5, 6, 7 or 8",
+      "description": "Initial mode of station after startup:; 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio; 8 = previous mode",
+      "description_lines": [
+        "Initial mode of station after startup:",
+        "1 = computer, manual",
+        "2 = computer, auto",
+        "3 = computer, cascade/ratio",
+        "5 = local, manual",
+        "6 = local, auto",
+        "7 = local, cascade/ratio",
+        "8 = previous mode"
+      ],
+      "enumerations": [
+        {
+          "value": "1",
+          "meaning": "computer, manual"
+        },
+        {
+          "value": "2",
+          "meaning": "computer, auto"
+        },
+        {
+          "value": "3",
+          "meaning": "computer, cascade/ratio"
+        },
+        {
+          "value": "5",
+          "meaning": "local, manual"
+        },
+        {
+          "value": "6",
+          "meaning": "local, auto"
+        },
+        {
+          "value": "7",
+          "meaning": "local, cascade/ratio"
+        },
+        {
+          "value": "8",
+          "meaning": "previous mode"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 211
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "2"
+      ],
+      "default": "9.2 E 18",
+      "type": "R",
+      "range": "Full",
+      "description": "PV high alarm point in engineering units",
+      "description_lines": [
+        "PV high alarm point in engineering units"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 211
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "2"
+      ],
+      "default": "-9.2 E 18",
+      "type": "R",
+      "range": "Full",
+      "description": "PV low alarm point in engineering units",
+      "description_lines": [
+        "PV low alarm point in engineering units"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 211
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "2"
+      ],
+      "default": "9.2 E 18",
+      "type": "R",
+      "range": "Full",
+      "description": "PV-SP deviation alarm point in engineering units (for console only)",
+      "description_lines": [
+        "PV-SP deviation alarm point in engineering units",
+        "(for console only)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 211
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "100.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Signal span of PV in engineering units",
+      "description_lines": [
+        "Signal span of PV in engineering units"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 211
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Zero value of PV in engineering units",
+      "description_lines": [
+        "Zero value of PV in engineering units"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 211
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "PV engineering units identifier (for console only)",
+      "description_lines": [
+        "PV engineering units identifier (for console only)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 211
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "-5.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Signal span of SP in engineering units",
+      "description_lines": [
+        "Signal span of SP in engineering units"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 211
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Zero value of SP in engineering units",
+      "description_lines": [
+        "Zero value of SP in engineering units"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 211
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "SP engineering units identifier (for OIS console only)",
+      "description_lines": [
+        "SP engineering units identifier (for OIS console only)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 211
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "255",
+      "type": "I",
+      "range": "Full",
+      "description": "Control station address:; 254 = passive station; 255 = no station",
+      "description_lines": [
+        "Control station address:",
+        "254 = passive station",
+        "255 = no station"
+      ],
+      "enumerations": [
+        {
+          "value": "254",
+          "meaning": "passive station"
+        },
+        {
+          "value": "255",
+          "meaning": "no station"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 211
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 7",
+      "description": "Mode of system default if the computer fails while the loop is under computer control:; 0 = computer (auto/manual mode unchanged); 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 4 = local (auto/manual mode unchanged); 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio",
+      "description_lines": [
+        "Mode of system default if the computer fails while",
+        "the loop is under computer control:",
+        "0 = computer (auto/manual mode unchanged)",
+        "1 = computer, manual",
+        "2 = computer, auto",
+        "3 = computer, cascade/ratio",
+        "4 = local (auto/manual mode unchanged)",
+        "5 = local, manual",
+        "6 = local, auto",
+        "7 = local, cascade/ratio"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "computer (auto/manual mode unchanged)"
+        },
+        {
+          "value": "1",
+          "meaning": "computer, manual"
+        },
+        {
+          "value": "2",
+          "meaning": "computer, auto"
+        },
+        {
+          "value": "3",
+          "meaning": "computer, cascade/ratio"
+        },
+        {
+          "value": "4",
+          "meaning": "local (auto/manual mode unchanged)"
+        },
+        {
+          "value": "5",
+          "meaning": "local, manual"
+        },
+        {
+          "value": "6",
+          "meaning": "local, auto"
+        },
+        {
+          "value": "7",
+          "meaning": "local, cascade/ratio"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 211
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of the transfer to manual signal:; 0 = no transfer; 1 = transfer to manual and hold",
+      "description_lines": [
+        "Block address of the transfer to manual signal:",
+        "0 = no transfer",
+        "1 = transfer to manual and hold"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no transfer"
+        },
+        {
+          "value": "1",
+          "meaning": "transfer to manual and hold"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 211
+    },
+    {
+      "number": 19,
+      "label": "S19",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of the transfer to auto signal:; 0 = no transfer; 1 = transfer to auto and hold",
+      "description_lines": [
+        "Block address of the transfer to auto signal:",
+        "0 = no transfer",
+        "1 = transfer to auto and hold"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no transfer"
+        },
+        {
+          "value": "1",
+          "meaning": "transfer to auto and hold"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 211
+    },
+    {
+      "number": 20,
+      "label": "S20",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of the transfer to cascade/ratio signal:; 0 = no transfer; 1 = transfer to cascade/ratio and hold",
+      "description_lines": [
+        "Block address of the transfer to cascade/ratio signal:",
+        "0 = no transfer",
+        "1 = transfer to cascade/ratio and hold"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no transfer"
+        },
+        {
+          "value": "1",
+          "meaning": "transfer to cascade/ratio and hold"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 211
+    },
+    {
+      "number": 21,
+      "label": "S21",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of the transfer to local signal:; 0 = no transfer; 1 = transfer to local and hold",
+      "description_lines": [
+        "Block address of the transfer to local signal:",
+        "0 = no transfer",
+        "1 = transfer to local and hold"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no transfer"
+        },
+        {
+          "value": "1",
+          "meaning": "transfer to local and hold"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 212
+    },
+    {
+      "number": 22,
+      "label": "S22",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of the transfer to computer signal:; 0 = no transfer; 1 = transfer to computer and hold",
+      "description_lines": [
+        "Block address of the transfer to computer signal:",
+        "0 = no transfer",
+        "1 = transfer to computer and hold"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no transfer"
+        },
+        {
+          "value": "1",
+          "meaning": "transfer to computer and hold"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 212
+    },
+    {
+      "number": 23,
+      "label": "S23",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 4",
+      "description": "Station type:; 0 = basic with set point; 1 = basic without set point; 2 = basic with bias; 3 = ratio; 4 = cascade",
+      "description_lines": [
+        "Station type:",
+        "0 = basic with set point",
+        "1 = basic without set point",
+        "2 = basic with bias",
+        "3 = ratio",
+        "4 = cascade"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "basic with set point"
+        },
+        {
+          "value": "1",
+          "meaning": "basic without set point"
+        },
+        {
+          "value": "2",
+          "meaning": "basic with bias"
+        },
+        {
+          "value": "3",
+          "meaning": "ratio"
+        },
+        {
+          "value": "4",
+          "meaning": "cascade"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 212
+    },
+    {
+      "number": 24,
+      "label": "S24",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of external high absolute alarm flag:; 0 = no alarm; 1 = high absolute alarm",
+      "description_lines": [
+        "Block address of external high absolute alarm flag:",
+        "0 = no alarm",
+        "1 = high absolute alarm"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no alarm"
+        },
+        {
+          "value": "1",
+          "meaning": "high absolute alarm"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 212
+    },
+    {
+      "number": 25,
+      "label": "S25",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of external low absolute alarm flag:; 0 = no alarm; 1 = low absolute alarm",
+      "description_lines": [
+        "Block address of external low absolute alarm flag:",
+        "0 = no alarm",
+        "1 = low absolute alarm"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no alarm"
+        },
+        {
+          "value": "1",
+          "meaning": "low absolute alarm"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 212
+    },
+    {
+      "number": 26,
+      "label": "S26",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of external high deviation alarm flag:; 0 = no alarm; 1 = high deviation alarm",
+      "description_lines": [
+        "Block address of external high deviation alarm flag:",
+        "0 = no alarm",
+        "1 = high deviation alarm"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no alarm"
+        },
+        {
+          "value": "1",
+          "meaning": "high deviation alarm"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 212
+    },
+    {
+      "number": 27,
+      "label": "S27",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of external low deviation alarm flag:; 0 = no alarm; 1 = low deviation alarm",
+      "description_lines": [
+        "Block address of external low deviation alarm flag:",
+        "0 = no alarm",
+        "1 = low deviation alarm"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no alarm"
+        },
+        {
+          "value": "1",
+          "meaning": "low deviation alarm"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 212
+    },
+    {
+      "number": 28,
+      "label": "S28",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of analog output associated with this station",
+      "description_lines": [
+        "Block address of analog output associated with this",
+        "station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 212
+    },
+    {
+      "number": 29,
+      "label": "S29",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of switch to have SP track <S2>:; 0 = no track; 1 = track <S2>",
+      "description_lines": [
+        "Block address of switch to have SP track <S2>:",
+        "0 = no track",
+        "1 = track <S2>"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no track"
+        },
+        {
+          "value": "1",
+          "meaning": "track <S2>"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 212
+    },
+    {
+      "number": 30,
+      "label": "S30",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of switch to have SP track <S1> (PV):; 0 = no track; 1 = track <S1>",
+      "description_lines": [
+        "Block address of switch to have SP track <S1> (PV):",
+        "0 = no track",
+        "1 = track <S1>"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no track"
+        },
+        {
+          "value": "1",
+          "meaning": "track <S1>"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 212
+    },
+    {
+      "number": 31,
+      "label": "S31",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "60.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Computer watchdog time period (in secs)",
+      "description_lines": [
+        "Computer watchdog time period (in secs)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 212
+    }
+  ],
+  "spec_count": 31,
+  "max_spec_number": 31,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "The maximum ratio for the wild variable is ten when using a DCS station and 100 when using a SAC station. The minimum practical ratio is 0.05.",
+      "manual_page": 210,
+      "context": "general"
+    },
+    {
+      "label": "2.",
+      "text": "The local SAC/DCS link communication baud rate is set by the hundreds digit S3 of the extended executive block (function code 90, block 20) for Harmony controllers. The remote SAC link located on CIO-100 Harmony I/O blocks is not affected by the S3 specification setting.",
+      "manual_page": 210,
+      "context": "general"
+    },
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 212,
+      "context": "specifications"
+    },
+    {
+      "label": "2.",
+      "text": "Specification is tunable, but not adaptable.",
+      "manual_page": 212,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 209,
+  "manual_pages": [
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223
+  ],
+  "manual_section": "Function Code 80 - Control Station",
+  "diagnostics": []
+}

@@ -1,0 +1,184 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 66,
+  "name": "Analog Trend",
+  "description": "The analog trend function code is part of the Symphony distributed trending package. It performs initial data compression for operator consoles and open access systems at the module level. Trend data can be gathered in two ways, normal or fast, depending on the desired resolution. Specification S3 selects the trend resolution. Normal trending mode gathers trend data every 60 seconds. Fast trending is every 15 seconds. Specification S2 selects the trend mode. Over the collection period each value collected is the sample, mean, minimum, maximum or sum of the input value <S1>. Output data consists of the last value saved.",
+  "description_lines": [
+    "The analog trend function code is part of the Symphony dis-",
+    "tributed trending package. It performs initial data compres-",
+    "sion for operator consoles and open access systems at the",
+    "module level.",
+    "Trend data can be gathered in two ways, normal or fast,",
+    "depending on the desired resolution. Specification S3 selects",
+    "the trend resolution. Normal trending mode gathers trend data",
+    "every 60 seconds. Fast trending is every 15 seconds.",
+    "Specification S2 selects the trend mode. Over the collection",
+    "period each value collected is the sample, mean, minimum,",
+    "maximum or sum of the input value <S1>.",
+    "Output data consists of the last value saved."
+  ],
+  "symbol": {
+    "title_raw": "T R E N D",
+    "title": "TREND",
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 191.28,
+        "y": 589.26,
+        "s": "(6 6 )"
+      },
+      {
+        "x": 133.32,
+        "y": 587.58,
+        "s": "S 1"
+      },
+      {
+        "x": 156.9,
+        "y": 583.74,
+        "s": "T R E N D"
+      },
+      {
+        "x": 191.28,
+        "y": 580.38,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Last value saved",
+      "description_lines": [
+        "Last value saved"
+      ],
+      "manual_page": 197
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of analog input",
+      "description_lines": [
+        "Block address of analog input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 197
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "0 - 4",
+      "description": "Trend mode:; 0 = sample; 1 = mean; 2 = minimum; 3 = maximum; 4 = sum",
+      "description_lines": [
+        "Trend mode:",
+        "0 = sample",
+        "1 = mean",
+        "2 = minimum",
+        "3 = maximum",
+        "4 = sum"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "sample"
+        },
+        {
+          "value": "1",
+          "meaning": "mean"
+        },
+        {
+          "value": "2",
+          "meaning": "minimum"
+        },
+        {
+          "value": "3",
+          "meaning": "maximum"
+        },
+        {
+          "value": "4",
+          "meaning": "sum"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 197
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "2"
+      ],
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Trend resolution :; 0 = normal; 1 = fast",
+      "description_lines": [
+        "Trend resolution",
+        ":",
+        "0 = normal",
+        "1 = fast"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "normal"
+        },
+        {
+          "value": "1",
+          "meaning": "fast"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 197
+    }
+  ],
+  "spec_count": 3,
+  "max_spec_number": 3,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 197,
+      "context": "specifications"
+    },
+    {
+      "label": "2.",
+      "text": "Fast trending requires a higher amount of module utilization than normal trending. Specification S3 cannot be changed during the on-line configuration mode.",
+      "manual_page": 197,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 197,
+  "manual_pages": [
+    197,
+    198,
+    199
+  ],
+  "manual_section": "Function Code 66 - Analog Trend",
+  "diagnostics": []
+}

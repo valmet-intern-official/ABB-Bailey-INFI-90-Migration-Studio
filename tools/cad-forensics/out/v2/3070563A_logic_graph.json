@@ -1,0 +1,1425 @@
+{
+  "nodeCount": 121,
+  "edgeCount": 95,
+  "nodes": [
+    {
+      "id": "block_mvjst6ot_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 4338
+    },
+    {
+      "id": "block_h9m203d5_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "TD-DIG",
+      "sourceOffset": 3016
+    },
+    {
+      "id": "block_tagiyltm_mudt3i8g",
+      "role": "input",
+      "layer": 0,
+      "functionCode": "IREF",
+      "sourceOffset": 876
+    },
+    {
+      "id": "block_ox2d1afs_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "SR",
+      "sourceOffset": 1752
+    },
+    {
+      "id": "block_mky9spnk_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 4264
+    },
+    {
+      "id": "block_x8fdhijf_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 1788
+    },
+    {
+      "id": "block_8lheo8su_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 6136
+    },
+    {
+      "id": "block_yfvyi4yy_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "OR2",
+      "sourceOffset": 1464
+    },
+    {
+      "id": "block_lapmmscm_mudt3i8g",
+      "role": "io",
+      "layer": 0,
+      "functionCode": "RDI01A3",
+      "sourceOffset": 752
+    },
+    {
+      "id": "block_uf3nyje7_mudt3i8g",
+      "role": "input",
+      "layer": 0,
+      "functionCode": "IREF",
+      "sourceOffset": 802
+    },
+    {
+      "id": "block_gh4ye5no_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "NOT",
+      "sourceOffset": 2980
+    },
+    {
+      "id": "block_nz1vu51r_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 4190
+    },
+    {
+      "id": "block_r6eo425j_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "AND2",
+      "sourceOffset": 2074
+    },
+    {
+      "id": "block_o6hhe6fd_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 8754
+    },
+    {
+      "id": "block_thu29xpj_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "AND2",
+      "sourceOffset": 2944
+    },
+    {
+      "id": "block_3qlugl3w_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 5198
+    },
+    {
+      "id": "block_z4caqrgl_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 2110
+    },
+    {
+      "id": "block_fzjojvso_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 4116
+    },
+    {
+      "id": "block_ffqsh0n9_mudt3i8g",
+      "role": "io",
+      "layer": 0,
+      "functionCode": "DI1SYS",
+      "sourceOffset": 1168
+    },
+    {
+      "id": "block_fyrebcy1_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "NOT",
+      "sourceOffset": 1716
+    },
+    {
+      "id": "block_i3sgqctr_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "TD-DIG",
+      "sourceOffset": 2330
+    },
+    {
+      "id": "block_fjnn3121_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "NOT",
+      "sourceOffset": 2500
+    },
+    {
+      "id": "block_g79scqtu_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "AND2",
+      "sourceOffset": 1930
+    },
+    {
+      "id": "block_hgnba4nj_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 6058
+    },
+    {
+      "id": "block_qy1yzmp9_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 4042
+    },
+    {
+      "id": "block_ecmsigqs_mudt3i8g",
+      "role": "input",
+      "layer": 0,
+      "functionCode": "IREF",
+      "sourceOffset": 678
+    },
+    {
+      "id": "block_68duitvb_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 7258
+    },
+    {
+      "id": "block_ak5fg3nf_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "TD-DIG",
+      "sourceOffset": 2880
+    },
+    {
+      "id": "block_3ma89ae3_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "SR",
+      "sourceOffset": 1680
+    },
+    {
+      "id": "block_y33xzs40_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 3968
+    },
+    {
+      "id": "block_ixbrq6lh_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 5232
+    },
+    {
+      "id": "block_9hz2cyse_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 5444
+    },
+    {
+      "id": "block_pc6qe6qr_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 6898
+    },
+    {
+      "id": "block_oeqm0ruq_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "OR2",
+      "sourceOffset": 1428
+    },
+    {
+      "id": "block_1u7q5po8_mudt3i8g",
+      "role": "io",
+      "layer": 0,
+      "functionCode": "RDI01A4",
+      "sourceOffset": 628
+    },
+    {
+      "id": "block_3s758l9p_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 8788
+    },
+    {
+      "id": "block_btmcsub4_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "NOT",
+      "sourceOffset": 2844
+    },
+    {
+      "id": "block_ia7utfne_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 3894
+    },
+    {
+      "id": "block_4j73yawl_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "AND2",
+      "sourceOffset": 2038
+    },
+    {
+      "id": "block_rxnwvy0w_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "AND2",
+      "sourceOffset": 2808
+    },
+    {
+      "id": "block_ny1mpv6a_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 5410
+    },
+    {
+      "id": "block_i07bqk61_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 6932
+    },
+    {
+      "id": "block_wiuxe8df_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 3820
+    },
+    {
+      "id": "block_cnr0wth9_mudt3i8g",
+      "role": "io",
+      "layer": 0,
+      "functionCode": "DI1SYS",
+      "sourceOffset": 1118
+    },
+    {
+      "id": "block_b2bx3czu_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "NOT",
+      "sourceOffset": 1644
+    },
+    {
+      "id": "block_3lrq6n9q_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "TD-DIG",
+      "sourceOffset": 2268
+    },
+    {
+      "id": "block_wr25kxsj_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "NOT",
+      "sourceOffset": 2464
+    },
+    {
+      "id": "block_pe3absie_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "AND2",
+      "sourceOffset": 1894
+    },
+    {
+      "id": "block_133omq7v_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 6864
+    },
+    {
+      "id": "block_6filcivj_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 3746
+    },
+    {
+      "id": "block_24farbw6_mudt3i8g",
+      "role": "input",
+      "layer": 0,
+      "functionCode": "IREF",
+      "sourceOffset": 554
+    },
+    {
+      "id": "block_j0rk0dt4_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 7292
+    },
+    {
+      "id": "block_un6cee2z_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "TD-DIG",
+      "sourceOffset": 2744
+    },
+    {
+      "id": "block_y7qlhmb5_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "SR",
+      "sourceOffset": 1608
+    },
+    {
+      "id": "block_glk6rhmz_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 3672
+    },
+    {
+      "id": "block_gk3x9s41_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 5510
+    },
+    {
+      "id": "block_f5o2hqj2_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 5544
+    },
+    {
+      "id": "block_oa4yhjem_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 6830
+    },
+    {
+      "id": "block_rysmydtx_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "OR2",
+      "sourceOffset": 1392
+    },
+    {
+      "id": "block_lxo0ify7_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 8822
+    },
+    {
+      "id": "block_h9zz2yxy_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "NOT",
+      "sourceOffset": 2708
+    },
+    {
+      "id": "block_a2mkgh0z_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 3598
+    },
+    {
+      "id": "block_cqtjc09z_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "AND2",
+      "sourceOffset": 2002
+    },
+    {
+      "id": "block_w46bx6gi_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "AND2",
+      "sourceOffset": 2672
+    },
+    {
+      "id": "block_7spgjcns_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 5904
+    },
+    {
+      "id": "block_ghuw3z1f_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 6966
+    },
+    {
+      "id": "block_pme7tbeh_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 3524
+    },
+    {
+      "id": "block_j9iknmty_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "NOT",
+      "sourceOffset": 1572
+    },
+    {
+      "id": "block_ff8wqph7_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "TD-DIG",
+      "sourceOffset": 2206
+    },
+    {
+      "id": "block_kgf38pxq_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "NOT",
+      "sourceOffset": 2428
+    },
+    {
+      "id": "block_4hyynwoc_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "AND2",
+      "sourceOffset": 1858
+    },
+    {
+      "id": "block_ycei6zk2_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 6796
+    },
+    {
+      "id": "block_muimkmxy_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 3450
+    },
+    {
+      "id": "block_v6xvqqlp_mudt3i8g",
+      "role": "input",
+      "layer": 0,
+      "functionCode": "IREF",
+      "sourceOffset": 480
+    },
+    {
+      "id": "block_0yktohdd_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 7326
+    },
+    {
+      "id": "block_xquxw0nh_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "TD-DIG",
+      "sourceOffset": 2608
+    },
+    {
+      "id": "block_dji0dcdu_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "SR",
+      "sourceOffset": 1536
+    },
+    {
+      "id": "block_naavb7bi_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 3376
+    },
+    {
+      "id": "block_ksndnp7y_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 5870
+    },
+    {
+      "id": "block_qpqt2rtg_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 5836
+    },
+    {
+      "id": "block_yjwdya3i_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 6374
+    },
+    {
+      "id": "block_v22zbewx_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "OR2",
+      "sourceOffset": 1356
+    },
+    {
+      "id": "block_ts0t94fb_mudt3i8g",
+      "role": "io",
+      "layer": 0,
+      "functionCode": "RDI01A5",
+      "sourceOffset": 430
+    },
+    {
+      "id": "block_dj8w75li_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 8856
+    },
+    {
+      "id": "block_ik74bfhv_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "NOT",
+      "sourceOffset": 2572
+    },
+    {
+      "id": "block_9o9ojnj3_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 3302
+    },
+    {
+      "id": "block_h4as0dyq_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "AND2",
+      "sourceOffset": 1966
+    },
+    {
+      "id": "block_2zwxnns4_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "AND2",
+      "sourceOffset": 2536
+    },
+    {
+      "id": "block_i1dbxcwi_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 5802
+    },
+    {
+      "id": "block_ycazomoa_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 6306
+    },
+    {
+      "id": "block_13m6yfr4_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 3228
+    },
+    {
+      "id": "block_l8vnbscd_mudt3i8g",
+      "role": "io",
+      "layer": 0,
+      "functionCode": "DI1SYS",
+      "sourceOffset": 1068
+    },
+    {
+      "id": "block_gudu7err_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "NOT",
+      "sourceOffset": 1500
+    },
+    {
+      "id": "block_225s8tua_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "TD-DIG",
+      "sourceOffset": 2144
+    },
+    {
+      "id": "block_xe9k9yoc_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "NOT",
+      "sourceOffset": 2392
+    },
+    {
+      "id": "block_gd0umhqa_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "AND2",
+      "sourceOffset": 1822
+    },
+    {
+      "id": "block_jifhtcuq_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 6340
+    },
+    {
+      "id": "block_qsd32vhz_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 3154
+    },
+    {
+      "id": "block_owmuc82w_mudt3i8g",
+      "role": "input",
+      "layer": 0,
+      "functionCode": "IREF",
+      "sourceOffset": 356
+    },
+    {
+      "id": "block_y1n5d2er_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 7144
+    },
+    {
+      "id": "block_mwmk7q5f_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "TD-DIG",
+      "sourceOffset": 7784
+    },
+    {
+      "id": "block_w7390hq3_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "SR",
+      "sourceOffset": 7506
+    },
+    {
+      "id": "block_1lxnaexv_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 7996
+    },
+    {
+      "id": "block_n26ic443_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 8262
+    },
+    {
+      "id": "block_f7manu8m_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 8228
+    },
+    {
+      "id": "block_7wp65iuz_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 8446
+    },
+    {
+      "id": "block_l6o63z12_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "OR2",
+      "sourceOffset": 7434
+    },
+    {
+      "id": "block_86qvhet3_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "NOT",
+      "sourceOffset": 7748
+    },
+    {
+      "id": "block_2tso0fup_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 7922
+    },
+    {
+      "id": "block_9mo4dd6a_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "AND2",
+      "sourceOffset": 7578
+    },
+    {
+      "id": "block_p735i29q_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "AND2",
+      "sourceOffset": 7712
+    },
+    {
+      "id": "block_zzx0ix6j_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 8194
+    },
+    {
+      "id": "block_luz108y7_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 8412
+    },
+    {
+      "id": "block_cxlfq5mr_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 7848
+    },
+    {
+      "id": "block_rfmeum3s_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "NOT",
+      "sourceOffset": 7470
+    },
+    {
+      "id": "block_x9zz6dk5_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "TD-DIG",
+      "sourceOffset": 7614
+    },
+    {
+      "id": "block_ozcy8mi7_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "NOT",
+      "sourceOffset": 7676
+    },
+    {
+      "id": "block_jnitc96d_mudt3i8g",
+      "role": "logic",
+      "layer": 0,
+      "functionCode": "AND2",
+      "sourceOffset": 7542
+    },
+    {
+      "id": "block_guyeea4q_mudt3i8g",
+      "role": "input",
+      "layer": 0,
+      "functionCode": "IREF",
+      "sourceOffset": 7360
+    },
+    {
+      "id": "block_gildav0u_mudt3i8g",
+      "role": "junction",
+      "layer": 0,
+      "functionCode": "N90CNECT",
+      "sourceOffset": 8548
+    },
+    {
+      "id": "block_ohz9jh6u_mudt3i8g",
+      "role": "output",
+      "layer": 0,
+      "functionCode": "OREF",
+      "sourceOffset": 3080
+    }
+  ],
+  "edges": [
+    {
+      "id": "conn_05ec0ur6_mudt3i8i",
+      "sourceId": "block_w46bx6gi_mudt3i8g",
+      "targetId": "block_pme7tbeh_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_090uq3bm_mudt3i8i",
+      "sourceId": "block_qsd32vhz_mudt3i8g",
+      "targetId": "block_jifhtcuq_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_0c6svxsa_mudt3i8h",
+      "sourceId": "block_i3sgqctr_mudt3i8g",
+      "targetId": "block_z4caqrgl_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_0ev3e98s_mudt3i8h",
+      "sourceId": "block_i1dbxcwi_mudt3i8g",
+      "targetId": "block_h4as0dyq_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_0ujtszd8_mudt3i8j",
+      "sourceId": "block_gildav0u_mudt3i8g",
+      "targetId": "block_rfmeum3s_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_1gazlmxm_mudt3i8h",
+      "sourceId": "block_r6eo425j_mudt3i8g",
+      "targetId": "block_fyrebcy1_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_1h5netm7_mudt3i8j",
+      "sourceId": "block_1lxnaexv_mudt3i8g",
+      "targetId": "block_mwmk7q5f_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_1sng9mq5_mudt3i8h",
+      "sourceId": "block_g79scqtu_mudt3i8g",
+      "targetId": "block_x8fdhijf_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_21hsm07o_mudt3i8h",
+      "sourceId": "block_4j73yawl_mudt3i8g",
+      "targetId": "block_b2bx3czu_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_23bkdd0q_mudt3i8j",
+      "sourceId": "block_68duitvb_mudt3i8g",
+      "targetId": "block_fyrebcy1_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_256w3utp_mudt3i8i",
+      "sourceId": "block_qy1yzmp9_mudt3i8g",
+      "targetId": "block_hgnba4nj_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_2b4vpg26_mudt3i8i",
+      "sourceId": "block_ak5fg3nf_mudt3i8g",
+      "targetId": "block_3ma89ae3_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_2dvgx2is_mudt3i8h",
+      "sourceId": "block_ny1mpv6a_mudt3i8g",
+      "targetId": "block_4j73yawl_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_300mg8ae_mudt3i8h",
+      "sourceId": "block_thu29xpj_mudt3i8g",
+      "targetId": "block_fjnn3121_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_36p2ah4b_mudt3i8h",
+      "sourceId": "block_yfvyi4yy_mudt3i8g",
+      "targetId": "block_uf3nyje7_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_3cchd6zr_mudt3i8h",
+      "sourceId": "block_pe3absie_mudt3i8g",
+      "targetId": "block_24farbw6_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_3ieemzbm_mudt3i8h",
+      "sourceId": "block_225s8tua_mudt3i8g",
+      "targetId": "block_ycazomoa_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_4d22zfm0_mudt3i8h",
+      "sourceId": "block_pe3absie_mudt3i8g",
+      "targetId": "block_9hz2cyse_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_4l11i89e_mudt3i8i",
+      "sourceId": "block_gh4ye5no_mudt3i8g",
+      "targetId": "block_nz1vu51r_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_587iseyg_mudt3i8i",
+      "sourceId": "block_3lrq6n9q_mudt3i8g",
+      "targetId": "block_i07bqk61_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_6atgtvmd_mudt3i8j",
+      "sourceId": "block_7wp65iuz_mudt3i8g",
+      "targetId": "block_86qvhet3_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_6vj2dwre_mudt3i8i",
+      "sourceId": "block_btmcsub4_mudt3i8g",
+      "targetId": "block_ia7utfne_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_72vn56x6_mudt3i8i",
+      "sourceId": "block_ycei6zk2_mudt3i8g",
+      "targetId": "block_ycei6zk2_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_81i3387u_mudt3i8h",
+      "sourceId": "block_h4as0dyq_mudt3i8g",
+      "targetId": "block_gudu7err_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_85w2h8yp_mudt3i8j",
+      "sourceId": "block_l6o63z12_mudt3i8g",
+      "targetId": "block_o6hhe6fd_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_8ilc6ckm_mudt3i8i",
+      "sourceId": "block_h9m203d5_mudt3i8g",
+      "targetId": "block_mky9spnk_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_8iwfgr7l_mudt3i8i",
+      "sourceId": "block_pc6qe6qr_mudt3i8g",
+      "targetId": "block_btmcsub4_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_8j1edvv8_mudt3i8h",
+      "sourceId": "block_gd0umhqa_mudt3i8g",
+      "targetId": "block_qpqt2rtg_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_8qmow24k_mudt3i8h",
+      "sourceId": "block_xquxw0nh_mudt3i8g",
+      "targetId": "block_dji0dcdu_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_970fzvlm_mudt3i8i",
+      "sourceId": "block_ghuw3z1f_mudt3i8g",
+      "targetId": "block_w46bx6gi_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_9im26owb_mudt3i8j",
+      "sourceId": "block_jnitc96d_mudt3i8g",
+      "targetId": "block_f7manu8m_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_9pjq4r6k_mudt3i8i",
+      "sourceId": "block_2zwxnns4_mudt3i8g",
+      "targetId": "block_13m6yfr4_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_9saknxia_mudt3i8h",
+      "sourceId": "block_g79scqtu_mudt3i8g",
+      "targetId": "block_3ma89ae3_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_b8zays7m_mudt3i8j",
+      "sourceId": "block_ohz9jh6u_mudt3i8g",
+      "targetId": "block_jnitc96d_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_bytvib5q_mudt3i8h",
+      "sourceId": "block_v6xvqqlp_mudt3i8g",
+      "targetId": "block_4hyynwoc_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_c8fkumsc_mudt3i8h",
+      "sourceId": "block_g79scqtu_mudt3i8g",
+      "targetId": "block_ecmsigqs_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_c9wfk94w_mudt3i8h",
+      "sourceId": "block_3qlugl3w_mudt3i8g",
+      "targetId": "block_r6eo425j_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_ca1yckg1_mudt3i8h",
+      "sourceId": "block_8lheo8su_mudt3i8g",
+      "targetId": "block_mvjst6ot_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_cl5vp8em_mudt3i8j",
+      "sourceId": "block_w7390hq3_mudt3i8g",
+      "targetId": "block_l6o63z12_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_ctt2nv6c_mudt3i8h",
+      "sourceId": "block_8lheo8su_mudt3i8g",
+      "targetId": "block_gh4ye5no_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_d2wbogy0_mudt3i8i",
+      "sourceId": "block_ik74bfhv_mudt3i8g",
+      "targetId": "block_9o9ojnj3_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_dhtvid8r_mudt3i8j",
+      "sourceId": "block_3ma89ae3_mudt3i8g",
+      "targetId": "block_oeqm0ruq_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_dkhn4wer_mudt3i8i",
+      "sourceId": "block_un6cee2z_mudt3i8g",
+      "targetId": "block_y7qlhmb5_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_donm2qmp_mudt3i8j",
+      "sourceId": "block_ozcy8mi7_mudt3i8g",
+      "targetId": "block_x9zz6dk5_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_e4pzkpe0_mudt3i8j",
+      "sourceId": "block_dji0dcdu_mudt3i8g",
+      "targetId": "block_v22zbewx_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_ew3e1nn2_mudt3i8j",
+      "sourceId": "block_dj8w75li_mudt3i8g",
+      "targetId": "block_v22zbewx_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_fu6yyngu_mudt3i8j",
+      "sourceId": "block_p735i29q_mudt3i8g",
+      "targetId": "block_ozcy8mi7_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_gdw2jhdy_mudt3i8i",
+      "sourceId": "block_h9zz2yxy_mudt3i8g",
+      "targetId": "block_a2mkgh0z_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_gl7qbi2e_mudt3i8h",
+      "sourceId": "block_4hyynwoc_mudt3i8g",
+      "targetId": "block_dji0dcdu_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_haytnn12_mudt3i8h",
+      "sourceId": "block_v22zbewx_mudt3i8g",
+      "targetId": "block_n26ic443_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_hf42r2th_mudt3i8j",
+      "sourceId": "block_x9zz6dk5_mudt3i8g",
+      "targetId": "block_luz108y7_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_hu54f2wf_mudt3i8h",
+      "sourceId": "block_rysmydtx_mudt3i8g",
+      "targetId": "block_ksndnp7y_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_iogi0g7o_mudt3i8i",
+      "sourceId": "block_ak5fg3nf_mudt3i8g",
+      "targetId": "block_y33xzs40_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_iqqg04jv_mudt3i8j",
+      "sourceId": "block_luz108y7_mudt3i8g",
+      "targetId": "block_p735i29q_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_iv1csats_mudt3i8i",
+      "sourceId": "block_w46bx6gi_mudt3i8g",
+      "targetId": "block_kgf38pxq_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_jh0yfi9v_mudt3i8i",
+      "sourceId": "block_y1n5d2er_mudt3i8g",
+      "targetId": "block_gudu7err_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_jwsbligr_mudt3i8h",
+      "sourceId": "block_4hyynwoc_mudt3i8g",
+      "targetId": "block_f5o2hqj2_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_lcqdtp3q_mudt3i8i",
+      "sourceId": "block_oa4yhjem_mudt3i8g",
+      "targetId": "block_h9zz2yxy_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_ldf1476r_mudt3i8i",
+      "sourceId": "block_un6cee2z_mudt3i8g",
+      "targetId": "block_glk6rhmz_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_lgkh6vrq_mudt3i8h",
+      "sourceId": "block_oeqm0ruq_mudt3i8g",
+      "targetId": "block_gk3x9s41_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_ljciwskr_mudt3i8h",
+      "sourceId": "block_gd0umhqa_mudt3i8g",
+      "targetId": "block_w7390hq3_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_lvtoqopj_mudt3i8h",
+      "sourceId": "block_yfvyi4yy_mudt3i8g",
+      "targetId": "block_ixbrq6lh_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_m3b1rcmo_mudt3i8h",
+      "sourceId": "block_jifhtcuq_mudt3i8g",
+      "targetId": "block_jifhtcuq_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_m3bkw02n_mudt3i8i",
+      "sourceId": "block_rxnwvy0w_mudt3i8g",
+      "targetId": "block_wr25kxsj_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_m6f4r4t7_mudt3i8g",
+      "sourceId": "block_tagiyltm_mudt3i8g",
+      "targetId": "block_ox2d1afs_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_msk7za60_mudt3i8i",
+      "sourceId": "block_133omq7v_mudt3i8g",
+      "targetId": "block_133omq7v_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_n6qcxd7d_mudt3i8i",
+      "sourceId": "block_muimkmxy_mudt3i8g",
+      "targetId": "block_ycei6zk2_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_n7khatdj_mudt3i8h",
+      "sourceId": "block_owmuc82w_mudt3i8g",
+      "targetId": "block_gd0umhqa_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_n9ex4y78_mudt3i8h",
+      "sourceId": "block_yjwdya3i_mudt3i8g",
+      "targetId": "block_ik74bfhv_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_n9tnjg4u_mudt3i8g",
+      "sourceId": "block_ox2d1afs_mudt3i8g",
+      "targetId": "block_yfvyi4yy_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_nc38taav_mudt3i8j",
+      "sourceId": "block_9mo4dd6a_mudt3i8g",
+      "targetId": "block_rfmeum3s_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_nomkof7h_mudt3i8j",
+      "sourceId": "block_j0rk0dt4_mudt3i8g",
+      "targetId": "block_b2bx3czu_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_o6nt4gty_mudt3i8j",
+      "sourceId": "block_86qvhet3_mudt3i8g",
+      "targetId": "block_2tso0fup_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_ogf0abgt_mudt3i8j",
+      "sourceId": "block_guyeea4q_mudt3i8g",
+      "targetId": "block_jnitc96d_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_oqzua2om_mudt3i8h",
+      "sourceId": "block_cqtjc09z_mudt3i8g",
+      "targetId": "block_j9iknmty_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_owg4kquw_mudt3i8j",
+      "sourceId": "block_p735i29q_mudt3i8g",
+      "targetId": "block_cxlfq5mr_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_oz8bgc1d_mudt3i8i",
+      "sourceId": "block_i07bqk61_mudt3i8g",
+      "targetId": "block_rxnwvy0w_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_qd80ijbz_mudt3i8h",
+      "sourceId": "block_hgnba4nj_mudt3i8g",
+      "targetId": "block_hgnba4nj_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_r0j2a8o1_mudt3i8j",
+      "sourceId": "block_zzx0ix6j_mudt3i8g",
+      "targetId": "block_9mo4dd6a_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_r25981i9_mudt3i8h",
+      "sourceId": "block_thu29xpj_mudt3i8g",
+      "targetId": "block_z4caqrgl_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_rh807meb_mudt3i8h",
+      "sourceId": "block_7spgjcns_mudt3i8g",
+      "targetId": "block_cqtjc09z_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_rhuk4ysc_mudt3i8j",
+      "sourceId": "block_mwmk7q5f_mudt3i8g",
+      "targetId": "block_w7390hq3_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_s6x1lf0k_mudt3i8h",
+      "sourceId": "block_ycazomoa_mudt3i8g",
+      "targetId": "block_2zwxnns4_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_t97ik6by_mudt3i8i",
+      "sourceId": "block_rxnwvy0w_mudt3i8g",
+      "targetId": "block_wiuxe8df_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_u1yznjo3_mudt3i8j",
+      "sourceId": "block_lxo0ify7_mudt3i8g",
+      "targetId": "block_rysmydtx_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_vqtpzvp1_mudt3i8h",
+      "sourceId": "block_h9m203d5_mudt3i8g",
+      "targetId": "block_ox2d1afs_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_w80aokgo_mudt3i8h",
+      "sourceId": "block_2zwxnns4_mudt3i8g",
+      "targetId": "block_xe9k9yoc_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_wp2ekchd_mudt3i8i",
+      "sourceId": "block_naavb7bi_mudt3i8g",
+      "targetId": "block_xquxw0nh_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_xvpquou4_mudt3i8j",
+      "sourceId": "block_y7qlhmb5_mudt3i8g",
+      "targetId": "block_rysmydtx_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_xz84a9jy_mudt3i8i",
+      "sourceId": "block_ff8wqph7_mudt3i8g",
+      "targetId": "block_ghuw3z1f_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_y4z6aiks_mudt3i8j",
+      "sourceId": "block_3s758l9p_mudt3i8g",
+      "targetId": "block_oeqm0ruq_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_yh1kj4hm_mudt3i8i",
+      "sourceId": "block_6filcivj_mudt3i8g",
+      "targetId": "block_133omq7v_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_ynv2o1hi_mudt3i8i",
+      "sourceId": "block_thu29xpj_mudt3i8g",
+      "targetId": "block_fzjojvso_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_yuaq1ih7_mudt3i8h",
+      "sourceId": "block_pe3absie_mudt3i8g",
+      "targetId": "block_y7qlhmb5_mudt3i8g",
+      "relationType": "EXPLICIT"
+    },
+    {
+      "id": "conn_z8aokgcb_mudt3i8j",
+      "sourceId": "block_0yktohdd_mudt3i8g",
+      "targetId": "block_j9iknmty_mudt3i8g",
+      "relationType": "EXPLICIT"
+    }
+  ]
+}

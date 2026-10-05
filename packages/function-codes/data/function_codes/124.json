@@ -1,0 +1,747 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 124,
+  "name": "Sequence Monitor",
+  "description": "The sequence monitor function code controls the execution of a sequence generator block by selecting the order of step execution in a process based on system and external inputs. The sequence monitor block performs a logic action based on the value of the control status input from a device monitor block and a boolean step trigger input. Depending on the value of the control status input, the next step can be a fault step or a normal step determined by internal logic. The sequence monitor block can be placed in either automatic or semi-automatic mode, and includes hold/initialize and executed stop (E-STOP) inputs. Each sequence monitor block handles up to eight steps. If more than eight steps are required, a number of sequence monitor blocks can be chained together in series fashion with S1. The sequence monitor block defines step type, next step, and fault values for each step.",
+  "description_lines": [
+    "The sequence monitor function code controls the execution of",
+    "a sequence generator block by selecting the order of step exe-",
+    "cution in a process based on system and external inputs. The",
+    "sequence monitor block performs a logic action based on the",
+    "value of the control status input from a device monitor block",
+    "and a boolean step trigger input. Depending on the value of",
+    "the control status input, the next step can be a fault step or a",
+    "normal step determined by internal logic. The sequence moni-",
+    "tor block can be placed in either automatic or semi-automatic",
+    "mode, and includes hold/initialize and executed stop (E-STOP)",
+    "inputs. Each sequence monitor block handles up to eight",
+    "steps. If more than eight steps are required, a number of",
+    "sequence monitor blocks can be chained together in series",
+    "fashion with S1. The sequence monitor block defines step type,",
+    "next step, and fault values for each step."
+  ],
+  "symbol": {
+    "title_raw": "S E Q M O N",
+    "title": "SEQMON",
+    "inputs": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ],
+    "outputs": [
+      "N+1",
+      "N"
+    ],
+    "items": [
+      {
+        "x": 153.54,
+        "y": 595.26,
+        "s": "S E Q M O N"
+      },
+      {
+        "x": 191.4,
+        "y": 588.72,
+        "s": "(1 2 4 )"
+      },
+      {
+        "x": 132.66,
+        "y": 587.28,
+        "s": "S 2"
+      },
+      {
+        "x": 152.58,
+        "y": 584.16,
+        "s": "C S"
+      },
+      {
+        "x": 179.64,
+        "y": 584.16,
+        "s": "JT"
+      },
+      {
+        "x": 191.4,
+        "y": 579.84,
+        "s": "N + 1"
+      },
+      {
+        "x": 132.66,
+        "y": 578.16,
+        "s": "S 3"
+      },
+      {
+        "x": 152.58,
+        "y": 575.28,
+        "s": "T"
+      },
+      {
+        "x": 179.88,
+        "y": 575.28,
+        "s": "J#"
+      },
+      {
+        "x": 191.4,
+        "y": 570.96,
+        "s": "N"
+      },
+      {
+        "x": 132.66,
+        "y": 569.28,
+        "s": "S 4"
+      },
+      {
+        "x": 152.58,
+        "y": 566.4,
+        "s": "S H"
+      },
+      {
+        "x": 132.66,
+        "y": 560.1,
+        "s": "S 5"
+      },
+      {
+        "x": 152.58,
+        "y": 557.46,
+        "s": "S AT"
+      },
+      {
+        "x": 132.66,
+        "y": 551.22,
+        "s": "S 6"
+      },
+      {
+        "x": 152.58,
+        "y": 548.34,
+        "s": "E S"
+      },
+      {
+        "x": 132.66,
+        "y": 542.1,
+        "s": "S 7"
+      },
+      {
+        "x": 152.58,
+        "y": 539.46,
+        "s": "S N"
+      },
+      {
+        "x": 132.66,
+        "y": 533.16,
+        "s": "S 8"
+      },
+      {
+        "x": 152.58,
+        "y": 530.52,
+        "s": "S A P"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Jump step number",
+      "description_lines": [
+        "Jump step number"
+      ],
+      "manual_page": 383
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Jump step trigger",
+      "description_lines": [
+        "Jump step trigger"
+      ],
+      "manual_page": 383
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of next sequence monitor block associated with this sequence of steps:; 0 = no more blocks",
+      "description_lines": [
+        "Block address of next sequence monitor block asso-",
+        "ciated with this sequence of steps:",
+        "0 = no more blocks"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no more blocks"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 383
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control status input",
+      "description_lines": [
+        "Block address of control status input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 383
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of step trigger",
+      "description_lines": [
+        "Block address of step trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 383
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of hold/initialize input (hold current step on 0 to 1 transition of input)",
+      "description_lines": [
+        "Block address of hold/initialize input (hold current",
+        "step on 0 to 1 transition of input)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 383
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of semi-automatic trigger (initiate next step on a 0 to 1 transition of input)",
+      "description_lines": [
+        "Block address of semi-automatic trigger (initiate next",
+        "step on a 0 to 1 transition of input)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 383
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of E-STOP input (block will be reset to Step 0 when <S6>=1)",
+      "description_lines": [
+        "Block address of E-STOP input (block will be reset to",
+        "Step 0 when <S6>=1)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 383
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of initial step number (reset step)",
+      "description_lines": [
+        "Block address of initial step number (reset step)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 383
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of semi-automatic permissive: <S8> = 0 = semi-automatic mode allowed <S8> = 1 = semi-automatic mode not allowed",
+      "description_lines": [
+        "Block address of semi-automatic permissive:",
+        "<S8> = 0 = semi-automatic mode allowed",
+        "<S8> = 1 = semi-automatic mode not allowed"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 384
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 22",
+      "description": "Step 1 type:; 0X = permit hold and semi-automatic modes; 1X = permit hold only; 2X = permit no option; X0 = advance when <S2> = 0.0 and <S3> = 1only; X1 = advance when <S2> = 0.0; X2 = advance when <S3> = 1 only",
+      "description_lines": [
+        "Step 1 type:",
+        "0X = permit hold and semi-automatic modes",
+        "1X = permit hold only",
+        "2X = permit no option",
+        "X0 = advance when <S2> = 0.0 and <S3> = 1only",
+        "X1 = advance when <S2> = 0.0",
+        "X2 = advance when <S3> = 1 only"
+      ],
+      "enumerations": [
+        {
+          "value": "0X",
+          "meaning": "permit hold and semi-automatic modes"
+        },
+        {
+          "value": "1X",
+          "meaning": "permit hold only"
+        },
+        {
+          "value": "2X",
+          "meaning": "permit no option"
+        },
+        {
+          "value": "X0",
+          "meaning": "advance when <S2> = 0.0 and <S3> = 1only"
+        },
+        {
+          "value": "X1",
+          "meaning": "advance when <S2> = 0.0"
+        },
+        {
+          "value": "X2",
+          "meaning": "advance when <S3> = 1 only"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 22",
+      "description": "Step 2 type",
+      "description_lines": [
+        "Step 2 type"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 22",
+      "description": "Step 3 type",
+      "description_lines": [
+        "Step 3 type"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 22",
+      "description": "Step 4 type",
+      "description_lines": [
+        "Step 4 type"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 22",
+      "description": "Step 5 type",
+      "description_lines": [
+        "Step 5 type"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 22",
+      "description": "Step 6 type",
+      "description_lines": [
+        "Step 6 type"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 22",
+      "description": "Step 7 type",
+      "description_lines": [
+        "Step 7 type"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 22",
+      "description": "Step 8 type",
+      "description_lines": [
+        "Step 8 type"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step to execute after Step 1 if input is good",
+      "description_lines": [
+        "Step to execute after Step 1 if input is good"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step to execute after Step 2 if input is good",
+      "description_lines": [
+        "Step to execute after Step 2 if input is good"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 19,
+      "label": "S19",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step to execute after Step 3 if input is good",
+      "description_lines": [
+        "Step to execute after Step 3 if input is good"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 20,
+      "label": "S20",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step to execute after Step 4 if input is good",
+      "description_lines": [
+        "Step to execute after Step 4 if input is good"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 21,
+      "label": "S21",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step to execute after Step 5 if input is good",
+      "description_lines": [
+        "Step to execute after Step 5 if input is good"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 22,
+      "label": "S22",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step to execute after Step 6 if input is good",
+      "description_lines": [
+        "Step to execute after Step 6 if input is good"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 23,
+      "label": "S23",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step to execute after Step 7 if input is good",
+      "description_lines": [
+        "Step to execute after Step 7 if input is good"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 24,
+      "label": "S24",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step to execute after Step 8 if input is good",
+      "description_lines": [
+        "Step to execute after Step 8 if input is good"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 25,
+      "label": "S25",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 1 fault step (control status input bad)",
+      "description_lines": [
+        "Step 1 fault step (control status input bad)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 26,
+      "label": "S26",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 2 fault step (control status input bad)",
+      "description_lines": [
+        "Step 2 fault step (control status input bad)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 27,
+      "label": "S27",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 3 fault step (control status input bad)",
+      "description_lines": [
+        "Step 3 fault step (control status input bad)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 28,
+      "label": "S28",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 4 fault step (control status input bad)",
+      "description_lines": [
+        "Step 4 fault step (control status input bad)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 29,
+      "label": "S29",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 5 fault step (control status input bad)",
+      "description_lines": [
+        "Step 5 fault step (control status input bad)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 30,
+      "label": "S30",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 6 fault step (control status input bad)",
+      "description_lines": [
+        "Step 6 fault step (control status input bad)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 31,
+      "label": "S31",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 7 fault step (control status input bad)",
+      "description_lines": [
+        "Step 7 fault step (control status input bad)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    },
+    {
+      "number": 32,
+      "label": "S32",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 8 fault step (control status input bad)",
+      "description_lines": [
+        "Step 8 fault step (control status input bad)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 384
+    }
+  ],
+  "spec_count": 32,
+  "max_spec_number": 32,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 384,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 383,
+  "manual_pages": [
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389
+  ],
+  "manual_section": "Function Code 124 - Sequence Monitor",
+  "diagnostics": []
+}

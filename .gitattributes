@@ -1,0 +1,3 @@
+# Controller dumps and reference outputs must keep their exact bytes; parsers and tests depend on them.
+Guiding[[:space:]]Material/** -text
+tools/fc-manual/cache/** -text

@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "metrics": {
+    "nodeOverlaps": 0,
+    "diagonalSegments": 0,
+    "wireThroughNodes": 0,
+    "outOfBounds": 0,
+    "missingEndpoints": 0,
+    "connectionCount": 95,
+    "blockCount": 121
+  }
+}

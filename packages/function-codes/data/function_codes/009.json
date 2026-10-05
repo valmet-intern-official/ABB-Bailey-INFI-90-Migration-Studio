@@ -1,0 +1,184 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 9,
+  "name": "Analog Transfer",
+  "description": "This function selects one of two inputs depending on boolean input <S3>. The output of function code 9 equals the input determined by the state of input <S3>. There are two time constants to provide smooth transfer in both directions.",
+  "description_lines": [
+    "This function selects one of two inputs depending on boolean",
+    "input <S3>. The output of function code 9 equals the input",
+    "determined by the state of input <S3>. There are two time con-",
+    "stants to provide smooth transfer in both directions."
+  ],
+  "symbol": {
+    "title_raw": "T",
+    "title": "T",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 133.56,
+        "y": 596.46,
+        "s": "S 1"
+      },
+      {
+        "x": 191.88,
+        "y": 589.26,
+        "s": "(9 )"
+      },
+      {
+        "x": 133.56,
+        "y": 587.58,
+        "s": "S 2"
+      },
+      {
+        "x": 167.16,
+        "y": 583.44,
+        "s": "T"
+      },
+      {
+        "x": 191.88,
+        "y": 580.32,
+        "s": "N"
+      },
+      {
+        "x": 133.56,
+        "y": 578.4,
+        "s": "S 3"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Output equals one of two possible inputs",
+      "description_lines": [
+        "Output equals one of two possible inputs"
+      ],
+      "manual_page": 73
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of first input",
+      "description_lines": [
+        "Block address of first input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 73
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of second input",
+      "description_lines": [
+        "Block address of second input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 73
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of transfer signal:; 0 = output equals <S1>; 1 = output equals <S2>",
+      "description_lines": [
+        "Block address of transfer signal:",
+        "0 = output equals <S1>",
+        "1 = output equals <S2>"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "output equals <S1>"
+        },
+        {
+          "value": "1",
+          "meaning": "output equals <S2>"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 73
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Transfer to input 1 time constant/sec",
+      "description_lines": [
+        "Transfer to input 1 time constant/sec"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 73
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Transfer to input 2 time constant/sec",
+      "description_lines": [
+        "Transfer to input 2 time constant/sec"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 73
+    }
+  ],
+  "spec_count": 5,
+  "max_spec_number": 5,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 73,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 73,
+  "manual_pages": [
+    73,
+    74,
+    75
+  ],
+  "manual_section": "Function Code 9 - Analog Transfer",
+  "diagnostics": []
+}

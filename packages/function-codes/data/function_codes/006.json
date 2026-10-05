@@ -1,0 +1,127 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 6,
+  "name": "High/Low Limiter",
+  "description": "This block limits the output signal to a range that lies between a specified high and low limit. The output equals the input <S1> when the input is between the limits. Output N equals the high limit when the input is higher than the high limit and equals the low limit when the input is lower than the low limit.",
+  "description_lines": [
+    "This block limits the output signal to a range that lies between",
+    "a specified high and low limit. The output equals the input",
+    "<S1> when the input is between the limits. Output N equals",
+    "the high limit when the input is higher than the high limit and",
+    "equals the low limit when the input is lower than the low",
+    "limit."
+  ],
+  "symbol": {
+    "title_raw": null,
+    "title": null,
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 191.88,
+        "y": 588.78,
+        "s": "(6 )"
+      },
+      {
+        "x": 133.38,
+        "y": 587.58,
+        "s": "S 1"
+      },
+      {
+        "x": 191.88,
+        "y": 579.9,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Output value equals input value unless the input reaches the low or high limit. Then, the output value assumes the value of the limit.",
+      "description_lines": [
+        "Output value equals input value unless the input reaches",
+        "the low or high limit. Then, the output value assumes the",
+        "value of the limit."
+      ],
+      "manual_page": 65
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input",
+      "description_lines": [
+        "Block address of input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 65
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "Value of high limit",
+      "description_lines": [
+        "Value of high limit"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 65
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "-9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "Value of low limit",
+      "description_lines": [
+        "Value of low limit"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 65
+    }
+  ],
+  "spec_count": 3,
+  "max_spec_number": 3,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 65,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 65,
+  "manual_pages": [
+    65,
+    66
+  ],
+  "manual_section": "Function Code 6 - High/Low Limiter",
+  "diagnostics": []
+}

@@ -1,6 +1,6 @@
 # ABB Bailey INFI 90 Migration Studio
 
-Next.js monorepo that ingests Bailey INFI 90 Bus/Module ZIP backups, classifies engineering files, maps AI/AO/DI/DO to CAD logic, reconstructs CAD/M1 visuals to PDF/SVG, and provides an interactive engineering viewer.
+Next.js monorepo that ingests Bailey INFI 90 Bus/Module ZIP backups, classifies engineering files, maps AI/AO/DI/DO to CAD logic, reconstructs CAD sheets to PDF/SVG, and provides an interactive engineering viewer. M1 graphics decoding is a separate upload flow on the home page.
 
 ## Quick start
 
@@ -89,8 +89,7 @@ Stored under `$STORAGE_ROOT/sessions/<id>/artifacts/`:
 - `IO_List.xlsx`
 - `Logic_Specification.xlsx`
 - `CAD_Logic.pdf`
-- `M1_Graphics.pdf`
-- `cad-svg/` / `m1-svg/`
+- `cad-svg/`
 
 ## Security notes
 

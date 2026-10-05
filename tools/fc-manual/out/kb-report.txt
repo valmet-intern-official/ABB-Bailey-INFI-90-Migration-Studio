@@ -1,0 +1,143 @@
+manual: CAD Manual.pdf (WBPEEUI210504D1_V1) pages=734 sha256=c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d
+function codes: 134
+fixed block table: Table 2. Block Addresses in a BRC-100 Controller p.39, 32 rows
+spec types: 'I' x920, 'R' x362, 'B' x59, 'INT' x2, '' x1
+
+FC   1 Function Generator                       specs= 13 max=S13 outputs=1 notes=4 pages=43-48 symbol=F(X) pins=S1
+FC   2 Manual Set Constant (Signal Generator)   specs=  1 max=S1 outputs=1 notes=0 pages=49-50 symbol=A pins=
+FC   3 Lead/Lag                                 specs=  4 max=S4 outputs=1 notes=1 pages=51-54 symbol=F(t) pins=S1,S2
+FC   4 Pulse Positioner                         specs=  6 max=S6 outputs=2 notes=1 pages=55-60 symbol=PULPOS pins=S1,S2
+FC   5 Pulse Rate                               specs=  3 max=S3 outputs=1 notes=1 pages=61-64 symbol=PULSE pins=S1
+FC   6 High/Low Limiter                         specs=  3 max=S3 outputs=1 notes=1 pages=65-66 symbol=- pins=S1
+FC   7 Square Root                              specs=  2 max=S2 outputs=1 notes=4 pages=67-69 symbol=- pins=S1
+FC   8 Rate Limiter                             specs=  4 max=S4 outputs=1 notes=1 pages=71-72 symbol=- pins=S1,S2
+FC   9 Analog Transfer                          specs=  5 max=S5 outputs=1 notes=1 pages=73-75 symbol=T pins=S1,S2,S3
+FC  10 High Select                              specs=  4 max=S4 outputs=1 notes=1 pages=77-78 symbol=- pins=S1,S2,S3,S4
+FC  11 Low Select                               specs=  4 max=S4 outputs=1 notes=1 pages=79-80 symbol=- pins=S1,S2,S3,S4
+FC  12 High/Low Compare                         specs=  3 max=S3 outputs=2 notes=1 pages=81-82 symbol=H//L pins=S1
+FC  13 Integer Transfer                         specs=  3 max=S3 outputs=1 notes=1 pages=83-84 symbol=T-INT pins=S1,S2,S3
+FC  14 Summer (4-Input)                         specs=  4 max=S4 outputs=1 notes=1 pages=85-85 symbol=S pins=S1,S2,S3,S4
+FC  15 Summer (2-Input)                         specs=  4 max=S4 outputs=1 notes=1 pages=87-88 symbol=- pins=S1,S2
+FC  16 Multiply                                 specs=  3 max=S3 outputs=1 notes=1 pages=89-89 symbol=X pins=S1,S2
+FC  17 Divide                                   specs=  3 max=S3 outputs=1 notes=2 pages=91-91 symbol=- pins=S1,S2
+FC  18 PID Error Input                          specs= 10 max=S10 outputs=1 notes=1 pages=93-96 symbol=PID pins=S1,S2,S3
+FC  19 PID (PV and SP)                          specs= 12 max=S12 outputs=1 notes=1 pages=97-101 symbol=PID pins=S2,S1,S3,S4
+FC  24 Adapt                                    specs=  3 max=S3 outputs=1 notes=1 pages=103-105 symbol=ADAPT pins=S1
+FC  25 Analog Input (Periodic Sample)           specs=  2 max=S2 outputs=1 notes=2 pages=107-110 symbol=AI/B pins=
+FC  26 Analog Input/Loop                        specs=  3 max=S3 outputs=1 notes=3 pages=111-112 symbol=AI/L pins=
+FC  30 Analog Exception Report                  specs=  7 max=S7 outputs=1 notes=2 pages=113-116 symbol=AO/L pins=S1
+FC  31 Test Quality                             specs=  4 max=S4 outputs=1 notes=1 pages=117-118 symbol=TSTQ pins=S1,S2,S3,S4
+FC  32 Trip                                     specs=  1 max=S1 outputs=1 notes=1 pages=119-119 symbol=TRIP pins=S1
+FC  33 Not                                      specs=  1 max=S1 outputs=1 notes=1 pages=121-121 symbol=NOT pins=S1
+FC  34 Memory                                   specs=  4 max=S4 outputs=1 notes=1 pages=123-124 symbol=S pins=S1,S2,S3
+FC  35 Timer                                    specs=  3 max=S3 outputs=1 notes=1 pages=125-126 symbol=TD-DIG pins=S1
+FC  36 Qualified OR (8-Input)                   specs= 10 max=S10 outputs=1 notes=1 pages=127-128 symbol=QOR pins=S1,S2,S3,S4,S5,S6,S7,S8
+FC  37 AND (2-Input)                            specs=  2 max=S2 outputs=1 notes=1 pages=129-129 symbol=- pins=S1,S2
+FC  38 AND (4-Input)                            specs=  4 max=S4 outputs=1 notes=1 pages=131-131 symbol=A pins=S1,S2,S3,S4
+FC  39 OR (2-Input)                             specs=  2 max=S2 outputs=1 notes=1 pages=133-133 symbol=- pins=S1,S2
+FC  40 OR (4-Input)                             specs=  4 max=S4 outputs=1 notes=1 pages=135-135 symbol=OR pins=S1,S2,S3,S4
+FC  41 Digital Input (Periodic Sample)          specs=  2 max=S2 outputs=1 notes=1 pages=137-139 symbol=DI/B pins=
+FC  42 Digital Input/Loop                       specs=  3 max=S3 outputs=1 notes=3 pages=141-142 symbol=DI/L pins=
+FC  45 Digital Exception Report                 specs=  2 max=S2 outputs=1 notes=1 pages=143-145 symbol=DO/L pins=S1
+FC  50 Manual Set Switch                        specs=  1 max=S1 outputs=1 notes=0 pages=147-147 symbol=ON/OFF pins=
+FC  51 Manual Set Constant                      specs=  1 max=S1 outputs=1 notes=0 pages=149-149 symbol=A-REAL pins=
+FC  52 Manual Set Integer                       specs=  1 max=S1 outputs=1 notes=0 pages=151-152 symbol=A-INT pins=
+FC  55 Hydraulic Servo                          specs= 23 max=S23 outputs=10 notes=0 pages=153-166 symbol=HSS03 pins=S6,S7,S8,S9,S10,S11,S12,S13,S14
+FC  57 Node Statistics Block                    specs= 10 max=S10 outputs=27 notes=2 pages=167-170 symbol=NODE pins=
+        ! FC57 S1: no type letter printed (type/range text kept as range '0 - 32 chars')
+FC  58 Time Delay (Analog)                      specs=  5 max=S5 outputs=1 notes=1 pages=171-175 symbol=DELAY pins=S1,S2,S3
+FC  59 Digital Transfer                         specs=  3 max=S3 outputs=1 notes=1 pages=177-178 symbol=T-DIG pins=S1,S2,S3
+FC  61 Blink                                    specs=  2 max=S2 outputs=1 notes=1 pages=179-180 symbol=BLINK pins=S1,S2
+FC  62 Remote Control Memory                    specs=  8 max=S8 outputs=0 notes=1 pages=181-185 symbol=RCM pins=S1,S2,S3,S4,S5,S6,S7
+FC  63 Analog Input List (Periodic Sample)      specs= 10 max=S10 outputs=8 notes=3 pages=187-189 symbol=AIL/B pins=
+FC  64 Digital Input List (Periodic Sample)     specs= 10 max=S10 outputs=8 notes=3 pages=191-193 symbol=DIL/B pins=
+FC  65 Digital Sum With Gain                    specs=  8 max=S8 outputs=1 notes=1 pages=195-196 symbol=DSUM pins=S1,S2,S3,S4
+FC  66 Analog Trend                             specs=  3 max=S3 outputs=1 notes=2 pages=197-199 symbol=TREND pins=S1
+FC  68 Remote Manual Set Constant               specs=  6 max=S6 outputs=1 notes=1 pages=201-202 symbol=REMSET pins=S5,S6
+FC  69 Test Alarm                               specs=  2 max=S2 outputs=2 notes=1 pages=203-204 symbol=TSTALM pins=
+FC  79 Control Interface Slave                  specs= 19 max=S19 outputs=10 notes=0 pages=205-208 symbol=CISI/O pins=S10,S11,S15,S16,S17,S18
+FC  80 Control Station                          specs= 31 max=S31 outputs=6 notes=4 pages=209-223 symbol=M/A pins=S1,S2,S3,S4,S5,S18,S19,S20,S21,S22,S24,S25,S26,S27,S28,S29,S30
+FC  81 Executive                                specs=  4 max=S4 outputs=15 notes=0 pages=225-227 symbol=EXEC pins=
+FC  82 Segment Control                          specs= 15 max=S15 outputs=5 notes=0 pages=229-238 symbol=SEGCRM pins=
+FC  83 Digital Output Group                     specs= 11 max=S11 outputs=1 notes=1 pages=239-241 symbol=- pins=S4,S5,S6,S7,S8,S9,S10,S11
+        ! FC83: output table row with unrecognised block cell 'The control system must be carefully evaluated to estab-' on p.239; table ended
+FC  84 Digital Input Group                      specs=  3 max=S3 outputs=8 notes=0 pages=243-244 symbol=DIGRP pins=
+FC  85 Up/Down Counter                          specs=  7 max=S7 outputs=3 notes=1 pages=245-248 symbol=UP/DN pins=S1,S2,S3,S4
+FC  86 Elapsed Timer                            specs=  6 max=S6 outputs=2 notes=1 pages=249-253 symbol=ETIMER pins=S2,S1
+FC  89 Last Block                               specs=  1 max=S1 outputs=1 notes=0 pages=255-255 symbol=LAST pins=S1
+FC  90 Extended Executive                       specs=  6 max=S6 outputs=10 notes=5 pages=257-262 symbol=EXEXEC pins=S1
+FC  91 BASIC Configuration (BRC-100)            specs=  5 max=S5 outputs=1 notes=2 pages=263-266 symbol=BASCFG pins=
+FC  92 Invoke BASIC                             specs=  1 max=S1 outputs=1 notes=0 pages=267-268 symbol=INVBAS pins=
+FC  93 BASIC Real Output                        specs=  1 max=S1 outputs=4 notes=0 pages=269-270 symbol=BASRO pins=
+FC  94 BASIC Boolean Output                     specs=  1 max=S1 outputs=4 notes=0 pages=271-271 symbol=BASBO pins=
+FC  95 Module Status Monitor                    specs= 12 max=S12 outputs=1 notes=4 pages=273-277 symbol=MODST pins=
+FC  96 Redundant Analog Input                   specs=  6 max=S6 outputs=1 notes=1 pages=279-281 symbol=REDAI pins=S1,S2,S3
+FC  97 Redundant Digital Input                  specs=  3 max=S3 outputs=1 notes=1 pages=283-284 symbol=REDDI pins=S1,S2,S3
+FC  98 Slave Select                             specs=  9 max=S9 outputs=2 notes=1 pages=285-288 symbol=SLSEL pins=S1,S2,S3,S4,S5,S6,S7,S8,S9
+FC  99 Sequence of Events Log                   specs=  3 max=S3 outputs=1 notes=0 pages=289-292 symbol=SOELOG pins=
+FC 100 Digital Output Readback Check            specs= 16 max=S16 outputs=1 notes=1 pages=293-294 symbol=DOREAD pins=S1,S2,S3,S4,S5,S6,S7,S8,S9,S10,S11,S12,S13,S14,S15,S16
+FC 101 Exclusive OR                             specs=  2 max=S2 outputs=1 notes=1 pages=295-295 symbol=XOR pins=S1,S2
+FC 102 Pulse Input/Period                       specs=  8 max=S8 outputs=4 notes=0 pages=297-300 symbol=PIPER pins=
+FC 103 Pulse Input/Frequency                    specs=  8 max=S8 outputs=4 notes=0 pages=301-304 symbol=PIFREQ pins=
+FC 104 Pulse Input/Totalization                 specs= 10 max=S10 outputs=3 notes=1 pages=305-308 symbol=PITOT pins=S6,S7
+FC 109 Pulse Input/Duration                     specs=  8 max=S8 outputs=4 notes=0 pages=309-311 symbol=PIDUR pins=
+FC 110 Rung (5-Input)                           specs= 11 max=S11 outputs=1 notes=1 pages=313-317 symbol=RNG5 pins=S7,S8,S9,S10,S11
+FC 111 Rung (10-Input)                          specs= 21 max=S21 outputs=1 notes=1 pages=319-322 symbol=RNG10 pins=S12,S13,S14,S15,S16,S17,S18,S19,S20,S21
+FC 112 Rung (20-Input)                          specs= 41 max=S41 outputs=1 notes=1 pages=323-327 symbol=RNG20 pins=S22,S23,S24,S25,S26,S27,S28,S29,S30,S31,S32,S33,S34,S35,S36,S37,S38,S39,S40,S41
+FC 114 BCD Input                                specs=  5 max=S5 outputs=1 notes=0 pages=329-331 symbol=BCDIN pins=
+FC 115 BCD Output                               specs=  6 max=S6 outputs=1 notes=1 pages=333-336 symbol=BCDOUT pins=S4
+FC 116 Jump/Master Control Relay                specs=  3 max=S3 outputs=1 notes=1 pages=337-339 symbol=JUMP pins=S1
+FC 117 Boolean Recipe Table                     specs= 15 max=S15 outputs=1 notes=1 pages=341-343 symbol=RECIPB pins=S11,S13,S14,S15
+FC 118 Real Recipe Table                        specs= 15 max=S15 outputs=1 notes=1 pages=345-347 symbol=RECIPR pins=S11,S13,S14,S15
+FC 119 Boolean Signal Multiplexer               specs= 12 max=S12 outputs=1 notes=1 pages=349-351 symbol=BMUX pins=S1,S2,S3,S4,S5,S6,S7,S8,S9,S10,S11
+FC 120 Real Signal Multiplexer                  specs= 12 max=S12 outputs=1 notes=1 pages=353-355 symbol=RMUX pins=S1,S2,S3,S4,S5,S6,S7,S8,S9,S10,S11
+FC 121 Analog Input/Cnet                        specs=  7 max=S7 outputs=1 notes=1 pages=357-358 symbol=AI/I pins=
+FC 122 Digital Input/Cnet                       specs=  7 max=S7 outputs=1 notes=1 pages=359-360 symbol=DI/I pins=
+FC 123 Device Driver                            specs= 10 max=S10 outputs=2 notes=1 pages=361-382 symbol=DDRIVE pins=S1,S2,S3,S5,S6
+FC 124 Sequence Monitor                         specs= 32 max=S32 outputs=2 notes=1 pages=383-389 symbol=SEQMON pins=S2,S3,S4,S5,S6,S7,S8
+FC 125 Device Monitor                           specs= 16 max=S16 outputs=1 notes=1 pages=391-394 symbol=DEVMON pins=S1,S2,S3,S4,S5,S6,S7,S8,S9,S10,S11,S12,S13,S14,S15,S16
+FC 126 Real Signal Demultiplexer                specs=  3 max=S3 outputs=8 notes=1 pages=395-398 symbol=RDEMUX pins=S1
+FC 128 Slave Default Definition                 specs= 34 max=S34 outputs=1 notes=1 pages=399-401 symbol=DIGDEF pins=
+FC 129 Multistate Device Driver                 specs= 25 max=S25 outputs=4 notes=1 pages=403-414 symbol=MSDVDR pins=S1,S2,S3,S4,S5,S6,S25
+FC 132 Analog Input/Slave                       specs= 20 max=S20 outputs=6 notes=1 pages=415-419 symbol=AIS/ pins=S2
+        ! FC132: row label printed as '8' on p.416 (no 'S' in text layer); taken as S8 because it follows S7 and carries all columns
+FC 133 Smart Field Device Definition            specs= 14 max=S14 outputs=1 notes=1 pages=421-432 symbol=SMART pins=S1,S7
+FC 134 Multi-Sequence Monitor                   specs= 44 max=S44 outputs=6 notes=1 pages=433-442 symbol=MULTI pins=S2,S3,S4,S5,S6,S7,S8,S9,S10,S11,S13,S14,S15,S16,S17,S18,S19,S20,S21,S22,S23,S24,S25,S26,S27,S28,S29,S30,S31,S32,S33,S34,S35,S36,S37,S38,S39,S40,S41,S42,S43,S44
+FC 135 Sequence Manager                         specs= 32 max=S32 outputs=3 notes=1 pages=443-454 symbol=SEQMGR pins=S3,S5,S6,S7,S8,S9,S10,S11,S12,S13,S14,S15,S16,S17,S18,S19,S20
+FC 136 Remote Motor Control                     specs= 17 max=S17 outputs=4 notes=1 pages=455-459 symbol=RMC pins=S1,S2,S3,S4,S5,S6,S7,S8,S9,S10
+FC 137 C and BASIC Program Real Output With Quality specs=  1 max=S1 outputs=4 notes=0 pages=461-461 symbol=BASROQ pins=
+FC 138 C or BASIC Program Boolean Output With Quality specs=  1 max=S1 outputs=4 notes=0 pages=463-463 symbol=BASBOQ pins=
+FC 139 Passive Station Interface                specs= 17 max=S17 outputs=5 notes=1 pages=465-469 symbol=PSI pins=S1,S2,S3,S4,S5,S6,S7,S8,S9,S14,S16,S17
+FC 140 Restore                                  specs=  9 max=S9 outputs=1 notes=1 pages=471-479 symbol=RESTR pins=S1,S2,S3
+FC 141 Sequence Master                          specs= 36 max=S36 outputs=5 notes=2 pages=481-485 symbol=SEQMST pins=S1,S2,S3
+FC 142 Sequence Slave                           specs= 33 max=S33 outputs=1 notes=2 pages=487-488 symbol=SEQSLV pins=S1
+FC 143 Invoke C                                 specs= 11 max=S11 outputs=1 notes=1 pages=489-492 symbol=INVKC pins=S2
+FC 144 C Allocation                             specs=  2 max=S2 outputs=1 notes=1 pages=493-493 symbol=CALLOC pins=
+FC 145 Frequency Counter/Slave                  specs= 10 max=S10 outputs=4 notes=1 pages=495-496 symbol=FCS pins=S4,S10
+FC 146 Remote I/O Interface                     specs= 18 max=S18 outputs=3 notes=1 pages=497-501 symbol=RI/OI pins=S1,S5,S6,S7,S8,S9,S10,S11,S12,S13,S14,S15,S16,S17,S18
+FC 147 Remote I/O Definition                    specs= 36 max=S36 outputs=1 notes=2 pages=503-507 symbol=RI/OD pins=S1,S5,S6,S7,S8,S9,S10,S11,S12,S13,S14,S15,S16,S17,S18,S19,S20,S21,S22,S23,S24,S25,S26,S27,S28,S29,S30,S31,S32,S33,S34,S35,S36
+        ! FC147: S11-S33 elided in the manual on p.504 between identical rows S10 … S34; filled with those rows' cells
+FC 148 Batch Sequence                           specs= 14 max=S14 outputs=9 notes=1 pages=509-515 symbol=BSEQ pins=S1,S2,S3,S4,S5,S6,S7
+FC 149 Analog Output/Slave                      specs= 31 max=S31 outputs=8 notes=1 pages=517-520 symbol=ASO pins=S4,S5,S6,S7,S8,S9,S10,S2
+FC 150 Hydraulic Servo Slave                    specs= 11 max=S11 outputs=12 notes=1 pages=521-525 symbol=HSS pins=S2,S3,S4,S5,S6,S7,S11
+FC 151 Text Selector                            specs= 16 max=S16 outputs=1 notes=1 pages=527-529 symbol=TEXT pins=S1,S2,S3,S4
+FC 152 Model Parameter Estimator                specs=  8 max=S8 outputs=5 notes=4 pages=531-534 symbol=PAREST pins=S1,S2,S3,S8
+FC 153 ISC Parameter Converter                  specs= 13 max=S13 outputs=6 notes=2 pages=535-541 symbol=ISCCON pins=S1,S2,S3,S4,S13
+FC 154 Adaptive Parameter Scheduler             specs= 10 max=S10 outputs=3 notes=1 pages=543-547 symbol=PARSCH pins=S1,S2,S3,S4,S5,S10
+FC 155 Regression                               specs= 27 max=S27 outputs=0 notes=1 pages=549-562 symbol=REGRES pins=S2,S3,S4,S5,S1,S11,S15,S16,S17,S18
+FC 156 Advanced PID Controller                  specs= 23 max=S23 outputs=3 notes=3 pages=563-581 symbol=APID pins=S2,S1,S3,S4,S5,S6,S7,S8,S9,S10
+FC 157 General Digital Controller               specs= 24 max=S24 outputs=1 notes=1 pages=583-589 symbol=DTF pins=S2,S1,S4,S7,S3,S5
+FC 160 Inferential Smith Controller             specs= 12 max=S12 outputs=1 notes=1 pages=591-598 symbol=SMITH pins=S2,S1,S5,S3,S4
+FC 161 Sequence Generator                       specs= 25 max=S25 outputs=11 notes=1 pages=599-607 symbol=SEQGEN pins=S1,S2,S3,S4,S5,S6,S7,S8
+FC 162 Digital Segment Buffer                   specs=  4 max=S4 outputs=4 notes=1 pages=609-609 symbol=DSNAP pins=S1,S2,S3,S4
+FC 163 Analog Segment Buffer                    specs=  4 max=S4 outputs=4 notes=1 pages=611-612 symbol=ASNAP pins=S1,S2,S3,S4
+FC 165 Moving Average                           specs=  4 max=S4 outputs=1 notes=1 pages=613-615 symbol=MOVAVG pins=S1,S4
+FC 166 Integrator                               specs=  9 max=S9 outputs=2 notes=1 pages=617-620 symbol=PV pins=S1,S3,S4
+FC 167 Polynomial                               specs= 17 max=S17 outputs=1 notes=4 pages=621-622 symbol=POLY pins=S1
+FC 168 Interpolator                             specs= 31 max=S31 outputs=2 notes=1 pages=623-628 symbol=INPOL pins=S1,S2
+FC 169 Matrix Addition                          specs= 18 max=S18 outputs=9 notes=1 pages=629-630 symbol=[ADD] pins=S1,S2,S3,S4,S5,S6,S7,S8,S9,S10,S11,S12,S13,S14,S15,S16,S17,S18
+FC 170 Matrix Multiplication                    specs= 18 max=S18 outputs=9 notes=1 pages=631-633 symbol=[X] pins=S1,S2,S3,S4,S5,S6,S7,S8,S9,S10,S11,S12,S13,S14,S15,S16,S17,S18
+FC 171 Trigonometric                            specs=  4 max=S4 outputs=1 notes=1 pages=635-635 symbol=TRIG pins=S1
+FC 172 Exponential                              specs=  2 max=S2 outputs=0 notes=1 pages=637-637 symbol=EXP pins=S1
+FC 173 Power                                    specs=  3 max=S3 outputs=0 notes=1 pages=639-639 symbol=POWER pins=S1,S2
+FC 174 Logarithm                                specs=  3 max=S3 outputs=1 notes=1 pages=641-641 symbol=LOG pins=S1

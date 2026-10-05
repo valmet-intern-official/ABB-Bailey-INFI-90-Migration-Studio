@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import "../design-system/tokens/tokens.css";
+@import "../design-system/components/landing.css";
+@import "../design-system/components/processing.css";
 
 :root {
   --bg: #ffffff;
@@ -92,25 +95,6 @@ a {
   }
 }
 
-.site-nav {
-  display: none;
-  margin-left: auto;
-  gap: 1.5rem;
-  font-size: 0.92rem;
-  color: var(--muted);
-  font-weight: 500;
-}
-
-.site-nav a:hover {
-  color: var(--accent);
-}
-
-@media (min-width: 860px) {
-  .site-nav {
-    display: inline-flex;
-  }
-}
-
 .btn {
   display: inline-flex;
   align-items: center;
@@ -147,6 +131,98 @@ a {
   }
 }
 
+.btn-excel {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.42rem 0.9rem 0.42rem 0.65rem;
+  background: #fff;
+  color: #107c41;
+  border: 1.5px solid #107c41;
+  border-radius: 10px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.btn-excel:hover {
+  background: #f1f8f4;
+  box-shadow: 0 2px 8px rgba(16, 124, 65, 0.18);
+  transform: translateY(-1px);
+}
+
+.btn-excel:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.btn-excel:focus-visible {
+  outline: 2px solid #107c41;
+  outline-offset: 2px;
+}
+
+.btn-excel__icon {
+  width: 20px;
+  height: 20px;
+  flex: none;
+}
+
+.btn-excel__divider {
+  width: 1px;
+  align-self: stretch;
+  margin: 0.1rem 0;
+  background: rgba(16, 124, 65, 0.35);
+}
+
+.btn-pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.42rem 0.9rem 0.42rem 0.65rem;
+  background: #fff;
+  color: #1f7a4d;
+  border: 1.5px solid #1f7a4d;
+  border-radius: 10px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.btn-pdf:hover {
+  background: #f3faf6;
+  box-shadow: 0 2px 8px rgba(31, 122, 77, 0.18);
+  transform: translateY(-1px);
+}
+
+.btn-pdf:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.btn-pdf:focus-visible {
+  outline: 2px solid #1f7a4d;
+  outline-offset: 2px;
+}
+
+.btn-pdf__icon {
+  width: 20px;
+  height: 20px;
+  flex: none;
+}
+
+.btn-pdf__divider {
+  width: 1px;
+  align-self: stretch;
+  margin: 0.1rem 0;
+  background: rgba(31, 122, 77, 0.35);
+}
+
 .btn-secondary {
   background: transparent;
   color: var(--ink);
@@ -169,248 +245,6 @@ a {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-}
-
-.feature-icon {
-  width: 2.4rem;
-  height: 2.4rem;
-  border-radius: 0.7rem;
-  display: grid;
-  place-items: center;
-  background: var(--accent-soft);
-  color: var(--accent);
-  margin-bottom: 0.85rem;
-}
-
-.hero-media {
-  border-radius: 20px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-  background: #0b1a12;
-  animation: rise-in 0.7s ease both;
-}
-
-.hero-media img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
-@keyframes rise-in {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.anim-fade-up {
-  animation: fade-up 0.55s ease both;
-}
-
-.anim-delay-1 {
-  animation-delay: 0.08s;
-}
-
-.section-head {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 44rem;
-}
-
-.section-label {
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent);
-}
-
-.section-title {
-  margin-top: 0.45rem;
-  font-family: var(--font-display), var(--font-sans), sans-serif;
-  font-size: clamp(1.75rem, 2.4vw, 2.35rem);
-  font-weight: 650;
-  letter-spacing: -0.02em;
-  color: var(--ink);
-}
-
-.section-rule {
-  display: block;
-  width: 2.75rem;
-  height: 3px;
-  margin: 0.85rem auto 0;
-  border-radius: 999px;
-  background: var(--accent);
-}
-
-.section-lead {
-  margin-top: 0.75rem;
-  color: var(--muted);
-  line-height: 1.65;
-  font-size: 1rem;
-}
-
-.upload-card {
-  margin-top: 2rem;
-  border-radius: 20px;
-  border: 1px solid var(--line);
-  background:
-    linear-gradient(180deg, #ffffff 0%, #fbfdfb 100%);
-  box-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.8) inset,
-    0 18px 40px rgba(15, 40, 28, 0.07);
-  overflow: hidden;
-}
-
-.upload-card__top {
-  display: flex;
-  justify-content: center;
-  padding: 1.35rem 1.5rem 1.15rem;
-  border-bottom: 1px solid var(--line);
-  background:
-    radial-gradient(500px 120px at 50% 0%, #e8f3ec 0%, transparent 60%),
-    #ffffff;
-}
-
-.upload-card__badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.35rem 0.7rem;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent-dark);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.upload-card__body {
-  padding: 1.5rem;
-  text-align: center;
-}
-
-.upload-card__title {
-  font-family: var(--font-display), var(--font-sans), sans-serif;
-  font-size: 1.35rem;
-  font-weight: 650;
-  letter-spacing: -0.02em;
-}
-
-.upload-card__desc {
-  margin: 0.4rem auto 0;
-  max-width: 40rem;
-  color: var(--muted);
-  font-size: 0.95rem;
-  line-height: 1.55;
-}
-
-.upload-actions {
-  margin-top: 1.25rem;
-  display: flex;
-  justify-content: center;
-}
-
-.dropzone {
-  border: 1.5px dashed color-mix(in srgb, var(--accent) 45%, var(--line));
-  border-radius: 16px;
-  background:
-    linear-gradient(180deg, #f7fbf8 0%, #f2f7f4 100%);
-  padding: 2.5rem 1.25rem;
-  text-align: center;
-  transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
-  cursor: pointer;
-}
-
-.dropzone:hover,
-.dropzone--active {
-  border-color: var(--accent);
-  background: var(--accent-soft);
-  box-shadow: 0 0 0 4px rgba(31, 122, 77, 0.08);
-}
-
-.dropzone__icon {
-  width: 3.4rem;
-  height: 3.4rem;
-  margin: 0 auto 0.95rem;
-  border-radius: 999px;
-  display: grid;
-  place-items: center;
-  background: #fff;
-  color: var(--accent);
-  border: 1px solid color-mix(in srgb, var(--accent) 20%, white);
-  box-shadow: 0 6px 16px rgba(15, 40, 28, 0.06);
-}
-
-.workflow-card {
-  position: relative;
-  aspect-ratio: 16 / 9;
-  min-height: 0;
-  padding: 1.15rem 1.1rem;
-  border-radius: 14px;
-  border: 1px solid #e6ebe8;
-  background: #ffffff;
-  box-shadow: 0 6px 18px rgba(15, 40, 28, 0.04);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.workflow-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(15, 40, 28, 0.07);
-}
-
-.workflow-card__icon {
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: 0.75rem;
-  display: grid;
-  place-items: center;
-  background: #e8f3ec;
-  color: #1f7a4d;
-  flex-shrink: 0;
-  margin-bottom: 0.75rem;
-}
-
-.workflow-card__title {
-  font-size: 1.02rem;
-  font-weight: 700;
-  letter-spacing: -0.015em;
-  color: #15231c;
-  line-height: 1.25;
-  flex-shrink: 0;
-}
-
-.workflow-card__body {
-  margin-top: 0.45rem;
-  max-width: 16rem;
-  font-size: 0.86rem;
-  line-height: 1.45;
-  color: #6b7a72;
 }
 
 .table-wrap {
@@ -460,31 +294,6 @@ table.data tr:hover td {
   font-weight: 600;
 }
 
-.site-footer {
-  border-top: 1px solid var(--line);
-  background: #ffffff;
-  padding: 1.5rem 0;
-}
-
-.site-footer__inner {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 1.25rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  font-size: 0.875rem;
-  color: var(--muted);
-}
-
-@media (min-width: 768px) {
-  .site-footer__inner {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
 .site-header__inner--wide {
   max-width: none;
   width: 100%;
@@ -497,185 +306,64 @@ table.data tr:hover td {
   background: #ffffff;
 }
 
-.workspace-export {
-  margin-left: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  justify-content: flex-end;
-}
-
-.workspace-layout {
+.site-header__inner--workspace {
   display: grid;
-  grid-template-columns: 1fr;
-  min-height: calc(100vh - 73px);
-  position: relative;
-}
-
-@media (min-width: 960px) {
-  .workspace-layout {
-    grid-template-columns: 240px 1fr;
-    transition: grid-template-columns 0.2s ease;
-  }
-
-  .workspace-layout--collapsed {
-    grid-template-columns: 64px 1fr;
-  }
-}
-
-.workspace-sidebar {
-  border-bottom: 1px solid var(--line);
-  background: #fbfdfb;
-  padding: 1rem;
-}
-
-@media (min-width: 960px) {
-  .workspace-sidebar {
-    border-bottom: none;
-    border-right: 1px solid var(--line);
-    padding: 1.25rem 0.9rem;
-    position: sticky;
-    top: 73px;
-    height: calc(100vh - 73px);
-    overflow: auto;
-  }
-
-  .workspace-layout--collapsed .workspace-sidebar {
-    padding: 0.85rem 0.45rem;
-  }
-}
-
-.workspace-sidebar__top {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.35rem;
-  border-bottom: 1px solid var(--line);
-  margin-bottom: 0.75rem;
-}
-
-.workspace-sidebar__meta {
-  flex: 1;
-  min-width: 0;
-  padding: 0.35rem 0.35rem 1rem 0.65rem;
-}
-
-.workspace-layout--collapsed .workspace-sidebar__meta {
-  display: none;
-}
-
-.workspace-layout--collapsed .workspace-sidebar__top {
-  justify-content: center;
-  padding-bottom: 0.65rem;
-  margin-bottom: 0.55rem;
-}
-
-.workspace-sidebar__collapse {
-  flex-shrink: 0;
-  width: 2rem;
-  height: 2rem;
-  display: inline-flex;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
-  justify-content: center;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #ffffff;
-  color: var(--ink);
-  font-size: 0.95rem;
-  font-weight: 700;
-  line-height: 1;
-  cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
 
-.workspace-sidebar__collapse:hover {
-  background: var(--accent-soft);
-  border-color: color-mix(in srgb, var(--accent) 28%, white);
-  color: var(--accent-dark);
+.workspace-header__end {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 0;
 }
 
-@media (max-width: 959px) {
-  .workspace-sidebar__collapse {
-    display: none;
-  }
+.site-header__inner--workspace .brand__product {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .workspace-nav {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
   flex-wrap: wrap;
-  gap: 0.35rem;
-}
-
-@media (min-width: 960px) {
-  .workspace-nav {
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
 }
 
 .workspace-nav__item {
-  width: 100%;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.7rem;
-  text-align: left;
+  gap: 0.45rem;
   border: 1px solid transparent;
   background: transparent;
   color: var(--muted);
   border-radius: 10px;
-  padding: 0.7rem 0.85rem;
-  font-size: 0.92rem;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
+  white-space: nowrap;
   cursor: pointer;
   transition: background 0.15s ease, color 0.15s ease;
 }
 
 .workspace-nav__icon {
   flex-shrink: 0;
-  width: 1.35rem;
-  height: 1.35rem;
+  width: 1.1rem;
+  height: 1.1rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.05rem;
-  line-height: 1;
   color: inherit;
 }
 
-.workspace-nav__label {
-  min-width: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-@media (min-width: 960px) {
-  .workspace-layout--collapsed .workspace-nav__item {
-    width: 100%;
-    justify-content: center;
-    padding: 0.72rem 0.35rem;
-    gap: 0;
-  }
-
-  .workspace-layout--collapsed .workspace-nav__label {
-    display: none;
-  }
-
-  .workspace-layout--collapsed .workspace-nav__icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    font-size: 1.15rem;
-  }
-}
-
-@media (max-width: 959px) {
-  .workspace-nav__item {
-    width: auto;
-  }
+.workspace-nav__icon svg {
+  width: 100%;
+  height: 100%;
 }
 
 .workspace-nav__item:hover {
-  background: #ffffff;
+  background: var(--bg-soft, #f4f7f5);
   color: var(--ink);
 }
 
@@ -683,6 +371,12 @@ table.data tr:hover td {
   background: var(--accent-soft);
   color: var(--accent-dark);
   border-color: color-mix(in srgb, var(--accent) 22%, white);
+}
+
+@media (max-width: 719px) {
+  .workspace-nav__label {
+    display: none;
+  }
 }
 
 .workspace-main {
@@ -710,13 +404,14 @@ table.data tr:hover td {
 
 @media (min-width: 1100px) {
   .cad-viewer {
-    grid-template-columns: 260px minmax(0, 1fr) 380px;
+    grid-template-columns: 220px minmax(0, 1fr) var(--cad-detail-width, 520px);
     height: calc(100vh - 73px);
     min-height: calc(100vh - 73px);
   }
 }
 
 .cad-viewer__left,
+.cad-viewer__pdf,
 .cad-viewer__middle,
 .cad-viewer__right {
   display: flex;
@@ -726,20 +421,142 @@ table.data tr:hover td {
   border-bottom: 1px solid var(--line);
 }
 
+.cad-viewer__middle,
+.cad-viewer__pdf {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.cad-view-switch {
+  display: inline-flex;
+  padding: 3px;
+  border: 1.5px solid var(--accent);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.cad-view-switch button {
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  border-radius: 7px;
+  padding: 0.32rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cad-view-switch button.is-active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.cad-flip {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  perspective: 1400px;
+  transform-style: preserve-3d;
+}
+
+.cad-flip__face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: #f7faf8;
+  backface-visibility: hidden;
+  transition: transform 0.55s ease;
+}
+
+.cad-flip__face--pdf {
+  transform: rotateY(0deg);
+}
+
+.cad-flip__face--svg {
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+
+.cad-flip--svg .cad-flip__face--pdf {
+  transform: rotateY(-180deg);
+  pointer-events: none;
+}
+
+.cad-flip--svg .cad-flip__face--svg {
+  transform: rotateY(0deg);
+  pointer-events: auto;
+}
+
 @media (min-width: 1100px) {
   .cad-viewer__left,
+  .cad-viewer__pdf,
   .cad-viewer__middle,
   .cad-viewer__right {
     border-bottom: none;
     height: 100%;
   }
 
-  .cad-viewer__left {
+  .cad-viewer__left,
+  .cad-viewer__pdf {
     border-right: 1px solid var(--line);
   }
 
   .cad-viewer__right {
+    position: relative;
     border-left: 1px solid var(--line);
+  }
+
+  .cad-viewer__resizer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -5px;
+    z-index: 5;
+    width: 10px;
+    cursor: col-resize;
+    touch-action: none;
+  }
+
+  .cad-viewer__resizer::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    width: 4px;
+    height: 44px;
+    border-radius: 999px;
+    background: var(--line);
+    transform: translateY(-50%);
+    transition: background 0.15s ease, height 0.15s ease;
+  }
+
+  .cad-viewer__resizer:hover::after,
+  .cad-viewer__resizer:focus-visible::after,
+  .cad-viewer--resizing .cad-viewer__resizer::after {
+    height: 72px;
+    background: var(--accent);
+  }
+
+  .cad-viewer__resizer:focus-visible {
+    outline: none;
+  }
+
+  .cad-viewer--resizing {
+    cursor: col-resize;
+    user-select: none;
+  }
+}
+
+.cad-viewer__resizer {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  .cad-viewer__resizer {
+    display: block;
   }
 }
 
@@ -773,6 +590,25 @@ table.data tr:hover td {
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem;
+  align-items: center;
+}
+
+.cad-viewer__zoom {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: 0.25rem;
+}
+
+.cad-viewer__zoom .tab-btn {
+  min-width: 2rem;
+  padding: 0.25rem 0.55rem;
+  font-weight: 700;
+}
+
+.cad-viewer__zoom-label {
+  min-width: 3.4rem !important;
+  font-variant-numeric: tabular-nums;
 }
 
 .cad-viewer__stats span {
@@ -843,6 +679,59 @@ table.data tr:hover td {
   color: var(--accent-dark);
 }
 
+.cad-viewer__sheet--summary {
+  border-color: var(--line);
+  margin-bottom: 0.6rem;
+}
+
+.cad-viewer__summary {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  background: #ffffff;
+  border-left: 1px solid var(--line);
+}
+
+@media (min-width: 1100px) {
+  .cad-viewer__summary {
+    grid-column: 2 / -1;
+  }
+}
+
+.block-summary {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 1rem;
+  gap: 0.85rem;
+}
+
+.block-summary__wrap {
+  max-height: none;
+  border-top: 0;
+}
+
+.block-summary__row {
+  cursor: pointer;
+}
+
+.block-summary__row.is-static {
+  cursor: default;
+}
+
+.excel-table tbody tr.block-summary__row.is-open > td {
+  background: #e8f3ec;
+}
+
+.block-summary__chev {
+  display: inline-block;
+  width: 1.1rem;
+  color: var(--muted);
+}
+
 .cad-viewer__sheet-title {
   display: block;
   margin-top: 0.15rem;
@@ -862,6 +751,14 @@ table.data tr:hover td {
     linear-gradient(rgba(31, 122, 77, 0.03) 1px, transparent 1px),
     #f7faf8;
   background-size: 24px 24px;
+  overscroll-behavior: auto;
+  touch-action: pan-x pan-y;
+}
+
+.cad-viewer__zoom-stage {
+  display: block;
+  width: 100%;
+  min-height: 100%;
 }
 
 .cad-viewer__canvas img,
@@ -893,6 +790,252 @@ table.data tr:hover td {
   width: 100%;
   min-width: 0;
   height: auto;
+}
+
+.cad-viewer__svg-host:not(.cad-viewer__svg-host--fit) {
+  min-width: 0;
+}
+
+.cad-viewer__svg-host:not(.cad-viewer__svg-host--fit) svg {
+  width: 100%;
+  min-width: 0;
+  height: auto;
+}
+
+.cad-viewer__svg-host text.cad-io-hot {
+  cursor: pointer;
+  fill: #d7261e;
+  font-weight: 700;
+}
+
+.cad-viewer__svg-host text.cad-io-hot:hover {
+  fill: #9b120c;
+  text-decoration: underline;
+}
+
+.cad-pdf__view {
+  position: relative;
+  flex: 1;
+  min-height: 420px;
+  overflow: auto;
+  background: #e7ece9;
+}
+
+@media (min-width: 1100px) {
+  .cad-pdf__view {
+    min-height: 0;
+  }
+}
+
+.cad-pdf__page {
+  position: relative;
+  width: max-content;
+  margin: 12px auto;
+}
+
+.cad-pdf__view canvas {
+  display: block;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(15, 40, 28, 0.12);
+}
+
+.cad-pdf__hits {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.cad-pdf__hit {
+  position: absolute;
+  border-radius: 2px;
+  background: rgba(255, 212, 0, 0.38);
+  outline: 1px solid rgba(214, 160, 0, 0.8);
+}
+
+.cad-pdf__hit--current {
+  background: rgba(255, 122, 0, 0.42);
+  outline: 2px solid #e45d00;
+  box-shadow: 0 0 0 3px rgba(228, 93, 0, 0.22);
+}
+
+.cad-viewer__svg-host text.cad-search-hit {
+  paint-order: stroke;
+  stroke: #ffd400;
+  stroke-width: 2.4px;
+  stroke-linejoin: round;
+}
+
+.cad-viewer__svg-host text.cad-search-current {
+  stroke: #ff8a00;
+  stroke-width: 3.4px;
+}
+
+.cad-search {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.cad-search__field {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex: 1 1 160px;
+  min-width: 0;
+  padding: 0 0.65rem;
+  height: 2.1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.6rem;
+  background: #fbfdfb;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cad-search__field:focus-within {
+  border-color: #1f7a4d;
+  box-shadow: 0 0 0 3px rgba(31, 122, 77, 0.14);
+  background: #fff;
+}
+
+.cad-search__icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  color: var(--accent-dark);
+}
+
+.cad-search__field input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.82rem;
+  color: inherit;
+}
+
+.cad-search__tools {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: auto;
+}
+
+.cad-search__count {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+  white-space: nowrap;
+}
+
+.cad-search__count:empty {
+  display: none;
+}
+
+.cad-search__nav {
+  display: inline-flex;
+  gap: 0.25rem;
+}
+
+.cad-search__nav .tab-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.cad-io-nav {
+  position: absolute;
+  z-index: 6;
+  width: min(280px, calc(100% - 24px));
+  padding: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(15, 40, 28, 0.16);
+}
+
+.cad-io-nav__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.cad-io-nav__type {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.cad-io-nav__label {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.cad-io-nav__loop,
+.cad-io-nav__desc {
+  margin-top: 0.15rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.cad-io-nav__close {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cad-io-nav__kicker {
+  margin: 0.65rem 0 0.35rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.cad-io-nav__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.cad-io-nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+  width: 100%;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.cad-io-nav__link span:first-child {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.cad-io-nav__link span:last-child {
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.cad-io-nav__link:hover {
+  background: var(--accent-soft);
+  border-color: color-mix(in srgb, var(--accent) 35%, white);
 }
 
 .cad-viewer__svg-host .cad-block--selected rect {
@@ -1045,6 +1188,125 @@ table.data tr:hover td {
   font-weight: 700;
 }
 
+.cad-viewer__right .cad-viewer__mini-table-wrap {
+  max-height: none;
+}
+
+.cad-viewer__right .cad-viewer__mini-table {
+  width: 100%;
+}
+
+.cad-viewer__right .cad-viewer__mini-table td:last-child {
+  white-space: nowrap;
+}
+
+.fb-missing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.fb-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+  scroll-margin: 0.5rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.fb-card--selected {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+.fb-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.55rem 0.75rem 0.2rem;
+}
+
+.fb-card__id {
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.fb-card__fc {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+}
+
+.fb-card__name {
+  padding: 0 0.75rem 0.55rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.fb-card__symbol {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.72rem;
+}
+
+.fb-card > .cad-viewer__muted {
+  padding: 0 0.75rem 0.65rem;
+}
+
+.fb-card__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.74rem;
+}
+
+.fb-card__table th,
+.fb-card__table td {
+  border-top: 1px solid var(--line);
+  padding: 0.35rem 0.5rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.fb-card__table th {
+  background: #eef4ef;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.fb-card__label {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.fb-card__value {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  white-space: nowrap;
+}
+
+.fb-card__status {
+  display: block;
+  margin-top: 0.15rem;
+  font-family: var(--font-sans), sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: #a15c00;
+}
+
+.fb-card__meaning {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--accent-dark);
+  font-weight: 600;
+}
+
 .cad-viewer__link {
   color: var(--accent);
   text-decoration: underline;
@@ -1125,4 +1387,567 @@ table.data tr:hover td {
   background: #f3f8f5 !important;
   font-weight: 600;
   white-space: normal !important;
+}
+
+.excel-wrap.loop-wrap {
+  max-height: none;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+.excel-table.loop-table {
+  min-width: 2100px;
+}
+
+.loop-row {
+  cursor: pointer;
+}
+
+.excel-table tbody tr.loop-detail > td {
+  background: #fbfcfb;
+  padding: 0.6rem 0.8rem 0.9rem;
+}
+
+.loop-members {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+}
+
+.loop-members th,
+.loop-members td {
+  border: 1px solid #dde5df;
+  padding: 0.3rem 0.45rem;
+  text-align: left;
+  vertical-align: top;
+  width: auto;
+}
+
+.loop-members th {
+  position: static;
+  background: #f0f5f1;
+}
+
+/* ---- Logic section ---- */
+
+@media (min-width: 1100px) {
+  .cad-viewer.logic-viewer {
+    grid-template-columns: 260px minmax(0, 1fr);
+  }
+}
+
+.logic-viewer__main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  background: #fff;
+}
+
+.logic-viewer__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.logic-viewer__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.logic-viewer__body {
+  flex: 1;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.logic-viewer__sheet-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.logic-viewer__count {
+  flex: none;
+  min-width: 1.6rem;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cad-viewer__sheet--active .logic-viewer__count {
+  background: var(--accent);
+  color: #fff;
+}
+
+.logic-viewer__sheet--empty {
+  opacity: 0.55;
+}
+
+.btn-cad-open {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.42rem 0.85rem;
+  border: 1.5px solid var(--accent);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.btn-cad-open:hover {
+  background: var(--accent-soft);
+  box-shadow: 0 2px 8px rgba(31, 122, 77, 0.18);
+  transform: translateY(-1px);
+}
+
+.btn-cad-open:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.logic-viewer .logic-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.logic-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  background: #fff;
+}
+
+.logic-table th,
+.logic-table td {
+  border: 1px solid #cfd8d2;
+  padding: 0.4rem 0.55rem;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.logic-table th {
+  background: #e8f3ec;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.logic-table__group:nth-of-type(even) td {
+  background: #fafcfb;
+}
+
+.logic-table__block,
+.logic-table__merge {
+  vertical-align: middle !important;
+  background: #f3f8f5 !important;
+}
+
+.logic-table__block {
+  font-weight: 700;
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+}
+
+.logic-table__symbol {
+  display: block;
+  margin-top: 0.15rem;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.logic-table__label {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.logic-table__value {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+
+.logic-table__meaning {
+  display: block;
+  margin-top: 0.15rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+}
+
+/* ---- M1 graphics preview ---- */
+
+.btn-pdf {
+  cursor: pointer;
+}
+
+.btn-pdf:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+@media (min-width: 1100px) {
+  .cad-viewer.cad-viewer--m1 {
+    grid-template-columns: 280px minmax(0, 1fr);
+  }
+}
+
+.m1-svg-host {
+  overflow: hidden;
+}
+
+.m1-cats__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.m1-cats__new {
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, white);
+  background: #fff;
+  color: var(--accent);
+  border-radius: 8px;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.m1-cats__new:hover {
+  background: var(--accent-soft);
+}
+
+.m1-cats__hint {
+  margin: 0.15rem 0.2rem 0.6rem;
+  padding: 0.6rem 0.7rem;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  font-size: 0.75rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.m1-group {
+  margin-bottom: 0.4rem;
+}
+
+.m1-group__head {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  position: sticky;
+  top: -0.5rem;
+  z-index: 1;
+  background: #fff;
+  padding: 0.15rem 0;
+}
+
+.m1-group__toggle {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 0;
+  background: transparent;
+  padding: 0.4rem 0.35rem;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.m1-group__toggle:hover {
+  background: var(--bg-soft, #f4f7f5);
+}
+
+.m1-group__chevron {
+  font-size: 0.7rem;
+  color: var(--muted);
+  transition: transform 0.15s ease;
+}
+
+.m1-group__chevron.is-open {
+  transform: rotate(90deg);
+}
+
+.m1-group__name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.m1-group__count {
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.m1-group__edit {
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.3rem 0.45rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.m1-group__edit:hover {
+  background: var(--accent-soft);
+}
+
+.m1-group .cad-viewer__sheet {
+  margin-left: 0.6rem;
+  width: calc(100% - 0.6rem);
+}
+
+.m1-group__empty {
+  margin: 0.2rem 0.6rem 0.4rem 1.2rem;
+  font-size: 0.74rem;
+  color: var(--muted);
+}
+
+.m1-toast {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 60;
+  max-width: 420px;
+  padding: 0.7rem 0.95rem;
+  border-radius: 10px;
+  background: #3a1d1d;
+  color: #fff;
+  font-size: 0.85rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.m1-dialog__backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background: rgba(11, 30, 20, 0.42);
+}
+
+.m1-dialog {
+  display: flex;
+  flex-direction: column;
+  width: min(620px, 100%);
+  max-height: min(760px, calc(100vh - 2.5rem));
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 24px 60px rgba(11, 30, 20, 0.25);
+  overflow: hidden;
+}
+
+.m1-dialog--narrow {
+  width: min(500px, 100%);
+}
+
+.m1-dialog__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.95rem 1.1rem;
+  border-bottom: 1px solid var(--line);
+  background: #fbfdfb;
+}
+
+.m1-dialog__head h2 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.m1-dialog__close {
+  border: 0;
+  background: transparent;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.m1-dialog__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1rem 1.1rem;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.m1-dialog__lead {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.m1-dialog__foot {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.1rem;
+  border-top: 1px solid var(--line);
+  background: #fbfdfb;
+}
+
+.m1-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.m1-field input,
+.m1-pick__filter {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.88rem;
+  font-weight: 400;
+  outline: none;
+}
+
+.m1-field input:focus,
+.m1-pick__filter:focus {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
+  box-shadow: 0 0 0 3px rgba(31, 122, 77, 0.1);
+}
+
+.m1-pick__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.m1-pick__actions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.m1-pick__actions button {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 7px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  cursor: pointer;
+}
+
+.m1-pick__actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.m1-pick__list {
+  flex: 1;
+  min-height: 120px;
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.3rem;
+}
+
+.m1-pick__item {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  font-size: 0.84rem;
+  cursor: pointer;
+}
+
+.m1-pick__item:hover {
+  background: var(--bg-soft, #f4f7f5);
+}
+
+.m1-pick__item input {
+  accent-color: var(--accent);
+}
+
+.m1-pick__item.is-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.m1-pick__name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.m1-pick__tag {
+  flex-shrink: 0;
+  max-width: 45%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.m1-btn-danger {
+  border: 1px solid #e3b4b4;
+  background: #fff;
+  color: #a12828;
+  border-radius: 10px;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.m1-btn-danger:hover {
+  background: #fdf3f3;
 }

@@ -1,0 +1,165 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 97,
+  "name": "Redundant Digital Input",
+  "description": "The redundant digital input function code selects and transfers a pair of redundant boolean signals. An external logic select input <S3> controls the transfer. The output value is equal to the input value selected with <S3>. Function code 97 monitors the action of the two inputs <S1> and <S2>. Output quality is bad if the quality of the selected input is bad or if there is a difference between the two inputs when both have good quality. To test the quality of the signal, include a function code 31 in the configuration. The quality of the point cannot be used as an input to any other type of block. However, the output value can be used as an input to other blocks. Refer to Appendix H for a definition of point quality.",
+  "description_lines": [
+    "The redundant digital input function code selects and trans-",
+    "fers a pair of redundant boolean signals. An external logic",
+    "select input <S3> controls the transfer. The output value is",
+    "equal to the input value selected with <S3>.",
+    "Function code 97 monitors the action of the two inputs <S1>",
+    "and <S2>. Output quality is bad if the quality of the selected",
+    "input is bad or if there is a difference between the two inputs",
+    "when both have good quality. To test the quality of the signal,",
+    "include a function code 31 in the configuration. The quality of",
+    "the point cannot be used as an input to any other type of",
+    "block. However, the output value can be used as an input to",
+    "other blocks. Refer to Appendix H for a definition of point",
+    "quality."
+  ],
+  "symbol": {
+    "title_raw": "R E D D I",
+    "title": "REDDI",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 158.58,
+        "y": 595.26,
+        "s": "R E D D I"
+      },
+      {
+        "x": 192,
+        "y": 588.96,
+        "s": "(9 7 )"
+      },
+      {
+        "x": 133.62,
+        "y": 587.52,
+        "s": "S 1"
+      },
+      {
+        "x": 153.06,
+        "y": 584.16,
+        "s": "1"
+      },
+      {
+        "x": 192,
+        "y": 580.08,
+        "s": "N"
+      },
+      {
+        "x": 133.62,
+        "y": 578.4,
+        "s": "S 2"
+      },
+      {
+        "x": 153.06,
+        "y": 575.04,
+        "s": "2"
+      },
+      {
+        "x": 133.62,
+        "y": 569.46,
+        "s": "S 3"
+      },
+      {
+        "x": 153.06,
+        "y": 566.1,
+        "s": "S"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Output N = <S1> if <S3> = 0 Output N = <S2> if <S3> = 1",
+      "description_lines": [
+        "Output N = <S1> if <S3> = 0",
+        "Output N = <S2> if <S3> = 1"
+      ],
+      "manual_page": 283
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of first input",
+      "description_lines": [
+        "Block address of first input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 283
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of second input",
+      "description_lines": [
+        "Block address of second input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 283
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of select input; 0 = <S1>, 1 = <S2>",
+      "description_lines": [
+        "Block address of select input; 0 = <S1>, 1 = <S2>"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 283
+    }
+  ],
+  "spec_count": 3,
+  "max_spec_number": 3,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 283,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 283,
+  "manual_pages": [
+    283,
+    284
+  ],
+  "manual_section": "Function Code 97 - Redundant Digital Input",
+  "diagnostics": []
+}

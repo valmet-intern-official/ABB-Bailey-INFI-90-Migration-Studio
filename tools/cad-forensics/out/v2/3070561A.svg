@@ -1,0 +1,630 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="2858" viewBox="0 0 1536 2858" data-cad="3070561A.CAD" data-engine="v2">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<rect x="12" y="12" width="1512" height="2834" fill="none" stroke="#1f2a24" stroke-width="1.5"/>
+<text x="28" y="36" font-family="Consolas, monospace" font-size="14" fill="#1f2a24" font-weight="700">3070561A.CAD — LOADING DECK 1 GROUP START</text>
+<g data-layer="wires">
+<polyline data-connection-id="conn_kxiv3e1o_mudt3i6d" data-signal="" data-source-block="block_8bpxgl9r_mudt3i6c" data-target-block="block_zz3xevkc_mudt3i6d" points="175,123 296,123 296,88 584,88 584,183 672,183" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_n2xx77e7_mudt3i6d" data-signal="" data-source-block="block_jeymrvju_mudt3i6d" data-target-block="block_m9ihtgi1_mudt3i6d" points="472,398 584,398 584,266 672,266" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_2hz95g0b_mudt3i6d" data-signal="" data-source-block="block_m9ihtgi1_mudt3i6d" data-target-block="block_waymh5gy_mudt3i6d" points="672,266 632,266 632,262 592,262" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_dj0zo31t_mudt3i6d" data-signal="" data-source-block="block_g5qxocjx_mudt3i6d" data-target-block="block_a1j3a1z1_mudt3i6c" points="436,570 296,570 296,80 8,80 8,526 124.5,526" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_gs1kcp3l_mudt3i6d" data-signal="" data-source-block="block_g5qxocjx_mudt3i6d" data-target-block="block_ove3684n_mudt3i6d" points="400,541 352,541 352,518 304,518" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_rlwyll53_mudt3i6d" data-signal="" data-source-block="block_jeymrvju_mudt3i6d" data-target-block="block_vd7bw760_mudt3i6d" points="400,398 352,398 352,382 304,382" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_dyntpu9l_mudt3i6e" data-signal="" data-source-block="block_g5qxocjx_mudt3i6d" data-target-block="block_wcmfgeb2_mudt3i6d" points="472,541 584,541 584,519 672,519" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_l292sqrz_mudt3i6e" data-signal="" data-source-block="block_dq9omx53_mudt3i6d" data-target-block="block_fxo8mw4d_mudt3i6d" points="487,322 536,322 536,390 584,390" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<line data-connection-id="conn_tmilsauh_mudt3i6e" data-signal="" data-source-block="block_uovx2iny_mudt3i6d" data-target-block="block_uovx2iny_mudt3i6d" x1="1320" y1="510" x2="1312" y2="510" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_q6ixwxzs_mudt3i6e" data-signal="" data-source-block="block_zp117q41_mudt3i6d" data-target-block="block_rpnmd5hv_mudt3i6d" points="472,467 584,467 584,450 672,450" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_6ov0xhf6_mudt3i6e" data-signal="" data-source-block="block_rpnmd5hv_mudt3i6d" data-target-block="block_fxo8mw4d_mudt3i6d" points="672,450 584,450 584,80 832,80 832,390 592,390" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_v16xia92_mudt3i6e" data-signal="" data-source-block="block_x70niti8_mudt3i6d" data-target-block="block_zz3xevkc_mudt3i6d" points="494,130 584,130 584,197 672,197" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_p2d3e3y7_mudt3i6e" data-signal="" data-source-block="block_6f5ntmaq_mudt3i6d" data-target-block="block_k158zxnw_mudt3i6d" points="832,190 832,224 472,224 472,251" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_h95h6675_mudt3i6e" data-signal="" data-source-block="block_6f5ntmaq_mudt3i6d" data-target-block="block_x18tluj9_mudt3i6d" points="840,190 1088,190 1088,123 1176,123" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_m8pqw906_mudt3i6e" data-signal="" data-source-block="block_k158zxnw_mudt3i6d" data-target-block="block_eg7xpowg_mudt3i6d" points="472,251 584,251 584,96 1088,96 1088,251 1176,251" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_5ca0t5m0_mudt3i6e" data-signal="" data-source-block="block_y2r3cdx7_mudt3i6d" data-target-block="block_rpnmd5hv_mudt3i6d" points="1232,334 1328,334 1328,80 584,80 584,476 708,476" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_z2v0t9k1_mudt3i6e" data-signal="" data-source-block="block_uovx2iny_mudt3i6d" data-target-block="block_wryxaz00_mudt3i6d" points="1312,510 1296,510 1296,507 1280,507" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_fw2uk5n9_mudt3i6e" data-signal="" data-source-block="block_t1m1o363_mudt3i6d" data-target-block="block_x70niti8_mudt3i6d" points="1227.5,206 1328,206 1328,80 439,80 439,156" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_816m8vw2_mudt3i6e" data-signal="" data-source-block="block_xvv60f0p_mudt3i6d" data-target-block="block_wcmfgeb2_mudt3i6d" points="494,626 584,626 584,533 672,533" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_piwfzcuw_mudt3i6e" data-signal="" data-source-block="block_xm4aw888_mudt3i6d" data-target-block="block_zju66rlb_mudt3i6d" points="472,790 584,790 584,1216 1088,1216 1088,635 1176,635" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_fqvulxh9_mudt3i6e" data-signal="" data-source-block="block_mliuuuio_mudt3i6d" data-target-block="block_xvv60f0p_mudt3i6d" points="1227.5,590 1328,590 1328,1224 296,1224 296,652 439,652" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_vgga548l_mudt3i6e" data-signal="" data-source-block="block_dnahlj1o_mudt3i6d" data-target-block="block_x0fdsdt9_mudt3i6d" points="744,715 832,715 832,1216 1088,1216 1088,763 1176,763" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_dxuqqm7l_mudt3i6e" data-signal="" data-source-block="block_5tq8n1hw_mudt3i6d" data-target-block="block_pnfodadq_mudt3i6d" points="1279,891 1296,891 1296,894 1312,894" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<line data-connection-id="conn_gzc3cz5g_mudt3i6f" data-signal="" data-source-block="block_pnfodadq_mudt3i6d" data-target-block="block_pnfodadq_mudt3i6d" x1="1320" y1="894" x2="1312" y2="894" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_euoa1diy_mudt3i6f" data-signal="" data-source-block="block_5geqr2bu_mudt3i6d" data-target-block="block_wdezmows_mudt3i6d" points="487,930 536,930 536,774 584,774" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_l859a2un_mudt3i6f" data-signal="" data-source-block="block_wdezmows_mudt3i6d" data-target-block="block_dnahlj1o_mudt3i6d" points="592,774 832,774 832,1216 584,1216 584,722 672,722" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_28jwj8i6_mudt3i6f" data-signal="" data-source-block="block_dnahlj1o_mudt3i6d" data-target-block="block_hd42f9m4_mudt3i6d" points="744,729 832,729 832,827 920,827" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_0hlr1wxa_mudt3i6f" data-signal="" data-source-block="block_xm4aw888_mudt3i6d" data-target-block="block_yg2edvw3_mudt3i6d" points="400,790 352,790 352,702 304,702" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_vlj75dcu_mudt3i6f" data-signal="" data-source-block="block_lsf2zhjy_mudt3i6d" data-target-block="block_kvmu8w55_mudt3i6d" points="472,1013 584,1013 584,887 672,887" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_u0sh2cyl_mudt3i6f" data-signal="" data-source-block="block_0mvmpcng_mudt3i6d" data-target-block="block_iztu97wi_mudt3i6d" points="472,859 584,859 584,642 672,642" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_8jw123hp_mudt3i6f" data-signal="" data-source-block="block_iztu97wi_mudt3i6d" data-target-block="block_bixddwhe_mudt3i6d" points="672,642 632,642 632,646 592,646" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_0mwqvfbj_mudt3i6f" data-signal="" data-source-block="block_lsf2zhjy_mudt3i6d" data-target-block="block_fdqo6b84_mudt3i6d" points="400,1013 352,1013 352,902 304,902" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_afb7w5gz_mudt3i6f" data-signal="" data-source-block="block_lsf2zhjy_mudt3i6d" data-target-block="block_9ck8sch7_mudt3i6c" points="436,1042 296,1042 296,1224 124.5,1224 124.5,910" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_1emzh1fv_mudt3i6f" data-signal="" data-source-block="block_hyo2exj7_mudt3i6d" data-target-block="block_3gqkymos_mudt3i6d" points="400,1549 352,1549 352,1350 304,1350" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_nn7g7q5v_mudt3i6f" data-signal="" data-source-block="block_hyo2exj7_mudt3i6d" data-target-block="block_nmcqscce_mudt3i6c" points="436,1578 296,1578 296,1224 124,1224 124,1358" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_mb3ay6c2_mudt3i6f" data-signal="" data-source-block="block_vh42qvj6_mudt3i6d" data-target-block="block_0kh0ul4m_mudt3i6d" points="472,1326 584,1326 584,986 672,986" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_wrrkveg4_mudt3i6f" data-signal="" data-source-block="block_0kh0ul4m_mudt3i6d" data-target-block="block_8ngy76pu_mudt3i6d" points="672,986 632,986 632,966 592,966" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_eywp5siq_mudt3i6f" data-signal="" data-source-block="block_o3gxblsy_mudt3i6d" data-target-block="block_kvmu8w55_mudt3i6d" points="494,1091 584,1091 584,901 672,901" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_2coqi6hh_mudt3i6f" data-signal="" data-source-block="block_clu7tiyx_mudt3i6c" data-target-block="block_wcmfgeb2_mudt3i6d" points="472,709 584,709 584,547 672,547" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_ffru7h1q_mudt3i6f" data-signal="" data-source-block="block_82i1e9x7_mudt3i6c" data-target-block="block_kvmu8w55_mudt3i6d" points="472,1181 584,1181 584,915 672,915" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_vd72pefr_mudt3i6f" data-signal="" data-source-block="block_9unlws47_mudt3i6c" data-target-block="block_irjez9ir_mudt3i6d" points="472,1717 584,1717 584,1299 672,1299" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_kcuhulm2_mudt3i6f" data-signal="" data-source-block="block_hyo2exj7_mudt3i6d" data-target-block="block_irjez9ir_mudt3i6d" points="472,1549 584,1549 584,1271 672,1271" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_mxuzkhqz_mudt3i6f" data-signal="" data-source-block="block_zz3xevkc_mudt3i6d" data-target-block="block_glh0ylfi_mudt3i6c" points="744,190 832,190 832,254 920,254" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_pno8goye_mudt3i6f" data-signal="" data-source-block="block_glh0ylfi_mudt3i6c" data-target-block="block_j4grsash_mudt3i6c" points="956,276 956,80 8,80 8,270 124,270" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<line data-connection-id="conn_x1quvu16_mudt3i6f" data-signal="" data-source-block="block_glh0ylfi_mudt3i6c" data-target-block="block_d8jg1tx5_mudt3i6d" x1="920" y1="254" x2="840" y2="254" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_jpzi651c_mudt3i6f" data-signal="" data-source-block="block_clu7tiyx_mudt3i6c" data-target-block="block_rxxp58lf_mudt3i6d" points="400,716 352,716 352,646 304,646" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_xrpgcno3_mudt3i6f" data-signal="" data-source-block="block_82i1e9x7_mudt3i6c" data-target-block="block_yf1ndqsg_mudt3i6d" points="400,1188 352,1188 352,1030 304,1030" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_hqf97c1d_mudt3i6f" data-signal="" data-source-block="block_f7bxwil0_mudt3i6d" data-target-block="block_woig543d_mudt3i6d" points="472,1859 584,1859 584,1370 672,1370" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_ksl08ywi_mudt3i6f" data-signal="" data-source-block="block_woig543d_mudt3i6d" data-target-block="block_g85hx94x_mudt3i6d" points="672,1370 632,1370 632,1350 592,1350" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_8yym1nnv_mudt3i6f" data-signal="" data-source-block="block_07hot7vy_mudt3i6d" data-target-block="block_veq9osrs_mudt3i6d" points="400,2074 352,2074 352,1798 304,1798" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_6kkq40iy_mudt3i6f" data-signal="" data-source-block="block_13z1vw8v_mudt3i6d" data-target-block="block_irjez9ir_mudt3i6d" points="494,1627 584,1627 584,1285 672,1285" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_kh9we9sa_mudt3i6f" data-signal="" data-source-block="block_834ebwhe_mudt3i6d" data-target-block="block_n7exuqwl_mudt3i6d" points="592,1126 832,1126 832,1216 584,1216 584,1059 672,1059" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_46aeepmq_mudt3i6f" data-signal="" data-source-block="block_3170rn8h_mudt3i6d" data-target-block="block_efnyr3uj_mudt3i6d" points="592,1542 832,1542 832,1216 584,1216 584,1443 672,1443" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_aqjqs1pk_mudt3i6f" data-signal="" data-source-block="block_o3gxblsy_mudt3i6d" data-target-block="block_ldflmymz_mudt3i6d" points="494,1105 584,1105 584,1216 1088,1216 1088,955 1176,955" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_9ahvrbjz_mudt3i6f" data-signal="" data-source-block="block_c8kqoqca_mudt3i6d" data-target-block="block_lt6vkxe8_mudt3i6d" points="1228,1038 1328,1038 1328,1224 436,1224 436,1278" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_47mnuu52_mudt3i6f" data-signal="" data-source-block="block_lt6vkxe8_mudt3i6d" data-target-block="block_gqsxuoze_mudt3i6d" points="400,1259 352,1259 352,1086 304,1086" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_gnr4pjeh_mudt3i6f" data-signal="" data-source-block="block_834ebwhe_mudt3i6d" data-target-block="block_z02owg3g_mudt3i6d" points="584,1126 536,1126 536,1402 487,1402" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_7gohm0gi_mudt3i6f" data-signal="" data-source-block="block_3170rn8h_mudt3i6d" data-target-block="block_lvj51qt0_mudt3i6d" points="584,1542 536,1542 536,1930 487,1930" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<line data-connection-id="conn_zszypqgl_mudt3i6f" data-signal="" data-source-block="block_v8apy5f0_mudt3i6d" data-target-block="block_v8apy5f0_mudt3i6d" x1="1320" y1="1790" x2="1312" y2="1790" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_0alzgttl_mudt3i6f" data-signal="" data-source-block="block_uv4aocxe_mudt3i6d" data-target-block="block_efnyr3uj_mudt3i6d" points="472,2003 584,2003 584,1457 672,1457" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_s86q8a6b_mudt3i6f" data-signal="" data-source-block="block_efnyr3uj_mudt3i6d" data-target-block="block_zbnj6n59_mudt3i6d" points="744,1450 832,1450 832,1216 1088,1216 1088,1595 1176,1595" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_705mdosn_mudt3i6g" data-signal="" data-source-block="block_cuzcjcp7_mudt3i6d" data-target-block="block_5kar2eyv_mudt3i6d" points="1231,1486 1328,1486 1328,2104 296,2104 296,1814 436,1814" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_oh1qpzgt_mudt3i6g" data-signal="" data-source-block="block_5kar2eyv_mudt3i6d" data-target-block="block_jhyqt95h_mudt3i6d" points="400,1795 352,1795 352,1534 304,1534" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_wb4xhhdz_mudt3i6g" data-signal="" data-source-block="block_13z1vw8v_mudt3i6d" data-target-block="block_3d9ap3fy_mudt3i6d" points="494,1641 584,1641 584,1216 1088,1216 1088,1403 1176,1403" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_vc0f5viv_mudt3i6g" data-signal="" data-source-block="block_n3xxle8r_mudt3i6d" data-target-block="block_1zq4wbcf_mudt3i6d" points="1273,1339 1312,1339 1312,1342" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<line data-connection-id="conn_nuh16314_mudt3i6g" data-signal="" data-source-block="block_1zq4wbcf_mudt3i6d" data-target-block="block_1zq4wbcf_mudt3i6d" x1="1320" y1="1342" x2="1312" y2="1342" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_85sob77r_mudt3i6g" data-signal="" data-source-block="block_rnx1nrq0_mudt3i6d" data-target-block="block_n7exuqwl_mudt3i6d" points="472,1475 584,1475 584,1073 672,1073" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_ud5o5i4o_mudt3i6g" data-signal="" data-source-block="block_n7exuqwl_mudt3i6d" data-target-block="block_af7pzz8z_mudt3i6d" points="744,1066 832,1066 832,1240 1088,1240 1088,1147 1192,1147" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_1wp4e58z_mudt3i6g" data-signal="" data-source-block="block_g5b300ov_mudt3i6d" data-target-block="block_v8apy5f0_mudt3i6d" points="1279,1787 1296,1787 1296,1790 1312,1790" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_y2wpmzmu_mudt3i6g" data-signal="" data-source-block="block_s2039nc6_mudt3i6b" data-target-block="block_07hot7vy_mudt3i6d" points="201,1787 296,1787 296,2074 400,2074" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_cqpwgaeh_mudt3i6g" data-signal="" data-source-block="block_gp9mnnw9_mudt3i6d" data-target-block="block_kyljus2s_mudt3i6d" points="472,2227 584,2227 584,1747 672,1747" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_tho1d4on_mudt3i6g" data-signal="" data-source-block="block_ssrdzp3x_mudt3i6d" data-target-block="block_it25cs1y_mudt3i6d" points="472,2438 584,2438 584,1818 672,1818" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_0nl4l8a3_mudt3i6g" data-signal="" data-source-block="block_it25cs1y_mudt3i6d" data-target-block="block_hmdyi78m_mudt3i6d" points="672,1818 632,1818 632,1798 592,1798" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_j72xg2ih_mudt3i6g" data-signal="" data-source-block="block_gapbfm4g_mudt3i6d" data-target-block="block_k9mnfyay_mudt3i6d" points="400,2578 352,2578 352,2438 304,2438" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_rt6i411n_mudt3i6g" data-signal="" data-source-block="block_1kxhurw8_mudt3i6d" data-target-block="block_kyljus2s_mudt3i6d" points="494,2147 584,2147 584,1733 672,1733" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_hst31fl4_mudt3i6g" data-signal="" data-source-block="block_7nxo5p8e_mudt3i6d" data-target-block="block_s5olc841_mudt3i6d" points="592,1958 832,1958 832,2104 584,2104 584,1891 672,1891" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_5lhmji6u_mudt3i6g" data-signal="" data-source-block="block_7nxo5p8e_mudt3i6d" data-target-block="block_03e7crwb_mudt3i6d" points="584,1958 536,1958 536,2362 487,2362" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<line data-connection-id="conn_pqm08nby_mudt3i6g" data-signal="" data-source-block="block_p55p64ph_mudt3i6d" data-target-block="block_p55p64ph_mudt3i6d" x1="1320" y1="2238" x2="1312" y2="2238" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_st6xkdaj_mudt3i6g" data-signal="" data-source-block="block_rsa36s6v_mudt3i6d" data-target-block="block_s5olc841_mudt3i6d" points="472,2507 584,2507 584,1905 672,1905" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_txxn6mtt_mudt3i6h" data-signal="" data-source-block="block_s5olc841_mudt3i6d" data-target-block="block_3at1srtr_mudt3i6d" points="744,1898 832,1898 832,2112 1088,2112 1088,2043 1184,2043" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_29s7cnn3_mudt3i6h" data-signal="" data-source-block="block_4y8vko2d_mudt3i6d" data-target-block="block_y9ekau0r_mudt3i6d" points="1227.5,1934 1328,1934 1328,2392 296,2392 296,2310 436,2310" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_bzrefitm_mudt3i6h" data-signal="" data-source-block="block_y9ekau0r_mudt3i6d" data-target-block="block_9503gs8j_mudt3i6d" points="400,2291 352,2291 352,1982 304,1982" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_by7b9507_mudt3i6h" data-signal="" data-source-block="block_1kxhurw8_mudt3i6d" data-target-block="block_osi5ey0t_mudt3i6d" points="494,2161 584,2161 584,2096 1088,2096 1088,1851 1176,1851" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_6447zgon_mudt3i6h" data-signal="" data-source-block="block_hwcg5xg6_mudt3i6d" data-target-block="block_p55p64ph_mudt3i6d" points="1272,2235 1296,2235 1296,2238 1312,2238" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_tvq15dlj_mudt3i6h" data-signal="" data-source-block="block_b058nl56_mudt3i6d" data-target-block="block_gapbfm4g_mudt3i6d" points="176,2235 296,2235 296,2578 400,2578" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_hmesfrum_mudt3i6h" data-signal="" data-source-block="block_9unlws47_mudt3i6c" data-target-block="block_fucibcxi_mudt3i6d" points="400,1710 352,1710 352,1478 304,1478" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_06upy6d9_mudt3i6h" data-signal="" data-source-block="block_ssrdzp3x_mudt3i6d" data-target-block="block_n01fqimk_mudt3i6d" points="400,2438 352,2438 352,2302 304,2302" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_lfljn90j_mudt3i6h" data-signal="" data-source-block="block_folzf14a_mudt3i6d" data-target-block="block_f7bxwil0_mudt3i6d" points="304,1598 584,1598 584,2624 296,2624 296,1859 400,1859" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_ktsvm866_mudt3i6h" data-signal="" data-source-block="block_vh42qvj6_mudt3i6d" data-target-block="block_rywt1f1h_mudt3i6d" points="400,1326 352,1326 352,1150 304,1150" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_32u8u6ac_mudt3i6h" data-signal="" data-source-block="block_puqhb1e2_mudt3i6d" data-target-block="block_0mvmpcng_mudt3i6d" points="304,766 352,766 352,859 400,859" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_8qdualvc_mudt3i6h" data-signal="" data-source-block="block_n7skj4w4_mudt3i6d" data-target-block="block_gp9mnnw9_mudt3i6d" points="304,1918 352,1918 352,2227 400,2227" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_txutqd78_mudt3i6h" data-signal="" data-source-block="block_9unlws47_mudt3i6c" data-target-block="block_r0bs2t5w_mudt3i6d" points="400,1724 352,1724 352,1478 304,1478" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_60xsgeas_mudt3i6h" data-signal="" data-source-block="block_82i1e9x7_mudt3i6c" data-target-block="block_fm95ki93_mudt3i6d" points="400,1174 352,1174 352,1030 304,1030" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_e8s6gxw9_mudt3i6h" data-signal="" data-source-block="block_clu7tiyx_mudt3i6c" data-target-block="block_bcghoild_mudt3i6d" points="400,702 352,702 352,646 304,646" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_mhp84iew_mudt3i6h" data-signal="" data-source-block="block_7s2hunze_mudt3i6d" data-target-block="block_gapbfm4g_mudt3i6d" points="1228,2318 1228,2632 436,2632 436,2604" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+<polyline data-connection-id="conn_2302mg3s_mudt3i6h" data-signal="" data-source-block="block_07hot7vy_mudt3i6d" data-target-block="block_kyljus2s_mudt3i6d" points="472,2074 584,2074 584,1719 672,1719" fill="none" stroke="#3d4f45" stroke-width="1.4"/>
+</g>
+<g data-layer="blocks">
+<g data-block-id="block_s2039nc6_mudt3i6b" data-entity-type="function-block" data-function-code="IREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="356" class="cad-block" style="cursor:pointer">
+<rect x="48" y="1768" width="153" height="38" fill="#eef4ff" stroke="#1d4ed8" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_h7wjj5ht_mudt3i6c" data-entity-type="function-block" data-function-code="RDI01A1" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="430" class="cad-block" style="cursor:pointer">
+<rect x="88" y="1448" width="72" height="36" fill="#f4f6f5" stroke="#3d4f45" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_nmcqscce_mudt3i6c" data-entity-type="function-block" data-function-code="IREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="480" class="cad-block" style="cursor:pointer">
+<rect x="80" y="1320" width="88" height="38" fill="#eef4ff" stroke="#1d4ed8" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_9ck8sch7_mudt3i6c" data-entity-type="function-block" data-function-code="IREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="554" class="cad-block" style="cursor:pointer">
+<rect x="48" y="872" width="153" height="38" fill="#eef4ff" stroke="#1d4ed8" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_pgrdndi3_mudt3i6c" data-entity-type="function-block" data-function-code="RDI01A2" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="628" class="cad-block" style="cursor:pointer">
+<rect x="88" y="616" width="72" height="36" fill="#f4f6f5" stroke="#3d4f45" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_a1j3a1z1_mudt3i6c" data-entity-type="function-block" data-function-code="IREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="678" class="cad-block" style="cursor:pointer">
+<rect x="48" y="488" width="153" height="38" fill="#eef4ff" stroke="#1d4ed8" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_h7ibhht9_mudt3i6c" data-entity-type="function-block" data-function-code="RDI01A1" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="752" class="cad-block" style="cursor:pointer">
+<rect x="88" y="168" width="72" height="36" fill="#f4f6f5" stroke="#3d4f45" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_j4grsash_mudt3i6c" data-entity-type="function-block" data-function-code="IREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="802" class="cad-block" style="cursor:pointer">
+<rect x="80" y="232" width="88" height="38" fill="#eef4ff" stroke="#1d4ed8" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_8bpxgl9r_mudt3i6c" data-entity-type="function-block" data-function-code="IREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="876" class="cad-block" style="cursor:pointer">
+<rect x="72" y="104" width="103" height="38" fill="#eef4ff" stroke="#1d4ed8" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_yivsm5xf_mudt3i6c" data-entity-type="function-block" data-function-code="DI1SYS" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="1068" class="cad-block" style="cursor:pointer">
+<rect x="88" y="1576" width="72" height="36" fill="#f4f6f5" stroke="#3d4f45" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_esn5xuup_mudt3i6c" data-entity-type="function-block" data-function-code="DI1SYS" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="1118" class="cad-block" style="cursor:pointer">
+<rect x="88" y="744" width="72" height="36" fill="#f4f6f5" stroke="#3d4f45" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_omdavdv0_mudt3i6c" data-entity-type="function-block" data-function-code="DI1SYS" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="1168" class="cad-block" style="cursor:pointer">
+<rect x="88" y="296" width="72" height="36" fill="#f4f6f5" stroke="#3d4f45" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_9unlws47_mudt3i6c" data-entity-type="function-block" data-function-code="OR2" data-block-number="2254" data-source-file="3070561A.CAD" data-source-offset="1332" class="cad-block" style="cursor:pointer">
+<rect x="400" y="1688" width="72" height="58" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_82i1e9x7_mudt3i6c" data-entity-type="function-block" data-function-code="OR2" data-block-number="2253" data-source-file="3070561A.CAD" data-source-offset="1368" class="cad-block" style="cursor:pointer">
+<rect x="400" y="1152" width="72" height="58" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_clu7tiyx_mudt3i6c" data-entity-type="function-block" data-function-code="OR2" data-block-number="2252" data-source-file="3070561A.CAD" data-source-offset="1404" class="cad-block" style="cursor:pointer">
+<rect x="400" y="680" width="72" height="58" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_glh0ylfi_mudt3i6c" data-entity-type="function-block" data-function-code="OR2" data-block-number="2251" data-source-file="3070561A.CAD" data-source-offset="1440" class="cad-block" style="cursor:pointer">
+<rect x="920" y="232" width="72" height="44" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_f7bxwil0_mudt3i6d" data-entity-type="function-block" data-function-code="NOT" data-block-number="2263" data-source-file="3070561A.CAD" data-source-offset="1476" class="cad-block" style="cursor:pointer">
+<rect x="400" y="1840" width="72" height="38" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_irjez9ir_mudt3i6d" data-entity-type="function-block" data-function-code="SR" data-block-number="2262" data-source-file="3070561A.CAD" data-source-offset="1512" class="cad-block" style="cursor:pointer">
+<rect x="672" y="1256" width="72" height="58" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_vh42qvj6_mudt3i6d" data-entity-type="function-block" data-function-code="NOT" data-block-number="2261" data-source-file="3070561A.CAD" data-source-offset="1548" class="cad-block" style="cursor:pointer">
+<rect x="400" y="1304" width="72" height="44" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_kvmu8w55_mudt3i6d" data-entity-type="function-block" data-function-code="SR" data-block-number="2260" data-source-file="3070561A.CAD" data-source-offset="1584" class="cad-block" style="cursor:pointer">
+<rect x="672" y="872" width="72" height="58" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_0mvmpcng_mudt3i6d" data-entity-type="function-block" data-function-code="NOT" data-block-number="2259" data-source-file="3070561A.CAD" data-source-offset="1620" class="cad-block" style="cursor:pointer">
+<rect x="400" y="840" width="72" height="38" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_wcmfgeb2_mudt3i6d" data-entity-type="function-block" data-function-code="SR" data-block-number="2258" data-source-file="3070561A.CAD" data-source-offset="1656" class="cad-block" style="cursor:pointer">
+<rect x="672" y="504" width="72" height="58" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_jeymrvju_mudt3i6d" data-entity-type="function-block" data-function-code="NOT" data-block-number="2257" data-source-file="3070561A.CAD" data-source-offset="1692" class="cad-block" style="cursor:pointer">
+<rect x="400" y="376" width="72" height="44" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_zz3xevkc_mudt3i6d" data-entity-type="function-block" data-function-code="SR" data-block-number="2256" data-source-file="3070561A.CAD" data-source-offset="1728" class="cad-block" style="cursor:pointer">
+<rect x="672" y="168" width="72" height="44" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<circle data-block-id="block_ove3684n_mudt3i6d" data-entity-type="junction" data-source-offset="1764" cx="300" cy="516" r="4" fill="#c2410c"/>
+<g data-block-id="block_07hot7vy_mudt3i6d" data-entity-type="function-block" data-function-code="AND2" data-block-number="2269" data-source-file="3070561A.CAD" data-source-offset="1798" class="cad-block" style="cursor:pointer">
+<rect x="400" y="2048" width="72" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_hyo2exj7_mudt3i6d" data-entity-type="function-block" data-function-code="AND2" data-block-number="2268" data-source-file="3070561A.CAD" data-source-offset="1834" class="cad-block" style="cursor:pointer">
+<rect x="400" y="1520" width="72" height="58" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_lsf2zhjy_mudt3i6d" data-entity-type="function-block" data-function-code="AND2" data-block-number="2267" data-source-file="3070561A.CAD" data-source-offset="1870" class="cad-block" style="cursor:pointer">
+<rect x="400" y="984" width="72" height="58" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_g5qxocjx_mudt3i6d" data-entity-type="function-block" data-function-code="AND2" data-block-number="2266" data-source-file="3070561A.CAD" data-source-offset="1906" class="cad-block" style="cursor:pointer">
+<rect x="400" y="512" width="72" height="58" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_woig543d_mudt3i6d" data-entity-type="function-block" data-function-code="AND2" data-block-number="2274" data-source-file="3070561A.CAD" data-source-offset="1942" class="cad-block" style="cursor:pointer">
+<rect x="672" y="1344" width="72" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_0kh0ul4m_mudt3i6d" data-entity-type="function-block" data-function-code="AND2" data-block-number="2273" data-source-file="3070561A.CAD" data-source-offset="1978" class="cad-block" style="cursor:pointer">
+<rect x="672" y="960" width="72" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_iztu97wi_mudt3i6d" data-entity-type="function-block" data-function-code="AND2" data-block-number="2272" data-source-file="3070561A.CAD" data-source-offset="2014" class="cad-block" style="cursor:pointer">
+<rect x="672" y="616" width="72" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_m9ihtgi1_mudt3i6d" data-entity-type="function-block" data-function-code="AND2" data-block-number="2271" data-source-file="3070561A.CAD" data-source-offset="2050" class="cad-block" style="cursor:pointer">
+<rect x="672" y="240" width="72" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<circle data-block-id="block_fxo8mw4d_mudt3i6d" data-entity-type="junction" data-source-offset="2086" cx="588" cy="388" r="4" fill="#c2410c"/>
+<g data-block-id="block_lvj51qt0_mudt3i6d" data-entity-type="function-block" data-function-code="TD-DIG" data-block-number="2279" data-source-file="3070561A.CAD" data-source-offset="2120" class="cad-block" style="cursor:pointer">
+<rect x="384" y="1904" width="103" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_z02owg3g_mudt3i6d" data-entity-type="function-block" data-function-code="TD-DIG" data-block-number="2278" data-source-file="3070561A.CAD" data-source-offset="2182" class="cad-block" style="cursor:pointer">
+<rect x="384" y="1376" width="103" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_5geqr2bu_mudt3i6d" data-entity-type="function-block" data-function-code="TD-DIG" data-block-number="2277" data-source-file="3070561A.CAD" data-source-offset="2244" class="cad-block" style="cursor:pointer">
+<rect x="384" y="904" width="103" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_dq9omx53_mudt3i6d" data-entity-type="function-block" data-function-code="TD-DIG" data-block-number="2276" data-source-file="3070561A.CAD" data-source-offset="2306" class="cad-block" style="cursor:pointer">
+<rect x="384" y="296" width="103" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_uv4aocxe_mudt3i6d" data-entity-type="function-block" data-function-code="NOT" data-block-number="2288" data-source-file="3070561A.CAD" data-source-offset="2368" class="cad-block" style="cursor:pointer">
+<rect x="400" y="1984" width="72" height="38" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_rnx1nrq0_mudt3i6d" data-entity-type="function-block" data-function-code="NOT" data-block-number="2286" data-source-file="3070561A.CAD" data-source-offset="2404" class="cad-block" style="cursor:pointer">
+<rect x="400" y="1456" width="72" height="38" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_hd42f9m4_mudt3i6d" data-entity-type="function-block" data-function-code="NOT" data-block-number="2284" data-source-file="3070561A.CAD" data-source-offset="2440" class="cad-block" style="cursor:pointer">
+<rect x="920" y="808" width="72" height="38" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_zp117q41_mudt3i6d" data-entity-type="function-block" data-function-code="NOT" data-block-number="2282" data-source-file="3070561A.CAD" data-source-offset="2476" class="cad-block" style="cursor:pointer">
+<rect x="400" y="448" width="72" height="38" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<circle data-block-id="block_6f5ntmaq_mudt3i6d" data-entity-type="junction" data-source-offset="2512" cx="836" cy="188" r="4" fill="#c2410c"/>
+<g data-block-id="block_efnyr3uj_mudt3i6d" data-entity-type="function-block" data-function-code="AND2" data-block-number="2298" data-source-file="3070561A.CAD" data-source-offset="2546" class="cad-block" style="cursor:pointer">
+<rect x="672" y="1424" width="72" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_5kar2eyv_mudt3i6d" data-entity-type="function-block" data-function-code="NOT" data-block-number="2287" data-source-file="3070561A.CAD" data-source-offset="2582" class="cad-block" style="cursor:pointer">
+<rect x="400" y="1776" width="72" height="38" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_13z1vw8v_mudt3i6d" data-entity-type="function-block" data-function-code="TD-DIG" data-block-number="2297" data-source-file="3070561A.CAD" data-source-offset="2618" class="cad-block" style="cursor:pointer">
+<rect x="384" y="1608" width="110" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_n7exuqwl_mudt3i6d" data-entity-type="function-block" data-function-code="AND2" data-block-number="2296" data-source-file="3070561A.CAD" data-source-offset="2682" class="cad-block" style="cursor:pointer">
+<rect x="672" y="1040" width="72" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_lt6vkxe8_mudt3i6d" data-entity-type="function-block" data-function-code="NOT" data-block-number="2285" data-source-file="3070561A.CAD" data-source-offset="2718" class="cad-block" style="cursor:pointer">
+<rect x="400" y="1240" width="72" height="38" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_o3gxblsy_mudt3i6d" data-entity-type="function-block" data-function-code="TD-DIG" data-block-number="2295" data-source-file="3070561A.CAD" data-source-offset="2754" class="cad-block" style="cursor:pointer">
+<rect x="384" y="1072" width="110" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_dnahlj1o_mudt3i6d" data-entity-type="function-block" data-function-code="AND2" data-block-number="2294" data-source-file="3070561A.CAD" data-source-offset="2818" class="cad-block" style="cursor:pointer">
+<rect x="672" y="696" width="72" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_xm4aw888_mudt3i6d" data-entity-type="function-block" data-function-code="NOT" data-block-number="2283" data-source-file="3070561A.CAD" data-source-offset="2854" class="cad-block" style="cursor:pointer">
+<rect x="400" y="768" width="72" height="44" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_xvv60f0p_mudt3i6d" data-entity-type="function-block" data-function-code="TD-DIG" data-block-number="2293" data-source-file="3070561A.CAD" data-source-offset="2890" class="cad-block" style="cursor:pointer">
+<rect x="384" y="600" width="110" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_rpnmd5hv_mudt3i6d" data-entity-type="function-block" data-function-code="AND2" data-block-number="2292" data-source-file="3070561A.CAD" data-source-offset="2954" class="cad-block" style="cursor:pointer">
+<rect x="672" y="424" width="72" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_k158zxnw_mudt3i6d" data-entity-type="function-block" data-function-code="NOT" data-block-number="2281" data-source-file="3070561A.CAD" data-source-offset="2990" class="cad-block" style="cursor:pointer">
+<rect x="400" y="232" width="72" height="38" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_x70niti8_mudt3i6d" data-entity-type="function-block" data-function-code="TD-DIG" data-block-number="2291" data-source-file="3070561A.CAD" data-source-offset="3026" class="cad-block" style="cursor:pointer">
+<rect x="384" y="104" width="110" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_7s2hunze_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="3090" class="cad-block" style="cursor:pointer">
+<rect x="1184" y="2280" width="88" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_g5b300ov_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="3164" class="cad-block" style="cursor:pointer">
+<rect x="1176" y="1768" width="103" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_zbnj6n59_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="3238" class="cad-block" style="cursor:pointer">
+<rect x="1176" y="1576" width="103" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_cuzcjcp7_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="3312" class="cad-block" style="cursor:pointer">
+<rect x="1176" y="1448" width="110" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_3d9ap3fy_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="3386" class="cad-block" style="cursor:pointer">
+<rect x="1176" y="1384" width="103" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_n3xxle8r_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="3460" class="cad-block" style="cursor:pointer">
+<rect x="1192" y="1320" width="81" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_af7pzz8z_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="3534" class="cad-block" style="cursor:pointer">
+<rect x="1192" y="1128" width="81" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_c8kqoqca_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="3608" class="cad-block" style="cursor:pointer">
+<rect x="1184" y="1000" width="88" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_ldflmymz_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="3682" class="cad-block" style="cursor:pointer">
+<rect x="1176" y="936" width="103" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_5tq8n1hw_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="3756" class="cad-block" style="cursor:pointer">
+<rect x="1176" y="872" width="103" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_x0fdsdt9_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="3830" class="cad-block" style="cursor:pointer">
+<rect x="1176" y="744" width="103" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_zju66rlb_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="3904" class="cad-block" style="cursor:pointer">
+<rect x="1176" y="616" width="110" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_mliuuuio_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="3978" class="cad-block" style="cursor:pointer">
+<rect x="1176" y="552" width="103" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_wryxaz00_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="4052" class="cad-block" style="cursor:pointer">
+<rect x="1184" y="488" width="96" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_y2r3cdx7_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="4126" class="cad-block" style="cursor:pointer">
+<rect x="1184" y="296" width="96" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_eg7xpowg_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="4200" class="cad-block" style="cursor:pointer">
+<rect x="1176" y="232" width="103" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_t1m1o363_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="4274" class="cad-block" style="cursor:pointer">
+<rect x="1176" y="168" width="103" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_x18tluj9_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="4348" class="cad-block" style="cursor:pointer">
+<rect x="1176" y="104" width="103" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<circle data-block-id="block_waymh5gy_mudt3i6d" data-entity-type="junction" data-source-offset="5108" cx="588" cy="260" r="4" fill="#c2410c"/>
+<circle data-block-id="block_vd7bw760_mudt3i6d" data-entity-type="junction" data-source-offset="5198" cx="300" cy="380" r="4" fill="#c2410c"/>
+<circle data-block-id="block_d8jg1tx5_mudt3i6d" data-entity-type="junction" data-source-offset="5272" cx="836" cy="252" r="4" fill="#c2410c"/>
+<circle data-block-id="block_n7skj4w4_mudt3i6d" data-entity-type="junction" data-source-offset="5306" cx="300" cy="1916" r="4" fill="#c2410c"/>
+<circle data-block-id="block_uovx2iny_mudt3i6d" data-entity-type="junction" data-source-offset="5376" cx="1316" cy="508" r="4" fill="#c2410c"/>
+<circle data-block-id="block_pnfodadq_mudt3i6d" data-entity-type="junction" data-source-offset="5666" cx="1316" cy="892" r="4" fill="#c2410c"/>
+<circle data-block-id="block_wdezmows_mudt3i6d" data-entity-type="junction" data-source-offset="5736" cx="588" cy="772" r="4" fill="#c2410c"/>
+<circle data-block-id="block_yg2edvw3_mudt3i6d" data-entity-type="junction" data-source-offset="5838" cx="300" cy="700" r="4" fill="#c2410c"/>
+<circle data-block-id="block_bixddwhe_mudt3i6d" data-entity-type="junction" data-source-offset="5972" cx="588" cy="644" r="4" fill="#c2410c"/>
+<circle data-block-id="block_fdqo6b84_mudt3i6d" data-entity-type="junction" data-source-offset="6006" cx="300" cy="900" r="4" fill="#c2410c"/>
+<circle data-block-id="block_3gqkymos_mudt3i6d" data-entity-type="junction" data-source-offset="6132" cx="300" cy="1348" r="4" fill="#c2410c"/>
+<circle data-block-id="block_rxxp58lf_mudt3i6d" data-entity-type="junction" data-source-offset="6418" cx="300" cy="644" r="4" fill="#c2410c"/>
+<circle data-block-id="block_yf1ndqsg_mudt3i6d" data-entity-type="junction" data-source-offset="6452" cx="300" cy="1028" r="4" fill="#c2410c"/>
+<circle data-block-id="block_g85hx94x_mudt3i6d" data-entity-type="junction" data-source-offset="6546" cx="588" cy="1348" r="4" fill="#c2410c"/>
+<circle data-block-id="block_veq9osrs_mudt3i6d" data-entity-type="junction" data-source-offset="6580" cx="300" cy="1796" r="4" fill="#c2410c"/>
+<circle data-block-id="block_8ngy76pu_mudt3i6d" data-entity-type="junction" data-source-offset="6614" cx="588" cy="964" r="4" fill="#c2410c"/>
+<circle data-block-id="block_gqsxuoze_mudt3i6d" data-entity-type="junction" data-source-offset="6764" cx="300" cy="1084" r="4" fill="#c2410c"/>
+<circle data-block-id="block_1zq4wbcf_mudt3i6d" data-entity-type="junction" data-source-offset="6798" cx="1316" cy="1340" r="4" fill="#c2410c"/>
+<circle data-block-id="block_v8apy5f0_mudt3i6d" data-entity-type="junction" data-source-offset="6832" cx="1316" cy="1788" r="4" fill="#c2410c"/>
+<circle data-block-id="block_3170rn8h_mudt3i6d" data-entity-type="junction" data-source-offset="6866" cx="588" cy="1540" r="4" fill="#c2410c"/>
+<circle data-block-id="block_834ebwhe_mudt3i6d" data-entity-type="junction" data-source-offset="6900" cx="588" cy="1124" r="4" fill="#c2410c"/>
+<circle data-block-id="block_jhyqt95h_mudt3i6d" data-entity-type="junction" data-source-offset="7066" cx="300" cy="1532" r="4" fill="#c2410c"/>
+<g data-block-id="block_b058nl56_mudt3i6d" data-entity-type="function-block" data-function-code="IREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="7228" class="cad-block" style="cursor:pointer">
+<rect x="80" y="2216" width="96" height="38" fill="#eef4ff" stroke="#1d4ed8" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_gp9mnnw9_mudt3i6d" data-entity-type="function-block" data-function-code="OR2" data-block-number="2255" data-source-file="3070561A.CAD" data-source-offset="7302" class="cad-block" style="cursor:pointer">
+<rect x="400" y="2208" width="72" height="38" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_ssrdzp3x_mudt3i6d" data-entity-type="function-block" data-function-code="NOT" data-block-number="2265" data-source-file="3070561A.CAD" data-source-offset="7338" class="cad-block" style="cursor:pointer">
+<rect x="400" y="2416" width="72" height="44" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_kyljus2s_mudt3i6d" data-entity-type="function-block" data-function-code="SR" data-block-number="2264" data-source-file="3070561A.CAD" data-source-offset="7374" class="cad-block" style="cursor:pointer">
+<rect x="672" y="1704" width="72" height="58" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_gapbfm4g_mudt3i6d" data-entity-type="function-block" data-function-code="AND2" data-block-number="2270" data-source-file="3070561A.CAD" data-source-offset="7410" class="cad-block" style="cursor:pointer">
+<rect x="400" y="2552" width="72" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_it25cs1y_mudt3i6d" data-entity-type="function-block" data-function-code="AND2" data-block-number="2275" data-source-file="3070561A.CAD" data-source-offset="7446" class="cad-block" style="cursor:pointer">
+<rect x="672" y="1792" width="72" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_03e7crwb_mudt3i6d" data-entity-type="function-block" data-function-code="TD-DIG" data-block-number="2280" data-source-file="3070561A.CAD" data-source-offset="7482" class="cad-block" style="cursor:pointer">
+<rect x="384" y="2336" width="103" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_rsa36s6v_mudt3i6d" data-entity-type="function-block" data-function-code="NOT" data-block-number="2290" data-source-file="3070561A.CAD" data-source-offset="7544" class="cad-block" style="cursor:pointer">
+<rect x="400" y="2488" width="72" height="38" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_s5olc841_mudt3i6d" data-entity-type="function-block" data-function-code="AND2" data-block-number="2370" data-source-file="3070561A.CAD" data-source-offset="7580" class="cad-block" style="cursor:pointer">
+<rect x="672" y="1872" width="72" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_y9ekau0r_mudt3i6d" data-entity-type="function-block" data-function-code="NOT" data-block-number="2289" data-source-file="3070561A.CAD" data-source-offset="7616" class="cad-block" style="cursor:pointer">
+<rect x="400" y="2272" width="72" height="38" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_1kxhurw8_mudt3i6d" data-entity-type="function-block" data-function-code="TD-DIG" data-block-number="2299" data-source-file="3070561A.CAD" data-source-offset="7652" class="cad-block" style="cursor:pointer">
+<rect x="384" y="2128" width="110" height="52" fill="#ffffff" stroke="#1f2a24" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_hwcg5xg6_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="7716" class="cad-block" style="cursor:pointer">
+<rect x="1184" y="2216" width="88" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_3at1srtr_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="7790" class="cad-block" style="cursor:pointer">
+<rect x="1184" y="2024" width="88" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_4y8vko2d_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="7864" class="cad-block" style="cursor:pointer">
+<rect x="1176" y="1896" width="103" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<g data-block-id="block_osi5ey0t_mudt3i6d" data-entity-type="function-block" data-function-code="OREF" data-block-number="" data-source-file="3070561A.CAD" data-source-offset="7938" class="cad-block" style="cursor:pointer">
+<rect x="1176" y="1832" width="103" height="38" fill="#fff8ec" stroke="#b45309" stroke-width="1.3" rx="1"/>
+</g>
+<circle data-block-id="block_fucibcxi_mudt3i6d" data-entity-type="junction" data-source-offset="8118" cx="300" cy="1476" r="4" fill="#c2410c"/>
+<circle data-block-id="block_hmdyi78m_mudt3i6d" data-entity-type="junction" data-source-offset="8212" cx="588" cy="1796" r="4" fill="#c2410c"/>
+<circle data-block-id="block_k9mnfyay_mudt3i6d" data-entity-type="junction" data-source-offset="8246" cx="300" cy="2436" r="4" fill="#c2410c"/>
+<circle data-block-id="block_p55p64ph_mudt3i6d" data-entity-type="junction" data-source-offset="8320" cx="1316" cy="2236" r="4" fill="#c2410c"/>
+<circle data-block-id="block_7nxo5p8e_mudt3i6d" data-entity-type="junction" data-source-offset="8354" cx="588" cy="1956" r="4" fill="#c2410c"/>
+<circle data-block-id="block_9503gs8j_mudt3i6d" data-entity-type="junction" data-source-offset="8500" cx="300" cy="1980" r="4" fill="#c2410c"/>
+<circle data-block-id="block_n01fqimk_mudt3i6d" data-entity-type="junction" data-source-offset="8712" cx="300" cy="2300" r="4" fill="#c2410c"/>
+<circle data-block-id="block_folzf14a_mudt3i6d" data-entity-type="junction" data-source-offset="8746" cx="300" cy="1596" r="4" fill="#c2410c"/>
+<circle data-block-id="block_rywt1f1h_mudt3i6d" data-entity-type="junction" data-source-offset="8820" cx="300" cy="1148" r="4" fill="#c2410c"/>
+<circle data-block-id="block_puqhb1e2_mudt3i6d" data-entity-type="junction" data-source-offset="8854" cx="300" cy="764" r="4" fill="#c2410c"/>
+<circle data-block-id="block_bcghoild_mudt3i6d" data-entity-type="junction" data-source-offset="8976" cx="300" cy="644" r="4" fill="#c2410c"/>
+<circle data-block-id="block_fm95ki93_mudt3i6d" data-entity-type="junction" data-source-offset="9010" cx="300" cy="1028" r="4" fill="#c2410c"/>
+<circle data-block-id="block_r0bs2t5w_mudt3i6d" data-entity-type="junction" data-source-offset="9044" cx="300" cy="1476" r="4" fill="#c2410c"/>
+</g>
+<g data-layer="fc">
+<text x="51" y="1780" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1d3a8a">IREF</text>
+<text x="51" y="1792" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1d3a8a">DI1-1A/322AUX-M107A</text>
+<text x="91" y="1460" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">RDI01A1</text>
+<text x="83" y="1332" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1d3a8a">IREF</text>
+<text x="83" y="1344" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1d3a8a">D322FOR111</text>
+<text x="51" y="884" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1d3a8a">IREF</text>
+<text x="51" y="896" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1d3a8a">DI2-1A/322AUX-M107B</text>
+<text x="91" y="628" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">RDI01A2</text>
+<text x="51" y="500" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1d3a8a">IREF</text>
+<text x="51" y="512" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1d3a8a">DI1-14A/322AUX-M102</text>
+<text x="91" y="180" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">RDI01A1</text>
+<text x="83" y="244" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1d3a8a">IREF</text>
+<text x="83" y="256" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1d3a8a">D322SP100C</text>
+<text x="75" y="116" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1d3a8a">IREF</text>
+<text x="75" y="128" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1d3a8a">D322ST100C-3</text>
+<text x="91" y="1588" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">DI1SYS</text>
+<text x="91" y="756" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">DI1SYS</text>
+<text x="91" y="308" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">DI1SYS</text>
+<text x="403" y="1700" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(39) OR2</text>
+<text x="403" y="1712" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2254</text>
+<text x="403" y="1164" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(39) OR2</text>
+<text x="403" y="1176" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2253</text>
+<text x="403" y="692" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(39) OR2</text>
+<text x="403" y="704" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2252</text>
+<text x="923" y="244" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(39) OR2</text>
+<text x="923" y="256" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2251</text>
+<text x="403" y="1852" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(33) NOT</text>
+<text x="403" y="1864" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2263</text>
+<text x="675" y="1268" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(34) SR</text>
+<text x="675" y="1280" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2262</text>
+<text x="403" y="1316" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(33) NOT</text>
+<text x="403" y="1328" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2261</text>
+<text x="675" y="884" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(34) SR</text>
+<text x="675" y="896" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2260</text>
+<text x="403" y="852" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(33) NOT</text>
+<text x="403" y="864" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2259</text>
+<text x="675" y="516" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(34) SR</text>
+<text x="675" y="528" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2258</text>
+<text x="403" y="388" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(33) NOT</text>
+<text x="403" y="400" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2257</text>
+<text x="675" y="180" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(34) SR</text>
+<text x="675" y="192" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2256</text>
+<text x="403" y="2060" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(37) AND2</text>
+<text x="403" y="2072" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2269</text>
+<text x="403" y="2084" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=1|1?</text>
+<text x="403" y="1532" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(37) AND2</text>
+<text x="403" y="1544" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2268</text>
+<text x="403" y="1556" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=1|1?</text>
+<text x="403" y="996" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(37) AND2</text>
+<text x="403" y="1008" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2267</text>
+<text x="403" y="1020" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=1|1?</text>
+<text x="403" y="524" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(37) AND2</text>
+<text x="403" y="536" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2266</text>
+<text x="403" y="548" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=1|1?</text>
+<text x="675" y="1356" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(37) AND2</text>
+<text x="675" y="1368" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2274</text>
+<text x="675" y="1380" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=1|1?</text>
+<text x="675" y="972" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(37) AND2</text>
+<text x="675" y="984" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2273</text>
+<text x="675" y="996" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=1|1?</text>
+<text x="675" y="628" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(37) AND2</text>
+<text x="675" y="640" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2272</text>
+<text x="675" y="652" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=1|1?</text>
+<text x="675" y="252" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(37) AND2</text>
+<text x="675" y="264" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2271</text>
+<text x="675" y="276" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=1|1?</text>
+<text x="387" y="1916" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(35) TD-DIG</text>
+<text x="387" y="1928" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2279</text>
+<text x="387" y="1940" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=0|1?</text>
+<text x="387" y="1952" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S2=5</text>
+<text x="387" y="1388" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(35) TD-DIG</text>
+<text x="387" y="1400" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2278</text>
+<text x="387" y="1412" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=0|1?</text>
+<text x="387" y="1424" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S2=5</text>
+<text x="387" y="916" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(35) TD-DIG</text>
+<text x="387" y="928" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2277</text>
+<text x="387" y="940" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=0|1?</text>
+<text x="387" y="952" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S2=5</text>
+<text x="387" y="308" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(35) TD-DIG</text>
+<text x="387" y="320" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2276</text>
+<text x="387" y="332" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=0|1?</text>
+<text x="387" y="344" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S2=5</text>
+<text x="403" y="1996" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(33) NOT</text>
+<text x="403" y="2008" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2288</text>
+<text x="403" y="1468" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(33) NOT</text>
+<text x="403" y="1480" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2286</text>
+<text x="923" y="820" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(33) NOT</text>
+<text x="923" y="832" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2284</text>
+<text x="403" y="460" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(33) NOT</text>
+<text x="403" y="472" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2282</text>
+<text x="675" y="1436" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(37) AND2</text>
+<text x="675" y="1448" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2298</text>
+<text x="675" y="1460" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=1|1?</text>
+<text x="403" y="1788" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(33) NOT</text>
+<text x="403" y="1800" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2287</text>
+<text x="387" y="1620" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(35) TD-DIG</text>
+<text x="387" y="1632" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2297</text>
+<text x="387" y="1644" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=0|1?</text>
+<text x="387" y="1656" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S2=10</text>
+<text x="675" y="1052" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(37) AND2</text>
+<text x="675" y="1064" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2296</text>
+<text x="675" y="1076" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=1|1?</text>
+<text x="403" y="1252" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(33) NOT</text>
+<text x="403" y="1264" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2285</text>
+<text x="387" y="1084" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(35) TD-DIG</text>
+<text x="387" y="1096" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2295</text>
+<text x="387" y="1108" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=0|1?</text>
+<text x="387" y="1120" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S2=10</text>
+<text x="675" y="708" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(37) AND2</text>
+<text x="675" y="720" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2294</text>
+<text x="675" y="732" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=1|1?</text>
+<text x="403" y="780" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(33) NOT</text>
+<text x="403" y="792" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2283</text>
+<text x="387" y="612" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(35) TD-DIG</text>
+<text x="387" y="624" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2293</text>
+<text x="387" y="636" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=0|1?</text>
+<text x="387" y="648" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S2=10</text>
+<text x="675" y="436" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(37) AND2</text>
+<text x="675" y="448" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2292</text>
+<text x="675" y="460" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=1|1?</text>
+<text x="403" y="244" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(33) NOT</text>
+<text x="403" y="256" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2281</text>
+<text x="387" y="116" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(35) TD-DIG</text>
+<text x="387" y="128" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2291</text>
+<text x="387" y="140" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=0|1?</text>
+<text x="387" y="152" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S2=10</text>
+<text x="1187" y="2292" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1187" y="2304" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322RS100C</text>
+<text x="1179" y="1780" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1179" y="1792" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322ST-M107A</text>
+<text x="1179" y="1588" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1179" y="1600" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322SP-M107A</text>
+<text x="1179" y="1460" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1179" y="1472" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322AUT-M107A</text>
+<text x="1179" y="1396" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1179" y="1408" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322FA100C-6</text>
+<text x="1195" y="1332" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1195" y="1344" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322ST111</text>
+<text x="1195" y="1140" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1195" y="1152" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322SP111</text>
+<text x="1187" y="1012" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1187" y="1024" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322AUT111</text>
+<text x="1179" y="948" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1179" y="960" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322FA100C-5</text>
+<text x="1179" y="884" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1179" y="896" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322ST-M107B</text>
+<text x="1179" y="756" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1179" y="768" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322SP-M107B</text>
+<text x="1179" y="628" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1179" y="640" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322AUT-M107B</text>
+<text x="1179" y="564" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1179" y="576" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322FA100C-4</text>
+<text x="1187" y="500" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1187" y="512" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322ST-M102</text>
+<text x="1187" y="308" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1187" y="320" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322SP-M102</text>
+<text x="1179" y="244" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1179" y="256" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322AUT-M102</text>
+<text x="1179" y="180" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1179" y="192" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322FA100C-3</text>
+<text x="1179" y="116" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1179" y="128" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322SP100C-2</text>
+<text x="83" y="2228" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1d3a8a">IREF</text>
+<text x="83" y="2240" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1d3a8a">D322AUT110A</text>
+<text x="403" y="2220" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(39) OR2</text>
+<text x="403" y="2232" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2255</text>
+<text x="403" y="2428" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(33) NOT</text>
+<text x="403" y="2440" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2265</text>
+<text x="675" y="1716" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(34) SR</text>
+<text x="675" y="1728" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2264</text>
+<text x="403" y="2564" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(37) AND2</text>
+<text x="403" y="2576" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2270</text>
+<text x="403" y="2588" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=1|1?</text>
+<text x="675" y="1804" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(37) AND2</text>
+<text x="675" y="1816" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2275</text>
+<text x="675" y="1828" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=1|1?</text>
+<text x="387" y="2348" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(35) TD-DIG</text>
+<text x="387" y="2360" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2280</text>
+<text x="387" y="2372" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=0|1?</text>
+<text x="387" y="2384" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S2=5</text>
+<text x="403" y="2500" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(33) NOT</text>
+<text x="403" y="2512" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2290</text>
+<text x="675" y="1884" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(37) AND2</text>
+<text x="675" y="1896" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2370</text>
+<text x="675" y="1908" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=1|1?</text>
+<text x="403" y="2284" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(33) NOT</text>
+<text x="403" y="2296" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2289</text>
+<text x="387" y="2140" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#1f2a24">(35) TD-DIG</text>
+<text x="387" y="2152" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">#2299</text>
+<text x="387" y="2164" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S1=0|1?</text>
+<text x="387" y="2176" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#1f2a24">S2=10</text>
+<text x="1187" y="2228" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1187" y="2240" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322ST110A</text>
+<text x="1187" y="2036" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1187" y="2048" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322SP110A</text>
+<text x="1179" y="1908" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1179" y="1920" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322AUT110A2</text>
+<text x="1179" y="1844" font-family="Consolas, monospace" font-size="10.5" font-weight="700" fill="#8a4708">OREF</text>
+<text x="1179" y="1856" font-family="Consolas, monospace" font-size="10.5" font-weight="400" fill="#8a4708">D322FA100C-7</text>
+</g>
+<g data-layer="annotations">
+<text data-entity-type="annotation" data-source-offset="1260" x="28" y="2426" font-family="Consolas, monospace" font-size="14" fill="#1f2a24">STEP 5</text>
+<text data-entity-type="annotation" data-source-offset="1284" x="28" y="2440" font-family="Consolas, monospace" font-size="14" fill="#1f2a24">STEP 4</text>
+<text data-entity-type="annotation" data-source-offset="1308" x="28" y="2454" font-family="Consolas, monospace" font-size="14" fill="#1f2a24">STEP3</text>
+<text data-entity-type="annotation" data-source-offset="6182" x="28" y="2468" font-family="Consolas, monospace" font-size="14" fill="#1f2a24">STEP 6</text>
+<text data-entity-type="annotation" data-source-offset="8586" x="28" y="2482" font-family="Consolas, monospace" font-size="14" fill="#1f2a24">STEP 7</text>
+<text data-entity-type="annotation" data-source-offset="950" x="28" y="2496" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">322-111.1</text>
+<text data-entity-type="annotation" data-source-offset="978" x="28" y="2510" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">061-01/02-D</text>
+<text data-entity-type="annotation" data-source-offset="1008" x="28" y="2524" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">061-01/02-D</text>
+<text data-entity-type="annotation" data-source-offset="1038" x="28" y="2538" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">061-07/08-D1</text>
+<text data-entity-type="annotation" data-source-offset="1218" x="28" y="2552" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">BLK-2541</text>
+<text data-entity-type="annotation" data-source-offset="2156" x="28" y="2566" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">TO=5 SEC</text>
+<text data-entity-type="annotation" data-source-offset="2218" x="28" y="2580" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">TO=5 SEC</text>
+<text data-entity-type="annotation" data-source-offset="2280" x="28" y="2594" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">TO=5 SEC</text>
+<text data-entity-type="annotation" data-source-offset="2342" x="28" y="2608" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">TO=5 SEC</text>
+<text data-entity-type="annotation" data-source-offset="4422" x="28" y="2622" font-family="Consolas, monospace" font-size="12" fill="#1f2a24">P</text>
+<text data-entity-type="annotation" data-source-offset="4518" x="28" y="2636" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">322-M107A.0</text>
+<text data-entity-type="annotation" data-source-offset="4548" x="28" y="2650" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">322-M107A.0</text>
+<text data-entity-type="annotation" data-source-offset="4578" x="28" y="2664" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">322-M107A.0</text>
+<text data-entity-type="annotation" data-source-offset="4608" x="28" y="2678" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">322-111.1</text>
+<text data-entity-type="annotation" data-source-offset="4636" x="28" y="2692" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">322-111.1</text>
+<text data-entity-type="annotation" data-source-offset="4664" x="28" y="2706" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">322-111.1</text>
+<text data-entity-type="annotation" data-source-offset="4692" x="28" y="2720" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">322-M107B.0</text>
+<text data-entity-type="annotation" data-source-offset="4722" x="28" y="2734" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">322-M107B.0</text>
+<text data-entity-type="annotation" data-source-offset="4866" x="28" y="2748" font-family="Consolas, monospace" font-size="12" fill="#1f2a24">B</text>
+<text data-entity-type="annotation" data-source-offset="4934" x="28" y="2762" font-family="Consolas, monospace" font-size="12" fill="#1f2a24">L</text>
+<text data-entity-type="annotation" data-source-offset="9656" x="28" y="2776" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">RP</text>
+<text data-entity-type="annotation" data-source-offset="9772" x="28" y="2790" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">RP</text>
+<text data-entity-type="annotation" data-source-offset="9792" x="28" y="2804" font-family="Consolas, monospace" font-size="9.1" fill="#1f2a24">RP</text>
+</g>
+<text x="28" y="2844" font-family="Consolas, monospace" font-size="9" fill="#5a6b62">blocks:123  conn:96  tags:29  xref:29  unresolved:0  status:COMPLETED_WITH_WARNINGS  engine:v2</text>
+</svg>

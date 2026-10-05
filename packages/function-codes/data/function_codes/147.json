@@ -1,0 +1,905 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 147,
+  "name": "Remote I/O Definition",
+  "description": "The remote I/O definition function code defines the communication address and environment of remotely located I/O modules. This module is the remote slave processor (RSP). Each processor has a unique serial link communication address. This block defines that address. The remote I/O definition block also defines the digital and analog I/O module types interfaced with the remote processor. NOTE: In order to minimize the possibility of glitches, it is essential that the RMP function block (FC146), the RSP function blocks (FC147), and all the slave definition blocks for the remote slaves (FC79, FC83, FC84, FC132, etc.) all reside within the same segment. In addition, these blocks must be sequenced in the following order: FC146 must reside at a lower block number than all FC147s for that link, and the FC147s must reside at lower block addresses than the slave definition blocks and station blocks (FC80) for the remote slaves.",
+  "description_lines": [
+    "The remote I/O definition function code defines the communi-",
+    "cation address and environment of remotely located I/O mod-",
+    "ules. This module is the remote slave processor (RSP). Each",
+    "processor has a unique serial link communication address.",
+    "This block defines that address.",
+    "The remote I/O definition block also defines the digital and",
+    "analog I/O module types interfaced with the remote processor.",
+    "NOTE: In order to minimize the possibility of glitches, it is essential that the",
+    "RMP function block (FC146), the RSP function blocks (FC147), and all the",
+    "slave definition blocks for the remote slaves (FC79, FC83, FC84, FC132, etc.)",
+    "all reside within the same segment. In addition, these blocks must be",
+    "sequenced in the following order: FC146 must reside at a lower block number",
+    "than all FC147s for that link, and the FC147s must reside at lower block",
+    "addresses than the slave definition blocks and station blocks (FC80) for the",
+    "remote slaves."
+  ],
+  "symbol": {
+    "title_raw": "R I/O D",
+    "title": "RI/OD",
+    "inputs": [
+      "S1",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17",
+      "S18",
+      "S19",
+      "S20",
+      "S21",
+      "S22",
+      "S23",
+      "S24",
+      "S25",
+      "S26",
+      "S27",
+      "S28",
+      "S29",
+      "S30",
+      "S31",
+      "S32",
+      "S33",
+      "S34",
+      "S35",
+      "S36"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 160.26,
+        "y": 595.26,
+        "s": "R I/O D"
+      },
+      {
+        "x": 192.24,
+        "y": 588.3,
+        "s": "(1 4 7 )"
+      },
+      {
+        "x": 132.84,
+        "y": 588.06,
+        "s": "S 1"
+      },
+      {
+        "x": 153.54,
+        "y": 584.22,
+        "s": "C S"
+      },
+      {
+        "x": 176.4,
+        "y": 583.98,
+        "s": "R S T"
+      },
+      {
+        "x": 192.24,
+        "y": 579.42,
+        "s": "N"
+      },
+      {
+        "x": 132.84,
+        "y": 578.94,
+        "s": "S 5"
+      },
+      {
+        "x": 132.84,
+        "y": 569.82,
+        "s": "S 6"
+      },
+      {
+        "x": 132.84,
+        "y": 561,
+        "s": "S 7"
+      },
+      {
+        "x": 132.84,
+        "y": 551.88,
+        "s": "S 8"
+      },
+      {
+        "x": 132.84,
+        "y": 543,
+        "s": "S 9"
+      },
+      {
+        "x": 132.84,
+        "y": 533.88,
+        "s": "S 1 0"
+      },
+      {
+        "x": 132.84,
+        "y": 525,
+        "s": "S 1 1"
+      },
+      {
+        "x": 132.84,
+        "y": 515.88,
+        "s": "S 1 2"
+      },
+      {
+        "x": 132.84,
+        "y": 506.76,
+        "s": "S 1 3"
+      },
+      {
+        "x": 132.84,
+        "y": 497.88,
+        "s": "S 1 4"
+      },
+      {
+        "x": 132.84,
+        "y": 488.76,
+        "s": "S 1 5"
+      },
+      {
+        "x": 132.84,
+        "y": 479.94,
+        "s": "S 1 6"
+      },
+      {
+        "x": 132.84,
+        "y": 470.82,
+        "s": "S 1 7"
+      },
+      {
+        "x": 132.84,
+        "y": 461.94,
+        "s": "S 1 8"
+      },
+      {
+        "x": 132.84,
+        "y": 452.82,
+        "s": "S 1 9"
+      },
+      {
+        "x": 132.84,
+        "y": 443.7,
+        "s": "S 2 0"
+      },
+      {
+        "x": 132.84,
+        "y": 434.82,
+        "s": "S 2 1"
+      },
+      {
+        "x": 132.84,
+        "y": 425.7,
+        "s": "S 2 2"
+      },
+      {
+        "x": 132.84,
+        "y": 416.82,
+        "s": "S 2 3"
+      },
+      {
+        "x": 132.84,
+        "y": 407.7,
+        "s": "S 2 4"
+      },
+      {
+        "x": 132.84,
+        "y": 398.64,
+        "s": "S 2 5"
+      },
+      {
+        "x": 132.84,
+        "y": 389.76,
+        "s": "S 2 6"
+      },
+      {
+        "x": 132.84,
+        "y": 380.64,
+        "s": "S 2 7"
+      },
+      {
+        "x": 132.84,
+        "y": 371.76,
+        "s": "S 2 8"
+      },
+      {
+        "x": 132.84,
+        "y": 362.64,
+        "s": "S 2 9"
+      },
+      {
+        "x": 132.84,
+        "y": 353.76,
+        "s": "S 3 0"
+      },
+      {
+        "x": 132.84,
+        "y": 344.64,
+        "s": "S 3 1"
+      },
+      {
+        "x": 132.84,
+        "y": 335.52,
+        "s": "S 3 2"
+      },
+      {
+        "x": 132.84,
+        "y": 326.64,
+        "s": "S 3 3"
+      },
+      {
+        "x": 132.84,
+        "y": 317.58,
+        "s": "S 3 4"
+      },
+      {
+        "x": 132.84,
+        "y": 308.7,
+        "s": "S 3 5"
+      },
+      {
+        "x": 132.84,
+        "y": 299.58,
+        "s": "S 3 6"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Remote processor status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "Remote processor status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 503
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of next remote I/O definition",
+      "description_lines": [
+        "Block address of next remote I/O definition"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 503
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 63",
+      "description": "Remote processor serial link communication address",
+      "description_lines": [
+        "Remote processor serial link communication address"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 503
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Spare parameter",
+      "description_lines": [
+        "Spare parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 503
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Spare parameter",
+      "description_lines": [
+        "Spare parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 503
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 503
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 503
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 503
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 19,
+      "label": "S19",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 20,
+      "label": "S20",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 21,
+      "label": "S21",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 22,
+      "label": "S22",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 23,
+      "label": "S23",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 24,
+      "label": "S24",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 25,
+      "label": "S25",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 26,
+      "label": "S26",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 27,
+      "label": "S27",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 28,
+      "label": "S28",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 29,
+      "label": "S29",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 30,
+      "label": "S30",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 31,
+      "label": "S31",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 32,
+      "label": "S32",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 33,
+      "label": "S33",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504,
+      "elided_between": "S10 … S34"
+    },
+    {
+      "number": 34,
+      "label": "S34",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504
+    },
+    {
+      "number": 35,
+      "label": "S35",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504
+    },
+    {
+      "number": 36,
+      "label": "S36",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O block or station",
+      "description_lines": [
+        "Block address of I/O block or station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 504
+    }
+  ],
+  "spec_count": 36,
+  "max_spec_number": 36,
+  "notes": [
+    {
+      "label": "NOTE:",
+      "text": "If running a redundant remote I/O configuration, block N indicates good (zero) when both S 3 4 remote processors function properly. Block N indicates bad (one) when one or both of the remote S 3 5 processors are off-line. S 3 6",
+      "manual_page": 503,
+      "context": "outputs"
+    },
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 504,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 503,
+  "manual_pages": [
+    503,
+    504,
+    505,
+    506,
+    507
+  ],
+  "manual_section": "Function Code 147 - Remote I/O Definition",
+  "diagnostics": [
+    "FC147: S11-S33 elided in the manual on p.504 between identical rows S10 … S34; filled with those rows' cells"
+  ]
+}

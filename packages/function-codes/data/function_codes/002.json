@@ -1,0 +1,81 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 2,
+  "name": "Manual Set Constant (Signal Generator)",
+  "description": "The output of the manual set constant is an analog signal developed within the function that is equal to <S1>. This function provides a tunable output value in engineering units.",
+  "description_lines": [
+    "The output of the manual set constant is an analog signal",
+    "developed within the function that is equal to <S1>. This func-",
+    "tion provides a tunable output value in engineering units."
+  ],
+  "symbol": {
+    "title_raw": "A",
+    "title": "A",
+    "inputs": [],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 193.32,
+        "y": 589.02,
+        "s": "(2 )"
+      },
+      {
+        "x": 168.54,
+        "y": 583.5,
+        "s": "A"
+      },
+      {
+        "x": 193.32,
+        "y": 580.14,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "User selected constant",
+      "description_lines": [
+        "User selected constant"
+      ],
+      "manual_page": 49
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Output value in engineering units",
+      "description_lines": [
+        "Output value in engineering units"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 49
+    }
+  ],
+  "spec_count": 1,
+  "max_spec_number": 1,
+  "notes": [],
+  "manual_page": 49,
+  "manual_pages": [
+    49,
+    50
+  ],
+  "manual_section": "Function Code 2 - Manual Set Constant (Signal Generator)",
+  "diagnostics": []
+}

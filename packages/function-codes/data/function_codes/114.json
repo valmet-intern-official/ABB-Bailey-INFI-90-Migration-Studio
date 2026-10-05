@@ -1,0 +1,182 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 114,
+  "name": "BCD Input",
+  "description": "The BCD input block reads a boolean input from an IMDSI12 or IMDSI22 module in a binary coded decimal (BCD) format, and converts it to a real output with quality.",
+  "description_lines": [
+    "The BCD input block reads a boolean input from an IMDSI12",
+    "or IMDSI22 module in a binary coded decimal (BCD) format,",
+    "and converts it to a real output with quality."
+  ],
+  "symbol": {
+    "title_raw": "B C D IN",
+    "title": "BCDIN",
+    "inputs": [],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 189.9,
+        "y": 588.72,
+        "s": "(1 1 4 )"
+      },
+      {
+        "x": 156.78,
+        "y": 583.68,
+        "s": "B C D IN"
+      },
+      {
+        "x": 189.9,
+        "y": 580.08,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Real value × gain",
+      "description_lines": [
+        "Real value × gain"
+      ],
+      "manual_page": 329
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 63",
+      "description": "Expander bus I/O module address of digital I/O module",
+      "description_lines": [
+        "Expander bus I/O module address of digital I/O",
+        "module"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 329
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "1 - 4",
+      "description": "Zone containing ones digit of output: 1 and 2 = zones reside in group B 3 and 4 = zones reside in group A Input number on I/O module:; 1 = 1 to 4 (B) (S4 can be any value); 2 = 5 to 8 (B) (S4 must be =<3); 3 = 1 to 4 (A) (S4 must be =<2); 4 = 5 to 8 (A) (S4 must be set to 1)",
+      "description_lines": [
+        "Zone containing ones digit of output:",
+        "1 and 2 = zones reside in group B",
+        "3 and 4 = zones reside in group A",
+        "Input number on I/O module:",
+        "1 = 1 to 4 (B) (S4 can be any value)",
+        "2 = 5 to 8 (B) (S4 must be =<3)",
+        "3 = 1 to 4 (A) (S4 must be =<2)",
+        "4 = 5 to 8 (A) (S4 must be set to 1)"
+      ],
+      "enumerations": [
+        {
+          "value": "1",
+          "meaning": "1 to 4 (B) (S4 can be any value)"
+        },
+        {
+          "value": "2",
+          "meaning": "5 to 8 (B) (S4 must be =<3)"
+        },
+        {
+          "value": "3",
+          "meaning": "1 to 4 (A) (S4 must be =<2)"
+        },
+        {
+          "value": "4",
+          "meaning": "5 to 8 (A) (S4 must be set to 1)"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 329
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Module action on I/O module failure:; 0 = trip control module; 1 = continue operation",
+      "description_lines": [
+        "Module action on I/O module failure:",
+        "0 = trip control module",
+        "1 = continue operation"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "trip control module"
+        },
+        {
+          "value": "1",
+          "meaning": "continue operation"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 329
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "1 - 4",
+      "description": "Number of digits in converted value",
+      "description_lines": [
+        "Number of digits in converted value"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 329
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Gain multiplier",
+      "description_lines": [
+        "Gain multiplier"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 329
+    }
+  ],
+  "spec_count": 5,
+  "max_spec_number": 5,
+  "notes": [],
+  "manual_page": 329,
+  "manual_pages": [
+    329,
+    330,
+    331
+  ],
+  "manual_section": "Function Code 114 - BCD Input",
+  "diagnostics": []
+}

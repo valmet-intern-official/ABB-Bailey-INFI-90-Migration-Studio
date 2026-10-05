@@ -1,0 +1,375 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 152,
+  "name": "Model Parameter Estimator",
+  "description": "The model parameter estimator function block uses a recursive least-squares algorithm to identify a mathematical model of a process. This function block calculates the parameters for a linear, first-order dynamic model with deadtime of the specific form. where: = Value of the process variable at time t. = Value of the process variable at one sample time before time t. = Value of the control output one process deadtime (expressed as k sample time increments) before t. = Model parameters.",
+  "description_lines": [
+    "The model parameter estimator function block uses a recur-",
+    "sive least-squares algorithm to identify a mathematical model",
+    "of a process. This function block calculates the parameters for",
+    "a linear, first-order dynamic model with deadtime of the spe-",
+    "cific form.",
+    "where:",
+    "= Value of the process variable at time t.",
+    "= Value of the process variable at one sample time",
+    "before time t.",
+    "= Value of the control output one process deadtime",
+    "(expressed as k sample time increments) before t.",
+    "= Model parameters."
+  ],
+  "symbol": {
+    "title_raw": "PA R E S T",
+    "title": "PAREST",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S8"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3",
+      "N+4"
+    ],
+    "items": [
+      {
+        "x": 154.38,
+        "y": 594.78,
+        "s": "PA R E S T"
+      },
+      {
+        "x": 190.38,
+        "y": 588.48,
+        "s": "(1 5 2 )"
+      },
+      {
+        "x": 131.82,
+        "y": 587.28,
+        "s": "S 1"
+      },
+      {
+        "x": 181.02,
+        "y": 584.16,
+        "s": "A"
+      },
+      {
+        "x": 151.26,
+        "y": 583.92,
+        "s": "C P V"
+      },
+      {
+        "x": 190.38,
+        "y": 579.6,
+        "s": "N"
+      },
+      {
+        "x": 131.82,
+        "y": 578.4,
+        "s": "S 2"
+      },
+      {
+        "x": 181.02,
+        "y": 575.28,
+        "s": "B"
+      },
+      {
+        "x": 151.26,
+        "y": 575.04,
+        "s": "C O"
+      },
+      {
+        "x": 190.38,
+        "y": 570.66,
+        "s": "N + 1"
+      },
+      {
+        "x": 131.82,
+        "y": 569.22,
+        "s": "S 3"
+      },
+      {
+        "x": 180.78,
+        "y": 566.34,
+        "s": "C"
+      },
+      {
+        "x": 151.26,
+        "y": 566.1,
+        "s": "R"
+      },
+      {
+        "x": 190.38,
+        "y": 561.78,
+        "s": "N + 2"
+      },
+      {
+        "x": 131.82,
+        "y": 560.34,
+        "s": "S 8"
+      },
+      {
+        "x": 180.78,
+        "y": 557.46,
+        "s": "R"
+      },
+      {
+        "x": 151.26,
+        "y": 556.98,
+        "s": "N /A"
+      },
+      {
+        "x": 190.38,
+        "y": 552.9,
+        "s": "N + 3"
+      },
+      {
+        "x": 178.14,
+        "y": 548.28,
+        "s": "S T"
+      },
+      {
+        "x": 190.38,
+        "y": 543.96,
+        "s": "N + 4"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Model parameter a",
+      "description_lines": [
+        "Model parameter a"
+      ],
+      "manual_page": 531
+    },
+    {
+      "blk": "N+1",
+      "type": "R",
+      "description": "Model parameter b",
+      "description_lines": [
+        "Model parameter b"
+      ],
+      "manual_page": 531
+    },
+    {
+      "blk": "N+2",
+      "type": "R",
+      "description": "Model parameter c",
+      "description_lines": [
+        "Model parameter c"
+      ],
+      "manual_page": 531
+    },
+    {
+      "blk": "N+3",
+      "type": "R",
+      "description": "Residual between actual and calculated process variable data",
+      "description_lines": [
+        "Residual between actual and calculated process variable data"
+      ],
+      "manual_page": 531
+    },
+    {
+      "blk": "N+4",
+      "type": "B",
+      "description": "Quality of model parameter estimates:; 0 = parameter estimator locked on; 1 = new parameter estimation in progress",
+      "description_lines": [
+        "Quality of model parameter estimates:",
+        "0 = parameter estimator locked on",
+        "1 = new parameter estimation in progress"
+      ],
+      "manual_page": 531
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of controlled process variable",
+      "description_lines": [
+        "Block address of controlled process variable"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 531
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control output",
+      "description_lines": [
+        "Block address of control output"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 531
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of reset trigger (resets on a 0 to 1 transition)",
+      "description_lines": [
+        "Block address of reset trigger (resets on a 0 to 1",
+        "transition)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 531
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "2",
+        "3"
+      ],
+      "default": "0.250",
+      "type": "R",
+      "range": "0.25 - 9.20 E18",
+      "description": "Sample time (secs)",
+      "description_lines": [
+        "Sample time (secs)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 531
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "2",
+        "4",
+        "3"
+      ],
+      "default": "1.000",
+      "type": "R",
+      "range": "0.25 - 9.20 E18",
+      "description": "Process deadtime (secs); seconds must be < S4 × 40",
+      "description_lines": [
+        "Process deadtime (secs);",
+        "seconds must be < S4 × 40"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 531
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "3"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "0.00 - 9.20 E18",
+      "description": "Expected noise level in process variable (p-p)",
+      "description_lines": [
+        "Expected noise level in process variable (p-p)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 532
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare real parameter",
+      "description_lines": [
+        "Spare real parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 532
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Spare boolean input",
+      "description_lines": [
+        "Spare boolean input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 532
+    }
+  ],
+  "spec_count": 8,
+  "max_spec_number": 8,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 532,
+      "context": "specifications"
+    },
+    {
+      "label": "2.",
+      "text": "The relationship between S4 and S5 must be valid for proper operation. If adding this block with an inferential smith controller (ISC) (function code 160) the sample time S4 must be greater than the ISC deadtime (function code 160, S8) divided by 40.",
+      "manual_page": 532,
+      "context": "specifications"
+    },
+    {
+      "label": "3.",
+      "text": "The initialization routine in the ISC parameter converter (function code 153) automatically specifies S4, S5 and S6.",
+      "manual_page": 532,
+      "context": "specifications"
+    },
+    {
+      "label": "4.",
+      "text": "Specification S5 is used only when the model parameter estimator is not used with the ISC parameter converter (function code 153).",
+      "manual_page": 532,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 531,
+  "manual_pages": [
+    531,
+    532,
+    533,
+    534
+  ],
+  "manual_section": "Function Code 152 - Model Parameter Estimator",
+  "diagnostics": []
+}

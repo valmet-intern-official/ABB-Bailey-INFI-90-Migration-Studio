@@ -1,0 +1,227 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 65,
+  "name": "Digital Sum With Gain",
+  "description": "This function code computes a weighted sum of four boolean inputs using the following equation: It can be used to initiate a control action based on the number of boolean inputs that have a status of logic 1. These inputs could represent the status of pumps, valves, motors, etc.",
+  "description_lines": [
+    "This function code computes a weighted sum of four boolean",
+    "inputs using the following equation:",
+    "It can be used to initiate a control action based on the number",
+    "of boolean inputs that have a status of logic 1. These inputs",
+    "could represent the status of pumps, valves, motors, etc."
+  ],
+  "symbol": {
+    "title_raw": "D S U M",
+    "title": "DSUM",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 134.28,
+        "y": 598.14,
+        "s": "S 1"
+      },
+      {
+        "x": 134.28,
+        "y": 589.2,
+        "s": "S 2"
+      },
+      {
+        "x": 192.24,
+        "y": 585.84,
+        "s": "(6 5 )"
+      },
+      {
+        "x": 159.78,
+        "y": 580.5,
+        "s": "D S U M"
+      },
+      {
+        "x": 134.28,
+        "y": 580.02,
+        "s": "S 3"
+      },
+      {
+        "x": 192.24,
+        "y": 576.9,
+        "s": "N"
+      },
+      {
+        "x": 134.28,
+        "y": 571.08,
+        "s": "S 4"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "S5<S1> + S6<S2> + S7<S3> + S8<S4>",
+      "description_lines": [
+        "S5<S1> + S6<S2> + S7<S3> + S8<S4>"
+      ],
+      "manual_page": 195
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of <S1>",
+      "description_lines": [
+        "Block address of <S1>"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 195
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of <S2>",
+      "description_lines": [
+        "Block address of <S2>"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 195
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of <S3>",
+      "description_lines": [
+        "Block address of <S3>"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 195
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of <S4>",
+      "description_lines": [
+        "Block address of <S4>"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 195
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Gain parameter for <S1>",
+      "description_lines": [
+        "Gain parameter for <S1>"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 195
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Gain parameter for <S2>",
+      "description_lines": [
+        "Gain parameter for <S2>"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 195
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Gain parameter for <S3>",
+      "description_lines": [
+        "Gain parameter for <S3>"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 195
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Gain parameter for <S4>",
+      "description_lines": [
+        "Gain parameter for <S4>"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 195
+    }
+  ],
+  "spec_count": 8,
+  "max_spec_number": 8,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 195,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 195,
+  "manual_pages": [
+    195,
+    196
+  ],
+  "manual_section": "Function Code 65 - Digital Sum With Gain",
+  "diagnostics": []
+}

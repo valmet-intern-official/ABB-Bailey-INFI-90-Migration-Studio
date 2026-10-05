@@ -1,0 +1,318 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 166,
+  "name": "Integrator",
+  "description": "The integrator function code computes the integral of an input signal using the trapezoidal rule of integration and double precision arithmetic. The result of the integration times the gain (S7) is the output. Integration begins at an initial value (S3). High (S5) and low (S6) limits affect the output (N). Specification S2 specifies the time units: seconds, minutes or hours. The automatic reset option (S8 equals one) restarts the integration from the initial value when the integrator reaches the high or low limit. In the automatic reset mode, the limit flag is set for one cycle after the integrator reaches a limit. In automatic reset mode, a counter or second integrator can count overflows from the integrator, forming a multistage integration.",
+  "description_lines": [
+    "The integrator function code computes the integral of an input",
+    "signal using the trapezoidal rule of integration and double pre-",
+    "cision arithmetic. The result of the integration times the gain",
+    "(S7) is the output. Integration begins at an initial value (S3).",
+    "High (S5) and low (S6) limits affect the output (N).",
+    "Specification S2 specifies the time units: seconds, minutes or",
+    "hours.",
+    "The automatic reset option (S8 equals one) restarts the inte-",
+    "gration from the initial value when the integrator reaches the",
+    "high or low limit. In the automatic reset mode, the limit flag is",
+    "set for one cycle after the integrator reaches a limit. In auto-",
+    "matic reset mode, a counter or second integrator can count",
+    "overflows from the integrator, forming a multistage",
+    "integration."
+  ],
+  "symbol": {
+    "title_raw": "P V",
+    "title": "PV",
+    "inputs": [
+      "S1",
+      "S3",
+      "S4"
+    ],
+    "outputs": [
+      "N",
+      "N+1"
+    ],
+    "items": [
+      {
+        "x": 190.68,
+        "y": 597.66,
+        "s": "(1 6 6 )"
+      },
+      {
+        "x": 131.7,
+        "y": 596.46,
+        "s": "S 1"
+      },
+      {
+        "x": 151.56,
+        "y": 593.04,
+        "s": "P V"
+      },
+      {
+        "x": 190.68,
+        "y": 588.72,
+        "s": "N"
+      },
+      {
+        "x": 131.7,
+        "y": 587.52,
+        "s": "S 3"
+      },
+      {
+        "x": 151.56,
+        "y": 584.16,
+        "s": "IC"
+      },
+      {
+        "x": 180.36,
+        "y": 583.92,
+        "s": "Q"
+      },
+      {
+        "x": 190.68,
+        "y": 579.84,
+        "s": "N + 1"
+      },
+      {
+        "x": 131.7,
+        "y": 578.64,
+        "s": "S 4"
+      },
+      {
+        "x": 151.56,
+        "y": 575.22,
+        "s": "T S"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Value of integral",
+      "description_lines": [
+        "Value of integral"
+      ],
+      "manual_page": 617
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Limit flag:; 0 = good; 1 = high or low limit reached",
+      "description_lines": [
+        "Limit flag:",
+        "0 = good",
+        "1 = high or low limit reached"
+      ],
+      "manual_page": 617
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of process variable",
+      "description_lines": [
+        "Block address of process variable"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 617
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "0 - 2",
+      "description": "Time base of integration:; 0 = seconds; 1 = minutes; 2 = hours",
+      "description_lines": [
+        "Time base of integration:",
+        "0 = seconds",
+        "1 = minutes",
+        "2 = hours"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "seconds"
+        },
+        {
+          "value": "1",
+          "meaning": "minutes"
+        },
+        {
+          "value": "2",
+          "meaning": "hours"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 617
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of initial value",
+      "description_lines": [
+        "Block address of initial value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 617
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of reset signal:; 0 = reset; 1 = run",
+      "description_lines": [
+        "Block address of reset signal:",
+        "0 = reset",
+        "1 = run"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "reset"
+        },
+        {
+          "value": "1",
+          "meaning": "run"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 617
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "High limit",
+      "description_lines": [
+        "High limit"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 617
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "-9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "Low limit",
+      "description_lines": [
+        "Low limit"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 617
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Gain",
+      "description_lines": [
+        "Gain"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 618
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "B",
+      "range": "0 or 1",
+      "description": "Automatic reset:; 0 = off; 1 = on",
+      "description_lines": [
+        "Automatic reset:",
+        "0 = off",
+        "1 = on"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "off"
+        },
+        {
+          "value": "1",
+          "meaning": "on"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 618
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare",
+      "description_lines": [
+        "Spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 618
+    }
+  ],
+  "spec_count": 9,
+  "max_spec_number": 9,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 618,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 617,
+  "manual_pages": [
+    617,
+    618,
+    619,
+    620
+  ],
+  "manual_section": "Function Code 166 - Integrator",
+  "diagnostics": []
+}

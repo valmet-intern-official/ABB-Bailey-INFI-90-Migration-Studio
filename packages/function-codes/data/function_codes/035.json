@@ -1,0 +1,155 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 35,
+  "name": "Timer",
+  "description": "The timer function code performs timing, pulsed timing, or timed out delay functions. The timing mode is specified by S2 and the duration of time delay is specified by S3. Figure 35-1 shows output shapes for each mode of operation.",
+  "description_lines": [
+    "The timer function code performs timing, pulsed timing, or",
+    "timed out delay functions. The timing mode is specified by S2",
+    "and the duration of time delay is specified by S3. Figure 35-1",
+    "shows output shapes for each mode of operation."
+  ],
+  "symbol": {
+    "title_raw": "T D -D IG",
+    "title": "TD-DIG",
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 191.76,
+        "y": 589.02,
+        "s": "(3 5 )"
+      },
+      {
+        "x": 133.98,
+        "y": 587.34,
+        "s": "S 1"
+      },
+      {
+        "x": 157.98,
+        "y": 583.44,
+        "s": "T D -D IG"
+      },
+      {
+        "x": 191.76,
+        "y": 580.08,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Logic state defined for pulse, timing or timed out delay functions",
+      "description_lines": [
+        "Logic state defined for pulse, timing or timed out delay",
+        "functions"
+      ],
+      "manual_page": 125
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input",
+      "description_lines": [
+        "Block address of input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 125
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2",
+      "description": "0 = pulse output; 1 = timed out; 2 = timing; 00X = normal; 10X = time during start up period NOTE: The tens digit is not used and must be set to 0",
+      "description_lines": [
+        "0 = pulse output",
+        "1 = timed out",
+        "2 = timing",
+        "00X = normal",
+        "10X = time during start up period",
+        "NOTE: The tens digit is not used and must be set to 0"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "pulse output"
+        },
+        {
+          "value": "1",
+          "meaning": "timed out"
+        },
+        {
+          "value": "2",
+          "meaning": "timing"
+        },
+        {
+          "value": "00X",
+          "meaning": "normal"
+        },
+        {
+          "value": "10X",
+          "meaning": "time during start up period"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 125
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Time delay in secs",
+      "description_lines": [
+        "Time delay in secs"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 125
+    }
+  ],
+  "spec_count": 3,
+  "max_spec_number": 3,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 125,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 125,
+  "manual_pages": [
+    125,
+    126
+  ],
+  "manual_section": "Function Code 35 - Timer",
+  "diagnostics": []
+}

@@ -1,0 +1,138 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 174,
+  "name": "Logarithm",
+  "description": "The logarithm function code takes the logarithm of the input to the defined base. The result is multiplied by a gain factor to provide the output. The logarithm function code is not limited to natural logarithms. The log of any value in base zero (natural) to ten can be taken. Use the logarithm function code in process control for performance calculations and monitoring.",
+  "description_lines": [
+    "The logarithm function code takes the logarithm of the input to",
+    "the defined base. The result is multiplied by a gain factor to",
+    "provide the output. The logarithm function code is not limited",
+    "to natural logarithms. The log of any value in base zero (natu-",
+    "ral) to ten can be taken.",
+    "Use the logarithm function code in process control for perfor-",
+    "mance calculations and monitoring."
+  ],
+  "symbol": {
+    "title_raw": "L O G",
+    "title": "LOG",
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 192.18,
+        "y": 588.9,
+        "s": "(1 7 4 )"
+      },
+      {
+        "x": 134.64,
+        "y": 586.98,
+        "s": "S 1"
+      },
+      {
+        "x": 163.14,
+        "y": 583.62,
+        "s": "L O G"
+      },
+      {
+        "x": 192.18,
+        "y": 579.72,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Value = K × [log (X)] (base)",
+      "description_lines": [
+        "Value = K × [log (X)]",
+        "(base)"
+      ],
+      "manual_page": 641
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input value, X",
+      "description_lines": [
+        "Block address of input value,",
+        "X"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 641
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 10",
+      "description": "Base of logarithm:; 0 = natural log",
+      "description_lines": [
+        "Base of logarithm:",
+        "0 = natural log"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "natural log"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 641
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Gain factor",
+      "description_lines": [
+        "Gain factor"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 641
+    }
+  ],
+  "spec_count": 3,
+  "max_spec_number": 3,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 641,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 641,
+  "manual_pages": [
+    641
+  ],
+  "manual_section": "Function Code 174 - Logarithm",
+  "diagnostics": []
+}

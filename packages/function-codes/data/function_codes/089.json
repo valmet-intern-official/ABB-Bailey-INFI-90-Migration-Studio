@@ -1,0 +1,107 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 89,
+  "name": "Last Block",
+  "description": "The last block function code marks the end of the function block configuration space. The last block function code is a fixed block located in the highest available block number of the module. The last block cannot be deleted. Additional last blocks cannot be added to the configuration. NOTE: This function code is supported only by the BRC-100/200 and the IMMFP11/12 controllers. In Symphony systems, the last block function code has one output. The output indicates the special operations options configuration including the module network type, time-stamping, Hnet cable length, and revision checking. Special operations are documented in the installation section of the individual controller's product instruction.",
+  "description_lines": [
+    "The last block function code marks the end of the function",
+    "block configuration space. The last block function code is a",
+    "fixed block located in the highest available block number of",
+    "the module. The last block cannot be deleted. Additional last",
+    "blocks cannot be added to the configuration.",
+    "NOTE: This function code is supported only by the BRC-100/200 and the",
+    "IMMFP11/12 controllers.",
+    "In Symphony systems, the last block function code has one",
+    "output. The output indicates the special operations options",
+    "configuration including the module network type, time-stamp-",
+    "ing, Hnet cable length, and revision checking. Special",
+    "operations are documented in the installation section of the",
+    "individual controller's product instruction."
+  ],
+  "symbol": {
+    "title_raw": "L A S T",
+    "title": "LAST",
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [],
+    "items": [
+      {
+        "x": 192.66,
+        "y": 588.48,
+        "s": "(8 9 )"
+      },
+      {
+        "x": 161.04,
+        "y": 587.52,
+        "s": "L A S T"
+      },
+      {
+        "x": 134.22,
+        "y": 587.28,
+        "s": "S 1"
+      },
+      {
+        "x": 157.92,
+        "y": 579.36,
+        "s": "B L O C K"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "0 - 9999",
+      "type": "R",
+      "description": "Special operations options configuration Network type; X0X0 = Plant loop; X0X1 = Cnet; X0X3 = Cnet with time-stamping Hnet cable length (BRC-100/200 only); X00X = 1200m; X02X = 3000m; X03X = 2000m; X04X = 800m Revision check (BRC-100/200 only); 00XX = Revision check disabled; 10XX = Revision check enabled",
+      "description_lines": [
+        "Special operations options configuration",
+        "Network type",
+        "X0X0 = Plant loop",
+        "X0X1 = Cnet",
+        "X0X3 = Cnet with time-stamping",
+        "Hnet cable length (BRC-100/200 only)",
+        "X00X = 1200m",
+        "X02X = 3000m",
+        "X03X = 2000m",
+        "X04X = 800m",
+        "Revision check (BRC-100/200 only)",
+        "00XX = Revision check disabled",
+        "10XX = Revision check enabled"
+      ],
+      "manual_page": 255
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "-32,768 - 32,767",
+      "description": "Reserved integer",
+      "description_lines": [
+        "Reserved integer"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 255
+    }
+  ],
+  "spec_count": 1,
+  "max_spec_number": 1,
+  "notes": [],
+  "manual_page": 255,
+  "manual_pages": [
+    255
+  ],
+  "manual_section": "Function Code 89 - Last Block",
+  "diagnostics": []
+}

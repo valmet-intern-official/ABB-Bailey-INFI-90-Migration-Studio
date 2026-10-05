@@ -42,6 +42,7 @@ export function classifyExtension(ext: string): import("./types.js").FileKind {
     BND: "BND",
     GES: "GES",
     BAT: "BAT",
+    LBR: "OTHER",
   };
   return map[e] ?? "OTHER";
 }

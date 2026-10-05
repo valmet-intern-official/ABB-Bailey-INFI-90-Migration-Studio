@@ -1,0 +1,668 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 169,
+  "name": "Matrix Addition",
+  "description": "The matrix addition function code adds two three-by-three matrices to provide a three-by-three matrix output. Use this operation for modeling and simulations, and advanced control strategies.",
+  "description_lines": [
+    "The matrix addition function code adds two three-by-three",
+    "matrices to provide a three-by-three matrix output. Use this",
+    "operation for modeling and simulations, and advanced control",
+    "strategies."
+  ],
+  "symbol": {
+    "title_raw": "[A D D ]",
+    "title": "[ADD]",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17",
+      "S18"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3",
+      "N+4",
+      "N+5",
+      "N+6",
+      "N+7",
+      "N+8"
+    ],
+    "items": [
+      {
+        "x": 159.42,
+        "y": 594.78,
+        "s": "[A D D ]"
+      },
+      {
+        "x": 190.62,
+        "y": 588.3,
+        "s": "(1 6 9 )"
+      },
+      {
+        "x": 132.78,
+        "y": 587.82,
+        "s": "S 1"
+      },
+      {
+        "x": 190.62,
+        "y": 579.42,
+        "s": "N"
+      },
+      {
+        "x": 132.78,
+        "y": 578.7,
+        "s": "S 2"
+      },
+      {
+        "x": 190.62,
+        "y": 570.54,
+        "s": "N + 1"
+      },
+      {
+        "x": 132.78,
+        "y": 569.82,
+        "s": "S 3"
+      },
+      {
+        "x": 190.62,
+        "y": 561.42,
+        "s": "N + 2"
+      },
+      {
+        "x": 132.78,
+        "y": 560.7,
+        "s": "S 4"
+      },
+      {
+        "x": 190.62,
+        "y": 552.54,
+        "s": "N + 3"
+      },
+      {
+        "x": 132.78,
+        "y": 551.82,
+        "s": "S 5"
+      },
+      {
+        "x": 190.62,
+        "y": 543.66,
+        "s": "N + 4"
+      },
+      {
+        "x": 132.78,
+        "y": 542.7,
+        "s": "S 6"
+      },
+      {
+        "x": 190.62,
+        "y": 534.54,
+        "s": "N + 5"
+      },
+      {
+        "x": 132.78,
+        "y": 533.58,
+        "s": "S 7"
+      },
+      {
+        "x": 190.62,
+        "y": 525.66,
+        "s": "N + 6"
+      },
+      {
+        "x": 132.78,
+        "y": 524.7,
+        "s": "S 8"
+      },
+      {
+        "x": 190.62,
+        "y": 516.78,
+        "s": "N + 7"
+      },
+      {
+        "x": 132.78,
+        "y": 515.58,
+        "s": "S 9"
+      },
+      {
+        "x": 190.62,
+        "y": 507.9,
+        "s": "N + 8"
+      },
+      {
+        "x": 132.78,
+        "y": 506.7,
+        "s": "S 1 0"
+      },
+      {
+        "x": 132.78,
+        "y": 497.64,
+        "s": "S 1 1"
+      },
+      {
+        "x": 132.78,
+        "y": 488.76,
+        "s": "S 1 2"
+      },
+      {
+        "x": 132.78,
+        "y": 479.64,
+        "s": "S 1 3"
+      },
+      {
+        "x": 132.78,
+        "y": 470.52,
+        "s": "S 1 4"
+      },
+      {
+        "x": 132.78,
+        "y": 461.64,
+        "s": "S 1 5"
+      },
+      {
+        "x": 132.78,
+        "y": 452.52,
+        "s": "S 1 6"
+      },
+      {
+        "x": 132.78,
+        "y": 443.64,
+        "s": "S 1 7"
+      },
+      {
+        "x": 132.78,
+        "y": 434.52,
+        "s": "S 1 8"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Sum of A + B or <S1> + <S10> 11 11",
+      "description_lines": [
+        "Sum of A + B or <S1> + <S10>",
+        "11 11"
+      ],
+      "manual_page": 629
+    },
+    {
+      "blk": "N+1",
+      "type": "R",
+      "description": "Sum of A + B or <S2> + <S11> 12 12",
+      "description_lines": [
+        "Sum of A + B or <S2> + <S11>",
+        "12 12"
+      ],
+      "manual_page": 629
+    },
+    {
+      "blk": "N+2",
+      "type": "R",
+      "description": "Sum of A + B or <S3> + <S12> 13 13",
+      "description_lines": [
+        "Sum of A + B or <S3> + <S12>",
+        "13 13"
+      ],
+      "manual_page": 629
+    },
+    {
+      "blk": "N+3",
+      "type": "R",
+      "description": "Sum of A + B or <S4> + <S13> 21 21",
+      "description_lines": [
+        "Sum of A + B or <S4> + <S13>",
+        "21 21"
+      ],
+      "manual_page": 629
+    },
+    {
+      "blk": "N+4",
+      "type": "R",
+      "description": "Sum of A + B or <S5> + <S14> 22 22",
+      "description_lines": [
+        "Sum of A + B or <S5> + <S14>",
+        "22 22"
+      ],
+      "manual_page": 629
+    },
+    {
+      "blk": "N+5",
+      "type": "R",
+      "description": "Sum of A + B or <S6> + <S15> 23 23",
+      "description_lines": [
+        "Sum of A + B or <S6> + <S15>",
+        "23 23"
+      ],
+      "manual_page": 629
+    },
+    {
+      "blk": "N+6",
+      "type": "R",
+      "description": "Sum of A + B or <S7> + <S16> 31 31",
+      "description_lines": [
+        "Sum of A + B or <S7> + <S16>",
+        "31 31"
+      ],
+      "manual_page": 629
+    },
+    {
+      "blk": "N+7",
+      "type": "R",
+      "description": "Sum of A + B or <S8> + <S17> 32 32",
+      "description_lines": [
+        "Sum of A + B or <S8> + <S17>",
+        "32 32"
+      ],
+      "manual_page": 629
+    },
+    {
+      "blk": "N+8",
+      "type": "R",
+      "description": "Sum of A + B or <S9> + <S18> 33 33",
+      "description_lines": [
+        "Sum of A + B or <S9> + <S18>",
+        "33 33"
+      ],
+      "manual_page": 629
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of A value",
+      "description_lines": [
+        "Block address of A",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 629
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "11"
+      ],
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of A value",
+      "description_lines": [
+        "Block address of A",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 629
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "12"
+      ],
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of A value",
+      "description_lines": [
+        "Block address of A",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 629
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "13"
+      ],
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of A value",
+      "description_lines": [
+        "Block address of A",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 629
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "21"
+      ],
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of A value",
+      "description_lines": [
+        "Block address of A",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 629
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "22"
+      ],
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of A value",
+      "description_lines": [
+        "Block address of A",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 629
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "23"
+      ],
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of A value",
+      "description_lines": [
+        "Block address of A",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 629
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "31"
+      ],
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of A value",
+      "description_lines": [
+        "Block address of A",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 629
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "32"
+      ],
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of A value",
+      "description_lines": [
+        "Block address of A",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 629
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "33"
+      ],
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of B value",
+      "description_lines": [
+        "Block address of B",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 629
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "11"
+      ],
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of B value",
+      "description_lines": [
+        "Block address of B",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 629
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "12"
+      ],
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of B value",
+      "description_lines": [
+        "Block address of B",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 629
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "13"
+      ],
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of B value",
+      "description_lines": [
+        "Block address of B",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 629
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "21"
+      ],
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of B value",
+      "description_lines": [
+        "Block address of B",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 629
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "22"
+      ],
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of B value",
+      "description_lines": [
+        "Block address of B",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 630
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "23"
+      ],
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of B value",
+      "description_lines": [
+        "Block address of B",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 630
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "31"
+      ],
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of B value",
+      "description_lines": [
+        "Block address of B",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 630
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "32"
+      ],
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of B value",
+      "description_lines": [
+        "Block address of B",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 630
+    }
+  ],
+  "spec_count": 18,
+  "max_spec_number": 18,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 630,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 629,
+  "manual_pages": [
+    629,
+    630
+  ],
+  "manual_section": "Function Code 169 - Matrix Addition",
+  "diagnostics": []
+}

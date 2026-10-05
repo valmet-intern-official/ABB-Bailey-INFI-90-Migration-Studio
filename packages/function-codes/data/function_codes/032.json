@@ -1,0 +1,113 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 32,
+  "name": "Trip",
+  "description": "The trip function code disables a controller by internally forcing it into the error mode when the input is a logic 1. When the controller goes to error mode, the machine fault timer times out, stopping all communication with the controller. All outputs go to their default value when the timer times out. Analog values go to zero percent, 100 percent, or hold, depending on the output's hardware configuration. All logic outputs for controllers go to logic 0. Harmony rack I/O modules have software configured logic states (function code 128). NOTE: This function code is used to support Harmony rack I/O modules only. When function code 32 trips the controller, reset the controller by pressing the reset pushbutton on the front of the controller. After the controller is reset, it will be in error mode. A Composer workstation or Conductor console will display the number of the block that tripped the controller, allowing the control strategy to be checked to determine the reason for the trip. To place the controller in execute mode after an error, place it in configure mode and then in execute mode. NOTE: The cause of the trip must be corrected or the controller will not remain in execute mode.",
+  "description_lines": [
+    "The trip function code disables a controller by internally forc-",
+    "ing it into the error mode when the input is a logic 1. When the",
+    "controller goes to error mode, the machine fault timer times",
+    "out, stopping all communication with the controller. All out-",
+    "puts go to their default value when the timer times out. Analog",
+    "values go to zero percent, 100 percent, or hold, depending on",
+    "the output's hardware configuration. All logic outputs for con-",
+    "trollers go to logic 0. Harmony rack I/O modules have software",
+    "configured logic states (function code 128).",
+    "NOTE: This function code is used to support Harmony rack I/O modules only.",
+    "When function code 32 trips the controller, reset the controller",
+    "by pressing the reset pushbutton on the front of the controller.",
+    "After the controller is reset, it will be in error mode. A Com-",
+    "poser workstation or Conductor console will display the num-",
+    "ber of the block that tripped the controller, allowing the control",
+    "strategy to be checked to determine the reason for the trip. To",
+    "place the controller in execute mode after an error, place it in",
+    "configure mode and then in execute mode.",
+    "NOTE: The cause of the trip must be corrected or the controller will not remain",
+    "in execute mode."
+  ],
+  "symbol": {
+    "title_raw": "T R IP",
+    "title": "TRIP",
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 191.76,
+        "y": 588.66,
+        "s": "(3 2 )"
+      },
+      {
+        "x": 133.86,
+        "y": 587.22,
+        "s": "S 1"
+      },
+      {
+        "x": 161.7,
+        "y": 583.62,
+        "s": "T R IP"
+      },
+      {
+        "x": 191.76,
+        "y": 579.96,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Module status:; 0 = normal operation; 1 = module disabled",
+      "description_lines": [
+        "Module status:",
+        "0 = normal operation",
+        "1 = module disabled"
+      ],
+      "manual_page": 119
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input",
+      "description_lines": [
+        "Block address of input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 119
+    }
+  ],
+  "spec_count": 1,
+  "max_spec_number": 1,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 119,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 119,
+  "manual_pages": [
+    119
+  ],
+  "manual_section": "Function Code 32 - Trip",
+  "diagnostics": []
+}

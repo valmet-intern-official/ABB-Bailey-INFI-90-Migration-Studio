@@ -1,0 +1,155 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 69,
+  "name": "Test Alarm",
+  "description": "The test alarm function code tests the alarm status of a designated input signal. It can test the alarm state on any block output that has a defined quality or alarm, including exception reports, station blocks, and device drivers. There are two separate boolean outputs. Table 69-1 shows the different output descriptions for the types of blocks monitored. Note that for control stations, S2 selects the type of alarm monitored (absolute or deviation). Alarm status is zero equals no alarm, one equals alarm.",
+  "description_lines": [
+    "The test alarm function code tests the alarm status of a desig-",
+    "nated input signal. It can test the alarm state on any block",
+    "output that has a defined quality or alarm, including exception",
+    "reports, station blocks, and device drivers.",
+    "There are two separate boolean outputs. Table 69-1 shows the",
+    "different output descriptions for the types of blocks monitored.",
+    "Note that for control stations, S2 selects the type of alarm",
+    "monitored (absolute or deviation). Alarm status is zero equals",
+    "no alarm, one equals alarm."
+  ],
+  "symbol": {
+    "title_raw": "T S TA LM",
+    "title": "TSTALM",
+    "inputs": [],
+    "outputs": [
+      "N",
+      "N+1"
+    ],
+    "items": [
+      {
+        "x": 156.06,
+        "y": 595.02,
+        "s": "T S TA LM"
+      },
+      {
+        "x": 191.7,
+        "y": 588.54,
+        "s": "(6 9 )"
+      },
+      {
+        "x": 182.34,
+        "y": 583.68,
+        "s": "H"
+      },
+      {
+        "x": 191.7,
+        "y": 579.6,
+        "s": "N"
+      },
+      {
+        "x": 183.3,
+        "y": 574.8,
+        "s": "L"
+      },
+      {
+        "x": 191.7,
+        "y": 570.96,
+        "s": "N + 1"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "High alarm indicator:; 0 = no alarm; 1 = alarm",
+      "description_lines": [
+        "High alarm indicator:",
+        "0 = no alarm",
+        "1 = alarm"
+      ],
+      "manual_page": 203
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Low alarm indicator:; 0 = no alarm; 1 = alarm",
+      "description_lines": [
+        "Low alarm indicator:",
+        "0 = no alarm",
+        "1 = alarm"
+      ],
+      "manual_page": 203
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block number to be tested for alarms",
+      "description_lines": [
+        "Block number to be tested for alarms"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 203
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2",
+      "description": "Alarm condition tested for:; 0 = absolute alarms; 1 = deviation alarms (stations only); 2 = device drivers",
+      "description_lines": [
+        "Alarm condition tested for:",
+        "0 = absolute alarms",
+        "1 = deviation alarms (stations only)",
+        "2 = device drivers"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "absolute alarms"
+        },
+        {
+          "value": "1",
+          "meaning": "deviation alarms (stations only)"
+        },
+        {
+          "value": "2",
+          "meaning": "device drivers"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 203
+    }
+  ],
+  "spec_count": 2,
+  "max_spec_number": 2,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 203,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 203,
+  "manual_pages": [
+    203,
+    204
+  ],
+  "manual_section": "Function Code 69 - Test Alarm",
+  "diagnostics": []
+}

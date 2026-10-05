@@ -1,0 +1,213 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 68,
+  "name": "Remote Manual Set Constant",
+  "description": "The remote manual set constant (RMSC) function code allows the value of a constant to be entered to the control scheme via a console (i.e., operator interface station) or other device such as the plant computer via a network interface unit. When the function block receives this command, an exception report is generated to notify the operator or computer that the value has changed. An exception report is also sent on the loop at the maximum exception report time; or if in the track mode, the value of S6 exceeds the significant change parameter of the segment or module, whichever applies. High and low limits may be set to guard against unreasonable values. Specifications S2 and S3 select the high and low limits and also set the span for significant change. Specification S4 specifies the output value of the controller in normal mode (S5 = 0) on initial startup. The S4 value is updated via a console and is output from the block after a mode change to execute or a reset of the module. Specifications <S5> and <S6> are the block addresses of the track switch and track reference values. The RMSC block can be forced to output the value from <S6> when the track switch <S5> goes to one. An exception report is generated each time the track switch activates or deactivates.",
+  "description_lines": [
+    "The remote manual set constant (RMSC) function code allows",
+    "the value of a constant to be entered to the control scheme via",
+    "a console (i.e., operator interface station) or other device such",
+    "as the plant computer via a network interface unit.",
+    "When the function block receives this command, an exception",
+    "report is generated to notify the operator or computer that the",
+    "value has changed. An exception report is also sent on the loop",
+    "at the maximum exception report time; or if in the track mode,",
+    "the value of S6 exceeds the significant change parameter of the",
+    "segment or module, whichever applies.",
+    "High and low limits may be set to guard against unreasonable",
+    "values. Specifications S2 and S3 select the high and low limits",
+    "and also set the span for significant change. Specification S4",
+    "specifies the output value of the controller in normal mode",
+    "(S5 = 0) on initial startup. The S4 value is updated via a con-",
+    "sole and is output from the block after a mode change to exe-",
+    "cute or a reset of the module.",
+    "Specifications <S5> and <S6> are the block addresses of the",
+    "track switch and track reference values. The RMSC block can",
+    "be forced to output the value from <S6> when the track switch",
+    "<S5> goes to one. An exception report is generated each time",
+    "the track switch activates or deactivates."
+  ],
+  "symbol": {
+    "title_raw": "R E M S E T",
+    "title": "REMSET",
+    "inputs": [
+      "S5",
+      "S6"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 134.34,
+        "y": 591.9,
+        "s": "S 5"
+      },
+      {
+        "x": 192.3,
+        "y": 588.54,
+        "s": "(6 8 )"
+      },
+      {
+        "x": 155.76,
+        "y": 583.44,
+        "s": "R E M S E T"
+      },
+      {
+        "x": 134.34,
+        "y": 582.72,
+        "s": "S 6"
+      },
+      {
+        "x": 192.3,
+        "y": 579.6,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Last value entered for S4 when <S5> = 0, or value of <S6> when <S5> = 1",
+      "description_lines": [
+        "Last value entered for S4 when <S5> = 0, or value of <S6>",
+        "when <S5> = 1"
+      ],
+      "manual_page": 201
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Engineering unit identifier",
+      "description_lines": [
+        "Engineering unit identifier"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 201
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "100.000",
+      "type": "R",
+      "range": "Full",
+      "description": "High limit",
+      "description_lines": [
+        "High limit"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 201
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Low limit",
+      "description_lines": [
+        "Low limit"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 201
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Initial output value after addition, modification, power up of block",
+      "description_lines": [
+        "Initial output value after addition, modification,",
+        "power up of block"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 201
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of track switch:; 0 = normal; 1 = track",
+      "description_lines": [
+        "Block address of track switch:",
+        "0 = normal",
+        "1 = track"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "normal"
+        },
+        {
+          "value": "1",
+          "meaning": "track"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 202
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of track value",
+      "description_lines": [
+        "Block address of track value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 202
+    }
+  ],
+  "spec_count": 6,
+  "max_spec_number": 6,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100 31,998 for the HAC",
+      "manual_page": 202,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 201,
+  "manual_pages": [
+    201,
+    202
+  ],
+  "manual_section": "Function Code 68 - Remote Manual Set Constant",
+  "diagnostics": []
+}

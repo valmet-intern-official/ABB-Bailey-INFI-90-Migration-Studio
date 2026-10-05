@@ -1,0 +1,85 @@
+==============================================================================
+CADSYNC - CAD Sheet Tag Database Synchronization
+  Copyright 1997, Elsag Bailey Process Automation, N.V.
+ All rights reserved.      (Build 2.0.11)
+
+NOTE: The following abbreviations are used in this log file:
+  XRFC - exception-reporting function code
+ NXRFC - NON-exception-reporting function code. 
+
+Start at: Tue Jun  3 09:10:41 2014
+
+Parameters:
+  Project TDT:    c:\ews\project\tdt\dcs
+  Mode:           UPDATE
+  Taglink Usage:  Ignoring taglinks
+  Tag Generation: None - warn of untagged XRFCs
+
+
+==========================================================
+PROCESSING SELECTIONS IN C:\EWS\PROJECT\L3\P26\M5\SELCT.LST
+
+==========================================================
+
+--------------------------------------------------------
+ PROCESSING MODULES IN: C:\EWS\PROJECT\L3\P26\M5\MSTR.LST
+--------------------------------------------------------
+
+*****************************
+* PROCESSING MODULE: 32605  *
+*****************************
+
+Start - Tue Jun  3 09:10:41 2014
+
+ Module Header: C:\EWS\PROJECT\L3\P26\M5\32605
+ Module Type   : MFP02
+ Address       : 3-26-5
+
+ 1 sheet listed for this module.
+
+**********************************
+* PROCESSING SHEET: 3260552A.CAD *
+**********************************
+
+Sheet start - Tue Jun  3 09:10:41 2014
+
+
+* Function code M/A-M    (FC 80, block 164)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Tue Jun  3 09:10:41 2014
+ 
+CAD SHEET C:\EWS\PROJECT\L3\P26\M5\3260552A.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+Total Errors in module   : 0
+Total Warnings in module : 1
+
+Module done at  Tue Jun  3 09:10:41 2014
+
+
+****** Module 32605 processed - SUCCESS
+
+=============================================================================
+
+TOTAL ERRORS          : 0
+TOTAL WARNINGS        : 1
+
+
+Stop time - Tue Jun  3 09:10:41 2014
+ (0 seconds)
+
+Total Entities scanned: 252
+Total Function codes  : 34
+Total NXRFC entities  : 33
+Total XRFC entities   : 1
+
+Rate of processing =     inf  (entities/sec)
+                   =     inf  (FCs/sec)
+                   =     inf  (XRFCs/sec)
+
+===== END OF CADSYNC.LOG =====

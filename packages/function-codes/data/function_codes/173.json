@@ -1,0 +1,137 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 173,
+  "name": "Power",
+  "description": "The power function code raises the value of the first input <S1> to the power specified by the second input <S2>. The result is multiplied by the gain factor (S3) to provide the output. Use the power function code in process control for performance calculations and monitoring.",
+  "description_lines": [
+    "The power function code raises the value of the first input",
+    "<S1> to the power specified by the second input <S2>. The",
+    "result is multiplied by the gain factor (S3) to provide the out-",
+    "put.",
+    "Use the power function code in process control for perfor-",
+    "mance calculations and monitoring."
+  ],
+  "symbol": {
+    "title_raw": "P O W E R",
+    "title": "POWER",
+    "inputs": [
+      "S1",
+      "S2"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 155.4,
+        "y": 594.78,
+        "s": "P O W E R"
+      },
+      {
+        "x": 190.14,
+        "y": 588.78,
+        "s": "(1 7 3 )"
+      },
+      {
+        "x": 132.6,
+        "y": 587.58,
+        "s": "S 1"
+      },
+      {
+        "x": 152.04,
+        "y": 584.22,
+        "s": "B"
+      },
+      {
+        "x": 190.14,
+        "y": 579.9,
+        "s": "N"
+      },
+      {
+        "x": 132.6,
+        "y": 578.46,
+        "s": "S 2"
+      },
+      {
+        "x": 152.04,
+        "y": 575.34,
+        "s": "E"
+      }
+    ]
+  },
+  "outputs": [],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "6",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of y",
+      "description_lines": [
+        "Block address of",
+        "y"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 639
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "6",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of x",
+      "description_lines": [
+        "Block address of",
+        "x"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 639
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Gain factor",
+      "description_lines": [
+        "Gain factor"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 639
+    }
+  ],
+  "spec_count": 3,
+  "max_spec_number": 3,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 639,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 639,
+  "manual_pages": [
+    639
+  ],
+  "manual_section": "Function Code 173 - Power",
+  "diagnostics": []
+}

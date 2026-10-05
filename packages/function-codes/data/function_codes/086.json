@@ -1,0 +1,292 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 86,
+  "name": "Elapsed Timer",
+  "description": "The elapsed timer function code measures elapsed time. This is especially useful for batch control applications, and may be used for maintenance purposes such as operating time measurements. Time units are configurable to seconds, minutes, hours or days with S3. The timer performs either up or down timing functions, and can be held to a particular value or reset to a specified initial value by external logic.",
+  "description_lines": [
+    "The elapsed timer function code measures elapsed time. This",
+    "is especially useful for batch control applications, and may be",
+    "used for maintenance purposes such as operating time mea-",
+    "surements. Time units are configurable to seconds, minutes,",
+    "hours or days with S3. The timer performs either up or down",
+    "timing functions, and can be held to a particular value or reset",
+    "to a specified initial value by external logic."
+  ],
+  "symbol": {
+    "title_raw": "E T IM E R",
+    "title": "ETIMER",
+    "inputs": [
+      "S2",
+      "S1"
+    ],
+    "outputs": [
+      "N",
+      "N+1"
+    ],
+    "items": [
+      {
+        "x": 156.06,
+        "y": 595.02,
+        "s": "E T IM E R"
+      },
+      {
+        "x": 191.16,
+        "y": 588.78,
+        "s": "(8 6 )"
+      },
+      {
+        "x": 133.5,
+        "y": 587.34,
+        "s": "S 2"
+      },
+      {
+        "x": 153.18,
+        "y": 584.4,
+        "s": "H"
+      },
+      {
+        "x": 182.52,
+        "y": 584.16,
+        "s": "V"
+      },
+      {
+        "x": 191.16,
+        "y": 579.84,
+        "s": "N"
+      },
+      {
+        "x": 133.5,
+        "y": 578.4,
+        "s": "S 1"
+      },
+      {
+        "x": 153.18,
+        "y": 575.28,
+        "s": "R"
+      },
+      {
+        "x": 182.52,
+        "y": 575.04,
+        "s": "A"
+      },
+      {
+        "x": 191.16,
+        "y": 570.96,
+        "s": "N + 1"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Current value of timer (always positive)",
+      "description_lines": [
+        "Current value of timer (always positive)"
+      ],
+      "manual_page": 249
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Time alarm indicator:; 0 = alarm time not reached; 1 = alarm time reached",
+      "description_lines": [
+        "Time alarm indicator:",
+        "0 = alarm time not reached",
+        "1 = alarm time reached"
+      ],
+      "manual_page": 249
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of reset flag:; 0 = run; 1 = reset",
+      "description_lines": [
+        "Block address of reset flag:",
+        "0 = run",
+        "1 = reset"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "run"
+        },
+        {
+          "value": "1",
+          "meaning": "reset"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 249
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of hold flag:; 0 = hold; 1 = release",
+      "description_lines": [
+        "Block address of hold flag:",
+        "0 = hold",
+        "1 = release"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "hold"
+        },
+        {
+          "value": "1",
+          "meaning": "release"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 249
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 3",
+      "description": "Units of time:; 0 = seconds; 1 = minutes; 2 = hours; 3 = days",
+      "description_lines": [
+        "Units of time:",
+        "0 = seconds",
+        "1 = minutes",
+        "2 = hours",
+        "3 = days"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "seconds"
+        },
+        {
+          "value": "1",
+          "meaning": "minutes"
+        },
+        {
+          "value": "2",
+          "meaning": "hours"
+        },
+        {
+          "value": "3",
+          "meaning": "days"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 249
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "0.0 - 9.2 E18",
+      "description": "Value of time alarm",
+      "description_lines": [
+        "Value of time alarm"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 249
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "0.0 - 9.2 E18",
+      "description": "Value of timer on reset",
+      "description_lines": [
+        "Value of timer on reset"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 249
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "000, 001, 100 or 101",
+      "description": "Up/down indicator:; XX0 = up; XX1 = down Tune/adapt reset timer:; 0XX = reset timer upon tune or adapt operation; 1XX = do not reset timer upon tune or adapt operation NOTE: Tens digit is not important",
+      "description_lines": [
+        "Up/down indicator:",
+        "XX0 = up",
+        "XX1 = down",
+        "Tune/adapt reset timer:",
+        "0XX = reset timer upon tune or adapt operation",
+        "1XX = do not reset timer upon tune or adapt",
+        "operation",
+        "NOTE: Tens digit is not important"
+      ],
+      "enumerations": [
+        {
+          "value": "XX0",
+          "meaning": "up"
+        },
+        {
+          "value": "XX1",
+          "meaning": "down"
+        },
+        {
+          "value": "0XX",
+          "meaning": "reset timer upon tune or adapt operation"
+        },
+        {
+          "value": "1XX",
+          "meaning": "do not reset timer upon tune or adapt"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 249
+    }
+  ],
+  "spec_count": 6,
+  "max_spec_number": 6,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 250,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 249,
+  "manual_pages": [
+    249,
+    250,
+    251,
+    252,
+    253
+  ],
+  "manual_section": "Function Code 86 - Elapsed Timer",
+  "diagnostics": []
+}

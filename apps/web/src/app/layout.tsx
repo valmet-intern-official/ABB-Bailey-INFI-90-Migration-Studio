@@ -1,6 +1,19 @@
 import type { Metadata } from "next";
-import { Manrope, Outfit } from "next/font/google";
+import { IBM_Plex_Mono, Inter, Manrope, Outfit } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const plexMono = IBM_Plex_Mono({
+  variable: "--font-plex-mono",
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  display: "swap",
+});
 
 const sans = Manrope({
   variable: "--font-sans",
@@ -15,7 +28,7 @@ const display = Outfit({
 export const metadata: Metadata = {
   title: "ABB Bailey INFI 90 Migration Studio | Valmet",
   description:
-    "Upload a Bailey INFI 90 module ZIP, review mapped I/O and logic, then export — no project library.",
+    "Decode legacy ABB Bailey INFI 90 engineering data, reconstruct graphics and engineering relationships, and generate traceable migration-ready outputs.",
   icons: {
     icon: [
       { url: "/valmet-logo.png", type: "image/png", sizes: "213x212" },
@@ -33,7 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sans.variable} ${display.variable} antialiased`}>
+      <body className={`${sans.variable} ${display.variable} ${inter.variable} ${plexMono.variable} antialiased`}>
         {children}
       </body>
     </html>

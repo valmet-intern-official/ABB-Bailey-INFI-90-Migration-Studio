@@ -1,0 +1,143 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 24,
+  "name": "Adapt",
+  "description": "This function allows the adaptation of a tunable parameter in the system (most tunable parameters may be modified during execution). It permits configuration of dynamic versus static loop gains in control schemes. All gains and time constants are tunable parameters. Therefore, using this function, you can set gains and time constants to fit current process operating states. NOTE: Tunable alarm specifications in exception report function blocks are not adaptable (e.g., function code 30, S5 and S6). The adapt function block output value has no significance. The adapted specification is modified only during execution, and the original parameter that is stored in nonvolatile random access memory (NVRAM) is not modified. Thus, the revised specification is not accessible via any of the operator interface devices unless the adapt input is read. Adapted block inputs are read by reading the output of the block preceding the block of interest.",
+  "description_lines": [
+    "This function allows the adaptation of a tunable parameter in",
+    "the system (most tunable parameters may be modified during",
+    "execution). It permits configuration of dynamic versus static",
+    "loop gains in control schemes. All gains and time constants are",
+    "tunable parameters. Therefore, using this function, you can set",
+    "gains and time constants to fit current process operating states.",
+    "NOTE: Tunable alarm specifications in exception report function blocks are not",
+    "adaptable (e.g., function code 30, S5 and S6).",
+    "The adapt function block output value has no significance. The",
+    "adapted specification is modified only during execution, and",
+    "the original parameter that is stored in nonvolatile random",
+    "access memory (NVRAM) is not modified. Thus, the revised",
+    "specification is not accessible via any of the operator interface",
+    "devices unless the adapt input is read. Adapted block inputs",
+    "are read by reading the output of the block preceding the block",
+    "of interest."
+  ],
+  "symbol": {
+    "title_raw": "A DA P T",
+    "title": "ADAPT",
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 192.3,
+        "y": 589.14,
+        "s": "(2 4 )"
+      },
+      {
+        "x": 133.86,
+        "y": 587.46,
+        "s": "S 1"
+      },
+      {
+        "x": 158.4,
+        "y": 583.62,
+        "s": "A DA P T"
+      },
+      {
+        "x": 192.3,
+        "y": 580.2,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "N/A",
+      "description": "No significance",
+      "description_lines": [
+        "No significance"
+      ],
+      "manual_page": 103
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input",
+      "description_lines": [
+        "Block address of input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 103
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Address of block containing specification to be adapted",
+      "description_lines": [
+        "Address of block containing specification to be",
+        "adapted"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 103
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 64",
+      "description": "Specification number of specification to be adapted",
+      "description_lines": [
+        "Specification number of specification to be",
+        "adapted"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 103
+    }
+  ],
+  "spec_count": 3,
+  "max_spec_number": 3,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 103,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 103,
+  "manual_pages": [
+    103,
+    104,
+    105
+  ],
+  "manual_section": "Function Code 24 - Adapt",
+  "diagnostics": []
+}

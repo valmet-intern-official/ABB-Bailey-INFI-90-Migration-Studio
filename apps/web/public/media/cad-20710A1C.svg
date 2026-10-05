@@ -1,0 +1,1129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="210" viewBox="130 165 560 210" preserveAspectRatio="xMidYMid meet" data-sheet="20710A1C.CAD">
+<title>20710A1C.CAD</title>
+<rect width="100%" height="100%" fill="#fff"/>
+<g fill="none" stroke="#000" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round" font-family="Courier New, Courier, monospace">
+<path class="frame" data-src="7107LIB1.LBR@6304" d="M755.69 74.23L37.14 74.23L37.14 537.67L755.69 537.67Z"></path>
+<path class="frame" data-src="7107LIB1.LBR@6318" d="M751.44 78.48L41.39 78.48L41.39 533.42L751.44 533.42Z"></path>
+<text class="frame" data-src="7107LIB1.LBR@6332" x="83.91" y="536.61" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">02</text>
+<text class="frame" data-src="7107LIB1.LBR@6352" x="126.43" y="536.61" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">04</text>
+<text class="frame" data-src="7107LIB1.LBR@6372" x="168.95" y="536.61" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">06</text>
+<text class="frame" data-src="7107LIB1.LBR@6392" x="211.46" y="536.61" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">08</text>
+<text class="frame" data-src="7107LIB1.LBR@6412" x="253.98" y="536.61" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">10</text>
+<text class="frame" data-src="7107LIB1.LBR@6432" x="296.5" y="536.61" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">12</text>
+<text class="frame" data-src="7107LIB1.LBR@6452" x="339.02" y="536.61" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">14</text>
+<text class="frame" data-src="7107LIB1.LBR@6472" x="381.53" y="536.61" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">16</text>
+<text class="frame" data-src="7107LIB1.LBR@6492" x="424.05" y="536.61" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">18</text>
+<text class="frame" data-src="7107LIB1.LBR@6512" x="466.57" y="536.61" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">20</text>
+<text class="frame" data-src="7107LIB1.LBR@6532" x="509.09" y="536.61" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">22</text>
+<text class="frame" data-src="7107LIB1.LBR@6552" x="551.6" y="536.61" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">24</text>
+<text class="frame" data-src="7107LIB1.LBR@6572" x="594.12" y="536.61" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">26</text>
+<text class="frame" data-src="7107LIB1.LBR@6592" x="637.7" y="536.61" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">28</text>
+<text class="frame" data-src="7107LIB1.LBR@6612" x="679.16" y="536.61" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">30</text>
+<text class="frame" data-src="7107LIB1.LBR@6632" x="721.67" y="536.61" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">32</text>
+<text class="frame" data-src="7107LIB1.LBR@6652" x="755.05" y="512.16" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 755.05 512.16)" xml:space="preserve">20</text>
+<text class="frame" data-src="7107LIB1.LBR@6672" x="755.05" y="469.64" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 755.05 469.64)" xml:space="preserve">18</text>
+<text class="frame" data-src="7107LIB1.LBR@6692" x="755.05" y="427.13" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 755.05 427.13)" xml:space="preserve">16</text>
+<text class="frame" data-src="7107LIB1.LBR@6712" x="755.05" y="384.61" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 755.05 384.61)" xml:space="preserve">14</text>
+<text class="frame" data-src="7107LIB1.LBR@6732" x="755.05" y="342.09" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 755.05 342.09)" xml:space="preserve">12</text>
+<text class="frame" data-src="7107LIB1.LBR@6752" x="755.05" y="299.57" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 755.05 299.57)" xml:space="preserve">10</text>
+<text class="frame" data-src="7107LIB1.LBR@6772" x="755.05" y="257.06" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 755.05 257.06)" xml:space="preserve">08</text>
+<text class="frame" data-src="7107LIB1.LBR@6792" x="754.84" y="214.54" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 754.84 214.54)" xml:space="preserve">06</text>
+<text class="frame" data-src="7107LIB1.LBR@6812" x="754.84" y="172.02" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 754.84 172.02)" xml:space="preserve">04</text>
+<text class="frame" data-src="7107LIB1.LBR@6832" x="754.84" y="129.5" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 754.84 129.5)" xml:space="preserve">02</text>
+<text class="frame" data-src="7107LIB1.LBR@6852" x="721.67" y="77.42" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">32</text>
+<text class="frame" data-src="7107LIB1.LBR@6872" x="679.16" y="77.42" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">30</text>
+<text class="frame" data-src="7107LIB1.LBR@6892" x="636.64" y="77.42" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">28</text>
+<text class="frame" data-src="7107LIB1.LBR@6912" x="594.12" y="77.42" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">26</text>
+<text class="frame" data-src="7107LIB1.LBR@6932" x="551.6" y="77.42" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">24</text>
+<text class="frame" data-src="7107LIB1.LBR@6952" x="509.09" y="77.42" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">22</text>
+<text class="frame" data-src="7107LIB1.LBR@6972" x="466.57" y="77.42" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">20</text>
+<text class="frame" data-src="7107LIB1.LBR@6992" x="424.05" y="77.42" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">18</text>
+<text class="frame" data-src="7107LIB1.LBR@7012" x="381.53" y="77.42" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">16</text>
+<text class="frame" data-src="7107LIB1.LBR@7032" x="339.02" y="77.42" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">14</text>
+<text class="frame" data-src="7107LIB1.LBR@7052" x="296.5" y="77.42" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">12</text>
+<text class="frame" data-src="7107LIB1.LBR@7072" x="253.98" y="77.42" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">10</text>
+<text class="frame" data-src="7107LIB1.LBR@7092" x="211.46" y="77.42" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">08</text>
+<text class="frame" data-src="7107LIB1.LBR@7112" x="168.95" y="77.42" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">06</text>
+<text class="frame" data-src="7107LIB1.LBR@7132" x="126.43" y="77.42" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">04</text>
+<text class="frame" data-src="7107LIB1.LBR@7152" x="83.91" y="77.42" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">02</text>
+<text class="frame" data-src="7107LIB1.LBR@7172" x="40.76" y="129.5" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 40.76 129.5)" xml:space="preserve">02</text>
+<text class="frame" data-src="7107LIB1.LBR@7192" x="40.76" y="172.02" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 40.76 172.02)" xml:space="preserve">04</text>
+<text class="frame" data-src="7107LIB1.LBR@7212" x="40.76" y="214.54" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 40.76 214.54)" xml:space="preserve">06</text>
+<text class="frame" data-src="7107LIB1.LBR@7232" x="40.76" y="257.06" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 40.76 257.06)" xml:space="preserve">08</text>
+<text class="frame" data-src="7107LIB1.LBR@7252" x="40.76" y="299.57" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 40.76 299.57)" xml:space="preserve">10</text>
+<text class="frame" data-src="7107LIB1.LBR@7272" x="40.76" y="342.09" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 40.76 342.09)" xml:space="preserve">12</text>
+<text class="frame" data-src="7107LIB1.LBR@7292" x="40.76" y="384.61" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 40.76 384.61)" xml:space="preserve">14</text>
+<text class="frame" data-src="7107LIB1.LBR@7312" x="40.76" y="427.13" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 40.76 427.13)" xml:space="preserve">16</text>
+<text class="frame" data-src="7107LIB1.LBR@7332" x="40.76" y="469.64" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 40.76 469.64)" xml:space="preserve">18</text>
+<text class="frame" data-src="7107LIB1.LBR@7352" x="40.76" y="512.16" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 40.76 512.16)" xml:space="preserve">20</text>
+<path class="frame" data-src="7107LIB1.LBR@7372" d="M41.39 459.01L523.97 459.01"></path>
+<path class="frame" data-src="7107LIB1.LBR@4750" d="M617.51 520.67L751.44 520.67"></path>
+<path class="frame" data-src="7107LIB1.LBR@4766" d="M740.81 533.42L740.81 530.23"></path>
+<path class="frame" data-src="7107LIB1.LBR@4782" d="M740.81 524.92L740.81 520.67"></path>
+<path class="frame" data-src="7107LIB1.LBR@4798" d="M669.59 520.67L669.59 524.92"></path>
+<path class="frame" data-src="7107LIB1.LBR@4814" d="M669.59 530.23L669.59 533.42"></path>
+<path class="frame" data-src="7107LIB1.LBR@4830" d="M662.15 533.42L662.15 530.23"></path>
+<path class="frame" data-src="7107LIB1.LBR@4846" d="M662.15 524.92L662.15 520.67"></path>
+<path class="frame" data-src="7107LIB1.LBR@4862" d="M636.64 520.67L636.64 524.92"></path>
+<path class="frame" data-src="7107LIB1.LBR@4878" d="M636.64 530.23L636.64 533.42"></path>
+<path class="frame" data-src="7107LIB1.LBR@4894" d="M627.07 533.42L627.07 530.23"></path>
+<path class="frame" data-src="7107LIB1.LBR@4910" d="M627.07 524.92L627.07 520.67"></path>
+<text class="frame" data-src="7107LIB1.LBR@4926" x="618.57" y="522.79" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">LOC</text>
+<text class="frame" data-src="7107LIB1.LBR@4948" x="628.14" y="522.79" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">SIZE</text>
+<text class="frame" data-src="7107LIB1.LBR@4970" x="637.7" y="522.79" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">S.O. NUMBER</text>
+<text class="frame" data-src="7107LIB1.LBR@5000" x="663.21" y="522.79" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">TYPE</text>
+<text class="frame" data-src="7107LIB1.LBR@5022" x="671.72" y="522.79" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">DRAWING NUMBER</text>
+<text class="frame" data-src="7107LIB1.LBR@5054" x="741.87" y="522.79" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">REV</text>
+<path class="frame" data-src="7107LIB1.LBR@5076" d="M648.33 508.97L619.63 508.97L619.63 501.53L648.33 501.53Z"></path>
+<path class="frame" data-src="7107LIB1.LBR@5090" d="M648.33 508.97L648.33 511.1L619.63 511.1L619.63 508.97"></path>
+<text class="frame" data-src="7107LIB1.LBR@5114" x="629.84" y="510.67" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">CANADA</text>
+<path class="frame" data-src="7107LIB1.LBR@5138" d="M625.58 508.97L625.58 501.53"></path>
+<path class="frame" data-src="7107LIB1.LBR@5154" d="M630.69 501.53L630.69 508.97"></path>
+<path class="frame" data-src="7107LIB1.LBR@5170" d="M633.88 508.97L633.88 501.53"></path>
+<path class="frame" data-src="7107LIB1.LBR@5186" d="M637.28 501.53L637.28 508.97"></path>
+<path class="frame" data-src="7107LIB1.LBR@5202" d="M642.59 508.97L642.59 508.97L642.59 501.53"></path>
+<text class="frame" data-src="7107LIB1.LBR@5222" x="618.57" y="514.29" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">CAD FILE NO.</text>
+<path class="frame" data-src="7107LIB1.LBR@5252" d="M639.83 520.67L639.83 512.16"></path>
+<text class="frame" data-src="7107LIB1.LBR@5268" x="640.89" y="514.29" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">JOB ORDER NO.</text>
+<path class="frame" data-src="7107LIB1.LBR@5300" d="M669.59 520.67L669.59 520.67L669.59 512.16"></path>
+<text class="frame" data-src="7107LIB1.LBR@5320" x="671.72" y="514.29" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">S.O. NO.</text>
+<path class="frame" data-src="7107LIB1.LBR@5346" d="M699.35 512.16L699.35 520.67"></path>
+<text class="frame" data-src="7107LIB1.LBR@5362" x="700.42" y="514.29" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">DATE</text>
+<path class="frame" data-src="7107LIB1.LBR@5384" d="M617.51 498.34L751.44 498.34"></path>
+<text class="frame" data-src="7107LIB1.LBR@5400" x="618.57" y="500.47" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">SUPPLIER</text>
+<text class="frame" data-src="7107LIB1.LBR@5426" x="651.52" y="507.91" font-size="6.38" fill="#000" stroke="none" xml:space="preserve">BAILEY CANADA INC.</text>
+<text class="frame" data-src="7107LIB1.LBR@5462" x="651.73" y="507.91" font-size="6.38" fill="#000" stroke="none" xml:space="preserve">BAILEY CANADA INC.</text>
+<text class="frame" data-src="7107LIB1.LBR@5498" x="651.95" y="507.91" font-size="6.38" fill="#000" stroke="none" xml:space="preserve">BAILEY CANADA INC.</text>
+<text class="frame" data-src="7107LIB1.LBR@5534" x="618.57" y="479.21" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">DESCRIPTION</text>
+<path class="frame" data-src="7107LIB1.LBR@5564" d="M617.51 477.08L751.44 477.08"></path>
+<path class="frame" data-src="7107LIB1.LBR@5580" d="M617.51 459.01L751.44 459.01L751.44 533.42L617.51 533.42Z"></path>
+<text class="frame" data-src="7107LIB1.LBR@5594" x="653.65" y="467.52" font-size="6.38" fill="#000" stroke="none" xml:space="preserve">PT INTI INDORAYON UTAMA</text>
+<text class="frame" data-src="7107LIB1.LBR@5636" x="628.14" y="468.58" font-size="8.5" fill="#000" stroke="none" xml:space="preserve">RGM</text>
+<text class="frame" data-src="7107LIB1.LBR@5658" x="623.88" y="472.83" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">PULP DIVISION</text>
+<text class="frame" data-src="7107LIB1.LBR@5690" x="618.57" y="461.14" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">CUSTOMER</text>
+<path class="frame" data-src="7107LIB1.LBR@5716" d="M619.63 462.2L749.31 462.2L749.31 474.96L619.63 474.96Z"></path>
+<path class="frame" data-src="7107LIB1.LBR@5730" d="M650.46 462.2L650.46 474.96"></path>
+<path class="frame" data-src="7107LIB1.LBR@5746" d="M650.46 469.64L619.63 469.64"></path>
+<text class="frame" data-src="7107LIB1.LBR@5762" x="653.86" y="467.52" font-size="6.38" fill="#000" stroke="none" xml:space="preserve">PT INTI INDORAYON UTAMA</text>
+<text class="frame" data-src="7107LIB1.LBR@5804" x="654.07" y="467.52" font-size="6.38" fill="#000" stroke="none" xml:space="preserve">PT INTI INDORAYON UTAMA</text>
+<text class="frame" data-src="7107LIB1.LBR@5846" x="654.28" y="467.52" font-size="6.38" fill="#000" stroke="none" xml:space="preserve">PT INTI INDORAYON UTAMA</text>
+<text class="frame" data-src="7107LIB1.LBR@5888" x="655.77" y="472.83" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">PORSEA - NORTH SUMATERA - INDONESIA</text>
+<text class="frame" data-src="7107LIB1.LBR@5942" x="655.98" y="472.83" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">PORSEA - NORTH SUMATERA - INDONESIA</text>
+<path class="frame" data-src="7107LIB1.LBR@1058" d="M620.48 507.48L620.48 502.38"></path>
+<path class="frame" data-src="7107LIB1.LBR@1074" d="M623.46 502.38A1.28 1.28 0 1 1 623.25 504.92"/>
+<path class="frame" data-src="7107LIB1.LBR@1092" d="M623.46 504.93A1.28 1.28 0 1 1 623.25 507.47"/>
+<path class="frame" data-src="7107LIB1.LBR@1110" d="M623.46 507.48L620.48 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@1126" d="M620.48 502.38L623.46 502.38"></path>
+<path class="frame" data-src="7107LIB1.LBR@1142" d="M623.25 503.23A0.64 0.64 0 1 1 623.04 504.48"/>
+<path class="frame" data-src="7107LIB1.LBR@1160" d="M623.25 505.36A0.64 0.64 0 1 1 623.04 506.6"/>
+<path class="frame" data-src="7107LIB1.LBR@1178" d="M623.25 505.36L621.76 505.36L621.76 506.63L623.25 506.63"></path>
+<path class="frame" data-src="7107LIB1.LBR@1202" d="M623.25 503.23L621.76 503.23L621.76 504.51L623.25 504.51"></path>
+<path class="frame" data-src="7107LIB1.LBR@1226" d="M620.7 502.38L620.7 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@1242" d="M620.91 502.38L620.91 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@1258" d="M621.12 502.38L621.12 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@1274" d="M621.33 502.38L621.33 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@1290" d="M621.55 502.38L621.55 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@1306" d="M621.76 502.38L621.76 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@1322" d="M621.97 507.48L621.97 506.63"></path>
+<path class="frame" data-src="7107LIB1.LBR@1338" d="M621.97 505.36L621.97 504.51"></path>
+<path class="frame" data-src="7107LIB1.LBR@1354" d="M621.97 503.23L621.97 502.38"></path>
+<path class="frame" data-src="7107LIB1.LBR@1370" d="M622.18 502.38L622.18 503.23"></path>
+<path class="frame" data-src="7107LIB1.LBR@1386" d="M622.18 504.51L622.18 505.36"></path>
+<path class="frame" data-src="7107LIB1.LBR@1402" d="M622.18 506.63L622.18 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@1418" d="M622.4 507.48L622.4 506.63"></path>
+<path class="frame" data-src="7107LIB1.LBR@1434" d="M622.4 505.36L622.4 504.51"></path>
+<path class="frame" data-src="7107LIB1.LBR@1450" d="M622.4 503.23L622.4 502.38"></path>
+<path class="frame" data-src="7107LIB1.LBR@1466" d="M622.61 502.38L622.61 503.23"></path>
+<path class="frame" data-src="7107LIB1.LBR@1482" d="M622.61 504.51L622.61 505.36"></path>
+<path class="frame" data-src="7107LIB1.LBR@1498" d="M622.61 506.63L622.61 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@1514" d="M622.82 507.48L622.82 506.63"></path>
+<path class="frame" data-src="7107LIB1.LBR@1530" d="M622.82 505.36L622.82 504.51"></path>
+<path class="frame" data-src="7107LIB1.LBR@1546" d="M622.82 503.23L622.82 502.38"></path>
+<path class="frame" data-src="7107LIB1.LBR@1562" d="M623.03 503.23L623.03 502.38"></path>
+<path class="frame" data-src="7107LIB1.LBR@1578" d="M623.25 503.23L623.25 502.38"></path>
+<path class="frame" data-src="7107LIB1.LBR@1594" d="M623.46 503.23L623.46 502.38"></path>
+<path class="frame" data-src="7107LIB1.LBR@1610" d="M623.46 505.36L623.46 504.51"></path>
+<path class="frame" data-src="7107LIB1.LBR@1626" d="M623.25 505.36L623.25 504.51"></path>
+<path class="frame" data-src="7107LIB1.LBR@1642" d="M623.03 505.36L623.03 504.51"></path>
+<path class="frame" data-src="7107LIB1.LBR@1658" d="M623.03 507.48L623.03 506.63"></path>
+<path class="frame" data-src="7107LIB1.LBR@1674" d="M623.25 507.48L623.25 506.63"></path>
+<path class="frame" data-src="7107LIB1.LBR@1690" d="M623.46 507.48L623.46 506.63"></path>
+<path class="frame" data-src="7107LIB1.LBR@1706" d="M623.67 507.48L623.67 506.42"></path>
+<path class="frame" data-src="7107LIB1.LBR@1722" d="M623.67 504.3L623.67 505.57"></path>
+<path class="frame" data-src="7107LIB1.LBR@1738" d="M623.67 502.38L623.67 503.45"></path>
+<path class="frame" data-src="7107LIB1.LBR@1754" d="M623.88 502.6L623.88 504.72"></path>
+<path class="frame" data-src="7107LIB1.LBR@1770" d="M623.88 505.15L623.88 507.27"></path>
+<path class="frame" data-src="7107LIB1.LBR@1786" d="M624.1 507.27L624.1 505.15"></path>
+<path class="frame" data-src="7107LIB1.LBR@1802" d="M624.1 504.72L624.1 502.6"></path>
+<path class="frame" data-src="7107LIB1.LBR@1818" d="M624.31 502.81L624.31 504.72"></path>
+<path class="frame" data-src="7107LIB1.LBR@1834" d="M624.31 505.36L624.31 507.27"></path>
+<path class="frame" data-src="7107LIB1.LBR@1850" d="M624.52 506.85L624.52 505.57"></path>
+<path class="frame" data-src="7107LIB1.LBR@1866" d="M624.52 504.3L624.52 503.02"></path>
+<path class="frame" data-src="7107LIB1.LBR@1882" d="M626.22 505.15L626.44 504.3"></path>
+<path class="frame" data-src="7107LIB1.LBR@1898" d="M629.2 504.3A0.85 0.85 0 0 1 630.05 505.15"/>
+<path class="frame" data-src="7107LIB1.LBR@1916" d="M630.05 505.15L630.05 507.48L628.99 507.48L628.99 507.27"></path>
+<path class="frame" data-src="7107LIB1.LBR@1940" d="M626.22 505.15A3.25 3.25 0 0 1 629.2 504.93"/>
+<path class="frame" data-src="7107LIB1.LBR@1958" d="M628.99 507.27A2.57 2.57 0 0 1 627.73 507.49"/>
+<path class="frame" data-src="7107LIB1.LBR@1976" d="M627.71 507.48A1.29 1.29 0 0 1 626.42 506.93"/>
+<path class="frame" data-src="7107LIB1.LBR@1994" d="M626.44 507.06A1.06 1.06 0 0 1 626.22 506.42"/>
+<path class="frame" data-src="7107LIB1.LBR@2012" d="M629.2 504.93A0.3 0.3 0 0 1 628.99 505.45"/>
+<path class="frame" data-src="7107LIB1.LBR@2030" d="M627.5 505.57A2.17 2.17 0 0 1 628.14 505.54"/>
+<path class="frame" data-src="7107LIB1.LBR@2048" d="M629.2 506A1.28 1.28 0 0 1 628.92 506.79"/>
+<path class="frame" data-src="7107LIB1.LBR@2066" d="M627.29 507.06A0.43 0.43 0 0 1 627.29 506.21"/>
+<path class="frame" data-src="7107LIB1.LBR@2084" d="M628.99 506.63A2.59 2.59 0 0 1 627.1 507.07"/>
+<path class="frame" data-src="7107LIB1.LBR@2102" d="M626.44 504.93L626.44 504.3"></path>
+<path class="frame" data-src="7107LIB1.LBR@2118" d="M626.65 504.3L626.65 504.93"></path>
+<path class="frame" data-src="7107LIB1.LBR@2134" d="M626.86 504.72L626.86 504.3"></path>
+<path class="frame" data-src="7107LIB1.LBR@2150" d="M627.07 504.08L627.07 504.72"></path>
+<path class="frame" data-src="7107LIB1.LBR@2166" d="M627.29 504.72L627.29 504.08"></path>
+<path class="frame" data-src="7107LIB1.LBR@2182" d="M627.5 504.08L627.5 504.72"></path>
+<path class="frame" data-src="7107LIB1.LBR@2198" d="M627.71 504.51L627.71 504.08"></path>
+<path class="frame" data-src="7107LIB1.LBR@2214" d="M627.92 504.08L627.92 504.72"></path>
+<path class="frame" data-src="7107LIB1.LBR@2230" d="M628.14 504.72L628.14 504.08"></path>
+<path class="frame" data-src="7107LIB1.LBR@2246" d="M628.35 504.08L628.35 504.72"></path>
+<path class="frame" data-src="7107LIB1.LBR@2262" d="M628.56 504.08L628.56 504.72"></path>
+<path class="frame" data-src="7107LIB1.LBR@2278" d="M628.77 504.72L628.77 504.3"></path>
+<path class="frame" data-src="7107LIB1.LBR@2294" d="M628.99 504.3L628.99 504.93"></path>
+<path class="frame" data-src="7107LIB1.LBR@2310" d="M629.2 504.93L629.2 504.3"></path>
+<path class="frame" data-src="7107LIB1.LBR@2326" d="M629.41 504.3L629.41 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@2342" d="M629.2 507.48L629.2 505.36"></path>
+<path class="frame" data-src="7107LIB1.LBR@2358" d="M628.99 505.57L628.99 506"></path>
+<path class="frame" data-src="7107LIB1.LBR@2374" d="M628.77 505.78L628.77 505.57"></path>
+<path class="frame" data-src="7107LIB1.LBR@2390" d="M628.56 505.57L628.56 506"></path>
+<path class="frame" data-src="7107LIB1.LBR@2406" d="M628.35 506L628.35 505.57"></path>
+<path class="frame" data-src="7107LIB1.LBR@2422" d="M628.14 505.57L628.14 506"></path>
+<path class="frame" data-src="7107LIB1.LBR@2438" d="M627.92 506L627.92 505.57"></path>
+<path class="frame" data-src="7107LIB1.LBR@2454" d="M627.71 505.57L627.71 506"></path>
+<path class="frame" data-src="7107LIB1.LBR@2470" d="M627.5 505.57L627.5 506.21"></path>
+<path class="frame" data-src="7107LIB1.LBR@2486" d="M627.29 506.21L627.29 505.57"></path>
+<path class="frame" data-src="7107LIB1.LBR@2502" d="M626.22 506.42A0.88 0.88 0 0 1 626.86 505.78"/>
+<path class="frame" data-src="7107LIB1.LBR@2520" d="M626.86 505.78L626.86 507.27"></path>
+<path class="frame" data-src="7107LIB1.LBR@2536" d="M626.65 507.27L626.65 505.78"></path>
+<path class="frame" data-src="7107LIB1.LBR@2552" d="M626.44 506L626.44 507.06"></path>
+<path class="frame" data-src="7107LIB1.LBR@2568" d="M627.07 507.48L627.07 507.06"></path>
+<path class="frame" data-src="7107LIB1.LBR@2584" d="M627.07 506.21L627.07 505.78"></path>
+<path class="frame" data-src="7107LIB1.LBR@2600" d="M627.29 507.48L627.29 507.06"></path>
+<path class="frame" data-src="7107LIB1.LBR@2616" d="M627.5 507.06L627.5 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@2632" d="M627.71 507.48L627.71 507.06"></path>
+<path class="frame" data-src="7107LIB1.LBR@2648" d="M627.92 507.06L627.92 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@2664" d="M628.14 507.48L628.14 507.06L628.35 507.06L628.35 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@2688" d="M628.56 507.48L628.56 506.85"></path>
+<path class="frame" data-src="7107LIB1.LBR@2704" d="M628.77 506.85L628.77 507.27"></path>
+<path class="frame" data-src="7107LIB1.LBR@2720" d="M628.99 506.63L628.99 507.27"></path>
+<path class="frame" data-src="7107LIB1.LBR@2736" d="M629.62 507.48L629.62 504.51"></path>
+<path class="frame" data-src="7107LIB1.LBR@2752" d="M629.84 504.72L629.84 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@2768" d="M631.75 504.08L632.81 504.08L632.81 507.48L631.96 507.48L631.75 507.48L631.75 504.08"></path>
+<path class="frame" data-src="7107LIB1.LBR@2800" d="M631.96 504.08L631.96 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@2816" d="M632.18 504.08L632.18 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@2832" d="M632.39 504.08L632.39 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@2848" d="M632.6 504.08L632.6 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@2864" d="M631.75 502.38L632.81 502.38L632.81 503.45L631.75 503.45L631.75 502.38"></path>
+<path class="frame" data-src="7107LIB1.LBR@2892" d="M631.96 502.38L631.96 503.45"></path>
+<path class="frame" data-src="7107LIB1.LBR@2908" d="M632.18 502.38L632.18 503.45"></path>
+<path class="frame" data-src="7107LIB1.LBR@2924" d="M632.39 502.38L632.39 503.45"></path>
+<path class="frame" data-src="7107LIB1.LBR@2940" d="M632.6 502.38L632.6 503.45"></path>
+<path class="frame" data-src="7107LIB1.LBR@2990" d="M635.15 507.48L635.15 502.38L636.21 502.38L636.21 507.48L635.15 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@3018" d="M635.36 507.48L635.36 502.38"></path>
+<path class="frame" data-src="7107LIB1.LBR@3034" d="M635.58 507.48L635.58 502.38"></path>
+<path class="frame" data-src="7107LIB1.LBR@3050" d="M635.79 507.48L635.79 502.38"></path>
+<path class="frame" data-src="7107LIB1.LBR@3066" d="M636 507.48L636 502.38"></path>
+<path class="frame" data-src="7107LIB1.LBR@3082" d="M641.95 506.21L641.74 507.06"></path>
+<path class="frame" data-src="7107LIB1.LBR@3098" d="M641.95 505.78L638.98 505.78"></path>
+<path class="frame" data-src="7107LIB1.LBR@3114" d="M641.53 504.08A1.06 1.06 0 0 1 641.92 505.19"/>
+<path class="frame" data-src="7107LIB1.LBR@3132" d="M641.95 504.93L641.95 505.57"></path>
+<path class="frame" data-src="7107LIB1.LBR@3148" d="M638.13 504.93A1.06 1.06 0 0 1 638.55 504.08"/>
+<path class="frame" data-src="7107LIB1.LBR@3166" d="M638.55 504.08A2.57 2.57 0 0 1 639.62 503.85"/>
+<path class="frame" data-src="7107LIB1.LBR@3184" d="M640.68 503.87A1.29 1.29 0 0 1 641.56 504.04"/>
+<path class="frame" data-src="7107LIB1.LBR@3202" d="M638.98 505.15L641.1 505.15"></path>
+<path class="frame" data-src="7107LIB1.LBR@3218" d="M640.89 504.51A0.6 0.6 0 0 1 641 505.2"/>
+<path class="frame" data-src="7107LIB1.LBR@3236" d="M638.98 504.93A0.64 0.64 0 0 1 639.09 504.58"/>
+<path class="frame" data-src="7107LIB1.LBR@3254" d="M639.19 504.51A1.53 1.53 0 0 1 641 504.59"/>
+<path class="frame" data-src="7107LIB1.LBR@3272" d="M638.77 507.06A1.53 1.53 0 0 1 638.13 506.16"/>
+<path class="frame" data-src="7107LIB1.LBR@3290" d="M641.74 507.06A4.3 4.3 0 0 1 638.83 507.08"/>
+<path class="frame" data-src="7107LIB1.LBR@3308" d="M641.95 506.21A3.72 3.72 0 0 1 640.25 506.73"/>
+<path class="frame" data-src="7107LIB1.LBR@3326" d="M640.68 506.63A1.34 1.34 0 0 1 638.96 505.73"/>
+<path class="frame" data-src="7107LIB1.LBR@3344" d="M638.34 504.3L638.34 506.63"></path>
+<path class="frame" data-src="7107LIB1.LBR@3360" d="M638.13 506.21L638.13 504.93"></path>
+<path class="frame" data-src="7107LIB1.LBR@3376" d="M638.55 504.08L638.55 506.85"></path>
+<path class="frame" data-src="7107LIB1.LBR@3392" d="M638.77 507.06L638.77 504.08"></path>
+<path class="frame" data-src="7107LIB1.LBR@3408" d="M638.98 503.87L638.98 507.06"></path>
+<path class="frame" data-src="7107LIB1.LBR@3424" d="M639.19 507.06L639.19 506.21"></path>
+<path class="frame" data-src="7107LIB1.LBR@3440" d="M639.19 503.87L639.19 504.51"></path>
+<path class="frame" data-src="7107LIB1.LBR@3456" d="M639.4 504.3L639.4 503.87"></path>
+<path class="frame" data-src="7107LIB1.LBR@3472" d="M639.62 503.87L639.62 504.3"></path>
+<path class="frame" data-src="7107LIB1.LBR@3488" d="M639.83 504.3L639.83 503.87"></path>
+<path class="frame" data-src="7107LIB1.LBR@3504" d="M640.04 503.87L640.04 504.3"></path>
+<path class="frame" data-src="7107LIB1.LBR@3520" d="M640.25 504.3L640.25 503.87"></path>
+<path class="frame" data-src="7107LIB1.LBR@3536" d="M640.47 503.87L640.47 504.3"></path>
+<path class="frame" data-src="7107LIB1.LBR@3552" d="M640.68 504.3L640.68 503.87"></path>
+<path class="frame" data-src="7107LIB1.LBR@3568" d="M640.89 503.87L640.89 504.51"></path>
+<path class="frame" data-src="7107LIB1.LBR@3584" d="M641.1 504.72L641.1 503.87"></path>
+<path class="frame" data-src="7107LIB1.LBR@3600" d="M641.32 503.87L641.32 505.57"></path>
+<path class="frame" data-src="7107LIB1.LBR@3616" d="M641.53 505.57L641.53 504.08"></path>
+<path class="frame" data-src="7107LIB1.LBR@3632" d="M641.74 504.3L641.74 505.57"></path>
+<path class="frame" data-src="7107LIB1.LBR@3648" d="M639.19 507.06L639.19 507.27"></path>
+<path class="frame" data-src="7107LIB1.LBR@3664" d="M639.4 507.27L639.4 506.42"></path>
+<path class="frame" data-src="7107LIB1.LBR@3680" d="M639.62 506.63L639.62 507.27"></path>
+<path class="frame" data-src="7107LIB1.LBR@3696" d="M639.83 506.63L639.83 507.27"></path>
+<path class="frame" data-src="7107LIB1.LBR@3712" d="M640.04 507.27L640.04 506.63"></path>
+<path class="frame" data-src="7107LIB1.LBR@3728" d="M640.25 506.85L640.25 507.27"></path>
+<path class="frame" data-src="7107LIB1.LBR@3744" d="M640.47 507.27L640.47 506.63"></path>
+<path class="frame" data-src="7107LIB1.LBR@3760" d="M640.68 506.63L640.68 507.27"></path>
+<path class="frame" data-src="7107LIB1.LBR@3776" d="M640.89 507.27L640.89 506.63"></path>
+<path class="frame" data-src="7107LIB1.LBR@3792" d="M641.1 506.63L641.1 507.27"></path>
+<path class="frame" data-src="7107LIB1.LBR@3808" d="M641.32 506.63L641.32 507.27"></path>
+<path class="frame" data-src="7107LIB1.LBR@3824" d="M641.53 507.06L641.53 506.42"></path>
+<path class="frame" data-src="7107LIB1.LBR@3840" d="M641.74 506.42L641.74 507.06"></path>
+<path class="frame" data-src="7107LIB1.LBR@3856" d="M641.95 505.78L641.95 505.36"></path>
+<path class="frame" data-src="7107LIB1.LBR@3872" d="M641.74 505.15L641.74 505.78"></path>
+<path class="frame" data-src="7107LIB1.LBR@3888" d="M639.19 505.78L639.19 505.15"></path>
+<path class="frame" data-src="7107LIB1.LBR@3904" d="M639.4 505.78L639.4 505.15"></path>
+<path class="frame" data-src="7107LIB1.LBR@3920" d="M639.62 505.78L639.62 505.15"></path>
+<path class="frame" data-src="7107LIB1.LBR@3936" d="M639.83 505.78L639.83 505.15"></path>
+<path class="frame" data-src="7107LIB1.LBR@3952" d="M640.04 505.78L640.04 505.15"></path>
+<path class="frame" data-src="7107LIB1.LBR@3968" d="M640.25 505.78L640.25 505.15"></path>
+<path class="frame" data-src="7107LIB1.LBR@3984" d="M640.47 505.78L640.47 505.15"></path>
+<path class="frame" data-src="7107LIB1.LBR@4000" d="M640.68 505.78L640.68 505.15"></path>
+<path class="frame" data-src="7107LIB1.LBR@4016" d="M640.89 505.78L640.89 505.15"></path>
+<path class="frame" data-src="7107LIB1.LBR@4032" d="M641.1 505.78L641.1 505.15"></path>
+<path class="frame" data-src="7107LIB1.LBR@4048" d="M641.32 505.78L641.32 505.15"></path>
+<path class="frame" data-src="7107LIB1.LBR@4064" d="M641.53 505.78L641.53 505.15"></path>
+<path class="frame" data-src="7107LIB1.LBR@4080" d="M643.44 503.87L644.51 503.87"></path>
+<path class="frame" data-src="7107LIB1.LBR@4096" d="M647.69 503.87L646.63 503.87"></path>
+<path class="frame" data-src="7107LIB1.LBR@4112" d="M645.57 505.57L646.63 503.87"></path>
+<path class="frame" data-src="7107LIB1.LBR@4128" d="M645.57 505.57L644.51 503.87"></path>
+<path class="frame" data-src="7107LIB1.LBR@4144" d="M645.14 506.63L643.44 503.87"></path>
+<path class="frame" data-src="7107LIB1.LBR@4160" d="M645.57 507.27L645.14 506.63"></path>
+<path class="frame" data-src="7107LIB1.LBR@4176" d="M645.57 507.27L647.69 503.87"></path>
+<path class="frame" data-src="7107LIB1.LBR@4192" d="M644.72 507.48L643.44 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@4208" d="M643.44 507.48L643.44 508.33L644.29 508.33"></path>
+<path class="frame" data-src="7107LIB1.LBR@4228" d="M645.57 507.27A1.29 1.29 0 0 1 644.29 508.35"/>
+<path class="frame" data-src="7107LIB1.LBR@4246" d="M645.36 507.7L647.69 503.87"></path>
+<path class="frame" data-src="7107LIB1.LBR@4262" d="M644.93 506.42A0.85 0.85 0 0 1 644.29 507.25"/>
+<path class="frame" data-src="7107LIB1.LBR@4280" d="M644.29 507.27L643.44 507.27L643.44 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@4300" d="M643.65 507.27L643.65 508.33"></path>
+<path class="frame" data-src="7107LIB1.LBR@4316" d="M643.87 507.27L643.87 508.33"></path>
+<path class="frame" data-src="7107LIB1.LBR@4332" d="M644.08 507.27L644.08 508.33"></path>
+<path class="frame" data-src="7107LIB1.LBR@4348" d="M644.29 507.27L644.29 508.33"></path>
+<path class="frame" data-src="7107LIB1.LBR@4364" d="M644.51 507.27L644.51 508.33"></path>
+<path class="frame" data-src="7107LIB1.LBR@4380" d="M644.72 507.06L644.72 508.33"></path>
+<path class="frame" data-src="7107LIB1.LBR@4396" d="M644.93 508.12L644.93 506.42"></path>
+<path class="frame" data-src="7107LIB1.LBR@4412" d="M643.65 503.87L643.65 504.3"></path>
+<path class="frame" data-src="7107LIB1.LBR@4428" d="M643.87 504.51L643.87 503.87"></path>
+<path class="frame" data-src="7107LIB1.LBR@4444" d="M644.08 503.87L644.08 504.93"></path>
+<path class="frame" data-src="7107LIB1.LBR@4460" d="M644.29 505.15L644.29 503.87"></path>
+<path class="frame" data-src="7107LIB1.LBR@4476" d="M644.51 503.87L644.51 505.57"></path>
+<path class="frame" data-src="7107LIB1.LBR@4492" d="M644.72 505.78L644.72 504.3"></path>
+<path class="frame" data-src="7107LIB1.LBR@4508" d="M644.93 504.51L644.93 506.21"></path>
+<path class="frame" data-src="7107LIB1.LBR@4524" d="M645.14 507.91L645.14 504.93"></path>
+<path class="frame" data-src="7107LIB1.LBR@4540" d="M645.36 505.15L645.36 507.7"></path>
+<path class="frame" data-src="7107LIB1.LBR@4556" d="M645.57 505.57L645.57 507.48"></path>
+<path class="frame" data-src="7107LIB1.LBR@4572" d="M645.78 507.06L645.78 505.36"></path>
+<path class="frame" data-src="7107LIB1.LBR@4588" d="M645.99 504.93L645.99 506.63"></path>
+<path class="frame" data-src="7107LIB1.LBR@4604" d="M646.21 506.21L646.21 504.51"></path>
+<path class="frame" data-src="7107LIB1.LBR@4620" d="M646.42 504.3L646.42 506"></path>
+<path class="frame" data-src="7107LIB1.LBR@4636" d="M646.63 505.57L646.63 503.87"></path>
+<path class="frame" data-src="7107LIB1.LBR@4652" d="M646.84 503.87L646.84 505.15"></path>
+<path class="frame" data-src="7107LIB1.LBR@4668" d="M647.06 504.93L647.06 503.87"></path>
+<path class="frame" data-src="7107LIB1.LBR@4684" d="M647.27 503.87L647.27 504.51"></path>
+<path class="frame" data-src="7107LIB1.LBR@4700" d="M647.48 503.87L647.48 504.3"></path>
+<text class="frame" data-src="7107LIB1.LBR@6096" x="628.35" y="468.58" font-size="8.5" fill="#000" stroke="none" xml:space="preserve">RGM</text>
+<text class="frame" data-src="7107LIB1.LBR@6118" x="628.56" y="468.58" font-size="8.5" fill="#000" stroke="none" xml:space="preserve">RGM</text>
+<path class="frame" data-src="7107LIB1.LBR@6140" d="M724.86 498.34L724.86 520.67"></path>
+<path class="frame" data-src="7107LIB1.LBR@6156" d="M724.86 505.78L751.44 505.78"></path>
+<path class="frame" data-src="7107LIB1.LBR@6172" d="M724.86 512.16L617.51 512.16"></path>
+<path class="frame" data-src="7107LIB1.LBR@6188" d="M724.86 513.22L751.44 513.22"></path>
+<text class="frame" data-src="7107LIB1.LBR@6204" x="725.93" y="500.47" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">DWN:</text>
+<text class="frame" data-src="7107LIB1.LBR@6226" x="725.93" y="507.91" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">CHK:</text>
+<text class="frame" data-src="7107LIB1.LBR@6248" x="725.93" y="515.35" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">APV:</text>
+<text class="frame" data-src="7107LIB1.LBR@7852" x="610.07" y="462.2" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">APVD</text>
+<text class="frame" data-src="7107LIB1.LBR@7874" x="561.17" y="462.2" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">REASON FOR CHANGE</text>
+<text class="frame" data-src="7107LIB1.LBR@7910" x="533.53" y="462.2" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">DATE OF CHANGE</text>
+<text class="frame" data-src="7107LIB1.LBR@7942" x="523.97" y="462.2" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">REV</text>
+<path class="frame" data-src="7107LIB1.LBR@7964" d="M521.84 459.01L617.51 459.01L617.51 515.35L521.84 515.35Z"></path>
+<path class="frame" data-src="7107LIB1.LBR@7978" d="M606.88 515.35L606.88 459.01"></path>
+<path class="frame" data-src="7107LIB1.LBR@7994" d="M555.86 459.01L555.86 515.35"></path>
+<path class="frame" data-src="7107LIB1.LBR@8010" d="M530.35 515.35L530.35 459.01"></path>
+<path class="frame" data-src="7107LIB1.LBR@8026" d="M521.84 464.33L617.51 464.33"></path>
+<path class="frame" data-src="7107LIB1.LBR@8042" d="M617.51 468.58L521.84 468.58"></path>
+<path class="frame" data-src="7107LIB1.LBR@8058" d="M521.84 472.83L617.51 472.83"></path>
+<path class="frame" data-src="7107LIB1.LBR@8074" d="M617.51 477.08L521.84 477.08"></path>
+<path class="frame" data-src="7107LIB1.LBR@8090" d="M521.84 481.34L617.51 481.34"></path>
+<path class="frame" data-src="7107LIB1.LBR@8106" d="M617.51 485.59L521.84 485.59"></path>
+<path class="frame" data-src="7107LIB1.LBR@8122" d="M521.84 489.84L617.51 489.84"></path>
+<path class="frame" data-src="7107LIB1.LBR@8138" d="M617.51 494.09L521.84 494.09"></path>
+<path class="frame" data-src="7107LIB1.LBR@8154" d="M521.84 498.34L617.51 498.34"></path>
+<path class="frame" data-src="7107LIB1.LBR@8170" d="M617.51 502.6L521.84 502.6"></path>
+<path class="frame" data-src="7107LIB1.LBR@8186" d="M521.84 506.85L617.51 506.85"></path>
+<path class="frame" data-src="7107LIB1.LBR@8202" d="M617.51 511.1L521.84 511.1"></path>
+<path class="frame" data-src="7107LIB1.LBR@8218" d="M598.37 515.35L598.37 459.01"></path>
+<path class="frame" data-src="7107LIB1.LBR@8234" d="M589.87 515.35L589.87 459.01"></path>
+<text class="frame" data-src="7107LIB1.LBR@8250" x="592" y="462.2" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">DWN</text>
+<text class="frame" data-src="7107LIB1.LBR@8272" x="600.5" y="462.2" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">CHK</text>
+<path class="frame" data-src="7107LIB1.LBR@7488" d="M521.84 515.35L521.84 533.42"></path>
+<text class="frame" data-src="7107LIB1.LBR@7504" x="525.03" y="520.03" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">THIS DRAWING  IS THE  PROPERTY OF BAILEY CANADA INC. NEITHER</text>
+<text class="frame" data-src="7107LIB1.LBR@7582" x="525.03" y="523.22" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">THE  DRAWING , NOR  REPRODUCTIONS   OF IT , NOR  INFORMATION</text>
+<text class="frame" data-src="7107LIB1.LBR@7660" x="525.03" y="526.4" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">DERIVED  FROM IT  IS TO BE GIVEN TO OTHERS . NO USE IS TO BE</text>
+<text class="frame" data-src="7107LIB1.LBR@7738" x="525.03" y="529.59" font-size="2.13" fill="#000" stroke="none" xml:space="preserve">MADE OF IT WHICH IS OR MAY BE INJURIOUS TO BAILEY CANADA INC.</text>
+<path class="frame component" data-src="7107LIB1.LBR@8328" d="M617.51 459.01L617.51 78.48"></path>
+<path class="frame component" data-src="7107LIB1.LBR@8344" d="M664.28 459.01L664.28 78.48"></path>
+<path class="frame component" data-src="7107LIB1.LBR@8360" d="M651.52 459.01L651.52 78.48" stroke-dasharray="5,2"></path>
+<path class="frame component" data-src="7107LIB1.LBR@8376" d="M183.83 459.01L183.83 78.48"></path>
+<path class="frame component" data-src="7107LIB1.LBR@8392" d="M149.81 459.01L149.81 78.48" stroke-dasharray="5,2"></path>
+<path class="frame component" data-src="7107LIB1.LBR@8408" d="M137.06 459.01L137.06 78.48"></path>
+<path class="wire explicit" data-src="20710A1C.CAD@740" data-connection-id="20710A1C:W17" d="M328.39 276.19L375.16 276.19"></path>
+<path class="wire explicit" data-src="20710A1C.CAD@756" data-connection-id="20710A1C:W18" d="M375.16 263.43L256.11 263.43"></path>
+<path class="wire explicit" data-src="20710A1C.CAD@844" data-connection-id="20710A1C:W19" d="M409.17 284.69L436.81 284.69L436.81 246.43L277.37 246.43L277.37 284.69L294.37 284.69" stroke-dasharray="2.2,1.4"></path>
+<path class="wire explicit" data-src="20710A1C.CAD@876" data-connection-id="20710A1C:W20" d="M409.17 267.69L430.43 267.69L430.43 250.68L281.62 250.68L281.62 271.94L294.37 271.94"></path>
+<path class="wire explicit" data-src="20710A1C.CAD@942" data-connection-id="20710A1C:W21" d="M443.18 276.19L443.18 242.18L273.11 242.18L273.11 280.44L294.37 280.44"></path>
+<path class="wire explicit" data-src="20710A1C.CAD@1128" data-connection-id="20710A1C:W22" d="M358.15 327.21L358.15 280.44L375.16 280.44"></path>
+<path class="wire explicit" data-src="20710A1C.CAD@1222" data-connection-id="20710A1C:W23" d="M256.11 276.19L196.58 276.19"></path>
+<path class="wire explicit" data-src="20710A1C.CAD@1238" data-connection-id="20710A1C:W24" d="M294.37 276.19L256.11 276.19"></path>
+<path class="wire explicit" data-src="20710A1C.CAD@1328" data-connection-id="20710A1C:W25" d="M358.15 327.21L196.58 327.21"></path>
+<path class="wire explicit" data-src="20710A1C.CAD@1344" data-connection-id="20710A1C:W26" d="M375.16 327.21L358.15 327.21"></path>
+<path class="wire explicit" data-src="20710A1C.CAD@1470" data-connection-id="20710A1C:W27" d="M196.58 299.57L294.37 299.57" stroke-dasharray="2.2,1.4"></path>
+<path class="wire explicit" data-src="20710A1C.CAD@1486" data-connection-id="20710A1C:W28" d="M319.88 303.83L362.4 303.83L362.4 284.69L375.16 284.69" stroke-dasharray="2.2,1.4"></path>
+<path class="wire explicit" data-src="20710A1C.CAD@1666" data-connection-id="20710A1C:W29" d="M443.18 276.19L409.17 276.19"></path>
+<path class="wire explicit" data-src="20710A1C.CAD@1682" data-connection-id="20710A1C:W30" d="M485.7 276.19L443.18 276.19"></path>
+<path class="wire explicit" data-src="20710A1C.CAD@1698" data-connection-id="20710A1C:W31" d="M519.72 276.19L604.75 276.19"></path>
+<path class="wire explicit" data-src="20710A1C.CAD@1714" data-connection-id="20710A1C:W32" d="M485.7 280.44L481.45 280.44L481.45 291.07L472.95 291.07"></path>
+<path class="wire explicit" data-src="20710A1C.CAD@1738" data-connection-id="20710A1C:W33" d="M256.11 263.43L256.11 276.19"></path>
+<path class="wire explicit" data-src="20710A1C.CAD@1754" data-connection-id="20710A1C:W34" d="M375.16 229.42L256.11 229.42L256.11 263.43"></path>
+<path class="block fallback fam-controller" data-src="20710A1C.CAD@704" data-block-id="20710A1C:B3" d="M293.31 287.88L332.43 287.88L332.43 266.62L293.31 266.62Z"></path>
+<path class="pin connected" data-src="20710A1C.CAD@704" data-block-id="20710A1C:B3" d="M294.37 271.94L293.31 271.94"></path>
+<path class="pin-arrow" data-src="20710A1C.CAD@704" data-block-id="20710A1C:B3" d="M293.31 271.94L290.33 270.66L290.33 273.21Z" fill="#000"></path>
+<path class="pin connected" data-src="20710A1C.CAD@704" data-block-id="20710A1C:B3" d="M294.37 276.19L293.31 276.19"></path>
+<path class="pin-arrow" data-src="20710A1C.CAD@704" data-block-id="20710A1C:B3" d="M293.31 276.19L290.33 274.91L290.33 277.46Z" fill="#000"></path>
+<path class="pin connected" data-src="20710A1C.CAD@704" data-block-id="20710A1C:B3" d="M294.37 280.44L293.31 280.44"></path>
+<path class="pin-arrow" data-src="20710A1C.CAD@704" data-block-id="20710A1C:B3" d="M293.31 280.44L290.33 279.17L290.33 281.72Z" fill="#000"></path>
+<path class="pin connected" data-src="20710A1C.CAD@704" data-block-id="20710A1C:B3" d="M294.37 284.69L293.31 284.69"></path>
+<path class="pin-arrow" data-src="20710A1C.CAD@704" data-block-id="20710A1C:B3" d="M293.31 284.69L290.33 283.42L290.33 285.97Z" fill="#000"></path>
+<path class="pin connected" data-src="20710A1C.CAD@704" data-block-id="20710A1C:B3" d="M328.39 276.19L332.43 276.19"></path>
+<path class="block fallback fam-station" data-src="20710A1C.CAD@772" data-block-id="20710A1C:B4" d="M371.97 339.97L411.72 339.97L411.72 258.12L371.97 258.12Z"></path>
+<path class="pin connected" data-src="20710A1C.CAD@772" data-block-id="20710A1C:B4" d="M375.16 263.43L371.97 263.43"></path>
+<path class="pin-arrow" data-src="20710A1C.CAD@772" data-block-id="20710A1C:B4" d="M371.97 263.43L368.99 262.16L368.99 264.71Z" fill="#000"></path>
+<path class="pin connected" data-src="20710A1C.CAD@772" data-block-id="20710A1C:B4" d="M375.16 276.19L371.97 276.19"></path>
+<path class="pin-arrow" data-src="20710A1C.CAD@772" data-block-id="20710A1C:B4" d="M371.97 276.19L368.99 274.91L368.99 277.46Z" fill="#000"></path>
+<path class="pin connected" data-src="20710A1C.CAD@772" data-block-id="20710A1C:B4" d="M375.16 280.44L371.97 280.44"></path>
+<path class="pin-arrow" data-src="20710A1C.CAD@772" data-block-id="20710A1C:B4" d="M371.97 280.44L368.99 279.17L368.99 281.72Z" fill="#000"></path>
+<path class="pin connected" data-src="20710A1C.CAD@772" data-block-id="20710A1C:B4" d="M375.16 284.69L371.97 284.69"></path>
+<path class="pin-arrow" data-src="20710A1C.CAD@772" data-block-id="20710A1C:B4" d="M371.97 284.69L368.99 283.42L368.99 285.97Z" fill="#000"></path>
+<path class="pin connected" data-src="20710A1C.CAD@772" data-block-id="20710A1C:B4" d="M375.16 327.21L371.97 327.21"></path>
+<path class="pin-arrow" data-src="20710A1C.CAD@772" data-block-id="20710A1C:B4" d="M371.97 327.21L368.99 325.93L368.99 328.49Z" fill="#000"></path>
+<path class="pin connected" data-src="20710A1C.CAD@772" data-block-id="20710A1C:B4" d="M409.17 267.69L411.72 267.69"></path>
+<path class="pin connected" data-src="20710A1C.CAD@772" data-block-id="20710A1C:B4" d="M409.17 276.19L411.72 276.19"></path>
+<path class="pin connected" data-src="20710A1C.CAD@772" data-block-id="20710A1C:B4" d="M409.17 284.69L411.72 284.69"></path>
+<path class="block fallback fam-generic" data-src="20710A1C.CAD@808" data-block-id="20710A1C:B5" d="M374.09 237.92L411.72 237.92L411.72 220.92L374.09 220.92Z"></path>
+<path class="pin connected" data-src="20710A1C.CAD@808" data-block-id="20710A1C:B5" d="M375.16 229.42L374.09 229.42"></path>
+<path class="pin-arrow" data-src="20710A1C.CAD@808" data-block-id="20710A1C:B5" d="M374.09 229.42L371.12 228.14L371.12 230.7Z" fill="#000"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259096" data-block-id="20710A1C:B8" d="M621.76 259.18L622.82 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259110" data-block-id="20710A1C:B8" d="M621.76 259.18L621.97 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259124" data-block-id="20710A1C:B8" d="M621.76 259.18L622.18 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259138" data-block-id="20710A1C:B8" d="M621.76 259.18L622.4 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259152" data-block-id="20710A1C:B8" d="M621.76 259.18L622.61 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259166" data-block-id="20710A1C:B8" d="M624.95 259.18L626.01 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259180" data-block-id="20710A1C:B8" d="M624.95 259.18L625.16 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259194" data-block-id="20710A1C:B8" d="M624.95 259.18L625.37 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259208" data-block-id="20710A1C:B8" d="M624.95 259.18L625.58 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259222" data-block-id="20710A1C:B8" d="M624.95 259.18L625.8 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259236" data-block-id="20710A1C:B8" d="M628.14 259.18L629.2 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259250" data-block-id="20710A1C:B8" d="M628.14 259.18L628.35 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259264" data-block-id="20710A1C:B8" d="M628.14 259.18L628.56 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259278" data-block-id="20710A1C:B8" d="M628.14 259.18L628.77 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259292" data-block-id="20710A1C:B8" d="M628.14 259.18L628.99 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259306" data-block-id="20710A1C:B8" d="M631.32 259.18L632.39 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259320" data-block-id="20710A1C:B8" d="M631.32 259.18L631.54 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259334" data-block-id="20710A1C:B8" d="M631.32 259.18L631.75 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259348" data-block-id="20710A1C:B8" d="M631.32 259.18L631.96 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259362" data-block-id="20710A1C:B8" d="M631.32 259.18L632.18 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259376" data-block-id="20710A1C:B8" d="M634.51 259.18L635.58 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259390" data-block-id="20710A1C:B8" d="M634.51 259.18L634.73 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259404" data-block-id="20710A1C:B8" d="M634.51 259.18L634.94 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259418" data-block-id="20710A1C:B8" d="M634.51 259.18L635.15 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259432" data-block-id="20710A1C:B8" d="M634.51 259.18L635.36 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259446" data-block-id="20710A1C:B8" d="M637.7 259.18L638.77 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259460" data-block-id="20710A1C:B8" d="M637.7 259.18L637.92 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259474" data-block-id="20710A1C:B8" d="M637.7 259.18L638.13 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259488" data-block-id="20710A1C:B8" d="M637.7 259.18L638.34 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259502" data-block-id="20710A1C:B8" d="M637.7 259.18L638.55 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259516" data-block-id="20710A1C:B8" d="M640.89 259.18L641.95 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259530" data-block-id="20710A1C:B8" d="M640.89 259.18L641.1 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259544" data-block-id="20710A1C:B8" d="M640.89 259.18L641.32 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259558" data-block-id="20710A1C:B8" d="M640.89 259.18L641.53 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259572" data-block-id="20710A1C:B8" d="M640.89 259.18L641.74 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259586" data-block-id="20710A1C:B8" d="M644.08 259.18L645.14 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259600" data-block-id="20710A1C:B8" d="M644.08 259.18L644.29 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259614" data-block-id="20710A1C:B8" d="M644.08 259.18L644.51 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259628" data-block-id="20710A1C:B8" d="M644.08 259.18L644.72 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259642" data-block-id="20710A1C:B8" d="M644.08 259.18L644.93 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259656" data-block-id="20710A1C:B8" d="M644.08 265.56L645.14 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259670" data-block-id="20710A1C:B8" d="M644.08 265.56L644.29 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259684" data-block-id="20710A1C:B8" d="M644.08 265.56L644.51 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259698" data-block-id="20710A1C:B8" d="M644.08 265.56L644.72 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259712" data-block-id="20710A1C:B8" d="M644.08 265.56L644.93 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259726" data-block-id="20710A1C:B8" d="M640.89 265.56L641.95 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259740" data-block-id="20710A1C:B8" d="M640.89 265.56L641.1 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259754" data-block-id="20710A1C:B8" d="M640.89 265.56L641.32 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259768" data-block-id="20710A1C:B8" d="M640.89 265.56L641.53 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259782" data-block-id="20710A1C:B8" d="M640.89 265.56L641.74 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259796" data-block-id="20710A1C:B8" d="M637.7 265.56L638.77 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259810" data-block-id="20710A1C:B8" d="M637.7 265.56L637.92 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259824" data-block-id="20710A1C:B8" d="M637.7 265.56L638.13 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259838" data-block-id="20710A1C:B8" d="M637.7 265.56L638.34 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259852" data-block-id="20710A1C:B8" d="M637.7 265.56L638.55 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259866" data-block-id="20710A1C:B8" d="M634.51 265.56L635.58 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259880" data-block-id="20710A1C:B8" d="M634.51 265.56L634.73 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259894" data-block-id="20710A1C:B8" d="M634.51 265.56L634.94 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259908" data-block-id="20710A1C:B8" d="M634.51 265.56L635.15 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259922" data-block-id="20710A1C:B8" d="M634.51 265.56L635.36 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259936" data-block-id="20710A1C:B8" d="M631.32 265.56L632.39 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259950" data-block-id="20710A1C:B8" d="M631.32 265.56L631.54 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259964" data-block-id="20710A1C:B8" d="M631.32 265.56L631.75 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259978" data-block-id="20710A1C:B8" d="M631.32 265.56L631.96 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@259992" data-block-id="20710A1C:B8" d="M631.32 265.56L632.18 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@260006" data-block-id="20710A1C:B8" d="M628.14 265.56L629.2 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@260020" data-block-id="20710A1C:B8" d="M628.14 265.56L628.35 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@260034" data-block-id="20710A1C:B8" d="M628.14 265.56L628.56 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@260048" data-block-id="20710A1C:B8" d="M628.14 265.56L628.77 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@260062" data-block-id="20710A1C:B8" d="M628.14 265.56L628.99 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@260076" data-block-id="20710A1C:B8" d="M624.95 265.56L626.01 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@260090" data-block-id="20710A1C:B8" d="M624.95 265.56L625.16 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@260104" data-block-id="20710A1C:B8" d="M624.95 265.56L625.37 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@260118" data-block-id="20710A1C:B8" d="M624.95 265.56L625.58 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@260132" data-block-id="20710A1C:B8" d="M624.95 265.56L625.8 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@260146" data-block-id="20710A1C:B8" d="M621.76 265.56L622.82 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@260160" data-block-id="20710A1C:B8" d="M621.76 265.56L621.97 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@260174" data-block-id="20710A1C:B8" d="M621.76 265.56L622.18 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@260188" data-block-id="20710A1C:B8" d="M621.76 265.56L622.4 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@260202" data-block-id="20710A1C:B8" d="M621.76 265.56L622.61 265.56"></path>
+<path class="block library" data-src="7107LIB1.LBR@260216" data-block-id="20710A1C:B8" d="M617.51 285.76L664.28 285.76L664.28 249.62L617.51 249.62L617.51 285.76"></path>
+<path class="block library" data-src="7107LIB1.LBR@260244" data-block-id="20710A1C:B8" d="M651.52 249.62L651.52 285.76"></path>
+<path class="block library" data-src="7107LIB1.LBR@260260" data-block-id="20710A1C:B8" d="M651.52 281.5L664.28 281.5"></path>
+<path class="block library" data-src="7107LIB1.LBR@260276" data-block-id="20710A1C:B8" d="M664.28 277.25L652.58 277.25L651.52 277.25"></path>
+<path class="block library" data-src="7107LIB1.LBR@260296" data-block-id="20710A1C:B8" d="M651.52 273L664.28 273"></path>
+<path class="block library" data-src="7107LIB1.LBR@260312" data-block-id="20710A1C:B8" d="M617.51 255.99L664.28 255.99"></path>
+<path class="block library" data-src="7107LIB1.LBR@260328" data-block-id="20710A1C:B8" d="M664.28 268.75L617.51 268.75"></path>
+<path class="block library" data-src="7107LIB1.LBR@260344" data-block-id="20710A1C:B8" d="M655.77 268.75L655.77 277.25"></path>
+<path class="block library" data-src="7107LIB1.LBR@260360" data-block-id="20710A1C:B8" d="M653.65 269.81L653.65 271.94"></path>
+<path class="block library" data-src="7107LIB1.LBR@260376" data-block-id="20710A1C:B8" d="M652.58 270.87L654.71 270.87"></path>
+<path class="block library" data-src="7107LIB1.LBR@260392" data-block-id="20710A1C:B8" d="M654.71 275.13L652.58 275.13"></path>
+<text class="block library" data-src="7107LIB1.LBR@260408" data-block-id="20710A1C:B8" x="655.77" y="254.93" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">AO</text>
+<text class="block library" data-src="7107LIB1.LBR@260428" data-block-id="20710A1C:B8" x="621.76" y="284.69" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">BLK:</text>
+<text class="block library" data-src="7107LIB1.LBR@260450" data-block-id="20710A1C:B8" x="651.95" y="285.12" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">TAO02</text>
+<path class="block library" data-src="7107LIB1.LBR@260474" data-block-id="20710A1C:B8" d="M634.51 259.18L634.51 265.56"></path>
+<path class="block library" data-src="7107LIB1.LBR@260490" data-block-id="20710A1C:B8" d="M631.32 259.18L631.32 265.56"></path>
+<text class="block library" data-src="7107LIB1.LBR@260506" data-block-id="20710A1C:B8" x="655.77" y="263.43" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">14</text>
+<text class="block library" data-src="7107LIB1.LBR@260526" data-block-id="20710A1C:B8" x="657.9" y="271.94" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">6B</text>
+<text class="block library" data-src="7107LIB1.LBR@260546" data-block-id="20710A1C:B8" x="657.9" y="276.19" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">6B</text>
+<text class="block library" data-src="7107LIB1.LBR@260566" data-block-id="20710A1C:B8" x="650.88" y="267.05" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 650.88 267.05)" xml:space="preserve">XU14</text>
+<path class="block fallback fam-gate-or" data-src="20710A1C.CAD@1360" data-block-id="20710A1C:B12" d="M293.31 314.46L318.18 314.46L322.44 304.36L318.18 294.26L293.31 294.26L295.86 304.36Z"></path>
+<path class="pin connected" data-src="20710A1C.CAD@1360" data-block-id="20710A1C:B12" d="M294.37 299.57L293.31 299.57"></path>
+<path class="pin-arrow" data-src="20710A1C.CAD@1360" data-block-id="20710A1C:B12" d="M293.31 299.57L290.33 298.3L290.33 300.85Z" fill="#000"></path>
+<path class="pin unconnected" data-src="20710A1C.CAD@1360" data-block-id="20710A1C:B12" d="M294.37 303.83L293.31 303.83"></path>
+<path class="pin-arrow" data-src="20710A1C.CAD@1360" data-block-id="20710A1C:B12" d="M293.31 303.83L290.33 302.55L290.33 305.1Z" fill="#000"></path>
+<path class="pin unconnected" data-src="20710A1C.CAD@1360" data-block-id="20710A1C:B12" d="M294.37 308.08L293.31 308.08"></path>
+<path class="pin-arrow" data-src="20710A1C.CAD@1360" data-block-id="20710A1C:B12" d="M293.31 308.08L290.33 306.8L290.33 309.35Z" fill="#000"></path>
+<path class="pin connected" data-src="20710A1C.CAD@1360" data-block-id="20710A1C:B12" d="M319.88 303.83L322.44 303.83"></path>
+<path class="block fallback fam-arithmetic" data-src="20710A1C.CAD@1594" data-block-id="20710A1C:B14" d="M484.64 284.69L522.27 284.69L522.27 267.69L484.64 267.69Z"></path>
+<path class="pin connected" data-src="20710A1C.CAD@1594" data-block-id="20710A1C:B14" d="M485.7 276.19L484.64 276.19"></path>
+<path class="pin-arrow" data-src="20710A1C.CAD@1594" data-block-id="20710A1C:B14" d="M484.64 276.19L481.66 274.91L481.66 277.46Z" fill="#000"></path>
+<path class="pin connected" data-src="20710A1C.CAD@1594" data-block-id="20710A1C:B14" d="M485.7 280.44L484.64 280.44"></path>
+<path class="pin-arrow" data-src="20710A1C.CAD@1594" data-block-id="20710A1C:B14" d="M484.64 280.44L481.66 279.17L481.66 281.72Z" fill="#000"></path>
+<path class="pin connected" data-src="20710A1C.CAD@1594" data-block-id="20710A1C:B14" d="M519.72 276.19L522.27 276.19"></path>
+<path class="block fallback fam-arithmetic" data-src="20710A1C.CAD@1630" data-block-id="20710A1C:B15" d="M447.44 299.57L475.5 299.57L475.5 282.57L447.44 282.57Z"></path>
+<path class="pin connected" data-src="20710A1C.CAD@1630" data-block-id="20710A1C:B15" d="M472.95 291.07L475.5 291.07"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219026" data-block-id="20710A1C:B16" d="M154.07 259.18L155.13 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219040" data-block-id="20710A1C:B16" d="M154.07 259.18L154.28 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219054" data-block-id="20710A1C:B16" d="M154.07 259.18L154.49 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219068" data-block-id="20710A1C:B16" d="M154.07 259.18L154.7 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219082" data-block-id="20710A1C:B16" d="M154.07 259.18L154.92 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219096" data-block-id="20710A1C:B16" d="M157.25 259.18L158.32 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219110" data-block-id="20710A1C:B16" d="M157.25 259.18L157.47 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219124" data-block-id="20710A1C:B16" d="M157.25 259.18L157.68 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219138" data-block-id="20710A1C:B16" d="M157.25 259.18L157.89 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219152" data-block-id="20710A1C:B16" d="M157.25 259.18L158.11 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219166" data-block-id="20710A1C:B16" d="M160.44 259.18L161.51 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219180" data-block-id="20710A1C:B16" d="M160.44 259.18L160.66 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219194" data-block-id="20710A1C:B16" d="M160.44 259.18L160.87 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219208" data-block-id="20710A1C:B16" d="M160.44 259.18L161.08 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219222" data-block-id="20710A1C:B16" d="M160.44 259.18L161.29 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219236" data-block-id="20710A1C:B16" d="M163.63 259.18L164.7 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219250" data-block-id="20710A1C:B16" d="M163.63 259.18L163.84 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219264" data-block-id="20710A1C:B16" d="M163.63 259.18L164.06 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219278" data-block-id="20710A1C:B16" d="M163.63 259.18L164.27 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219292" data-block-id="20710A1C:B16" d="M163.63 259.18L164.48 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219306" data-block-id="20710A1C:B16" d="M166.82 259.18L167.88 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219320" data-block-id="20710A1C:B16" d="M166.82 259.18L167.03 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219334" data-block-id="20710A1C:B16" d="M166.82 259.18L167.25 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219348" data-block-id="20710A1C:B16" d="M166.82 259.18L167.46 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219362" data-block-id="20710A1C:B16" d="M166.82 259.18L167.67 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219376" data-block-id="20710A1C:B16" d="M170.01 259.18L171.07 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219390" data-block-id="20710A1C:B16" d="M170.01 259.18L170.22 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219404" data-block-id="20710A1C:B16" d="M170.01 259.18L170.44 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219418" data-block-id="20710A1C:B16" d="M170.01 259.18L170.65 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219432" data-block-id="20710A1C:B16" d="M170.01 259.18L170.86 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219446" data-block-id="20710A1C:B16" d="M173.2 259.18L174.26 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219460" data-block-id="20710A1C:B16" d="M173.2 259.18L173.41 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219474" data-block-id="20710A1C:B16" d="M173.2 259.18L173.62 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219488" data-block-id="20710A1C:B16" d="M173.2 259.18L173.84 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219502" data-block-id="20710A1C:B16" d="M173.2 259.18L174.05 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219516" data-block-id="20710A1C:B16" d="M176.39 259.18L177.45 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219530" data-block-id="20710A1C:B16" d="M176.39 259.18L176.6 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219544" data-block-id="20710A1C:B16" d="M176.39 259.18L176.81 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219558" data-block-id="20710A1C:B16" d="M176.39 259.18L177.03 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219572" data-block-id="20710A1C:B16" d="M176.39 259.18L177.24 259.18"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219586" data-block-id="20710A1C:B16" d="M176.39 265.56L176.6 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219600" data-block-id="20710A1C:B16" d="M176.39 265.56L176.81 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219614" data-block-id="20710A1C:B16" d="M176.39 265.56L177.03 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219628" data-block-id="20710A1C:B16" d="M176.39 265.56L177.24 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219642" data-block-id="20710A1C:B16" d="M173.2 265.56L174.26 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219656" data-block-id="20710A1C:B16" d="M173.2 265.56L173.41 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219670" data-block-id="20710A1C:B16" d="M173.2 265.56L173.62 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219684" data-block-id="20710A1C:B16" d="M173.2 265.56L173.84 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219698" data-block-id="20710A1C:B16" d="M173.2 265.56L174.05 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219712" data-block-id="20710A1C:B16" d="M176.39 265.56L177.45 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219726" data-block-id="20710A1C:B16" d="M170.01 265.56L170.22 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219740" data-block-id="20710A1C:B16" d="M170.01 265.56L170.44 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219754" data-block-id="20710A1C:B16" d="M170.01 265.56L170.65 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219768" data-block-id="20710A1C:B16" d="M170.01 265.56L170.86 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219782" data-block-id="20710A1C:B16" d="M166.82 265.56L167.88 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219796" data-block-id="20710A1C:B16" d="M166.82 265.56L167.03 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219810" data-block-id="20710A1C:B16" d="M166.82 265.56L167.25 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219824" data-block-id="20710A1C:B16" d="M166.82 265.56L167.46 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219838" data-block-id="20710A1C:B16" d="M166.82 265.56L167.67 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219852" data-block-id="20710A1C:B16" d="M163.63 265.56L164.7 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219866" data-block-id="20710A1C:B16" d="M163.63 265.56L163.84 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219880" data-block-id="20710A1C:B16" d="M163.63 265.56L164.06 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219894" data-block-id="20710A1C:B16" d="M163.63 265.56L164.27 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219908" data-block-id="20710A1C:B16" d="M163.63 265.56L164.48 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219922" data-block-id="20710A1C:B16" d="M160.44 265.56L161.51 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219936" data-block-id="20710A1C:B16" d="M160.44 265.56L160.66 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219950" data-block-id="20710A1C:B16" d="M160.44 265.56L160.87 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219964" data-block-id="20710A1C:B16" d="M160.44 265.56L161.08 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219978" data-block-id="20710A1C:B16" d="M160.44 265.56L161.29 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@219992" data-block-id="20710A1C:B16" d="M157.25 265.56L158.32 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@220006" data-block-id="20710A1C:B16" d="M157.25 265.56L157.47 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@220020" data-block-id="20710A1C:B16" d="M157.25 265.56L157.68 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@220034" data-block-id="20710A1C:B16" d="M157.25 265.56L157.89 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@220048" data-block-id="20710A1C:B16" d="M157.25 265.56L158.11 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@220062" data-block-id="20710A1C:B16" d="M154.07 265.56L155.13 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@220076" data-block-id="20710A1C:B16" d="M154.07 265.56L154.28 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@220090" data-block-id="20710A1C:B16" d="M154.07 265.56L154.49 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@220104" data-block-id="20710A1C:B16" d="M154.07 265.56L154.7 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@220118" data-block-id="20710A1C:B16" d="M154.07 265.56L154.92 265.56"></path>
+<text class="block library" data-src="7107LIB1.LBR@220132" data-block-id="20710A1C:B16" x="141.31" y="254.93" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">AI</text>
+<path class="block library" data-src="7107LIB1.LBR@220152" data-block-id="20710A1C:B16" d="M137.06 285.76L183.83 285.76L183.83 249.62L137.06 249.62L137.06 285.76"></path>
+<path class="block library" data-src="7107LIB1.LBR@220180" data-block-id="20710A1C:B16" d="M149.81 249.62L149.81 285.76"></path>
+<path class="block library" data-src="7107LIB1.LBR@220196" data-block-id="20710A1C:B16" d="M137.06 281.5L149.81 281.5"></path>
+<path class="block library" data-src="7107LIB1.LBR@220212" data-block-id="20710A1C:B16" d="M149.81 277.25L138.12 277.25L137.06 277.25"></path>
+<path class="block library" data-src="7107LIB1.LBR@220232" data-block-id="20710A1C:B16" d="M137.06 273L149.81 273"></path>
+<path class="block library" data-src="7107LIB1.LBR@220248" data-block-id="20710A1C:B16" d="M137.06 255.99L183.83 255.99"></path>
+<path class="block library" data-src="7107LIB1.LBR@220264" data-block-id="20710A1C:B16" d="M183.83 268.75L137.06 268.75"></path>
+<path class="block library" data-src="7107LIB1.LBR@220280" data-block-id="20710A1C:B16" d="M145.56 268.75L145.56 277.25"></path>
+<path class="block library" data-src="7107LIB1.LBR@220296" data-block-id="20710A1C:B16" d="M147.69 269.81L147.69 271.94"></path>
+<path class="block library" data-src="7107LIB1.LBR@220312" data-block-id="20710A1C:B16" d="M146.63 270.87L148.75 270.87"></path>
+<path class="block library" data-src="7107LIB1.LBR@220328" data-block-id="20710A1C:B16" d="M148.75 275.13L146.63 275.13"></path>
+<text class="block library" data-src="7107LIB1.LBR@220344" data-block-id="20710A1C:B16" x="137.48" y="285.12" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">TAI04</text>
+<text class="block library" data-src="7107LIB1.LBR@220368" data-block-id="20710A1C:B16" x="154.07" y="284.69" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">BLK:</text>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@220390" data-block-id="20710A1C:B16" d="M173.2 265.56L174.26 265.56"></path>
+<path class="block library unresolved-type2" data-src="7107LIB1.LBR@220404" data-block-id="20710A1C:B16" d="M170.01 265.56L171.07 265.56"></path>
+<text class="block library" data-src="7107LIB1.LBR@220418" data-block-id="20710A1C:B16" x="141.31" y="263.43" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">04</text>
+<text class="block library" data-src="7107LIB1.LBR@220438" data-block-id="20710A1C:B16" x="139.18" y="271.94" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">04</text>
+<text class="block library" data-src="7107LIB1.LBR@220458" data-block-id="20710A1C:B16" x="139.18" y="276.19" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">04</text>
+<text class="block library" data-src="7107LIB1.LBR@220478" data-block-id="20710A1C:B16" x="182.77" y="267.05" font-size="4.25" fill="#000" stroke="none" transform="rotate(-90 182.77 267.05)" xml:space="preserve">XU04</text>
+<path class="connector fallback oref resolved_cross_sheet" data-src="20710A1C.CAD@970" d="M604.75 276.19L609 271.94L647.27 271.94L651.52 276.19L647.27 280.44L609 280.44Z"></path>
+<path class="connector-mark" data-src="20710A1C.CAD@970" d="M603.79 277.15L605.71 275.23"></path>
+<path class="connector-mark" data-src="20710A1C.CAD@970" d="M603.79 275.23L605.71 277.15"></path>
+<text class="connector-ref" data-src="20710A1C.CAD@970" x="609.85" y="277.68" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">AD24-04.06</text>
+<text class="connector-tag" data-src="20710A1C.CAD@970" x="603.05" y="274.91" font-size="4.25" fill="#000" stroke="none" text-anchor="end" xml:space="preserve">AO1-24/131LV381</text>
+<path class="connector fallback iref resolved_cross_sheet" data-src="20710A1C.CAD@1148" d="M149.81 276.19L154.07 271.94L192.33 271.94L196.58 276.19L192.33 280.44L154.07 280.44Z"></path>
+<path class="connector-mark" data-src="20710A1C.CAD@1148" d="M195.63 277.15L197.54 275.23"></path>
+<path class="connector-mark" data-src="20710A1C.CAD@1148" d="M195.63 275.23L197.54 277.15"></path>
+<text class="connector-ref" data-src="20710A1C.CAD@1148" x="154.92" y="277.68" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">AD22-05.21</text>
+<text class="connector-tag" data-src="20710A1C.CAD@1148" x="199.13" y="274.91" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">AI4-22/131LT381</text>
+<path class="connector fallback iref resolved_cross_sheet" data-src="20710A1C.CAD@1254" d="M149.81 327.21L154.07 322.96L192.33 322.96L196.58 327.21L192.33 331.46L154.07 331.46Z"></path>
+<path class="connector-mark" data-src="20710A1C.CAD@1254" d="M195.63 328.17L197.54 326.25"></path>
+<path class="connector-mark" data-src="20710A1C.CAD@1254" d="M195.63 326.25L197.54 328.17"></path>
+<text class="connector-ref" data-src="20710A1C.CAD@1254" x="154.92" y="328.7" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">AD24-05.06</text>
+<text class="connector-tag" data-src="20710A1C.CAD@1254" x="199.13" y="325.93" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">AO1FB-24/131LV381</text>
+<path class="connector fallback iref resolved_cross_sheet" data-src="20710A1C.CAD@1396" d="M149.81 299.57L154.07 295.32L192.33 295.32L196.58 299.57L192.33 303.83L154.07 303.83Z"></path>
+<path class="connector-mark" data-src="20710A1C.CAD@1396" d="M195.63 300.53L197.54 298.62"></path>
+<path class="connector-mark" data-src="20710A1C.CAD@1396" d="M195.63 298.62L197.54 300.53"></path>
+<text class="connector-ref" data-src="20710A1C.CAD@1396" x="154.92" y="301.06" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">AD00-04.26</text>
+<text class="connector-tag" data-src="20710A1C.CAD@1396" x="199.13" y="298.3" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">NOT</text>
+<path class="junction fallback" data-src="20710A1C.CAD@636" data-block-id="20710A1C:J1" d="M254.83 276.19L256.11 274.91L257.38 276.19L256.11 277.46Z"></path>
+<path class="junction fallback" data-src="20710A1C.CAD@670" data-block-id="20710A1C:J2" d="M254.83 263.43L256.11 262.16L257.38 263.43L256.11 264.71Z"></path>
+<path class="junction fallback" data-src="20710A1C.CAD@908" data-block-id="20710A1C:J6" d="M441.91 276.19L443.18 274.91L444.46 276.19L443.18 277.46Z"></path>
+<path class="junction fallback" data-src="20710A1C.CAD@1094" data-block-id="20710A1C:J9" d="M356.87 327.21L358.15 325.93L359.43 327.21L358.15 328.49Z"></path>
+<text class="text title-block" data-src="20710A1C.CAD@306" x="619.63" y="531.29" font-size="10.63" fill="#000" stroke="none" xml:space="preserve">P</text>
+<text class="text title-block" data-src="20710A1C.CAD@326" x="630.26" y="531.29" font-size="10.63" fill="#000" stroke="none" xml:space="preserve">B</text>
+<text class="text title-block" data-src="20710A1C.CAD@346" x="638.77" y="531.29" font-size="8.5" fill="#000" stroke="none" xml:space="preserve">92165</text>
+<text class="text title-block" data-src="20710A1C.CAD@370" x="647.27" y="518.54" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">920327</text>
+<text class="text title-block" data-src="20710A1C.CAD@394" x="664.28" y="531.29" font-size="10.63" fill="#000" stroke="none" xml:space="preserve">L</text>
+<text class="text title-block" data-src="20710A1C.CAD@414" x="677.03" y="518.54" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">C216550</text>
+<text class="text title-block" data-src="20710A1C.CAD@440" x="702.54" y="518.54" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">03-16-95</text>
+<text class="text title-block" data-src="20710A1C.CAD@466" x="736.56" y="518.54" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">..</text>
+<text class="text title-block" data-src="20710A1C.CAD@486" x="736.56" y="511.1" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">HRN</text>
+<text class="text title-block" data-src="20710A1C.CAD@508" x="736.56" y="503.66" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">HRN</text>
+<text class="text title-block" data-src="20710A1C.CAD@530" x="742.93" y="531.29" font-size="10.63" fill="#000" stroke="none" xml:space="preserve">A</text>
+<text class="text title-block" data-src="20710A1C.CAD@600" x="663.21" y="480.27" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">EFFLUENT TREATMENT</text>
+<text class="text engineering" data-src="20710A1C.CAD@1510" x="381.53" y="257.06" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">131LC-381</text>
+<text class="text title-block" data-src="20710A1C.CAD@1538" x="681.28" y="531.29" font-size="8.5" fill="#000" stroke="none" xml:space="preserve">131-381.0</text>
+<text class="text engineering" data-src="20710A1C.CAD@1566" x="621.76" y="288.94" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">2-07-10-24</text>
+<text class="text title-block" data-src="20710A1C.CAD@1774" x="621.76" y="518.54" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">20710A1</text>
+<text class="text engineering" data-src="20710A1C.CAD@1850" x="154.07" y="254.93" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">018-04-02</text>
+<text class="text engineering" data-src="20710A1C.CAD@1878" x="154.07" y="288.94" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">2-07-10-22</text>
+<text class="text engineering" data-src="20710A1C.CAD@1906" x="166.82" y="284.69" font-size="4.25" fill="#000" stroke="none" xml:space="preserve">4403</text>
+<text class="text title-block" data-src="20710A1C.CAD@1928" x="626.01" y="493.03" font-size="8.5" fill="#000" stroke="none" xml:space="preserve">LEVEL CONTROL SEPARATOR 1</text>
+<text class="sheet-id" data-src="20710A1C.CAD@name" x="751.44" y="547.24" font-size="5.31" fill="#000" stroke="none" text-anchor="end" xml:space="preserve">20710A1C.CAD</text>
+<text class="annotation plot_stamp" data-src="scene:20710A1C.CAD:plot_stamp" data-layer="ann-stamp" x="36.5" y="18" font-size="5.6" fill="#000000" stroke="none" xml:space="preserve">M10\20710A1C.CAD 08:26:42 AM 12/21/2016</text>
+<text class="annotation s_label" data-src="scene:20710A1C.CAD:20710A1C:B3.in.S2" data-layer="ann-derived" x="298.2" y="270.88" font-size="3.93" fill="#000000" stroke="none" text-anchor="end" xml:space="preserve">S2</text>
+<text class="annotation s_label" data-src="scene:20710A1C.CAD:20710A1C:B3.in.S1" data-layer="ann-derived" x="298.2" y="275.13" font-size="3.93" fill="#000000" stroke="none" text-anchor="end" xml:space="preserve">S1</text>
+<text class="annotation s_label" data-src="scene:20710A1C.CAD:20710A1C:B3.in.S3" data-layer="ann-derived" x="298.2" y="279.38" font-size="3.93" fill="#000000" stroke="none" text-anchor="end" xml:space="preserve">S3</text>
+<text class="annotation s_label" data-src="scene:20710A1C.CAD:20710A1C:B3.in.S4" data-layer="ann-derived" x="298.2" y="283.63" font-size="3.93" fill="#000000" stroke="none" text-anchor="end" xml:space="preserve">S4</text>
+<path class="block-origin" data-src="scene:20710A1C.CAD:20710A1C:B3:origin" data-layer="ann-derived" d="M290.11 269.82L296.51 263.42"></path>
+<path class="block-origin" data-src="scene:20710A1C.CAD:20710A1C:B3:origin" data-layer="ann-derived" d="M290.11 263.42L296.51 269.82"></path>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B3:title:0" data-layer="ann-derived" x="296.31" y="268.9" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">PID</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B3:title:1" data-layer="ann-derived" x="296.31" y="273.07" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">SP</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B3:title:2" data-layer="ann-derived" x="296.31" y="277.25" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">PV</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B3:title:3" data-layer="ann-derived" x="296.31" y="281.43" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">TR</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B3:title:4" data-layer="ann-derived" x="296.31" y="285.6" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">TS</text>
+<path class="block-origin" data-src="scene:20710A1C.CAD:20710A1C:B4:origin" data-layer="ann-derived" d="M368.77 261.32L375.17 254.92"></path>
+<path class="block-origin" data-src="scene:20710A1C.CAD:20710A1C:B4:origin" data-layer="ann-derived" d="M368.77 254.92L375.17 261.32"></path>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:0" data-layer="ann-derived" x="374.97" y="253.11" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">M/A</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:1" data-layer="ann-derived" x="374.97" y="257.28" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">MFC/P</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:2" data-layer="ann-derived" x="374.97" y="261.46" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">SP</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:3" data-layer="ann-derived" x="374.97" y="265.64" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">PV</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:4" data-layer="ann-derived" x="374.97" y="269.81" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">O</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:5" data-layer="ann-derived" x="374.97" y="273.99" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">A</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:6" data-layer="ann-derived" x="374.97" y="278.16" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">TR</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:7" data-layer="ann-derived" x="374.97" y="282.34" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">C/R</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:8" data-layer="ann-derived" x="374.97" y="286.52" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">TS</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:9" data-layer="ann-derived" x="374.97" y="290.69" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">C</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:10" data-layer="ann-derived" x="374.97" y="294.87" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">MI</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:11" data-layer="ann-derived" x="374.97" y="299.05" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">C-F</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:12" data-layer="ann-derived" x="374.97" y="303.22" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">AX</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:13" data-layer="ann-derived" x="374.97" y="307.4" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">LX</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:14" data-layer="ann-derived" x="374.97" y="311.57" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">CX</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:15" data-layer="ann-derived" x="374.97" y="315.75" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">HAA</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:16" data-layer="ann-derived" x="374.97" y="319.93" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">LAA</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:17" data-layer="ann-derived" x="374.97" y="324.1" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">HDA</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:18" data-layer="ann-derived" x="374.97" y="328.28" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">LDA</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:19" data-layer="ann-derived" x="374.97" y="332.45" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">AO</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:20" data-layer="ann-derived" x="374.97" y="336.63" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">TRS2</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:21" data-layer="ann-derived" x="374.97" y="340.81" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">TRPV</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B4:title:22" data-layer="ann-derived" x="374.97" y="344.98" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">T</text>
+<text class="annotation s_label" data-src="scene:20710A1C.CAD:20710A1C:B5.in.S1" data-layer="ann-derived" x="378.99" y="228.36" font-size="3.93" fill="#000000" stroke="none" text-anchor="end" xml:space="preserve">S1</text>
+<path class="block-origin" data-src="scene:20710A1C.CAD:20710A1C:B5:origin" data-layer="ann-derived" d="M370.89 224.12L377.29 217.72"></path>
+<path class="block-origin" data-src="scene:20710A1C.CAD:20710A1C:B5:origin" data-layer="ann-derived" d="M370.89 217.72L377.29 224.12"></path>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B5:title:0" data-layer="ann-derived" x="377.09" y="229.42" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">TREND</text>
+<text class="annotation s_label" data-src="scene:20710A1C.CAD:20710A1C:B12.in.S1" data-layer="ann-inferred" x="298.2" y="298.51" font-size="3.93" fill="#003399" stroke="none" text-anchor="end" xml:space="preserve">S1</text>
+<text class="annotation s_label" data-src="scene:20710A1C.CAD:20710A1C:B12.in.S2" data-layer="ann-inferred" x="298.2" y="302.77" font-size="3.93" fill="#003399" stroke="none" text-anchor="end" xml:space="preserve">S2</text>
+<text class="annotation s_label" data-src="scene:20710A1C.CAD:20710A1C:B12.in.S3" data-layer="ann-inferred" x="298.2" y="307.02" font-size="3.93" fill="#003399" stroke="none" text-anchor="end" xml:space="preserve">S3</text>
+<text class="annotation s_label" data-src="scene:20710A1C.CAD:20710A1C:B12.in.S4" data-layer="ann-inferred" x="298.2" y="311.27" font-size="3.93" fill="#003399" stroke="none" text-anchor="end" xml:space="preserve">S4</text>
+<path class="block-origin" data-src="scene:20710A1C.CAD:20710A1C:B12:origin" data-layer="ann-derived" d="M290.11 297.46L296.51 291.06"></path>
+<path class="block-origin" data-src="scene:20710A1C.CAD:20710A1C:B12:origin" data-layer="ann-derived" d="M290.11 291.06L296.51 297.46"></path>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B12:title:0" data-layer="ann-derived" x="296.31" y="304.36" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">OR</text>
+<text class="annotation s_label" data-src="scene:20710A1C.CAD:20710A1C:B14.in.S1" data-layer="ann-derived" x="489.53" y="275.13" font-size="3.93" fill="#000000" stroke="none" text-anchor="end" xml:space="preserve">S1</text>
+<text class="annotation s_label" data-src="scene:20710A1C.CAD:20710A1C:B14.in.S2" data-layer="ann-derived" x="489.53" y="279.38" font-size="3.93" fill="#000000" stroke="none" text-anchor="end" xml:space="preserve">S2</text>
+<path class="block-origin" data-src="scene:20710A1C.CAD:20710A1C:B14:origin" data-layer="ann-derived" d="M481.44 270.89L487.84 264.49"></path>
+<path class="block-origin" data-src="scene:20710A1C.CAD:20710A1C:B14:origin" data-layer="ann-derived" d="M481.44 264.49L487.84 270.89"></path>
+<path class="block-origin" data-src="scene:20710A1C.CAD:20710A1C:B15:origin" data-layer="ann-derived" d="M444.24 285.77L450.64 279.37"></path>
+<path class="block-origin" data-src="scene:20710A1C.CAD:20710A1C:B15:origin" data-layer="ann-derived" d="M444.24 279.37L450.64 285.77"></path>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B15:title:0" data-layer="ann-derived" x="450.44" y="291.07" font-size="2.98" fill="#000000" stroke="none" xml:space="preserve">A</text>
+<path class="pin-tick" data-src="scene:20710A1C.CAD:20710A1C:B3.N" data-layer="ann-derived" stroke-width="1" d="M328.39 277.04L328.39 275.34"></path>
+<text class="annotation sub_block_number" data-src="scene:20710A1C.CAD:20710A1C:B3.N" data-layer="ann-derived" x="334.03" y="277.68" font-size="4.25" fill="#000000" stroke="none" xml:space="preserve">2880</text>
+<path class="pin-tick" data-src="scene:20710A1C.CAD:20710A1C:B5.N" data-layer="ann-derived" stroke-width="1" d="M411.72 227.08L411.72 225.38"></path>
+<text class="annotation sub_block_number" data-src="scene:20710A1C.CAD:20710A1C:B5.N" data-layer="ann-derived" x="413.32" y="227.72" font-size="4.25" fill="#000000" stroke="none" xml:space="preserve">66</text>
+<path class="pin-tick" data-src="scene:20710A1C.CAD:20710A1C:B12.N" data-layer="ann-derived" stroke-width="1" d="M319.88 304.68L319.88 302.98"></path>
+<text class="annotation sub_block_number" data-src="scene:20710A1C.CAD:20710A1C:B12.N" data-layer="ann-derived" x="324.04" y="305.32" font-size="4.25" fill="#000000" stroke="none" xml:space="preserve">2881</text>
+<path class="pin-tick" data-src="scene:20710A1C.CAD:20710A1C:B14.N" data-layer="ann-derived" stroke-width="1" d="M519.72 277.04L519.72 275.34"></path>
+<text class="annotation sub_block_number" data-src="scene:20710A1C.CAD:20710A1C:B14.N" data-layer="ann-derived" x="523.87" y="277.68" font-size="4.25" fill="#000000" stroke="none" xml:space="preserve">5110</text>
+<path class="pin-tick" data-src="scene:20710A1C.CAD:20710A1C:B15.N" data-layer="ann-derived" stroke-width="1" d="M472.95 291.92L472.95 290.22"></path>
+<text class="annotation sub_block_number" data-src="scene:20710A1C.CAD:20710A1C:B15.N" data-layer="ann-derived" x="477.1" y="292.56" font-size="4.25" fill="#000000" stroke="none" xml:space="preserve">5111</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B3:fc" data-layer="ann-derived" x="334.03" y="273.43" font-size="4.25" fill="#000000" stroke="none" xml:space="preserve">(19)</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B5:fc" data-layer="ann-derived" x="413.32" y="223.47" font-size="4.25" fill="#000000" stroke="none" xml:space="preserve">(66)</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B12:fc" data-layer="ann-derived" x="324.04" y="301.07" font-size="4.25" fill="#000000" stroke="none" xml:space="preserve">(40)</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B14:fc" data-layer="ann-derived" x="523.87" y="273.43" font-size="4.25" fill="#000000" stroke="none" xml:space="preserve">(15)</text>
+<text class="annotation caption" data-src="scene:20710A1C.CAD:20710A1C:B15:fc" data-layer="ann-derived" x="477.1" y="288.31" font-size="4.25" fill="#000000" stroke="none" xml:space="preserve">(2)</text>
+<text class="annotation sub_block_number" data-src="scene:20710A1C.CAD:20710A1C:B4.N" data-layer="ann-derived" x="413.32" y="258.12" font-size="4.25" fill="#000000" stroke="none" xml:space="preserve">59</text>
+<path class="block-hit" data-src="scene:20710A1C.CAD:20710A1C:B3" data-block-id="20710A1C:B3" d="M293.31 287.88L332.43 287.88L332.43 266.62L293.31 266.62Z" fill="transparent" stroke="none"><title>Block 2880 FC19 PID (PV and SP) (DELPID)
+S1 = 4403  Block address of process variable input [EXTRACTED, wired from block 4400 output 4403]
+S2 = 60  Block address of set point [EXTRACTED, wired from block 59]
+S3 = 59  Block address of track reference signal [EXTRACTED, wired from block 59]
+S4 = 61  Block address of track switch signal:; 0 = track; 1 = release [EXTRACTED, wired from block 59]
+S5 = 9  (K) gain multiplier [EXTRACTED]
+S6 = 1.14999  (K ) proportional constant P [EXTRACTED]
+S7 = 0.300003  (K ) integral constant (1/min) I [EXTRACTED]
+S8 = 0.115  (K ) derivative constant (min) D [EXTRACTED]
+S9 = 105  High output limit [EXTRACTED]
+S10 = -5  Low output limit [EXTRACTED]
+S11 = 0 = normal  Set point change:; 0 = normal; 1 = integral only (K ≠ 0) I [EXTRACTED]
+S12 = 1 = direct acting on error  Controller action on error:; 0 = reverse acting on error; 1 = direct acting on error [EXTRACTED]</title></path>
+<text class="annotation spec_values" data-src="scene:20710A1C.CAD:20710A1C:B3:specs" data-block-id="20710A1C:B3" data-layer="ann-spec" x="210.03" y="280.66" font-size="2.6" fill="#00408c" stroke="none" xml:space="preserve"><title>Block 2880 FC19 PID (PV and SP) (DELPID)
+S1 = 4403  Block address of process variable input [EXTRACTED, wired from block 4400 output 4403]
+S2 = 60  Block address of set point [EXTRACTED, wired from block 59]
+S3 = 59  Block address of track reference signal [EXTRACTED, wired from block 59]
+S4 = 61  Block address of track switch signal:; 0 = track; 1 = release [EXTRACTED, wired from block 59]
+S5 = 9  (K) gain multiplier [EXTRACTED]
+S6 = 1.14999  (K ) proportional constant P [EXTRACTED]
+S7 = 0.300003  (K ) integral constant (1/min) I [EXTRACTED]
+S8 = 0.115  (K ) derivative constant (min) D [EXTRACTED]
+S9 = 105  High output limit [EXTRACTED]
+S10 = -5  Low output limit [EXTRACTED]
+S11 = 0 = normal  Set point change:; 0 = normal; 1 = integral only (K ≠ 0) I [EXTRACTED]
+S12 = 1 = direct acting on error  Controller action on error:; 0 = reverse acting on error; 1 = direct acting on error [EXTRACTED]</title>2880: S1=4403 S2=60 S3=59 S4=61 S5=9</text>
+<text class="annotation spec_values" data-src="scene:20710A1C.CAD:20710A1C:B3:specs" data-block-id="20710A1C:B3" data-layer="ann-spec" x="210.03" y="283.76" font-size="2.6" fill="#00408c" stroke="none" xml:space="preserve"><title>Block 2880 FC19 PID (PV and SP) (DELPID)
+S1 = 4403  Block address of process variable input [EXTRACTED, wired from block 4400 output 4403]
+S2 = 60  Block address of set point [EXTRACTED, wired from block 59]
+S3 = 59  Block address of track reference signal [EXTRACTED, wired from block 59]
+S4 = 61  Block address of track switch signal:; 0 = track; 1 = release [EXTRACTED, wired from block 59]
+S5 = 9  (K) gain multiplier [EXTRACTED]
+S6 = 1.14999  (K ) proportional constant P [EXTRACTED]
+S7 = 0.300003  (K ) integral constant (1/min) I [EXTRACTED]
+S8 = 0.115  (K ) derivative constant (min) D [EXTRACTED]
+S9 = 105  High output limit [EXTRACTED]
+S10 = -5  Low output limit [EXTRACTED]
+S11 = 0 = normal  Set point change:; 0 = normal; 1 = integral only (K ≠ 0) I [EXTRACTED]
+S12 = 1 = direct acting on error  Controller action on error:; 0 = reverse acting on error; 1 = direct acting on error [EXTRACTED]</title>S6=1.14999 S7=0.300003 S8=0.115 S9=105</text>
+<text class="annotation spec_values" data-src="scene:20710A1C.CAD:20710A1C:B3:specs" data-block-id="20710A1C:B3" data-layer="ann-spec" x="210.03" y="286.86" font-size="2.6" fill="#00408c" stroke="none" xml:space="preserve"><title>Block 2880 FC19 PID (PV and SP) (DELPID)
+S1 = 4403  Block address of process variable input [EXTRACTED, wired from block 4400 output 4403]
+S2 = 60  Block address of set point [EXTRACTED, wired from block 59]
+S3 = 59  Block address of track reference signal [EXTRACTED, wired from block 59]
+S4 = 61  Block address of track switch signal:; 0 = track; 1 = release [EXTRACTED, wired from block 59]
+S5 = 9  (K) gain multiplier [EXTRACTED]
+S6 = 1.14999  (K ) proportional constant P [EXTRACTED]
+S7 = 0.300003  (K ) integral constant (1/min) I [EXTRACTED]
+S8 = 0.115  (K ) derivative constant (min) D [EXTRACTED]
+S9 = 105  High output limit [EXTRACTED]
+S10 = -5  Low output limit [EXTRACTED]
+S11 = 0 = normal  Set point change:; 0 = normal; 1 = integral only (K ≠ 0) I [EXTRACTED]
+S12 = 1 = direct acting on error  Controller action on error:; 0 = reverse acting on error; 1 = direct acting on error [EXTRACTED]</title>S10=-5 S11=0 S12=1</text>
+<path class="block-hit" data-src="scene:20710A1C.CAD:20710A1C:B4" data-block-id="20710A1C:B4" d="M371.97 339.97L411.72 339.97L411.72 258.12L371.97 258.12Z" fill="transparent" stroke="none"><title>Block 59 FC80 Control Station (M/A-M)
+S1 = 5  Block address of input to be displayed on the PV scale of a station (can be used for SP track S30) [EXTRACTED]
+S2 = 5  Block address of SP track signal (S29 SP track switch) [EXTRACTED]
+S3 = 5  Block address of auto signal [EXTRACTED]
+S4 = 5  Block address of control output track signal (TR) [EXTRACTED]
+S5 = 0 = no track  Block address of control output track switch (TS):; 0 = no track; 1 = track [EXTRACTED]
+S6 = 5 = local, manual  Initial mode of station after startup:; 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio; 8 = previous mode [EXTRACTED]
+S7 = 100  PV high alarm point in engineering units [EXTRACTED]
+S8 = -5  PV low alarm point in engineering units [EXTRACTED]
+S9 = 4e+006  PV-SP deviation alarm point in engineering units (for console only) [EXTRACTED]
+S10 = 100  Signal span of PV in engineering units [EXTRACTED]
+S11 = 0  Zero value of PV in engineering units [EXTRACTED]
+S12 = 2  PV engineering units identifier (for console only) [EXTRACTED]
+S13 = 100  Signal span of SP in engineering units [EXTRACTED]
+S14 = 0  Zero value of SP in engineering units [EXTRACTED]
+S15 = 2  SP engineering units identifier (for OIS console only) [EXTRACTED]
+S16 = 255 = no station  Control station address:; 254 = passive station; 255 = no station [EXTRACTED]
+S17 = 0 = computer (auto/manual mode unchanged)  Mode of system default if the computer fails while the loop is under computer control:; 0 = computer (auto/manual mode unchanged); 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 4 = local (auto/manual mode unchanged); 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio [EXTRACTED]
+S18 = 0 = no transfer  Block address of the transfer to manual signal:; 0 = no transfer; 1 = transfer to manual and hold [EXTRACTED]
+S19 = 0 = no transfer  Block address of the transfer to auto signal:; 0 = no transfer; 1 = transfer to auto and hold [EXTRACTED]
+S20 = 0 = no transfer  Block address of the transfer to cascade/ratio signal:; 0 = no transfer; 1 = transfer to cascade/ratio and hold [EXTRACTED]
+S21 = 0 = no transfer  Block address of the transfer to local signal:; 0 = no transfer; 1 = transfer to local and hold [EXTRACTED]
+S22 = 0 = no transfer  Block address of the transfer to computer signal:; 0 = no transfer; 1 = transfer to computer and hold [EXTRACTED]
+S23 = 0 = basic with set point  Station type:; 0 = basic with set point; 1 = basic without set point; 2 = basic with bias; 3 = ratio; 4 = cascade [EXTRACTED]
+S24 = 0 = no alarm  Block address of external high absolute alarm flag:; 0 = no alarm; 1 = high absolute alarm [EXTRACTED]
+S25 = 0 = no alarm  Block address of external low absolute alarm flag:; 0 = no alarm; 1 = low absolute alarm [EXTRACTED]
+S26 = 0 = no alarm  Block address of external high deviation alarm flag:; 0 = no alarm; 1 = high deviation alarm [EXTRACTED]
+S27 = 0 = no alarm  Block address of external low deviation alarm flag:; 0 = no alarm; 1 = low deviation alarm [EXTRACTED]
+S28 = 0  Block address of analog output associated with this station [EXTRACTED]
+S29 = 0 = no track  Block address of switch to have SP track &lt;S2&gt;:; 0 = no track; 1 = track &lt;S2&gt; [EXTRACTED]
+S30 = 0 = no track  Block address of switch to have SP track &lt;S1&gt; (PV):; 0 = no track; 1 = track &lt;S1&gt; [EXTRACTED]
+S31 = 60  Computer watchdog time period (in secs) [EXTRACTED]</title></path>
+<text class="annotation spec_values" data-src="scene:20710A1C.CAD:20710A1C:B4:specs" data-block-id="20710A1C:B4" data-layer="ann-spec" x="425.72" y="317.25" font-size="2.6" fill="#00408c" stroke="none" xml:space="preserve"><title>Block 59 FC80 Control Station (M/A-M)
+S1 = 5  Block address of input to be displayed on the PV scale of a station (can be used for SP track S30) [EXTRACTED]
+S2 = 5  Block address of SP track signal (S29 SP track switch) [EXTRACTED]
+S3 = 5  Block address of auto signal [EXTRACTED]
+S4 = 5  Block address of control output track signal (TR) [EXTRACTED]
+S5 = 0 = no track  Block address of control output track switch (TS):; 0 = no track; 1 = track [EXTRACTED]
+S6 = 5 = local, manual  Initial mode of station after startup:; 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio; 8 = previous mode [EXTRACTED]
+S7 = 100  PV high alarm point in engineering units [EXTRACTED]
+S8 = -5  PV low alarm point in engineering units [EXTRACTED]
+S9 = 4e+006  PV-SP deviation alarm point in engineering units (for console only) [EXTRACTED]
+S10 = 100  Signal span of PV in engineering units [EXTRACTED]
+S11 = 0  Zero value of PV in engineering units [EXTRACTED]
+S12 = 2  PV engineering units identifier (for console only) [EXTRACTED]
+S13 = 100  Signal span of SP in engineering units [EXTRACTED]
+S14 = 0  Zero value of SP in engineering units [EXTRACTED]
+S15 = 2  SP engineering units identifier (for OIS console only) [EXTRACTED]
+S16 = 255 = no station  Control station address:; 254 = passive station; 255 = no station [EXTRACTED]
+S17 = 0 = computer (auto/manual mode unchanged)  Mode of system default if the computer fails while the loop is under computer control:; 0 = computer (auto/manual mode unchanged); 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 4 = local (auto/manual mode unchanged); 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio [EXTRACTED]
+S18 = 0 = no transfer  Block address of the transfer to manual signal:; 0 = no transfer; 1 = transfer to manual and hold [EXTRACTED]
+S19 = 0 = no transfer  Block address of the transfer to auto signal:; 0 = no transfer; 1 = transfer to auto and hold [EXTRACTED]
+S20 = 0 = no transfer  Block address of the transfer to cascade/ratio signal:; 0 = no transfer; 1 = transfer to cascade/ratio and hold [EXTRACTED]
+S21 = 0 = no transfer  Block address of the transfer to local signal:; 0 = no transfer; 1 = transfer to local and hold [EXTRACTED]
+S22 = 0 = no transfer  Block address of the transfer to computer signal:; 0 = no transfer; 1 = transfer to computer and hold [EXTRACTED]
+S23 = 0 = basic with set point  Station type:; 0 = basic with set point; 1 = basic without set point; 2 = basic with bias; 3 = ratio; 4 = cascade [EXTRACTED]
+S24 = 0 = no alarm  Block address of external high absolute alarm flag:; 0 = no alarm; 1 = high absolute alarm [EXTRACTED]
+S25 = 0 = no alarm  Block address of external low absolute alarm flag:; 0 = no alarm; 1 = low absolute alarm [EXTRACTED]
+S26 = 0 = no alarm  Block address of external high deviation alarm flag:; 0 = no alarm; 1 = high deviation alarm [EXTRACTED]
+S27 = 0 = no alarm  Block address of external low deviation alarm flag:; 0 = no alarm; 1 = low deviation alarm [EXTRACTED]
+S28 = 0  Block address of analog output associated with this station [EXTRACTED]
+S29 = 0 = no track  Block address of switch to have SP track &lt;S2&gt;:; 0 = no track; 1 = track &lt;S2&gt; [EXTRACTED]
+S30 = 0 = no track  Block address of switch to have SP track &lt;S1&gt; (PV):; 0 = no track; 1 = track &lt;S1&gt; [EXTRACTED]
+S31 = 60  Computer watchdog time period (in secs) [EXTRACTED]</title>59: S1=5 S2=5 S3=5 S4=5</text>
+<text class="annotation spec_values" data-src="scene:20710A1C.CAD:20710A1C:B4:specs" data-block-id="20710A1C:B4" data-layer="ann-spec" x="425.72" y="320.35" font-size="2.6" fill="#00408c" stroke="none" xml:space="preserve"><title>Block 59 FC80 Control Station (M/A-M)
+S1 = 5  Block address of input to be displayed on the PV scale of a station (can be used for SP track S30) [EXTRACTED]
+S2 = 5  Block address of SP track signal (S29 SP track switch) [EXTRACTED]
+S3 = 5  Block address of auto signal [EXTRACTED]
+S4 = 5  Block address of control output track signal (TR) [EXTRACTED]
+S5 = 0 = no track  Block address of control output track switch (TS):; 0 = no track; 1 = track [EXTRACTED]
+S6 = 5 = local, manual  Initial mode of station after startup:; 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio; 8 = previous mode [EXTRACTED]
+S7 = 100  PV high alarm point in engineering units [EXTRACTED]
+S8 = -5  PV low alarm point in engineering units [EXTRACTED]
+S9 = 4e+006  PV-SP deviation alarm point in engineering units (for console only) [EXTRACTED]
+S10 = 100  Signal span of PV in engineering units [EXTRACTED]
+S11 = 0  Zero value of PV in engineering units [EXTRACTED]
+S12 = 2  PV engineering units identifier (for console only) [EXTRACTED]
+S13 = 100  Signal span of SP in engineering units [EXTRACTED]
+S14 = 0  Zero value of SP in engineering units [EXTRACTED]
+S15 = 2  SP engineering units identifier (for OIS console only) [EXTRACTED]
+S16 = 255 = no station  Control station address:; 254 = passive station; 255 = no station [EXTRACTED]
+S17 = 0 = computer (auto/manual mode unchanged)  Mode of system default if the computer fails while the loop is under computer control:; 0 = computer (auto/manual mode unchanged); 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 4 = local (auto/manual mode unchanged); 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio [EXTRACTED]
+S18 = 0 = no transfer  Block address of the transfer to manual signal:; 0 = no transfer; 1 = transfer to manual and hold [EXTRACTED]
+S19 = 0 = no transfer  Block address of the transfer to auto signal:; 0 = no transfer; 1 = transfer to auto and hold [EXTRACTED]
+S20 = 0 = no transfer  Block address of the transfer to cascade/ratio signal:; 0 = no transfer; 1 = transfer to cascade/ratio and hold [EXTRACTED]
+S21 = 0 = no transfer  Block address of the transfer to local signal:; 0 = no transfer; 1 = transfer to local and hold [EXTRACTED]
+S22 = 0 = no transfer  Block address of the transfer to computer signal:; 0 = no transfer; 1 = transfer to computer and hold [EXTRACTED]
+S23 = 0 = basic with set point  Station type:; 0 = basic with set point; 1 = basic without set point; 2 = basic with bias; 3 = ratio; 4 = cascade [EXTRACTED]
+S24 = 0 = no alarm  Block address of external high absolute alarm flag:; 0 = no alarm; 1 = high absolute alarm [EXTRACTED]
+S25 = 0 = no alarm  Block address of external low absolute alarm flag:; 0 = no alarm; 1 = low absolute alarm [EXTRACTED]
+S26 = 0 = no alarm  Block address of external high deviation alarm flag:; 0 = no alarm; 1 = high deviation alarm [EXTRACTED]
+S27 = 0 = no alarm  Block address of external low deviation alarm flag:; 0 = no alarm; 1 = low deviation alarm [EXTRACTED]
+S28 = 0  Block address of analog output associated with this station [EXTRACTED]
+S29 = 0 = no track  Block address of switch to have SP track &lt;S2&gt;:; 0 = no track; 1 = track &lt;S2&gt; [EXTRACTED]
+S30 = 0 = no track  Block address of switch to have SP track &lt;S1&gt; (PV):; 0 = no track; 1 = track &lt;S1&gt; [EXTRACTED]
+S31 = 60  Computer watchdog time period (in secs) [EXTRACTED]</title>S5=0 S6=5 S7=100 S8=-5</text>
+<text class="annotation spec_values" data-src="scene:20710A1C.CAD:20710A1C:B4:specs" data-block-id="20710A1C:B4" data-layer="ann-spec" x="425.72" y="323.45" font-size="2.6" fill="#00408c" stroke="none" xml:space="preserve"><title>Block 59 FC80 Control Station (M/A-M)
+S1 = 5  Block address of input to be displayed on the PV scale of a station (can be used for SP track S30) [EXTRACTED]
+S2 = 5  Block address of SP track signal (S29 SP track switch) [EXTRACTED]
+S3 = 5  Block address of auto signal [EXTRACTED]
+S4 = 5  Block address of control output track signal (TR) [EXTRACTED]
+S5 = 0 = no track  Block address of control output track switch (TS):; 0 = no track; 1 = track [EXTRACTED]
+S6 = 5 = local, manual  Initial mode of station after startup:; 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio; 8 = previous mode [EXTRACTED]
+S7 = 100  PV high alarm point in engineering units [EXTRACTED]
+S8 = -5  PV low alarm point in engineering units [EXTRACTED]
+S9 = 4e+006  PV-SP deviation alarm point in engineering units (for console only) [EXTRACTED]
+S10 = 100  Signal span of PV in engineering units [EXTRACTED]
+S11 = 0  Zero value of PV in engineering units [EXTRACTED]
+S12 = 2  PV engineering units identifier (for console only) [EXTRACTED]
+S13 = 100  Signal span of SP in engineering units [EXTRACTED]
+S14 = 0  Zero value of SP in engineering units [EXTRACTED]
+S15 = 2  SP engineering units identifier (for OIS console only) [EXTRACTED]
+S16 = 255 = no station  Control station address:; 254 = passive station; 255 = no station [EXTRACTED]
+S17 = 0 = computer (auto/manual mode unchanged)  Mode of system default if the computer fails while the loop is under computer control:; 0 = computer (auto/manual mode unchanged); 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 4 = local (auto/manual mode unchanged); 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio [EXTRACTED]
+S18 = 0 = no transfer  Block address of the transfer to manual signal:; 0 = no transfer; 1 = transfer to manual and hold [EXTRACTED]
+S19 = 0 = no transfer  Block address of the transfer to auto signal:; 0 = no transfer; 1 = transfer to auto and hold [EXTRACTED]
+S20 = 0 = no transfer  Block address of the transfer to cascade/ratio signal:; 0 = no transfer; 1 = transfer to cascade/ratio and hold [EXTRACTED]
+S21 = 0 = no transfer  Block address of the transfer to local signal:; 0 = no transfer; 1 = transfer to local and hold [EXTRACTED]
+S22 = 0 = no transfer  Block address of the transfer to computer signal:; 0 = no transfer; 1 = transfer to computer and hold [EXTRACTED]
+S23 = 0 = basic with set point  Station type:; 0 = basic with set point; 1 = basic without set point; 2 = basic with bias; 3 = ratio; 4 = cascade [EXTRACTED]
+S24 = 0 = no alarm  Block address of external high absolute alarm flag:; 0 = no alarm; 1 = high absolute alarm [EXTRACTED]
+S25 = 0 = no alarm  Block address of external low absolute alarm flag:; 0 = no alarm; 1 = low absolute alarm [EXTRACTED]
+S26 = 0 = no alarm  Block address of external high deviation alarm flag:; 0 = no alarm; 1 = high deviation alarm [EXTRACTED]
+S27 = 0 = no alarm  Block address of external low deviation alarm flag:; 0 = no alarm; 1 = low deviation alarm [EXTRACTED]
+S28 = 0  Block address of analog output associated with this station [EXTRACTED]
+S29 = 0 = no track  Block address of switch to have SP track &lt;S2&gt;:; 0 = no track; 1 = track &lt;S2&gt; [EXTRACTED]
+S30 = 0 = no track  Block address of switch to have SP track &lt;S1&gt; (PV):; 0 = no track; 1 = track &lt;S1&gt; [EXTRACTED]
+S31 = 60  Computer watchdog time period (in secs) [EXTRACTED]</title>S9=4e+006 S10=100 S11=0</text>
+<text class="annotation spec_values" data-src="scene:20710A1C.CAD:20710A1C:B4:specs" data-block-id="20710A1C:B4" data-layer="ann-spec" x="425.72" y="326.55" font-size="2.6" fill="#00408c" stroke="none" xml:space="preserve"><title>Block 59 FC80 Control Station (M/A-M)
+S1 = 5  Block address of input to be displayed on the PV scale of a station (can be used for SP track S30) [EXTRACTED]
+S2 = 5  Block address of SP track signal (S29 SP track switch) [EXTRACTED]
+S3 = 5  Block address of auto signal [EXTRACTED]
+S4 = 5  Block address of control output track signal (TR) [EXTRACTED]
+S5 = 0 = no track  Block address of control output track switch (TS):; 0 = no track; 1 = track [EXTRACTED]
+S6 = 5 = local, manual  Initial mode of station after startup:; 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio; 8 = previous mode [EXTRACTED]
+S7 = 100  PV high alarm point in engineering units [EXTRACTED]
+S8 = -5  PV low alarm point in engineering units [EXTRACTED]
+S9 = 4e+006  PV-SP deviation alarm point in engineering units (for console only) [EXTRACTED]
+S10 = 100  Signal span of PV in engineering units [EXTRACTED]
+S11 = 0  Zero value of PV in engineering units [EXTRACTED]
+S12 = 2  PV engineering units identifier (for console only) [EXTRACTED]
+S13 = 100  Signal span of SP in engineering units [EXTRACTED]
+S14 = 0  Zero value of SP in engineering units [EXTRACTED]
+S15 = 2  SP engineering units identifier (for OIS console only) [EXTRACTED]
+S16 = 255 = no station  Control station address:; 254 = passive station; 255 = no station [EXTRACTED]
+S17 = 0 = computer (auto/manual mode unchanged)  Mode of system default if the computer fails while the loop is under computer control:; 0 = computer (auto/manual mode unchanged); 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 4 = local (auto/manual mode unchanged); 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio [EXTRACTED]
+S18 = 0 = no transfer  Block address of the transfer to manual signal:; 0 = no transfer; 1 = transfer to manual and hold [EXTRACTED]
+S19 = 0 = no transfer  Block address of the transfer to auto signal:; 0 = no transfer; 1 = transfer to auto and hold [EXTRACTED]
+S20 = 0 = no transfer  Block address of the transfer to cascade/ratio signal:; 0 = no transfer; 1 = transfer to cascade/ratio and hold [EXTRACTED]
+S21 = 0 = no transfer  Block address of the transfer to local signal:; 0 = no transfer; 1 = transfer to local and hold [EXTRACTED]
+S22 = 0 = no transfer  Block address of the transfer to computer signal:; 0 = no transfer; 1 = transfer to computer and hold [EXTRACTED]
+S23 = 0 = basic with set point  Station type:; 0 = basic with set point; 1 = basic without set point; 2 = basic with bias; 3 = ratio; 4 = cascade [EXTRACTED]
+S24 = 0 = no alarm  Block address of external high absolute alarm flag:; 0 = no alarm; 1 = high absolute alarm [EXTRACTED]
+S25 = 0 = no alarm  Block address of external low absolute alarm flag:; 0 = no alarm; 1 = low absolute alarm [EXTRACTED]
+S26 = 0 = no alarm  Block address of external high deviation alarm flag:; 0 = no alarm; 1 = high deviation alarm [EXTRACTED]
+S27 = 0 = no alarm  Block address of external low deviation alarm flag:; 0 = no alarm; 1 = low deviation alarm [EXTRACTED]
+S28 = 0  Block address of analog output associated with this station [EXTRACTED]
+S29 = 0 = no track  Block address of switch to have SP track &lt;S2&gt;:; 0 = no track; 1 = track &lt;S2&gt; [EXTRACTED]
+S30 = 0 = no track  Block address of switch to have SP track &lt;S1&gt; (PV):; 0 = no track; 1 = track &lt;S1&gt; [EXTRACTED]
+S31 = 60  Computer watchdog time period (in secs) [EXTRACTED]</title>S12=2 S13=100 S14=0 S15=2</text>
+<text class="annotation spec_values" data-src="scene:20710A1C.CAD:20710A1C:B4:specs" data-block-id="20710A1C:B4" data-layer="ann-spec" x="425.72" y="329.65" font-size="2.6" fill="#00408c" stroke="none" xml:space="preserve"><title>Block 59 FC80 Control Station (M/A-M)
+S1 = 5  Block address of input to be displayed on the PV scale of a station (can be used for SP track S30) [EXTRACTED]
+S2 = 5  Block address of SP track signal (S29 SP track switch) [EXTRACTED]
+S3 = 5  Block address of auto signal [EXTRACTED]
+S4 = 5  Block address of control output track signal (TR) [EXTRACTED]
+S5 = 0 = no track  Block address of control output track switch (TS):; 0 = no track; 1 = track [EXTRACTED]
+S6 = 5 = local, manual  Initial mode of station after startup:; 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio; 8 = previous mode [EXTRACTED]
+S7 = 100  PV high alarm point in engineering units [EXTRACTED]
+S8 = -5  PV low alarm point in engineering units [EXTRACTED]
+S9 = 4e+006  PV-SP deviation alarm point in engineering units (for console only) [EXTRACTED]
+S10 = 100  Signal span of PV in engineering units [EXTRACTED]
+S11 = 0  Zero value of PV in engineering units [EXTRACTED]
+S12 = 2  PV engineering units identifier (for console only) [EXTRACTED]
+S13 = 100  Signal span of SP in engineering units [EXTRACTED]
+S14 = 0  Zero value of SP in engineering units [EXTRACTED]
+S15 = 2  SP engineering units identifier (for OIS console only) [EXTRACTED]
+S16 = 255 = no station  Control station address:; 254 = passive station; 255 = no station [EXTRACTED]
+S17 = 0 = computer (auto/manual mode unchanged)  Mode of system default if the computer fails while the loop is under computer control:; 0 = computer (auto/manual mode unchanged); 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 4 = local (auto/manual mode unchanged); 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio [EXTRACTED]
+S18 = 0 = no transfer  Block address of the transfer to manual signal:; 0 = no transfer; 1 = transfer to manual and hold [EXTRACTED]
+S19 = 0 = no transfer  Block address of the transfer to auto signal:; 0 = no transfer; 1 = transfer to auto and hold [EXTRACTED]
+S20 = 0 = no transfer  Block address of the transfer to cascade/ratio signal:; 0 = no transfer; 1 = transfer to cascade/ratio and hold [EXTRACTED]
+S21 = 0 = no transfer  Block address of the transfer to local signal:; 0 = no transfer; 1 = transfer to local and hold [EXTRACTED]
+S22 = 0 = no transfer  Block address of the transfer to computer signal:; 0 = no transfer; 1 = transfer to computer and hold [EXTRACTED]
+S23 = 0 = basic with set point  Station type:; 0 = basic with set point; 1 = basic without set point; 2 = basic with bias; 3 = ratio; 4 = cascade [EXTRACTED]
+S24 = 0 = no alarm  Block address of external high absolute alarm flag:; 0 = no alarm; 1 = high absolute alarm [EXTRACTED]
+S25 = 0 = no alarm  Block address of external low absolute alarm flag:; 0 = no alarm; 1 = low absolute alarm [EXTRACTED]
+S26 = 0 = no alarm  Block address of external high deviation alarm flag:; 0 = no alarm; 1 = high deviation alarm [EXTRACTED]
+S27 = 0 = no alarm  Block address of external low deviation alarm flag:; 0 = no alarm; 1 = low deviation alarm [EXTRACTED]
+S28 = 0  Block address of analog output associated with this station [EXTRACTED]
+S29 = 0 = no track  Block address of switch to have SP track &lt;S2&gt;:; 0 = no track; 1 = track &lt;S2&gt; [EXTRACTED]
+S30 = 0 = no track  Block address of switch to have SP track &lt;S1&gt; (PV):; 0 = no track; 1 = track &lt;S1&gt; [EXTRACTED]
+S31 = 60  Computer watchdog time period (in secs) [EXTRACTED]</title>S16=255 S17=0 S18=0 S19=0</text>
+<text class="annotation spec_values" data-src="scene:20710A1C.CAD:20710A1C:B4:specs" data-block-id="20710A1C:B4" data-layer="ann-spec" x="425.72" y="332.75" font-size="2.6" fill="#00408c" stroke="none" xml:space="preserve"><title>Block 59 FC80 Control Station (M/A-M)
+S1 = 5  Block address of input to be displayed on the PV scale of a station (can be used for SP track S30) [EXTRACTED]
+S2 = 5  Block address of SP track signal (S29 SP track switch) [EXTRACTED]
+S3 = 5  Block address of auto signal [EXTRACTED]
+S4 = 5  Block address of control output track signal (TR) [EXTRACTED]
+S5 = 0 = no track  Block address of control output track switch (TS):; 0 = no track; 1 = track [EXTRACTED]
+S6 = 5 = local, manual  Initial mode of station after startup:; 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio; 8 = previous mode [EXTRACTED]
+S7 = 100  PV high alarm point in engineering units [EXTRACTED]
+S8 = -5  PV low alarm point in engineering units [EXTRACTED]
+S9 = 4e+006  PV-SP deviation alarm point in engineering units (for console only) [EXTRACTED]
+S10 = 100  Signal span of PV in engineering units [EXTRACTED]
+S11 = 0  Zero value of PV in engineering units [EXTRACTED]
+S12 = 2  PV engineering units identifier (for console only) [EXTRACTED]
+S13 = 100  Signal span of SP in engineering units [EXTRACTED]
+S14 = 0  Zero value of SP in engineering units [EXTRACTED]
+S15 = 2  SP engineering units identifier (for OIS console only) [EXTRACTED]
+S16 = 255 = no station  Control station address:; 254 = passive station; 255 = no station [EXTRACTED]
+S17 = 0 = computer (auto/manual mode unchanged)  Mode of system default if the computer fails while the loop is under computer control:; 0 = computer (auto/manual mode unchanged); 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 4 = local (auto/manual mode unchanged); 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio [EXTRACTED]
+S18 = 0 = no transfer  Block address of the transfer to manual signal:; 0 = no transfer; 1 = transfer to manual and hold [EXTRACTED]
+S19 = 0 = no transfer  Block address of the transfer to auto signal:; 0 = no transfer; 1 = transfer to auto and hold [EXTRACTED]
+S20 = 0 = no transfer  Block address of the transfer to cascade/ratio signal:; 0 = no transfer; 1 = transfer to cascade/ratio and hold [EXTRACTED]
+S21 = 0 = no transfer  Block address of the transfer to local signal:; 0 = no transfer; 1 = transfer to local and hold [EXTRACTED]
+S22 = 0 = no transfer  Block address of the transfer to computer signal:; 0 = no transfer; 1 = transfer to computer and hold [EXTRACTED]
+S23 = 0 = basic with set point  Station type:; 0 = basic with set point; 1 = basic without set point; 2 = basic with bias; 3 = ratio; 4 = cascade [EXTRACTED]
+S24 = 0 = no alarm  Block address of external high absolute alarm flag:; 0 = no alarm; 1 = high absolute alarm [EXTRACTED]
+S25 = 0 = no alarm  Block address of external low absolute alarm flag:; 0 = no alarm; 1 = low absolute alarm [EXTRACTED]
+S26 = 0 = no alarm  Block address of external high deviation alarm flag:; 0 = no alarm; 1 = high deviation alarm [EXTRACTED]
+S27 = 0 = no alarm  Block address of external low deviation alarm flag:; 0 = no alarm; 1 = low deviation alarm [EXTRACTED]
+S28 = 0  Block address of analog output associated with this station [EXTRACTED]
+S29 = 0 = no track  Block address of switch to have SP track &lt;S2&gt;:; 0 = no track; 1 = track &lt;S2&gt; [EXTRACTED]
+S30 = 0 = no track  Block address of switch to have SP track &lt;S1&gt; (PV):; 0 = no track; 1 = track &lt;S1&gt; [EXTRACTED]
+S31 = 60  Computer watchdog time period (in secs) [EXTRACTED]</title>S20=0 S21=0 S22=0 S23=0</text>
+<text class="annotation spec_values" data-src="scene:20710A1C.CAD:20710A1C:B4:specs" data-block-id="20710A1C:B4" data-layer="ann-spec" x="425.72" y="335.85" font-size="2.6" fill="#00408c" stroke="none" xml:space="preserve"><title>Block 59 FC80 Control Station (M/A-M)
+S1 = 5  Block address of input to be displayed on the PV scale of a station (can be used for SP track S30) [EXTRACTED]
+S2 = 5  Block address of SP track signal (S29 SP track switch) [EXTRACTED]
+S3 = 5  Block address of auto signal [EXTRACTED]
+S4 = 5  Block address of control output track signal (TR) [EXTRACTED]
+S5 = 0 = no track  Block address of control output track switch (TS):; 0 = no track; 1 = track [EXTRACTED]
+S6 = 5 = local, manual  Initial mode of station after startup:; 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio; 8 = previous mode [EXTRACTED]
+S7 = 100  PV high alarm point in engineering units [EXTRACTED]
+S8 = -5  PV low alarm point in engineering units [EXTRACTED]
+S9 = 4e+006  PV-SP deviation alarm point in engineering units (for console only) [EXTRACTED]
+S10 = 100  Signal span of PV in engineering units [EXTRACTED]
+S11 = 0  Zero value of PV in engineering units [EXTRACTED]
+S12 = 2  PV engineering units identifier (for console only) [EXTRACTED]
+S13 = 100  Signal span of SP in engineering units [EXTRACTED]
+S14 = 0  Zero value of SP in engineering units [EXTRACTED]
+S15 = 2  SP engineering units identifier (for OIS console only) [EXTRACTED]
+S16 = 255 = no station  Control station address:; 254 = passive station; 255 = no station [EXTRACTED]
+S17 = 0 = computer (auto/manual mode unchanged)  Mode of system default if the computer fails while the loop is under computer control:; 0 = computer (auto/manual mode unchanged); 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 4 = local (auto/manual mode unchanged); 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio [EXTRACTED]
+S18 = 0 = no transfer  Block address of the transfer to manual signal:; 0 = no transfer; 1 = transfer to manual and hold [EXTRACTED]
+S19 = 0 = no transfer  Block address of the transfer to auto signal:; 0 = no transfer; 1 = transfer to auto and hold [EXTRACTED]
+S20 = 0 = no transfer  Block address of the transfer to cascade/ratio signal:; 0 = no transfer; 1 = transfer to cascade/ratio and hold [EXTRACTED]
+S21 = 0 = no transfer  Block address of the transfer to local signal:; 0 = no transfer; 1 = transfer to local and hold [EXTRACTED]
+S22 = 0 = no transfer  Block address of the transfer to computer signal:; 0 = no transfer; 1 = transfer to computer and hold [EXTRACTED]
+S23 = 0 = basic with set point  Station type:; 0 = basic with set point; 1 = basic without set point; 2 = basic with bias; 3 = ratio; 4 = cascade [EXTRACTED]
+S24 = 0 = no alarm  Block address of external high absolute alarm flag:; 0 = no alarm; 1 = high absolute alarm [EXTRACTED]
+S25 = 0 = no alarm  Block address of external low absolute alarm flag:; 0 = no alarm; 1 = low absolute alarm [EXTRACTED]
+S26 = 0 = no alarm  Block address of external high deviation alarm flag:; 0 = no alarm; 1 = high deviation alarm [EXTRACTED]
+S27 = 0 = no alarm  Block address of external low deviation alarm flag:; 0 = no alarm; 1 = low deviation alarm [EXTRACTED]
+S28 = 0  Block address of analog output associated with this station [EXTRACTED]
+S29 = 0 = no track  Block address of switch to have SP track &lt;S2&gt;:; 0 = no track; 1 = track &lt;S2&gt; [EXTRACTED]
+S30 = 0 = no track  Block address of switch to have SP track &lt;S1&gt; (PV):; 0 = no track; 1 = track &lt;S1&gt; [EXTRACTED]
+S31 = 60  Computer watchdog time period (in secs) [EXTRACTED]</title>S24=0 S25=0 S26=0 S27=0</text>
+<text class="annotation spec_values" data-src="scene:20710A1C.CAD:20710A1C:B4:specs" data-block-id="20710A1C:B4" data-layer="ann-spec" x="425.72" y="338.95" font-size="2.6" fill="#00408c" stroke="none" xml:space="preserve"><title>Block 59 FC80 Control Station (M/A-M)
+S1 = 5  Block address of input to be displayed on the PV scale of a station (can be used for SP track S30) [EXTRACTED]
+S2 = 5  Block address of SP track signal (S29 SP track switch) [EXTRACTED]
+S3 = 5  Block address of auto signal [EXTRACTED]
+S4 = 5  Block address of control output track signal (TR) [EXTRACTED]
+S5 = 0 = no track  Block address of control output track switch (TS):; 0 = no track; 1 = track [EXTRACTED]
+S6 = 5 = local, manual  Initial mode of station after startup:; 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio; 8 = previous mode [EXTRACTED]
+S7 = 100  PV high alarm point in engineering units [EXTRACTED]
+S8 = -5  PV low alarm point in engineering units [EXTRACTED]
+S9 = 4e+006  PV-SP deviation alarm point in engineering units (for console only) [EXTRACTED]
+S10 = 100  Signal span of PV in engineering units [EXTRACTED]
+S11 = 0  Zero value of PV in engineering units [EXTRACTED]
+S12 = 2  PV engineering units identifier (for console only) [EXTRACTED]
+S13 = 100  Signal span of SP in engineering units [EXTRACTED]
+S14 = 0  Zero value of SP in engineering units [EXTRACTED]
+S15 = 2  SP engineering units identifier (for OIS console only) [EXTRACTED]
+S16 = 255 = no station  Control station address:; 254 = passive station; 255 = no station [EXTRACTED]
+S17 = 0 = computer (auto/manual mode unchanged)  Mode of system default if the computer fails while the loop is under computer control:; 0 = computer (auto/manual mode unchanged); 1 = computer, manual; 2 = computer, auto; 3 = computer, cascade/ratio; 4 = local (auto/manual mode unchanged); 5 = local, manual; 6 = local, auto; 7 = local, cascade/ratio [EXTRACTED]
+S18 = 0 = no transfer  Block address of the transfer to manual signal:; 0 = no transfer; 1 = transfer to manual and hold [EXTRACTED]
+S19 = 0 = no transfer  Block address of the transfer to auto signal:; 0 = no transfer; 1 = transfer to auto and hold [EXTRACTED]
+S20 = 0 = no transfer  Block address of the transfer to cascade/ratio signal:; 0 = no transfer; 1 = transfer to cascade/ratio and hold [EXTRACTED]
+S21 = 0 = no transfer  Block address of the transfer to local signal:; 0 = no transfer; 1 = transfer to local and hold [EXTRACTED]
+S22 = 0 = no transfer  Block address of the transfer to computer signal:; 0 = no transfer; 1 = transfer to computer and hold [EXTRACTED]
+S23 = 0 = basic with set point  Station type:; 0 = basic with set point; 1 = basic without set point; 2 = basic with bias; 3 = ratio; 4 = cascade [EXTRACTED]
+S24 = 0 = no alarm  Block address of external high absolute alarm flag:; 0 = no alarm; 1 = high absolute alarm [EXTRACTED]
+S25 = 0 = no alarm  Block address of external low absolute alarm flag:; 0 = no alarm; 1 = low absolute alarm [EXTRACTED]
+S26 = 0 = no alarm  Block address of external high deviation alarm flag:; 0 = no alarm; 1 = high deviation alarm [EXTRACTED]
+S27 = 0 = no alarm  Block address of external low deviation alarm flag:; 0 = no alarm; 1 = low deviation alarm [EXTRACTED]
+S28 = 0  Block address of analog output associated with this station [EXTRACTED]
+S29 = 0 = no track  Block address of switch to have SP track &lt;S2&gt;:; 0 = no track; 1 = track &lt;S2&gt; [EXTRACTED]
+S30 = 0 = no track  Block address of switch to have SP track &lt;S1&gt; (PV):; 0 = no track; 1 = track &lt;S1&gt; [EXTRACTED]
+S31 = 60  Computer watchdog time period (in secs) [EXTRACTED]</title>S28=0 S29=0 S30=0 S31=60</text>
+<path class="block-hit" data-src="scene:20710A1C.CAD:20710A1C:B5" data-block-id="20710A1C:B5" d="M374.09 237.92L411.72 237.92L411.72 220.92L374.09 220.92Z" fill="transparent" stroke="none"><title>Block 66 FC66 Analog Trend (TREND)
+S1 = 0  Block address of analog input [EXTRACTED, wired from block 4400 output 4403]
+S2 = 1 = mean  Trend mode:; 0 = sample; 1 = mean; 2 = minimum; 3 = maximum; 4 = sum [EXTRACTED]
+S3 = 0 = normal  Trend resolution :; 0 = normal; 1 = fast [EXTRACTED]</title></path>
+<text class="annotation spec_values" data-src="scene:20710A1C.CAD:20710A1C:B5:specs" data-block-id="20710A1C:B5" data-layer="ann-spec" x="425.72" y="223" font-size="2.6" fill="#00408c" stroke="none" xml:space="preserve"><title>Block 66 FC66 Analog Trend (TREND)
+S1 = 0  Block address of analog input [EXTRACTED, wired from block 4400 output 4403]
+S2 = 1 = mean  Trend mode:; 0 = sample; 1 = mean; 2 = minimum; 3 = maximum; 4 = sum [EXTRACTED]
+S3 = 0 = normal  Trend resolution :; 0 = normal; 1 = fast [EXTRACTED]</title>66: S1=0 S2=1 S3=0</text>
+<path class="block-hit" data-src="scene:20710A1C.CAD:20710A1C:B8" data-block-id="20710A1C:B8" d="M617.51 285.76L667.04 285.76L667.04 249.4L617.51 249.4Z" fill="transparent" stroke="none"><title>Block ? (TAO0214)</title></path>
+<path class="block-hit" data-src="scene:20710A1C.CAD:20710A1C:B12" data-block-id="20710A1C:B12" d="M293.31 314.46L322.44 314.46L322.44 294.26L293.31 294.26Z" fill="transparent" stroke="none"><title>Block 2881 FC40 OR (4-Input) (OR4)
+S1 = 0  Block address of first input [EXTRACTED]
+S2 = 0  Block address of second input [EXTRACTED]
+S3 = 0  Block address of third input [EXTRACTED]
+S4 = 0  Block address of fourth input [EXTRACTED]</title></path>
+<text class="annotation spec_values" data-src="scene:20710A1C.CAD:20710A1C:B12:specs" data-block-id="20710A1C:B12" data-layer="ann-spec" x="293.31" y="318.04" font-size="2.6" fill="#00408c" stroke="none" xml:space="preserve"><title>Block 2881 FC40 OR (4-Input) (OR4)
+S1 = 0  Block address of first input [EXTRACTED]
+S2 = 0  Block address of second input [EXTRACTED]
+S3 = 0  Block address of third input [EXTRACTED]
+S4 = 0  Block address of fourth input [EXTRACTED]</title>2881: S1=0 S2=0 S3=0 S4=0</text>
+<path class="block-hit" data-src="scene:20710A1C.CAD:20710A1C:B14" data-block-id="20710A1C:B14" d="M484.64 284.69L522.27 284.69L522.27 267.69L484.64 267.69Z" fill="transparent" stroke="none"><title>Block 5110 FC15 Summer (2-Input) (SUM)
+S1 = 5  Block address of first input [EXTRACTED, wired from block 59]
+S2 = 5  Block address of second input [EXTRACTED, wired from block 5111 output 5111]
+S3 = -1  Gain parameter of first input [EXTRACTED]
+S4 = 1  Gain parameter of second input [EXTRACTED]</title></path>
+<text class="annotation spec_values" data-src="scene:20710A1C.CAD:20710A1C:B14:specs" data-block-id="20710A1C:B14" data-layer="ann-spec" x="536.27" y="280.57" font-size="2.6" fill="#00408c" stroke="none" xml:space="preserve"><title>Block 5110 FC15 Summer (2-Input) (SUM)
+S1 = 5  Block address of first input [EXTRACTED, wired from block 59]
+S2 = 5  Block address of second input [EXTRACTED, wired from block 5111 output 5111]
+S3 = -1  Gain parameter of first input [EXTRACTED]
+S4 = 1  Gain parameter of second input [EXTRACTED]</title>5110: S1=5 S2=5 S3=-1</text>
+<text class="annotation spec_values" data-src="scene:20710A1C.CAD:20710A1C:B14:specs" data-block-id="20710A1C:B14" data-layer="ann-spec" x="536.27" y="283.67" font-size="2.6" fill="#00408c" stroke="none" xml:space="preserve"><title>Block 5110 FC15 Summer (2-Input) (SUM)
+S1 = 5  Block address of first input [EXTRACTED, wired from block 59]
+S2 = 5  Block address of second input [EXTRACTED, wired from block 5111 output 5111]
+S3 = -1  Gain parameter of first input [EXTRACTED]
+S4 = 1  Gain parameter of second input [EXTRACTED]</title>S4=1</text>
+<path class="block-hit" data-src="scene:20710A1C.CAD:20710A1C:B15" data-block-id="20710A1C:B15" d="M447.44 299.57L475.5 299.57L475.5 282.57L447.44 282.57Z" fill="transparent" stroke="none"><title>Block 5111 FC2 Manual Set Constant (Signal Generator) (A)
+S1 = 100  Output value in engineering units [EXTRACTED]</title></path>
+<text class="annotation spec_values" data-src="scene:20710A1C.CAD:20710A1C:B15:specs" data-block-id="20710A1C:B15" data-layer="ann-spec" x="447.44" y="303.15" font-size="2.6" fill="#00408c" stroke="none" xml:space="preserve"><title>Block 5111 FC2 Manual Set Constant (Signal Generator) (A)
+S1 = 100  Output value in engineering units [EXTRACTED]</title>5111: S1=100</text>
+<path class="block-hit" data-src="scene:20710A1C.CAD:20710A1C:B16" data-block-id="20710A1C:B16" d="M137.06 285.76L184.04 285.76L184.04 249.4L137.06 249.4Z" fill="transparent" stroke="none"><title>Block ? (TAI044)</title></path>
+</g></svg>

@@ -1,0 +1,519 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 153,
+  "name": "ISC Parameter Converter",
+  "description": "The ISC parameter converter function block calculates optimal tuning parameters for the associated inferential smith controller (ISC controller, function code 160) using the output of the model parameter estimator (function code 152). The tuning values are the process gain, process deadtime and process lag time. The outputs describe process dynamics at one operating point. Through a direct link with the ISC controller, the tuning parameters may be directly adapted. However, they will only be adapted when: The appropriate adapt option is selected in S9. and The quality output of the associated model parameter estimator is good (zero). The ISC parameter converter also supervises an automated initialization routine for establishing initial estimates for the associated ISC and model parameter estimator. After completion of initialization, the converter tunes: The ISC, gain and lag time. The ISC tuning time constant. The minimum and maximum process gain (S5 and S6). The minimum and maximum process lag time (S7 and S8). The sample time and expected noise level for the model parameter estimator. The ISC parameter converter also updates the estimated process deadtime for the associated ISC controller and model parameter estimator whenever input S3 is connected to a function block other than number five, and the initialization trigger equals zero. The initialization value of deadtime will be used as long as the initialization trigger equals one. If S3 is set to five then, the ISC parameter converter updates the model parameter estimator with the value used by the ISC controller.",
+  "description_lines": [
+    "The ISC parameter converter function block calculates optimal",
+    "tuning parameters for the associated inferential smith control-",
+    "ler (ISC controller, function code 160) using the output of the",
+    "model parameter estimator (function code 152). The tuning",
+    "values are the process gain, process deadtime and process lag",
+    "time. The outputs describe process dynamics at one operating",
+    "point.",
+    "Through a direct link with the ISC controller, the tuning",
+    "parameters may be directly adapted. However, they will only be",
+    "adapted when:",
+    "The appropriate adapt option is selected in S9.",
+    "and",
+    "The quality output of the associated model parameter esti-",
+    "mator is good (zero).",
+    "The ISC parameter converter also supervises an automated",
+    "initialization routine for establishing initial estimates for the",
+    "associated ISC and model parameter estimator. After comple-",
+    "tion of initialization, the converter tunes:",
+    "The ISC, gain and lag time.",
+    "The ISC tuning time constant.",
+    "The minimum and maximum process gain (S5 and S6).",
+    "The minimum and maximum process lag time (S7 and S8).",
+    "The sample time and expected noise level for the model",
+    "parameter estimator.",
+    "The ISC parameter converter also updates the estimated pro-",
+    "cess deadtime for the associated ISC controller and model",
+    "parameter estimator whenever input S3 is connected to a",
+    "function block other than number five, and the initialization",
+    "trigger equals zero. The initialization value of deadtime will be",
+    "used as long as the initialization trigger equals one. If S3 is set",
+    "to five then, the ISC parameter converter updates the model",
+    "parameter estimator with the value used by the ISC controller."
+  ],
+  "symbol": {
+    "title_raw": "IS C C O N",
+    "title": "ISCCON",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S13"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3",
+      "N+4",
+      "N+5"
+    ],
+    "items": [
+      {
+        "x": 155.52,
+        "y": 594.78,
+        "s": "IS C C O N"
+      },
+      {
+        "x": 191.04,
+        "y": 588.78,
+        "s": "(1 5 3 )"
+      },
+      {
+        "x": 132.96,
+        "y": 587.34,
+        "s": "S 1"
+      },
+      {
+        "x": 152.4,
+        "y": 584.94,
+        "s": "E"
+      },
+      {
+        "x": 181.68,
+        "y": 584.7,
+        "s": "G"
+      },
+      {
+        "x": 191.04,
+        "y": 579.9,
+        "s": "N"
+      },
+      {
+        "x": 132.96,
+        "y": 578.22,
+        "s": "S 2"
+      },
+      {
+        "x": 152.4,
+        "y": 576.06,
+        "s": "IS C"
+      },
+      {
+        "x": 178.8,
+        "y": 575.58,
+        "s": "T C"
+      },
+      {
+        "x": 191.04,
+        "y": 571.02,
+        "s": "N + 1"
+      },
+      {
+        "x": 132.96,
+        "y": 569.28,
+        "s": "S 3"
+      },
+      {
+        "x": 152.4,
+        "y": 567.12,
+        "s": "P D T"
+      },
+      {
+        "x": 175.68,
+        "y": 566.64,
+        "s": "P D T"
+      },
+      {
+        "x": 191.04,
+        "y": 562.08,
+        "s": "N + 2"
+      },
+      {
+        "x": 132.96,
+        "y": 560.16,
+        "s": "S 4"
+      },
+      {
+        "x": 152.4,
+        "y": 558,
+        "s": "H"
+      },
+      {
+        "x": 178.56,
+        "y": 557.76,
+        "s": "D P"
+      },
+      {
+        "x": 191.04,
+        "y": 553.2,
+        "s": "N + 3"
+      },
+      {
+        "x": 132.96,
+        "y": 551.28,
+        "s": "S 1 3"
+      },
+      {
+        "x": 152.4,
+        "y": 549.12,
+        "s": "N /A"
+      },
+      {
+        "x": 180.24,
+        "y": 548.64,
+        "s": "IO"
+      },
+      {
+        "x": 191.04,
+        "y": 544.32,
+        "s": "N + 4"
+      },
+      {
+        "x": 177.6,
+        "y": 539.76,
+        "s": "IC F"
+      },
+      {
+        "x": 191.04,
+        "y": 535.44,
+        "s": "N + 5"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Estimated process gain",
+      "description_lines": [
+        "Estimated process gain"
+      ],
+      "manual_page": 536
+    },
+    {
+      "blk": "N+1",
+      "type": "R",
+      "description": "Estimated process time constant",
+      "description_lines": [
+        "Estimated process time constant"
+      ],
+      "manual_page": 536
+    },
+    {
+      "blk": "N+2",
+      "type": "R",
+      "description": "Adjusted process deadtime",
+      "description_lines": [
+        "Adjusted process deadtime"
+      ],
+      "manual_page": 536
+    },
+    {
+      "blk": "N+3",
+      "type": "R",
+      "description": "Estimated process operating point",
+      "description_lines": [
+        "Estimated process operating point"
+      ],
+      "manual_page": 536
+    },
+    {
+      "blk": "N+4",
+      "type": "R",
+      "description": "Initialization output:; 0 = initialization complete, not in progress (normal); 1 = initialization failed or aborted; 2 = initialization in progress",
+      "description_lines": [
+        "Initialization output:",
+        "0 = initialization complete, not in progress (normal)",
+        "1 = initialization failed or aborted",
+        "2 = initialization in progress"
+      ],
+      "manual_page": 536
+    },
+    {
+      "blk": "N+5",
+      "type": "B",
+      "description": "Pulse output from 0 to 1 and after 5 cycles, back to 0, initiated after completion of the automated initialization routine.",
+      "description_lines": [
+        "Pulse output from 0 to 1 and after 5 cycles, back to 0, initi-",
+        "ated after completion of the automated initialization routine."
+      ],
+      "manual_page": 536
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of associated model parameter estimator",
+      "description_lines": [
+        "Block address of associated model parameter",
+        "estimator"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 536
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of associated ISC controller",
+      "description_lines": [
+        "Block address of associated ISC controller"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 536
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address for deadtime",
+      "description_lines": [
+        "Block address for deadtime"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 536
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of hold signal",
+      "description_lines": [
+        "Block address of hold signal"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 536
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "2"
+      ],
+      "default": "-9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "Minimum allowable value for process gain",
+      "description_lines": [
+        "Minimum allowable value for process gain"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 536
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "2"
+      ],
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "Maximum allowable value for process gain",
+      "description_lines": [
+        "Maximum allowable value for process gain"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 536
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "2"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "0.0 - 9.2 E18",
+      "description": "Minimum allowable value for process lag time",
+      "description_lines": [
+        "Minimum allowable value for process lag time"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 536
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "2"
+      ],
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "0.0 - 9.2 E18",
+      "description": "Maximum allowable value for process lag time",
+      "description_lines": [
+        "Maximum allowable value for process lag time"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 536
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 3",
+      "description": "Adapt option:; 0 = no adapt; 1 = adapt process gain only; 2 = adapt lag time only; 3 = adapt both process gain and lag time",
+      "description_lines": [
+        "Adapt option:",
+        "0 = no adapt",
+        "1 = adapt process gain only",
+        "2 = adapt lag time only",
+        "3 = adapt both process gain and lag time"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no adapt"
+        },
+        {
+          "value": "1",
+          "meaning": "adapt process gain only"
+        },
+        {
+          "value": "2",
+          "meaning": "adapt lag time only"
+        },
+        {
+          "value": "3",
+          "meaning": "adapt both process gain and lag time"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 536
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "B",
+      "range": "0 or 1",
+      "description": "Initialization trigger (on 0 to 1 transition)",
+      "description_lines": [
+        "Initialization trigger (on 0 to 1 transition)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 536
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "5.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Maximum control output change for initialization",
+      "description_lines": [
+        "Maximum control output change for initialization"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 536
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare real parameter",
+      "description_lines": [
+        "Spare real parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 536
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Spare boolean input",
+      "description_lines": [
+        "Spare boolean input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 536
+    }
+  ],
+  "spec_count": 13,
+  "max_spec_number": 13,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 536,
+      "context": "specifications"
+    },
+    {
+      "label": "2.",
+      "text": "Value automatically specified by the initialization routine.",
+      "manual_page": 536,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 535,
+  "manual_pages": [
+    535,
+    536,
+    537,
+    538,
+    539,
+    540,
+    541
+  ],
+  "manual_section": "Function Code 153 - ISC Parameter Converter",
+  "diagnostics": []
+}

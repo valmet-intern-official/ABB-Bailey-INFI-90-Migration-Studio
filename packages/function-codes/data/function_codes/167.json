@@ -1,0 +1,373 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 167,
+  "name": "Polynomial",
+  "description": "The polynomial function code implements a seventh order polynomial. Two specifications define the coefficients A through H : Tunable mantissa value. Nontunable power of ten. The actual value of the coefficient is the product of the mantissa and the power of ten. For example:",
+  "description_lines": [
+    "The polynomial function code implements a seventh order",
+    "polynomial.",
+    "Two specifications define the coefficients A through H :",
+    "Tunable mantissa value.",
+    "Nontunable power of ten.",
+    "The actual value of the coefficient is the product of the man-",
+    "tissa and the power of ten. For example:"
+  ],
+  "symbol": {
+    "title_raw": "P O LY",
+    "title": "POLY",
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 191.16,
+        "y": 588.18,
+        "s": "(1 6 7 )"
+      },
+      {
+        "x": 133.2,
+        "y": 587.46,
+        "s": "S 1"
+      },
+      {
+        "x": 160.38,
+        "y": 583.62,
+        "s": "P O LY"
+      },
+      {
+        "x": 191.16,
+        "y": 579.24,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Result of polynomial evaluation",
+      "description_lines": [
+        "Result of polynomial evaluation"
+      ],
+      "manual_page": 621
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of X input",
+      "description_lines": [
+        "Block address of X input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 621
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Mantissa of H coefficient",
+      "description_lines": [
+        "Mantissa of H coefficient"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 621
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Power of 10 of H coefficient",
+      "description_lines": [
+        "Power of 10 of H coefficient"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 621
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Mantissa of G coefficient",
+      "description_lines": [
+        "Mantissa of G coefficient"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 621
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Power of 10 of G coefficient",
+      "description_lines": [
+        "Power of 10 of G coefficient"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 622
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Mantissa of F coefficient",
+      "description_lines": [
+        "Mantissa of F coefficient"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 622
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Power of 10 of F coefficient",
+      "description_lines": [
+        "Power of 10 of F coefficient"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 622
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Mantissa of E coefficient",
+      "description_lines": [
+        "Mantissa of E coefficient"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 622
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Power of 10 of E coefficient",
+      "description_lines": [
+        "Power of 10 of E coefficient"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 622
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Mantissa of D coefficient",
+      "description_lines": [
+        "Mantissa of D coefficient"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 622
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Power of 10 of D coefficient",
+      "description_lines": [
+        "Power of 10 of D coefficient"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 622
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Mantissa of C coefficient",
+      "description_lines": [
+        "Mantissa of C coefficient"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 622
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Power of 10 of C coefficient",
+      "description_lines": [
+        "Power of 10 of C coefficient"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 622
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Mantissa of B coefficient",
+      "description_lines": [
+        "Mantissa of B coefficient"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 622
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Power of 10 of B coefficient",
+      "description_lines": [
+        "Power of 10 of B coefficient"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 622
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Mantissa of A coefficient",
+      "description_lines": [
+        "Mantissa of A coefficient"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 622
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Power of 10 of A coefficient",
+      "description_lines": [
+        "Power of 10 of A coefficient"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 622
+    }
+  ],
+  "spec_count": 17,
+  "max_spec_number": 17,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "When function code 167 is utilized as a shaping algorithm for analog in/ channel (function code 222), its tunable specifications are not adaptable.",
+      "manual_page": 621,
+      "context": "general"
+    },
+    {
+      "label": "2.",
+      "text": "When function code 167 is used as a shaping algorithm, it can not at the same time also be used as a logic function because the block output will not respond to the specification S1 input.",
+      "manual_page": 621,
+      "context": "general"
+    },
+    {
+      "label": "3.",
+      "text": "Multiple instances and combinations of function code 177 and 222 function blocks may utilize the same function code 167 function block as a shaping algorithm. The function code 167 shaping algorithm function block is not required to be in the same segment as the function code 177 or function code 222 blocks.",
+      "manual_page": 621,
+      "context": "general"
+    },
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 622,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 621,
+  "manual_pages": [
+    621,
+    622
+  ],
+  "manual_section": "Function Code 167 - Polynomial",
+  "diagnostics": []
+}

@@ -1,0 +1,295 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 143,
+  "name": "Invoke C",
+  "description": "Function code 143 invokes the C program. Specifically, the invoke C block calls a function within the C program designated as a segment entry point . The C program can have as many as eight segment entry points. Each entry point has a function block segment (segment entry point zero with function block segment zero, etc.). A function name (i.e., the name of the functions that compose the C program) connects with each entry point. The same function name may connect with more than one entry point. During function block execution, an encounter with an invoke C block transfers control to the C program at the associated entry point (i.e., calls the appropriate function). When that program returns, function block execution continues normally at the next block. The entry point program function may call other functions of the C program before returning. Besides the normal utilization constraints, there are no further restrictions on the configuring of invoke C blocks. Specifically, invoke C blocks may appear in any or all function block segments. Since each function block segment is a separate task, more than one task may execute the C program. When the C program is subject to multitasking, all shared functions among tasks must be coded so as to be reentrant. For more information on C program development, consult the C Utility Program product instruction.",
+  "description_lines": [
+    "Function code 143 invokes the C program. Specifically, the",
+    "invoke C block calls a function within the C program desig-",
+    "nated as a segment entry point .",
+    "The C program can have as many as eight segment entry",
+    "points. Each entry point has a function block segment (seg-",
+    "ment entry point zero with function block segment zero, etc.).",
+    "A function name (i.e., the name of the functions that compose",
+    "the C program) connects with each entry point. The same",
+    "function name may connect with more than one entry point.",
+    "During function block execution, an encounter with an invoke",
+    "C block transfers control to the C program at the associated",
+    "entry point (i.e., calls the appropriate function). When that",
+    "program returns, function block execution continues normally",
+    "at the next block. The entry point program function may call",
+    "other functions of the C program before returning.",
+    "Besides the normal utilization constraints, there are no further",
+    "restrictions on the configuring of invoke C blocks. Specifically,",
+    "invoke C blocks may appear in any or all function block seg-",
+    "ments. Since each function block segment is a separate task,",
+    "more than one task may execute the C program. When the C",
+    "program is subject to multitasking, all shared functions",
+    "among tasks must be coded so as to be reentrant.",
+    "For more information on C program development, consult the",
+    "C Utility Program product instruction."
+  ],
+  "symbol": {
+    "title_raw": "IN V K C",
+    "title": "INVKC",
+    "inputs": [
+      "S2"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 191.4,
+        "y": 589.2,
+        "s": "(1 4 3 )"
+      },
+      {
+        "x": 133.62,
+        "y": 587.52,
+        "s": "S 2"
+      },
+      {
+        "x": 158.34,
+        "y": 583.68,
+        "s": "IN V K C"
+      },
+      {
+        "x": 191.4,
+        "y": 580.32,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Value may be set by C program using the putargs function",
+      "description_lines": [
+        "Value may be set by C program using the putargs function"
+      ],
+      "manual_page": 489
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0, 1 or 2",
+      "description": "Program operating mode:; 0 = C program will execute normally; 1 = C program execution is inhibited, blocks will run; 2 = C program is in debug mode for use with the EWS C debugger",
+      "description_lines": [
+        "Program operating mode:",
+        "0 = C program will execute normally",
+        "1 = C program execution is inhibited, blocks will run",
+        "2 = C program is in debug mode for use with the",
+        "EWS C debugger"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "C program will execute normally"
+        },
+        {
+          "value": "1",
+          "meaning": "C program execution is inhibited, blocks will run"
+        },
+        {
+          "value": "2",
+          "meaning": "C program is in debug mode for use with the"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 490
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of inhibit execution flag",
+      "description_lines": [
+        "Block address of inhibit execution flag"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 490
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Program readable parameter",
+      "description_lines": [
+        "Program readable parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 490
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Program readable parameter",
+      "description_lines": [
+        "Program readable parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 490
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Program readable parameter",
+      "description_lines": [
+        "Program readable parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 490
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Program readable parameter",
+      "description_lines": [
+        "Program readable parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 490
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Program readable parameter",
+      "description_lines": [
+        "Program readable parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 490
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Program readable parameter",
+      "description_lines": [
+        "Program readable parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 490
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Spare",
+      "description_lines": [
+        "Spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 490
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Spare",
+      "description_lines": [
+        "Spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 490
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare",
+      "description_lines": [
+        "Spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 490
+    }
+  ],
+  "spec_count": 11,
+  "max_spec_number": 11,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC H //L S 2 (1 4 3 ) S 1 IN V K C (1 5 ) S 1 (1 2 )",
+      "manual_page": 490,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 489,
+  "manual_pages": [
+    489,
+    490,
+    491,
+    492
+  ],
+  "manual_section": "Function Code 143 - Invoke C",
+  "diagnostics": []
+}

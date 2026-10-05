@@ -94,6 +94,8 @@ export interface RawCadRecord {
   blockNumber?: number;
   /** Signal tag / description (type 8, and type 7 entries). */
   tag?: string;
+  /** The tag field exactly as stored (padding included); the compiler matches tags byte-for-byte. */
+  tagRaw?: string;
   /** Fixed-format cross-reference address 'XXXX-NN.NN' (type 8). */
   reference?: string;
   /** Terminal reference array (type 7). */
@@ -155,6 +157,15 @@ function readPaddedText(buf: Buffer, from: number, len: number): string | undefi
   return t.length > 0 ? t : undefined;
 }
 
+function readRawText(buf: Buffer, from: number, len: number): string {
+  let out = "";
+  for (let i = from; i < Math.min(from + len, buf.length); i++) {
+    if (buf[i] < 32 || buf[i] > 126) break;
+    out += String.fromCharCode(buf[i]);
+  }
+  return out;
+}
+
 /** The rigid 'XXXX-NN.NN' reference address, or undefined when blank. */
 function readReference(buf: Buffer, from: number): string | undefined {
   if (from + 10 > buf.length) return undefined;
@@ -168,6 +179,41 @@ function readReference(buf: Buffer, from: number): string | undefined {
 
 export function decodeRecordStream(buf: Buffer): DecodedRecordStream {
   const { recordsStart, recordsEnd, trailerOffset } = cadFileBounds(buf);
+  const { records, diagnostics, clean, recordBytes, residualBytes } = decodeRecordRange(
+    buf,
+    recordsStart,
+    recordsEnd
+  );
+  return {
+    records,
+    diagnostics,
+    clean,
+    coverage: {
+      totalBytes: buf.length,
+      headerBytes: Math.min(recordsStart, buf.length),
+      recordBytes,
+      trailerBytes: trailerOffset == null ? 0 : buf.length - trailerOffset,
+      residualBytes,
+    },
+  };
+}
+
+/**
+ * Walk the length chain over `[recordsStart, recordsEnd)`. `.LBR` symbol
+ * bodies use the same grammar as `.CAD` record streams, so both call this.
+ * Offsets on the returned records are absolute within `buf`.
+ */
+export function decodeRecordRange(
+  buf: Buffer,
+  recordsStart: number,
+  recordsEnd: number
+): {
+  records: RawCadRecord[];
+  diagnostics: string[];
+  clean: boolean;
+  recordBytes: number;
+  residualBytes: number;
+} {
   const records: RawCadRecord[] = [];
   const diagnostics: string[] = [];
   let clean = true;
@@ -286,6 +332,7 @@ export function decodeRecordStream(buf: Buffer): DecodedRecordStream {
         claim(30, 2);
       } else if (type === 8) {
         rec.tag = readPaddedText(body, 30, 30);
+        if (rec.tag) rec.tagRaw = readRawText(body, 30, 30);
         rec.reference = readReference(body, 60);
         claim(30, 40);
       } else if (type === 7) {
@@ -341,16 +388,5 @@ export function decodeRecordStream(buf: Buffer): DecodedRecordStream {
     off = end;
   }
 
-  return {
-    records,
-    diagnostics,
-    clean,
-    coverage: {
-      totalBytes: buf.length,
-      headerBytes: Math.min(recordsStart, buf.length),
-      recordBytes,
-      trailerBytes: trailerOffset == null ? 0 : buf.length - trailerOffset,
-      residualBytes,
-    },
-  };
+  return { records, diagnostics, clean, recordBytes, residualBytes };
 }

@@ -1,0 +1,122 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 61,
+  "name": "Blink",
+  "description": "The blink function code generates a pulsating output signal. When <S1> and <S2> are logic 1, the output toggles between logic 1 and logic 0. The duration of either the logic 0 or logic 1 state is dependent on the cycle time of the block. The duration of either logic state is limited to be no less than 0.2 second. Output N equals <S1> until <S1> and <S2> equal one, then output N blinks. Refer to Table 61-1 for all possible output values.",
+  "description_lines": [
+    "The blink function code generates a pulsating output signal.",
+    "When <S1> and <S2> are logic 1, the output toggles between",
+    "logic 1 and logic 0. The duration of either the logic 0 or logic 1",
+    "state is dependent on the cycle time of the block. The duration",
+    "of either logic state is limited to be no less than 0.2 second.",
+    "Output N equals <S1> until <S1> and <S2> equal one, then",
+    "output N blinks. Refer to Table 61-1 for all possible output",
+    "values."
+  ],
+  "symbol": {
+    "title_raw": "B L IN K",
+    "title": "BLINK",
+    "inputs": [
+      "S1",
+      "S2"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 133.32,
+        "y": 591.66,
+        "s": "S 1"
+      },
+      {
+        "x": 191.28,
+        "y": 588.54,
+        "s": "(6 1 )"
+      },
+      {
+        "x": 159.06,
+        "y": 583.5,
+        "s": "B L IN K"
+      },
+      {
+        "x": 133.32,
+        "y": 582.78,
+        "s": "S 2"
+      },
+      {
+        "x": 191.28,
+        "y": 579.66,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Refer to Table 61-1",
+      "description_lines": [
+        "Refer to Table 61-1"
+      ],
+      "manual_page": 179
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of first input",
+      "description_lines": [
+        "Block address of first input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 179
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of second input",
+      "description_lines": [
+        "Block address of second input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 179
+    }
+  ],
+  "spec_count": 2,
+  "max_spec_number": 2,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 179,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 179,
+  "manual_pages": [
+    179,
+    180
+  ],
+  "manual_section": "Function Code 61 - Blink",
+  "diagnostics": []
+}

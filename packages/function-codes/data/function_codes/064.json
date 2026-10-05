@@ -1,0 +1,374 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 64,
+  "name": "Digital Input List (Periodic Sample)",
+  "description": "The digital input list (periodic sample) function code acquires data describing eight digital points in a single message. The source module and destination module must be located in the same process control unit. Input data consists of digital signals and qualities. Data transfer between the source and destination module is via the Controlway/module bus. The address and block number of the source module, and the update time are configurable parameters. The HAC controller uses function code 64 to acquire the data values of eight digital points in a single peer-to-peer network message. Input data consists of analog signals and quantities. Data transfer between the source module and destination module is via the peer-to-peer network. The address block number of the source node and the sample time are configurable parameters. Output data consists of boolean numbers corresponding to the digital data received and input point quality indicators. To insure that the signal is successfully transferred, the digital signal generates a point quality flag. To test the quality of the signal, include a function code 31 in the configuration. The quality of the point cannot be used as an input to any other type of block. The digital output value can be used as an input to any digital processing block. Refer to Appendix H for a definition of point quality. NOTE: A block defined as an analog input reads a value for any existing analog output from a function block configured in the source node/module. No additional configuration in the source node/module is required.",
+  "description_lines": [
+    "The digital input list (periodic sample) function code acquires",
+    "data describing eight digital points in a single message. The",
+    "source module and destination module must be located in the",
+    "same process control unit. Input data consists of digital sig-",
+    "nals and qualities. Data transfer between the source and desti-",
+    "nation module is via the Controlway/module bus. The address",
+    "and block number of the source module, and the update time",
+    "are configurable parameters.",
+    "The HAC controller uses function code 64 to acquire the data",
+    "values of eight digital points in a single peer-to-peer network",
+    "message. Input data consists of analog signals and quantities.",
+    "Data transfer between the source module and destination",
+    "module is via the peer-to-peer network. The address block",
+    "number of the source node and the sample time are config-",
+    "urable parameters.",
+    "Output data consists of boolean numbers corresponding to the",
+    "digital data received and input point quality indicators. To",
+    "insure that the signal is successfully transferred, the digital",
+    "signal generates a point quality flag. To test the quality of the",
+    "signal, include a function code 31 in the configuration. The",
+    "quality of the point cannot be used as an input to any other",
+    "type of block. The digital output value can be used as an input",
+    "to any digital processing block. Refer to Appendix H for a defi-",
+    "nition of point quality.",
+    "NOTE: A block defined as an analog input reads a value for any existing ana-",
+    "log output from a function block configured in the source node/module. No",
+    "additional configuration in the source node/module is required."
+  ],
+  "symbol": {
+    "title_raw": "D IL/B",
+    "title": "DIL/B",
+    "inputs": [],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3",
+      "N+4",
+      "N+5",
+      "N+6",
+      "N+7"
+    ],
+    "items": [
+      {
+        "x": 150.06,
+        "y": 597.9,
+        "s": "D IL/B"
+      },
+      {
+        "x": 194.46,
+        "y": 590.64,
+        "s": "(6 4 )"
+      },
+      {
+        "x": 194.46,
+        "y": 583.02,
+        "s": "N"
+      },
+      {
+        "x": 194.46,
+        "y": 564.36,
+        "s": "N + 1"
+      },
+      {
+        "x": 194.46,
+        "y": 544.62,
+        "s": "N + 2"
+      },
+      {
+        "x": 194.46,
+        "y": 525.18,
+        "s": "N + 3"
+      },
+      {
+        "x": 194.46,
+        "y": 505.86,
+        "s": "N + 4"
+      },
+      {
+        "x": 194.46,
+        "y": 486.42,
+        "s": "N + 5"
+      },
+      {
+        "x": 194.46,
+        "y": 467.1,
+        "s": "N + 6"
+      },
+      {
+        "x": 194.46,
+        "y": 447.84,
+        "s": "N + 7"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "<S3>",
+      "description_lines": [
+        "<S3>"
+      ],
+      "manual_page": 191
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "<S4>",
+      "description_lines": [
+        "<S4>"
+      ],
+      "manual_page": 191
+    },
+    {
+      "blk": "N+2",
+      "type": "B",
+      "description": "<S5>",
+      "description_lines": [
+        "<S5>"
+      ],
+      "manual_page": 191
+    },
+    {
+      "blk": "N+3",
+      "type": "B",
+      "description": "<S6>",
+      "description_lines": [
+        "<S6>"
+      ],
+      "manual_page": 191
+    },
+    {
+      "blk": "N+4",
+      "type": "B",
+      "description": "<S7>",
+      "description_lines": [
+        "<S7>"
+      ],
+      "manual_page": 191
+    },
+    {
+      "blk": "N+5",
+      "type": "B",
+      "description": "<S8>",
+      "description_lines": [
+        "<S8>"
+      ],
+      "manual_page": 192
+    },
+    {
+      "blk": "N+6",
+      "type": "B",
+      "description": "<S9>",
+      "description_lines": [
+        "<S9>"
+      ],
+      "manual_page": 192
+    },
+    {
+      "blk": "N+7",
+      "type": "B",
+      "description": "<S10>",
+      "description_lines": [
+        "<S10>"
+      ],
+      "manual_page": 192
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1.0",
+      "type": "R",
+      "range": "Full",
+      "description": "Sample period (in seconds)",
+      "description_lines": [
+        "Sample period (in seconds)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 192
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Source node/module address",
+      "description_lines": [
+        "Source node/module address"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 192
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "Note 2",
+      "type": "I",
+      "range": "Note 3",
+      "description": "Source block address (N)",
+      "description_lines": [
+        "Source block address (N)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 192
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "Note 2",
+      "type": "I",
+      "range": "Note 3",
+      "description": "Source block address (N+1)",
+      "description_lines": [
+        "Source block address (N+1)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 192
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "Note 2",
+      "type": "I",
+      "range": "Note 3",
+      "description": "Source block address (N+2)",
+      "description_lines": [
+        "Source block address (N+2)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 192
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "Note 2",
+      "type": "I",
+      "range": "Note 3",
+      "description": "Source block address (N+3)",
+      "description_lines": [
+        "Source block address (N+3)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 192
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "Note 2",
+      "type": "I",
+      "range": "Note 3",
+      "description": "Source block address (N+4)",
+      "description_lines": [
+        "Source block address (N+4)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 192
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "Note 2",
+      "type": "I",
+      "range": "Note 3",
+      "description": "Source block address (N+5)",
+      "description_lines": [
+        "Source block address (N+5)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 192
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "Note 2",
+      "type": "I",
+      "range": "Note 3",
+      "description": "Source block address (N+6)",
+      "description_lines": [
+        "Source block address (N+6)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 192
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "Note 2",
+      "type": "I",
+      "range": "Note 3",
+      "description": "Source block address (N+7)",
+      "description_lines": [
+        "Source block address (N+7)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 192
+    }
+  ],
+  "spec_count": 10,
+  "max_spec_number": 10,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Range values are: 0-31 for the BRC-100, IMMFP11/12 1-250 for the HAC",
+      "manual_page": 192,
+      "context": "specifications"
+    },
+    {
+      "label": "2.",
+      "text": "The default values are: 9,999 for the BRC-100, IMMFP11/12 2 for the HAC",
+      "manual_page": 192,
+      "context": "specifications"
+    },
+    {
+      "label": "3.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 192,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 191,
+  "manual_pages": [
+    191,
+    192,
+    193
+  ],
+  "manual_section": "Function Code 64 - Digital Input List (Periodic Sample)",
+  "diagnostics": []
+}

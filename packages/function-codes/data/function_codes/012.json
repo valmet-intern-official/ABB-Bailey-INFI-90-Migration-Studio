@@ -1,0 +1,159 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 12,
+  "name": "High/Low Compare",
+  "description": "This function has two outputs. When the input is equal to or exceeds the high limit, output N equals logic 1. When the input is equal to or less than the low limit, output N+1 equals logic 1. If the value of the input is between the assigned limits, both outputs are a logic 0. NOTE: This block uses two consecutive addresses for the outputs.",
+  "description_lines": [
+    "This function has two outputs. When the input is equal to or",
+    "exceeds the high limit, output N equals logic 1. When the input",
+    "is equal to or less than the low limit, output N+1 equals",
+    "logic 1. If the value of the input is between the assigned limits,",
+    "both outputs are a logic 0.",
+    "NOTE: This block uses two consecutive addresses for the outputs."
+  ],
+  "symbol": {
+    "title_raw": "H //L",
+    "title": "H//L",
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [
+      "N",
+      "N+1"
+    ],
+    "items": [
+      {
+        "x": 163.68,
+        "y": 595.02,
+        "s": "H //L"
+      },
+      {
+        "x": 191.82,
+        "y": 589.26,
+        "s": "(1 2 )"
+      },
+      {
+        "x": 133.92,
+        "y": 587.34,
+        "s": "S 1"
+      },
+      {
+        "x": 182.94,
+        "y": 583.68,
+        "s": "H"
+      },
+      {
+        "x": 191.82,
+        "y": 580.32,
+        "s": "N"
+      },
+      {
+        "x": 183.66,
+        "y": 574.8,
+        "s": "L"
+      },
+      {
+        "x": 191.82,
+        "y": 571.44,
+        "s": "N + 1"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "High alarm output:; 0 = high limit not reached; 1 = high limit reached",
+      "description_lines": [
+        "High alarm output:",
+        "0 = high limit not reached",
+        "1 = high limit reached"
+      ],
+      "manual_page": 81
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Low alarm output:; 0 = low limit not reached; 1 = low limit reached",
+      "description_lines": [
+        "Low alarm output:",
+        "0 = low limit not reached",
+        "1 = low limit reached"
+      ],
+      "manual_page": 81
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input",
+      "description_lines": [
+        "Block address of input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 81
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Value of alarm point/high limit",
+      "description_lines": [
+        "Value of alarm point/high limit"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 81
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Value of alarm point/low limit",
+      "description_lines": [
+        "Value of alarm point/low limit"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 81
+    }
+  ],
+  "spec_count": 3,
+  "max_spec_number": 3,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 81,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 81,
+  "manual_pages": [
+    81,
+    82
+  ],
+  "manual_section": "Function Code 12 - High/Low Compare",
+  "diagnostics": []
+}

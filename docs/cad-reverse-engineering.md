@@ -594,24 +594,56 @@ The 3.98% source-address figure is a genuine gap, not a rounding artefact: the
 type 8 record carries the *destination* address, and the signal's own source
 address is not present in any decoded field. It is listed in §10.
 
-## 9.6 `.LBR` symbol libraries — directory `CONFIRMED`, bodies `UNKNOWN`
+## 9.6 `.LBR` symbol libraries — directory and bodies `CONFIRMED`
 
-The directory is solved. Entries run at a fixed 16-byte stride from `+528`:
+The file is a sequence of 512-byte blocks. Directory blocks carry a 16-byte
+header whose word 6 is `1` and word 7 is the entry count (1..31); they are
+linked, not contiguous (7107LIB1 has them at blocks 2, 558, …). Entries:
 
 ```
 +0  char[8] name
-+8  uint16  offsetHi      body offset = offsetHi * 256 + offsetLo
-+10 uint16  offsetLo
++8  uint16  block         1-based 512-byte block
++10 uint16  word          1-based word within the block
 +12 uint16  = 6
-+14 uint16  length
++14 uint16  lengthWords
+body byte offset = (block - 1) * 512 + (word - 1) * 2
 ```
 
-This self-verifies by chaining: each entry's offset equals the previous
-entry's offset plus its length, with **zero breaks in any library**. `BAI` sits
-at `3*256+1 = 769` with length 966, and `LEY` at `6*256+199 = 1735 = 769+966`.
+`BAI` is at block 3 word 1 = byte 1024, 966 words, ending at byte 2956 where
+`LEY` (block 6, word 199) begins. Symbol bodies:
 
-Body geometry is **not** solved, and is deliberately not used for rendering.
-Established so far:
+```
++0 uint16 = 9   +2 uint16 = 6   +4 headerWords (17)   +6 streamWords
++8 x1 y1 x2 y2  definition bbox      +16 char[8] name
++24 insertionX  +26 insertionY
+then a record stream in exactly the .CAD record grammar
+```
+
+Validation: every body in every library chains exactly to its declared
+length (7107LIB1 186/186, SAMA 133/133, all ten files). Placing `DBORDH` by
+the translation (instance insertion − definition insertion) reproduces the
+CAD instance bbox exactly. Record kinds inside bodies: type 1 polylines, type
+3 rectangles (two corners), type 4 arcs as (centre, start, end) with equal
+radii, drawn clockwise, type 5 text, type 9 nested symbol instances; type 2 is
+exact two-point geometry whose primitive kind is still unresolved. Decoder:
+`packages/cad-engine/src/lbr/library.ts`.
+
+The drawing frame, grid labels (`02..32`, `02..20`), title block, revision
+table and hardware termination symbols are all in `7107LIB1.LBR`. The
+function-block glyphs (`IREF`, `OREF`, `N90CNECT`, `AND2`, `AIS`, …) are
+**not defined in any supplied library** — they occur only as nested instances
+inside hardware macros — so their outlines remain unavailable.
+
+Polyline `style` (type 1, word 3) is `0` solid, `1` dashed (boolean signal),
+`2` long-dash rule, validated against the vendor plot. Signal wires occur with
+both style 0 and 1, so connectivity is decided by geometry, not by style.
+
+Reference addresses `<prefix><sheet>-<row>.<col>` name a zone of the frame
+grid: `row = floor((frameY + 2140 − y) / 100)`, `col = floor((x − frameX + 35) / 100)`,
+calibrated against the I90XREF.OUT source addresses (see
+`reconstruct/resolve.ts`).
+
+Superseded notes from the earlier, unsolved state:
 
 - Bodies are a variable-length primitive stream, not a fixed stride. A
   stride/phase fit scored per symbol disagrees with itself, and a `BOX2` body
@@ -637,9 +669,9 @@ box and rotation instead, which is source-faithful and verifiable.
 
 ## 10. Open questions, in priority order
 
-1. **`.LBR` body offset unit and further directory blocks** (§9.6) — the
-   blocker for authentic symbol outlines. The directory format and the line
-   primitive are already confirmed; what is missing is the addressing.
+1. **Function-block symbol library** (§9.6) — `.LBR` addressing and bodies
+   are solved; the remaining blocker is that the library defining the
+   function-block glyphs is not part of the supplied material.
 2. **Specification slot encoding** (§8.1) — 228,473 slots are recovered with
    their raw bytes, but the float-vs-integer reading per slot is ambiguous and
    the slot-to-`Sn` assignment is by payload order only. Resolving this
@@ -648,8 +680,11 @@ box and rotation instead, which is source-faithful and verifiable.
    output (e.g. `BA00-14.26`) that appears in no decoded field; only 3.98% are
    recoverable. Candidate: the still-undecoded `BCCo ATR LIST` section.
 4. **`BCCo ATR LIST`** — the second trailer section, not yet decoded.
-5. **Per-pin topology** — wires attach to a block, not to a numbered input pin.
-   Pin positions come from the `.LBR` bodies (item 1).
+5. **Per-pin topology** — solved from source geometry: every wire vertex that
+   lands in a symbol is a pin at its exact coordinate, and per-symbol pin
+   templates are learned from all instances (`reconstruct/templates.ts`). Pin
+   direction is by left/right convention (INFERRED); vendor pin numbers are
+   glyph data and remain unavailable.
 6. **Primitive kinds for types 2, 3 and 4** — coordinates are exact and
    preserved, but whether a record draws an arc, a rectangle or a filled
    triangle is not established (17,149 records).

@@ -1,0 +1,579 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 79,
+  "name": "Control Interface Slave",
+  "description": "Use the control interface slave function code to interface a Harmony controller to a control I/O module. Control I/O modules have four analog inputs, two analog outputs, three digital inputs, and four digital outputs. This function code defines the characteristics of that I/O module and how the system responds to an I/O module failure. The control system must be carefully evaluated to establish default values that will WARNING prevent personal injury and/or property damage in case of module failure.",
+  "description_lines": [
+    "Use the control interface slave function code to interface a",
+    "Harmony controller to a control I/O module. Control I/O mod-",
+    "ules have four analog inputs, two analog outputs, three digital",
+    "inputs, and four digital outputs. This function code defines the",
+    "characteristics of that I/O module and how the system",
+    "responds to an I/O module failure.",
+    "The control system must be carefully",
+    "evaluated to establish default values that will",
+    "WARNING",
+    "prevent personal injury and/or property",
+    "damage in case of module failure."
+  ],
+  "symbol": {
+    "title_raw": "C IS I/O",
+    "title": "CISI/O",
+    "inputs": [
+      "S10",
+      "S11",
+      "S15",
+      "S16",
+      "S17",
+      "S18"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3",
+      "N+4",
+      "N+5",
+      "N+6",
+      "N+7",
+      "N+8",
+      "N+9"
+    ],
+    "items": [
+      {
+        "x": 177.96,
+        "y": 594.78,
+        "s": "C IS I/O"
+      },
+      {
+        "x": 156.84,
+        "y": 588.54,
+        "s": "(7 9 )"
+      },
+      {
+        "x": 156.84,
+        "y": 579.66,
+        "s": "N"
+      },
+      {
+        "x": 156.84,
+        "y": 570.78,
+        "s": "N + 1"
+      },
+      {
+        "x": 156.84,
+        "y": 561.9,
+        "s": "N + 2"
+      },
+      {
+        "x": 156.84,
+        "y": 553.02,
+        "s": "N + 3"
+      },
+      {
+        "x": 156.84,
+        "y": 544.14,
+        "s": "N + 4"
+      },
+      {
+        "x": 147.96,
+        "y": 537.9,
+        "s": "S 1 0"
+      },
+      {
+        "x": 156.84,
+        "y": 521.82,
+        "s": "N + 5"
+      },
+      {
+        "x": 147.96,
+        "y": 515.76,
+        "s": "S 1 1"
+      },
+      {
+        "x": 156.84,
+        "y": 499.44,
+        "s": "N + 6"
+      },
+      {
+        "x": 156.84,
+        "y": 490.56,
+        "s": "N + 7"
+      },
+      {
+        "x": 156.84,
+        "y": 481.68,
+        "s": "N + 8"
+      },
+      {
+        "x": 147.72,
+        "y": 475.2,
+        "s": "S 1 5"
+      },
+      {
+        "x": 147.72,
+        "y": 466.08,
+        "s": "S 1 6"
+      },
+      {
+        "x": 147.72,
+        "y": 456.96,
+        "s": "S 1 7"
+      },
+      {
+        "x": 147.72,
+        "y": 448.08,
+        "s": "S 1 8"
+      },
+      {
+        "x": 156.84,
+        "y": 431.76,
+        "s": "N + 9"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Analog input 1",
+      "description_lines": [
+        "Analog input 1"
+      ],
+      "manual_page": 205
+    },
+    {
+      "blk": "N+1",
+      "type": "R",
+      "description": "Analog input 2",
+      "description_lines": [
+        "Analog input 2"
+      ],
+      "manual_page": 205
+    },
+    {
+      "blk": "N+2",
+      "type": "R",
+      "description": "Analog input 3",
+      "description_lines": [
+        "Analog input 3"
+      ],
+      "manual_page": 205
+    },
+    {
+      "blk": "N+3",
+      "type": "R",
+      "description": "Analog input 4",
+      "description_lines": [
+        "Analog input 4"
+      ],
+      "manual_page": 205
+    },
+    {
+      "blk": "N+4",
+      "type": "R",
+      "description": "Analog output 1 feedback",
+      "description_lines": [
+        "Analog output 1 feedback"
+      ],
+      "manual_page": 205
+    },
+    {
+      "blk": "N+5",
+      "type": "R",
+      "description": "Analog output 2 feedback",
+      "description_lines": [
+        "Analog output 2 feedback"
+      ],
+      "manual_page": 205
+    },
+    {
+      "blk": "N+6",
+      "type": "B",
+      "description": "Digital input 1",
+      "description_lines": [
+        "Digital input 1"
+      ],
+      "manual_page": 205
+    },
+    {
+      "blk": "N+7",
+      "type": "B",
+      "description": "Digital input 2",
+      "description_lines": [
+        "Digital input 2"
+      ],
+      "manual_page": 205
+    },
+    {
+      "blk": "N+8",
+      "type": "B",
+      "description": "Digital input 3",
+      "description_lines": [
+        "Digital input 3"
+      ],
+      "manual_page": 205
+    },
+    {
+      "blk": "N+9",
+      "type": "B",
+      "description": "I/O module status flag: 0 = good, 1 = bad",
+      "description_lines": [
+        "I/O module status flag: 0 = good, 1 = bad"
+      ],
+      "manual_page": 205
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 63",
+      "description": "Control interface I/O module address",
+      "description_lines": [
+        "Control interface I/O module address"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 205
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Analog input 1 zero in engineering units",
+      "description_lines": [
+        "Analog input 1 zero in engineering units"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 205
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Analog input 1 span in engineering units",
+      "description_lines": [
+        "Analog input 1 span in engineering units"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 205
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Analog input 2 zero in engineering units",
+      "description_lines": [
+        "Analog input 2 zero in engineering units"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 205
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Analog input 2 span in engineering units",
+      "description_lines": [
+        "Analog input 2 span in engineering units"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 205
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Analog input 3 zero in engineering units",
+      "description_lines": [
+        "Analog input 3 zero in engineering units"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 205
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Analog input 3 span in engineering units",
+      "description_lines": [
+        "Analog input 3 span in engineering units"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 206
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Analog input 4 zero in engineering units",
+      "description_lines": [
+        "Analog input 4 zero in engineering units"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 206
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Analog input 4 span in engineering units",
+      "description_lines": [
+        "Analog input 4 span in engineering units"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 206
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "0 - 2046",
+      "description": "Block address of analog output 1",
+      "description_lines": [
+        "Block address of analog output 1"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 206
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "0 - 2046",
+      "description": "Block address of analog output 2",
+      "description_lines": [
+        "Block address of analog output 2"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 206
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Digital input 1 logic sense",
+      "description_lines": [
+        "Digital input 1 logic sense"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 206
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Digital input 2 logic sense",
+      "description_lines": [
+        "Digital input 2 logic sense"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 206
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Digital input 3 logic sense",
+      "description_lines": [
+        "Digital input 3 logic sense"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 206
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "0 - 2046",
+      "description": "Block address of digital output 1",
+      "description_lines": [
+        "Block address of digital output 1"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 206
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "0 - 2046",
+      "description": "Block address of digital output 2",
+      "description_lines": [
+        "Block address of digital output 2"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 206
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "0 - 2046",
+      "description": "Block address of digital output 3",
+      "description_lines": [
+        "Block address of digital output 3"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 206
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "0 - 2046",
+      "description": "Block address of digital output 4",
+      "description_lines": [
+        "Block address of digital output 4"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 206
+    },
+    {
+      "number": 19,
+      "label": "S19",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Failure action (lack of I/O module response or bad analog input reference voltage):; XX0 = trip module; XX1 = continue to operate I/O module status flag (bad status indication):; 0XX = set I/O module status flag output N+9 to bad when the CIS module fails or is in error mode; 1XX = set I/O module status flag output N+9 to bad when the I/O module fails or there is a bad quality on one of the module's I/O points",
+      "description_lines": [
+        "Failure action (lack of I/O module response or bad",
+        "analog input reference voltage):",
+        "XX0 = trip module",
+        "XX1 = continue to operate",
+        "I/O module status flag (bad status indication):",
+        "0XX = set I/O module status flag output N+9 to",
+        "bad when the CIS module fails or is in",
+        "error mode",
+        "1XX = set I/O module status flag output N+9 to",
+        "bad when the I/O module fails or there is",
+        "a bad quality on one of the module's I/O",
+        "points"
+      ],
+      "enumerations": [
+        {
+          "value": "XX0",
+          "meaning": "trip module"
+        },
+        {
+          "value": "XX1",
+          "meaning": "continue to operate"
+        },
+        {
+          "value": "0XX",
+          "meaning": "set I/O module status flag output N+9 to"
+        },
+        {
+          "value": "1XX",
+          "meaning": "set I/O module status flag output N+9 to"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 206
+    }
+  ],
+  "spec_count": 19,
+  "max_spec_number": 19,
+  "notes": [],
+  "manual_page": 205,
+  "manual_pages": [
+    205,
+    206,
+    207,
+    208
+  ],
+  "manual_section": "Function Code 79 - Control Interface Slave",
+  "diagnostics": []
+}

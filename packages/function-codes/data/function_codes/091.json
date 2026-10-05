@@ -1,0 +1,192 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 91,
+  "name": "BASIC Configuration (BRC-100)",
+  "description": "The BASIC configuration function code defines the amount of NVRAM and RAM memory allocated to the BASIC program. It also defines BASIC operating modes. This function code provides one output that the BASIC program sets using the BOUT command. The MFC BASIC Programming Language Reference provides complete instructions for programming the module with BASIC. Only one BASIC configuration function block can be configured per module. NOTE: This function code is supported only on the BRC-100 and the IMMFP11/12 controllers.",
+  "description_lines": [
+    "The BASIC configuration function code defines the amount of",
+    "NVRAM and RAM memory allocated to the BASIC program. It",
+    "also defines BASIC operating modes. This function code pro-",
+    "vides one output that the BASIC program sets using the BOUT",
+    "command. The MFC BASIC Programming Language Refer-",
+    "ence provides complete instructions for programming the",
+    "module with BASIC. Only one BASIC configuration function",
+    "block can be configured per module.",
+    "NOTE: This function code is supported only on the BRC-100 and the",
+    "IMMFP11/12 controllers."
+  ],
+  "symbol": {
+    "title_raw": "B A S C F G",
+    "title": "BASCFG",
+    "inputs": [],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 190.26,
+        "y": 589.26,
+        "s": "(9 1 )"
+      },
+      {
+        "x": 153.96,
+        "y": 583.5,
+        "s": "B A S C F G"
+      },
+      {
+        "x": 190.26,
+        "y": 580.38,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "The BOUT command in the BASIC program sets output N",
+      "description_lines": [
+        "The BOUT command in the BASIC program sets output N"
+      ],
+      "manual_page": 263
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Action on BASIC error:; 0 = trip module; 1 = write error data to terminal and suspend BASIC",
+      "description_lines": [
+        "Action on BASIC error:",
+        "0 = trip module",
+        "1 = write error data to terminal and suspend BASIC"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "trip module"
+        },
+        {
+          "value": "1",
+          "meaning": "write error data to terminal and suspend BASIC"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 263
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Load/run flag:; 0 = auto startup on restart; 1 = manual startup on restart",
+      "description_lines": [
+        "Load/run flag:",
+        "0 = auto startup on restart",
+        "1 = manual startup on restart"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "auto startup on restart"
+        },
+        {
+          "value": "1",
+          "meaning": "manual startup on restart"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 263
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "BASIC string space allocation in 1-kbyte increments (NVRAM)",
+      "description_lines": [
+        "BASIC string space allocation in 1-kbyte increments",
+        "(NVRAM)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 263
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 2",
+      "description": "BASIC data space allocation in 1-kbyte increments (RAM)",
+      "description_lines": [
+        "BASIC data space allocation in 1-kbyte increments",
+        "(RAM)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 263
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "0-63",
+      "description": "BASIC program space allocation in 1-kbyte increments (NVRAM)",
+      "description_lines": [
+        "BASIC program space allocation in 1-kbyte incre-",
+        "ments (NVRAM)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 263
+    }
+  ],
+  "spec_count": 5,
+  "max_spec_number": 5,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum value is S3 + S5 ≤ 414.",
+      "manual_page": 263,
+      "context": "specifications"
+    },
+    {
+      "label": "2.",
+      "text": "Maximum values is S3 + S4 + S5 ≤ 1530.",
+      "manual_page": 263,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 263,
+  "manual_pages": [
+    263,
+    264,
+    265,
+    266
+  ],
+  "manual_section": "Function Code 91 - BASIC Configuration (BRC-100)",
+  "diagnostics": []
+}

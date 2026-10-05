@@ -1,0 +1,80 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 51,
+  "name": "Manual Set Constant",
+  "description": "The manual set constant function code provides an adjustable real value that is not tunable. It performs the same function as function code 2, except that function code 51 is not tunable.",
+  "description_lines": [
+    "The manual set constant function code provides an adjustable",
+    "real value that is not tunable. It performs the same function as",
+    "function code 2, except that function code 51 is not tunable."
+  ],
+  "symbol": {
+    "title_raw": "A -R E A L",
+    "title": "A-REAL",
+    "inputs": [],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 191.28,
+        "y": 588.72,
+        "s": "(5 1 )"
+      },
+      {
+        "x": 156.54,
+        "y": 583.44,
+        "s": "A -R E A L"
+      },
+      {
+        "x": 191.28,
+        "y": 579.84,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Output value equals S1",
+      "description_lines": [
+        "Output value equals S1"
+      ],
+      "manual_page": 149
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Desired output value",
+      "description_lines": [
+        "Desired output value"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 149
+    }
+  ],
+  "spec_count": 1,
+  "max_spec_number": 1,
+  "notes": [],
+  "manual_page": 149,
+  "manual_pages": [
+    149
+  ],
+  "manual_section": "Function Code 51 - Manual Set Constant",
+  "diagnostics": []
+}

@@ -1,0 +1,133 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 16,
+  "name": "Multiply",
+  "description": "This function performs a multiplication of two input signals (<S1> by <S2>) with the result multiplied by a constant gain parameter (S3).",
+  "description_lines": [
+    "This function performs a multiplication of two input signals",
+    "(<S1> by <S2>) with the result multiplied by a constant gain",
+    "parameter (S3)."
+  ],
+  "symbol": {
+    "title_raw": "X",
+    "title": "X",
+    "inputs": [
+      "S1",
+      "S2"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 133.38,
+        "y": 591.66,
+        "s": "S 1"
+      },
+      {
+        "x": 191.7,
+        "y": 588.78,
+        "s": "(1 6 )"
+      },
+      {
+        "x": 166.98,
+        "y": 583.44,
+        "s": "X"
+      },
+      {
+        "x": 133.38,
+        "y": 582.72,
+        "s": "S 2"
+      },
+      {
+        "x": 191.7,
+        "y": 579.84,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Output value is the weighted product of the two input signals",
+      "description_lines": [
+        "Output value is the weighted product of the two input",
+        "signals"
+      ],
+      "manual_page": 89
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "6",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of first input",
+      "description_lines": [
+        "Block address of first input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 89
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "6",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of second input",
+      "description_lines": [
+        "Block address of second input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 89
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Gain parameter",
+      "description_lines": [
+        "Gain parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 89
+    }
+  ],
+  "spec_count": 3,
+  "max_spec_number": 3,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 89,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 89,
+  "manual_pages": [
+    89
+  ],
+  "manual_section": "Function Code 16 - Multiply",
+  "diagnostics": []
+}

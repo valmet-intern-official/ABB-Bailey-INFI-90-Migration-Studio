@@ -1,0 +1,546 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 136,
+  "name": "Remote Motor Control",
+  "description": "The remote motor control (RMC) function code has two basic functions. First, it performs the logic necessary to control a digital output. Second, it communicates the result of that logic to the human system interface (HSI).",
+  "description_lines": [
+    "The remote motor control (RMC) function code has two basic",
+    "functions. First, it performs the logic necessary to control a",
+    "digital output. Second, it communicates the result of that logic",
+    "to the human system interface (HSI)."
+  ],
+  "symbol": {
+    "title_raw": "R M C",
+    "title": "RMC",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3"
+    ],
+    "items": [
+      {
+        "x": 160.8,
+        "y": 595.02,
+        "s": "R M C"
+      },
+      {
+        "x": 190.5,
+        "y": 588.54,
+        "s": "(1 3 6 )"
+      },
+      {
+        "x": 132.72,
+        "y": 587.34,
+        "s": "S 1"
+      },
+      {
+        "x": 152.16,
+        "y": 584.22,
+        "s": "S T R T"
+      },
+      {
+        "x": 178.02,
+        "y": 584.22,
+        "s": "R S"
+      },
+      {
+        "x": 190.5,
+        "y": 579.66,
+        "s": "N"
+      },
+      {
+        "x": 132.72,
+        "y": 578.22,
+        "s": "S 2"
+      },
+      {
+        "x": 177.54,
+        "y": 575.34,
+        "s": "O N"
+      },
+      {
+        "x": 152.16,
+        "y": 575.1,
+        "s": "S T P"
+      },
+      {
+        "x": 190.5,
+        "y": 570.78,
+        "s": "N + 1"
+      },
+      {
+        "x": 132.72,
+        "y": 569.34,
+        "s": "S 3"
+      },
+      {
+        "x": 152.16,
+        "y": 566.22,
+        "s": "I1"
+      },
+      {
+        "x": 175.14,
+        "y": 566.22,
+        "s": "O F F"
+      },
+      {
+        "x": 190.5,
+        "y": 561.9,
+        "s": "N + 2"
+      },
+      {
+        "x": 132.72,
+        "y": 560.22,
+        "s": "S 4"
+      },
+      {
+        "x": 152.16,
+        "y": 557.34,
+        "s": "I2"
+      },
+      {
+        "x": 178.74,
+        "y": 557.34,
+        "s": "S T"
+      },
+      {
+        "x": 190.5,
+        "y": 553.02,
+        "s": "N + 3"
+      },
+      {
+        "x": 132.72,
+        "y": 551.1,
+        "s": "S 5"
+      },
+      {
+        "x": 152.16,
+        "y": 548.22,
+        "s": "I3"
+      },
+      {
+        "x": 132.72,
+        "y": 542.22,
+        "s": "S 6"
+      },
+      {
+        "x": 152.16,
+        "y": 539.34,
+        "s": "I4"
+      },
+      {
+        "x": 132.72,
+        "y": 533.1,
+        "s": "S 7"
+      },
+      {
+        "x": 152.16,
+        "y": 530.46,
+        "s": "F 1"
+      },
+      {
+        "x": 132.72,
+        "y": 524.22,
+        "s": "S 8"
+      },
+      {
+        "x": 152.16,
+        "y": 521.34,
+        "s": "F 2"
+      },
+      {
+        "x": 132.72,
+        "y": 515.1,
+        "s": "S 9"
+      },
+      {
+        "x": 152.16,
+        "y": 512.46,
+        "s": "P 1"
+      },
+      {
+        "x": 132.72,
+        "y": 505.98,
+        "s": "S 1 0"
+      },
+      {
+        "x": 152.16,
+        "y": 503.58,
+        "s": "P 2"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Run state:; 0 = stopped; 1 = running",
+      "description_lines": [
+        "Run state:",
+        "0 = stopped",
+        "1 = running"
+      ],
+      "manual_page": 455
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Pulse on",
+      "description_lines": [
+        "Pulse on"
+      ],
+      "manual_page": 455
+    },
+    {
+      "blk": "N+2",
+      "type": "B",
+      "description": "Pulse off",
+      "description_lines": [
+        "Pulse off"
+      ],
+      "manual_page": 455
+    },
+    {
+      "blk": "N+3",
+      "type": "B",
+      "description": "Control output status:; 0.0 = good; 1.0 = alarm; 2.0 = waiting for feedback",
+      "description_lines": [
+        "Control output status:",
+        "0.0 = good",
+        "1.0 = alarm",
+        "2.0 = waiting for feedback"
+      ],
+      "manual_page": 455
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of start",
+      "description_lines": [
+        "Block address of start"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 455
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of stop",
+      "description_lines": [
+        "Block address of stop"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 455
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of interlock 1",
+      "description_lines": [
+        "Block address of interlock 1"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 455
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of interlock 2",
+      "description_lines": [
+        "Block address of interlock 2"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 455
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of interlock 3",
+      "description_lines": [
+        "Block address of interlock 3"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 455
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of interlock 4",
+      "description_lines": [
+        "Block address of interlock 4"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 455
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of feedback 1",
+      "description_lines": [
+        "Block address of feedback 1"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 455
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of feedback 2",
+      "description_lines": [
+        "Block address of feedback 2"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 455
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of start permissive 1",
+      "description_lines": [
+        "Block address of start permissive 1"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 455
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of start permissive 2",
+      "description_lines": [
+        "Block address of start permissive 2"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 455
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Startup feedback time (secs)",
+      "description_lines": [
+        "Startup feedback time (secs)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 455
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Pulse on time (secs)",
+      "description_lines": [
+        "Pulse on time (secs)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 455
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Pulse off time (secs)",
+      "description_lines": [
+        "Pulse off time (secs)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 455
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Display type",
+      "description_lines": [
+        "Display type"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 455
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Spare",
+      "description_lines": [
+        "Spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 455
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "0.0, 1.0 or 2.0",
+      "description": "Status control:; 0.0 = hold status disabled; 1.0 = hold status enabled; 2.0 = hold status enabled (reset status on exit)",
+      "description_lines": [
+        "Status control:",
+        "0.0 = hold status disabled",
+        "1.0 = hold status enabled",
+        "2.0 = hold status enabled (reset status on exit)"
+      ],
+      "enumerations": [
+        {
+          "value": "0.0",
+          "meaning": "hold status disabled"
+        },
+        {
+          "value": "1.0",
+          "meaning": "hold status enabled"
+        },
+        {
+          "value": "2.0",
+          "meaning": "hold status enabled (reset status on exit)"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 456
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Shutdown feedback time (shutdowns use the startup feedback time when set to 0.0)",
+      "description_lines": [
+        "Shutdown feedback time (shutdowns use the star-",
+        "tup feedback time when set to 0.0)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 456
+    }
+  ],
+  "spec_count": 17,
+  "max_spec_number": 17,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 456,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 455,
+  "manual_pages": [
+    455,
+    456,
+    457,
+    458,
+    459
+  ],
+  "manual_section": "Function Code 136 - Remote Motor Control",
+  "diagnostics": []
+}

@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { NextResponse } from "next/server";
 import { cadSheetToSvg } from "@infi90/renderers";
+import { getCadRenderEngine } from "@/lib/env";
 import { loadProject, projectArtifactsDir } from "@/lib/store";
 
 export const runtime = "nodejs";
@@ -22,7 +23,7 @@ export async function GET(
         decoded.replace(/\.CAD$/i, "").toUpperCase()
   );
   if (cad) {
-    const svg = cadSheetToSvg(cad);
+    const svg = cadSheetToSvg(cad, { engine: getCadRenderEngine() });
     return new NextResponse(svg, {
       headers: {
         "Content-Type": "image/svg+xml; charset=utf-8",

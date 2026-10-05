@@ -8,6 +8,9 @@ apps/web/data
 *.log
 Input
 Output
+Guiding Material
+!Guiding Material/Raw Data from Controller/Display/*/submodels
+tools
 "Raw Data from Controller"
 fixtures
 docs/cad-engine-trace-report.json

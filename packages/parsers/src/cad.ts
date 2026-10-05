@@ -256,7 +256,8 @@ export function parseCadFile(
       continue;
     }
 
-    if (/^\d{2,}-\d/.test(s) || /^322-/.test(s)) {
+    const isDate = /^\d{1,2}[-/]\d{1,2}[-/]\d{2}(\d{2})?$/.test(s.trim());
+    if (!isDate && (/^\d{2,}-\d/.test(s) || /^322-/.test(s))) {
       loopTags.push(s.trim());
       texts.push({ text: s, kind: "label" });
       continue;

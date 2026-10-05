@@ -1,0 +1,763 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 129,
+  "name": "Multistate Device Driver",
+  "description": "The multistate device driver (MSDD) function code provides a means of controlling field equipment (i.e., variable speed motor) or control schemes that have more than one control mode. The MSDD block provides four state controls with feedback. Two control inputs or an operator input selects one of four output masks for control action. The output masks provide three boolean signals simultaneously to the actual control logic. The MSDD block accepts four boolean feedback inputs that define the actual state of the control scheme. A control output status signal from the MSDD block can interface to sequencing logic to trigger the next step in a process. The control output status represents the status of the controlled process as defined by the feedback inputs and a feedback wait time. Control output status can be good (0.0), bad (1.0), or waiting (2.0). NOTE: Because commands are buffered during module startup, some time may elapse between an operator action and the execution of that action during startup. The elapsed time is determined by the startup period specified by S4 of function code 90, and it is dependent on the startup in progress flag being set to 1 in function code 81. The MSDD block is exception reported. Exception reports contain states: output, feedback, alarm; and statuses: control output and mode. An exception report generates when the block output mask changes, the block generates an alarm, a feedback input changes state, or T for exception reporting expires.",
+  "description_lines": [
+    "The multistate device driver (MSDD) function code provides a",
+    "means of controlling field equipment (i.e., variable speed",
+    "motor) or control schemes that have more than one control",
+    "mode. The MSDD block provides four state controls with feed-",
+    "back. Two control inputs or an operator input selects one of",
+    "four output masks for control action. The output masks pro-",
+    "vide three boolean signals simultaneously to the actual control",
+    "logic. The MSDD block accepts four boolean feedback inputs",
+    "that define the actual state of the control scheme. A control",
+    "output status signal from the MSDD block can interface to",
+    "sequencing logic to trigger the next step in a process. The con-",
+    "trol output status represents the status of the controlled pro-",
+    "cess as defined by the feedback inputs and a feedback wait",
+    "time. Control output status can be good (0.0), bad (1.0), or",
+    "waiting (2.0).",
+    "NOTE: Because commands are buffered during module startup, some time",
+    "may elapse between an operator action and the execution of that action during",
+    "startup. The elapsed time is determined by the startup period specified by S4 of",
+    "function code 90, and it is dependent on the startup in progress flag being set",
+    "to 1 in function code 81.",
+    "The MSDD block is exception reported. Exception reports con-",
+    "tain states: output, feedback, alarm; and statuses: control",
+    "output and mode. An exception report generates when the",
+    "block output mask changes, the block generates an alarm, a",
+    "feedback input changes state, or T for exception reporting",
+    "expires."
+  ],
+  "symbol": {
+    "title_raw": "M S DV D R",
+    "title": "MSDVDR",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S25"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3"
+    ],
+    "items": [
+      {
+        "x": 153.36,
+        "y": 595.02,
+        "s": "M S DV D R"
+      },
+      {
+        "x": 190.56,
+        "y": 588.24,
+        "s": "(1 2 9 )"
+      },
+      {
+        "x": 132.78,
+        "y": 587.52,
+        "s": "S 1"
+      },
+      {
+        "x": 151.68,
+        "y": 584.4,
+        "s": "I1"
+      },
+      {
+        "x": 181.44,
+        "y": 584.16,
+        "s": "1"
+      },
+      {
+        "x": 190.56,
+        "y": 579.6,
+        "s": "N"
+      },
+      {
+        "x": 132.78,
+        "y": 578.4,
+        "s": "S 2"
+      },
+      {
+        "x": 151.68,
+        "y": 575.28,
+        "s": "I2"
+      },
+      {
+        "x": 181.44,
+        "y": 575.28,
+        "s": "2"
+      },
+      {
+        "x": 190.56,
+        "y": 570.72,
+        "s": "N + 1"
+      },
+      {
+        "x": 132.78,
+        "y": 569.52,
+        "s": "S 3"
+      },
+      {
+        "x": 151.68,
+        "y": 566.4,
+        "s": "F 1"
+      },
+      {
+        "x": 181.44,
+        "y": 566.16,
+        "s": "3"
+      },
+      {
+        "x": 190.56,
+        "y": 561.78,
+        "s": "N + 2"
+      },
+      {
+        "x": 132.78,
+        "y": 560.34,
+        "s": "S 4"
+      },
+      {
+        "x": 151.68,
+        "y": 557.46,
+        "s": "F 2"
+      },
+      {
+        "x": 177.84,
+        "y": 557.22,
+        "s": "S T"
+      },
+      {
+        "x": 190.56,
+        "y": 552.9,
+        "s": "N + 3"
+      },
+      {
+        "x": 132.78,
+        "y": 551.46,
+        "s": "S 5"
+      },
+      {
+        "x": 151.68,
+        "y": 548.58,
+        "s": "F 3"
+      },
+      {
+        "x": 132.78,
+        "y": 542.34,
+        "s": "S 6"
+      },
+      {
+        "x": 151.68,
+        "y": 539.46,
+        "s": "F 4"
+      },
+      {
+        "x": 132.78,
+        "y": 533.4,
+        "s": "S 2 5"
+      },
+      {
+        "x": 151.68,
+        "y": 530.52,
+        "s": "0"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Control output 1",
+      "description_lines": [
+        "Control output 1"
+      ],
+      "manual_page": 403
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Control output 2",
+      "description_lines": [
+        "Control output 2"
+      ],
+      "manual_page": 403
+    },
+    {
+      "blk": "N+2",
+      "type": "B",
+      "description": "Control output 3",
+      "description_lines": [
+        "Control output 3"
+      ],
+      "manual_page": 403
+    },
+    {
+      "blk": "N+3",
+      "type": "R",
+      "description": "Control output status:; 0.0 = good; 1.0 = bad; 2.0 = waiting",
+      "description_lines": [
+        "Control output status:",
+        "0.0 = good",
+        "1.0 = bad",
+        "2.0 = waiting"
+      ],
+      "manual_page": 403
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control input 1",
+      "description_lines": [
+        "Block address of control input 1"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 404
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control input 2",
+      "description_lines": [
+        "Block address of control input 2"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 404
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of feedback input 1",
+      "description_lines": [
+        "Block address of feedback input 1"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 404
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of feedback input 2",
+      "description_lines": [
+        "Block address of feedback input 2"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 404
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of feedback input 3",
+      "description_lines": [
+        "Block address of feedback input 3"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 404
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of feedback input 4",
+      "description_lines": [
+        "Block address of feedback input 4"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 404
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "000 - 111",
+      "description": "Default mask",
+      "description_lines": [
+        "Default mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 404
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "000 - 111",
+      "description": "Output mask 1",
+      "description_lines": [
+        "Output mask 1"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 404
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "000 - 111",
+      "description": "Output mask 2",
+      "description_lines": [
+        "Output mask 2"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 404
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "000 - 111",
+      "description": "Output mask 3",
+      "description_lines": [
+        "Output mask 3"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 404
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0000 - 2222",
+      "description": "Feedback corresponding to output mask 1",
+      "description_lines": [
+        "Feedback corresponding to output mask 1"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 404
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0000 - 2222",
+      "description": "Feedback corresponding to output mask 2",
+      "description_lines": [
+        "Feedback corresponding to output mask 2"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 404
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0000 - 2222",
+      "description": "Feedback corresponding to output mask 3. Each digit can be:; 0 = input should be 0; 1 = input should be 1; 2 = input could be 0 or 1",
+      "description_lines": [
+        "Feedback corresponding to output mask 3. Each digit",
+        "can be:",
+        "0 = input should be 0",
+        "1 = input should be 1",
+        "2 = input could be 0 or 1"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "input should be 0"
+        },
+        {
+          "value": "1",
+          "meaning": "input should be 1"
+        },
+        {
+          "value": "2",
+          "meaning": "input could be 0 or 1"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 404
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Control output status override: Status override:; XX0 = none; XX1 = output status; XX2 = output status and alarm Control override:; X0X = go to manual mode and default control outputs; X1X = hold current mode and control outputs; X2X = go to manual mode and hold current control outputs; X3X = go to auto mode and set outputs as selected by current control inputs; X4X = go to manual mode and set outputs as selected by operator interface device Operation:; 0XX = normal operation; 1XX = early good status enable",
+      "description_lines": [
+        "Control output status override:",
+        "Status override:",
+        "XX0 = none",
+        "XX1 = output status",
+        "XX2 = output status and alarm",
+        "Control override:",
+        "X0X = go to manual mode and default control",
+        "outputs",
+        "X1X = hold current mode and control outputs",
+        "X2X = go to manual mode and hold current control",
+        "outputs",
+        "X3X = go to auto mode and set outputs as selected",
+        "by current control inputs",
+        "X4X = go to manual mode and set outputs as",
+        "selected by operator interface device",
+        "Operation:",
+        "0XX = normal operation",
+        "1XX = early good status enable"
+      ],
+      "enumerations": [
+        {
+          "value": "XX0",
+          "meaning": "none"
+        },
+        {
+          "value": "XX1",
+          "meaning": "output status"
+        },
+        {
+          "value": "XX2",
+          "meaning": "output status and alarm"
+        },
+        {
+          "value": "X0X",
+          "meaning": "go to manual mode and default control"
+        },
+        {
+          "value": "X1X",
+          "meaning": "hold current mode and control outputs"
+        },
+        {
+          "value": "X2X",
+          "meaning": "go to manual mode and hold current control"
+        },
+        {
+          "value": "X3X",
+          "meaning": "go to auto mode and set outputs as selected"
+        },
+        {
+          "value": "X4X",
+          "meaning": "go to manual mode and set outputs as"
+        },
+        {
+          "value": "0XX",
+          "meaning": "normal operation"
+        },
+        {
+          "value": "1XX",
+          "meaning": "early good status enable"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 404
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1",
+      "type": "B",
+      "range": "0 or 1",
+      "description": "Manual mode permissive:; 0 = no; 1 = yes",
+      "description_lines": [
+        "Manual mode permissive:",
+        "0 = no",
+        "1 = yes"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no"
+        },
+        {
+          "value": "1",
+          "meaning": "yes"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 404
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "0 - 9.2 E18",
+      "description": "Feedback waiting time (seconds)",
+      "description_lines": [
+        "Feedback waiting time (seconds)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 404
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "0 - 9.2 E18",
+      "description": "Fault waiting time",
+      "description_lines": [
+        "Fault waiting time"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 405
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 255",
+      "description": "MSDD display type",
+      "description_lines": [
+        "MSDD display type"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 405
+    },
+    {
+      "number": 19,
+      "label": "S19",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1",
+      "type": "I",
+      "range": "1 - 32",
+      "description": "Next allowable mask numbers from output mask 1 in manual mode",
+      "description_lines": [
+        "Next allowable mask numbers from output mask 1 in",
+        "manual mode"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 405
+    },
+    {
+      "number": 20,
+      "label": "S20",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "2",
+      "type": "I",
+      "range": "1 - 32",
+      "description": "Next allowable mask numbers from output mask 2 in manual mode",
+      "description_lines": [
+        "Next allowable mask numbers from output mask 2 in",
+        "manual mode"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 405
+    },
+    {
+      "number": 21,
+      "label": "S21",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "3",
+      "type": "I",
+      "range": "1 - 32",
+      "description": "Next allowable mask numbers from output mask 3 in manual mode",
+      "description_lines": [
+        "Next allowable mask numbers from output mask 3 in",
+        "manual mode"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 405
+    },
+    {
+      "number": 22,
+      "label": "S22",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "0 - 9.2 E18",
+      "description": "Length of pulsed outputs (if 0, sustained outputs)",
+      "description_lines": [
+        "Length of pulsed outputs (if 0, sustained outputs)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 405
+    },
+    {
+      "number": 23,
+      "label": "S23",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "B",
+      "range": "Full",
+      "description": "Initial mode:; 0 = manual; 1 = auto",
+      "description_lines": [
+        "Initial mode:",
+        "0 = manual",
+        "1 = auto"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "manual"
+        },
+        {
+          "value": "1",
+          "meaning": "auto"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 405
+    },
+    {
+      "number": 24,
+      "label": "S24",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Startup track flag:; 0.0 = no track during startup; 1.0 = control outputs track control inputs during startup",
+      "description_lines": [
+        "Startup track flag:",
+        "0.0 = no track during startup",
+        "1.0 = control outputs track control inputs during",
+        "startup"
+      ],
+      "enumerations": [
+        {
+          "value": "0.0",
+          "meaning": "no track during startup"
+        },
+        {
+          "value": "1.0",
+          "meaning": "control outputs track control inputs during"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 405
+    },
+    {
+      "number": 25,
+      "label": "S25",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control override",
+      "description_lines": [
+        "Block address of control override"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 405
+    }
+  ],
+  "spec_count": 25,
+  "max_spec_number": 25,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 405,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 403,
+  "manual_pages": [
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414
+  ],
+  "manual_section": "Function Code 129 - Multistate Device Driver",
+  "diagnostics": []
+}

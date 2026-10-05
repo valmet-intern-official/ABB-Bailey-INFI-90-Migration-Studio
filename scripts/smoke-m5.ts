@@ -7,7 +7,6 @@ import {
 } from "../packages/exporters/src/excel.ts";
 import {
   renderCadSheetsPdf,
-  renderM1GraphicsPdf,
   writeCadSvgs,
 } from "../packages/renderers/src/pdf.ts";
 
@@ -25,7 +24,7 @@ async function main() {
     cpu: "P7",
   });
 
-  console.log("CAD", project.stats.cadCount, "M1", project.stats.m1Count);
+  console.log("CAD", project.stats.cadCount);
   console.log("IO", project.stats.ioByType);
   console.log("logic", project.logicRecords.length);
   console.log("validation errors", project.stats.unresolvedCount);
@@ -36,10 +35,6 @@ async function main() {
   await exportIoListExcel(project, path.join(art, "IO_List.xlsx"));
   await exportLogicExcel(project, path.join(art, "Logic_Specification.xlsx"));
   await renderCadSheetsPdf(project.cadSheets, path.join(art, "CAD_Logic.pdf"));
-  await renderM1GraphicsPdf(
-    project.graphics,
-    path.join(art, "M1_Graphics.pdf")
-  );
   await writeCadSvgs(project.cadSheets.slice(0, 5), path.join(art, "cad-svg"));
   console.log("Wrote artifacts to", art);
 }

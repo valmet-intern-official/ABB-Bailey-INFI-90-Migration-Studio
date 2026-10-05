@@ -1,0 +1,369 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 104,
+  "name": "Pulse Input/Totalization",
+  "description": "The pulse input/totalization function code interfaces a controller to a selected channel of an IMDSM04 pulse input slave module. The IMDSM04 module conditions, converts and processes pulse inputs into analog signals. It has eight inputs that can be processed in three modes: period, frequency and totalization. Function code 104 configures a signal to output a totalized value. Function codes 102 and 103 process signals in the period and frequency modes, respectively. Function code 109 processes the duration of the input pulses. Each input channel must have only one pulse input block configured.",
+  "description_lines": [
+    "The pulse input/totalization function code interfaces a con-",
+    "troller to a selected channel of an IMDSM04 pulse input slave",
+    "module. The IMDSM04 module conditions, converts and pro-",
+    "cesses pulse inputs into analog signals. It has eight inputs",
+    "that can be processed in three modes: period, frequency and",
+    "totalization. Function code 104 configures a signal to output a",
+    "totalized value. Function codes 102 and 103 process signals in",
+    "the period and frequency modes, respectively. Function code",
+    "109 processes the duration of the input pulses. Each input",
+    "channel must have only one pulse input block configured."
+  ],
+  "symbol": {
+    "title_raw": "P ITO T",
+    "title": "PITOT",
+    "inputs": [
+      "S6",
+      "S7"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2"
+    ],
+    "items": [
+      {
+        "x": 158.94,
+        "y": 594.54,
+        "s": "P ITO T"
+      },
+      {
+        "x": 191.16,
+        "y": 588.54,
+        "s": "(1 0 4 )"
+      },
+      {
+        "x": 132.78,
+        "y": 587.58,
+        "s": "S 6"
+      },
+      {
+        "x": 152.22,
+        "y": 584.22,
+        "s": "R"
+      },
+      {
+        "x": 182.52,
+        "y": 583.74,
+        "s": "T"
+      },
+      {
+        "x": 191.16,
+        "y": 579.66,
+        "s": "N"
+      },
+      {
+        "x": 132.78,
+        "y": 578.46,
+        "s": "S 7"
+      },
+      {
+        "x": 152.22,
+        "y": 575.34,
+        "s": "H"
+      },
+      {
+        "x": 182.28,
+        "y": 574.86,
+        "s": "A"
+      },
+      {
+        "x": 191.16,
+        "y": 570.78,
+        "s": "N + 1"
+      },
+      {
+        "x": 179.16,
+        "y": 565.98,
+        "s": "S T"
+      },
+      {
+        "x": 191.16,
+        "y": 561.9,
+        "s": "N + 2"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Current totalized value × gain",
+      "description_lines": [
+        "Current totalized value × gain"
+      ],
+      "manual_page": 305
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Totalized value alarm:; 0 = no alarm; 1 = alarm",
+      "description_lines": [
+        "Totalized value alarm:",
+        "0 = no alarm",
+        "1 = alarm"
+      ],
+      "manual_page": 305
+    },
+    {
+      "blk": "N+2",
+      "type": "B",
+      "description": "I/O module communication status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "I/O module communication status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 305
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 63",
+      "description": "Expander bus I/O module address of IMDSM04 module",
+      "description_lines": [
+        "Expander bus I/O module address of IMDSM04",
+        "module"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 305
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "1 - 8",
+      "description": "Selected channel",
+      "description_lines": [
+        "Selected channel"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 305
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "0 or 1",
+      "description": "Pulse trigger level:; 0 = low to high transitions; 1 = high to low transitions",
+      "description_lines": [
+        "Pulse trigger level:",
+        "0 = low to high transitions",
+        "1 = high to low transitions"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "low to high transitions"
+        },
+        {
+          "value": "1",
+          "meaning": "high to low transitions"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 305
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Starting value",
+      "description_lines": [
+        "Starting value"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 305
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Totalization direction:; 0 = positive; 1 = negative",
+      "description_lines": [
+        "Totalization direction:",
+        "0 = positive",
+        "1 = negative"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "positive"
+        },
+        {
+          "value": "1",
+          "meaning": "negative"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 305
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of reset flag:; 0 = continue totalization; 1 = reset totalization",
+      "description_lines": [
+        "Block address of reset flag:",
+        "0 = continue totalization",
+        "1 = reset totalization"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "continue totalization"
+        },
+        {
+          "value": "1",
+          "meaning": "reset totalization"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 305
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of hold flag:; 0 = continue totalization; 1 = hold accumulated total",
+      "description_lines": [
+        "Block address of hold flag:",
+        "0 = continue totalization",
+        "1 = hold accumulated total"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "continue totalization"
+        },
+        {
+          "value": "1",
+          "meaning": "hold accumulated total"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 306
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Automatic reset on alarm limit flag:; 0 = off; 1 = when alarm, reset to S4 + alarm overrun",
+      "description_lines": [
+        "Automatic reset on alarm limit flag:",
+        "0 = off",
+        "1 = when alarm, reset to S4 + alarm overrun"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "off"
+        },
+        {
+          "value": "1",
+          "meaning": "when alarm, reset to S4 + alarm overrun"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 306
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "0 - 9.2 E18",
+      "description": "Gain",
+      "description_lines": [
+        "Gain"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 306
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "Alarm limit",
+      "description_lines": [
+        "Alarm limit"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 306
+    }
+  ],
+  "spec_count": 10,
+  "max_spec_number": 10,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 306,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 305,
+  "manual_pages": [
+    305,
+    306,
+    307,
+    308
+  ],
+  "manual_section": "Function Code 104 - Pulse Input/Totalization",
+  "diagnostics": []
+}

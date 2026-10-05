@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"/><title>CAD v2 Visual QA</title>
+<style>
+body{font-family:Consolas,monospace;background:#111;color:#eee;margin:24px}
+table{border-collapse:collapse;width:100%}
+td,th{border:1px solid #444;padding:6px 10px;text-align:left}
+.ok{color:#4ade80}.bad{color:#f87171}
+img,object{background:#fff;max-width:100%;margin:16px 0}
+</style></head><body>
+<h1>CAD Layout Engine v2 — Visual QA</h1>
+<table>
+<tr><th>Sheet</th><th>Blocks</th><th>Conn</th><th>Diag</th><th>Overlap</th><th>Through</th><th>OK</th><th>Score</th></tr>
+<tr>
+<td>3070561A.CAD</td><td>123</td><td>96</td>
+<td class="ok">0</td>
+<td class="ok">0</td>
+<td class="ok">0</td>
+<td class="ok">true</td>
+<td>1010.1</td></tr>
+<tr>
+<td>3070563A.CAD</td><td>121</td><td>95</td>
+<td class="ok">0</td>
+<td class="ok">0</td>
+<td class="ok">0</td>
+<td class="ok">true</td>
+<td>1043.3</td></tr>
+</table>
+<h2>3070561A</h2><object type="image/svg+xml" data="3070561A.svg" width="100%" height="800"></object>
+<h2>3070563A</h2><object type="image/svg+xml" data="3070563A.svg" width="100%" height="800"></object>
+</body></html>

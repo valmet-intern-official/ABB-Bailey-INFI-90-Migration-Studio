@@ -1,0 +1,881 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 112,
+  "name": "Rung (20-Input)",
+  "description": "Function code 112 implements a rung of a Ladder logic program (relay type). It accepts 20 boolean input signals and performs a fundamental operation on each input in sequential order. After each input is operated on , the resulting value goes to the top of the stack. The output of the rung block is the value on the top of the stack unless S1 forces it to another value.",
+  "description_lines": [
+    "Function code 112 implements a rung of a Ladder logic pro-",
+    "gram (relay type). It accepts 20 boolean input signals and per-",
+    "forms a fundamental operation on each input in sequential",
+    "order. After each input is operated on , the resulting value goes",
+    "to the top of the stack. The output of the rung block is the",
+    "value on the top of the stack unless S1 forces it to another",
+    "value."
+  ],
+  "symbol": {
+    "title_raw": "R N G 2 0",
+    "title": "RNG20",
+    "inputs": [
+      "S22",
+      "S23",
+      "S24",
+      "S25",
+      "S26",
+      "S27",
+      "S28",
+      "S29",
+      "S30",
+      "S31",
+      "S32",
+      "S33",
+      "S34",
+      "S35",
+      "S36",
+      "S37",
+      "S38",
+      "S39",
+      "S40",
+      "S41"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 156.54,
+        "y": 595.02,
+        "s": "R N G 2 0"
+      },
+      {
+        "x": 190.86,
+        "y": 589.26,
+        "s": "(1 1 2 )"
+      },
+      {
+        "x": 132.3,
+        "y": 587.58,
+        "s": "S 2 2"
+      },
+      {
+        "x": 190.86,
+        "y": 580.38,
+        "s": "N"
+      },
+      {
+        "x": 132.3,
+        "y": 578.7,
+        "s": "S 2 3"
+      },
+      {
+        "x": 132.3,
+        "y": 569.58,
+        "s": "S 2 4"
+      },
+      {
+        "x": 132.3,
+        "y": 560.7,
+        "s": "S 2 5"
+      },
+      {
+        "x": 132.3,
+        "y": 551.58,
+        "s": "S 2 6"
+      },
+      {
+        "x": 132.3,
+        "y": 542.46,
+        "s": "S 2 7"
+      },
+      {
+        "x": 132.3,
+        "y": 533.58,
+        "s": "S 2 8"
+      },
+      {
+        "x": 132.3,
+        "y": 524.46,
+        "s": "S 2 9"
+      },
+      {
+        "x": 132.3,
+        "y": 515.58,
+        "s": "S 3 0"
+      },
+      {
+        "x": 132.3,
+        "y": 506.4,
+        "s": "S 3 1"
+      },
+      {
+        "x": 132.3,
+        "y": 497.52,
+        "s": "S 3 2"
+      },
+      {
+        "x": 132.3,
+        "y": 488.4,
+        "s": "S 3 3"
+      },
+      {
+        "x": 132.3,
+        "y": 479.52,
+        "s": "S 3 4"
+      },
+      {
+        "x": 132.3,
+        "y": 470.4,
+        "s": "S 3 5"
+      },
+      {
+        "x": 132.3,
+        "y": 461.52,
+        "s": "S 3 6"
+      },
+      {
+        "x": 132.3,
+        "y": 452.4,
+        "s": "S 3 7"
+      },
+      {
+        "x": 132.3,
+        "y": 443.28,
+        "s": "S 3 8"
+      },
+      {
+        "x": 132.3,
+        "y": 434.4,
+        "s": "S 3 9"
+      },
+      {
+        "x": 132.3,
+        "y": 425.28,
+        "s": "S 4 0"
+      },
+      {
+        "x": 132.3,
+        "y": 416.4,
+        "s": "S 4 1"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Output value determined by S1 and value on top of stack. If S1 = 0, output = value on top of stack If S1 = 1, output = previous value of output If S1 = 2, output = logic 0 If S1 = 3, output = logic 1",
+      "description_lines": [
+        "Output value determined by S1 and value on top of stack.",
+        "If S1 = 0, output = value on top of stack",
+        "If S1 = 1, output = previous value of output",
+        "If S1 = 2, output = logic 0",
+        "If S1 = 3, output = logic 1"
+      ],
+      "manual_page": 323
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 3",
+      "description": "Output descriptor:; 0 = normal; 1 = hold previous value; 2 = force output to logic 0; 3 = force output to logic 1",
+      "description_lines": [
+        "Output descriptor:",
+        "0 = normal",
+        "1 = hold previous value",
+        "2 = force output to logic 0",
+        "3 = force output to logic 1"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "normal"
+        },
+        {
+          "value": "1",
+          "meaning": "hold previous value"
+        },
+        {
+          "value": "2",
+          "meaning": "force output to logic 0"
+        },
+        {
+          "value": "3",
+          "meaning": "force output to logic 1"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 323
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 1",
+      "description_lines": [
+        "Operation performed on input 1"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 323
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 2",
+      "description_lines": [
+        "Operation performed on input 2"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 323
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 3",
+      "description_lines": [
+        "Operation performed on input 3"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 323
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 4",
+      "description_lines": [
+        "Operation performed on input 4"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 323
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 5",
+      "description_lines": [
+        "Operation performed on input 5"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 323
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 6",
+      "description_lines": [
+        "Operation performed on input 6"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 323
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 7",
+      "description_lines": [
+        "Operation performed on input 7"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 323
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 8",
+      "description_lines": [
+        "Operation performed on input 8"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 323
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 9",
+      "description_lines": [
+        "Operation performed on input 9"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 323
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 10",
+      "description_lines": [
+        "Operation performed on input 10"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 323
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 11",
+      "description_lines": [
+        "Operation performed on input 11"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 323
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 12",
+      "description_lines": [
+        "Operation performed on input 12"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 324
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 13",
+      "description_lines": [
+        "Operation performed on input 13"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 324
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 14",
+      "description_lines": [
+        "Operation performed on input 14"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 324
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 15",
+      "description_lines": [
+        "Operation performed on input 15"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 324
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 16",
+      "description_lines": [
+        "Operation performed on input 16"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 324
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 17",
+      "description_lines": [
+        "Operation performed on input 17"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 324
+    },
+    {
+      "number": 19,
+      "label": "S19",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 18",
+      "description_lines": [
+        "Operation performed on input 18"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 324
+    },
+    {
+      "number": 20,
+      "label": "S20",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 19",
+      "description_lines": [
+        "Operation performed on input 19"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 324
+    },
+    {
+      "number": 21,
+      "label": "S21",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 20",
+      "description_lines": [
+        "Operation performed on input 20"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 324
+    },
+    {
+      "number": 22,
+      "label": "S22",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 1",
+      "description_lines": [
+        "Block address of input 1"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 23,
+      "label": "S23",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 2",
+      "description_lines": [
+        "Block address of input 2"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 24,
+      "label": "S24",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 3",
+      "description_lines": [
+        "Block address of input 3"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 25,
+      "label": "S25",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 4",
+      "description_lines": [
+        "Block address of input 4"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 26,
+      "label": "S26",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 5",
+      "description_lines": [
+        "Block address of input 5"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 27,
+      "label": "S27",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 6",
+      "description_lines": [
+        "Block address of input 6"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 28,
+      "label": "S28",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 7",
+      "description_lines": [
+        "Block address of input 7"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 29,
+      "label": "S29",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 8",
+      "description_lines": [
+        "Block address of input 8"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 30,
+      "label": "S30",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 9",
+      "description_lines": [
+        "Block address of input 9"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 31,
+      "label": "S31",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 10",
+      "description_lines": [
+        "Block address of input 10"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 32,
+      "label": "S32",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 11",
+      "description_lines": [
+        "Block address of input 11"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 33,
+      "label": "S33",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 12",
+      "description_lines": [
+        "Block address of input 12"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 34,
+      "label": "S34",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 13",
+      "description_lines": [
+        "Block address of input 13"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 35,
+      "label": "S35",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 14",
+      "description_lines": [
+        "Block address of input 14"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 36,
+      "label": "S36",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 15",
+      "description_lines": [
+        "Block address of input 15"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 37,
+      "label": "S37",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 16",
+      "description_lines": [
+        "Block address of input 16"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 38,
+      "label": "S38",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 17",
+      "description_lines": [
+        "Block address of input 17"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 39,
+      "label": "S39",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 18",
+      "description_lines": [
+        "Block address of input 18"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 40,
+      "label": "S40",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 19",
+      "description_lines": [
+        "Block address of input 19"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    },
+    {
+      "number": 41,
+      "label": "S41",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 20",
+      "description_lines": [
+        "Block address of input 20"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 324
+    }
+  ],
+  "spec_count": 41,
+  "max_spec_number": 41,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 324,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 323,
+  "manual_pages": [
+    323,
+    324,
+    325,
+    326,
+    327
+  ],
+  "manual_section": "Function Code 112 - Rung (20-Input)",
+  "diagnostics": []
+}

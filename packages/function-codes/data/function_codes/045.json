@@ -1,0 +1,134 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 45,
+  "name": "Digital Exception Report",
+  "description": "The digital exception report function code exception reports <S1>. Specification S2 defines the alarm state. Exception reports are activated by a report enable signal from the module bus. The maximum number of exception reports allowed depends on the controller configuration. The number of exception reports is defined in the executive block of the controller. Use function code 69 to test the alarm associated with the analog input/loop function block.",
+  "description_lines": [
+    "The digital exception report function code exception reports",
+    "<S1>. Specification S2 defines the alarm state.",
+    "Exception reports are activated by a report enable signal from",
+    "the module bus. The maximum number of exception reports",
+    "allowed depends on the controller configuration. The number",
+    "of exception reports is defined in the executive block of the",
+    "controller.",
+    "Use function code 69 to test the alarm associated with the",
+    "analog input/loop function block."
+  ],
+  "symbol": {
+    "title_raw": "D O /L",
+    "title": "DO/L",
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 191.28,
+        "y": 588.96,
+        "s": "(4 5 )"
+      },
+      {
+        "x": 133.32,
+        "y": 587.76,
+        "s": "S 1"
+      },
+      {
+        "x": 161.22,
+        "y": 583.62,
+        "s": "D O /L"
+      },
+      {
+        "x": 191.28,
+        "y": 580.02,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Value of exception report",
+      "description_lines": [
+        "Value of exception report"
+      ],
+      "manual_page": 143
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input",
+      "description_lines": [
+        "Block address of input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 143
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "0 - 2",
+      "description": "Alarm state:; 0 = logic 0 alarm state; 1 = logic 1 alarm state; 2 = no alarm state defined",
+      "description_lines": [
+        "Alarm state:",
+        "0 = logic 0 alarm state",
+        "1 = logic 1 alarm state",
+        "2 = no alarm state defined"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "logic 0 alarm state"
+        },
+        {
+          "value": "1",
+          "meaning": "logic 1 alarm state"
+        },
+        {
+          "value": "2",
+          "meaning": "no alarm state defined"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 143
+    }
+  ],
+  "spec_count": 2,
+  "max_spec_number": 2,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 143,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 143,
+  "manual_pages": [
+    143,
+    144,
+    145
+  ],
+  "manual_section": "Function Code 45 - Digital Exception Report",
+  "diagnostics": []
+}

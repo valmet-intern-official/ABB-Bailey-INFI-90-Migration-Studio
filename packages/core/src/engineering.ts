@@ -53,8 +53,23 @@ export interface CadPort {
   signalName?: string;
   x?: number;
   y?: number;
+  /** Port face on the block rectangle. */
+  side?: "left" | "right" | "top" | "bottom";
+  /** Offset along the port face from the top/left corner (render units). */
+  offset?: number;
   trace: Traceability;
 }
+
+/** Original CAD / pre-layout geometry retained for forensic traceability. */
+export interface SourceGeometry {
+  originalX: number;
+  originalY: number;
+  originalWidth: number;
+  originalHeight: number;
+  originalPolyline?: { x1: number; y1: number; x2: number; y2: number }[];
+}
+
+export type RelationType = "EXPLICIT" | "INFERRED";
 
 export interface CadLogicBlock {
   id: string;
@@ -74,6 +89,10 @@ export interface CadLogicBlock {
   outputRefs: string[];
   deviceTags: string[];
   notes?: string;
+  /** Pre-layout / native coordinates when a layout engine relocates the block. */
+  sourceGeometry?: SourceGeometry;
+  /** Fallback glyph when authentic .LBR outline is unavailable. */
+  glyphStatus?: "AUTHENTIC" | "FALLBACK";
   trace: Traceability;
 }
 
@@ -88,6 +107,10 @@ export interface CadConnection {
   crossSheetReference?: string;
   referenceType: "local" | "cross_sheet" | "cross_cad" | "external_io" | "unresolved";
   resolved: boolean;
+  /** Pre-layout polyline when the router rewrites geometry. */
+  sourceGeometry?: SourceGeometry;
+  relationType?: RelationType;
+  routingStatus?: "routed" | "fallback" | "unrouted";
   trace: Traceability;
 }
 
@@ -143,6 +166,10 @@ export interface EngineeringSheetModel {
   page: {
     width: number;
     height: number;
+    /** ISO paper size when laid out for documentation (v2). */
+    paperSize?: "A3";
+    /** Sheet orientation chosen from content aspect (v2). */
+    orientation?: "landscape" | "portrait";
   };
   blocks: CadLogicBlock[];
   connections: CadConnection[];

@@ -18,7 +18,7 @@ for (const f of lbrCorpus()) {
   registry.add(lib);
   console.log(
     `${path.basename(f).padEnd(16)} symbols=${String(lib.symbols.size).padStart(4)}  ` +
-      `chainBreaks=${lib.chainBreaks}  ` +
+      `uncleanBodies=${lib.uncleanBodies.length}  ` +
       `withGeometry=${[...lib.symbols.values()].filter((s) => s.segments.length > 0).length}`
   );
 }
@@ -38,15 +38,11 @@ for (const f of lbrCorpus()) {
 
 console.log(`\nregistry: ${registry.size} symbols, ${registry.drawable} with geometry`);
 const totalSeg = all.reduce((n, s) => n + s.segments.length, 0);
-const undec = all.reduce((n, s) => n + s.undecodedBytes, 0);
-const bodyBytes = all.reduce((n, s) => n + s.length, 0);
 console.log(`segments extracted: ${totalSeg}`);
-console.log(
-  `body bytes: ${bodyBytes}, claimed by line primitives: ${bodyBytes - undec} (${(((bodyBytes - undec) / bodyBytes) * 100).toFixed(1)}%)`
-);
+console.log(`bodies chaining exactly to their declared length: ${all.filter((s) => s.clean).length}/${all.length}`);
 
 // ---- contact sheet
-const drawable = all.filter((s) => s.segments.length > 0 && s.extent);
+const drawable = all.filter((s) => s.segments.length > 0);
 const COLS = 8;
 const CELL = 190;
 const PAD = 14;
@@ -62,7 +58,7 @@ const parts: string[] = [
 drawable.forEach((s, i) => {
   const cx = (i % COLS) * CELL;
   const cy = Math.floor(i / COLS) * CELL;
-  const ex = s.extent!;
+  const ex = { minX: s.bbox.x1, minY: s.bbox.y1, maxX: s.bbox.x2, maxY: s.bbox.y2 };
   const w = Math.max(1, ex.maxX - ex.minX);
   const h = Math.max(1, ex.maxY - ex.minY);
   const scale = Math.min((CELL - PAD * 2) / w, (CELL - PAD * 2 - 18) / h);

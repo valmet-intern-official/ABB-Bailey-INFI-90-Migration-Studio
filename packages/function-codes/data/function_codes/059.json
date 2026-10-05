@@ -1,0 +1,151 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 59,
+  "name": "Digital Transfer",
+  "description": "This function code selects one of two digital inputs, depending on a transfer switch signal. The state of the transfer switch <S3> is determined externally, either by automatic control or by an operator.",
+  "description_lines": [
+    "This function code selects one of two digital inputs, depending",
+    "on a transfer switch signal. The state of the transfer switch",
+    "<S3> is determined externally, either by automatic control or",
+    "by an operator."
+  ],
+  "symbol": {
+    "title_raw": "T-D IG",
+    "title": "T-DIG",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 132.96,
+        "y": 596.22,
+        "s": "S 1"
+      },
+      {
+        "x": 191.76,
+        "y": 589.02,
+        "s": "(5 9 )"
+      },
+      {
+        "x": 132.96,
+        "y": 587.34,
+        "s": "S 2"
+      },
+      {
+        "x": 159.84,
+        "y": 583.2,
+        "s": "T-D IG"
+      },
+      {
+        "x": 191.76,
+        "y": 580.08,
+        "s": "N"
+      },
+      {
+        "x": 132.96,
+        "y": 578.4,
+        "s": "S 3"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Value of selected input",
+      "description_lines": [
+        "Value of selected input"
+      ],
+      "manual_page": 177
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of first input",
+      "description_lines": [
+        "Block address of first input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 177
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of second input",
+      "description_lines": [
+        "Block address of second input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 177
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of track switch signal:; 0 = <S1>; 1 = <S2>",
+      "description_lines": [
+        "Block address of track switch signal:",
+        "0 = <S1>",
+        "1 = <S2>"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "<S1>"
+        },
+        {
+          "value": "1",
+          "meaning": "<S2>"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 177
+    }
+  ],
+  "spec_count": 3,
+  "max_spec_number": 3,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 177,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 177,
+  "manual_pages": [
+    177,
+    178
+  ],
+  "manual_section": "Function Code 59 - Digital Transfer",
+  "diagnostics": []
+}

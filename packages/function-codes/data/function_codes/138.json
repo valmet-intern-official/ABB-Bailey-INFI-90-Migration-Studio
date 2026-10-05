@@ -1,0 +1,130 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 138,
+  "name": "C or BASIC Program Boolean Output With Quality",
+  "description": "The C or BASIC program boolean output with quality function code provides a means of transmitting a boolean data value and its quality from the C program or BASIC program to other function blocks. There are no specifications for this block. The BOUT command in the C program or BASIC program defines the four outputs. This function code is similar to function code 93, except this code has a quality indicator. Quality can only be measured with a test quality block (function code 31). Quality is either good (zero) or bad (one). There are no specifications for this block. The BOUT command in the C program or BASIC program defines the four outputs. Refer to the C Utility Program or the MFC BASIC Programming Language Reference for instructions on programming the module.",
+  "description_lines": [
+    "The C or BASIC program boolean output with quality function",
+    "code provides a means of transmitting a boolean data value",
+    "and its quality from the C program or BASIC program to other",
+    "function blocks. There are no specifications for this block. The",
+    "BOUT command in the C program or BASIC program defines",
+    "the four outputs. This function code is similar to function code",
+    "93, except this code has a quality indicator. Quality can only",
+    "be measured with a test quality block (function code 31). Qual-",
+    "ity is either good (zero) or bad (one). There are no specifications",
+    "for this block. The BOUT command in the C program or BASIC",
+    "program defines the four outputs. Refer to the C Utility Pro-",
+    "gram or the MFC BASIC Programming Language Reference",
+    "for instructions on programming the module."
+  ],
+  "symbol": {
+    "title_raw": "B A S B O Q",
+    "title": "BASBOQ",
+    "inputs": [],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3"
+    ],
+    "items": [
+      {
+        "x": 153.36,
+        "y": 594.54,
+        "s": "B A S B O Q"
+      },
+      {
+        "x": 190.86,
+        "y": 588.78,
+        "s": "(1 3 8 )"
+      },
+      {
+        "x": 190.86,
+        "y": 579.9,
+        "s": "N"
+      },
+      {
+        "x": 190.86,
+        "y": 571.02,
+        "s": "N + 1"
+      },
+      {
+        "x": 190.86,
+        "y": 562.14,
+        "s": "N + 2"
+      },
+      {
+        "x": 190.86,
+        "y": 553.26,
+        "s": "N + 3"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "C program or BASIC program command BOUT sets the output value",
+      "description_lines": [
+        "C program or BASIC program command BOUT sets the",
+        "output value"
+      ],
+      "manual_page": 463
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "",
+      "description_lines": [],
+      "manual_page": 463
+    },
+    {
+      "blk": "N+2",
+      "type": "B",
+      "description": "",
+      "description_lines": [],
+      "manual_page": 463
+    },
+    {
+      "blk": "N+3",
+      "type": "B",
+      "description": "",
+      "description_lines": [],
+      "manual_page": 463
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Not used",
+      "description_lines": [
+        "Not used"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 463
+    }
+  ],
+  "spec_count": 1,
+  "max_spec_number": 1,
+  "notes": [],
+  "manual_page": 463,
+  "manual_pages": [
+    463
+  ],
+  "manual_section": "Function Code 138 - C or BASIC Program Boolean Output With Quality",
+  "diagnostics": []
+}

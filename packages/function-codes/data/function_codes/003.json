@@ -1,0 +1,163 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 3,
+  "name": "Lead/Lag",
+  "description": "The output of a lead/lag function code equals the product of the time function and the input value. Specifications S3 and S4 provide lead (S3) or lag (S4) functions. Function code 3 also serves as a lead/lag filter.",
+  "description_lines": [
+    "The output of a lead/lag function code equals the product of",
+    "the time function and the input value. Specifications S3 and",
+    "S4 provide lead (S3) or lag (S4) functions. Function code 3 also",
+    "serves as a lead/lag filter."
+  ],
+  "symbol": {
+    "title_raw": "F (t)",
+    "title": "F(t)",
+    "inputs": [
+      "S1",
+      "S2"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 133.38,
+        "y": 591.9,
+        "s": "S 1"
+      },
+      {
+        "x": 191.88,
+        "y": 589.02,
+        "s": "(3 )"
+      },
+      {
+        "x": 164.1,
+        "y": 583.44,
+        "s": "F (t)"
+      },
+      {
+        "x": 133.38,
+        "y": 582.96,
+        "s": "S 2"
+      },
+      {
+        "x": 191.88,
+        "y": 580.08,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Output value with lead/lag function applied",
+      "description_lines": [
+        "Output value with lead/lag function applied"
+      ],
+      "manual_page": 51
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input",
+      "description_lines": [
+        "Block address of input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 51
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of track switch signal:; 0 = track; 1 = release",
+      "description_lines": [
+        "Block address of track switch signal:",
+        "0 = track",
+        "1 = release"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "track"
+        },
+        {
+          "value": "1",
+          "meaning": "release"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 51
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Time constant T1 (lead) sec",
+      "description_lines": [
+        "Time constant T1 (lead) sec"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 51
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Time constant T2 (lag) sec",
+      "description_lines": [
+        "Time constant T2 (lag) sec"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 51
+    }
+  ],
+  "spec_count": 4,
+  "max_spec_number": 4,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 51,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 51,
+  "manual_pages": [
+    51,
+    52,
+    53,
+    54
+  ],
+  "manual_section": "Function Code 3 - Lead/Lag",
+  "diagnostics": []
+}

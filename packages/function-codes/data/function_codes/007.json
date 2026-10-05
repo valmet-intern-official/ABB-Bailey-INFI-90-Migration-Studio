@@ -1,0 +1,130 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 7,
+  "name": "Square Root",
+  "description": "This function computes the square root of the input signal in engineering units. The output equals a factor (k) times the square root of the input. The equation for this function is: where: = Input value. = Gain value (k) in engineering units. = Output value (Y = 0 if <S1> ≤ 0).",
+  "description_lines": [
+    "This function computes the square root of the input signal in",
+    "engineering units. The output equals a factor (k) times the",
+    "square root of the input. The equation for this function is:",
+    "where:",
+    "= Input value.",
+    "= Gain value (k) in engineering units.",
+    "= Output value (Y = 0 if <S1> ≤ 0)."
+  ],
+  "symbol": {
+    "title_raw": null,
+    "title": null,
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 191.88,
+        "y": 588.78,
+        "s": "(7 )"
+      },
+      {
+        "x": 134.46,
+        "y": 587.34,
+        "s": "S 1"
+      },
+      {
+        "x": 191.88,
+        "y": 579.9,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Output value equals square root of input value multiplied by the gain value (k)",
+      "description_lines": [
+        "Output value equals square root of input value multiplied",
+        "by the gain value (k)"
+      ],
+      "manual_page": 67
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "6",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input",
+      "description_lines": [
+        "Block address of input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 67
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Gain value (k) in engineering units (EU)",
+      "description_lines": [
+        "Gain value (k) in engineering units (EU)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 67
+    }
+  ],
+  "spec_count": 2,
+  "max_spec_number": 2,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "When function code 7 is utilized as a shaping algorithm for function code 222 (analog in/channel), its tunable specifications are not adaptable.",
+      "manual_page": 67,
+      "context": "general"
+    },
+    {
+      "label": "2.",
+      "text": "When function code 7 is used as a shaping algorithm, it can not at the same time also be used as a logic function because the block output will not respond to the specification S1 input. Function code 7 should not be referenced by function blocks other than function code 222 utilizing it as a shaping algorithm.",
+      "manual_page": 67,
+      "context": "general"
+    },
+    {
+      "label": "3.",
+      "text": "Multiple instances of function code 222 function blocks may utilize the same function code 7 function block as a shaping algorithm. The function code 7 shaping algorithm function block is not required to be in the same segment as the function code 222 blocks.",
+      "manual_page": 67,
+      "context": "general"
+    },
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 67,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 67,
+  "manual_pages": [
+    67,
+    68,
+    69
+  ],
+  "manual_section": "Function Code 7 - Square Root",
+  "diagnostics": []
+}

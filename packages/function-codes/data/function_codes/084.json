@@ -1,0 +1,248 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 84,
+  "name": "Digital Input Group",
+  "description": "The digital input group function code reads a group of eight inputs from an IMDSI12, IMDSI13, IMDSI14, IMDSI15, or IMDSI22 digital module. To insure that the signals successfully transfer across the controlway/module bus, the signal generates a point quality flag. To test the quality of the signal, include a function code 31 in the configuration. The quality of the signal cannot be determined by any other type of block. However, the output of the test quality block can be used as an input to other digital processing blocks to provide signal quality information. Refer to Appendix H for a definition of point quality.",
+  "description_lines": [
+    "The digital input group function code reads a group of eight",
+    "inputs from an IMDSI12, IMDSI13, IMDSI14, IMDSI15, or",
+    "IMDSI22 digital module.",
+    "To insure that the signals successfully transfer across the con-",
+    "trolway/module bus, the signal generates a point quality flag.",
+    "To test the quality of the signal, include a function code 31 in",
+    "the configuration. The quality of the signal cannot be deter-",
+    "mined by any other type of block. However, the output of the",
+    "test quality block can be used as an input to other digital pro-",
+    "cessing blocks to provide signal quality information. Refer to",
+    "Appendix H for a definition of point quality."
+  ],
+  "symbol": {
+    "title_raw": "D IG R P",
+    "title": "DIGRP",
+    "inputs": [],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3",
+      "N+4",
+      "N+5",
+      "N+6",
+      "N+7"
+    ],
+    "items": [
+      {
+        "x": 157.8,
+        "y": 595.26,
+        "s": "D IG R P"
+      },
+      {
+        "x": 190.26,
+        "y": 588.78,
+        "s": "(8 4 )"
+      },
+      {
+        "x": 190.26,
+        "y": 579.9,
+        "s": "N"
+      },
+      {
+        "x": 190.26,
+        "y": 571.02,
+        "s": "N + 1"
+      },
+      {
+        "x": 190.26,
+        "y": 562.14,
+        "s": "N + 2"
+      },
+      {
+        "x": 190.26,
+        "y": 553.26,
+        "s": "N + 3"
+      },
+      {
+        "x": 190.26,
+        "y": 544.38,
+        "s": "N + 4"
+      },
+      {
+        "x": 190.26,
+        "y": 535.5,
+        "s": "N + 5"
+      },
+      {
+        "x": 190.26,
+        "y": 526.62,
+        "s": "N + 6"
+      },
+      {
+        "x": 190.26,
+        "y": 517.74,
+        "s": "N + 7"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Output 1 with quality",
+      "description_lines": [
+        "Output 1 with quality"
+      ],
+      "manual_page": 243
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Output 2 with quality",
+      "description_lines": [
+        "Output 2 with quality"
+      ],
+      "manual_page": 243
+    },
+    {
+      "blk": "N+2",
+      "type": "B",
+      "description": "Output 3 with quality",
+      "description_lines": [
+        "Output 3 with quality"
+      ],
+      "manual_page": 243
+    },
+    {
+      "blk": "N+3",
+      "type": "B",
+      "description": "Output 4 with quality",
+      "description_lines": [
+        "Output 4 with quality"
+      ],
+      "manual_page": 243
+    },
+    {
+      "blk": "N+4",
+      "type": "B",
+      "description": "Output 5 with quality",
+      "description_lines": [
+        "Output 5 with quality"
+      ],
+      "manual_page": 243
+    },
+    {
+      "blk": "N+5",
+      "type": "B",
+      "description": "Output 6 with quality",
+      "description_lines": [
+        "Output 6 with quality"
+      ],
+      "manual_page": 243
+    },
+    {
+      "blk": "N+6",
+      "type": "B",
+      "description": "Output 7 with quality",
+      "description_lines": [
+        "Output 7 with quality"
+      ],
+      "manual_page": 243
+    },
+    {
+      "blk": "N+7",
+      "type": "B",
+      "description": "Output 8 with quality",
+      "description_lines": [
+        "Output 8 with quality"
+      ],
+      "manual_page": 243
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 63",
+      "description": "Expander bus I/O module address",
+      "description_lines": [
+        "Expander bus I/O module address"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 243
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Input group:; 0 = inputs 1 - 8, group A; 1 = inputs 9 - 16, group B",
+      "description_lines": [
+        "Input group:",
+        "0 = inputs 1 - 8, group A",
+        "1 = inputs 9 - 16, group B"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "inputs 1 - 8, group A"
+        },
+        {
+          "value": "1",
+          "meaning": "inputs 9 - 16, group B"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 243
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Action on I/O module failure:; 0 = trip control module; 1 = continue to operate",
+      "description_lines": [
+        "Action on I/O module failure:",
+        "0 = trip control module",
+        "1 = continue to operate"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "trip control module"
+        },
+        {
+          "value": "1",
+          "meaning": "continue to operate"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 243
+    }
+  ],
+  "spec_count": 3,
+  "max_spec_number": 3,
+  "notes": [],
+  "manual_page": 243,
+  "manual_pages": [
+    243,
+    244
+  ],
+  "manual_section": "Function Code 84 - Digital Input Group",
+  "diagnostics": []
+}

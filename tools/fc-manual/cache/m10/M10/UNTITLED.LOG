@@ -1,0 +1,1514 @@
+Execution complete.
+Execution complete.
+Execution complete.
+Parsing ... 
+1 command, 0 errors.
+Parsing ... 
+1 command, 0 errors.
+Started script "UNTITLED.SLV" Fri Dec 16 15:49:34 2011.
+Unable to open communiations.
+Execution complete.
+Started script "UNTITLED.SLV" Fri Dec 16 15:49:40 2011.
+Verify Report File Created : C:\EWS\PROJECT\L2\P7\M10\20710.VFY
+==========================================================================
+Verify/Update Report                    Fri Dec 16 15:53:42 2011
+Source Type    : CAD file(s)
+Source File(s) : C:\EWS\PROJECT\L2\P7\M10\20710*.CAD
+Reference Type : INFI 90 Module (Loop:  2  PCU:  7   Module: 10)
+==========================================================================
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071000C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071002C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071003C.CAD
+
+Block Number 4050 FC:132    ANALOG INPUT/SLAVE
+    Different Specs.
+        S15 Eu Span Of Input 4
+            SRC:          1000
+            REF:           100
+            S15: Source Value Updated To Match Reference Value
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071004C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071005C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071006C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071007C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071008C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071009C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071010C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071011C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071012C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071013C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071014C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071015C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071016C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071017C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071018C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071019C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071020C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071021C.CAD
+
+Block Number 4392 FC:132    ANALOG INPUT/SLAVE
+    Different Specs.
+        S6  Eu Span Of Input 1
+            SRC:           100
+            REF:            70
+            S6 : Source Value Updated To Match Reference Value
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071022C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071023C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071024C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071025C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071026C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071028C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071029C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071031C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071032C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071033C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071034C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071035C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071036C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071037C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071038C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071039C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071040C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071041C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071042C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071043C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071044C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071047C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071048C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071049C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071050C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071051C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071052C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071053C.CAD
+
+Block Number 2984 FC: 50    MANUAL SET SWITCH
+    Different Specs.
+        S1  Output Value
+            SRC:             0
+            REF:             1
+            S1 : Source Value Updated To Match Reference Value
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071054C.CAD
+
+Block Number 3250 FC: 12    HIGH/LOW ALARM
+    Different Specs.
+        S2  Value Of Alarm Pt / Hi Limit
+            SRC:           600
+            REF:            40
+            S2 : Source Value Updated To Match Reference Value
+        S3  Value Of Alarm Pt / Lo Limit
+            SRC:             0
+            REF:            60
+            S3 : Source Value Updated To Match Reference Value
+
+Block Number  308 FC: 30    FC 30 - ANALOG EXCEPTION REPORT
+    Different Specs.
+        S4  Eu Span Of Input (S1)
+            SRC:          1000
+            REF:           100
+            S4 : Source Value Updated To Match Reference Value
+        S5  High Alarm Limit Value
+            SRC:           350
+            REF:           100
+            S5 : Source Value Updated To Match Reference Value
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071055C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071056C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071057C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071058C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071059C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071060C.CAD
+
+Block Number 3244 FC: 12    HIGH/LOW ALARM
+    Different Specs.
+        S3  Value Of Alarm Pt / Lo Limit
+            SRC:             0
+            REF:            60
+            S3 : Source Value Updated To Match Reference Value
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071061C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071062C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071063C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071064C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071065C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071066C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071067C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071068C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071069C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071070C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071071C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071072C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071073C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071074C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071075C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071076C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071077C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071078C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071079C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071080C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071081C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071082C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071083C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071084C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071085C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071086C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071087C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071088C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071089C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071091C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071092C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071093C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071094C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071095C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071096C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071097C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071098C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071099C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A7C.CAD
+
+Block Number 2001 FC: 19    PID CONTROL/PV & SP INPUTS
+    Different Specs.
+        S5  (K) Gain Multiplier
+            SRC:             1
+            REF:    0.00900006
+            S5 : Source Value Updated To Match Reference Value
+        S6  (Kp) Proportional Const
+            SRC:             1
+            REF:      0.290001
+            S6 : Source Value Updated To Match Reference Value
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B0C.CAD
+
+Block Number  222 FC: 80    CONTROL STATION (MFP/MFC)
+    Different Specs.
+        S10 Pv Signal Span In Eu
+            SRC:            40
+            REF:            70
+            S10: Source Value Updated To Match Reference Value
+        S13 Sp Signal Span In Eu
+            SRC:            40
+            REF:            70
+            S13: Source Value Updated To Match Reference Value
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L6C.CAD
+
+Block Number   30 FC:129    MULTI-STATE DEVICE DRIVER
+    Different Specs.
+        S16 Feedback Wait Time (Secs)
+            SRC:          6000
+            REF:            60
+            S16: Source Value Updated To Match Reference Value
+        S22 Pulsed Outputs Length ( 0 = Outputs Latched)
+            SRC:             5
+            REF:            60
+            S22: Source Value Updated To Match Reference Value
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O8C.CAD
+
+Block Number  415 FC:129    MULTI-STATE DEVICE DRIVER
+    Different Specs.
+        S11 Feedback For Outpt Mask# 1
+            SRC:          2222
+            REF:            22
+            S11: Source Value Updated To Match Reference Value
+        S12 Feedback For Outpt Mask# 2
+            SRC:          2222
+            REF:           102
+            S12: Source Value Updated To Match Reference Value
+        S13 Feedback For Outpt Mask# 3
+            SRC:          2222
+            REF:           102
+            S13: Source Value Updated To Match Reference Value
+        S16 Feedback Wait Time (Secs)
+            SRC:            15
+            REF:             5
+            S16: Source Value Updated To Match Reference Value
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O9C.CAD
+
+Block Number 5187 FC: 19    PID CONTROL/PV & SP INPUTS
+    Different Specs.
+        S5  (K) Gain Multiplier
+            SRC:      0.800003
+            REF:      0.400002
+            S5 : Source Value Updated To Match Reference Value
+        S7  (Ki)Integ Const(Rep/Min)
+            SRC:             2
+            REF:             1
+            S7 : Source Value Updated To Match Reference Value
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P2C.CAD
+
+Block Number  421 FC:129    MULTI-STATE DEVICE DRIVER
+    Different Specs.
+        S11 Feedback For Outpt Mask# 1
+            SRC:          2222
+            REF:            22
+            S11: Source Value Updated To Match Reference Value
+        S12 Feedback For Outpt Mask# 2
+            SRC:          2222
+            REF:           102
+            S12: Source Value Updated To Match Reference Value
+        S13 Feedback For Outpt Mask# 3
+            SRC:          2222
+            REF:           102
+            S13: Source Value Updated To Match Reference Value
+        S16 Feedback Wait Time (Secs)
+            SRC:  9.99997e+008
+            REF:             5
+            S16: Source Value Updated To Match Reference Value
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Y0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Y2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Y9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z2C.CAD
+
+Block Number  347 FC:129    MULTI-STATE DEVICE DRIVER
+    Different Specs.
+        S11 Feedback For Outpt Mask# 1
+            SRC:            20
+            REF:            12
+            S11: Source Value Updated To Match Reference Value
+        S12 Feedback For Outpt Mask# 2
+            SRC:           100
+            REF:          1012
+            S12: Source Value Updated To Match Reference Value
+        S13 Feedback For Outpt Mask# 3
+            SRC:           220
+            REF:          2012
+            S13: Source Value Updated To Match Reference Value
+        S14 Ctrl Output Status 0=No 1=Stat 2=Stat Alrm
+            SRC:           100
+            REF:           120
+            S14: Source Value Updated To Match Reference Value
+        S16 Feedback Wait Time (Secs)
+            SRC:             5
+            REF:            60
+            S16: Source Value Updated To Match Reference Value
+        S17 Fault Wait Time
+            SRC:             8
+            REF:             0
+            S17: Source Value Updated To Match Reference Value
+        S22 Pulsed Outputs Length ( 0 = Outputs Latched)
+            SRC:             5
+            REF:             0
+            S22: Source Value Updated To Match Reference Value
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z8C.CAD
+
+Block Number 2290 FC: 50    MANUAL SET SWITCH
+    Different Specs.
+        S1  Output Value
+            SRC:             1
+            REF:             0
+            S1 : Source Value Updated To Match Reference Value
+
+Block Number 2198 FC: 33    NOT
+    Block Exists In Reference But Not In Source.
+        S1  Blk Adr Of Input
+            REF:             0
+
+Block Number 5341 FC: 12    HIGH/LOW ALARM
+    Block Exists In Reference But Not In Source.
+        S1  Blk Adr Of Input
+            REF:          4407
+        S2  Value Of Alarm Pt / Hi Limit
+            REF:           900
+        S3  Value Of Alarm Pt / Lo Limit
+            REF:             0
+
+    Source    Blocks Total :  1819
+    Reference Blocks Total :  1821
+    Different Blocks Total :    16
+Fri Dec 16 15:54:18 2011 - Verification Complete
+Execution complete.
+Execution complete.
+Parsing ... 
+1 command, 0 errors.
+Started script "UNTITLED.SLV" Fri Dec 16 16:02:48 2011.
+Unable to open communiations.
+Execution complete.
+Started script "UNTITLED.SLV" Fri Dec 16 16:02:56 2011.
+Unable to determine module operation mode.
+Execution complete.
+Started script "UNTITLED.SLV" Fri Dec 16 16:02:59 2011.
+Unable to determine module operation mode.
+Execution complete.
+Started script "UNTITLED.SLV" Fri Dec 16 16:03:01 2011.
+Verify Report File Created : C:\EWS\PROJECT\L2\P7\M10\20710.VFY
+==========================================================================
+Verify/Update Report                    Fri Dec 16 16:07:11 2011
+Source Type    : CAD file(s)
+Source File(s) : C:\EWS\PROJECT\L2\P7\M10\20710*.CAD
+Reference Type : INFI 90 Module (Loop:  2  PCU:  7   Module: 10)
+==========================================================================
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071000C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071002C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071003C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071004C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071005C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071006C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071007C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071008C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071009C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071010C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071011C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071012C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071013C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071014C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071015C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071016C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071017C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071018C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071019C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071020C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071021C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071022C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071023C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071024C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071025C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071026C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071028C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071029C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071031C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071032C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071033C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071034C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071035C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071036C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071037C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071038C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071039C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071040C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071041C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071042C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071043C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071044C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071047C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071048C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071049C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071050C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071051C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071052C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071053C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071054C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071055C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071056C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071057C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071058C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071059C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071060C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071061C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071062C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071063C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071064C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071065C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071066C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071067C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071068C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071069C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071070C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071071C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071072C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071073C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071074C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071075C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071076C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071077C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071078C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071079C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071080C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071081C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071082C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071083C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071084C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071085C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071086C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071087C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071088C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071089C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071091C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071092C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071093C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071094C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071095C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071096C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071097C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071098C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071099C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Y0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Y2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Y9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z8C.CAD
+
+Block Number 2198 FC: 33    NOT
+    Block Exists In Reference But Not In Source.
+        S1  Blk Adr Of Input
+            REF:             0
+
+Block Number 5341 FC: 12    HIGH/LOW ALARM
+    Block Exists In Reference But Not In Source.
+        S1  Blk Adr Of Input
+            REF:          4407
+        S2  Value Of Alarm Pt / Hi Limit
+            REF:           900
+        S3  Value Of Alarm Pt / Lo Limit
+            REF:             0
+
+    Source    Blocks Total :  1819
+    Reference Blocks Total :  1821
+    Different Blocks Total :     2
+Fri Dec 16 16:07:49 2011 - Verification Complete
+Execution complete.
+Execution complete.
+Parsing ... 
+1 command, 0 errors.
+Started script "UNTITLED.SLV" Mon Dec 19 10:25:10 2011.
+Verify Report File Created : C:\EWS\PROJECT\L2\P7\M10\20710.VFY
+==========================================================================
+Verify/Update Report                    Mon Dec 19 10:29:13 2011
+Source Type    : CAD file(s)
+Source File(s) : C:\EWS\PROJECT\L2\P7\M10\20710*.CAD
+Reference Type : INFI 90 Module (Loop:  2  PCU:  7   Module: 10)
+==========================================================================
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071000C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071002C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071003C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071004C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071005C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071006C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071007C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071008C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071009C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071010C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071011C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071012C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071013C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071014C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071015C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071016C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071017C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071018C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071019C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071020C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071021C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071022C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071023C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071024C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071025C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071026C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071028C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071029C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071031C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071032C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071033C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071034C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071035C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071036C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071037C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071038C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071039C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071040C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071041C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071042C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071043C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071044C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071047C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071048C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071049C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071050C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071051C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071052C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071053C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071054C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071055C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071056C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071057C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071058C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071059C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071060C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071061C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071062C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071063C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071064C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071065C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071066C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071067C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071068C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071069C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071070C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071071C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071072C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071073C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071074C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071075C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071076C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071077C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071078C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071079C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071080C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071081C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071082C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071083C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071084C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071085C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071086C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071087C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071088C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071089C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071091C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071092C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071093C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071094C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071095C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071096C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071097C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071098C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071099C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Y0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Y2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Y9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z2C.CAD
+
+Block Number 5341 FC: 12    HIGH/LOW ALARM
+    Different Specs.
+        S2  Value Of Alarm Pt / Hi Limit
+            SRC:             0
+            REF:           900
+            S2 : Source Value Updated To Match Reference Value
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z8C.CAD
+
+    Source    Blocks Total :  1821
+    Reference Blocks Total :  1821
+    Different Blocks Total :     1
+Mon Dec 19 10:29:52 2011 - Verification Complete
+Execution complete.
+Execution complete.
+Execution complete.
+Execution complete.
+Execution complete.
+Parsing ... 
+1 command, 0 errors.
+Started script "UNTITLED.SLV" Tue Jul 03 09:52:37 2012.
+Verify Report File Created : C:\EWS\PROJECT\L2\P7\M10\20710.VFY
+==========================================================================
+Verify Report                           Tue Jul 03 09:52:41 2012
+Source Type    : CFG file       (Loop:  2  PCU:  7   Module: 10)
+Source File    : C:\EWS\PROJECT\L2\P7\M10\20710.CFG
+Reference Type : CFG file       (Loop:  2  PCU:  7   Module: 10)
+Reference File : E:\WINCAD~1\20710.CFG
+==========================================================================
+
+Block Number  457 FC:129    MULTI-STATE DEVICE DRIVER
+    Different Specs.
+        S1  Blk Adr Of Control Inp 1
+            SRC:             1
+            REF:          2778
+        S3  Blk Adr Of Feedback 1
+            SRC:          2773
+            REF:          4466
+        S4  Blk Adr Of Feedback 2
+            SRC:             0
+            REF:          4662
+        S5  Blk Adr Of Feedback 3
+            SRC:             0
+            REF:          2773
+        S25 Blk Adr Of Control Override
+            SRC:          2776
+            REF:             0
+
+Block Number 2773 FC: 33    NOT
+    Different Specs.
+        S1  Blk Adr Of Input
+            SRC:          2772
+            REF:          2777
+
+Block Number 2777 FC: 36    FC 36 - QUALIFIED OR 8-INPUT
+    Different Specs.
+        S1  Blk Adr Of Input 1
+            SRC:           458
+            REF:          2770
+        S2  Blk Adr Of Input 2
+            SRC:             0
+            REF:             1
+        S5  Blk Adr Of Input 5
+            SRC:          2775
+            REF:             0
+        S8  Blk Adr Of Input 8
+            SRC:          2773
+            REF:             0
+
+Block Number 2778 FC: 34    MEMORY
+    Different Specs.
+        S1  Blk Adr Of Input Set
+            SRC:           457
+            REF:          4939
+        S2  Blk Adr Of Input Reset
+            SRC:          2777
+            REF:          5346
+
+Block Number 4540 FC: 83    DIGITAL OUTPUT GROUP
+    Different Specs.
+        S7  Blk Adr Of Output 4
+            SRC:          2940
+            REF:          2778
+
+Block Number 4939 FC: 35    TIME DELAY OR PULSE
+    Different Specs.
+        S1  Blk Adr Of Input
+            SRC:             0
+            REF:           457
+
+    Source    Blocks Total :  1824
+    Reference Blocks Total :  1824
+    Different Blocks Total :     6
+Tue Jul 03 09:52:43 2012 - Verification Complete
+Execution complete.
+Parsing ... 
+1 command, 0 errors.
+Started script "UNTITLED.SLV" Tue Jul 03 11:05:25 2012.
+Unable to determine module operation mode.
+Execution complete.
+Started script "UNTITLED.SLV" Tue Jul 03 11:05:27 2012.
+Verify Report File Created : C:\EWS\PROJECT\L2\P7\M10\20710.VFY
+==========================================================================
+Verify/Update Report                    Tue Jul 03 11:09:43 2012
+Source Type    : CAD file(s)
+Source File(s) : C:\EWS\PROJECT\L2\P7\M10\20710*.CAD
+Reference Type : INFI 90 Module (Loop:  2  PCU:  7   Module: 10)
+==========================================================================
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071000C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071002C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071003C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071004C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071005C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071006C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071007C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071008C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071009C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071010C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071011C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071012C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071013C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071014C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071015C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071016C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071017C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071018C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071019C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071020C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071021C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071022C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071023C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071024C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071025C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071026C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071028C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071029C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071031C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071032C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071033C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071034C.CAD
+    Drawing File open failed
+Execution complete.
+Parsing ... 
+1 command, 0 errors.
+Started script "UNTITLED.SLV" Tue Jul 03 11:10:38 2012.
+Unable to open communiations.
+Execution complete.
+Started script "UNTITLED.SLV" Tue Jul 03 11:10:46 2012.
+Verify Report File Created : C:\EWS\PROJECT\L2\P7\M10\20710.VFY
+==========================================================================
+Verify/Update Report                    Tue Jul 03 11:14:52 2012
+Source Type    : CAD file(s)
+Source File(s) : C:\EWS\PROJECT\L2\P7\M10\20710*.CAD
+Reference Type : INFI 90 Module (Loop:  2  PCU:  7   Module: 10)
+==========================================================================
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071000C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071002C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071003C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071004C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071005C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071006C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071007C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071008C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071009C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071010C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071011C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071012C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071013C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071014C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071015C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071016C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071017C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071018C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071019C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071020C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071021C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071022C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071023C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071024C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071025C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071026C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071028C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071029C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071031C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071032C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071033C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071034C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071035C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071036C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071037C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071038C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071039C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071040C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071041C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071042C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071043C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071044C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071047C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071048C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071049C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071050C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071051C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071052C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071053C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071054C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071055C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071056C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071057C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071058C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071059C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071060C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071061C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071062C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071063C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071064C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071065C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071066C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071067C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071068C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071069C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071070C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071071C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071072C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071073C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071074C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071075C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071076C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071077C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071078C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071079C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071080C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071081C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071082C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071083C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071084C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071085C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071086C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071087C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071088C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071089C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071091C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071092C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071093C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071094C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071095C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071096C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071097C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071098C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\2071099C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710A9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B5C.CAD
+
+Block Number  457 FC:129    MULTI-STATE DEVICE DRIVER
+    Different Specs.
+        S8  Output Mask # 1
+            SRC:             0
+            REF:            10
+            S8 : Source Value Updated To Match Reference Value
+        S9  Output Mask # 2
+            SRC:             0
+            REF:           100
+            S9 : Source Value Updated To Match Reference Value
+        S11 Feedback For Outpt Mask# 1
+            SRC:             0
+            REF:             2
+            S11: Source Value Updated To Match Reference Value
+        S12 Feedback For Outpt Mask# 2
+            SRC:             0
+            REF:          1002
+            S12: Source Value Updated To Match Reference Value
+        S13 Feedback For Outpt Mask# 3
+            SRC:             0
+            REF:          2222
+            S13: Source Value Updated To Match Reference Value
+        S14 Ctrl Output Status 0=No 1=Stat 2=Stat Alrm
+            SRC:             0
+            REF:           120
+            S14: Source Value Updated To Match Reference Value
+        S16 Feedback Wait Time (Secs)
+            SRC:             0
+            REF:            60
+            S16: Source Value Updated To Match Reference Value
+        S19 Next Allow Mask # For Outpt Mask 1 In Man Mode
+            SRC:             1
+            REF:            23
+            S19: Source Value Updated To Match Reference Value
+        S20 Next Allow Mask # For Outpt Mask 2 In Man Mode
+            SRC:             2
+            REF:            13
+            S20: Source Value Updated To Match Reference Value
+        S21 Next Allow Mask # For Outpt Mask 3 In Man Mode
+            SRC:             3
+            REF:            12
+            S21: Source Value Updated To Match Reference Value
+        S23 Initial Mode (0=Manual 1=Auto)
+            SRC:             1
+            REF:             0
+            S23: Source Value Updated To Match Reference Value
+
+Block Number 2775 FC: 69    TEST ALARM
+    Different Specs.
+        S1  Blk Adr Of Input
+            SRC:             0
+            REF:           457
+            S1 : Source Value Updated To Match Reference Value
+        S2  Alarm Cond Tested (0=Abs 1=Dev 2=Dvc Drv)
+            SRC:             0
+            REF:             2
+            S2 : Source Value Updated To Match Reference Value
+
+Block Number 4939 FC: 35    TIME DELAY OR PULSE
+    Different Specs.
+        S3  Time Delay (In Sec)
+            SRC:             0
+            REF:             7
+            S3 : Source Value Updated To Match Reference Value
+
+Block Number 2777 FC: 36    FC 36 - QUALIFIED OR 8-INPUT
+    Different Specs.
+        S9  Output Set Select (0-#Inp>=S9,1-#Inp=S9)
+            SRC:             0
+            REF:             1
+            S9 : Source Value Updated To Match Reference Value
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710B9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710C7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710D5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710G9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710H9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710I9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710J9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710K9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710L9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710M9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710N9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710O9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710P6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710S6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T8C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710T9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Y0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Y2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Y9C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z0C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z1C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z2C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z3C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z4C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z5C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z6C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z7C.CAD
+Drawing File : C:\EWS\PROJECT\L2\P7\M10\20710Z8C.CAD
+
+    Source    Blocks Total :  1824
+    Reference Blocks Total :  1824
+    Different Blocks Total :     4
+Tue Jul 03 11:15:26 2012 - Verification Complete
+Execution complete.
+Execution complete.
+Execution complete.
+Parsing ... 
+1 command, 0 errors.
+Started script "UNTITLED.SLV" Tue Jul 03 14:08:53 2012.
+Configuration file "C:\EWS\PROJECT\L2\P7\M10\SOURCE.CFG" could not be opened.
+Execution complete.
+Started script "UNTITLED.SLV" Tue Jul 03 14:09:00 2012.
+Configuration file "C:\EWS\PROJECT\L2\P7\M10\SOURCE.CFG" could not be opened.
+Execution complete.
+Parsing ... 
+1 command, 0 errors.
+Started script "UNTITLED.SLV" Tue Jul 03 14:09:28 2012.
+Unable to open communiations.
+Execution complete.
+Started script "UNTITLED.SLV" Tue Jul 03 14:09:39 2012.
+Unable to determine module operation mode.
+Execution complete.
+Started script "UNTITLED.SLV" Tue Jul 03 14:09:46 2012.
+Unable to determine module operation mode.
+Execution complete.
+Parsing ... 
+1 command, 0 errors.
+Started script "UNTITLED.SLV" Tue Jul 03 14:10:26 2012.
+Verify Report File Created : C:\EWS\PROJECT\L2\P7\M10\20710.VFY
+==========================================================================
+Verify Report                           Tue Jul 03 14:14:37 2012
+Source Type    : CFG file       (Loop:  2  PCU:  7   Module: 10)
+Source File    : C:\EWS\PROJECT\L2\P7\M10\20710.CFG
+Reference Type : INFI 90 Module (Loop:  2  PCU:  7   Module: 10)
+==========================================================================
+
+    Source    Blocks Total :  1824
+    Reference Blocks Total :  1824
+    No Differences Detected During Verify Operation
+Tue Jul 03 14:14:39 2012 - Verification Complete
+Execution complete.
+Execution complete.
+Execution complete.
+Execution complete.
+Execution complete.
+Execution complete.

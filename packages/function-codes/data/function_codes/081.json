@@ -1,0 +1,321 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 81,
+  "name": "Executive",
+  "description": "The executive function code resides in fixed block zero of a control module. It selects the output mode of the light emitting diodes (LED) on the front panel of the control module. The LEDs display the status of the control module or an internal memory location. The executive function code has 15 output blocks numbered zero through 14. Fixed blocks zero through nine are fixed values.",
+  "description_lines": [
+    "The executive function code resides in fixed block zero of a",
+    "control module. It selects the output mode of the light emitting",
+    "diodes (LED) on the front panel of the control module. The",
+    "LEDs display the status of the control module or an internal",
+    "memory location. The executive function code has 15 output",
+    "blocks numbered zero through 14. Fixed blocks zero through",
+    "nine are fixed values."
+  ],
+  "symbol": {
+    "title_raw": "E X E C",
+    "title": "EXEC",
+    "inputs": [],
+    "outputs": [],
+    "items": [
+      {
+        "x": 159.54,
+        "y": 595.44,
+        "s": "E X E C"
+      },
+      {
+        "x": 158.1,
+        "y": 587.28,
+        "s": "M F C /P"
+      },
+      {
+        "x": 190.8,
+        "y": 580.08,
+        "s": "(8 1 )"
+      },
+      {
+        "x": 178.8,
+        "y": 575.46,
+        "s": "S U"
+      },
+      {
+        "x": 190.8,
+        "y": 571.14,
+        "s": "1 0"
+      },
+      {
+        "x": 173.94,
+        "y": 566.58,
+        "s": "M E M"
+      },
+      {
+        "x": 190.8,
+        "y": 562.26,
+        "s": "1 1"
+      },
+      {
+        "x": 179.28,
+        "y": 557.64,
+        "s": "P T"
+      },
+      {
+        "x": 190.8,
+        "y": 553.32,
+        "s": "1 2"
+      },
+      {
+        "x": 175.38,
+        "y": 548.76,
+        "s": "R E V"
+      },
+      {
+        "x": 190.8,
+        "y": 544.44,
+        "s": "1 3"
+      },
+      {
+        "x": 177.36,
+        "y": 539.58,
+        "s": "N /A"
+      },
+      {
+        "x": 190.8,
+        "y": 535.5,
+        "s": "1 4"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "0",
+      "type": "B",
+      "description": "Logic 0",
+      "description_lines": [
+        "Logic 0"
+      ],
+      "manual_page": 225
+    },
+    {
+      "blk": "1",
+      "type": "B",
+      "description": "Logic 1",
+      "description_lines": [
+        "Logic 1"
+      ],
+      "manual_page": 225
+    },
+    {
+      "blk": "2",
+      "type": "B",
+      "description": "0 or 0.000",
+      "description_lines": [
+        "0 or 0.000"
+      ],
+      "manual_page": 225
+    },
+    {
+      "blk": "3",
+      "type": "R",
+      "description": "-100.000",
+      "description_lines": [
+        "-100.000"
+      ],
+      "manual_page": 225
+    },
+    {
+      "blk": "4",
+      "type": "R",
+      "description": "-1.000",
+      "description_lines": [
+        "-1.000"
+      ],
+      "manual_page": 225
+    },
+    {
+      "blk": "5",
+      "type": "R",
+      "description": "0.000",
+      "description_lines": [
+        "0.000"
+      ],
+      "manual_page": 225
+    },
+    {
+      "blk": "6",
+      "type": "R",
+      "description": "1.000",
+      "description_lines": [
+        "1.000"
+      ],
+      "manual_page": 225
+    },
+    {
+      "blk": "7",
+      "type": "R",
+      "description": "100.000",
+      "description_lines": [
+        "100.000"
+      ],
+      "manual_page": 225
+    },
+    {
+      "blk": "8",
+      "type": "R",
+      "description": "-9.2 E18",
+      "description_lines": [
+        "-9.2 E18"
+      ],
+      "manual_page": 225
+    },
+    {
+      "blk": "9",
+      "type": "R",
+      "description": "9.2 E18",
+      "description_lines": [
+        "9.2 E18"
+      ],
+      "manual_page": 225
+    },
+    {
+      "blk": "10",
+      "type": "B",
+      "description": "Startup in progress flag:; 0 = no; 1 = yes",
+      "description_lines": [
+        "Startup in progress flag:",
+        "0 = no",
+        "1 = yes"
+      ],
+      "manual_page": 225
+    },
+    {
+      "blk": "11",
+      "type": "R",
+      "description": "Memory display value",
+      "description_lines": [
+        "Memory display value"
+      ],
+      "manual_page": 225
+    },
+    {
+      "blk": "12",
+      "type": "R",
+      "description": "System free time (%)",
+      "description_lines": [
+        "System free time (%)"
+      ],
+      "manual_page": 225
+    },
+    {
+      "blk": "13",
+      "type": "R",
+      "description": "Revision level",
+      "description_lines": [
+        "Revision level"
+      ],
+      "manual_page": 225
+    },
+    {
+      "blk": "14",
+      "type": "R",
+      "description": "Reserved",
+      "description_lines": [
+        "Reserved"
+      ],
+      "manual_page": 225
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Front plate LED display mode:; 0 = normal (i.e., module status); 1 = display memory (for diagnostic purposes only)",
+      "description_lines": [
+        "Front plate LED display mode:",
+        "0 = normal (i.e., module status)",
+        "1 = display memory (for diagnostic purposes only)"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "normal (i.e., module status)"
+        },
+        {
+          "value": "1",
+          "meaning": "display memory (for diagnostic purposes only)"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 225
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 255",
+      "description": "Memory display address (most significant byte)",
+      "description_lines": [
+        "Memory display address (most significant byte)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 225
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 255",
+      "description": "Memory display address (middle byte)",
+      "description_lines": [
+        "Memory display address (middle byte)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 226
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 255",
+      "description": "Memory display address (least significant byte)",
+      "description_lines": [
+        "Memory display address (least significant byte)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 226
+    }
+  ],
+  "spec_count": 4,
+  "max_spec_number": 4,
+  "notes": [],
+  "manual_page": 225,
+  "manual_pages": [
+    225,
+    226,
+    227
+  ],
+  "manual_section": "Function Code 81 - Executive",
+  "diagnostics": []
+}

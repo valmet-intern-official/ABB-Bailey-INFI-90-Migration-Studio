@@ -148,6 +148,11 @@ export interface CadSheetParse {
   title?: string;
   date?: string;
   descriptions: string[];
+  /** Title-block DESCRIPTION box: first line names the plant area, the lines below describe the page. */
+  areaDescription?: string;
+  pageDescription?: string;
+  /** Why the title block could not be read, when it could not. */
+  titleBlockNote?: string;
   loopTags: string[];
   deviceTags: string[];
   ioRefs: ParsedIoTag[];
@@ -158,6 +163,12 @@ export interface CadSheetParse {
   rawStrings: string[];
   /** Structured engineering reconstruction graph (CAD Logic Output Generator). */
   engineeringModel?: import("./engineering").EngineeringSheetModel;
+  /**
+   * Source-faithful SVG from the reconstruct pipeline (A4 landscape, page
+   * coordinates). When present and CAD_RENDER_ENGINE=source, the viewer/PDF
+   * use this instead of layout-v2 paint.
+   */
+  reconstructedSvg?: string;
 }
 
 export interface M1TagInstance {
@@ -183,7 +194,16 @@ export interface IoRecord {
   deviceTag?: string;
   rawIoTag: string;
   loopTag?: string;
+  /** How the loop tag was obtained; absent when no loop tag is assigned. */
+  loopTagSource?: "CAD_LABEL";
+  /** Tag-map row the loop tag came from, or why none was assigned. */
+  loopTagNote?: string;
+  /** The labelled function block that carries the loop tag. */
+  loopTagBlock?: LoopTagBlock;
+  /** Title-block page description of the sheet that carries the loop-tag label. */
   description?: string;
+  /** Where the description came from, or why there is none. */
+  descriptionNote?: string;
   cadFile?: string;
   direction?: "input" | "output";
   sourcePoint?: string;
@@ -193,6 +213,95 @@ export interface IoRecord {
   s1?: string;
   s2?: string;
   mappingStatus: "mapped" | "partial" | "unresolved";
+}
+
+export interface LoopTagBlock {
+  sheet: string;
+  blockNumber?: string;
+  functionCode?: number;
+  via: "wiring" | "same-sheet" | "loop-number";
+  hops: number;
+}
+
+/**
+ * EXTRACTED: read from a decoded spec; DERIVED: computed from extracted
+ * values or source structure; UNRESOLVED: the sources do not prove it;
+ * NOT_APPLICABLE: the field has no meaning for this record (e.g. digital range).
+ */
+export type LoopFieldStatus = "EXTRACTED" | "DERIVED" | "UNRESOLVED" | "NOT_APPLICABLE";
+
+export interface LoopField {
+  value: string;
+  status: LoopFieldStatus;
+  evidence: string;
+}
+
+/** One source I/O record as a member of a loop. */
+export interface LoopDevice {
+  ioRecordId: string;
+  role: "input" | "output";
+  cardType: IoType;
+  deviceTag: string;
+  rawIoTag: string;
+  description: string;
+  cadFile?: string;
+  min: LoopField;
+  max: LoopField;
+  unit: LoopField;
+  /** How the device was tied to the loop tag (CAD wiring, same sheet, loop number). */
+  loopEvidence: string;
+}
+
+export type LoopSideStatus = "RESOLVED" | "UNRESOLVED" | "AMBIGUOUS";
+
+export interface LoopEndpoint {
+  status: LoopSideStatus;
+  /** AI/AO/DI/DO, or UNRESOLVED / AMBIGUOUS when no single member is proven. */
+  cardType: string;
+  deviceTag: string;
+  min: string;
+  max: string;
+  unit: string;
+  /** The member device when RESOLVED. */
+  ioRecordId?: string;
+  /** Every member that could fill this side; more than one means AMBIGUOUS. */
+  candidates: string[];
+}
+
+export type LoopMappingStatus = "MAPPED" | "UNRESOLVED" | "AMBIGUOUS";
+
+export interface LoopRecord {
+  id: string;
+  package: LoopField;
+  processAreaId: LoopField;
+  exe: LoopField;
+  controlRoom: LoopField;
+  alarmGroup: LoopField;
+  /** Source description of Device Tag 1 only. */
+  description: LoopField;
+  /** Canonical loop tag, or empty when the device has none. */
+  loopTag: string;
+  loopTagBlock?: LoopTagBlock;
+  input: LoopEndpoint;
+  output: LoopEndpoint;
+  /** Every member of the loop, including those not chosen as Device Tag 1/2. */
+  relatedDevices: LoopDevice[];
+  /** Ids of every source I/O record in this loop. */
+  sourceRecords: string[];
+  mappingStatus: LoopMappingStatus;
+  notes: string[];
+}
+
+export interface LoopList {
+  loops: LoopRecord[];
+  stats: {
+    loops: number;
+    sourceRecords: number;
+    mapped: number;
+    unresolved: number;
+    ambiguous: number;
+    withoutLoopTag: number;
+  };
 }
 
 export interface LogicRecord {

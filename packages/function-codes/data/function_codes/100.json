@@ -1,0 +1,427 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 100,
+  "name": "Digital Output Readback Check",
+  "description": "This function code checks the operation of a digital output group. It compares the digital output values with those typically read back via a digital input group.",
+  "description_lines": [
+    "This function code checks the operation of a digital output",
+    "group. It compares the digital output values with those typi-",
+    "cally read back via a digital input group."
+  ],
+  "symbol": {
+    "title_raw": "D O R E A D",
+    "title": "DOREAD",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 156.72,
+        "y": 594.96,
+        "s": "D O R E A D"
+      },
+      {
+        "x": 191.28,
+        "y": 589.2,
+        "s": "(1 0 0 )"
+      },
+      {
+        "x": 136.92,
+        "y": 588,
+        "s": "S 1"
+      },
+      {
+        "x": 191.28,
+        "y": 580.68,
+        "s": "N"
+      },
+      {
+        "x": 136.92,
+        "y": 579.3,
+        "s": "S 2"
+      },
+      {
+        "x": 136.92,
+        "y": 570.54,
+        "s": "S 3"
+      },
+      {
+        "x": 136.92,
+        "y": 562.02,
+        "s": "S 4"
+      },
+      {
+        "x": 136.92,
+        "y": 553.26,
+        "s": "S 5"
+      },
+      {
+        "x": 136.92,
+        "y": 544.74,
+        "s": "S 6"
+      },
+      {
+        "x": 136.92,
+        "y": 535.98,
+        "s": "S 7"
+      },
+      {
+        "x": 136.92,
+        "y": 527.46,
+        "s": "S 8"
+      },
+      {
+        "x": 136.92,
+        "y": 518.76,
+        "s": "S 9"
+      },
+      {
+        "x": 136.92,
+        "y": 510,
+        "s": "S 1 0"
+      },
+      {
+        "x": 136.92,
+        "y": 501.48,
+        "s": "S 1 1"
+      },
+      {
+        "x": 136.92,
+        "y": 492.72,
+        "s": "S 1 2"
+      },
+      {
+        "x": 136.92,
+        "y": 484.2,
+        "s": "S 1 3"
+      },
+      {
+        "x": 136.92,
+        "y": 475.44,
+        "s": "S 1 4"
+      },
+      {
+        "x": 136.92,
+        "y": 466.74,
+        "s": "S 1 5"
+      },
+      {
+        "x": 136.92,
+        "y": 458.22,
+        "s": "S 1 6"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Status:; 0 = all digital outputs match digital inputs; 1 = one or more digital outputs do not match digital inputs",
+      "description_lines": [
+        "Status:",
+        "0 = all digital outputs match digital inputs",
+        "1 = one or more digital outputs do not match digital inputs"
+      ],
+      "manual_page": 293
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of DO value 1",
+      "description_lines": [
+        "Block address of DO value 1"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 293
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of DI readback value 1",
+      "description_lines": [
+        "Block address of DI readback value 1"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 293
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of DO value 2",
+      "description_lines": [
+        "Block address of DO value 2"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 293
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of DI readback value 2",
+      "description_lines": [
+        "Block address of DI readback value 2"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 293
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of DO value 3",
+      "description_lines": [
+        "Block address of DO value 3"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 293
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of DI readback value 3",
+      "description_lines": [
+        "Block address of DI readback value 3"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 293
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of DO value 4",
+      "description_lines": [
+        "Block address of DO value 4"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 293
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of DI readback value 4",
+      "description_lines": [
+        "Block address of DI readback value 4"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 293
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of DO value 5",
+      "description_lines": [
+        "Block address of DO value 5"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 293
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of DI readback value 5",
+      "description_lines": [
+        "Block address of DI readback value 5"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 293
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of DO value 6",
+      "description_lines": [
+        "Block address of DO value 6"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 293
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of DI readback value 6",
+      "description_lines": [
+        "Block address of DI readback value 6"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 293
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of DO value 7",
+      "description_lines": [
+        "Block address of DO value 7"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 293
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of DI readback value 7",
+      "description_lines": [
+        "Block address of DI readback value 7"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 293
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of DO value 8",
+      "description_lines": [
+        "Block address of DO value 8"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 293
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of DI readback value 8",
+      "description_lines": [
+        "Block address of DI readback value 8"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 293
+    }
+  ],
+  "spec_count": 16,
+  "max_spec_number": 16,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 293,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 293,
+  "manual_pages": [
+    293,
+    294
+  ],
+  "manual_section": "Function Code 100 - Digital Output Readback Check",
+  "diagnostics": []
+}

@@ -1,0 +1,93 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 92,
+  "name": "Invoke BASIC",
+  "description": "The invoke BASIC function code causes the controller BASIC interpreter to execute. If automatic load/run has been selected in the configure BASIC function block, the interpreter runs the program. Otherwise it prompts for further action. This block must be in the same segment as the configure BASIC block. A function block segment can contain multiple invoke BASIC blocks, each of which will initiate execution of the BASIC program. This function code provides one output that is selected in the BASIC program with the BOUT command. Figure 92-1 shows a sample BASIC configuration. Reference the MFC BASIC Programming Language Reference for instructions on programming with BASIC. NOTE: This function code is supported only on the BRC-100 and the IMMFP11/12 controllers.",
+  "description_lines": [
+    "The invoke BASIC function code causes the controller BASIC",
+    "interpreter to execute. If automatic load/run has been selected",
+    "in the configure BASIC function block, the interpreter runs the",
+    "program. Otherwise it prompts for further action. This block",
+    "must be in the same segment as the configure BASIC block. A",
+    "function block segment can contain multiple invoke BASIC",
+    "blocks, each of which will initiate execution of the BASIC pro-",
+    "gram. This function code provides one output that is selected",
+    "in the BASIC program with the BOUT command. Figure 92-1",
+    "shows a sample BASIC configuration. Reference the MFC",
+    "BASIC Programming Language Reference for instructions on",
+    "programming with BASIC.",
+    "NOTE: This function code is supported only on the BRC-100 and the",
+    "IMMFP11/12 controllers."
+  ],
+  "symbol": {
+    "title_raw": "IN V B A S",
+    "title": "INVBAS",
+    "inputs": [],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 191.46,
+        "y": 589.2,
+        "s": "(9 2 )"
+      },
+      {
+        "x": 156.48,
+        "y": 583.68,
+        "s": "IN V B A S"
+      },
+      {
+        "x": 191.46,
+        "y": 580.56,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "The BOUT command in the BASIC program sets output N",
+      "description_lines": [
+        "The BOUT command in the BASIC program sets output N"
+      ],
+      "manual_page": 267
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Initiates execution of the BASIC program by providing a value for SYSVAR",
+      "description_lines": [
+        "Initiates execution of the BASIC program by pro-",
+        "viding a value for SYSVAR"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 267
+    }
+  ],
+  "spec_count": 1,
+  "max_spec_number": 1,
+  "notes": [],
+  "manual_page": 267,
+  "manual_pages": [
+    267,
+    268
+  ],
+  "manual_section": "Function Code 92 - Invoke BASIC",
+  "diagnostics": []
+}

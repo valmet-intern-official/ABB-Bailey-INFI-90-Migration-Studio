@@ -1,0 +1,360 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 133,
+  "name": "Smart Field Device Definition",
+  "description": "The smart field device definition function code implements ABB FSK smart transmitters, smart positioners, and other smart field devices with defined specifications. The controller verifies the configuration of the field device at startup. Three specifications can be modified while the controller is in execute mode. In execute mode, the controller gets and monitors the value of the process variable defined in this function code.",
+  "description_lines": [
+    "The smart field device definition function code implements",
+    "ABB FSK smart transmitters, smart positioners, and other",
+    "smart field devices with defined specifications. The controller",
+    "verifies the configuration of the field device at startup. Three",
+    "specifications can be modified while the controller is in execute",
+    "mode. In execute mode, the controller gets and monitors the",
+    "value of the process variable defined in this function code."
+  ],
+  "symbol": {
+    "title_raw": "S M A RT",
+    "title": "SMART",
+    "inputs": [
+      "S1",
+      "S7"
+    ],
+    "outputs": [],
+    "items": [
+      {
+        "x": 157.8,
+        "y": 595.02,
+        "s": "S M A RT"
+      },
+      {
+        "x": 191.88,
+        "y": 588.78,
+        "s": "(1 3 3 )"
+      },
+      {
+        "x": 134.04,
+        "y": 587.58,
+        "s": "S 1"
+      },
+      {
+        "x": 134.04,
+        "y": 578.46,
+        "s": "S 7"
+      },
+      {
+        "x": 153.48,
+        "y": 575.1,
+        "s": "T"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Transmitter status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "Transmitter status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 421
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of field device input",
+      "description_lines": [
+        "Block address of field device input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 421
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2000",
+      "description": "Field device definition",
+      "description_lines": [
+        "Field device definition"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 421
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Engineering units of field device",
+      "description_lines": [
+        "Engineering units of field device"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 421
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "0.0 - 32.0",
+      "description": "Damping time (secs)",
+      "description_lines": [
+        "Damping time (secs)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 421
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 12",
+      "description": "Mode definitions",
+      "description_lines": [
+        "Mode definitions"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 421
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 6",
+      "description": "Operation select:; 0 = normal; 1 = zero up (uses operation trigger <S7>); 2 = zero down (uses operation trigger <S7>); 3 = span up (uses operation trigger <S7>); 4 = span down (uses operation trigger <S7>); 5 = fix output (fix position of type AVS positioner); 6 = download configuration",
+      "description_lines": [
+        "Operation select:",
+        "0 = normal",
+        "1 = zero up (uses operation trigger <S7>)",
+        "2 = zero down (uses operation trigger <S7>)",
+        "3 = span up (uses operation trigger <S7>)",
+        "4 = span down (uses operation trigger <S7>)",
+        "5 = fix output (fix position of type AVS positioner)",
+        "6 = download configuration"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "normal"
+        },
+        {
+          "value": "1",
+          "meaning": "zero up (uses operation trigger <S7>)"
+        },
+        {
+          "value": "2",
+          "meaning": "zero down (uses operation trigger <S7>)"
+        },
+        {
+          "value": "3",
+          "meaning": "span up (uses operation trigger <S7>)"
+        },
+        {
+          "value": "4",
+          "meaning": "span down (uses operation trigger <S7>)"
+        },
+        {
+          "value": "5",
+          "meaning": "fix output (fix position of type AVS positioner)"
+        },
+        {
+          "value": "6",
+          "meaning": "download configuration"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 421
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of operation trigger",
+      "description_lines": [
+        "Block address of operation trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 421
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Percentage of fixed output/position",
+      "description_lines": [
+        "Percentage of fixed output/position"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 421
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 102",
+      "description": "Communication select (all) and temperature compensation definition (TBN only)",
+      "description_lines": [
+        "Communication select (all) and temperature com-",
+        "pensation definition (TBN only)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 421
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 17",
+      "description": "Field device output definition",
+      "description_lines": [
+        "Field device output definition"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 421
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare",
+      "description_lines": [
+        "Spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 421
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "1 - 255",
+      "description": "Field device address or channel number",
+      "description_lines": [
+        "Field device address or channel number"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 421
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Lower range",
+      "description_lines": [
+        "Lower range"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 422
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Upper range",
+      "description_lines": [
+        "Upper range"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 422
+    }
+  ],
+  "spec_count": 14,
+  "max_spec_number": 14,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 422,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 421,
+  "manual_pages": [
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432
+  ],
+  "manual_section": "Function Code 133 - Smart Field Device Definition",
+  "diagnostics": []
+}

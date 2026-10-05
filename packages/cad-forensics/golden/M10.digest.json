@@ -1,0 +1,223 @@
+{
+ "module": "M10",
+ "counts": {
+  "entities": 147590,
+  "function_blocks": 2732,
+  "specifications": 11179,
+  "terminals": 8894,
+  "sub_blocks": 3072,
+  "wires": 4167,
+  "connections": 3153,
+  "references": 1223,
+  "channels": 1077,
+  "unresolved": 4877,
+  "annotations": 4330
+ },
+ "hashes": {
+  "entities": "a8cbcf6dd7d7f9947c92ddbfd6eb728b8ffc96c7bfdde1142465dd9a00ef1ce6",
+  "function_blocks": "3509441976881d760d47798b5e05173646be866200b9e689c9de00ce178b74fb",
+  "specifications": "93b9a2b876a83dbc641267e0fe9f6035dd8a9adbe04a8910cdbd036a05e681ed",
+  "terminals": "b54ce98c49ac6fc533809cad24a5a814aedc2b4f2eb83a57c0fd4396bde3fb23",
+  "sub_blocks": "4bc0ab1b051e0c87d7125a4a4fd82be0ccfde3e8432d3c9dc81134daa050eb1b",
+  "wires": "f2f272232cb227227262a1628da2a9c26386fb0d48632761aa337edf7c401ad4",
+  "connections": "3e71d9457dc8bc290acfd3177810c141926e662fe2d9576cb1d8f1a07f547ff2",
+  "references": "c2ade213418a54f330ee0f399668fe0ea34bcce4a9e0bfdcd30a4109785f3f56",
+  "channels": "9b4db552b8179a09bad89b3fe0913ddfb7e52884ffd327d349cab14a5457e22d",
+  "unresolved": "b1f37ca0fe95f5b7acea75ec9ba28a54f11bea18a8776e8bf0427512c0309b1b",
+  "annotations": "445aebd8d760c4f6682092c9c411442ca1ddc3964806776ddad244c93035d66f"
+ },
+ "terminal_methods": {
+  "NONE": 3021,
+  "TEMPLATE_FROM_EXPLICIT": 386,
+  "EXACT_PIN_COUNT": 3517,
+  "PITCH_SLOT": 1919,
+  "WIRE_SPEC_MATCH": 51
+ },
+ "annotations": {
+  "s_label|ann-derived": 2438,
+  "sub_block_number|ann-derived": 120,
+  "s_label|ann-inferred": 1296,
+  "sub_block_number|ann-inferred": 446,
+  "s_label|ann-explicit": 26,
+  "sub_block_number|ann-explicit": 4
+ },
+ "coverage": [
+  {
+   "category": "entity:IREF",
+   "parsed": 633,
+   "rendered_drawing": 633,
+   "rendered_detail": 0,
+   "listed_annex": 633,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "entity:OREF",
+   "parsed": 590,
+   "rendered_drawing": 590,
+   "rendered_detail": 0,
+   "listed_annex": 590,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "entity:frame",
+   "parsed": 244,
+   "rendered_drawing": 244,
+   "rendered_detail": 0,
+   "listed_annex": 244,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "entity:frame_component",
+   "parsed": 199,
+   "rendered_drawing": 199,
+   "rendered_detail": 0,
+   "listed_annex": 199,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "entity:function_block",
+   "parsed": 1863,
+   "rendered_drawing": 1863,
+   "rendered_detail": 0,
+   "listed_annex": 1863,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "entity:grid",
+   "parsed": 12688,
+   "rendered_drawing": 12688,
+   "rendered_detail": 0,
+   "listed_annex": 12688,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "entity:junction",
+   "parsed": 4803,
+   "rendered_drawing": 2056,
+   "rendered_detail": 0,
+   "listed_annex": 4803,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "entity:library_primitive",
+   "parsed": 104922,
+   "rendered_drawing": 104922,
+   "rendered_detail": 0,
+   "listed_annex": 104922,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "entity:symbol",
+   "parsed": 867,
+   "rendered_drawing": 390,
+   "rendered_detail": 0,
+   "listed_annex": 867,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "entity:terminal",
+   "parsed": 6329,
+   "rendered_drawing": 6329,
+   "rendered_detail": 0,
+   "listed_annex": 6329,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "entity:text",
+   "parsed": 6221,
+   "rendered_drawing": 6221,
+   "rendered_detail": 0,
+   "listed_annex": 6221,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "entity:title_block_field",
+   "parsed": 3591,
+   "rendered_drawing": 3591,
+   "rendered_detail": 0,
+   "listed_annex": 3591,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "entity:unknown",
+   "parsed": 473,
+   "rendered_drawing": 308,
+   "rendered_detail": 0,
+   "listed_annex": 473,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "entity:wire",
+   "parsed": 4167,
+   "rendered_drawing": 4167,
+   "rendered_detail": 0,
+   "listed_annex": 4167,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "function_block",
+   "parsed": 2732,
+   "rendered_drawing": 2730,
+   "rendered_detail": 2732,
+   "listed_annex": 0,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "specification",
+   "parsed": 11179,
+   "rendered_drawing": 3760,
+   "rendered_detail": 11179,
+   "listed_annex": 0,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "terminal",
+   "parsed": 8894,
+   "rendered_drawing": 3760,
+   "rendered_detail": 8894,
+   "listed_annex": 0,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "sub_block",
+   "parsed": 3072,
+   "rendered_drawing": 2440,
+   "rendered_detail": 3072,
+   "listed_annex": 0,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "wire",
+   "parsed": 4167,
+   "rendered_drawing": 4167,
+   "rendered_detail": 0,
+   "listed_annex": 4167,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "logic_connection",
+   "parsed": 3153,
+   "rendered_drawing": 0,
+   "rendered_detail": 3151,
+   "listed_annex": 3153,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "reference",
+   "parsed": 1223,
+   "rendered_drawing": 1223,
+   "rendered_detail": 0,
+   "listed_annex": 1223,
+   "not_rendered_anywhere": 0
+  },
+  {
+   "category": "channel",
+   "parsed": 1077,
+   "rendered_drawing": 1077,
+   "rendered_detail": 0,
+   "listed_annex": 1077,
+   "not_rendered_anywhere": 0
+  }
+ ],
+ "defects": 0
+}

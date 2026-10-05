@@ -1,0 +1,132 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 5,
+  "name": "Pulse Rate",
+  "description": "This function accepts an analog input in engineering units/ time and produces a pulsed output signal where the pulse rate is proportional to the analog input. NOTE: The output of this function block must be directly connected to a digital output. Use function code 79 or 83 for the Harmony controllers.",
+  "description_lines": [
+    "This function accepts an analog input in engineering units/",
+    "time and produces a pulsed output signal where the pulse rate",
+    "is proportional to the analog input.",
+    "NOTE: The output of this function block must be directly connected to a digital",
+    "output. Use function code 79 or 83 for the Harmony controllers."
+  ],
+  "symbol": {
+    "title_raw": "P U LS E",
+    "title": "PULSE",
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 192.12,
+        "y": 588.72,
+        "s": "(5 )"
+      },
+      {
+        "x": 133.86,
+        "y": 587.28,
+        "s": "S 1"
+      },
+      {
+        "x": 158.34,
+        "y": 583.44,
+        "s": "P U LS E"
+      },
+      {
+        "x": 192.12,
+        "y": 579.84,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Repetitive pulse output having a duration proportional to the analog input",
+      "description_lines": [
+        "Repetitive pulse output having a duration proportional to",
+        "the analog input"
+      ],
+      "manual_page": 61
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input signal",
+      "description_lines": [
+        "Block address of input signal"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 61
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Scaling parameter (units/pulse)",
+      "description_lines": [
+        "Scaling parameter (units/pulse)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 61
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Low cutoff (no output below value)",
+      "description_lines": [
+        "Low cutoff (no output below value)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 61
+    }
+  ],
+  "spec_count": 3,
+  "max_spec_number": 3,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 61,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 61,
+  "manual_pages": [
+    61,
+    62,
+    63,
+    64
+  ],
+  "manual_section": "Function Code 5 - Pulse Rate",
+  "diagnostics": []
+}

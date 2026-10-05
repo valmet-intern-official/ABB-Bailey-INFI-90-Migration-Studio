@@ -13,9 +13,11 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@infi90/core": "*",
     "@infi90/cad-engine": "*",
-    "adm-zip": "^0.5.16"
+    "@infi90/cad-forensics": "*",
+    "@infi90/core": "*",
+    "adm-zip": "^0.5.16",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
   },
   "devDependencies": {
     "@types/adm-zip": "^0.5.7",

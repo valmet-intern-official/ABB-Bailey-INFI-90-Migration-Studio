@@ -1,0 +1,172 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 116,
+  "name": "Jump/Master Control Relay",
+  "description": "The jump/master control relay function code can be used as a jump or master control relay (MCR) function. Function code 116 transfers control past a series of blocks. Both functions transfer control from the jump/MCR block to a destination block specified with S2. Blocks between the jump/MCR block and its destination do not execute, but hold their previous values. The destination block number must be greater than the block number of the jump/MCR block where the transfer originated. Transfer across segment boundaries is not permitted. Specification S3 sets the block to either jump or MCR. The jump function bypasses all blocks between the jump/MCR block and the destination block. The MCR function bypasses all blocks between the jump/MCR block and the destination block, and it de-energizes (zeros) the outputs of all rung blocks (i.e., function codes 110, 111 and 112) with normal outputs (S1 equals zero), that lie between the jump/MCR block and the destination block. Rung blocks without normal outputs (S1 not equal to zero) hold their previous output values.",
+  "description_lines": [
+    "The jump/master control relay function code can be used as a",
+    "jump or master control relay (MCR) function. Function code",
+    "116 transfers control past a series of blocks. Both functions",
+    "transfer control from the jump/MCR block to a destination",
+    "block specified with S2. Blocks between the jump/MCR block",
+    "and its destination do not execute, but hold their previous val-",
+    "ues. The destination block number must be greater than the",
+    "block number of the jump/MCR block where the transfer orig-",
+    "inated. Transfer across segment boundaries is not permitted.",
+    "Specification S3 sets the block to either jump or MCR. The",
+    "jump function bypasses all blocks between the jump/MCR",
+    "block and the destination block. The MCR function bypasses",
+    "all blocks between the jump/MCR block and the destination",
+    "block, and it de-energizes (zeros) the outputs of all rung blocks",
+    "(i.e., function codes 110, 111 and 112) with normal outputs",
+    "(S1 equals zero), that lie between the jump/MCR block and the",
+    "destination block. Rung blocks without normal outputs (S1",
+    "not equal to zero) hold their previous output values."
+  ],
+  "symbol": {
+    "title_raw": "J U M P",
+    "title": "JUMP",
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 190.86,
+        "y": 588.96,
+        "s": "(1 1 6 )"
+      },
+      {
+        "x": 158.88,
+        "y": 587.76,
+        "s": "J U M P"
+      },
+      {
+        "x": 132.24,
+        "y": 587.52,
+        "s": "S 1"
+      },
+      {
+        "x": 190.86,
+        "y": 580.08,
+        "s": "N"
+      },
+      {
+        "x": 157.92,
+        "y": 579.6,
+        "s": "(M C R )"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "<S1> = 0 = jump/MCR activated <S1> = 1 = jump/MCR not activated, all blocks executed",
+      "description_lines": [
+        "<S1> = 0 = jump/MCR activated",
+        "<S1> = 1 = jump/MCR not activated, all blocks executed"
+      ],
+      "manual_page": 337
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control signal:; 0 = jump/MCR function activated; 1 = normal control",
+      "description_lines": [
+        "Block address of control signal:",
+        "0 = jump/MCR function activated",
+        "1 = normal control"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "jump/MCR function activated"
+        },
+        {
+          "value": "1",
+          "meaning": "normal control"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 337
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of destination block for jump/MCR command",
+      "description_lines": [
+        "Block address of destination block for jump/MCR",
+        "command"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 337
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Function selector:; 0 = jump; 1 = MCR",
+      "description_lines": [
+        "Function selector:",
+        "0 = jump",
+        "1 = MCR"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "jump"
+        },
+        {
+          "value": "1",
+          "meaning": "MCR"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 337
+    }
+  ],
+  "spec_count": 3,
+  "max_spec_number": 3,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 337,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 337,
+  "manual_pages": [
+    337,
+    338,
+    339
+  ],
+  "manual_section": "Function Code 116 - Jump/Master Control Relay",
+  "diagnostics": []
+}

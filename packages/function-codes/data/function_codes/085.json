@@ -1,0 +1,308 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 85,
+  "name": "Up/Down Counter",
+  "description": "The up/down counter function code is a digital counter with separate inputs for incrementing and decrementing the counter. The count updates on a logic 0 to logic 1 (positive) transition on either input. External logic can be used to hold or reset the count. The counter can be set to an initial value upon start-up or following reset. This function has high and low alarm features. Each drives a separate output when the input exceeds the alarm value.",
+  "description_lines": [
+    "The up/down counter function code is a digital counter with",
+    "separate inputs for incrementing and decrementing the",
+    "counter. The count updates on a logic 0 to logic 1 (positive)",
+    "transition on either input.",
+    "External logic can be used to hold or reset the count. The",
+    "counter can be set to an initial value upon start-up or follow-",
+    "ing reset.",
+    "This function has high and low alarm features. Each drives a",
+    "separate output when the input exceeds the alarm value."
+  ],
+  "symbol": {
+    "title_raw": "U P /D N",
+    "title": "UP/DN",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2"
+    ],
+    "items": [
+      {
+        "x": 157.56,
+        "y": 594.3,
+        "s": "U P /D N"
+      },
+      {
+        "x": 190.26,
+        "y": 588.84,
+        "s": "(8 5 )"
+      },
+      {
+        "x": 132.54,
+        "y": 587.88,
+        "s": "S 1"
+      },
+      {
+        "x": 181.8,
+        "y": 584.28,
+        "s": "V"
+      },
+      {
+        "x": 152.04,
+        "y": 584.04,
+        "s": "U"
+      },
+      {
+        "x": 190.26,
+        "y": 579.96,
+        "s": "N"
+      },
+      {
+        "x": 132.54,
+        "y": 578.76,
+        "s": "S 2"
+      },
+      {
+        "x": 152.04,
+        "y": 575.16,
+        "s": "D"
+      },
+      {
+        "x": 181.56,
+        "y": 575.16,
+        "s": "H"
+      },
+      {
+        "x": 190.26,
+        "y": 571.08,
+        "s": "N + 1"
+      },
+      {
+        "x": 132.54,
+        "y": 569.64,
+        "s": "S 3"
+      },
+      {
+        "x": 182.52,
+        "y": 566.28,
+        "s": "L"
+      },
+      {
+        "x": 152.04,
+        "y": 566.04,
+        "s": "R"
+      },
+      {
+        "x": 190.26,
+        "y": 562.26,
+        "s": "N + 2"
+      },
+      {
+        "x": 132.54,
+        "y": 560.82,
+        "s": "S 4"
+      },
+      {
+        "x": 152.04,
+        "y": 557.22,
+        "s": "H"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Contents of counter",
+      "description_lines": [
+        "Contents of counter"
+      ],
+      "manual_page": 245
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "High alarm status:; 0 = no alarm; 1 = count has reached high limit",
+      "description_lines": [
+        "High alarm status:",
+        "0 = no alarm",
+        "1 = count has reached high limit"
+      ],
+      "manual_page": 245
+    },
+    {
+      "blk": "N+2",
+      "type": "B",
+      "description": "Low alarm status:; 0 = no alarm; 1 = count has reached low limit",
+      "description_lines": [
+        "Low alarm status:",
+        "0 = no alarm",
+        "1 = count has reached low limit"
+      ],
+      "manual_page": 245
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of up trigger",
+      "description_lines": [
+        "Block address of up trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 245
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of down trigger",
+      "description_lines": [
+        "Block address of down trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 245
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of reset flag:; 0 = run; 1 = reset",
+      "description_lines": [
+        "Block address of reset flag:",
+        "0 = run",
+        "1 = reset"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "run"
+        },
+        {
+          "value": "1",
+          "meaning": "reset"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 245
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of hold flag:; 0 = hold; 1 = release",
+      "description_lines": [
+        "Block address of hold flag:",
+        "0 = hold",
+        "1 = release"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "hold"
+        },
+        {
+          "value": "1",
+          "meaning": "release"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 245
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Value of count on reset",
+      "description_lines": [
+        "Value of count on reset"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 245
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "High alarm value",
+      "description_lines": [
+        "High alarm value"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 245
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "-9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "Low alarm value",
+      "description_lines": [
+        "Low alarm value"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 245
+    }
+  ],
+  "spec_count": 7,
+  "max_spec_number": 7,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 245,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 245,
+  "manual_pages": [
+    245,
+    246,
+    247,
+    248
+  ],
+  "manual_section": "Function Code 85 - Up/Down Counter",
+  "diagnostics": []
+}

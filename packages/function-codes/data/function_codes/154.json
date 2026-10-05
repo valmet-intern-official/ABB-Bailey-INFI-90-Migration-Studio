@@ -1,0 +1,376 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 154,
+  "name": "Adaptive Parameter Scheduler",
+  "description": "The adaptive parameter scheduler function allows process characteristics such as a measured or calculated index variable to be used to adjust the tuning parameters for the associated inferential smith controller (ISC function code 160). This feature optimizes controller performance for predictable changes in process operation and prevents periods of potentially unacceptable control while the ISC controller is being retuned by the model parameter estimator (function code 152) via the ISC parameter converter (function code 153). The adaptive parameter scheduler can automatically establish the relationship between an ISC tuning parameter and a measured or calculated index variable using linear regression. The adaptive parameter scheduler uses this relationship to automatically adjust the specified ISC tuning parameter based on the value of the specified index variable. Alternatively, this function can automatically determine the correction bias required for a pre-established gain schedule. This permits a nonlinear relationship between the ISC tuning parameter and the index variable, with automatic correction of the relationship for design inaccuracies and changes in process behavior.",
+  "description_lines": [
+    "The adaptive parameter scheduler function allows process",
+    "characteristics such as a measured or calculated index vari-",
+    "able to be used to adjust the tuning parameters for the associ-",
+    "ated inferential smith controller (ISC function code 160). This",
+    "feature optimizes controller performance for predictable",
+    "changes in process operation and prevents periods of poten-",
+    "tially unacceptable control while the ISC controller is being",
+    "retuned by the model parameter estimator (function code 152)",
+    "via the ISC parameter converter (function code 153).",
+    "The adaptive parameter scheduler can automatically establish",
+    "the relationship between an ISC tuning parameter and a mea-",
+    "sured or calculated index variable using linear regression. The",
+    "adaptive parameter scheduler uses this relationship to auto-",
+    "matically adjust the specified ISC tuning parameter based on",
+    "the value of the specified index variable.",
+    "Alternatively, this function can automatically determine the",
+    "correction bias required for a pre-established gain schedule.",
+    "This permits a nonlinear relationship between the ISC tuning",
+    "parameter and the index variable, with automatic correction of",
+    "the relationship for design inaccuracies and changes in pro-",
+    "cess behavior."
+  ],
+  "symbol": {
+    "title_raw": "PA R S C H",
+    "title": "PARSCH",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S10"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2"
+    ],
+    "items": [
+      {
+        "x": 153.84,
+        "y": 595.02,
+        "s": "PA R S C H"
+      },
+      {
+        "x": 189.54,
+        "y": 588.54,
+        "s": "(1 5 4 )"
+      },
+      {
+        "x": 132,
+        "y": 587.34,
+        "s": "S 1"
+      },
+      {
+        "x": 151.44,
+        "y": 584.94,
+        "s": "IV"
+      },
+      {
+        "x": 174.9,
+        "y": 583.98,
+        "s": "S T P"
+      },
+      {
+        "x": 189.54,
+        "y": 579.66,
+        "s": "N"
+      },
+      {
+        "x": 132,
+        "y": 578.46,
+        "s": "S 2"
+      },
+      {
+        "x": 151.44,
+        "y": 575.82,
+        "s": "F G S"
+      },
+      {
+        "x": 177.54,
+        "y": 575.1,
+        "s": "C A"
+      },
+      {
+        "x": 189.54,
+        "y": 570.78,
+        "s": "N + 1"
+      },
+      {
+        "x": 132,
+        "y": 569.28,
+        "s": "S 3"
+      },
+      {
+        "x": 151.44,
+        "y": 566.88,
+        "s": "S P"
+      },
+      {
+        "x": 177.54,
+        "y": 565.92,
+        "s": "C B"
+      },
+      {
+        "x": 189.54,
+        "y": 561.84,
+        "s": "N + 2"
+      },
+      {
+        "x": 132,
+        "y": 560.16,
+        "s": "S 4"
+      },
+      {
+        "x": 151.44,
+        "y": 558,
+        "s": "R"
+      },
+      {
+        "x": 132,
+        "y": 551.28,
+        "s": "S 5"
+      },
+      {
+        "x": 151.44,
+        "y": 548.88,
+        "s": "S A"
+      },
+      {
+        "x": 132,
+        "y": 542.16,
+        "s": "S 1 0"
+      },
+      {
+        "x": 151.44,
+        "y": 540,
+        "s": "H"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Scheduled tuning parameter",
+      "description_lines": [
+        "Scheduled tuning parameter"
+      ],
+      "manual_page": 543
+    },
+    {
+      "blk": "N+1",
+      "type": "R",
+      "description": "Coefficient A of correction equation",
+      "description_lines": [
+        "Coefficient A of correction equation"
+      ],
+      "manual_page": 543
+    },
+    {
+      "blk": "N+2",
+      "type": "R",
+      "description": "Coefficient B of correction equation",
+      "description_lines": [
+        "Coefficient B of correction equation"
+      ],
+      "manual_page": 543
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of index variable",
+      "description_lines": [
+        "Block address of index variable"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 543
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of fixed gain schedule",
+      "description_lines": [
+        "Block address of fixed gain schedule"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 543
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of scheduled parameter",
+      "description_lines": [
+        "Block address of scheduled parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 543
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of reset trigger",
+      "description_lines": [
+        "Block address of reset trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 543
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Address block containing specification to be adapted",
+      "description_lines": [
+        "Address block containing specification to be adapted"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 543
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 255",
+      "description": "Specification to be adapted",
+      "description_lines": [
+        "Specification to be adapted"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 544
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Minimum index value",
+      "description_lines": [
+        "Minimum index value"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 544
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Maximum index value",
+      "description_lines": [
+        "Maximum index value"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 544
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare real parameter",
+      "description_lines": [
+        "Spare real parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 544
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of coefficient update hold:; 0 = update A and B; 1 = hold updates of A and B",
+      "description_lines": [
+        "Block address of coefficient update hold:",
+        "0 = update A and B",
+        "1 = hold updates of A and B"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "update A and B"
+        },
+        {
+          "value": "1",
+          "meaning": "hold updates of A and B"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 544
+    }
+  ],
+  "spec_count": 10,
+  "max_spec_number": 10,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 544,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 543,
+  "manual_pages": [
+    543,
+    544,
+    545,
+    546,
+    547
+  ],
+  "manual_section": "Function Code 154 - Adaptive Parameter Scheduler",
+  "diagnostics": []
+}

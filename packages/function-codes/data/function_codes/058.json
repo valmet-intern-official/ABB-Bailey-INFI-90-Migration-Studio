@@ -1,0 +1,195 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 58,
+  "name": "Time Delay (Analog)",
+  "description": "The time delay function code provides a pure delay on an analog signal. It can be used to create fixed or variable time delays, or model systems that represent dynamic time delays.",
+  "description_lines": [
+    "The time delay function code provides a pure delay on an ana-",
+    "log signal. It can be used to create fixed or variable time",
+    "delays, or model systems that represent dynamic time delays."
+  ],
+  "symbol": {
+    "title_raw": "D E L AY",
+    "title": "DELAY",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 132.84,
+        "y": 596.46,
+        "s": "S 1"
+      },
+      {
+        "x": 157.86,
+        "y": 592.86,
+        "s": "D E L AY"
+      },
+      {
+        "x": 190.8,
+        "y": 589.26,
+        "s": "(5 8 )"
+      },
+      {
+        "x": 132.84,
+        "y": 587.58,
+        "s": "S 2"
+      },
+      {
+        "x": 152.58,
+        "y": 583.98,
+        "s": "R"
+      },
+      {
+        "x": 190.8,
+        "y": 580.38,
+        "s": "N"
+      },
+      {
+        "x": 132.84,
+        "y": 578.46,
+        "s": "S 3"
+      },
+      {
+        "x": 152.58,
+        "y": 574.86,
+        "s": "T S"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Time delayed function of input",
+      "description_lines": [
+        "Time delayed function of input"
+      ],
+      "manual_page": 171
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input (X)",
+      "description_lines": [
+        "Block address of input (X)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 171
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "6",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of rate input (R, in units/sec)",
+      "description_lines": [
+        "Block address of rate input (R, in units/sec)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 171
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of track switch signal:; 0 = track; 1 = release",
+      "description_lines": [
+        "Block address of track switch signal:",
+        "0 = track",
+        "1 = release"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "track"
+        },
+        {
+          "value": "1",
+          "meaning": "release"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 171
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Length of queue (L, in units)",
+      "description_lines": [
+        "Length of queue (L, in units)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 171
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "0 - 255",
+      "description": "Number of intervals (N)",
+      "description_lines": [
+        "Number of intervals (N)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 171
+    }
+  ],
+  "spec_count": 5,
+  "max_spec_number": 5,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 171,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 171,
+  "manual_pages": [
+    171,
+    172,
+    173,
+    174,
+    175
+  ],
+  "manual_section": "Function Code 58 - Time Delay (Analog)",
+  "diagnostics": []
+}

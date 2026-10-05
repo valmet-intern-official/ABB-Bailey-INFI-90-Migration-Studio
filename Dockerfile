@@ -8,6 +8,10 @@ COPY packages/parsers/package.json packages/parsers/
 COPY packages/renderers/package.json packages/renderers/
 COPY packages/exporters/package.json packages/exporters/
 COPY packages/cad-engine/package.json packages/cad-engine/
+COPY packages/cad-forensics/package.json packages/cad-forensics/
+COPY packages/fb-spec/package.json packages/fb-spec/
+COPY packages/function-codes/package.json packages/function-codes/
+COPY packages/m1-engine/package.json packages/m1-engine/
 RUN npm ci
 
 FROM node:20-bookworm-slim AS builder

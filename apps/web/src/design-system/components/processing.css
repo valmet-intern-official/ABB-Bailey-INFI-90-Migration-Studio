@@ -1,0 +1,876 @@
+/* Processing page: full-screen decode scene shown between upload and results. */
+
+.pr {
+  --pr-green: var(--ds-green-600, #1f7a4d);
+  --pr-green-mid: var(--ds-green-500, #2f9463);
+  --pr-green-deep: var(--ds-green-700, #135a3a);
+  --pr-green-tint: var(--ds-green-50, #f2f8f4);
+  --pr-green-pale: var(--ds-green-100, #e6f1eb);
+  --pr-green-line: var(--ds-green-200, #cfe5d8);
+  --pr-line: var(--ds-graphite-200, #dce1de);
+  --pr-line-soft: var(--ds-graphite-100, #ebeeec);
+  --pr-line-strong: var(--ds-graphite-300, #b8bfbc);
+  --pr-ink: var(--ds-text, #141c19);
+  --pr-shadow: 0 10px 28px rgba(20, 28, 25, 0.08);
+  --mx: 50%;
+  --my: 40%;
+  --px: 0;
+  --py: 0;
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--pr-ink);
+  background: radial-gradient(ellipse 80% 70% at 50% 42%, #ffffff 0%, #f7faf8 60%, #eff4f1 100%);
+  transition: opacity 0.5s var(--ds-ease-out, ease-out);
+  cursor: crosshair;
+}
+
+.pr::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(20, 28, 25, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 28, 25, 0.045) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 45%, #000 30%, transparent 85%);
+}
+
+.pr[data-leaving] {
+  opacity: 0;
+}
+
+.pr__field {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.pr__spot {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(420px circle at var(--mx) var(--my), rgba(47, 148, 99, 0.09), transparent 65%);
+}
+
+.pr__ripple {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  margin: -7px 0 0 -7px;
+  border: 1.5px solid var(--pr-green-mid);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: pr-ripple 0.9s var(--ds-ease-out, ease-out) forwards;
+}
+
+.pr__header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  padding: var(--ds-space-20) var(--ds-space-24, 1.5rem);
+}
+
+.pr__brand {
+  display: inline-flex;
+  border-radius: 999px;
+}
+
+.pr__brand:focus-visible {
+  outline: 2px solid var(--pr-green);
+  outline-offset: 3px;
+}
+
+.pr__logo {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--pr-line);
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(20, 28, 25, 0.06);
+}
+
+.pr__logo img {
+  height: 22px;
+  width: auto;
+}
+
+.pr__stage {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.5rem, 4vh, 3rem);
+  padding: 0 var(--ds-space-20) clamp(2rem, 6vh, 4rem);
+  transition:
+    transform 0.5s var(--ds-ease-out, ease-out),
+    filter 0.5s var(--ds-ease-out, ease-out);
+}
+
+.pr[data-leaving] .pr__stage {
+  transform: scale(1.05);
+  filter: blur(6px);
+}
+
+.pr__scene {
+  width: min(1120px, 100%);
+  perspective: 1400px;
+}
+
+.pr-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 64vh;
+  overflow: visible;
+  transform: rotateX(calc(var(--py) * -7deg)) rotateY(calc(var(--px) * 9deg));
+  transition: transform 0.4s var(--ds-ease-out, ease-out);
+}
+
+.pr-layer {
+  transition: transform 0.4s var(--ds-ease-out, ease-out);
+}
+
+.pr-layer--back {
+  transform: translate(calc(var(--px) * -18px), calc(var(--py) * -12px));
+}
+
+.pr-layer--mid {
+  transform: translate(calc(var(--px) * 6px), calc(var(--py) * 4px));
+}
+
+.pr-layer--front {
+  transform: translate(calc(var(--px) * 22px), calc(var(--py) * 14px));
+}
+
+/* Core */
+
+.pr-halo {
+  transform-box: view-box;
+  transform-origin: 500px 230px;
+  animation: pr-breathe 3.6s ease-in-out infinite;
+}
+
+.pr-wave {
+  fill: none;
+  stroke: var(--pr-green-mid);
+  stroke-width: 1.2;
+  transform-box: view-box;
+  transform-origin: 500px 230px;
+  animation: pr-wave 3.2s var(--ds-ease-out, ease-out) infinite;
+}
+
+.pr-wave--late {
+  animation-delay: 1.6s;
+}
+
+.pr-ring-outer {
+  fill: none;
+  stroke: var(--pr-line-strong);
+  stroke-width: 1.2;
+  stroke-dasharray: 3 9;
+  transform-box: view-box;
+  transform-origin: 500px 230px;
+  animation: pr-spin 40s linear infinite;
+}
+
+.pr-ring-thin {
+  fill: none;
+  stroke: var(--pr-line-soft);
+}
+
+.pr-ticks {
+  stroke: var(--pr-line-strong);
+  stroke-width: 1.2;
+  stroke-linecap: round;
+  transform-box: view-box;
+  transform-origin: 500px 230px;
+  animation: pr-spin 60s linear infinite reverse;
+}
+
+.pr-orbit {
+  fill: var(--pr-green-mid);
+  transform-box: view-box;
+  transform-origin: 500px 230px;
+  animation: pr-spin 7s linear infinite;
+}
+
+.pr-arc-track {
+  fill: none;
+  stroke: var(--pr-line-soft);
+  stroke-width: 6;
+}
+
+.pr-arc {
+  fill: none;
+  stroke: url(#pr-ring);
+  stroke-width: 6;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.6s var(--ds-ease-out, ease-out);
+}
+
+.pr-arc-head {
+  fill: #fff;
+  stroke: var(--pr-green);
+  stroke-width: 2.5;
+  transition:
+    cx 0.6s var(--ds-ease-out, ease-out),
+    cy 0.6s var(--ds-ease-out, ease-out);
+}
+
+.pr-hex {
+  fill: var(--pr-green-tint);
+  stroke: var(--pr-green-line);
+  stroke-width: 1.2;
+  transform-box: view-box;
+  transform-origin: 500px 230px;
+  animation: pr-spin 18s linear infinite;
+}
+
+.pr-disc {
+  fill: #fff;
+  stroke: var(--pr-green-mid);
+  stroke-width: 1.5;
+  filter: drop-shadow(0 6px 14px rgba(31, 122, 77, 0.16));
+}
+
+.pr-glyph {
+  transform-box: view-box;
+  transform-origin: 500px 230px;
+  animation: pr-glyph-in 0.5s var(--ds-ease-out, ease-out) both;
+}
+
+.pr-glyph__line {
+  fill: none;
+  stroke: var(--pr-green);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.pr-glyph__check {
+  fill: none;
+  stroke: var(--pr-green);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 40;
+  stroke-dashoffset: 40;
+  animation: pr-draw-once 0.6s 0.15s var(--ds-ease-out, ease-out) forwards;
+}
+
+/* Source stack */
+
+.pr-card {
+  fill: #fff;
+  stroke: var(--pr-line);
+  stroke-width: 1.2;
+  filter: drop-shadow(0 8px 18px rgba(20, 28, 25, 0.07));
+}
+
+.pr-card--mid {
+  fill: #fbfcfb;
+  animation: pr-float 4.2s ease-in-out infinite;
+}
+
+.pr-card--back {
+  fill: #f6f8f7;
+  animation: pr-float 4.2s 0.7s ease-in-out infinite;
+}
+
+.pr-card__bar {
+  fill: var(--pr-line-strong);
+}
+
+.pr-card__bar--dim {
+  fill: var(--pr-line);
+}
+
+.pr-byte {
+  fill: var(--pr-green-mid);
+  opacity: 0.15;
+  animation: pr-flicker 1.4s steps(2, jump-none) infinite;
+}
+
+.pr-scan {
+  animation: pr-scan 2.4s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
+.pr-scan__line {
+  fill: var(--pr-green);
+}
+
+.pr-upload-track {
+  fill: var(--pr-line-soft);
+}
+
+.pr-upload-fill {
+  fill: var(--pr-green);
+  transition: width 0.3s var(--ds-ease-out, ease-out);
+}
+
+/* Streams */
+
+.pr-stream {
+  fill: none;
+  stroke: rgba(31, 122, 77, 0.32);
+  stroke-width: 1.4;
+  stroke-dasharray: 4 7;
+  animation: pr-dash 0.9s linear infinite;
+}
+
+.pr-packet {
+  fill: var(--pr-green);
+  filter: drop-shadow(0 0 3px rgba(47, 148, 99, 0.55));
+}
+
+.pr-stream--out,
+.pr-packet--out {
+  opacity: 0.25;
+  transition: opacity 0.6s;
+}
+
+.pr[data-phase="build"] .pr-stream--out,
+.pr[data-phase="build"] .pr-packet--out,
+.pr[data-phase="done"] .pr-stream--out,
+.pr[data-phase="done"] .pr-packet--out {
+  opacity: 1;
+}
+
+/* Output panel */
+
+.pr-out {
+  opacity: 0.45;
+  transition: opacity 0.8s;
+}
+
+.pr[data-phase="decode"] .pr-out {
+  opacity: 0.7;
+}
+
+.pr[data-phase="build"] .pr-out,
+.pr[data-phase="done"] .pr-out {
+  opacity: 1;
+}
+
+.pr-panel {
+  fill: #fff;
+  stroke: var(--pr-line);
+  stroke-width: 1.2;
+  filter: drop-shadow(0 12px 26px rgba(20, 28, 25, 0.08));
+  transition: stroke 0.6s, filter 0.6s;
+}
+
+.pr-panel--screen {
+  fill: #fcfdfc;
+}
+
+.pr[data-phase="done"] .pr-panel {
+  stroke: var(--pr-green-mid);
+  filter: drop-shadow(0 12px 30px rgba(31, 122, 77, 0.2));
+}
+
+.pr-dot {
+  fill: var(--pr-line);
+}
+
+.pr-panel__bar {
+  fill: var(--pr-line-soft);
+}
+
+.pr-pop {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pr-pop 5s var(--ds-ease-out, ease-out) infinite;
+}
+
+.pr-block {
+  fill: var(--pr-green-tint);
+  stroke: var(--pr-green-line);
+  stroke-width: 1.2;
+}
+
+.pr-block--key {
+  fill: var(--pr-green-pale);
+  stroke: var(--pr-green);
+}
+
+.pr-block__bars {
+  fill: none;
+  stroke: var(--pr-line-strong);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.pr-block__bars--key {
+  stroke: rgba(31, 122, 77, 0.55);
+}
+
+.pr-wire {
+  fill: none;
+  stroke: var(--pr-green);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 260;
+  stroke-dashoffset: 260;
+  animation: pr-draw 5s var(--ds-ease-out, ease-out) infinite;
+}
+
+.pr-wire--trend {
+  stroke: var(--pr-green-mid);
+}
+
+.pr-wire--pipe {
+  stroke: var(--pr-line);
+  stroke-width: 5;
+}
+
+.pr-node {
+  fill: var(--pr-green);
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pr-pop 5s var(--ds-ease-out, ease-out) infinite;
+}
+
+.pr-node--end {
+  fill: var(--pr-green-deep);
+}
+
+.pr-sheet__head {
+  fill: var(--pr-green-pale);
+}
+
+.pr-sheet__row {
+  fill: rgba(20, 28, 25, 0.03);
+}
+
+.pr-cell {
+  fill: var(--pr-line-strong);
+  transform-box: fill-box;
+  transform-origin: left center;
+  animation: pr-fill 5s var(--ds-ease-out, ease-out) infinite;
+}
+
+.pr-tank {
+  fill: #fff;
+  stroke: var(--pr-line-strong);
+  stroke-width: 1.4;
+}
+
+.pr-liquid {
+  fill: rgba(47, 148, 99, 0.35);
+  transform-box: fill-box;
+  transform-origin: bottom;
+  animation: pr-level 4.6s ease-in-out infinite;
+}
+
+.pr-liquid--b {
+  animation-duration: 5.8s;
+  animation-direction: reverse;
+}
+
+.pr-flow {
+  fill: none;
+  stroke: var(--pr-green);
+  stroke-width: 2;
+  stroke-dasharray: 3 9;
+  animation: pr-dash 0.7s linear infinite;
+}
+
+.pr-valve {
+  fill: var(--pr-green-pale);
+  stroke: var(--pr-green);
+  stroke-width: 1.2;
+  stroke-linejoin: round;
+}
+
+.pr-pump {
+  fill: var(--pr-green-tint);
+  stroke: var(--pr-green);
+  stroke-width: 1.4;
+}
+
+.pr-impeller {
+  fill: none;
+  stroke: var(--pr-green-deep);
+  stroke-width: 2;
+  stroke-linecap: round;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pr-spin 1.4s linear infinite;
+}
+
+.pr-lamp {
+  fill: var(--pr-green-mid);
+  animation: pr-blink 1.6s ease-in-out infinite;
+}
+
+.pr-lamp--warn {
+  fill: #d99a1e;
+}
+
+/* Finished: freeze the assembled output and stop the scan. */
+
+.pr[data-phase="done"] :is(.pr-pop, .pr-node) {
+  animation: none;
+  opacity: 1;
+  transform: none;
+}
+
+.pr[data-phase="done"] .pr-wire {
+  animation: none;
+  stroke-dashoffset: 0;
+}
+
+.pr[data-phase="done"] .pr-cell {
+  animation: none;
+  transform: none;
+}
+
+.pr[data-phase="done"] .pr-scan {
+  animation: none;
+  opacity: 0;
+}
+
+.pr[data-phase="done"] .pr-byte {
+  animation: none;
+  opacity: 0.85;
+}
+
+.pr[data-phase="done"] .pr-halo {
+  animation: pr-flash 1.2s var(--ds-ease-out, ease-out) both;
+}
+
+.pr[data-phase="done"] .pr-wave {
+  animation-duration: 1.4s;
+}
+
+/* Failed: dim and stop the scene. */
+
+.pr[data-phase="error"] .pr-svg {
+  filter: grayscale(1);
+  opacity: 0.45;
+}
+
+.pr[data-phase="error"] .pr-svg * {
+  animation-play-state: paused;
+}
+
+/* Stage track */
+
+.pr__track {
+  --p: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: min(420px, 80vw);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pr__track::before,
+.pr__track::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  height: 2px;
+  margin-top: -1px;
+  border-radius: 2px;
+}
+
+.pr__track::before {
+  right: 20px;
+  background: var(--pr-line);
+}
+
+.pr__track::after {
+  width: calc((100% - 40px) * var(--p));
+  background: linear-gradient(90deg, var(--pr-green-mid), var(--pr-green));
+  transition: width 0.6s var(--ds-ease-out, ease-out);
+}
+
+.pr__node {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid var(--pr-line);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ds-graphite-400, #8a948f);
+  box-shadow: 0 2px 8px rgba(20, 28, 25, 0.05);
+  transition:
+    color 0.4s,
+    border-color 0.4s,
+    background 0.4s,
+    box-shadow 0.4s;
+}
+
+.pr__node[data-state="active"] {
+  border-color: var(--pr-green);
+  color: var(--pr-green);
+  animation: pr-node-pulse 1.8s ease-out infinite;
+}
+
+.pr__node[data-state="done"] {
+  border-color: var(--pr-green);
+  background: var(--pr-green);
+  color: #fff;
+}
+
+.pr[data-phase="done"] .pr__node[data-state="active"] {
+  background: var(--pr-green);
+  color: #fff;
+  animation: none;
+  box-shadow: 0 6px 18px rgba(31, 122, 77, 0.35);
+}
+
+/* Error card */
+
+.pr__error {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 3;
+  display: grid;
+  gap: var(--ds-space-12);
+  justify-items: start;
+  width: min(440px, calc(100% - 2.5rem));
+  padding: var(--ds-space-24, 1.5rem);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--ds-radius-card, 14px);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 24px 60px rgba(20, 28, 25, 0.14);
+  transform: translate(-50%, -50%);
+  cursor: default;
+  animation: pr-glyph-in 0.4s var(--ds-ease-out, ease-out) both;
+}
+
+.pr__error-title {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.pr__error-text {
+  margin: 0;
+  color: var(--ds-text-muted, #4a5651);
+  overflow-wrap: anywhere;
+}
+
+@keyframes pr-ripple {
+  to {
+    transform: scale(16);
+    opacity: 0;
+    border-width: 0.4px;
+  }
+}
+
+@keyframes pr-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pr-breathe {
+  0%,
+  100% {
+    transform: scale(0.94);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 1;
+  }
+}
+
+@keyframes pr-flash {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  35% {
+    transform: scale(1.35);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.12);
+    opacity: 0.9;
+  }
+}
+
+@keyframes pr-wave {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@keyframes pr-glyph-in {
+  from {
+    opacity: 0;
+    scale: 0.7;
+  }
+}
+
+@keyframes pr-draw-once {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pr-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes pr-flicker {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+@keyframes pr-scan {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(130px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pr-dash {
+  to {
+    stroke-dashoffset: -11;
+  }
+}
+
+@keyframes pr-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  12%,
+  86% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+}
+
+@keyframes pr-draw {
+  0% {
+    stroke-dashoffset: 260;
+    opacity: 1;
+  }
+  22%,
+  86% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes pr-fill {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  14%,
+  86% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 0;
+  }
+}
+
+@keyframes pr-level {
+  0%,
+  100% {
+    transform: scaleY(0.35);
+  }
+  50% {
+    transform: scaleY(0.85);
+  }
+}
+
+@keyframes pr-blink {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes pr-node-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(47, 148, 99, 0.35);
+  }
+  100% {
+    box-shadow: 0 0 0 14px rgba(47, 148, 99, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pr *,
+  .pr *::before,
+  .pr *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .pr-svg,
+  .pr-layer {
+    transform: none;
+  }
+
+  .pr :is(.pr-pop, .pr-node, .pr-cell, .pr-wire, .pr-scan, .pr-glyph__check) {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+    stroke-dashoffset: 0;
+  }
+}

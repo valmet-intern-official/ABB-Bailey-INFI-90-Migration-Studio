@@ -152,6 +152,13 @@ export function decodeCadSheet(
         inputRefs: [],
         outputRefs: [],
         deviceTags: [],
+        sourceGeometry: {
+          originalX: box.x,
+          originalY: box.y,
+          originalWidth: box.width,
+          originalHeight: box.height,
+        },
+        glyphStatus: "FALLBACK",
         trace: nativeTrace(filename, rec.offset, name),
       });
       blockNative.set(id, rec);
@@ -225,6 +232,13 @@ export function decodeCadSheet(
       outputRefs: isOutput && rec.tag ? [rec.tag] : [],
       deviceTags: rec.tag ? [rec.tag] : [],
       notes: rec.unresolved.length > 0 ? `unresolved: ${rec.unresolved.join(",")}` : undefined,
+      sourceGeometry: {
+        originalX: box.x,
+        originalY: box.y,
+        originalWidth: box.width,
+        originalHeight: box.height,
+      },
+      glyphStatus: "FALLBACK",
       trace: nativeTrace(filename, rec.offset, name),
     });
     blockNative.set(id, rec);
@@ -356,6 +370,14 @@ export function decodeCadSheet(
       referenceType: "local",
       // Drawing rules are furniture, never "unresolved wires".
       resolved: isWire ? attached : true,
+      relationType: "EXPLICIT",
+      sourceGeometry: {
+        originalX: Math.min(...geometry.map((s) => Math.min(s.x1, s.x2))),
+        originalY: Math.min(...geometry.map((s) => Math.min(s.y1, s.y2))),
+        originalWidth: 0,
+        originalHeight: 0,
+        originalPolyline: geometry.map((s) => ({ ...s })),
+      },
       trace: nativeTrace(
         filename,
         ln.offset,

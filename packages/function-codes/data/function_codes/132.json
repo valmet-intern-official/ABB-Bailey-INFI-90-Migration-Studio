@@ -1,0 +1,692 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 132,
+  "name": "Analog Input/Slave",
+  "description": "The analog input/slave function code reads five analog inputs from an IMFEC12 Analog Input Slave or an IMFEC11 Field Bus Slave. Three analog input/slave function codes are required to utilize all 15 input channels on the module. When these function blocks are linked, only the status output of the primary block will be functional. Function code 132 is also used with ABB FSK smart protocol and FSK bus applications. In the case of bus mode and multivariable bus mode applications, three instances of function code 132 are needed whenever there are 15 variables. This function block has six outputs. The first five are the inputs from the analog input module. The sixth output is the status of the analog input module.",
+  "description_lines": [
+    "The analog input/slave function code reads five analog inputs",
+    "from an IMFEC12 Analog Input Slave or an IMFEC11 Field",
+    "Bus Slave. Three analog input/slave function codes are",
+    "required to utilize all 15 input channels on the module. When",
+    "these function blocks are linked, only the status output of the",
+    "primary block will be functional.",
+    "Function code 132 is also used with ABB FSK smart protocol",
+    "and FSK bus applications. In the case of bus mode and multi-",
+    "variable bus mode applications, three instances of function",
+    "code 132 are needed whenever there are 15 variables.",
+    "This function block has six outputs. The first five are the",
+    "inputs from the analog input module. The sixth output is the",
+    "status of the analog input module."
+  ],
+  "symbol": {
+    "title_raw": "A IS /",
+    "title": "AIS/",
+    "inputs": [
+      "S2"
+    ],
+    "outputs": [
+      "N+5",
+      "N",
+      "N+1",
+      "N+2",
+      "N+3",
+      "N+4"
+    ],
+    "items": [
+      {
+        "x": 169.26,
+        "y": 594.54,
+        "s": "A IS /"
+      },
+      {
+        "x": 169.08,
+        "y": 586.62,
+        "s": "F B S"
+      },
+      {
+        "x": 193.32,
+        "y": 579.9,
+        "s": "(1 3 2 )"
+      },
+      {
+        "x": 144.42,
+        "y": 578.46,
+        "s": "S 2"
+      },
+      {
+        "x": 183.42,
+        "y": 575.34,
+        "s": "S T"
+      },
+      {
+        "x": 193.32,
+        "y": 571.02,
+        "s": "N + 5"
+      },
+      {
+        "x": 186.48,
+        "y": 566.46,
+        "s": "1"
+      },
+      {
+        "x": 193.32,
+        "y": 561.9,
+        "s": "N"
+      },
+      {
+        "x": 186.48,
+        "y": 557.4,
+        "s": "2"
+      },
+      {
+        "x": 193.32,
+        "y": 553.08,
+        "s": "N + 1"
+      },
+      {
+        "x": 186.48,
+        "y": 548.52,
+        "s": "3"
+      },
+      {
+        "x": 193.32,
+        "y": 543.96,
+        "s": "N + 2"
+      },
+      {
+        "x": 186.48,
+        "y": 539.64,
+        "s": "4"
+      },
+      {
+        "x": 193.32,
+        "y": 535.08,
+        "s": "N + 3"
+      },
+      {
+        "x": 186.48,
+        "y": 530.76,
+        "s": "5"
+      },
+      {
+        "x": 193.32,
+        "y": 525.96,
+        "s": "N + 4"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "First analog input in engineering units",
+      "description_lines": [
+        "First analog input in engineering units"
+      ],
+      "manual_page": 415
+    },
+    {
+      "blk": "N+1",
+      "type": "R",
+      "description": "Second analog input in engineering units",
+      "description_lines": [
+        "Second analog input in engineering units"
+      ],
+      "manual_page": 415
+    },
+    {
+      "blk": "N+2",
+      "type": "R",
+      "description": "Third analog input in engineering units",
+      "description_lines": [
+        "Third analog input in engineering units"
+      ],
+      "manual_page": 415
+    },
+    {
+      "blk": "N+3",
+      "type": "R",
+      "description": "Fourth analog input in engineering units",
+      "description_lines": [
+        "Fourth analog input in engineering units"
+      ],
+      "manual_page": 415
+    },
+    {
+      "blk": "N+4",
+      "type": "R",
+      "description": "Fifth analog input in engineering units",
+      "description_lines": [
+        "Fifth analog input in engineering units"
+      ],
+      "manual_page": 415
+    },
+    {
+      "blk": "N+5",
+      "type": "B",
+      "description": "Input module status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "Input module status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 415
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 63",
+      "description": "Input module address",
+      "description_lines": [
+        "Input module address"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 415
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of next analog input module",
+      "description_lines": [
+        "Block address of next analog input module"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 415
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Continue on input module error:; 0 = trip master module; 1 = continue to operate",
+      "description_lines": [
+        "Continue on input module error:",
+        "0 = trip master module",
+        "1 = continue to operate"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "trip master module"
+        },
+        {
+          "value": "1",
+          "meaning": "continue to operate"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 415
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 5",
+      "description": "Input signal type of first input:; 0 = 4 - 20 mA; also for digital mode; 1 = 1 - 5 VDC; 2 = -10 - +10 VDC; 3 = 0 - +1 VDC; 4 = 0 - +5 VDC; 5 = 0 - +10 VDC",
+      "description_lines": [
+        "Input signal type of first input:",
+        "0 = 4 - 20 mA; also for digital mode",
+        "1 = 1 - 5 VDC",
+        "2 = -10 - +10 VDC",
+        "3 = 0 - +1 VDC",
+        "4 = 0 - +5 VDC",
+        "5 = 0 - +10 VDC"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "4 - 20 mA; also for digital mode"
+        },
+        {
+          "value": "1",
+          "meaning": "1 - 5 VDC"
+        },
+        {
+          "value": "2",
+          "meaning": "-10 - +10 VDC"
+        },
+        {
+          "value": "3",
+          "meaning": "0 - +1 VDC"
+        },
+        {
+          "value": "4",
+          "meaning": "0 - +5 VDC"
+        },
+        {
+          "value": "5",
+          "meaning": "0 - +10 VDC"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 416
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Engineering unit zero for first input",
+      "description_lines": [
+        "Engineering unit zero for first input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 416
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Engineering unit span for first input",
+      "description_lines": [
+        "Engineering unit span for first input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 416
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 5",
+      "description": "Input signal type of second input:; 0 = 4 - 20 mA; also for digital mode; 1 = 1 - 5 VDC; 2 = -10 - +10 VDC; 3 = 0 - +1 VDC; 4 = 0 - +5 VDC; 5 = 0 - +10 VDC",
+      "description_lines": [
+        "Input signal type of second input:",
+        "0 = 4 - 20 mA; also for digital mode",
+        "1 = 1 - 5 VDC",
+        "2 = -10 - +10 VDC",
+        "3 = 0 - +1 VDC",
+        "4 = 0 - +5 VDC",
+        "5 = 0 - +10 VDC"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "4 - 20 mA; also for digital mode"
+        },
+        {
+          "value": "1",
+          "meaning": "1 - 5 VDC"
+        },
+        {
+          "value": "2",
+          "meaning": "-10 - +10 VDC"
+        },
+        {
+          "value": "3",
+          "meaning": "0 - +1 VDC"
+        },
+        {
+          "value": "4",
+          "meaning": "0 - +5 VDC"
+        },
+        {
+          "value": "5",
+          "meaning": "0 - +10 VDC"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 416
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Engineering unit zero for second input",
+      "description_lines": [
+        "Engineering unit zero for second input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 416
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Engineering unit span for second input",
+      "description_lines": [
+        "Engineering unit span for second input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 416
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 5",
+      "description": "Input signal type of third input:; 0 = 4 - 20 mA; also for digital mode; 1 = 1 - 5 VDC; 2 = -10 - +10 VDC; 3 = 0 - +1 VDC; 4 = 0 - +5 VDC; 5 = 0 - +10 VDC",
+      "description_lines": [
+        "Input signal type of third input:",
+        "0 = 4 - 20 mA; also for digital mode",
+        "1 = 1 - 5 VDC",
+        "2 = -10 - +10 VDC",
+        "3 = 0 - +1 VDC",
+        "4 = 0 - +5 VDC",
+        "5 = 0 - +10 VDC"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "4 - 20 mA; also for digital mode"
+        },
+        {
+          "value": "1",
+          "meaning": "1 - 5 VDC"
+        },
+        {
+          "value": "2",
+          "meaning": "-10 - +10 VDC"
+        },
+        {
+          "value": "3",
+          "meaning": "0 - +1 VDC"
+        },
+        {
+          "value": "4",
+          "meaning": "0 - +5 VDC"
+        },
+        {
+          "value": "5",
+          "meaning": "0 - +10 VDC"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 416
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Engineering unit zero for third input",
+      "description_lines": [
+        "Engineering unit zero for third input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 416
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Engineering unit span for third input",
+      "description_lines": [
+        "Engineering unit span for third input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 416
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 5",
+      "description": "Input signal type of fourth input:; 0 = 4 - 20 mA; also for digital mode; 1 = 1 - 5 VDC; 2 = -10 - +10 VDC; 3 = 0 - +1 VDC; 4 = 0 - +5 VDC; 5 = 0 - +10 VDC",
+      "description_lines": [
+        "Input signal type of fourth input:",
+        "0 = 4 - 20 mA; also for digital mode",
+        "1 = 1 - 5 VDC",
+        "2 = -10 - +10 VDC",
+        "3 = 0 - +1 VDC",
+        "4 = 0 - +5 VDC",
+        "5 = 0 - +10 VDC"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "4 - 20 mA; also for digital mode"
+        },
+        {
+          "value": "1",
+          "meaning": "1 - 5 VDC"
+        },
+        {
+          "value": "2",
+          "meaning": "-10 - +10 VDC"
+        },
+        {
+          "value": "3",
+          "meaning": "0 - +1 VDC"
+        },
+        {
+          "value": "4",
+          "meaning": "0 - +5 VDC"
+        },
+        {
+          "value": "5",
+          "meaning": "0 - +10 VDC"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 416
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Engineering unit zero for fourth input",
+      "description_lines": [
+        "Engineering unit zero for fourth input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 416
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Engineering unit span for fourth input",
+      "description_lines": [
+        "Engineering unit span for fourth input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 416
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 5",
+      "description": "Input signal type of fifth input:; 0 = 4 - 20 mA; also for digital mode; 1 = 1 - 5 VDC; 2 = -10 - +10 VDC; 3 = 0 - +1 VDC; 4 = 0 - +5 VDC; 5 = 0 - +10 VDC",
+      "description_lines": [
+        "Input signal type of fifth input:",
+        "0 = 4 - 20 mA; also for digital mode",
+        "1 = 1 - 5 VDC",
+        "2 = -10 - +10 VDC",
+        "3 = 0 - +1 VDC",
+        "4 = 0 - +5 VDC",
+        "5 = 0 - +10 VDC"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "4 - 20 mA; also for digital mode"
+        },
+        {
+          "value": "1",
+          "meaning": "1 - 5 VDC"
+        },
+        {
+          "value": "2",
+          "meaning": "-10 - +10 VDC"
+        },
+        {
+          "value": "3",
+          "meaning": "0 - +1 VDC"
+        },
+        {
+          "value": "4",
+          "meaning": "0 - +5 VDC"
+        },
+        {
+          "value": "5",
+          "meaning": "0 - +10 VDC"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 417
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Engineering unit zero for fifth input",
+      "description_lines": [
+        "Engineering unit zero for fifth input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 417
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Engineering unit span for fifth input",
+      "description_lines": [
+        "Engineering unit span for fifth input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 417
+    },
+    {
+      "number": 19,
+      "label": "S19",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare parameter",
+      "description_lines": [
+        "Spare parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 417
+    },
+    {
+      "number": 20,
+      "label": "S20",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare parameter",
+      "description_lines": [
+        "Spare parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 417
+    }
+  ],
+  "spec_count": 20,
+  "max_spec_number": 20,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 417,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 415,
+  "manual_pages": [
+    415,
+    416,
+    417,
+    418,
+    419
+  ],
+  "manual_section": "Function Code 132 - Analog Input/Slave",
+  "diagnostics": [
+    "FC132: row label printed as '8' on p.416 (no 'S' in text layer); taken as S8 because it follows S7 and carries all columns"
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 128,
+  "name": "Slave Default Definition",
+  "description": "The slave default definition function code provides the default values for function blocks that interface with two digital I/O modules (e.g., BCD output, function code 115). There are four types of digital I/O modules. The IMDSO15 module has eight outputs, and the IMDSO14 module has 16 outputs. The slave default definition function code provides the default values for up to 16 outputs per I/O module. The outputs are in two groups (group A and B) of eight per module. When defining the default values for IMDSO15 modules, place them in group A. Group B remains unused since these modules have eight outputs.",
+  "description_lines": [
+    "The slave default definition function code provides the default",
+    "values for function blocks that interface with two digital I/O",
+    "modules (e.g., BCD output, function code 115).",
+    "There are four types of digital I/O modules. The IMDSO15",
+    "module has eight outputs, and the IMDSO14 module has 16",
+    "outputs. The slave default definition function code provides",
+    "the default values for up to 16 outputs per I/O module. The",
+    "outputs are in two groups (group A and B) of eight per module.",
+    "When defining the default values for IMDSO15 modules, place",
+    "them in group A. Group B remains unused since these mod-",
+    "ules have eight outputs."
+  ],
+  "symbol": {
+    "title_raw": "D IG D E F",
+    "title": "DIGDEF",
+    "inputs": [],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 190.38,
+        "y": 588.54,
+        "s": "(1 2 8 )"
+      },
+      {
+        "x": 154.62,
+        "y": 583.44,
+        "s": "D IG D E F"
+      },
+      {
+        "x": 190.38,
+        "y": 579.6,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "0.0 (no useful output)",
+      "description_lines": [
+        "0.0 (no useful output)"
+      ],
+      "manual_page": 399
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block number of first digital I/O Used with module function block function code 83",
+      "description_lines": [
+        "Block number of first digital I/O",
+        "Used with",
+        "module function block function code",
+        "83"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 399
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 1 or",
+      "description_lines": [
+        "Default state for output 1",
+        "or"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 399
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 2 function code",
+      "description_lines": [
+        "Default state for output 2",
+        "function code"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 399
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 3 115",
+      "description_lines": [
+        "Default state for output 3",
+        "115"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 399
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 4",
+      "description_lines": [
+        "Default state for output 4"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 399
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 5",
+      "description_lines": [
+        "Default state for output 5"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 399
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 6",
+      "description_lines": [
+        "Default state for output 6"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 399
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 7",
+      "description_lines": [
+        "Default state for output 7"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 399
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 8",
+      "description_lines": [
+        "Default state for output 8"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 399
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 9 Used with function code",
+      "description_lines": [
+        "Default state for output 9",
+        "Used with",
+        "function code"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 399
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 10 115 only",
+      "description_lines": [
+        "Default state for output 10",
+        "115 only"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 399
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 11",
+      "description_lines": [
+        "Default state for output 11"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 399
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 12",
+      "description_lines": [
+        "Default state for output 12"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 399
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 13",
+      "description_lines": [
+        "Default state for output 13"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 399
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 14 Used with function code",
+      "description_lines": [
+        "Default state for output 14",
+        "Used with",
+        "function code"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 15 115 only",
+      "description_lines": [
+        "Default state for output 15",
+        "115 only"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 16",
+      "description_lines": [
+        "Default state for output 16"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block number of second digital I/ Used with O module function block function code 83",
+      "description_lines": [
+        "Block number of second digital I/",
+        "Used with",
+        "O module function block function code",
+        "83"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 19,
+      "label": "S19",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 1 or",
+      "description_lines": [
+        "Default state for output 1",
+        "or"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 20,
+      "label": "S20",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 2 function code",
+      "description_lines": [
+        "Default state for output 2",
+        "function code"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 21,
+      "label": "S21",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 3 115",
+      "description_lines": [
+        "Default state for output 3",
+        "115"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 22,
+      "label": "S22",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 4",
+      "description_lines": [
+        "Default state for output 4"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 23,
+      "label": "S23",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 5",
+      "description_lines": [
+        "Default state for output 5"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 24,
+      "label": "S24",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 6",
+      "description_lines": [
+        "Default state for output 6"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 25,
+      "label": "S25",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 7",
+      "description_lines": [
+        "Default state for output 7"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 26,
+      "label": "S26",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 8",
+      "description_lines": [
+        "Default state for output 8"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 27,
+      "label": "S27",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 9 Used with function code",
+      "description_lines": [
+        "Default state for output 9",
+        "Used with",
+        "function code"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 28,
+      "label": "S28",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 10 115 only",
+      "description_lines": [
+        "Default state for output 10",
+        "115 only"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 29,
+      "label": "S29",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 11",
+      "description_lines": [
+        "Default state for output 11"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 30,
+      "label": "S30",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 12",
+      "description_lines": [
+        "Default state for output 12"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 31,
+      "label": "S31",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 13",
+      "description_lines": [
+        "Default state for output 13"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 32,
+      "label": "S32",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 14",
+      "description_lines": [
+        "Default state for output 14"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 33,
+      "label": "S33",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 15",
+      "description_lines": [
+        "Default state for output 15"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    },
+    {
+      "number": 34,
+      "label": "S34",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Default state for output 16",
+      "description_lines": [
+        "Default state for output 16"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 400
+    }
+  ],
+  "spec_count": 34,
+  "max_spec_number": 34,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 400,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 399,
+  "manual_pages": [
+    399,
+    400,
+    401
+  ],
+  "manual_section": "Function Code 128 - Slave Default Definition",
+  "diagnostics": []
+}

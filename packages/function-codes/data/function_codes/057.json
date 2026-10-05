@@ -1,0 +1,635 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 57,
+  "name": "Node Statistics Block",
+  "description": "The node statistics block combines the functionality of node performance statistic outputs and last block along with extended executive block functions. The function code is part of the HAC controller default block configuration at blocks 31,999 through 32,025. The terminating executive function code replaces the last block function code 89 in the default configuration. The output indicates the options configuration including the module network type, time-stamping, I/O Hnet cable length, peer-to-peer Hnet cable length, and revision checking. The node performance statistics are included as the block outputs of this function code. NOTE: This function code is supported only on the HAC controller.",
+  "description_lines": [
+    "The node statistics block combines the functionality of node",
+    "performance statistic outputs and last block along with",
+    "extended executive block functions. The function code is part",
+    "of the HAC controller default block configuration at blocks",
+    "31,999 through 32,025. The terminating executive function",
+    "code replaces the last block function code 89 in the default",
+    "configuration. The output indicates the options configuration",
+    "including the module network type, time-stamping, I/O Hnet",
+    "cable length, peer-to-peer Hnet cable length, and revision",
+    "checking. The node performance statistics are included as the",
+    "block outputs of this function code.",
+    "NOTE: This function code is supported only on the HAC controller."
+  ],
+  "symbol": {
+    "title_raw": "N O D E",
+    "title": "NODE",
+    "inputs": [],
+    "outputs": [],
+    "items": [
+      {
+        "x": 155.58,
+        "y": 595.02,
+        "s": "N O D E"
+      },
+      {
+        "x": 157.5,
+        "y": 586.86,
+        "s": "S TAT"
+      },
+      {
+        "x": 190.14,
+        "y": 583.74,
+        "s": "(5 7 )"
+      },
+      {
+        "x": 162.54,
+        "y": 579.66,
+        "s": "L A S T B LK"
+      },
+      {
+        "x": 169.5,
+        "y": 570.84,
+        "s": "S PA R E"
+      },
+      {
+        "x": 162.54,
+        "y": 561.96,
+        "s": "L O O P B /S"
+      },
+      {
+        "x": 161.82,
+        "y": 553.08,
+        "s": "L O O P M /S"
+      },
+      {
+        "x": 171.42,
+        "y": 544.2,
+        "s": "IN B /S"
+      },
+      {
+        "x": 165.9,
+        "y": 535.08,
+        "s": "O U T B /S"
+      },
+      {
+        "x": 170.7,
+        "y": 526.2,
+        "s": "IN M /S"
+      },
+      {
+        "x": 165.18,
+        "y": 517.38,
+        "s": "O U T M /S"
+      },
+      {
+        "x": 167.82,
+        "y": 508.5,
+        "s": "IN X R /S"
+      },
+      {
+        "x": 162.3,
+        "y": 499.62,
+        "s": "O U T X R /S"
+      },
+      {
+        "x": 165.42,
+        "y": 490.74,
+        "s": "IN G M I/S"
+      },
+      {
+        "x": 159.9,
+        "y": 481.86,
+        "s": "O U T G M I/S"
+      },
+      {
+        "x": 170.7,
+        "y": 472.98,
+        "s": "U T IL%"
+      },
+      {
+        "x": 151.5,
+        "y": 464.16,
+        "s": "B /S F R O M N IO"
+      },
+      {
+        "x": 159.66,
+        "y": 455.28,
+        "s": "B /S T O N IO"
+      },
+      {
+        "x": 150.78,
+        "y": 446.16,
+        "s": "M /S F R O M N IO"
+      },
+      {
+        "x": 158.94,
+        "y": 437.28,
+        "s": "M /S T O N IO"
+      },
+      {
+        "x": 147.18,
+        "y": 428.4,
+        "s": "B /S F R O M P N E T"
+      },
+      {
+        "x": 155.34,
+        "y": 419.52,
+        "s": "B /S T O P N E T"
+      },
+      {
+        "x": 146.46,
+        "y": 410.7,
+        "s": "M /S F R O M P N E T"
+      },
+      {
+        "x": 154.38,
+        "y": 401.82,
+        "s": "M /S T O P N E T"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "31,999",
+      "type": "R",
+      "description": "Options configuration Network type; XXX3 = Cnet with time-stamping I/O Hnet cable length; XX0X = 4000m; XX1X = 9000m; XX2X = 7000m; XX3X = 5000m; XX4X = 2600m; XX5X = 1600m; XX6X= 1300m; XX7X= 1100m Peer-to-peer Hnet cable length; X0XX = 4000m; X1XX = 9000m; X2XX = 7000m; X3XX = 5000m; X4XX = 2600m; X5XX = 1600m; X6XX = 1300m; X7XX = 1100m Revision check; 0XXX = Revision check disabled; 1XXX = Revision check enabled",
+      "description_lines": [
+        "Options configuration",
+        "Network type",
+        "XXX3 = Cnet with time-stamping",
+        "I/O Hnet cable length",
+        "XX0X = 4000m",
+        "XX1X = 9000m",
+        "XX2X = 7000m",
+        "XX3X = 5000m",
+        "XX4X = 2600m",
+        "XX5X = 1600m",
+        "XX6X= 1300m",
+        "XX7X= 1100m",
+        "Peer-to-peer Hnet cable length",
+        "X0XX = 4000m",
+        "X1XX = 9000m",
+        "X2XX = 7000m",
+        "X3XX = 5000m",
+        "X4XX = 2600m",
+        "X5XX = 1600m",
+        "X6XX = 1300m",
+        "X7XX = 1100m",
+        "Revision check",
+        "0XXX = Revision check disabled",
+        "1XXX = Revision check enabled"
+      ],
+      "manual_page": 167
+    },
+    {
+      "blk": "32,000",
+      "type": "R",
+      "description": "Reserved",
+      "description_lines": [
+        "Reserved"
+      ],
+      "manual_page": 167
+    },
+    {
+      "blk": "32,001",
+      "type": "R",
+      "description": "Total number of bytes transmitted by the node per second",
+      "description_lines": [
+        "Total number of bytes transmitted by the node per second"
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,002",
+      "type": "R",
+      "description": "Total number of messages transmitted by the node per second.",
+      "description_lines": [
+        "Total number of messages transmitted by the node per",
+        "second."
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,003",
+      "type": "R",
+      "description": "Total number of bytes received by the node per second.",
+      "description_lines": [
+        "Total number of bytes received by the node per second."
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,004",
+      "type": "R",
+      "description": "Total number of bytes sent by the node per second.",
+      "description_lines": [
+        "Total number of bytes sent by the node per second."
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,005",
+      "type": "R",
+      "description": "Total number of messages received by the node per second.",
+      "description_lines": [
+        "Total number of messages received by the node per second."
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,006",
+      "type": "R",
+      "description": "Total number of messages sent by the node per second.",
+      "description_lines": [
+        "Total number of messages sent by the node per second."
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,007",
+      "type": "R",
+      "description": "Total number of exception reports received by the node per second.",
+      "description_lines": [
+        "Total number of exception reports received by the node per",
+        "second."
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,008",
+      "type": "R",
+      "description": "Total number of exception reports sent by the node per second.",
+      "description_lines": [
+        "Total number of exception reports sent by the node per",
+        "second."
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,009",
+      "type": "R",
+      "description": "Total number of GMI messages received by the node per second.",
+      "description_lines": [
+        "Total number of GMI messages received by the node per",
+        "second."
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,010",
+      "type": "R",
+      "description": "Total number of GMI messages sent by the node per second.",
+      "description_lines": [
+        "Total number of GMI messages sent by the node per",
+        "second."
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,011",
+      "type": "R",
+      "description": "Percentage of node’s module processing power currently being used.",
+      "description_lines": [
+        "Percentage of node’s module processing power currently",
+        "being used."
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,012",
+      "type": "R",
+      "description": "Number of bytes transferred per second on the expander bus from the NIO to the communication module.",
+      "description_lines": [
+        "Number of bytes transferred per second on the expander bus",
+        "from the NIO to the communication module."
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,013",
+      "type": "R",
+      "description": "Number of bytes transferred per second on the expander bus from the communication module to the NIO.",
+      "description_lines": [
+        "Number of bytes transferred per second on the expander bus",
+        "from the communication module to the NIO."
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,014",
+      "type": "R",
+      "description": "Number of messages transferred per second on the expander bus from the NIO to the communication module.",
+      "description_lines": [
+        "Number of messages transferred per second on the",
+        "expander bus from the NIO to the communication module."
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,015",
+      "type": "R",
+      "description": "Number of messages transferred per second on the expander bus from the communication module to the NIO.",
+      "description_lines": [
+        "Number of messages transferred per second on the",
+        "expander bus from the communication module to the NIO."
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,016",
+      "type": "R",
+      "description": "Reserved",
+      "description_lines": [
+        "Reserved"
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,017",
+      "type": "R",
+      "description": "Reserved",
+      "description_lines": [
+        "Reserved"
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,018",
+      "type": "R",
+      "description": "Reserved",
+      "description_lines": [
+        "Reserved"
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,019",
+      "type": "R",
+      "description": "Reserved",
+      "description_lines": [
+        "Reserved"
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,020",
+      "type": "R",
+      "description": "Reserved",
+      "description_lines": [
+        "Reserved"
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,021",
+      "type": "R",
+      "description": "Reserved",
+      "description_lines": [
+        "Reserved"
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,022",
+      "type": "R",
+      "description": "Reserved",
+      "description_lines": [
+        "Reserved"
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,023",
+      "type": "R",
+      "description": "Reserved",
+      "description_lines": [
+        "Reserved"
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,024",
+      "type": "R",
+      "description": "Reserved",
+      "description_lines": [
+        "Reserved"
+      ],
+      "manual_page": 168
+    },
+    {
+      "blk": "32,025",
+      "type": "R",
+      "description": "Reserved",
+      "description_lines": [
+        "Reserved"
+      ],
+      "manual_page": 168
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "NULL E90 String",
+      "type": "",
+      "range": "0 - 32 chars",
+      "description": "Reserved for future use",
+      "description_lines": [
+        "Reserved for future use"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 169
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "1"
+      ],
+      "default": "20000",
+      "type": "R",
+      "range": "10,008 - 400,000",
+      "description": "Amount of memory (in bytes) allocated for XR routes connected to this module and the number of HCUs on the system.",
+      "description_lines": [
+        "Amount of memory (in bytes) allocated for",
+        "XR routes connected to this module and the",
+        "number of HCUs on the system."
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 169
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.0",
+      "type": "R",
+      "range": "FULL",
+      "description": "Reserved for future use",
+      "description_lines": [
+        "Reserved for future use"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 169
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.0",
+      "type": "R",
+      "range": "FULL",
+      "description": "Reserved for future use",
+      "description_lines": [
+        "Reserved for future use"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 169
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.0",
+      "type": "R",
+      "range": "FULL",
+      "description": "Reserved for future use",
+      "description_lines": [
+        "Reserved for future use"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 169
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.0",
+      "type": "R",
+      "range": "FULL",
+      "description": "Reserved for future use",
+      "description_lines": [
+        "Reserved for future use"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 169
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "INT",
+      "range": "FULL",
+      "description": "Reserved for future use",
+      "description_lines": [
+        "Reserved for future use"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 169
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "2"
+      ],
+      "default": "0",
+      "type": "INT",
+      "range": "0 - 4",
+      "description": "Maximum number of destination nodes connected through the peer-to-peer network. A value of zero disables the peer-to-peer channel status reporting for stand-alone HAC units. A value of zero has no effect on the peer-to-peer channel status reporting of redundant HAC units.",
+      "description_lines": [
+        "Maximum number of destination nodes con-",
+        "nected through the peer-to-peer network. A",
+        "value of zero disables the peer-to-peer",
+        "channel status reporting for stand-alone",
+        "HAC units. A value of zero has no effect on",
+        "the peer-to-peer channel status reporting of",
+        "redundant HAC units."
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 169
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.0",
+      "type": "R",
+      "range": "FULL",
+      "description": "Reserved for future use",
+      "description_lines": [
+        "Reserved for future use"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 169
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.0",
+      "type": "R",
+      "range": "FULL",
+      "description": "Reserved for future use",
+      "description_lines": [
+        "Reserved for future use"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 169
+    }
+  ],
+  "spec_count": 10,
+  "max_spec_number": 10,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "The amount of memory needed = (18 x number of export routes) + (18 x number of HCUs on the system).",
+      "manual_page": 169,
+      "context": "specifications"
+    },
+    {
+      "label": "2.",
+      "text": "Setting this value too low results in the module entering error mode with a configuration error (type 0x6 - data type conflict).",
+      "manual_page": 169,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 167,
+  "manual_pages": [
+    167,
+    168,
+    169,
+    170
+  ],
+  "manual_section": "Function Code 57 - Node Statistics Block",
+  "diagnostics": [
+    "FC57 S1: no type letter printed (type/range text kept as range '0 - 32 chars')"
+  ]
+}

@@ -1,0 +1,5049 @@
+==============================================================================
+CADSYNC - CAD Sheet Tag Database Synchronization
+  Copyright 1997, Elsag Bailey Process Automation, N.V.
+ All rights reserved.      (Build 2.0.11)
+
+NOTE: The following abbreviations are used in this log file:
+  XRFC - exception-reporting function code
+ NXRFC - NON-exception-reporting function code. 
+
+Start at: Thu Sep  2 16:31:29 2010
+
+Parameters:
+  Project TDT:    c:\ews\project\tdt\arif
+  Mode:           UPDATE
+  Taglink Usage:  Ignoring taglinks
+  Tag Generation: Add new tags for XRFCs with TAGNAMEs
+
+
+==========================================================
+PROCESSING SELECTIONS IN C:\EWS\PROJECT\L2\P7\M10\SELCT.LST
+
+==========================================================
+
+--------------------------------------------------------
+ PROCESSING MODULES IN: C:\EWS\PROJECT\L2\P7\M10\MSTR.LST
+--------------------------------------------------------
+
+*****************************
+* PROCESSING MODULE: 20710  *
+*****************************
+
+Start - Thu Sep  2 16:31:29 2010
+
+ Module Header: C:\EWS\PROJECT\L2\P7\M10\20710
+ Module Type   : MFP02
+ Address       : 2-7-10
+
+ 245 sheets listed for this module.
+
+**********************************
+* PROCESSING SHEET: 2071000C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071000C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071002C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071002C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071003C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071003C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071004C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071004C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071005C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071005C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071006C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071006C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071007C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071007C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071008C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071008C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071009C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071009C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071010C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071010C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071011C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071011C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071012C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071012C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071013C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071013C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071014C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071014C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071015C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071015C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071016C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071016C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071017C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071017C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071018C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071018C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071019C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071019C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071020C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071020C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071021C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071021C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071022C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071022C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071023C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071023C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071024C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071024C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071025C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071025C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071026C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071026C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071028C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071028C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071029C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071029C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071031C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071031C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071032C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071032C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071033C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071033C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071034C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071034C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071035C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071035C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071036C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071036C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071037C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071037C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071038C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071038C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071039C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071039C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071040C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071040C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071041C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071041C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071042C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071042C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071043C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071043C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071044C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071044C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071047C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 558)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DDRIVE   (FC 123, block 556)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 762)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 3
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071047C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071048C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code M/A-M    (FC 80, block 572)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 268)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 877)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 901)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 4
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071048C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071049C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code M/A-M    (FC 80, block 884)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071049C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071050C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code M/A-M    (FC 80, block 590)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071050C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071051C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code MSDVDR   (FC 129, block 710)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071051C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071052C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code M/A-M    (FC 80, block 929)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 928)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071052C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071053C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code M/A-M    (FC 80, block 921)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 927)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071053C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071054C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 308)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071054C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071055C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code DO/L     (FC 45, block 538)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 539)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071055C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071056C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code DO/L     (FC 45, block 324)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071056C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071057C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code DO/L     (FC 45, block 801)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 800)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071057C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071058C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code M/A-M    (FC 80, block 764)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 838)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071058C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071059C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code MSDVDR   (FC 129, block 714)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071059C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071060C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 334)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071060C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071061C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code DO/L     (FC 45, block 540)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 541)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071061C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071062C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code DO/L     (FC 45, block 325)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071062C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071063C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code M/A-M    (FC 80, block 772)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 839)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071063C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071064C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code MSDVDR   (FC 129, block 718)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071064C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071065C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code M/A-M    (FC 80, block 780)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 840)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071065C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071066C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code MSDVDR   (FC 129, block 722)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071066C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071067C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code DO/L     (FC 45, block 337)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071067C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071068C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code DO/L     (FC 45, block 918)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071068C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071069C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code M/A-M    (FC 80, block 802)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071069C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071070C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 338)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071070C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071071C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code DO/L     (FC 45, block 542)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 543)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071071C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071072C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code MSDVDR   (FC 129, block 726)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071072C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071073C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code MSDVDR   (FC 129, block 734)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071073C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071074C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 351)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071074C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071075C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code MSDVDR   (FC 129, block 730)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071075C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071076C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code MSDVDR   (FC 129, block 738)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071076C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071077C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 357)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071077C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071078C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code M/A-M    (FC 80, block 578)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071078C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071079C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code MSDVDR   (FC 129, block 742)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071079C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071080C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code MSDVDR   (FC 129, block 746)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071080C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071081C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code MSDVDR   (FC 129, block 750)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071081C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071082C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 369)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071082C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071083C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 375)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071083C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071084C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code DO/L     (FC 45, block 387)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071084C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071085C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code DO/L     (FC 45, block 392)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071085C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071086C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code MSDVDR   (FC 129, block 754)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071086C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071087C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code MSDVDR   (FC 129, block 758)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 908)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071087C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071088C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code DO/L     (FC 45, block 393)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071088C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071089C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code M/A-M    (FC 80, block 584)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 432)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 865)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 251)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 4
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071089C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071091C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 405)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DDRIVE   (FC 123, block 413)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 404)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 419)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DDRIVE   (FC 123, block 425)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 431)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 6
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071091C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071092C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code MSDVDR   (FC 129, block 256)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071092C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071093C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 101)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071093C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071094C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 102)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 103)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 282)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 778)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 4
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071094C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071095C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 104)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 105)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071095C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071096C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 314)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 319)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 100)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 3
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071096C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071097C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 200)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071097C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071098C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 236)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 363)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 951)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 798)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 4
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071098C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 2071099C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 202)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\2071099C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710A0C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 204)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710A0C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710A1C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code M/A-M    (FC 80, block 59)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710A1C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710A2C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code M/A-M    (FC 80, block 67)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710A2C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710A3C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code DDRIVE   (FC 123, block 906)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710A3C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710A4C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code DDRIVE   (FC 123, block 904)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710A4C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710A5C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code DO/L     (FC 45, block 394)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710A5C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710A6C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 206)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710A6C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710A7C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code M/A-M    (FC 80, block 214)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 65)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 73)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 3
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710A7C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710A8C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code DO/L     (FC 45, block 406)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710A8C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710A9C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 208)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710A9C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710B0C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code M/A-M    (FC 80, block 222)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 212)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 220)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 3
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710B0C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710B2C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code DO/L     (FC 45, block 407)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710B2C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710B3C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 210)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710B3C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710B4C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code M/A-M    (FC 80, block 230)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 228)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 250)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 3
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710B4C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710B6C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code M/A-M    (FC 80, block 238)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 871)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 249)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 3
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710B6C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710B7C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 260)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 935)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 937)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 3
+
+Sheet stop - Thu Sep  2 16:31:29 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710B7C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710B8C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:29 2010
+
+
+* Function code AO/L     (FC 30, block 244)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DDRIVE   (FC 123, block 246)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710B8C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710B9C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code DO/L     (FC 45, block 510)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710B9C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710C0C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 252)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DDRIVE   (FC 123, block 254)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710C0C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710C2C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 262)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710C2C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710C4C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 97)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710C4C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710C5C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code M/A-M    (FC 80, block 704)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710C5C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710C7C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code M/A-M    (FC 80, block 944)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code REMSET   (FC 68, block 950)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 438)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 3
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710C7C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710D1C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 82)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 449)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710D1C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710D2C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 336)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710D2C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710D3C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 344)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710D3C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710D4C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 345)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710D4C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710D5C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 284)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 910)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710D5C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710G0C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 596)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710G0C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710G1C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 600)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710G1C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710G2C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 456)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710G2C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710G3C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 845)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 890)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710G3C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710G4C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 604)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710G4C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710G5C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 788)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710G5C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710G6C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 841)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 891)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710G6C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710G7C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 790)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710G7C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710G8C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 473)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710G8C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710G9C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 794)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710G9C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710H0C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 525)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DDRIVE   (FC 123, block 938)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 770)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 479)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 504)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 5
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710H0C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710H1C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code M/A-M    (FC 80, block 686)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710H1C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710H2C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 608)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710H2C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710H3C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 485)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DDRIVE   (FC 123, block 940)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 808)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 3
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710H3C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710H4C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 612)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710H4C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710H5C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 491)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710H5C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710H6C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 849)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 900)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710H6C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710H7C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 616)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710H7C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710H8C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 497)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710H8C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710H9C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 620)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710H9C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710I0C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 531)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710I0C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710I1C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code M/A-M    (FC 80, block 698)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710I1C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710I2C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 853)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710I2C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710I3C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 624)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710I3C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710I4C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 628)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710I4C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710I5C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 632)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710I5C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710I6C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code M/A-M    (FC 80, block 668)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710I6C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710I7C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 636)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710I7C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710I8C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 640)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710I8C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710I9C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 644)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710I9C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710J0C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 519)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710J0C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710J1C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 648)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710J1C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710J2C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 652)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710J2C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710J3C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 326)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710J3C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710J4C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 330)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710J4C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710J5C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 340)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710J5C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710J6C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 439)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710J6C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710J7C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 445)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710J7C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710J8C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 451)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710J8C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710J9C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 660)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710J9C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710K0C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 664)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710K0C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710K1C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 310)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710K1C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710K2C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 315)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710K2C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710K3C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code M/A-M    (FC 80, block 550)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710K3C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710K4C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 320)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710K4C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710K5C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code M/A-M    (FC 80, block 560)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710K5C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710K6C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 365)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710K6C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710K7C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 370)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710K7C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710K8C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 475)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710K8C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710K9C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 481)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710K9C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710L0C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 376)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710L0C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710L1C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 382)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710L1C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710L2C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 487)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710L2C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710L3C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 493)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710L3C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710L4C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 43)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710L4C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710L5C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 47)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710L5C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710L6C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 30)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 35)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 34)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 3
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710L6C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710L7C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 290)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 288)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710L7C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710L8C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710L8C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710L9C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 37)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 42)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 41)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 3
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710L9C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710M0C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 0
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710M0C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710M1C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 280)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 286)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710M1C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710M2C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 958)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710M2C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710M3C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 962)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710M3C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710M4C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 966)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710M4C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710M5C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 970)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710M5C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710M6C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 388)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710M6C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710M7C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 292)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710M7C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710M8C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 395)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710M8C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710M9C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 264)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710M9C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710N0C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 400)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710N0C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710N1C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 294)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710N1C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710N2C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 500)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710N2C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710N3C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 296)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710N3C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710N4C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 515)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710N4C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710N5C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 266)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710N5C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710N6C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 408)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710N6C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710N7C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 298)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710N7C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710N8C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 427)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710N8C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710N9C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 270)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710N9C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710O0C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code RCM      (FC 62, block 570)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710O0C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710O1C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 521)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710O1C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710O2C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 300)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710O2C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710O3C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 527)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710O3C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710O4C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 272)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710O4C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710O5C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 506)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710O5C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710O6C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 274)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710O6C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710O7C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code RCM      (FC 62, block 571)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710O7C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710O8C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 415)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710O8C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710O9C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 302)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 814)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 942)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 3
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710O9C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710P0C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 433)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710P0C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710P1C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 276)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710P1C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710P2C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 421)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710P2C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710P3C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 304)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 692)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 943)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 3
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710P3C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710P4C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 534)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710P4C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710P5C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 278)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710P5C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710P6C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 51)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710P6C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710S1C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 820)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710S1C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710S2C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 832)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710S2C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710S3C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 824)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710S3C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710S4C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 834)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710S4C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710S5C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 828)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710S5C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710S6C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 836)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710S6C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710T1C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 36)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710T1C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710T2C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 75)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710T2C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710T3C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code M/A-M    (FC 80, block 76)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710T3C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710T5C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 83)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710T5C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710T6C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 84)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710T6C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710T7C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code M/A-M    (FC 80, block 85)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710T7C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710T8C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code M/A-M    (FC 80, block 91)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710T8C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710T9C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 98)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 99)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 2
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710T9C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710Y0C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 920)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710Y0C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710Y2C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code DO/L     (FC 45, block 909)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710Y2C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710Y9C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 55)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710Y9C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710Z0C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code M/A-M    (FC 80, block 112)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 118)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 124)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 130)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 136)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 142)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code MSDVDR   (FC 129, block 148)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code MSDVDR   (FC 129, block 152)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code MSDVDR   (FC 129, block 156)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code MSDVDR   (FC 129, block 160)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code MSDVDR   (FC 129, block 164)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code MSDVDR   (FC 129, block 168)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code MSDVDR   (FC 129, block 176)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 180)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 192)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 193)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 444)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 455)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 461)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 462)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 106)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code MSDVDR   (FC 129, block 172)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 186)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code MSDVDR   (FC 129, block 566)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code MSDVDR   (FC 129, block 913)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 25
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710Z0C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710Z1C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 194)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 195)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 196)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 197)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 198)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 199)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 248)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 346)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 380)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 381)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 399)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 468)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 499)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 514)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 533)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 544)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code MSDVDR   (FC 129, block 656)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 674)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code MSDVDR   (FC 129, block 680)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 684)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 685)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 786)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 787)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 857)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 863)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 864)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 883)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code M/A-M    (FC 80, block 892)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 898)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 899)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 902)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code AO/L     (FC 30, block 903)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 511)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 512)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+* Function code DO/L     (FC 45, block 513)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 35
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710Z1C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710Z2C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 347)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710Z2C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710Z3C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 359)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710Z3C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710Z4C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code AO/L     (FC 30, block 306)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710Z4C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710Z5C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 457)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710Z5C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710Z6C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 464)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710Z6C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710Z7C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 469)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710Z7C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+**********************************
+* PROCESSING SHEET: 20710Z8C.CAD *
+**********************************
+
+Sheet start - Thu Sep  2 16:31:30 2010
+
+
+* Function code MSDVDR   (FC 129, block 353)
+WARNING (4013): No tag found in TDT for XRFC and it has no tagname attribute.
+-               Can not add new tag to TDT.
+
+Total Errors in sheet  : 0
+Total Warnings in sheet: 1
+
+Sheet stop - Thu Sep  2 16:31:30 2010
+ 
+CAD SHEET C:\EWS\PROJECT\L2\P7\M10\20710Z8C.CAD SYNCHRONIZED.
+------------------------------------------------------------------------------
+
+Total Errors in module   : 0
+Total Warnings in module : 327
+
+Module done at  Thu Sep  2 16:31:30 2010
+
+
+****** Module 20710 processed - SUCCESS
+
+=============================================================================
+
+TOTAL ERRORS          : 0
+TOTAL WARNINGS        : 327
+
+
+Stop time - Thu Sep  2 16:31:30 2010
+ (1 seconds)
+
+Total Entities scanned: 15548
+Total Function codes  : 1816
+Total NXRFC entities  : 1489
+Total XRFC entities   : 327
+
+Rate of processing = 15548.0  (entities/sec)
+                   =  1816.0  (FCs/sec)
+                   =   327.0  (XRFCs/sec)
+
+===== END OF CADSYNC.LOG =====

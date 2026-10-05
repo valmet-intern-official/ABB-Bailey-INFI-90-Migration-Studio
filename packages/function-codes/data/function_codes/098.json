@@ -1,0 +1,315 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 98,
+  "name": "Slave Select",
+  "description": "The slave select function code monitors a pair of redundant I/ O module function blocks. Specification S9 is a toggle input that switches from one module to the other when both modules are good. The block has two outputs, select (N) and interlock (N+1). The select output identifies the active module, and the interlock indicates when both modules are bad.",
+  "description_lines": [
+    "The slave select function code monitors a pair of redundant I/",
+    "O module function blocks. Specification S9 is a toggle input",
+    "that switches from one module to the other when both mod-",
+    "ules are good.",
+    "The block has two outputs, select (N) and interlock (N+1). The",
+    "select output identifies the active module, and the interlock",
+    "indicates when both modules are bad."
+  ],
+  "symbol": {
+    "title_raw": "S L S E L",
+    "title": "SLSEL",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9"
+    ],
+    "outputs": [
+      "N",
+      "N+1"
+    ],
+    "items": [
+      {
+        "x": 158.52,
+        "y": 595.74,
+        "s": "S L S E L"
+      },
+      {
+        "x": 191.16,
+        "y": 588.78,
+        "s": "(9 8 )"
+      },
+      {
+        "x": 133.32,
+        "y": 587.82,
+        "s": "S 1"
+      },
+      {
+        "x": 179.88,
+        "y": 584.46,
+        "s": "S L"
+      },
+      {
+        "x": 191.16,
+        "y": 579.84,
+        "s": "N"
+      },
+      {
+        "x": 133.32,
+        "y": 578.88,
+        "s": "S 2"
+      },
+      {
+        "x": 184.44,
+        "y": 575.52,
+        "s": "I"
+      },
+      {
+        "x": 191.16,
+        "y": 570.96,
+        "s": "N + 1"
+      },
+      {
+        "x": 133.32,
+        "y": 569.76,
+        "s": "S 3"
+      },
+      {
+        "x": 133.32,
+        "y": 560.88,
+        "s": "S 4"
+      },
+      {
+        "x": 133.32,
+        "y": 551.76,
+        "s": "S 5"
+      },
+      {
+        "x": 133.32,
+        "y": 542.88,
+        "s": "S 6"
+      },
+      {
+        "x": 133.32,
+        "y": 533.76,
+        "s": "S 7"
+      },
+      {
+        "x": 133.32,
+        "y": 524.82,
+        "s": "S 8"
+      },
+      {
+        "x": 133.32,
+        "y": 515.7,
+        "s": "S 9"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Module selected:; 0 = module 1; 1 = module 2 Initial value is zero. Value changes only if the active module is bad and the inactive module is good, or if both modules are good and the toggle input makes a 0 to 1 transition.",
+      "description_lines": [
+        "Module selected:",
+        "0 = module 1",
+        "1 = module 2",
+        "Initial value is zero. Value changes only if the active module",
+        "is bad and the inactive module is good, or if both modules",
+        "are good and the toggle input makes a 0 to 1 transition."
+      ],
+      "manual_page": 285
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Interlock:; 0 = one or both modules good; 1 = both modules bad",
+      "description_lines": [
+        "Interlock:",
+        "0 = one or both modules good",
+        "1 = both modules bad"
+      ],
+      "manual_page": 285
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of boolean status for module 1",
+      "description_lines": [
+        "Block address of boolean status for module 1"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 285
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of boolean status for module 1",
+      "description_lines": [
+        "Block address of boolean status for module 1"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 285
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O, boolean or real with quality, for module 1",
+      "description_lines": [
+        "Block address of I/O, boolean or real with quality, for",
+        "module 1"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 285
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O, boolean or real with quality, for module 1",
+      "description_lines": [
+        "Block address of I/O, boolean or real with quality, for",
+        "module 1"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 285
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of boolean status for module 2",
+      "description_lines": [
+        "Block address of boolean status for module 2"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 285
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of boolean status for module 2",
+      "description_lines": [
+        "Block address of boolean status for module 2"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 285
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O, boolean or real with quality, for module 2",
+      "description_lines": [
+        "Block address of I/O, boolean or real with quality, for",
+        "module 2"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 285
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of I/O, boolean or real with quality, for module 2",
+      "description_lines": [
+        "Block address of I/O, boolean or real with quality, for",
+        "module 2"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 285
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of toggle input (if both modules are good, a 0 to 1 transition on this input changes state of the select output)",
+      "description_lines": [
+        "Block address of toggle input (if both modules are",
+        "good, a 0 to 1 transition on this input changes state of",
+        "the select output)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 286
+    }
+  ],
+  "spec_count": 9,
+  "max_spec_number": 9,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 286,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 285,
+  "manual_pages": [
+    285,
+    286,
+    287,
+    288
+  ],
+  "manual_section": "Function Code 98 - Slave Select",
+  "diagnostics": []
+}

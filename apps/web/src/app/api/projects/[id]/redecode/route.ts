@@ -66,7 +66,7 @@ export async function POST(
     project.meta.id = id;
     project.meta.createdAt = existing.meta.createdAt;
     saveProject(project);
-    const { errors } = await writeArtifacts(project);
+    const { errors } = await writeArtifacts(project, { extractDir: path.join(workDir, "extract") });
 
     const decoded = project.cadSheets.filter(
       (s) => s.engineeringModel?.blocks[0]?.trace.sourceMethod === "CAD_NATIVE"

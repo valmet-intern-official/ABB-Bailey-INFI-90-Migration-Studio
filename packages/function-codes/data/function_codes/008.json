@@ -1,0 +1,164 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 8,
+  "name": "Rate Limiter",
+  "description": "The output of this block equals the input until the input rate of change exceeds the limit value (S3 and S4). When the rate of change of the input is greater than the limit, the output changes at the rate established by the limit until the output equals the input.",
+  "description_lines": [
+    "The output of this block equals the input until the input rate of",
+    "change exceeds the limit value (S3 and S4). When the rate of",
+    "change of the input is greater than the limit, the output",
+    "changes at the rate established by the limit until the output",
+    "equals the input."
+  ],
+  "symbol": {
+    "title_raw": null,
+    "title": null,
+    "inputs": [
+      "S1",
+      "S2"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 133.92,
+        "y": 592.14,
+        "s": "S 1"
+      },
+      {
+        "x": 191.88,
+        "y": 588.78,
+        "s": "(8 )"
+      },
+      {
+        "x": 133.92,
+        "y": 582.96,
+        "s": "S 2"
+      },
+      {
+        "x": 191.88,
+        "y": 579.84,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Output rate equals input rate until the input rate exceeds the rate limit. Then, the output rate equals the limit.",
+      "description_lines": [
+        "Output rate equals input rate until the input rate exceeds",
+        "the rate limit. Then, the output rate equals the limit."
+      ],
+      "manual_page": 71
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input",
+      "description_lines": [
+        "Block address of input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 71
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of track switch signal:; 0 = track; 1 = release",
+      "description_lines": [
+        "Block address of track switch signal:",
+        "0 = track",
+        "1 = release"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "track"
+        },
+        {
+          "value": "1",
+          "meaning": "release"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 71
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "2"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Increase rate limit (1/sec)",
+      "description_lines": [
+        "Increase rate limit (1/sec)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 71
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "2"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Decrease rate limit (1/sec)",
+      "description_lines": [
+        "Decrease rate limit (1/sec)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 71
+    }
+  ],
+  "spec_count": 4,
+  "max_spec_number": 4,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 71,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 71,
+  "manual_pages": [
+    71,
+    72
+  ],
+  "manual_section": "Function Code 8 - Rate Limiter",
+  "diagnostics": []
+}

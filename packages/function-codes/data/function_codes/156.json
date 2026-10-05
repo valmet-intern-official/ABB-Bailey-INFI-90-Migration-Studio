@@ -1,0 +1,771 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 156,
+  "name": "Advanced PID Controller",
+  "description": "The advanced PID controller function code implements a proportional integral derivative controller. Some of the advanced features of this function code above the other PID controllers (function codes 18 and 19) are: Direct use of a feedforward signal into a PID controller. Improved algorithm for derivative action calculation. Improved algorithm for incorporating an external reset or manual reset signal. Control output increase and decrease inhibit signals to constrain controllers in cascade configurations when limits are encountered. This prevents the primary loop from wind-up when the secondary loop control output saturates. Provides digital implementation of a noninteracting PID control algorithm or a classical (analog) series interacting PID controller. Provides a quick saturation recovery option. In addition to the advanced features, function code 156 has the normal features of a PID, including: Bumpless manual-to-auto transfer. Bumpless proportional band tuning. Anti-reset (integral) wind-up function. Reverse acting or direct acting direction switch. Set point modifier option allowing bumpless set point changes. NOTE: PID reset mode (S5) and PID gain (S6) of the segment control block (function code 82) do not affect the advanced PID controller. Maximum derivative gain for PID (S11) and external reset for PID (S12) of the executive block (function code 53) do not affect the advanced PID controller. These functions are controlled within the advanced PID controller. This feature allows PID controllers with and without external reset to be included in the same segment.",
+  "description_lines": [
+    "The advanced PID controller function code implements a pro-",
+    "portional integral derivative controller. Some of the advanced",
+    "features of this function code above the other PID controllers",
+    "(function codes 18 and 19) are:",
+    "Direct use of a feedforward signal into a PID controller.",
+    "Improved algorithm for derivative action calculation.",
+    "Improved algorithm for incorporating an external reset or",
+    "manual reset signal.",
+    "Control output increase and decrease inhibit signals to",
+    "constrain controllers in cascade configurations when limits",
+    "are encountered. This prevents the primary loop from",
+    "wind-up when the secondary loop control output satu-",
+    "rates.",
+    "Provides digital implementation of a noninteracting PID",
+    "control algorithm or a classical (analog) series interacting",
+    "PID controller.",
+    "Provides a quick saturation recovery option.",
+    "In addition to the advanced features, function code 156 has",
+    "the normal features of a PID, including:",
+    "Bumpless manual-to-auto transfer.",
+    "Bumpless proportional band tuning.",
+    "Anti-reset (integral) wind-up function.",
+    "Reverse acting or direct acting direction switch.",
+    "Set point modifier option allowing bumpless set point",
+    "changes.",
+    "NOTE: PID reset mode (S5) and PID gain (S6) of the segment control block",
+    "(function code 82) do not affect the advanced PID controller. Maximum deriva-",
+    "tive gain for PID (S11) and external reset for PID (S12) of the executive block",
+    "(function code 53) do not affect the advanced PID controller. These functions",
+    "are controlled within the advanced PID controller. This feature allows PID con-",
+    "trollers with and without external reset to be included in the same segment."
+  ],
+  "symbol": {
+    "title_raw": "A P ID",
+    "title": "APID",
+    "inputs": [
+      "S2",
+      "S1",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2"
+    ],
+    "items": [
+      {
+        "x": 160.44,
+        "y": 594.3,
+        "s": "A P ID"
+      },
+      {
+        "x": 190.38,
+        "y": 589.02,
+        "s": "(1 5 6 )"
+      },
+      {
+        "x": 132.6,
+        "y": 587.58,
+        "s": "S 2"
+      },
+      {
+        "x": 152.04,
+        "y": 583.98,
+        "s": "S P"
+      },
+      {
+        "x": 177.66,
+        "y": 583.5,
+        "s": "C O"
+      },
+      {
+        "x": 190.38,
+        "y": 580.14,
+        "s": "N"
+      },
+      {
+        "x": 132.6,
+        "y": 578.46,
+        "s": "S 1"
+      },
+      {
+        "x": 152.04,
+        "y": 575.1,
+        "s": "P V"
+      },
+      {
+        "x": 180.3,
+        "y": 574.62,
+        "s": "B I"
+      },
+      {
+        "x": 190.38,
+        "y": 571.26,
+        "s": "N + 1"
+      },
+      {
+        "x": 132.6,
+        "y": 569.34,
+        "s": "S 3"
+      },
+      {
+        "x": 152.04,
+        "y": 566.22,
+        "s": "T R"
+      },
+      {
+        "x": 178.14,
+        "y": 565.74,
+        "s": "B D"
+      },
+      {
+        "x": 190.38,
+        "y": 562.38,
+        "s": "N + 2"
+      },
+      {
+        "x": 132.6,
+        "y": 560.46,
+        "s": "S 4"
+      },
+      {
+        "x": 152.04,
+        "y": 557.1,
+        "s": "T F"
+      },
+      {
+        "x": 132.6,
+        "y": 551.34,
+        "s": "S 5"
+      },
+      {
+        "x": 152.04,
+        "y": 548.22,
+        "s": "R"
+      },
+      {
+        "x": 132.6,
+        "y": 542.46,
+        "s": "S 6"
+      },
+      {
+        "x": 152.04,
+        "y": 539.34,
+        "s": "F F"
+      },
+      {
+        "x": 132.6,
+        "y": 533.34,
+        "s": "S 7"
+      },
+      {
+        "x": 152.04,
+        "y": 530.22,
+        "s": "N /A"
+      },
+      {
+        "x": 132.6,
+        "y": 524.46,
+        "s": "S 8"
+      },
+      {
+        "x": 152.04,
+        "y": 521.34,
+        "s": "N /A"
+      },
+      {
+        "x": 132.6,
+        "y": 515.34,
+        "s": "S 9"
+      },
+      {
+        "x": 152.04,
+        "y": 512.46,
+        "s": "II"
+      },
+      {
+        "x": 132.6,
+        "y": 506.46,
+        "s": "S 1 0"
+      },
+      {
+        "x": 152.04,
+        "y": 503.34,
+        "s": "D I"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Control output with feedforward",
+      "description_lines": [
+        "Control output with feedforward"
+      ],
+      "manual_page": 564
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Block increase flag:; 0 = permit increase; 1 = inhibit increase",
+      "description_lines": [
+        "Block increase flag:",
+        "0 = permit increase",
+        "1 = inhibit increase"
+      ],
+      "manual_page": 564
+    },
+    {
+      "blk": "N+2",
+      "type": "B",
+      "description": "Block decrease flag:; 0 = permit decrease; 1 = inhibit decrease",
+      "description_lines": [
+        "Block decrease flag:",
+        "0 = permit decrease",
+        "1 = inhibit decrease"
+      ],
+      "manual_page": 564
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of process variable",
+      "description_lines": [
+        "Block address of process variable"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 564
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of set point",
+      "description_lines": [
+        "Block address of set point"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 564
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of track reference",
+      "description_lines": [
+        "Block address of track reference"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 564
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of track flag:; 0 = track; 1 = release",
+      "description_lines": [
+        "Block address of track flag:",
+        "0 = track",
+        "1 = release"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "track"
+        },
+        {
+          "value": "1",
+          "meaning": "release"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 564
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of external or manual reset",
+      "description_lines": [
+        "Block address of external or manual reset"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 564
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of feedforward signal",
+      "description_lines": [
+        "Block address of feedforward signal"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 564
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Spare real input",
+      "description_lines": [
+        "Spare real input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 564
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Spare boolean input",
+      "description_lines": [
+        "Spare boolean input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 564
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of increase inhibit:; 0 = normal; 1 = prevent increase",
+      "description_lines": [
+        "Block address of increase inhibit:",
+        "0 = normal",
+        "1 = prevent increase"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "normal"
+        },
+        {
+          "value": "1",
+          "meaning": "prevent increase"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 564
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of decrease inhibit:; 0 = normal; 1 = prevent decrease",
+      "description_lines": [
+        "Block address of decrease inhibit:",
+        "0 = normal",
+        "1 = prevent decrease"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "normal"
+        },
+        {
+          "value": "1",
+          "meaning": "prevent decrease"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 564
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Gain multiplier K",
+      "description_lines": [
+        "Gain multiplier",
+        "K"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 564
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Proportional gain K P",
+      "description_lines": [
+        "Proportional gain",
+        "K",
+        "P"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 564
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Integral reset resets/min. or manual reset time constant K × min. I",
+      "description_lines": [
+        "Integral reset resets/min. or manual reset time",
+        "constant K × min.",
+        "I"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 564
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Derivative rate action K × min. D",
+      "description_lines": [
+        "Derivative rate action",
+        "K",
+        "×",
+        "min.",
+        "D"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 564
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "10.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Derivative lag constant K (typically = 10) A",
+      "description_lines": [
+        "Derivative lag constant",
+        "K",
+        "(typically = 10)",
+        "A"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 564
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "105.000",
+      "type": "R",
+      "range": "Full",
+      "description": "High output limit",
+      "description_lines": [
+        "High output limit"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 564
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "-5.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Low output limit",
+      "description_lines": [
+        "Low output limit"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 564
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "10",
+      "type": "I",
+      "range": "00 - 03 or 10 - 13 (Note 2)",
+      "description": "Algorithm Version:; 0X=original; 1X=new Type:; X0 = classical; X1 = noninteracting; X2 = classical with external reset; X3 = manual reset noninteracting",
+      "description_lines": [
+        "Algorithm",
+        "Version:",
+        "0X=original",
+        "1X=new",
+        "Type:",
+        "X0 = classical",
+        "X1 = noninteracting",
+        "X2 = classical with external reset",
+        "X3 = manual reset noninteracting"
+      ],
+      "enumerations": [
+        {
+          "value": "0X",
+          "meaning": "original"
+        },
+        {
+          "value": "1X",
+          "meaning": "new"
+        },
+        {
+          "value": "X0",
+          "meaning": "classical"
+        },
+        {
+          "value": "X1",
+          "meaning": "noninteracting"
+        },
+        {
+          "value": "X2",
+          "meaning": "classical with external reset"
+        },
+        {
+          "value": "X3",
+          "meaning": "manual reset noninteracting"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 565
+    },
+    {
+      "number": 19,
+      "label": "S19",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "3"
+      ],
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Integral limit type:; 0 = quick saturation recovery; 1 = conventional saturation recovery",
+      "description_lines": [
+        "Integral limit type:",
+        "0 = quick saturation recovery",
+        "1 = conventional saturation recovery"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "quick saturation recovery"
+        },
+        {
+          "value": "1",
+          "meaning": "conventional saturation recovery"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 565
+    },
+    {
+      "number": 20,
+      "label": "S20",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Set point modifier:; 0 = normal; 1 = integral only on set point change",
+      "description_lines": [
+        "Set point modifier:",
+        "0 = normal",
+        "1 = integral only on set point change"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "normal"
+        },
+        {
+          "value": "1",
+          "meaning": "integral only on set point change"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 565
+    },
+    {
+      "number": 21,
+      "label": "S21",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Direction switch:; 0 = reverse mode error = SP – PV; 1 = direct mode error = PV – SP",
+      "description_lines": [
+        "Direction switch:",
+        "0 = reverse mode error = SP – PV",
+        "1 = direct mode error = PV – SP"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "reverse mode error = SP – PV"
+        },
+        {
+          "value": "1",
+          "meaning": "direct mode error = PV – SP"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 565
+    },
+    {
+      "number": 22,
+      "label": "S22",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare real parameter",
+      "description_lines": [
+        "Spare real parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 565
+    },
+    {
+      "number": 23,
+      "label": "S23",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Spare integer parameter",
+      "description_lines": [
+        "Spare integer parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 565
+    }
+  ],
+  "spec_count": 23,
+  "max_spec_number": 23,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 565,
+      "context": "specifications"
+    },
+    {
+      "label": "2.",
+      "text": "Input values other than those defined may result in unpredictable APID behavior.",
+      "manual_page": 565,
+      "context": "specifications"
+    },
+    {
+      "label": "3.",
+      "text": "The new version has been revised to improve the internal behavior of the algorithm. The original version is retained for backward compatibility of old configurations.",
+      "manual_page": 565,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 563,
+  "manual_pages": [
+    563,
+    564,
+    565,
+    566,
+    567,
+    568,
+    569,
+    570,
+    571,
+    572,
+    573,
+    574,
+    575,
+    576,
+    577,
+    578,
+    579,
+    580,
+    581
+  ],
+  "manual_section": "Function Code 156 - Advanced PID Controller",
+  "diagnostics": []
+}

@@ -1,0 +1,147 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 42,
+  "name": "Digital Input/Loop",
+  "description": "The digital input/loop function code acquires digital signals via the communication highway in the same loop. The input points are located in other Harmony control units (HCUs) and must have an exception report defined (e.g., digital exception report, function code 45). Updates are on an exception report basis. Exception report intervals are specified in the executive block or the segment control block. Use function code 122 for communication to other loops. To insure that the module successfully acquires a signal from another node, the digital signal generates a point quality flag. To test the quality of the signal, include a function code 31 in the configuration. The quality of the point cannot be determined by any other type of block. The output of the test quality block can be used as an input to other digital processing blocks to provide signal quality information. Refer to Appendix H for a definition of point quality. Use function code 69 to test the alarm associated with the analog input/loop function block.",
+  "description_lines": [
+    "The digital input/loop function code acquires digital signals",
+    "via the communication highway in the same loop. The input",
+    "points are located in other Harmony control units (HCUs) and",
+    "must have an exception report defined (e.g., digital exception",
+    "report, function code 45). Updates are on an exception report",
+    "basis. Exception report intervals are specified in the executive",
+    "block or the segment control block. Use function code 122 for",
+    "communication to other loops.",
+    "To insure that the module successfully acquires a signal from",
+    "another node, the digital signal generates a point quality flag.",
+    "To test the quality of the signal, include a function code 31 in",
+    "the configuration. The quality of the point cannot be deter-",
+    "mined by any other type of block. The output of the test quality",
+    "block can be used as an input to other digital processing",
+    "blocks to provide signal quality information. Refer to",
+    "Appendix H for a definition of point quality.",
+    "Use function code 69 to test the alarm associated with the",
+    "analog input/loop function block."
+  ],
+  "symbol": {
+    "title_raw": "D I/L",
+    "title": "DI/L",
+    "inputs": [],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 150.72,
+        "y": 597.72,
+        "s": "D I/L"
+      },
+      {
+        "x": 193.2,
+        "y": 590.52,
+        "s": "(4 2 )"
+      },
+      {
+        "x": 193.2,
+        "y": 582.6,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Value of the function block output and quality",
+      "description_lines": [
+        "Value of the function block output and quality"
+      ],
+      "manual_page": 141
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 31",
+      "description": "Requested module address",
+      "description_lines": [
+        "Requested module address"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 141
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Requested block address",
+      "description_lines": [
+        "Requested block address"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 141
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "1-250",
+      "description": "Requested node address",
+      "description_lines": [
+        "Requested node address"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 141
+    }
+  ],
+  "spec_count": 3,
+  "max_spec_number": 3,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Function code 42 cannot connect to a function code 45 in a different Cnet loop. Use function code 122 to connect with another loop.",
+      "manual_page": 141,
+      "context": "outputs"
+    },
+    {
+      "label": "2.",
+      "text": "If a module utilizes an imported digital value from the loop in several instances, the function blocks that utilize this digital value must be connected to one digital input/loop function block that handles the importation of this point. It is not possible to import exception reports from a particular address to more than one destination digital input/loop function block within a single module configuration.",
+      "manual_page": 141,
+      "context": "outputs"
+    },
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 141,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 141,
+  "manual_pages": [
+    141,
+    142
+  ],
+  "manual_section": "Function Code 42 - Digital Input/Loop",
+  "diagnostics": []
+}

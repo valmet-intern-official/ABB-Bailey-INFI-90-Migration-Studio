@@ -1,0 +1,306 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 62,
+  "name": "Remote Control Memory",
+  "description": "The remote control memory (RCM) function code is a set/reset flip-flop memory accessible by a console, control station, Batch 90 or computer via a network interface unit (NIU). The output is determined from the inputs S, R and P as shown in Table 62-1 and Figure 62-1.",
+  "description_lines": [
+    "The remote control memory (RCM) function code is a set/reset",
+    "flip-flop memory accessible by a console, control station,",
+    "Batch 90 or computer via a network interface unit (NIU).",
+    "The output is determined from the inputs S, R and P as shown",
+    "in Table 62-1 and Figure 62-1."
+  ],
+  "symbol": {
+    "title_raw": "R C M",
+    "title": "RCM",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 161.46,
+        "y": 595.5,
+        "s": "R C M"
+      },
+      {
+        "x": 191.76,
+        "y": 593.58,
+        "s": "(6 2 )"
+      },
+      {
+        "x": 133.86,
+        "y": 592.38,
+        "s": "S 1"
+      },
+      {
+        "x": 153.06,
+        "y": 589.26,
+        "s": "S"
+      },
+      {
+        "x": 191.76,
+        "y": 584.7,
+        "s": "N"
+      },
+      {
+        "x": 133.86,
+        "y": 583.26,
+        "s": "S 2"
+      },
+      {
+        "x": 153.06,
+        "y": 580.38,
+        "s": "P"
+      },
+      {
+        "x": 133.86,
+        "y": 574.38,
+        "s": "S 3"
+      },
+      {
+        "x": 153.06,
+        "y": 571.26,
+        "s": "R"
+      },
+      {
+        "x": 133.86,
+        "y": 565.26,
+        "s": "S 4"
+      },
+      {
+        "x": 153.06,
+        "y": 562.38,
+        "s": "O"
+      },
+      {
+        "x": 133.86,
+        "y": 556.38,
+        "s": "S 5"
+      },
+      {
+        "x": 153.06,
+        "y": 553.5,
+        "s": "I"
+      },
+      {
+        "x": 133.86,
+        "y": 547.26,
+        "s": "S 6"
+      },
+      {
+        "x": 153.06,
+        "y": 544.38,
+        "s": "F"
+      },
+      {
+        "x": 133.86,
+        "y": 538.14,
+        "s": "S 7"
+      },
+      {
+        "x": 153.06,
+        "y": 535.5,
+        "s": "A"
+      }
+    ]
+  },
+  "outputs": [],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of local set signal",
+      "description_lines": [
+        "Block address of local set signal"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 181
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of set permissive signal:; 0 = no permissive; 1 = permissive",
+      "description_lines": [
+        "Block address of set permissive signal:",
+        "0 = no permissive",
+        "1 = permissive"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no permissive"
+        },
+        {
+          "value": "1",
+          "meaning": "permissive"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 181
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of local reset signal",
+      "description_lines": [
+        "Block address of local reset signal"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 181
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of override signal:; 0 = reset override; 1 = set override",
+      "description_lines": [
+        "Block address of override signal:",
+        "0 = reset override",
+        "1 = set override"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "reset override"
+        },
+        {
+          "value": "1",
+          "meaning": "set override"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 181
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of initialize signal:; 0 = reset; 1 = set",
+      "description_lines": [
+        "Block address of initialize signal:",
+        "0 = reset",
+        "1 = set"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "reset"
+        },
+        {
+          "value": "1",
+          "meaning": "set"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 181
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of feedback signal",
+      "description_lines": [
+        "Block address of feedback signal"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 181
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of alarm signal",
+      "description_lines": [
+        "Block address of alarm signal"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 181
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 255",
+      "description": "Type parameter",
+      "description_lines": [
+        "Type parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 181
+    }
+  ],
+  "spec_count": 8,
+  "max_spec_number": 8,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 181,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 181,
+  "manual_pages": [
+    181,
+    182,
+    183,
+    184,
+    185
+  ],
+  "manual_section": "Function Code 62 - Remote Control Memory",
+  "diagnostics": []
+}

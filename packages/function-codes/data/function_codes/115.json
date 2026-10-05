@@ -1,0 +1,233 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 115,
+  "name": "BCD Output",
+  "description": "This block converts a real input to boolean outputs by converting the input to binary coded decimal (BCD) format. The input can be scaled with a gain factor, then truncated to an integer value before the BCD conversion occurs. After conversion, the outputs write to an IMDSO14 or IMDSO15 module.",
+  "description_lines": [
+    "This block converts a real input to boolean outputs by convert-",
+    "ing the input to binary coded decimal (BCD) format. The input",
+    "can be scaled with a gain factor, then truncated to an integer",
+    "value before the BCD conversion occurs. After conversion, the",
+    "outputs write to an IMDSO14 or IMDSO15 module."
+  ],
+  "symbol": {
+    "title_raw": "B C D O U T",
+    "title": "BCDOUT",
+    "inputs": [
+      "S4"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 153.84,
+        "y": 594.72,
+        "s": "B C D O U T"
+      },
+      {
+        "x": 191.34,
+        "y": 588.9,
+        "s": "(1 1 5 )"
+      },
+      {
+        "x": 132.18,
+        "y": 587.46,
+        "s": "S 4"
+      },
+      {
+        "x": 178.62,
+        "y": 584.34,
+        "s": "S T"
+      },
+      {
+        "x": 191.34,
+        "y": 579.96,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "I/O module status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "I/O module status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 333
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 63",
+      "description": "Expander bus I/O module address of I/O module receiving outputs of function code 115",
+      "description_lines": [
+        "Expander bus I/O module address of I/O module receiving",
+        "outputs of function code 115"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 333
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 120",
+      "description": "I/O module definition: hold + type + group Hold:; 0XX = go to default values on loss of control module; 1XX = hold I/O module outputs on loss of control module Type:; X0X = IMDSO15 module; X1X = IMDSO14 module Group:; XX0 = outputs 0 to 7 (group A); XX1 = outputs 8 to 15 (group B)",
+      "description_lines": [
+        "I/O module definition:",
+        "hold + type + group",
+        "Hold:",
+        "0XX = go to default values on loss of control module",
+        "1XX = hold I/O module outputs on loss of control module",
+        "Type:",
+        "X0X = IMDSO15 module",
+        "X1X = IMDSO14 module",
+        "Group:",
+        "XX0 = outputs 0 to 7 (group A)",
+        "XX1 = outputs 8 to 15 (group B)"
+      ],
+      "enumerations": [
+        {
+          "value": "0XX",
+          "meaning": "go to default values on loss of control module"
+        },
+        {
+          "value": "1XX",
+          "meaning": "hold I/O module outputs on loss of control module"
+        },
+        {
+          "value": "X0X",
+          "meaning": "IMDSO15 module"
+        },
+        {
+          "value": "X1X",
+          "meaning": "IMDSO14 module"
+        },
+        {
+          "value": "XX0",
+          "meaning": "outputs 0 to 7 (group A)"
+        },
+        {
+          "value": "XX1",
+          "meaning": "outputs 8 to 15 (group B)"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 333
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Module action on I/O module failure:; 0 = trip control module; 1 = continue operation",
+      "description_lines": [
+        "Module action on I/O module failure:",
+        "0 = trip control module",
+        "1 = continue operation"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "trip control module"
+        },
+        {
+          "value": "1",
+          "meaning": "continue operation"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 333
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of real value to be converted to boolean",
+      "description_lines": [
+        "Block address of real value to be converted to boolean"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 333
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Gain multiplier",
+      "description_lines": [
+        "Gain multiplier"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 333
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "2 or 4",
+      "description": "Number of BCD digits to process",
+      "description_lines": [
+        "Number of BCD digits to process"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 333
+    }
+  ],
+  "spec_count": 6,
+  "max_spec_number": 6,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 333,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 333,
+  "manual_pages": [
+    333,
+    334,
+    335,
+    336
+  ],
+  "manual_section": "Function Code 115 - BCD Output",
+  "diagnostics": []
+}

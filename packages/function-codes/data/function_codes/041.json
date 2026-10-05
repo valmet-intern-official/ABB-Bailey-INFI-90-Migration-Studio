@@ -1,0 +1,128 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 41,
+  "name": "Digital Input (Periodic Sample)",
+  "description": "In the HAC controller, the digital input (periodic sample) function code acquires digital signals via the Controlway/module bus from other master modules. The input points must be in the same process control unit (PCU) node. The signal is updated at periodic intervals depending on the periodic I/O sampling period that is specified in the segment control block for the Harmony controllers. The HAC controller uses FC 45 to acquire a digital input signal from another HAC controller via the peer-to-peer network. Specification S8 in FC 57 is used to specify the maximum number of destination nodes the HAC controller may communicate with. The signal is updated at periodic intervals depending on the periodic I/O sampling period that is specified in the segment control block for the Harmony controllers. To insure that the signal is successfully acquired from the source node/module, the digital signal generates a point quality flag. To test the quality of the signal, include a function code 31 in the configuration. The output of the test quality block can be used as an input to other digital processing blocks to provide signal quality information. Refer to Appendix H for a definition of point quality. NOTE: A block defined as an analog input reads a value for any existing analog output from a function block configured in the source node/module. No additional configuration in the source node/module is required.",
+  "description_lines": [
+    "In the HAC controller, the digital input (periodic sample) func-",
+    "tion code acquires digital signals via the Controlway/module",
+    "bus from other master modules. The input points must be in",
+    "the same process control unit (PCU) node. The signal is",
+    "updated at periodic intervals depending on the periodic I/O",
+    "sampling period that is specified in the segment control block",
+    "for the Harmony controllers.",
+    "The HAC controller uses FC 45 to acquire a digital input signal",
+    "from another HAC controller via the peer-to-peer network.",
+    "Specification S8 in FC 57 is used to specify the maximum",
+    "number of destination nodes the HAC controller may commu-",
+    "nicate with. The signal is updated at periodic intervals depend-",
+    "ing on the periodic I/O sampling period that is specified in the",
+    "segment control block for the Harmony controllers.",
+    "To insure that the signal is successfully acquired from the",
+    "source node/module, the digital signal generates a point qual-",
+    "ity flag. To test the quality of the signal, include a function",
+    "code 31 in the configuration. The output of the test quality",
+    "block can be used as an input to other digital processing",
+    "blocks to provide signal quality information. Refer to",
+    "Appendix H for a definition of point quality.",
+    "NOTE: A block defined as an analog input reads a value for any existing ana-",
+    "log output from a function block configured in the source node/module. No",
+    "additional configuration in the source node/module is required."
+  ],
+  "symbol": {
+    "title_raw": "D I/B",
+    "title": "DI/B",
+    "inputs": [],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 150.78,
+        "y": 597.12,
+        "s": "D I/B"
+      },
+      {
+        "x": 193.38,
+        "y": 589.92,
+        "s": "(4 1 )"
+      },
+      {
+        "x": 193.38,
+        "y": 582.12,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Output value and quality. Quality:; 0 = good; 1 = bad",
+      "description_lines": [
+        "Output value and quality. Quality:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 137
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 31",
+      "description": "Source module address",
+      "description_lines": [
+        "Source module address"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 138
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Source block address",
+      "description_lines": [
+        "Source block address"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 138
+    }
+  ],
+  "spec_count": 2,
+  "max_spec_number": 2,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 138,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 137,
+  "manual_pages": [
+    137,
+    138,
+    139
+  ],
+  "manual_section": "Function Code 41 - Digital Input (Periodic Sample)",
+  "diagnostics": []
+}

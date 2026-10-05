@@ -1,0 +1,127 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 93,
+  "name": "BASIC Real Output",
+  "description": "The BASIC real output function code provides a means of transmitting real data values from the BASIC, Batch 90 and C Language programs to other function blocks. There are no specifications for this block. The BOUT command in the program defines the four outputs. Figure 93-1 shows a sample BASIC configuration. Refer to the MFC BASIC Programming Language Reference for instructions on programming with BASIC. NOTE: This function code is supported only on the BRC-100 and the IMMFP11/12 controllers.",
+  "description_lines": [
+    "The BASIC real output function code provides a means of",
+    "transmitting real data values from the BASIC, Batch 90 and",
+    "C Language programs to other function blocks. There are no",
+    "specifications for this block. The BOUT command in the pro-",
+    "gram defines the four outputs. Figure 93-1 shows a sample",
+    "BASIC configuration. Refer to the MFC BASIC Programming",
+    "Language Reference for instructions on programming with",
+    "BASIC.",
+    "NOTE: This function code is supported only on the BRC-100 and the",
+    "IMMFP11/12 controllers."
+  ],
+  "symbol": {
+    "title_raw": "B A S R O",
+    "title": "BASRO",
+    "inputs": [],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3"
+    ],
+    "items": [
+      {
+        "x": 156.48,
+        "y": 594.54,
+        "s": "B A S R O"
+      },
+      {
+        "x": 190.14,
+        "y": 589.02,
+        "s": "(9 3 )"
+      },
+      {
+        "x": 190.14,
+        "y": 580.14,
+        "s": "N"
+      },
+      {
+        "x": 190.14,
+        "y": 571.26,
+        "s": "N + 1"
+      },
+      {
+        "x": 190.14,
+        "y": 562.38,
+        "s": "N + 2"
+      },
+      {
+        "x": 190.14,
+        "y": 553.5,
+        "s": "N + 3"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Program command BOUT sets the output value",
+      "description_lines": [
+        "Program command BOUT sets the output value"
+      ],
+      "manual_page": 269
+    },
+    {
+      "blk": "N+1",
+      "type": "R",
+      "description": "",
+      "description_lines": [],
+      "manual_page": 269
+    },
+    {
+      "blk": "N+2",
+      "type": "R",
+      "description": "",
+      "description_lines": [],
+      "manual_page": 269
+    },
+    {
+      "blk": "N+3",
+      "type": "R",
+      "description": "",
+      "description_lines": [],
+      "manual_page": 269
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Not used",
+      "description_lines": [
+        "Not used"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 269
+    }
+  ],
+  "spec_count": 1,
+  "max_spec_number": 1,
+  "notes": [],
+  "manual_page": 269,
+  "manual_pages": [
+    269,
+    270
+  ],
+  "manual_section": "Function Code 93 - BASIC Real Output",
+  "diagnostics": []
+}

@@ -1,0 +1,354 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 123,
+  "name": "Device Driver",
+  "description": "Function code 123 interfaces the control system to a field device. It provides control and accepts feedback from its assigned control device. It normally receives a control input from the sequencing logic and sets the control output equal to the control input when the block is in auto. The control output then goes to the associated device. The device driver also accepts up to two feedback inputs from the field that define the actual status of the device. The control output status represents the status of the device, determined from the feedback inputs as good, bad, or waiting. A waiting output is generated when the feedback waiting time has not elapsed after a state change. The device driver generates an exception report indicating output and alarm when: The device driver output changes or The device driver generates an alarm or The T for exception reporting is exceeded. Device drivers can be used in batch and continuous control systems to control and observe a device. Any boolean signal can drive a device driver. It also can be operated from a console, or an output can be unconditionally set with interlock logic.",
+  "description_lines": [
+    "Function code 123 interfaces the control system to a field",
+    "device. It provides control and accepts feedback from its",
+    "assigned control device. It normally receives a control input",
+    "from the sequencing logic and sets the control output equal to",
+    "the control input when the block is in auto. The control output",
+    "then goes to the associated device.",
+    "The device driver also accepts up to two feedback inputs from",
+    "the field that define the actual status of the device. The control",
+    "output status represents the status of the device, determined",
+    "from the feedback inputs as good, bad, or waiting. A waiting",
+    "output is generated when the feedback waiting time has not",
+    "elapsed after a state change. The device driver generates an",
+    "exception report indicating output and alarm when:",
+    "The device driver output changes or",
+    "The device driver generates an alarm or",
+    "The T for exception reporting is exceeded.",
+    "Device drivers can be used in batch and continuous control",
+    "systems to control and observe a device. Any boolean signal",
+    "can drive a device driver. It also can be operated from a con-",
+    "sole, or an output can be unconditionally set with interlock",
+    "logic."
+  ],
+  "symbol": {
+    "title_raw": "D D R IV E",
+    "title": "DDRIVE",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S5",
+      "S6"
+    ],
+    "outputs": [
+      "N",
+      "N+1"
+    ],
+    "items": [
+      {
+        "x": 156.18,
+        "y": 594.78,
+        "s": "D D R IV E"
+      },
+      {
+        "x": 191.94,
+        "y": 588.72,
+        "s": "(1 2 3 )"
+      },
+      {
+        "x": 133.2,
+        "y": 587.52,
+        "s": "S 1"
+      },
+      {
+        "x": 182.1,
+        "y": 584.16,
+        "s": "O"
+      },
+      {
+        "x": 153.06,
+        "y": 583.92,
+        "s": "C I"
+      },
+      {
+        "x": 191.94,
+        "y": 579.84,
+        "s": "N"
+      },
+      {
+        "x": 133.2,
+        "y": 578.4,
+        "s": "S 2"
+      },
+      {
+        "x": 153.06,
+        "y": 575.04,
+        "s": "F B 1"
+      },
+      {
+        "x": 179.7,
+        "y": 575.04,
+        "s": "S T"
+      },
+      {
+        "x": 191.94,
+        "y": 570.9,
+        "s": "N + 1"
+      },
+      {
+        "x": 133.2,
+        "y": 569.46,
+        "s": "S 3"
+      },
+      {
+        "x": 153.06,
+        "y": 565.86,
+        "s": "F B 2"
+      },
+      {
+        "x": 133.2,
+        "y": 560.34,
+        "s": "S 5"
+      },
+      {
+        "x": 153.06,
+        "y": 556.98,
+        "s": "O P"
+      },
+      {
+        "x": 133.2,
+        "y": 551.4,
+        "s": "S 6"
+      },
+      {
+        "x": 153.06,
+        "y": 548.04,
+        "s": "O S"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Control output",
+      "description_lines": [
+        "Control output"
+      ],
+      "manual_page": 361
+    },
+    {
+      "blk": "N+1",
+      "type": "R",
+      "description": "Control output status:; 0.0 = good; 1.0 = bad; 2.0 = waiting",
+      "description_lines": [
+        "Control output status:",
+        "0.0 = good",
+        "1.0 = bad",
+        "2.0 = waiting"
+      ],
+      "manual_page": 361
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control input",
+      "description_lines": [
+        "Block address of control input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 361
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of feedback input 1",
+      "description_lines": [
+        "Block address of feedback input 1"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 361
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of feedback input 2",
+      "description_lines": [
+        "Block address of feedback input 2"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 361
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 101",
+      "description": "Control output status override signal",
+      "description_lines": [
+        "Control output status override signal"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 362
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of output override permissive",
+      "description_lines": [
+        "Block address of output override permissive"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 362
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of override output",
+      "description_lines": [
+        "Block address of override output"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 362
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 11",
+      "description": "Feedback status mask output = 0",
+      "description_lines": [
+        "Feedback status mask output = 0"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 362
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 11",
+      "description": "Feedback status mask output = 1",
+      "description_lines": [
+        "Feedback status mask output = 1"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 362
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Feedback waiting time (secs)",
+      "description_lines": [
+        "Feedback waiting time (secs)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 362
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 255",
+      "description": "Device driver display type",
+      "description_lines": [
+        "Device driver display type"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 362
+    }
+  ],
+  "spec_count": 10,
+  "max_spec_number": 10,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 362,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 361,
+  "manual_pages": [
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382
+  ],
+  "manual_section": "Function Code 123 - Device Driver",
+  "diagnostics": []
+}

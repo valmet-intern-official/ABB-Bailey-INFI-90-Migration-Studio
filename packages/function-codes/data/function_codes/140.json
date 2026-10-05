@@ -1,0 +1,328 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 140,
+  "name": "Restore",
+  "description": "The restore function code saves and restores critical block values (e.g., totalizers, counters, timers) to and from nonvolatile random access memory (NVRAM). Tables 140-2 and 140-3 show NVRAM and checkpoint utilization. During normal execution after startup, the internal and output block data referenced by this block goes to NVRAM. After a module power loss or recovery, the block referenced by this function block restores to the last saved state. Saving the block data can be disabled by either boolean input (S2 and S3). Both inputs must be logic 1 for the save to occur. Data restore can be selected upon power restore, mode changes to execute, or both. If the module is offline longer than the maximum downtime, an external timer can be used to trip a digital input on an IMCIS12, IMCIS22, IMQRS12, IMQRS22, IMDSI12, IMDSI13, IMDSI14, IMDSI15 or an IMDSI22 module to prevent a restore after the timer expires. The expired logic state for the digital input is configurable. The data restores to the saved value before the first execution cycle of the configuration. The restore function block must be located at a block number greater than the function block being restored (S1). When restoring a multiple output block (e.g., M/A station function code 80), the lowest output number (N) of that block must be specified by S1.",
+  "description_lines": [
+    "The restore function code saves and restores critical block val-",
+    "ues (e.g., totalizers, counters, timers) to and from nonvolatile",
+    "random access memory (NVRAM). Tables 140-2 and 140-3",
+    "show NVRAM and checkpoint utilization. During normal exe-",
+    "cution after startup, the internal and output block data refer-",
+    "enced by this block goes to NVRAM. After a module power loss",
+    "or recovery, the block referenced by this function block",
+    "restores to the last saved state. Saving the block data can be",
+    "disabled by either boolean input (S2 and S3). Both inputs",
+    "must be logic 1 for the save to occur.",
+    "Data restore can be selected upon power restore, mode",
+    "changes to execute, or both. If the module is offline longer",
+    "than the maximum downtime, an external timer can be used",
+    "to trip a digital input on an IMCIS12, IMCIS22, IMQRS12,",
+    "IMQRS22, IMDSI12, IMDSI13, IMDSI14, IMDSI15 or an",
+    "IMDSI22 module to prevent a restore after the timer expires.",
+    "The expired logic state for the digital input is configurable. The",
+    "data restores to the saved value before the first execution cycle",
+    "of the configuration. The restore function block must be",
+    "located at a block number greater than the function block",
+    "being restored (S1).",
+    "When restoring a multiple output block (e.g., M/A station",
+    "function code 80), the lowest output number (N) of that block",
+    "must be specified by S1."
+  ],
+  "symbol": {
+    "title_raw": "R E S T R",
+    "title": "RESTR",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 158.28,
+        "y": 593.94,
+        "s": "R E S T R"
+      },
+      {
+        "x": 134.76,
+        "y": 590.58,
+        "s": "S 1"
+      },
+      {
+        "x": 153.72,
+        "y": 587.46,
+        "s": "R"
+      },
+      {
+        "x": 192.54,
+        "y": 582.9,
+        "s": "(1 4 0 )"
+      },
+      {
+        "x": 134.76,
+        "y": 581.46,
+        "s": "S 2"
+      },
+      {
+        "x": 153.72,
+        "y": 578.34,
+        "s": "S F"
+      },
+      {
+        "x": 192.54,
+        "y": 574.02,
+        "s": "N"
+      },
+      {
+        "x": 134.76,
+        "y": 572.58,
+        "s": "S 3"
+      },
+      {
+        "x": 153.72,
+        "y": 569.46,
+        "s": "P S F"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "No meaning, N must be greater than S1",
+      "description_lines": [
+        "No meaning, N must be greater than S1"
+      ],
+      "manual_page": 471
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address to be restored",
+      "description_lines": [
+        "Block address to be restored"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 471
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of save flag:; 0 = no save; 1 = save data to NVRAM if <S3> = 1",
+      "description_lines": [
+        "Block address of save flag:",
+        "0 = no save",
+        "1 = save data to NVRAM if <S3> = 1"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no save"
+        },
+        {
+          "value": "1",
+          "meaning": "save data to NVRAM if <S3> = 1"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 471
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of save permissive:; 0 = disabled; 1 = enabled",
+      "description_lines": [
+        "Block address of save permissive:",
+        "0 = disabled",
+        "1 = enabled"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "disabled"
+        },
+        {
+          "value": "1",
+          "meaning": "enabled"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 472
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "00, 01, 10 or 11",
+      "description": "Restore condition:; X0 = restore on power up; X1 = no restore on power up; 0X = restore on mode changes; 1X = no restore on mode changes",
+      "description_lines": [
+        "Restore condition:",
+        "X0 = restore on power up",
+        "X1 = no restore on power up",
+        "0X = restore on mode changes",
+        "1X = no restore on mode changes"
+      ],
+      "enumerations": [
+        {
+          "value": "X0",
+          "meaning": "restore on power up"
+        },
+        {
+          "value": "X1",
+          "meaning": "no restore on power up"
+        },
+        {
+          "value": "0X",
+          "meaning": "restore on mode changes"
+        },
+        {
+          "value": "1X",
+          "meaning": "no restore on mode changes"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 472
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 63",
+      "description": "I/O module address of timer input",
+      "description_lines": [
+        "I/O module address of timer input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 472
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 123",
+      "description": "Point number of timer input: unused = 000 DSI = X0Z = Group A (Z = 1 - 8) = X1Z = Group B (Z = 1 - 8) CIS = X2Z (Z = 1 - 3) Expire logic state: 0YZ = logic 0 1YZ = logic 1",
+      "description_lines": [
+        "Point number of timer input:",
+        "unused = 000",
+        "DSI = X0Z = Group A (Z = 1 - 8)",
+        "= X1Z = Group B (Z = 1 - 8)",
+        "CIS = X2Z (Z = 1 - 3)",
+        "Expire logic state:",
+        "0YZ = logic 0",
+        "1YZ = logic 1"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 472
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Spare",
+      "description_lines": [
+        "Spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 472
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare",
+      "description_lines": [
+        "Spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 472
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Spare",
+      "description_lines": [
+        "Spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 472
+    }
+  ],
+  "spec_count": 9,
+  "max_spec_number": 9,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 472,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 471,
+  "manual_pages": [
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479
+  ],
+  "manual_section": "Function Code 140 - Restore",
+  "diagnostics": []
+}

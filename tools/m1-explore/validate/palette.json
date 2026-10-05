@@ -1,0 +1,386 @@
+{
+ "name": "calibrated-from-reference",
+ "description": "Palette indices calibrated by sampling visibly-owned pixels of solid shapes in the aligned reference screenshots. CANDIDATE: derived from the validation oracle, never from M1 bytes. Indices without evidence fall back to the default palette.",
+ "entries": {
+  "4": {
+   "index": 4,
+   "rgb": [
+    0,
+    0,
+    255
+   ],
+   "source": "CALIBRATED",
+   "evidence": "10/10 objects agree, weighted agreement 100 % (1324-131ps24.m1)"
+  },
+  "6": {
+   "index": 6,
+   "rgb": [
+    0,
+    255,
+    255
+   ],
+   "source": "CALIBRATED",
+   "evidence": "1/1 objects agree, weighted agreement 100 % (1314-131ps04.m1)"
+  },
+  "7": {
+   "index": 7,
+   "rgb": [
+    255,
+    255,
+    255
+   ],
+   "source": "CALIBRATED",
+   "evidence": "39/45 objects agree, weighted agreement 93 % (1311-131ps01.m1, 1313-131ps03.m1, 1314-131ps04.m1, 1323-131ps1323.m1, 1324-131ps24.m1)"
+  },
+  "13": {
+   "index": 13,
+   "rgb": [
+    0,
+    188,
+    255
+   ],
+   "source": "CALIBRATED",
+   "evidence": "1/5 objects agree, weighted agreement 66 % (1302-131pms01.m1, 1303-131pml01.m1, 1304-131pmt01.m1, 1305-131pmq01.m1, 1314-131ps04.m1)"
+  },
+  "14": {
+   "index": 14,
+   "rgb": [
+    158,
+    81,
+    43
+   ],
+   "source": "CALIBRATED",
+   "evidence": "33/33 objects agree, weighted agreement 100 % (1311-131ps01.m1, 1312-131ps02.m1, 1314-131ps04.m1)"
+  },
+  "15": {
+   "index": 15,
+   "rgb": [
+    137,
+    132,
+    130
+   ],
+   "source": "CALIBRATED",
+   "evidence": "16/17 objects agree, weighted agreement 98 % (1311-131ps01.m1, 1312-131ps02.m1, 1314-131ps04.m1)"
+  },
+  "18": {
+   "index": 18,
+   "rgb": [
+    154,
+    154,
+    154
+   ],
+   "source": "CALIBRATED",
+   "evidence": "6/7 objects agree, weighted agreement 88 % (1311-131ps01.m1, 1313-131ps03.m1, 1314-131ps04.m1)"
+  },
+  "19": {
+   "index": 19,
+   "rgb": [
+    179,
+    179,
+    179
+   ],
+   "source": "CALIBRATED",
+   "evidence": "4/4 objects agree, weighted agreement 100 % (1312-131ps02.m1)"
+  },
+  "21": {
+   "index": 21,
+   "rgb": [
+    204,
+    193,
+    188
+   ],
+   "source": "CALIBRATED",
+   "evidence": "1/1 objects agree, weighted agreement 100 % (1313-131ps03.m1)"
+  },
+  "22": {
+   "index": 22,
+   "rgb": [
+    218,
+    218,
+    218
+   ],
+   "source": "CALIBRATED",
+   "evidence": "8/9 objects agree, weighted agreement 96 % (1311-131ps01.m1, 1312-131ps02.m1, 1313-131ps03.m1, 1314-131ps04.m1)"
+  },
+  "23": {
+   "index": 23,
+   "rgb": [
+    239,
+    239,
+    230
+   ],
+   "source": "CALIBRATED",
+   "evidence": "19/22 objects agree, weighted agreement 90 % (1311-131ps01.m1, 1312-131ps02.m1, 1313-131ps03.m1, 1314-131ps04.m1)"
+  },
+  "27": {
+   "index": 27,
+   "rgb": [
+    218,
+    218,
+    230
+   ],
+   "source": "CALIBRATED",
+   "evidence": "2/2 objects agree, weighted agreement 100 % (1311-131ps01.m1, 1312-131ps02.m1)"
+  },
+  "29": {
+   "index": 29,
+   "rgb": [
+    154,
+    154,
+    255
+   ],
+   "source": "CALIBRATED",
+   "evidence": "6/6 objects agree, weighted agreement 100 % (1311-131ps01.m1, 1314-131ps04.m1)"
+  },
+  "30": {
+   "index": 30,
+   "rgb": [
+    0,
+    0,
+    0
+   ],
+   "source": "CALIBRATED",
+   "evidence": "37/37 objects agree, weighted agreement 100 % (1311-131ps01.m1, 1312-131ps02.m1, 1314-131ps04.m1, 1323-131ps1323.m1, 1324-131ps24.m1)"
+  },
+  "31": {
+   "index": 31,
+   "rgb": [
+    225,
+    242,
+    255
+   ],
+   "source": "CALIBRATED",
+   "evidence": "7/13 objects agree, weighted agreement 83 % (1312-131ps02.m1, 1314-131ps04.m1)"
+  },
+  "33": {
+   "index": 33,
+   "rgb": [
+    0,
+    0,
+    0
+   ],
+   "source": "CALIBRATED",
+   "evidence": "1/1 objects agree, weighted agreement 100 % (1302-131pms01.m1)"
+  },
+  "34": {
+   "index": 34,
+   "rgb": [
+    255,
+    119,
+    119
+   ],
+   "source": "CALIBRATED",
+   "evidence": "5/5 objects agree, weighted agreement 100 % (1324-131ps24.m1)"
+  },
+  "37": {
+   "index": 37,
+   "rgb": [
+    153,
+    255,
+    255
+   ],
+   "source": "CALIBRATED",
+   "evidence": "2/2 objects agree, weighted agreement 100 % (1312-131ps02.m1, 1314-131ps04.m1)"
+  },
+  "39": {
+   "index": 39,
+   "rgb": [
+    255,
+    255,
+    119
+   ],
+   "source": "CALIBRATED",
+   "evidence": "2/2 objects agree, weighted agreement 100 % (1313-131ps03.m1)"
+  },
+  "47": {
+   "index": 47,
+   "rgb": [
+    255,
+    255,
+    0
+   ],
+   "source": "CALIBRATED",
+   "evidence": "4/4 objects agree, weighted agreement 100 % (1312-131ps02.m1, 1313-131ps03.m1)"
+  },
+  "58": {
+   "index": 58,
+   "rgb": [
+    102,
+    0,
+    0
+   ],
+   "source": "CALIBRATED",
+   "evidence": "2/2 objects agree, weighted agreement 100 % (1311-131ps01.m1)"
+  },
+  "59": {
+   "index": 59,
+   "rgb": [
+    192,
+    192,
+    192
+   ],
+   "source": "CALIBRATED",
+   "evidence": "3/4 objects agree, weighted agreement 76 % (1302-131pms01.m1, 1303-131pml01.m1, 1304-131pmt01.m1, 1305-131pmq01.m1)"
+  },
+  "100": {
+   "index": 100,
+   "rgb": [
+    228,
+    134,
+    134
+   ],
+   "source": "CALIBRATED",
+   "evidence": "15/15 objects agree, weighted agreement 100 % (1302-131pms01.m1, 1303-131pml01.m1, 1304-131pmt01.m1, 1305-131pmq01.m1, 1323-131ps1323.m1, 1324-131ps24.m1)"
+  },
+  "112": {
+   "index": 112,
+   "rgb": [
+    255,
+    188,
+    0
+   ],
+   "source": "CALIBRATED",
+   "evidence": "2/2 objects agree, weighted agreement 100 % (1313-131ps03.m1)"
+  },
+  "113": {
+   "index": 113,
+   "rgb": [
+    0,
+    0,
+    0
+   ],
+   "source": "CALIBRATED",
+   "evidence": "1/1 objects agree, weighted agreement 100 % (1313-131ps03.m1)"
+  },
+  "114": {
+   "index": 114,
+   "rgb": [
+    0,
+    0,
+    0
+   ],
+   "source": "CALIBRATED",
+   "evidence": "2/2 objects agree, weighted agreement 100 % (1313-131ps03.m1)"
+  },
+  "115": {
+   "index": 115,
+   "rgb": [
+    0,
+    0,
+    0
+   ],
+   "source": "CALIBRATED",
+   "evidence": "2/2 objects agree, weighted agreement 100 % (1313-131ps03.m1)"
+  },
+  "116": {
+   "index": 116,
+   "rgb": [
+    255,
+    159,
+    0
+   ],
+   "source": "CALIBRATED",
+   "evidence": "2/2 objects agree, weighted agreement 100 % (1313-131ps03.m1)"
+  },
+  "117": {
+   "index": 117,
+   "rgb": [
+    255,
+    153,
+    0
+   ],
+   "source": "CALIBRATED",
+   "evidence": "1/1 objects agree, weighted agreement 100 % (1313-131ps03.m1)"
+  },
+  "118": {
+   "index": 118,
+   "rgb": [
+    255,
+    141,
+    0
+   ],
+   "source": "CALIBRATED",
+   "evidence": "2/2 objects agree, weighted agreement 100 % (1313-131ps03.m1)"
+  },
+  "119": {
+   "index": 119,
+   "rgb": [
+    255,
+    127,
+    0
+   ],
+   "source": "CALIBRATED",
+   "evidence": "2/2 objects agree, weighted agreement 100 % (1313-131ps03.m1)"
+  },
+  "121": {
+   "index": 121,
+   "rgb": [
+    245,
+    112,
+    0
+   ],
+   "source": "CALIBRATED",
+   "evidence": "2/2 objects agree, weighted agreement 100 % (1313-131ps03.m1)"
+  },
+  "122": {
+   "index": 122,
+   "rgb": [
+    237,
+    107,
+    0
+   ],
+   "source": "CALIBRATED",
+   "evidence": "1/1 objects agree, weighted agreement 100 % (1313-131ps03.m1)"
+  },
+  "123": {
+   "index": 123,
+   "rgb": [
+    229,
+    100,
+    0
+   ],
+   "source": "CALIBRATED",
+   "evidence": "2/2 objects agree, weighted agreement 100 % (1313-131ps03.m1)"
+  },
+  "124": {
+   "index": 124,
+   "rgb": [
+    216,
+    98,
+    0
+   ],
+   "source": "CALIBRATED",
+   "evidence": "2/2 objects agree, weighted agreement 100 % (1313-131ps03.m1)"
+  },
+  "133": {
+   "index": 133,
+   "rgb": [
+    169,
+    127,
+    68
+   ],
+   "source": "CALIBRATED",
+   "evidence": "2/2 objects agree, weighted agreement 100 % (1312-131ps02.m1)"
+  },
+  "181": {
+   "index": 181,
+   "rgb": [
+    0,
+    0,
+    0
+   ],
+   "source": "CALIBRATED",
+   "evidence": "1/1 objects agree, weighted agreement 100 % (1312-131ps02.m1)"
+  },
+  "245": {
+   "index": 245,
+   "rgb": [
+    206,
+    206,
+    206
+   ],
+   "source": "CALIBRATED",
+   "evidence": "5/5 objects agree, weighted agreement 100 % (1311-131ps01.m1)"
+  }
+ }
+}

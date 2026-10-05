@@ -1,0 +1,103 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 172,
+  "name": "Exponential",
+  "description": "The exponential function code raises e to the power specified by the input <S1>. The result is multiplied by the gain factor (S2). Use the exponential function code in process control for performance calculations and monitoring capability.",
+  "description_lines": [
+    "The exponential function code raises e to the power specified",
+    "by the input <S1>. The result is multiplied by the gain factor",
+    "(S2).",
+    "Use the exponential function code in process control for per-",
+    "formance calculations and monitoring capability."
+  ],
+  "symbol": {
+    "title_raw": "E X P",
+    "title": "EXP",
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 190.68,
+        "y": 588.9,
+        "s": "(1 7 2 )"
+      },
+      {
+        "x": 132.66,
+        "y": 586.98,
+        "s": "S 1"
+      },
+      {
+        "x": 161.4,
+        "y": 583.62,
+        "s": "E X P"
+      },
+      {
+        "x": 190.68,
+        "y": 579.96,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input value X",
+      "description_lines": [
+        "Block address of input value",
+        "X"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 637
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Gain factor",
+      "description_lines": [
+        "Gain factor"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 637
+    }
+  ],
+  "spec_count": 2,
+  "max_spec_number": 2,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 637,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 637,
+  "manual_pages": [
+    637
+  ],
+  "manual_section": "Function Code 172 - Exponential",
+  "diagnostics": []
+}

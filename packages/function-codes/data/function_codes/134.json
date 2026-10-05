@@ -1,0 +1,1394 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 134,
+  "name": "Multi-Sequence Monitor",
+  "description": "The multi-sequence monitor controls the execution of a sequence generator by selecting the order of step execution in a process. It operates like the sequence monitor (function code 124), but has enhanced functionality. The multi-sequence monitor block provides multi-batch recipe control, halts sequences and inserts steps. Each multi-sequence monitor block controls the execution of eight phases. A phase is a step that may vary from recipe to recipe. This block provides a means to change the order that predefined steps execute in different recipes. The phases always execute in numerical order from one to eight. Four parameters (step type, normal step number, fault step number, and recipe value) define each phase. The multi-sequence monitor block performs a logical action based on the value of a control status input from a device monitor block, and a boolean step trigger input. Depending on the value of the control status input, the next step can be either a fault step or one determined by internal logic. The multi-sequence monitor block can be placed in either automatic or semi-automatic mode, and includes hold/resume, executed stop (E-STOP), insert step and insert phase inputs. Each multi-sequence monitor block handles up to eight phases. If more than eight phases are required, multi-sequence monitor blocks can be linked together in series fashion with S1.",
+  "description_lines": [
+    "The multi-sequence monitor controls the execution of a",
+    "sequence generator by selecting the order of step execution in",
+    "a process. It operates like the sequence monitor (function code",
+    "124), but has enhanced functionality. The multi-sequence",
+    "monitor block provides multi-batch recipe control, halts",
+    "sequences and inserts steps. Each multi-sequence monitor",
+    "block controls the execution of eight phases. A phase is a step",
+    "that may vary from recipe to recipe. This block provides a",
+    "means to change the order that predefined steps execute in",
+    "different recipes. The phases always execute in numerical",
+    "order from one to eight. Four parameters (step type, normal",
+    "step number, fault step number, and recipe value) define each",
+    "phase.",
+    "The multi-sequence monitor block performs a logical action",
+    "based on the value of a control status input from a device",
+    "monitor block, and a boolean step trigger input. Depending on",
+    "the value of the control status input, the next step can be",
+    "either a fault step or one determined by internal logic. The",
+    "multi-sequence monitor block can be placed in either auto-",
+    "matic or semi-automatic mode, and includes hold/resume,",
+    "executed stop (E-STOP), insert step and insert phase inputs.",
+    "Each multi-sequence monitor block handles up to eight",
+    "phases. If more than eight phases are required,",
+    "multi-sequence monitor blocks can be linked together in series",
+    "fashion with S1."
+  ],
+  "symbol": {
+    "title_raw": "M U LT I",
+    "title": "MULTI",
+    "inputs": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17",
+      "S18",
+      "S19",
+      "S20",
+      "S21",
+      "S22",
+      "S23",
+      "S24",
+      "S25",
+      "S26",
+      "S27",
+      "S28",
+      "S29",
+      "S30",
+      "S31",
+      "S32",
+      "S33",
+      "S34",
+      "S35",
+      "S36",
+      "S37",
+      "S38",
+      "S39",
+      "S40",
+      "S41",
+      "S42",
+      "S43",
+      "S44"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3",
+      "N+4",
+      "N+5"
+    ],
+    "items": [
+      {
+        "x": 158.04,
+        "y": 594.78,
+        "s": "M U LT I"
+      },
+      {
+        "x": 159.96,
+        "y": 586.86,
+        "s": "M O N"
+      },
+      {
+        "x": 190.5,
+        "y": 579.66,
+        "s": "(1 3 4 )"
+      },
+      {
+        "x": 131.4,
+        "y": 578.94,
+        "s": "S 2"
+      },
+      {
+        "x": 151.56,
+        "y": 575.34,
+        "s": "C S"
+      },
+      {
+        "x": 179.22,
+        "y": 575.34,
+        "s": "JT"
+      },
+      {
+        "x": 190.5,
+        "y": 570.78,
+        "s": "N"
+      },
+      {
+        "x": 131.4,
+        "y": 570.06,
+        "s": "S 3"
+      },
+      {
+        "x": 179.46,
+        "y": 566.46,
+        "s": "J#"
+      },
+      {
+        "x": 151.56,
+        "y": 566.22,
+        "s": "T"
+      },
+      {
+        "x": 190.5,
+        "y": 561.9,
+        "s": "N + 1"
+      },
+      {
+        "x": 131.4,
+        "y": 561,
+        "s": "S 4"
+      },
+      {
+        "x": 151.56,
+        "y": 557.4,
+        "s": "E S"
+      },
+      {
+        "x": 175.62,
+        "y": 557.4,
+        "s": "JR V"
+      },
+      {
+        "x": 190.5,
+        "y": 553.08,
+        "s": "N + 2"
+      },
+      {
+        "x": 131.4,
+        "y": 552.12,
+        "s": "S 5"
+      },
+      {
+        "x": 174.9,
+        "y": 548.52,
+        "s": "C P #"
+      },
+      {
+        "x": 151.56,
+        "y": 548.28,
+        "s": "H /R"
+      },
+      {
+        "x": 190.5,
+        "y": 544.2,
+        "s": "N + 3"
+      },
+      {
+        "x": 131.4,
+        "y": 543,
+        "s": "S 6"
+      },
+      {
+        "x": 176.58,
+        "y": 539.64,
+        "s": "ID T"
+      },
+      {
+        "x": 151.56,
+        "y": 539.16,
+        "s": "S A P"
+      },
+      {
+        "x": 190.5,
+        "y": 535.32,
+        "s": "N + 4"
+      },
+      {
+        "x": 131.4,
+        "y": 534.12,
+        "s": "S 7"
+      },
+      {
+        "x": 176.34,
+        "y": 530.52,
+        "s": "N /A"
+      },
+      {
+        "x": 151.56,
+        "y": 530.28,
+        "s": "S AT"
+      },
+      {
+        "x": 190.5,
+        "y": 526.44,
+        "s": "N + 5"
+      },
+      {
+        "x": 131.4,
+        "y": 525,
+        "s": "S 8"
+      },
+      {
+        "x": 151.56,
+        "y": 521.16,
+        "s": "IT"
+      },
+      {
+        "x": 131.4,
+        "y": 515.88,
+        "s": "S 9"
+      },
+      {
+        "x": 151.56,
+        "y": 512.28,
+        "s": "R E S"
+      },
+      {
+        "x": 131.4,
+        "y": 507,
+        "s": "S 1 0"
+      },
+      {
+        "x": 151.56,
+        "y": 503.16,
+        "s": "IS"
+      },
+      {
+        "x": 131.4,
+        "y": 497.88,
+        "s": "S 1 1"
+      },
+      {
+        "x": 151.56,
+        "y": 494.28,
+        "s": "IR"
+      },
+      {
+        "x": 131.4,
+        "y": 489,
+        "s": "S 1 3"
+      },
+      {
+        "x": 151.56,
+        "y": 485.16,
+        "s": "S T 1"
+      },
+      {
+        "x": 131.4,
+        "y": 479.94,
+        "s": "S 1 4"
+      },
+      {
+        "x": 151.56,
+        "y": 476.1,
+        "s": "S T 2"
+      },
+      {
+        "x": 131.4,
+        "y": 470.82,
+        "s": "S 1 5"
+      },
+      {
+        "x": 151.56,
+        "y": 467.22,
+        "s": "S T 3"
+      },
+      {
+        "x": 131.4,
+        "y": 461.94,
+        "s": "S 1 6"
+      },
+      {
+        "x": 151.56,
+        "y": 458.1,
+        "s": "S T 4"
+      },
+      {
+        "x": 131.4,
+        "y": 452.82,
+        "s": "S 1 7"
+      },
+      {
+        "x": 151.56,
+        "y": 449.22,
+        "s": "S T 5"
+      },
+      {
+        "x": 131.4,
+        "y": 443.94,
+        "s": "S 1 8"
+      },
+      {
+        "x": 151.56,
+        "y": 440.1,
+        "s": "S T 6"
+      },
+      {
+        "x": 131.4,
+        "y": 434.82,
+        "s": "S 1 9"
+      },
+      {
+        "x": 151.56,
+        "y": 430.98,
+        "s": "S T 7"
+      },
+      {
+        "x": 131.4,
+        "y": 425.94,
+        "s": "S 2 0"
+      },
+      {
+        "x": 151.56,
+        "y": 422.1,
+        "s": "S T 8"
+      },
+      {
+        "x": 131.4,
+        "y": 416.82,
+        "s": "S 2 1"
+      },
+      {
+        "x": 151.56,
+        "y": 412.98,
+        "s": "N S 1"
+      },
+      {
+        "x": 131.4,
+        "y": 407.7,
+        "s": "S 2 2"
+      },
+      {
+        "x": 151.56,
+        "y": 404.1,
+        "s": "N S 2"
+      },
+      {
+        "x": 131.4,
+        "y": 398.88,
+        "s": "S 2 3"
+      },
+      {
+        "x": 151.56,
+        "y": 395.04,
+        "s": "N S 3"
+      },
+      {
+        "x": 131.4,
+        "y": 389.76,
+        "s": "S 2 4"
+      },
+      {
+        "x": 151.56,
+        "y": 386.16,
+        "s": "N S 4"
+      },
+      {
+        "x": 131.4,
+        "y": 380.88,
+        "s": "S 2 5"
+      },
+      {
+        "x": 151.56,
+        "y": 377.04,
+        "s": "N S 5"
+      },
+      {
+        "x": 131.4,
+        "y": 371.76,
+        "s": "S 2 6"
+      },
+      {
+        "x": 151.56,
+        "y": 367.92,
+        "s": "N S 6"
+      },
+      {
+        "x": 131.4,
+        "y": 362.88,
+        "s": "S 2 7"
+      },
+      {
+        "x": 151.56,
+        "y": 359.04,
+        "s": "N S 7"
+      },
+      {
+        "x": 131.4,
+        "y": 353.76,
+        "s": "S 2 8"
+      },
+      {
+        "x": 151.56,
+        "y": 349.92,
+        "s": "N S 8"
+      },
+      {
+        "x": 131.4,
+        "y": 344.64,
+        "s": "S 2 9"
+      },
+      {
+        "x": 151.56,
+        "y": 341.04,
+        "s": "F P 1"
+      },
+      {
+        "x": 131.4,
+        "y": 335.76,
+        "s": "S 3 0"
+      },
+      {
+        "x": 151.56,
+        "y": 331.92,
+        "s": "F P 2"
+      },
+      {
+        "x": 131.4,
+        "y": 326.64,
+        "s": "S 3 1"
+      },
+      {
+        "x": 151.56,
+        "y": 323.04,
+        "s": "F P 3"
+      },
+      {
+        "x": 131.4,
+        "y": 317.82,
+        "s": "S 3 2"
+      },
+      {
+        "x": 151.56,
+        "y": 313.98,
+        "s": "F P 4"
+      },
+      {
+        "x": 131.4,
+        "y": 308.7,
+        "s": "S 3 3"
+      },
+      {
+        "x": 151.56,
+        "y": 304.86,
+        "s": "F P 5"
+      },
+      {
+        "x": 131.4,
+        "y": 299.58,
+        "s": "S 3 4"
+      },
+      {
+        "x": 151.56,
+        "y": 295.98,
+        "s": "F P 6"
+      },
+      {
+        "x": 131.4,
+        "y": 290.7,
+        "s": "S 3 5"
+      },
+      {
+        "x": 151.56,
+        "y": 286.86,
+        "s": "F P 7"
+      },
+      {
+        "x": 131.4,
+        "y": 281.58,
+        "s": "S 3 6"
+      },
+      {
+        "x": 151.56,
+        "y": 277.98,
+        "s": "F P 8"
+      },
+      {
+        "x": 131.4,
+        "y": 272.7,
+        "s": "S 3 7"
+      },
+      {
+        "x": 151.56,
+        "y": 268.86,
+        "s": "R V 1"
+      },
+      {
+        "x": 131.4,
+        "y": 263.58,
+        "s": "S 3 8"
+      },
+      {
+        "x": 151.56,
+        "y": 259.74,
+        "s": "R V 2"
+      },
+      {
+        "x": 131.4,
+        "y": 254.7,
+        "s": "S 3 9"
+      },
+      {
+        "x": 151.56,
+        "y": 250.86,
+        "s": "R V 3"
+      },
+      {
+        "x": 131.4,
+        "y": 245.58,
+        "s": "S 4 0"
+      },
+      {
+        "x": 151.56,
+        "y": 241.74,
+        "s": "R V 4"
+      },
+      {
+        "x": 131.4,
+        "y": 236.52,
+        "s": "S 4 1"
+      },
+      {
+        "x": 151.56,
+        "y": 232.92,
+        "s": "R V 5"
+      },
+      {
+        "x": 131.4,
+        "y": 227.64,
+        "s": "S 4 2"
+      },
+      {
+        "x": 151.56,
+        "y": 223.8,
+        "s": "R V 6"
+      },
+      {
+        "x": 131.4,
+        "y": 218.52,
+        "s": "S 4 3"
+      },
+      {
+        "x": 151.56,
+        "y": 214.92,
+        "s": "R V 7"
+      },
+      {
+        "x": 131.4,
+        "y": 209.64,
+        "s": "S 4 4"
+      },
+      {
+        "x": 151.56,
+        "y": 205.79,
+        "s": "R V 8"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Jump step number",
+      "description_lines": [
+        "Jump step number"
+      ],
+      "manual_page": 433
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Jump step trigger",
+      "description_lines": [
+        "Jump step trigger"
+      ],
+      "manual_page": 433
+    },
+    {
+      "blk": "N+2",
+      "type": "R",
+      "description": "Jump step recipe value",
+      "description_lines": [
+        "Jump step recipe value"
+      ],
+      "manual_page": 433
+    },
+    {
+      "blk": "N+3",
+      "type": "R",
+      "description": "Current phase number",
+      "description_lines": [
+        "Current phase number"
+      ],
+      "manual_page": 433
+    },
+    {
+      "blk": "N+4",
+      "type": "B",
+      "description": "Insert step done",
+      "description_lines": [
+        "Insert step done"
+      ],
+      "manual_page": 433
+    },
+    {
+      "blk": "N+5",
+      "type": "B",
+      "description": "Run/hold state:; 0 = run; 1 = hold",
+      "description_lines": [
+        "Run/hold state:",
+        "0 = run",
+        "1 = hold"
+      ],
+      "manual_page": 433
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block number of next multi-sequence monitor block associated with this sequence of steps (0 = no more blocks)",
+      "description_lines": [
+        "Block number of next multi-sequence monitor block",
+        "associated with this sequence of steps",
+        "(0 = no more blocks)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 434
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control status input",
+      "description_lines": [
+        "Block address of control status input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of step trigger",
+      "description_lines": [
+        "Block address of step trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of E-STOP",
+      "description_lines": [
+        "Block address of E-STOP"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of hold/resume input",
+      "description_lines": [
+        "Block address of hold/resume input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of auto permissive:; 0 = manual; 1 = auto",
+      "description_lines": [
+        "Block address of auto permissive:",
+        "0 = manual",
+        "1 = auto"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "manual"
+        },
+        {
+          "value": "1",
+          "meaning": "auto"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of auto trigger",
+      "description_lines": [
+        "Block address of auto trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of insert trigger",
+      "description_lines": [
+        "Block address of insert trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of resume phase number",
+      "description_lines": [
+        "Block address of resume phase number"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of insert step number",
+      "description_lines": [
+        "Block address of insert step number"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of insert recipe value",
+      "description_lines": [
+        "Block address of insert recipe value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Reserved",
+      "description_lines": [
+        "Reserved"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 434
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 1 step type",
+      "description_lines": [
+        "Block address of phase 1 step type"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 2 step type",
+      "description_lines": [
+        "Block address of phase 2 step type"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 3 step type",
+      "description_lines": [
+        "Block address of phase 3 step type"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 4 step type",
+      "description_lines": [
+        "Block address of phase 4 step type"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 5 step type",
+      "description_lines": [
+        "Block address of phase 5 step type"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 6 step type",
+      "description_lines": [
+        "Block address of phase 6 step type"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 19,
+      "label": "S19",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 7 step type",
+      "description_lines": [
+        "Block address of phase 7 step type"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 20,
+      "label": "S20",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 8 step type",
+      "description_lines": [
+        "Block address of phase 8 step type"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 21,
+      "label": "S21",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 1 normal step",
+      "description_lines": [
+        "Block address of phase 1 normal step"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 22,
+      "label": "S22",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 2 normal step",
+      "description_lines": [
+        "Block address of phase 2 normal step"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 23,
+      "label": "S23",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 3 normal step",
+      "description_lines": [
+        "Block address of phase 3 normal step"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 24,
+      "label": "S24",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 4 normal step",
+      "description_lines": [
+        "Block address of phase 4 normal step"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 25,
+      "label": "S25",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 5 normal step",
+      "description_lines": [
+        "Block address of phase 5 normal step"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 26,
+      "label": "S26",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 6 normal step",
+      "description_lines": [
+        "Block address of phase 6 normal step"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 27,
+      "label": "S27",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 7 normal step",
+      "description_lines": [
+        "Block address of phase 7 normal step"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 28,
+      "label": "S28",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 8 normal step",
+      "description_lines": [
+        "Block address of phase 8 normal step"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 29,
+      "label": "S29",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 1 fault phase",
+      "description_lines": [
+        "Block address of phase 1 fault phase"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 30,
+      "label": "S30",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 2 fault phase",
+      "description_lines": [
+        "Block address of phase 2 fault phase"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 434
+    },
+    {
+      "number": 31,
+      "label": "S31",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 3 fault phase",
+      "description_lines": [
+        "Block address of phase 3 fault phase"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 435
+    },
+    {
+      "number": 32,
+      "label": "S32",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 4 fault phase",
+      "description_lines": [
+        "Block address of phase 4 fault phase"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 435
+    },
+    {
+      "number": 33,
+      "label": "S33",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 5 fault phase",
+      "description_lines": [
+        "Block address of phase 5 fault phase"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 435
+    },
+    {
+      "number": 34,
+      "label": "S34",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 6 fault phase",
+      "description_lines": [
+        "Block address of phase 6 fault phase"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 435
+    },
+    {
+      "number": 35,
+      "label": "S35",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 7 fault phase",
+      "description_lines": [
+        "Block address of phase 7 fault phase"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 435
+    },
+    {
+      "number": 36,
+      "label": "S36",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 8 fault phase",
+      "description_lines": [
+        "Block address of phase 8 fault phase"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 435
+    },
+    {
+      "number": 37,
+      "label": "S37",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 1 recipe value",
+      "description_lines": [
+        "Block address of phase 1 recipe value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 435
+    },
+    {
+      "number": 38,
+      "label": "S38",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 2 recipe value",
+      "description_lines": [
+        "Block address of phase 2 recipe value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 435
+    },
+    {
+      "number": 39,
+      "label": "S39",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 3 recipe value",
+      "description_lines": [
+        "Block address of phase 3 recipe value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 435
+    },
+    {
+      "number": 40,
+      "label": "S40",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 4 recipe value",
+      "description_lines": [
+        "Block address of phase 4 recipe value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 435
+    },
+    {
+      "number": 41,
+      "label": "S41",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 5 recipe value",
+      "description_lines": [
+        "Block address of phase 5 recipe value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 435
+    },
+    {
+      "number": 42,
+      "label": "S42",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 6 recipe value",
+      "description_lines": [
+        "Block address of phase 6 recipe value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 435
+    },
+    {
+      "number": 43,
+      "label": "S43",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 7 recipe value",
+      "description_lines": [
+        "Block address of phase 7 recipe value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 435
+    },
+    {
+      "number": 44,
+      "label": "S44",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of phase 8 recipe value",
+      "description_lines": [
+        "Block address of phase 8 recipe value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 435
+    }
+  ],
+  "spec_count": 44,
+  "max_spec_number": 44,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 435,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 433,
+  "manual_pages": [
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442
+  ],
+  "manual_section": "Function Code 134 - Multi-Sequence Monitor",
+  "diagnostics": []
+}

@@ -1,0 +1,311 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 110,
+  "name": "Rung (5-Input)",
+  "description": "Function code 110 implements a rung of a Ladder logic program (relay type). It accepts five boolean input signals and performs a fundamental operation on each input in sequential order. After each input is operated on , the resulting value goes to the top of the stack. The output of the rung block is the value on the top of the stack unless S1 forces it to another value.",
+  "description_lines": [
+    "Function code 110 implements a rung of a Ladder logic pro-",
+    "gram (relay type). It accepts five boolean input signals and per-",
+    "forms a fundamental operation on each input in sequential",
+    "order. After each input is operated on , the resulting value goes",
+    "to the top of the stack. The output of the rung block is the",
+    "value on the top of the stack unless S1 forces it to another",
+    "value."
+  ],
+  "symbol": {
+    "title_raw": "R N G 5",
+    "title": "RNG5",
+    "inputs": [
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 158.88,
+        "y": 594.78,
+        "s": "R N G 5"
+      },
+      {
+        "x": 191.34,
+        "y": 588.78,
+        "s": "(1 1 0 )"
+      },
+      {
+        "x": 132.18,
+        "y": 587.58,
+        "s": "S 7"
+      },
+      {
+        "x": 191.34,
+        "y": 579.9,
+        "s": "N"
+      },
+      {
+        "x": 132.18,
+        "y": 578.46,
+        "s": "S 8"
+      },
+      {
+        "x": 132.18,
+        "y": 569.58,
+        "s": "S 9"
+      },
+      {
+        "x": 132.18,
+        "y": 560.46,
+        "s": "S 1 0"
+      },
+      {
+        "x": 132.18,
+        "y": 551.58,
+        "s": "S 1 1"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Output value determined by S1 and value on top of stack If S1 = 0, output = value on top of stack If S1 = 1, output = previous value of output If S1 = 2, output = logic 0 If S1 = 3, output = logic 1",
+      "description_lines": [
+        "Output value determined by S1 and value on top of stack",
+        "If S1 = 0, output = value on top of stack",
+        "If S1 = 1, output = previous value of output",
+        "If S1 = 2, output = logic 0",
+        "If S1 = 3, output = logic 1"
+      ],
+      "manual_page": 313
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 3",
+      "description": "Output descriptor:; 0 = normal; 1 = hold previous value; 2 = force output to logic 0; 3 = force output to logic 1",
+      "description_lines": [
+        "Output descriptor:",
+        "0 = normal",
+        "1 = hold previous value",
+        "2 = force output to logic 0",
+        "3 = force output to logic 1"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "normal"
+        },
+        {
+          "value": "1",
+          "meaning": "hold previous value"
+        },
+        {
+          "value": "2",
+          "meaning": "force output to logic 0"
+        },
+        {
+          "value": "3",
+          "meaning": "force output to logic 1"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 313
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 1",
+      "description_lines": [
+        "Operation performed on input 1"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 313
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 2",
+      "description_lines": [
+        "Operation performed on input 2"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 313
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 3",
+      "description_lines": [
+        "Operation performed on input 3"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 313
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 4",
+      "description_lines": [
+        "Operation performed on input 4"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 313
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 242",
+      "description": "Operation performed on input 5",
+      "description_lines": [
+        "Operation performed on input 5"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 313
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 1",
+      "description_lines": [
+        "Block address of input 1"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 313
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 2",
+      "description_lines": [
+        "Block address of input 2"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 313
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 3",
+      "description_lines": [
+        "Block address of input 3"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 313
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 4",
+      "description_lines": [
+        "Block address of input 4"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 313
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 5",
+      "description_lines": [
+        "Block address of input 5"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 313
+    }
+  ],
+  "spec_count": 11,
+  "max_spec_number": 11,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100 , IMMFP11/12 31,998 for the HAC",
+      "manual_page": 313,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 313,
+  "manual_pages": [
+    313,
+    314,
+    315,
+    316,
+    317
+  ],
+  "manual_section": "Function Code 110 - Rung (5-Input)",
+  "diagnostics": []
+}

@@ -1,0 +1,808 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 161,
+  "name": "Sequence Generator",
+  "description": "The sequence generator function code contains a series of masks that are stepped through on an event or time basis. The masks define the states of eight boolean outputs for each step. In addition to the eight step masks, there is a default mask often called Step 0 or E-STOP (executed stop). If the block resets or jump to Step 0 executes, E-STOP is the output. E-STOP defines the state of the outputs. Sequential stepping in ascending numerical order, and jumping to specific step numbers are the two methods of event stepping. If a sequence has more than eight steps, sequence generator blocks can link in series. If there are more than eight outputs per step, sequence generator blocks can be linked in parallel to provide the required number of outputs. Unlike the other batch function blocks (123, 124, 129, etc.), the last sequence generator in the series is the output.",
+  "description_lines": [
+    "The sequence generator function code contains a series of",
+    "masks that are stepped through on an event or time basis. The",
+    "masks define the states of eight boolean outputs for each step.",
+    "In addition to the eight step masks, there is a default mask",
+    "often called Step 0 or E-STOP (executed stop). If the block",
+    "resets or jump to Step 0 executes, E-STOP is the output.",
+    "E-STOP defines the state of the outputs. Sequential stepping",
+    "in ascending numerical order, and jumping to specific step",
+    "numbers are the two methods of event stepping.",
+    "If a sequence has more than eight steps, sequence generator",
+    "blocks can link in series. If there are more than eight outputs",
+    "per step, sequence generator blocks can be linked in parallel to",
+    "provide the required number of outputs.",
+    "Unlike the other batch function blocks (123, 124, 129, etc.),",
+    "the last sequence generator in the series is the output."
+  ],
+  "symbol": {
+    "title_raw": "S E Q G E N",
+    "title": "SEQGEN",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3",
+      "N+4",
+      "N+5",
+      "N+6",
+      "N+7",
+      "N+8",
+      "N+9",
+      "N+10"
+    ],
+    "items": [
+      {
+        "x": 152.76,
+        "y": 595.5,
+        "s": "S E Q G E N"
+      },
+      {
+        "x": 189.78,
+        "y": 588.78,
+        "s": "(1 6 1 )"
+      },
+      {
+        "x": 131.88,
+        "y": 587.34,
+        "s": "S 1"
+      },
+      {
+        "x": 181.86,
+        "y": 584.22,
+        "s": "1"
+      },
+      {
+        "x": 151.32,
+        "y": 583.74,
+        "s": "C A S"
+      },
+      {
+        "x": 189.78,
+        "y": 579.66,
+        "s": "N"
+      },
+      {
+        "x": 131.88,
+        "y": 578.46,
+        "s": "S 2"
+      },
+      {
+        "x": 181.86,
+        "y": 575.34,
+        "s": "2"
+      },
+      {
+        "x": 151.32,
+        "y": 574.86,
+        "s": "T"
+      },
+      {
+        "x": 189.78,
+        "y": 570.78,
+        "s": "N + 1"
+      },
+      {
+        "x": 131.88,
+        "y": 569.34,
+        "s": "S 3"
+      },
+      {
+        "x": 181.86,
+        "y": 566.22,
+        "s": "3"
+      },
+      {
+        "x": 151.32,
+        "y": 565.98,
+        "s": "S H"
+      },
+      {
+        "x": 189.78,
+        "y": 561.9,
+        "s": "N + 2"
+      },
+      {
+        "x": 131.88,
+        "y": 560.22,
+        "s": "S 4"
+      },
+      {
+        "x": 181.86,
+        "y": 557.34,
+        "s": "4"
+      },
+      {
+        "x": 151.32,
+        "y": 556.86,
+        "s": "T H"
+      },
+      {
+        "x": 189.78,
+        "y": 553.02,
+        "s": "N + 3"
+      },
+      {
+        "x": 131.88,
+        "y": 551.34,
+        "s": "S 5"
+      },
+      {
+        "x": 181.86,
+        "y": 548.46,
+        "s": "5"
+      },
+      {
+        "x": 151.32,
+        "y": 547.98,
+        "s": "R"
+      },
+      {
+        "x": 189.78,
+        "y": 543.9,
+        "s": "N + 4"
+      },
+      {
+        "x": 131.88,
+        "y": 542.22,
+        "s": "S 6"
+      },
+      {
+        "x": 181.86,
+        "y": 539.4,
+        "s": "6"
+      },
+      {
+        "x": 151.32,
+        "y": 539.16,
+        "s": "J"
+      },
+      {
+        "x": 189.78,
+        "y": 535.08,
+        "s": "N + 5"
+      },
+      {
+        "x": 131.88,
+        "y": 533.4,
+        "s": "S 7"
+      },
+      {
+        "x": 181.86,
+        "y": 530.52,
+        "s": "7"
+      },
+      {
+        "x": 151.32,
+        "y": 530.04,
+        "s": "J#"
+      },
+      {
+        "x": 189.78,
+        "y": 526.2,
+        "s": "N + 6"
+      },
+      {
+        "x": 131.88,
+        "y": 524.28,
+        "s": "S 8"
+      },
+      {
+        "x": 181.86,
+        "y": 521.64,
+        "s": "8"
+      },
+      {
+        "x": 151.32,
+        "y": 521.16,
+        "s": "D"
+      },
+      {
+        "x": 189.78,
+        "y": 517.08,
+        "s": "N + 7"
+      },
+      {
+        "x": 177.54,
+        "y": 512.52,
+        "s": "C S"
+      },
+      {
+        "x": 189.78,
+        "y": 508.2,
+        "s": "N + 8"
+      },
+      {
+        "x": 181.38,
+        "y": 503.64,
+        "s": "T"
+      },
+      {
+        "x": 189.78,
+        "y": 499.32,
+        "s": "N + 9"
+      },
+      {
+        "x": 174.9,
+        "y": 494.76,
+        "s": "S T P"
+      },
+      {
+        "x": 189.78,
+        "y": 490.2,
+        "s": "N + 10"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Output 1 of current step",
+      "description_lines": [
+        "Output 1 of current step"
+      ],
+      "manual_page": 599
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Output 2 of current step",
+      "description_lines": [
+        "Output 2 of current step"
+      ],
+      "manual_page": 599
+    },
+    {
+      "blk": "N+2",
+      "type": "B",
+      "description": "Output 3 of current step",
+      "description_lines": [
+        "Output 3 of current step"
+      ],
+      "manual_page": 599
+    },
+    {
+      "blk": "N+3",
+      "type": "B",
+      "description": "Output 4 of current step",
+      "description_lines": [
+        "Output 4 of current step"
+      ],
+      "manual_page": 599
+    },
+    {
+      "blk": "N+4",
+      "type": "B",
+      "description": "Output 5 of current step",
+      "description_lines": [
+        "Output 5 of current step"
+      ],
+      "manual_page": 599
+    },
+    {
+      "blk": "N+5",
+      "type": "B",
+      "description": "Output 6 of current step",
+      "description_lines": [
+        "Output 6 of current step"
+      ],
+      "manual_page": 599
+    },
+    {
+      "blk": "N+6",
+      "type": "B",
+      "description": "Output 7 of current step",
+      "description_lines": [
+        "Output 7 of current step"
+      ],
+      "manual_page": 599
+    },
+    {
+      "blk": "N+7",
+      "type": "B",
+      "description": "Output 8 of current step",
+      "description_lines": [
+        "Output 8 of current step"
+      ],
+      "manual_page": 599
+    },
+    {
+      "blk": "N+8",
+      "type": "R",
+      "description": "Current step number",
+      "description_lines": [
+        "Current step number"
+      ],
+      "manual_page": 599
+    },
+    {
+      "blk": "N+9",
+      "type": "R",
+      "description": "Seconds remaining in current step",
+      "description_lines": [
+        "Seconds remaining in current step"
+      ],
+      "manual_page": 599
+    },
+    {
+      "blk": "N+10",
+      "type": "B",
+      "description": "Step taken (logic 0 to 1 transition)",
+      "description_lines": [
+        "Step taken (logic 0 to 1 transition)"
+      ],
+      "manual_page": 599
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Starting block address of previous sequence generator in series (0 = first in series)",
+      "description_lines": [
+        "Starting block address of previous sequence",
+        "generator in series (0 = first in series)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 600
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of step trigger (0 to 1 transition)",
+      "description_lines": [
+        "Block address of step trigger (0 to 1 transition)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 600
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of step hold:; 0 = release; 1 = hold",
+      "description_lines": [
+        "Block address of step hold:",
+        "0 = release",
+        "1 = hold"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "release"
+        },
+        {
+          "value": "1",
+          "meaning": "hold"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 600
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of step timer hold:; 0 = release; 1 = hold",
+      "description_lines": [
+        "Block address of step timer hold:",
+        "0 = release",
+        "1 = hold"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "release"
+        },
+        {
+          "value": "1",
+          "meaning": "hold"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 600
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of reset trigger (0 to 1 transition)",
+      "description_lines": [
+        "Block address of reset trigger (0 to 1 transition)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 600
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of step jump trigger (0 to 1 transition)",
+      "description_lines": [
+        "Block address of step jump trigger (0 to 1 transition)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 600
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of step jump number",
+      "description_lines": [
+        "Block address of step jump number"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 600
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of output disable flag",
+      "description_lines": [
+        "Block address of output disable flag"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 600
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Disable mask",
+      "description_lines": [
+        "Disable mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 600
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 1 output mask",
+      "description_lines": [
+        "Step 1 output mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 600
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 1 time in secs",
+      "description_lines": [
+        "Step 1 time in secs"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 600
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 2 output mask",
+      "description_lines": [
+        "Step 2 output mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 600
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 2 time in secs",
+      "description_lines": [
+        "Step 2 time in secs"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 600
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 3 output mask",
+      "description_lines": [
+        "Step 3 output mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 600
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 3 time in secs",
+      "description_lines": [
+        "Step 3 time in secs"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 600
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 4 output mask",
+      "description_lines": [
+        "Step 4 output mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 600
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 4 time in secs",
+      "description_lines": [
+        "Step 4 time in secs"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 600
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 5 output mask",
+      "description_lines": [
+        "Step 5 output mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 600
+    },
+    {
+      "number": 19,
+      "label": "S19",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 5 time in secs",
+      "description_lines": [
+        "Step 5 time in secs"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 600
+    },
+    {
+      "number": 20,
+      "label": "S20",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 6 output mask",
+      "description_lines": [
+        "Step 6 output mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 600
+    },
+    {
+      "number": 21,
+      "label": "S21",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 6 time in secs",
+      "description_lines": [
+        "Step 6 time in secs"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 600
+    },
+    {
+      "number": 22,
+      "label": "S22",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 7 output mask",
+      "description_lines": [
+        "Step 7 output mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 600
+    },
+    {
+      "number": 23,
+      "label": "S23",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 7 time in secs",
+      "description_lines": [
+        "Step 7 time in secs"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 600
+    },
+    {
+      "number": 24,
+      "label": "S24",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 8 output mask",
+      "description_lines": [
+        "Step 8 output mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 600
+    },
+    {
+      "number": 25,
+      "label": "S25",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Step 8 time in secs",
+      "description_lines": [
+        "Step 8 time in secs"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 600
+    }
+  ],
+  "spec_count": 25,
+  "max_spec_number": 25,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 600,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 599,
+  "manual_pages": [
+    599,
+    600,
+    601,
+    602,
+    603,
+    604,
+    605,
+    606,
+    607
+  ],
+  "manual_section": "Function Code 161 - Sequence Generator",
+  "diagnostics": []
+}

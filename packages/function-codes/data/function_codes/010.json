@@ -1,0 +1,155 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 10,
+  "name": "High Select",
+  "description": "This function selects and outputs the input with the highest algebraic value.",
+  "description_lines": [
+    "This function selects and outputs the input with the highest",
+    "algebraic value."
+  ],
+  "symbol": {
+    "title_raw": null,
+    "title": null,
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 131.58,
+        "y": 598.14,
+        "s": "S 1"
+      },
+      {
+        "x": 131.58,
+        "y": 589.2,
+        "s": "S 2"
+      },
+      {
+        "x": 189.72,
+        "y": 585.84,
+        "s": "(1 0 )"
+      },
+      {
+        "x": 131.58,
+        "y": 580.08,
+        "s": "S 3"
+      },
+      {
+        "x": 189.72,
+        "y": 576.96,
+        "s": "N"
+      },
+      {
+        "x": 131.58,
+        "y": 571.14,
+        "s": "S 4"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Output equals the highest of the four inputs",
+      "description_lines": [
+        "Output equals the highest of the four inputs"
+      ],
+      "manual_page": 77
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "8",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of first input",
+      "description_lines": [
+        "Block address of first input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 77
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "8",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of second input",
+      "description_lines": [
+        "Block address of second input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 77
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "8",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of third input",
+      "description_lines": [
+        "Block address of third input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 77
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "8",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of fourth input",
+      "description_lines": [
+        "Block address of fourth input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 77
+    }
+  ],
+  "spec_count": 4,
+  "max_spec_number": 4,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 77,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 77,
+  "manual_pages": [
+    77,
+    78
+  ],
+  "manual_section": "Function Code 10 - High Select",
+  "diagnostics": []
+}

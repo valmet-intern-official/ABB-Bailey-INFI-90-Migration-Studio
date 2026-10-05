@@ -1,0 +1,391 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 118,
+  "name": "Real Recipe Table",
+  "description": "The real recipe table function code uses an externally generated value to select a parameter value from a recipe table. Blocks linked together, each containing up to ten real parameter values, make up the recipe table. The first block in the link list is the group master. The master accepts the select input and is able to search the other blocks in the link list to find the selected parameter. The ten parameters in the master block are zero through nine. The range of parameters associated with the next block in the link list is ten through 19, and so on. The recipe value selected is always output from the master block. The outputs of all other blocks in the series remain unused. This function code also includes an edit function that allows editing of a selected parameter. The recipe table function codes (117, 118) allow for recipe handling within the digital control system. This eliminates the need for a centralized computer to store batch recipes.",
+  "description_lines": [
+    "The real recipe table function code uses an externally gener-",
+    "ated value to select a parameter value from a recipe table.",
+    "Blocks linked together, each containing up to ten real parame-",
+    "ter values, make up the recipe table.",
+    "The first block in the link list is the group master. The master",
+    "accepts the select input and is able to search the other blocks",
+    "in the link list to find the selected parameter. The ten parame-",
+    "ters in the master block are zero through nine. The range of",
+    "parameters associated with the next block in the link list is ten",
+    "through 19, and so on. The recipe value selected is always out-",
+    "put from the master block. The outputs of all other blocks in",
+    "the series remain unused.",
+    "This function code also includes an edit function that allows",
+    "editing of a selected parameter.",
+    "The recipe table function codes (117, 118) allow for recipe han-",
+    "dling within the digital control system. This eliminates the",
+    "need for a centralized computer to store batch recipes."
+  ],
+  "symbol": {
+    "title_raw": "R E C IP R",
+    "title": "RECIPR",
+    "inputs": [
+      "S11",
+      "S13",
+      "S14",
+      "S15"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 156,
+        "y": 594.78,
+        "s": "R E C IP R"
+      },
+      {
+        "x": 190.86,
+        "y": 588.96,
+        "s": "(1 1 8 )"
+      },
+      {
+        "x": 133.14,
+        "y": 587.52,
+        "s": "S 1 1"
+      },
+      {
+        "x": 152.4,
+        "y": 584.4,
+        "s": "P S"
+      },
+      {
+        "x": 190.86,
+        "y": 580.08,
+        "s": "N"
+      },
+      {
+        "x": 133.14,
+        "y": 578.4,
+        "s": "S 1 3"
+      },
+      {
+        "x": 152.4,
+        "y": 575.52,
+        "s": "E S"
+      },
+      {
+        "x": 133.14,
+        "y": 569.52,
+        "s": "S 1 4"
+      },
+      {
+        "x": 152.4,
+        "y": 566.4,
+        "s": "E P S"
+      },
+      {
+        "x": 133.14,
+        "y": 560.58,
+        "s": "S 1 5"
+      },
+      {
+        "x": 152.4,
+        "y": 557.46,
+        "s": "E V"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Parameter value selected. If the parameter number selected is invalid, the value of the nearest valid parameter is the output.",
+      "description_lines": [
+        "Parameter value selected. If the parameter number",
+        "selected is invalid, the value of the nearest valid parameter",
+        "is the output."
+      ],
+      "manual_page": 345
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Value of parameter 0",
+      "description_lines": [
+        "Value of parameter 0"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 345
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Value of parameter 1",
+      "description_lines": [
+        "Value of parameter 1"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 345
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Value of parameter 2",
+      "description_lines": [
+        "Value of parameter 2"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 345
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Value of parameter 3",
+      "description_lines": [
+        "Value of parameter 3"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 345
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Value of parameter 4",
+      "description_lines": [
+        "Value of parameter 4"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 345
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Value of parameter 5",
+      "description_lines": [
+        "Value of parameter 5"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 345
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Value of parameter 6",
+      "description_lines": [
+        "Value of parameter 6"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 345
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Value of parameter 7",
+      "description_lines": [
+        "Value of parameter 7"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 345
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Value of parameter 8",
+      "description_lines": [
+        "Value of parameter 8"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 346
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Value of parameter 9",
+      "description_lines": [
+        "Value of parameter 9"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 346
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of parameter select input",
+      "description_lines": [
+        "Block address of parameter select input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 346
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of next recipe block (next function code 118); 0 = no more recipe blocks",
+      "description_lines": [
+        "Block address of next recipe block (next function code 118)",
+        "0 = no more recipe blocks"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no more recipe blocks"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 346
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of edit signal:; 0 = normal mode; 1 = edit mode",
+      "description_lines": [
+        "Block address of edit signal:",
+        "0 = normal mode",
+        "1 = edit mode"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "normal mode"
+        },
+        {
+          "value": "1",
+          "meaning": "edit mode"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 346
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of edit parameter selector",
+      "description_lines": [
+        "Block address of edit parameter selector"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 346
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of edit value",
+      "description_lines": [
+        "Block address of edit value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 346
+    }
+  ],
+  "spec_count": 15,
+  "max_spec_number": 15,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 346,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 345,
+  "manual_pages": [
+    345,
+    346,
+    347
+  ],
+  "manual_section": "Function Code 118 - Real Recipe Table",
+  "diagnostics": []
+}

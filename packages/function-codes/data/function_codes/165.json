@@ -1,0 +1,169 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 165,
+  "name": "Moving Average",
+  "description": "The moving average function code computes a moving average from n samples taken at a defined interval. The sample buffer fills with an input value at the end of each cycle. At every sample interval, the current input value replaces the oldest value in the buffer. At each sample interval, a new average is calculated.",
+  "description_lines": [
+    "The moving average function code computes a moving average",
+    "from n samples taken at a defined interval. The sample buffer",
+    "fills with an input value at the end of each cycle. At every sam-",
+    "ple interval, the current input value replaces the oldest value",
+    "in the buffer. At each sample interval, a new average is calcu-",
+    "lated."
+  ],
+  "symbol": {
+    "title_raw": "M O VAVG",
+    "title": "MOVAVG",
+    "inputs": [
+      "S1",
+      "S4"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 153.72,
+        "y": 595.02,
+        "s": "M O VAVG"
+      },
+      {
+        "x": 132.84,
+        "y": 591.9,
+        "s": "S 1"
+      },
+      {
+        "x": 189.78,
+        "y": 589.02,
+        "s": "(1 6 5 )"
+      },
+      {
+        "x": 132.84,
+        "y": 582.72,
+        "s": "S 4"
+      },
+      {
+        "x": 189.78,
+        "y": 580.08,
+        "s": "N"
+      },
+      {
+        "x": 152.28,
+        "y": 579.84,
+        "s": "T S"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Sum of samples divided by the number of samples",
+      "description_lines": [
+        "Sum of samples divided by the number of samples"
+      ],
+      "manual_page": 613
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of averaged value",
+      "description_lines": [
+        "Block address of averaged value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 613
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "1-255",
+      "description": "Number of samples in moving average",
+      "description_lines": [
+        "Number of samples in moving average"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 613
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "0.0 - 9.2 E18",
+      "description": "Sample interval in seconds",
+      "description_lines": [
+        "Sample interval in seconds"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 613
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Output track switch:; 0 = track; 1 = normal",
+      "description_lines": [
+        "Output track switch:",
+        "0 = track",
+        "1 = normal"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "track"
+        },
+        {
+          "value": "1",
+          "meaning": "normal"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 613
+    }
+  ],
+  "spec_count": 4,
+  "max_spec_number": 4,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 613,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 613,
+  "manual_pages": [
+    613,
+    614,
+    615
+  ],
+  "manual_section": "Function Code 165 - Moving Average",
+  "diagnostics": []
+}

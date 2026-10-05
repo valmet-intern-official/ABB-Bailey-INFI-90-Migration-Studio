@@ -1,0 +1,113 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 37,
+  "name": "AND (2-Input)",
+  "description": "The 2-input AND function code performs the logical AND function. The output is logic 1 when both inputs are logic 1.",
+  "description_lines": [
+    "The 2-input AND function code performs the logical AND func-",
+    "tion. The output is logic 1 when both inputs are logic 1."
+  ],
+  "symbol": {
+    "title_raw": null,
+    "title": null,
+    "inputs": [
+      "S1",
+      "S2"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 167.58,
+        "y": 589.8,
+        "s": "S 1"
+      },
+      {
+        "x": 194.64,
+        "y": 585.72,
+        "s": "(3 7 )"
+      },
+      {
+        "x": 167.58,
+        "y": 578.7,
+        "s": "S 2"
+      },
+      {
+        "x": 194.64,
+        "y": 574.92,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Refer to truth table (Table 37-1) Inputs Output N",
+      "description_lines": [
+        "Refer to truth table (Table 37-1)",
+        "Inputs",
+        "Output",
+        "N"
+      ],
+      "manual_page": 129
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of first input",
+      "description_lines": [
+        "Block address of first input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 129
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of second input",
+      "description_lines": [
+        "Block address of second input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 129
+    }
+  ],
+  "spec_count": 2,
+  "max_spec_number": 2,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 129,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 129,
+  "manual_pages": [
+    129
+  ],
+  "manual_section": "Function Code 37 - AND (2-Input)",
+  "diagnostics": []
+}

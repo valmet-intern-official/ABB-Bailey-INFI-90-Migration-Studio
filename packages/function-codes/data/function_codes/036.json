@@ -1,0 +1,301 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 36,
+  "name": "Qualified OR (8-Input)",
+  "description": "The qualified OR function code monitors the status of up to eight digital inputs and produces an output signal based upon conditions set by S9 and S10. The output is a logic 1 or 0 and is based upon the number of inputs being less than, equal to, or greater than the number specified in S9 and the condition set by S10.",
+  "description_lines": [
+    "The qualified OR function code monitors the status of up to",
+    "eight digital inputs and produces an output signal based upon",
+    "conditions set by S9 and S10. The output is a logic 1 or 0 and",
+    "is based upon the number of inputs being less than, equal to,",
+    "or greater than the number specified in S9 and the condition",
+    "set by S10."
+  ],
+  "symbol": {
+    "title_raw": "Q O R",
+    "title": "QOR",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 152.34,
+        "y": 598.14,
+        "s": "S 1"
+      },
+      {
+        "x": 152.34,
+        "y": 589.26,
+        "s": "S 2"
+      },
+      {
+        "x": 152.34,
+        "y": 580.38,
+        "s": "S 3"
+      },
+      {
+        "x": 152.34,
+        "y": 571.5,
+        "s": "S 4"
+      },
+      {
+        "x": 192.24,
+        "y": 568.32,
+        "s": "(3 6 )"
+      },
+      {
+        "x": 171.36,
+        "y": 562.8,
+        "s": "Q O R"
+      },
+      {
+        "x": 152.34,
+        "y": 562.56,
+        "s": "S 5"
+      },
+      {
+        "x": 192.24,
+        "y": 559.44,
+        "s": "N"
+      },
+      {
+        "x": 152.34,
+        "y": 553.68,
+        "s": "S 6"
+      },
+      {
+        "x": 152.34,
+        "y": 544.8,
+        "s": "S 7"
+      },
+      {
+        "x": 152.34,
+        "y": 536.16,
+        "s": "S 8"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Output equals: Logic 0 when: No. of logic 1 inputs < S9 Logic 1 when: S10 = 0 and no. of logic 1 inputs ≥ S9 or S10 = 1 and no. of logic 1 inputs = S9",
+      "description_lines": [
+        "Output equals:",
+        "Logic 0 when:",
+        "No. of logic 1 inputs < S9",
+        "Logic 1 when:",
+        "S10 = 0 and no. of logic 1 inputs ≥ S9",
+        "or",
+        "S10 = 1 and no. of logic 1 inputs = S9"
+      ],
+      "manual_page": 127
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of first input",
+      "description_lines": [
+        "Block address of first input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 127
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of second input",
+      "description_lines": [
+        "Block address of second input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 127
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of third input",
+      "description_lines": [
+        "Block address of third input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 127
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of fourth input",
+      "description_lines": [
+        "Block address of fourth input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 127
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of fifth input",
+      "description_lines": [
+        "Block address of fifth input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 127
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of sixth input",
+      "description_lines": [
+        "Block address of sixth input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 127
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of seventh input",
+      "description_lines": [
+        "Block address of seventh input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 127
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of eighth input",
+      "description_lines": [
+        "Block address of eighth input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 127
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 8",
+      "description": "Number of inputs that must equal logic 1",
+      "description_lines": [
+        "Number of inputs that must equal logic 1"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 127
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "0 or 1",
+      "description": "Select inputs:; 0 = no. of logic 1 inputs ≥ S9; 1 = no. of logic 1 inputs = S9",
+      "description_lines": [
+        "Select inputs:",
+        "0 = no. of logic 1 inputs ≥ S9",
+        "1 = no. of logic 1 inputs = S9"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no. of logic 1 inputs ≥ S9"
+        },
+        {
+          "value": "1",
+          "meaning": "no. of logic 1 inputs = S9"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 127
+    }
+  ],
+  "spec_count": 10,
+  "max_spec_number": 10,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 127,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 127,
+  "manual_pages": [
+    127,
+    128
+  ],
+  "manual_section": "Function Code 36 - Qualified OR (8-Input)",
+  "diagnostics": []
+}

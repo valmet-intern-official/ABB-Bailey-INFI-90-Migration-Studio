@@ -1,0 +1,117 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 101,
+  "name": "Exclusive OR",
+  "description": "The exclusive OR function code performs the logical exclusive OR function of two inputs. Function code 101 gives an output of logic 1 when one of two inputs equals logic 1, but not when both equal logic 1 or logic 0.",
+  "description_lines": [
+    "The exclusive OR function code performs the logical exclusive",
+    "OR function of two inputs. Function code 101 gives an output",
+    "of logic 1 when one of two inputs equals logic 1, but not when",
+    "both equal logic 1 or logic 0."
+  ],
+  "symbol": {
+    "title_raw": "X O R",
+    "title": "XOR",
+    "inputs": [
+      "S1",
+      "S2"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 133.56,
+        "y": 591.84,
+        "s": "S 1"
+      },
+      {
+        "x": 191.88,
+        "y": 588.96,
+        "s": "(1 0 1 )"
+      },
+      {
+        "x": 162.12,
+        "y": 583.68,
+        "s": "X O R"
+      },
+      {
+        "x": 133.56,
+        "y": 582.96,
+        "s": "S 2"
+      },
+      {
+        "x": 191.88,
+        "y": 580.08,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Refer to Table 101-1",
+      "description_lines": [
+        "Refer to Table 101-1"
+      ],
+      "manual_page": 295
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of first input",
+      "description_lines": [
+        "Block address of first input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 295
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of second input",
+      "description_lines": [
+        "Block address of second input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 295
+    }
+  ],
+  "spec_count": 2,
+  "max_spec_number": 2,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 295,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 295,
+  "manual_pages": [
+    295
+  ],
+  "manual_section": "Function Code 101 - Exclusive OR",
+  "diagnostics": []
+}

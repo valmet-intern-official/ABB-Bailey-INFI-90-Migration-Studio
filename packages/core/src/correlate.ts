@@ -30,7 +30,7 @@ function enrichFromCad(
   cadSheets: CadSheetParse[],
   cadFile: string,
   deviceTag?: string
-): { loopTag?: string; description?: string; s1?: string; s2?: string; relatedLogic?: string } {
+): { description?: string; s1?: string; s2?: string; relatedLogic?: string } {
   const sheet = cadSheets.find(
     (c) => cadBasename(c.filename) === cadBasename(cadFile)
   );
@@ -39,14 +39,6 @@ function enrichFromCad(
   const description =
     sheet.descriptions[0] ||
     sheet.texts.find((t) => t.kind === "description")?.text;
-
-  let loopTag = sheet.loopTags[0];
-  if (deviceTag) {
-    const match = sheet.loopTags.find((t) =>
-      t.toUpperCase().includes(deviceTag.toUpperCase().slice(0, 6))
-    );
-    if (match) loopTag = match;
-  }
 
   const block =
     sheet.functionBlocks.find((b) =>
@@ -58,7 +50,6 @@ function enrichFromCad(
     ) || sheet.functionBlocks[0];
 
   return {
-    loopTag,
     description,
     s1: block?.s1,
     s2: block?.s2,
@@ -68,6 +59,38 @@ function enrichFromCad(
           .join(" / ")
       : undefined,
   };
+}
+
+/**
+ * The OUT cross-reference lists a physical point once for its IO slave sheet
+ * and again for every logic sheet it feeds. The IO list keeps one row per
+ * point: the slave sheet (sheet code = slave number, e.g. 2071003C for slave
+ * 3) as its CAD, with every other sheet as a destination.
+ */
+function onePerPhysicalPoint(records: IoRecord[]): IoRecord[] {
+  const groups = new Map<string, IoRecord[]>();
+  for (const r of records) {
+    const key = r.rawIoTag.toUpperCase();
+    const list = groups.get(key) ?? [];
+    list.push(r);
+    groups.set(key, list);
+  }
+  const sheetCode = (cad?: string) => /^\d{5}([0-9A-Z]{2})C/i.exec(cadBasename(cad ?? ""))?.[1];
+  const out: IoRecord[] = [];
+  for (const list of groups.values()) {
+    const slave = /(\d+)/.exec(list[0].slave ?? "")?.[1];
+    const code = slave ? slave.padStart(2, "0") : undefined;
+    const primary = list.find((r) => code && sheetCode(r.cadFile) === code) ?? list[0];
+    const primaryCad = cadBasename(primary.cadFile ?? "");
+    const others = list.flatMap((r) => [r.cadFile, ...r.destinationCads]).filter(Boolean) as string[];
+    const destinationCads = [...new Set(others.map(cadBasename))].filter((c) => c !== primaryCad);
+    out.push({
+      ...primary,
+      destinationPoints: [...new Set(list.flatMap((r) => r.destinationPoints))],
+      destinationCads,
+    });
+  }
+  return out;
 }
 
 export function correlateProject(input: CorrelateInput): CorrelatedProject {
@@ -98,8 +121,8 @@ export function correlateProject(input: CorrelateInput): CorrelatedProject {
         parsed.deviceTag
       );
 
-      const mappingStatus: IoRecord["mappingStatus"] =
-        enrich.loopTag || enrich.description ? "mapped" : "partial";
+      // Loop tag and description come from the loop's logic sheet (applyCadLoopTags).
+      const mappingStatus: IoRecord["mappingStatus"] = "partial";
 
       ioRecords.push({
         id: newId("io"),
@@ -108,8 +131,6 @@ export function correlateProject(input: CorrelateInput): CorrelatedProject {
         slave: parsed.slave,
         deviceTag: parsed.deviceTag,
         rawIoTag: parsed.raw,
-        loopTag: enrich.loopTag,
-        description: enrich.description,
         cadFile: entry.cadFile,
         direction: entry.direction,
         sourcePoint: entry.source?.point,
@@ -124,6 +145,10 @@ export function correlateProject(input: CorrelateInput): CorrelatedProject {
       });
     }
   }
+
+  const collapsed = onePerPhysicalPoint(ioRecords);
+  ioRecords.length = 0;
+  ioRecords.push(...collapsed);
 
   // Enrich from REF tags that might not be in OUT physical list
   if (input.refTags) {

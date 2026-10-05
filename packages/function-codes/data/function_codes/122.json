@@ -1,0 +1,220 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 122,
+  "name": "Digital Input/Cnet",
+  "description": "The digital input/Cnet function code acquires a digital input from another module in a different node via Cnet. If the source node is a process control unit, the input must come from a digital exception report block (function code 45), a digital in/ channel (function code 224), or a digital out/channel (function code 225). If the remote node is a network interface unit, the input must come from an analog report index. Updates are on an exception report basis. Segment control blocks in Harmony controllers specify exception report intervals. To insure that the signal is successfully acquired from the Cnet, the digital signal generates a point quality flag. To test the quality of the signal, include a function code 31 in the configuration. The quality of the point cannot be used as an input to any other type of block. However, the output of the test quality block, representing the quality, can be used as an input to other analog processing blocks. Refer to Appendix H for a definition of point quality. NOTE: If a module utilizes an imported digital value from the loop in several instances in its configuration, the function blocks that utilize that digital value must be connected to only one digital input/Cnet block. Exception reports from the same (loop, node, module and block) address cannot be imported to more than one destination within a single module configuration.",
+  "description_lines": [
+    "The digital input/Cnet function code acquires a digital input",
+    "from another module in a different node via Cnet. If the source",
+    "node is a process control unit, the input must come from a",
+    "digital exception report block (function code 45), a digital in/",
+    "channel (function code 224), or a digital out/channel (function",
+    "code 225). If the remote node is a network interface unit, the",
+    "input must come from an analog report index. Updates are on",
+    "an exception report basis. Segment control blocks in Harmony",
+    "controllers specify exception report intervals.",
+    "To insure that the signal is successfully acquired from the",
+    "Cnet, the digital signal generates a point quality flag. To test",
+    "the quality of the signal, include a function code 31 in the con-",
+    "figuration. The quality of the point cannot be used as an input",
+    "to any other type of block. However, the output of the test",
+    "quality block, representing the quality, can be used as an",
+    "input to other analog processing blocks. Refer to Appendix H",
+    "for a definition of point quality.",
+    "NOTE: If a module utilizes an imported digital value from the loop in several",
+    "instances in its configuration, the function blocks that utilize that digital value",
+    "must be connected to only one digital input/Cnet block. Exception reports from",
+    "the same (loop, node, module and block) address cannot be imported to more",
+    "than one destination within a single module configuration."
+  ],
+  "symbol": {
+    "title_raw": "D I/I",
+    "title": "DI/I",
+    "inputs": [],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 151.08,
+        "y": 597.9,
+        "s": "D I/I"
+      },
+      {
+        "x": 192.72,
+        "y": 591.18,
+        "s": "(1 2 2 )"
+      },
+      {
+        "x": 192.72,
+        "y": 583.44,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Digital output value, quality and alarm state",
+      "description_lines": [
+        "Digital output value, quality and alarm state"
+      ],
+      "manual_page": 359
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 31",
+      "description": "Source module address",
+      "description_lines": [
+        "Source module address"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 359
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Source block address",
+      "description_lines": [
+        "Source block address"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 359
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 250",
+      "description": "Source node address",
+      "description_lines": [
+        "Source node address"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 359
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 250",
+      "description": "Source loop address",
+      "description_lines": [
+        "Source loop address"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 359
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0-2",
+      "description": "Input block type. Defines the type of remote block address that is being referenced:; 0=function code 45; 1=function code 224; 2=function code 225",
+      "description_lines": [
+        "Input block type. Defines the type of remote block",
+        "address that is being referenced:",
+        "0=function code 45",
+        "1=function code 224",
+        "2=function code 225"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "function code 45"
+        },
+        {
+          "value": "1",
+          "meaning": "function code 224"
+        },
+        {
+          "value": "2",
+          "meaning": "function code 225"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 360
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare",
+      "description_lines": [
+        "Spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 360
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Spare",
+      "description_lines": [
+        "Spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 360
+    }
+  ],
+  "spec_count": 7,
+  "max_spec_number": 7,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 360,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 359,
+  "manual_pages": [
+    359,
+    360
+  ],
+  "manual_section": "Function Code 122 - Digital Input/Cnet",
+  "diagnostics": []
+}

@@ -1,0 +1,297 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 126,
+  "name": "Real Signal Demultiplexer",
+  "description": "The real signal demultiplexer function code outputs boolean signals based on a real input value. The real value can be converted to boolean values in three modes (select, integer and BCD). An unlimited number of real signal demultiplexer blocks may be linked together in the select mode (demultiplex the real input into the required number of boolean outputs). Up to four blocks may be linked together in the integer and BCD modes for demultiplexing. The first block in the link list is the group master. The master accepts the input signal and drives the outputs for the group.",
+  "description_lines": [
+    "The real signal demultiplexer function code outputs boolean",
+    "signals based on a real input value. The real value can be con-",
+    "verted to boolean values in three modes (select, integer and",
+    "BCD). An unlimited number of real signal demultiplexer blocks",
+    "may be linked together in the select mode (demultiplex the real",
+    "input into the required number of boolean outputs). Up to four",
+    "blocks may be linked together in the integer and BCD modes",
+    "for demultiplexing. The first block in the link list is the group",
+    "master. The master accepts the input signal and drives the",
+    "outputs for the group."
+  ],
+  "symbol": {
+    "title_raw": "R D E M U X",
+    "title": "RDEMUX",
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3",
+      "N+4",
+      "N+5",
+      "N+6",
+      "N+7"
+    ],
+    "items": [
+      {
+        "x": 154.02,
+        "y": 595.02,
+        "s": "R D E M U X"
+      },
+      {
+        "x": 192.12,
+        "y": 588.06,
+        "s": "(1 2 6 )"
+      },
+      {
+        "x": 132.9,
+        "y": 587.34,
+        "s": "S 1"
+      },
+      {
+        "x": 183,
+        "y": 584.22,
+        "s": "1"
+      },
+      {
+        "x": 192.12,
+        "y": 579.18,
+        "s": "N"
+      },
+      {
+        "x": 183,
+        "y": 575.34,
+        "s": "2"
+      },
+      {
+        "x": 192.12,
+        "y": 570.3,
+        "s": "N + 1"
+      },
+      {
+        "x": 183,
+        "y": 566.22,
+        "s": "3"
+      },
+      {
+        "x": 192.12,
+        "y": 561.42,
+        "s": "N + 2"
+      },
+      {
+        "x": 183,
+        "y": 557.34,
+        "s": "4"
+      },
+      {
+        "x": 192.12,
+        "y": 552.54,
+        "s": "N + 3"
+      },
+      {
+        "x": 183,
+        "y": 548.22,
+        "s": "5"
+      },
+      {
+        "x": 192.12,
+        "y": 543.66,
+        "s": "N + 4"
+      },
+      {
+        "x": 183,
+        "y": 539.34,
+        "s": "6"
+      },
+      {
+        "x": 192.12,
+        "y": 534.78,
+        "s": "N + 5"
+      },
+      {
+        "x": 183,
+        "y": 530.22,
+        "s": "7"
+      },
+      {
+        "x": 192.12,
+        "y": 525.9,
+        "s": "N + 6"
+      },
+      {
+        "x": 183,
+        "y": 521.1,
+        "s": "8"
+      },
+      {
+        "x": 192.12,
+        "y": 517.02,
+        "s": "N + 7"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Output 0 (least significant bit)",
+      "description_lines": [
+        "Output 0 (least significant bit)"
+      ],
+      "manual_page": 395
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Output 1",
+      "description_lines": [
+        "Output 1"
+      ],
+      "manual_page": 395
+    },
+    {
+      "blk": "N+2",
+      "type": "B",
+      "description": "Output 2",
+      "description_lines": [
+        "Output 2"
+      ],
+      "manual_page": 395
+    },
+    {
+      "blk": "N+3",
+      "type": "B",
+      "description": "Output 3",
+      "description_lines": [
+        "Output 3"
+      ],
+      "manual_page": 395
+    },
+    {
+      "blk": "N+4",
+      "type": "B",
+      "description": "Output 4",
+      "description_lines": [
+        "Output 4"
+      ],
+      "manual_page": 395
+    },
+    {
+      "blk": "N+5",
+      "type": "B",
+      "description": "Output 5",
+      "description_lines": [
+        "Output 5"
+      ],
+      "manual_page": 395
+    },
+    {
+      "blk": "N+6",
+      "type": "B",
+      "description": "Output 6",
+      "description_lines": [
+        "Output 6"
+      ],
+      "manual_page": 395
+    },
+    {
+      "blk": "N+7",
+      "type": "B",
+      "description": "Output 7 (most significant bit)",
+      "description_lines": [
+        "Output 7 (most significant bit)"
+      ],
+      "manual_page": 395
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of select input",
+      "description_lines": [
+        "Block address of select input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 395
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2",
+      "description": "Conversion mode:; 0 = select (unlimited number of blocks in link list); 1 = integer (maximum of 4 blocks in link list); 2 = BCD (maximum of 4 blocks in link list)",
+      "description_lines": [
+        "Conversion mode:",
+        "0 = select (unlimited number of blocks in link list)",
+        "1 = integer (maximum of 4 blocks in link list)",
+        "2 = BCD (maximum of 4 blocks in link list)"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "select (unlimited number of blocks in link list)"
+        },
+        {
+          "value": "1",
+          "meaning": "integer (maximum of 4 blocks in link list)"
+        },
+        {
+          "value": "2",
+          "meaning": "BCD (maximum of 4 blocks in link list)"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 395
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of next block in link list",
+      "description_lines": [
+        "Block address of next block in link list"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 395
+    }
+  ],
+  "spec_count": 3,
+  "max_spec_number": 3,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 395,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 395,
+  "manual_pages": [
+    395,
+    396,
+    397,
+    398
+  ],
+  "manual_section": "Function Code 126 - Real Signal Demultiplexer",
+  "diagnostics": []
+}

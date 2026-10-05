@@ -1,0 +1,224 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 4,
+  "name": "Pulse Positioner",
+  "description": "The pulse positioner (PULPOS) function code compares two analog input signals and produces output pulses that are proportional in time duration to the difference between these two analog signals. Both inputs are expressed as a percentage of the total range or span of the process parameter. Any difference is converted to a timed forward or reverse boolean output. The time duration of the boolean signal is proportional to the percent error and the specified stroke time. There are provisions for specifying the error dead band and the cycle time. The PULPOS function code uses two consecutive block addresses. For correct operation, block addresses N and N+1 should be sent directly to two digital output blocks in the same I/O module. This is accomplished by using any digital output (such as function code 79, 83, 225, etc.) for the Harmony controllers. NOTE: Outputs N and N+1 of function code 4 must be in the same I/O group of function code 83 (digital output group).",
+  "description_lines": [
+    "The pulse positioner (PULPOS) function code compares two",
+    "analog input signals and produces output pulses that are pro-",
+    "portional in time duration to the difference between these two",
+    "analog signals. Both inputs are expressed as a percentage of",
+    "the total range or span of the process parameter. Any differ-",
+    "ence is converted to a timed forward or reverse boolean output.",
+    "The time duration of the boolean signal is proportional to the",
+    "percent error and the specified stroke time. There are provi-",
+    "sions for specifying the error dead band and the cycle time.",
+    "The PULPOS function code uses two consecutive block",
+    "addresses. For correct operation, block addresses N and N+1",
+    "should be sent directly to two digital output blocks in the same",
+    "I/O module. This is accomplished by using any digital output",
+    "(such as function code 79, 83, 225, etc.) for the Harmony",
+    "controllers.",
+    "NOTE: Outputs N and N+1 of function code 4 must be in the same I/O group of",
+    "function code 83 (digital output group)."
+  ],
+  "symbol": {
+    "title_raw": "P U L P O S",
+    "title": "PULPOS",
+    "inputs": [
+      "S1",
+      "S2"
+    ],
+    "outputs": [
+      "N",
+      "N+1"
+    ],
+    "items": [
+      {
+        "x": 154.92,
+        "y": 594.78,
+        "s": "P U L P O S"
+      },
+      {
+        "x": 191.82,
+        "y": 588.78,
+        "s": "(4 )"
+      },
+      {
+        "x": 133.08,
+        "y": 587.34,
+        "s": "S 1"
+      },
+      {
+        "x": 184.14,
+        "y": 583.92,
+        "s": "I"
+      },
+      {
+        "x": 191.82,
+        "y": 579.84,
+        "s": "N"
+      },
+      {
+        "x": 133.08,
+        "y": 578.4,
+        "s": "S 2"
+      },
+      {
+        "x": 182.22,
+        "y": 575.04,
+        "s": "P"
+      },
+      {
+        "x": 191.82,
+        "y": 570.96,
+        "s": "N + 1"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Output value of timed raise (forward pulse)",
+      "description_lines": [
+        "Output value of timed raise (forward pulse)"
+      ],
+      "manual_page": 55
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Output value of timed lower (reverse pulse)",
+      "description_lines": [
+        "Output value of timed lower (reverse pulse)"
+      ],
+      "manual_page": 55
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of set point signal",
+      "description_lines": [
+        "Block address of set point signal"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 55
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of feedback signal",
+      "description_lines": [
+        "Block address of feedback signal"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 55
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Forward stroke rate (%/sec)",
+      "description_lines": [
+        "Forward stroke rate (%/sec)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 55
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Reverse stroke rate (%/sec)",
+      "description_lines": [
+        "Reverse stroke rate (%/sec)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 55
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Deadband (%) – absolute deadband",
+      "description_lines": [
+        "Deadband (%) – absolute deadband"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 55
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Cycle time (secs)",
+      "description_lines": [
+        "Cycle time (secs)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 55
+    }
+  ],
+  "spec_count": 6,
+  "max_spec_number": 6,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 55,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 55,
+  "manual_pages": [
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "manual_section": "Function Code 4 - Pulse Positioner",
+  "diagnostics": []
+}

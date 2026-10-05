@@ -1,0 +1,173 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 38,
+  "name": "AND (4-Input)",
+  "description": "The 4-input AND function code performs the logical AND function. The output is logic 1 when all the inputs are logic 1.",
+  "description_lines": [
+    "The 4-input AND function code performs the logical AND func-",
+    "tion. The output is logic 1 when all the inputs are logic 1."
+  ],
+  "symbol": {
+    "title_raw": "A",
+    "title": "A",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ],
+    "outputs": [
+      "N",
+      "N"
+    ],
+    "items": [
+      {
+        "x": 168.84,
+        "y": 597.3,
+        "s": "S 1"
+      },
+      {
+        "x": 168.84,
+        "y": 586.86,
+        "s": "S 2"
+      },
+      {
+        "x": 187.2,
+        "y": 586.26,
+        "s": "A"
+      },
+      {
+        "x": 195.96,
+        "y": 582.72,
+        "s": "(3 8 )"
+      },
+      {
+        "x": 186.96,
+        "y": 577.2,
+        "s": "N"
+      },
+      {
+        "x": 168.84,
+        "y": 576.66,
+        "s": "S 3"
+      },
+      {
+        "x": 195.96,
+        "y": 572.58,
+        "s": "N"
+      },
+      {
+        "x": 186.96,
+        "y": 567.9,
+        "s": "D"
+      },
+      {
+        "x": 168.84,
+        "y": 566.22,
+        "s": "S 4"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Refer to truth table (Table 38-1) Inputs Output Output N N",
+      "description_lines": [
+        "Refer to truth table (Table 38-1)",
+        "Inputs",
+        "Output Output",
+        "N N"
+      ],
+      "manual_page": 131
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of first input",
+      "description_lines": [
+        "Block address of first input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 131
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of second input",
+      "description_lines": [
+        "Block address of second input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 131
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of third input",
+      "description_lines": [
+        "Block address of third input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 131
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of fourth input",
+      "description_lines": [
+        "Block address of fourth input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 131
+    }
+  ],
+  "spec_count": 4,
+  "max_spec_number": 4,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 131,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 131,
+  "manual_pages": [
+    131
+  ],
+  "manual_section": "Function Code 38 - AND (4-Input)",
+  "diagnostics": []
+}

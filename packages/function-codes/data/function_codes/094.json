@@ -1,0 +1,128 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 94,
+  "name": "BASIC Boolean Output",
+  "description": "The BASIC boolean output (BASBO) function code provides a means of transmitting boolean data values from BASIC, Batch 90, or C Language to other function blocks. There are no specifications for this block. The BOUT command in the program defines the four outputs. NOTE: This function code is supported only on the BRC-100 and the IMMFP11/12 controllers. For instructions on programming the modules, refer to: MFC BASIC Programming Language Reference . Batch 90 and User Defined Function (UDF) Programming Language Reference . C Utility Program .",
+  "description_lines": [
+    "The BASIC boolean output (BASBO) function code provides a",
+    "means of transmitting boolean data values from BASIC, Batch",
+    "90, or C Language to other function blocks. There are no spec-",
+    "ifications for this block. The BOUT command in the program",
+    "defines the four outputs.",
+    "NOTE: This function code is supported only on the BRC-100 and the",
+    "IMMFP11/12 controllers.",
+    "For instructions on programming the modules, refer to:",
+    "MFC BASIC Programming Language Reference .",
+    "Batch 90 and User Defined Function (UDF) Programming",
+    "Language Reference .",
+    "C Utility Program ."
+  ],
+  "symbol": {
+    "title_raw": "B A S B O",
+    "title": "BASBO",
+    "inputs": [],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3"
+    ],
+    "items": [
+      {
+        "x": 156.3,
+        "y": 594.54,
+        "s": "B A S B O"
+      },
+      {
+        "x": 190.62,
+        "y": 588.54,
+        "s": "(9 4 )"
+      },
+      {
+        "x": 190.62,
+        "y": 579.66,
+        "s": "N"
+      },
+      {
+        "x": 190.62,
+        "y": 571.02,
+        "s": "N + 1"
+      },
+      {
+        "x": 190.62,
+        "y": 562.14,
+        "s": "N + 2"
+      },
+      {
+        "x": 190.62,
+        "y": 553.26,
+        "s": "N + 3"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Program command BOUT sets the output value",
+      "description_lines": [
+        "Program command BOUT sets the output value"
+      ],
+      "manual_page": 271
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "",
+      "description_lines": [],
+      "manual_page": 271
+    },
+    {
+      "blk": "N+2",
+      "type": "B",
+      "description": "",
+      "description_lines": [],
+      "manual_page": 271
+    },
+    {
+      "blk": "N+3",
+      "type": "B",
+      "description": "",
+      "description_lines": [],
+      "manual_page": 271
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Not used",
+      "description_lines": [
+        "Not used"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 271
+    }
+  ],
+  "spec_count": 1,
+  "max_spec_number": 1,
+  "notes": [],
+  "manual_page": 271,
+  "manual_pages": [
+    271
+  ],
+  "manual_section": "Function Code 94 - BASIC Boolean Output",
+  "diagnostics": []
+}

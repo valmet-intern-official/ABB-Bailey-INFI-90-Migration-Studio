@@ -1,0 +1,589 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 146,
+  "name": "Remote I/O Interface",
+  "description": "The remote I/O interface function code defines the interface between a BRC-100 controller or HAC controller and a local remote I/O module. The local remote I/O module is the remote master processor (RMP). Function code 146 defines the expander bus addresses for both the primary and secondary remote master processors. NOTE: In order to minimize the possibility of glitches, it is essential that the RMP function block (FC146), the RSP function blocks (FC147), and all the slave definition blocks for the remote slaves (FC79, FC83, FC84, FC132, etc.) all reside within the same segment. In addition, these blocks must be sequenced in the following order: FC146 must reside at a lower block number than all FC147s for that link, and the FC147s must reside at lower block addresses than the slave definition blocks and station blocks (FC80) for the remote slaves.",
+  "description_lines": [
+    "The remote I/O interface function code defines the interface",
+    "between a BRC-100 controller or HAC controller and a local",
+    "remote I/O module. The local remote I/O module is the remote",
+    "master processor (RMP). Function code 146 defines the",
+    "expander bus addresses for both the primary and secondary",
+    "remote master processors.",
+    "NOTE: In order to minimize the possibility of glitches, it is essential that the",
+    "RMP function block (FC146), the RSP function blocks (FC147), and all the",
+    "slave definition blocks for the remote slaves (FC79, FC83, FC84, FC132, etc.)",
+    "all reside within the same segment. In addition, these blocks must be",
+    "sequenced in the following order: FC146 must reside at a lower block number",
+    "than all FC147s for that link, and the FC147s must reside at lower block",
+    "addresses than the slave definition blocks and station blocks (FC80) for the",
+    "remote slaves."
+  ],
+  "symbol": {
+    "title_raw": "R I/O I",
+    "title": "RI/OI",
+    "inputs": [
+      "S1",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17",
+      "S18"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2"
+    ],
+    "items": [
+      {
+        "x": 159.72,
+        "y": 594.54,
+        "s": "R I/O I"
+      },
+      {
+        "x": 190.38,
+        "y": 589.26,
+        "s": "(1 4 6 )"
+      },
+      {
+        "x": 131.88,
+        "y": 587.34,
+        "s": "S 1"
+      },
+      {
+        "x": 151.32,
+        "y": 584.22,
+        "s": "R I/O D"
+      },
+      {
+        "x": 174.78,
+        "y": 584.22,
+        "s": "S S T"
+      },
+      {
+        "x": 190.38,
+        "y": 580.38,
+        "s": "N"
+      },
+      {
+        "x": 131.88,
+        "y": 578.46,
+        "s": "S 5"
+      },
+      {
+        "x": 151.32,
+        "y": 575.4,
+        "s": "S TA"
+      },
+      {
+        "x": 174.78,
+        "y": 575.4,
+        "s": "B S T"
+      },
+      {
+        "x": 190.38,
+        "y": 571.56,
+        "s": "N + 1"
+      },
+      {
+        "x": 131.88,
+        "y": 569.4,
+        "s": "S 6"
+      },
+      {
+        "x": 177.66,
+        "y": 566.52,
+        "s": "C T"
+      },
+      {
+        "x": 151.32,
+        "y": 566.28,
+        "s": "S TA"
+      },
+      {
+        "x": 190.38,
+        "y": 562.68,
+        "s": "N + 2"
+      },
+      {
+        "x": 131.88,
+        "y": 560.52,
+        "s": "S 7"
+      },
+      {
+        "x": 151.32,
+        "y": 557.4,
+        "s": "S TA"
+      },
+      {
+        "x": 131.88,
+        "y": 551.4,
+        "s": "S 8"
+      },
+      {
+        "x": 151.32,
+        "y": 548.52,
+        "s": "S TA"
+      },
+      {
+        "x": 131.88,
+        "y": 542.28,
+        "s": "S 9"
+      },
+      {
+        "x": 151.32,
+        "y": 539.4,
+        "s": "S TA"
+      },
+      {
+        "x": 131.88,
+        "y": 533.4,
+        "s": "S 1 0"
+      },
+      {
+        "x": 151.32,
+        "y": 530.52,
+        "s": "S TA"
+      },
+      {
+        "x": 131.88,
+        "y": 524.34,
+        "s": "S 1 1"
+      },
+      {
+        "x": 151.32,
+        "y": 521.7,
+        "s": "S TA"
+      },
+      {
+        "x": 131.88,
+        "y": 515.46,
+        "s": "S 1 2"
+      },
+      {
+        "x": 151.32,
+        "y": 512.58,
+        "s": "S TA"
+      },
+      {
+        "x": 131.88,
+        "y": 506.34,
+        "s": "S 1 3"
+      },
+      {
+        "x": 151.32,
+        "y": 503.7,
+        "s": "S TA"
+      },
+      {
+        "x": 131.88,
+        "y": 497.22,
+        "s": "S 1 4"
+      },
+      {
+        "x": 151.32,
+        "y": 494.82,
+        "s": "S TA"
+      },
+      {
+        "x": 131.88,
+        "y": 488.34,
+        "s": "S 1 5"
+      },
+      {
+        "x": 151.32,
+        "y": 485.7,
+        "s": "S TA"
+      },
+      {
+        "x": 131.88,
+        "y": 479.22,
+        "s": "S 1 6"
+      },
+      {
+        "x": 151.32,
+        "y": 476.82,
+        "s": "S TA"
+      },
+      {
+        "x": 131.88,
+        "y": 470.4,
+        "s": "S 1 7"
+      },
+      {
+        "x": 151.32,
+        "y": 468,
+        "s": "N /A"
+      },
+      {
+        "x": 131.88,
+        "y": 461.28,
+        "s": "S 1 8"
+      },
+      {
+        "x": 151.32,
+        "y": 458.88,
+        "s": "N /A"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Primary RMP status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "Primary RMP status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 497
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Secondary RMP status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "Secondary RMP status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 497
+    },
+    {
+      "blk": "N+2",
+      "type": "R",
+      "description": "Cycle time of remote master processor (secs)",
+      "description_lines": [
+        "Cycle time of remote master processor (secs)"
+      ],
+      "manual_page": 497
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of remote I/O definition",
+      "description_lines": [
+        "Block address of remote I/O definition"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 497
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 63",
+      "description": "Expander bus address of primary RMP",
+      "description_lines": [
+        "Expander bus address of primary RMP"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 497
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 63",
+      "description": "Expander bus address of secondary RMP",
+      "description_lines": [
+        "Expander bus address of secondary RMP"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 497
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Spare parameter",
+      "description_lines": [
+        "Spare parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 497
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control or indicator station",
+      "description_lines": [
+        "Block address of control or indicator station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 497
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control or indicator station",
+      "description_lines": [
+        "Block address of control or indicator station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 497
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control or indicator station",
+      "description_lines": [
+        "Block address of control or indicator station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 497
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control or indicator station",
+      "description_lines": [
+        "Block address of control or indicator station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 497
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control or indicator station",
+      "description_lines": [
+        "Block address of control or indicator station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 498
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control or indicator station",
+      "description_lines": [
+        "Block address of control or indicator station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 498
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control or indicator station",
+      "description_lines": [
+        "Block address of control or indicator station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 498
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control or indicator station",
+      "description_lines": [
+        "Block address of control or indicator station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 498
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control or indicator station",
+      "description_lines": [
+        "Block address of control or indicator station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 498
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control or indicator station",
+      "description_lines": [
+        "Block address of control or indicator station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 498
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control or indicator station",
+      "description_lines": [
+        "Block address of control or indicator station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 498
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control or indicator station",
+      "description_lines": [
+        "Block address of control or indicator station"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 498
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Spare boolean input",
+      "description_lines": [
+        "Spare boolean input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 498
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Spare boolean input",
+      "description_lines": [
+        "Spare boolean input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 498
+    }
+  ],
+  "spec_count": 18,
+  "max_spec_number": 18,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 498,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 497,
+  "manual_pages": [
+    497,
+    498,
+    499,
+    500,
+    501
+  ],
+  "manual_section": "Function Code 146 - Remote I/O Interface",
+  "diagnostics": []
+}

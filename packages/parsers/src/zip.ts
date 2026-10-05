@@ -60,6 +60,9 @@ export function extractZip(
     const { target } = assertSafeZipEntry(destDir, entry.entryName);
     fs.mkdirSync(path.dirname(target), { recursive: true });
     fs.writeFileSync(target, entry.getData());
+    // The archive timestamp is the only source of a sheet's plot stamp.
+    const t = entry.header.time;
+    if (t instanceof Date && !Number.isNaN(t.getTime())) fs.utimesSync(target, t, t);
   }
 
   const listed: { relativePath: string; size: number }[] = [];

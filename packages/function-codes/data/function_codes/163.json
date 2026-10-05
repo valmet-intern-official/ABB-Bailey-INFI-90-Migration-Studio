@@ -1,0 +1,210 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 163,
+  "name": "Analog Segment Buffer",
+  "description": "The analog segment buffer function code takes a snapshot of four analog values simultaneously. Simultaneous snapshots eliminate the possibility of inconsistent data within a segment. Any series of segment buffer blocks (analog or digital) unbroken by nonbuffer blocks is an uninterruptible sequence within a segment. Thus, all outputs of the series of blocks are consistent for the duration of the segment cycle.",
+  "description_lines": [
+    "The analog segment buffer function code takes a snapshot of",
+    "four analog values simultaneously. Simultaneous snapshots",
+    "eliminate the possibility of inconsistent data within a segment.",
+    "Any series of segment buffer blocks (analog or digital) unbro-",
+    "ken by nonbuffer blocks is an uninterruptible sequence within",
+    "a segment. Thus, all outputs of the series of blocks are consis-",
+    "tent for the duration of the segment cycle."
+  ],
+  "symbol": {
+    "title_raw": "A S N A P",
+    "title": "ASNAP",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3"
+    ],
+    "items": [
+      {
+        "x": 157.02,
+        "y": 594.78,
+        "s": "A S N A P"
+      },
+      {
+        "x": 190.62,
+        "y": 588.78,
+        "s": "(1 6 3 )"
+      },
+      {
+        "x": 132.3,
+        "y": 587.34,
+        "s": "S 1"
+      },
+      {
+        "x": 190.62,
+        "y": 579.9,
+        "s": "N"
+      },
+      {
+        "x": 132.3,
+        "y": 578.46,
+        "s": "S 2"
+      },
+      {
+        "x": 190.62,
+        "y": 571.02,
+        "s": "N + 1"
+      },
+      {
+        "x": 132.3,
+        "y": 569.34,
+        "s": "S 3"
+      },
+      {
+        "x": 190.62,
+        "y": 561.9,
+        "s": "N + 2"
+      },
+      {
+        "x": 132.3,
+        "y": 560.46,
+        "s": "S 4"
+      },
+      {
+        "x": 190.62,
+        "y": 553.02,
+        "s": "N + 3"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Value of first input",
+      "description_lines": [
+        "Value of first input"
+      ],
+      "manual_page": 611
+    },
+    {
+      "blk": "N+1",
+      "type": "R",
+      "description": "Value of second input",
+      "description_lines": [
+        "Value of second input"
+      ],
+      "manual_page": 611
+    },
+    {
+      "blk": "N+2",
+      "type": "R",
+      "description": "Value of third input",
+      "description_lines": [
+        "Value of third input"
+      ],
+      "manual_page": 611
+    },
+    {
+      "blk": "N+3",
+      "type": "R",
+      "description": "Value of fourth input",
+      "description_lines": [
+        "Value of fourth input"
+      ],
+      "manual_page": 611
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of first input",
+      "description_lines": [
+        "Block address of first input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 611
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of second input",
+      "description_lines": [
+        "Block address of second input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 611
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of third input",
+      "description_lines": [
+        "Block address of third input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 611
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of fourth input",
+      "description_lines": [
+        "Block address of fourth input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 611
+    }
+  ],
+  "spec_count": 4,
+  "max_spec_number": 4,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 611,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 611,
+  "manual_pages": [
+    611,
+    612
+  ],
+  "manual_section": "Function Code 163 - Analog Segment Buffer",
+  "diagnostics": []
+}

@@ -1,0 +1,134 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 17,
+  "name": "Divide",
+  "description": "This function causes one input <S1> to be divided by a second input <S2> and the quotient to be multiplied by a constant (S3).",
+  "description_lines": [
+    "This function causes one input <S1> to be divided by a second",
+    "input <S2> and the quotient to be multiplied by a constant",
+    "(S3)."
+  ],
+  "symbol": {
+    "title_raw": null,
+    "title": null,
+    "inputs": [
+      "S1",
+      "S2"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 133.26,
+        "y": 591.9,
+        "s": "S 1"
+      },
+      {
+        "x": 191.7,
+        "y": 588.78,
+        "s": "(1 7 )"
+      },
+      {
+        "x": 133.26,
+        "y": 582.72,
+        "s": "S 2"
+      },
+      {
+        "x": 191.7,
+        "y": 580.08,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Output value is the weighted quotient of the two input signals",
+      "description_lines": [
+        "Output value is the weighted quotient of the two input",
+        "signals"
+      ],
+      "manual_page": 91
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "6",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of first input",
+      "description_lines": [
+        "Block address of first input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 91
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "6",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of second input",
+      "description_lines": [
+        "Block address of second input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 91
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Output gain parameter",
+      "description_lines": [
+        "Output gain parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 91
+    }
+  ],
+  "spec_count": 3,
+  "max_spec_number": 3,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "If S2 is set to 0, the output (N) is the largest value possible within the controller (e.g., 4.0 E06).",
+      "manual_page": 91,
+      "context": "outputs"
+    },
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 91,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 91,
+  "manual_pages": [
+    91
+  ],
+  "manual_section": "Function Code 17 - Divide",
+  "diagnostics": []
+}

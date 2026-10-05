@@ -1,0 +1,311 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 1,
+  "name": "Function Generator",
+  "description": "This function approximates a nonlinear output to input relationship. The input range is divided into five sections and a linear input to output relationship is set up for each of the five sections. This function then computes an output that is related to the input according to the five linear relationships.",
+  "description_lines": [
+    "This function approximates a nonlinear output to input rela-",
+    "tionship. The input range is divided into five sections and a",
+    "linear input to output relationship is set up for each of the five",
+    "sections. This function then computes an output that is",
+    "related to the input according to the five linear relationships."
+  ],
+  "symbol": {
+    "title_raw": "F (X )",
+    "title": "F(X)",
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 193.02,
+        "y": 589.02,
+        "s": "(1 )"
+      },
+      {
+        "x": 139.26,
+        "y": 587.58,
+        "s": "S 1"
+      },
+      {
+        "x": 166.14,
+        "y": 583.44,
+        "s": "F (X )"
+      },
+      {
+        "x": 193.02,
+        "y": 580.08,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Output value of function",
+      "description_lines": [
+        "Output value of function"
+      ],
+      "manual_page": 43
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input",
+      "description_lines": [
+        "Block address of input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 43
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "Input coordinate",
+      "description_lines": [
+        "Input coordinate"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 43
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Output coordinate for S2",
+      "description_lines": [
+        "Output coordinate for S2"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 43
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "Input coordinate",
+      "description_lines": [
+        "Input coordinate"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 43
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Output coordinate for S4",
+      "description_lines": [
+        "Output coordinate for S4"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 43
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "Input coordinate",
+      "description_lines": [
+        "Input coordinate"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 43
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Output coordinate for S6",
+      "description_lines": [
+        "Output coordinate for S6"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 43
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "Input coordinate",
+      "description_lines": [
+        "Input coordinate"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 43
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Output coordinate for S8",
+      "description_lines": [
+        "Output coordinate for S8"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 43
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "Input coordinate",
+      "description_lines": [
+        "Input coordinate"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 44
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Output coordinate for S10",
+      "description_lines": [
+        "Output coordinate for S10"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 44
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "Input coordinate",
+      "description_lines": [
+        "Input coordinate"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 44
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Output coordinate for S12",
+      "description_lines": [
+        "Output coordinate for S12"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 44
+    }
+  ],
+  "spec_count": 13,
+  "max_spec_number": 13,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "When function code 1 is utilized as a shaping algorithm for function code 222 (analog in/channel), its tunable specifications are not adaptable.",
+      "manual_page": 43,
+      "context": "general"
+    },
+    {
+      "label": "2.",
+      "text": "When function code 1 is used as a shaping algorithm, it can not at the same time also be used as a logic function because the block output will not respond to the specification S1 input. Function code 1 should not be referenced by function blocks other than function code 177 or function code 222 blocks utilizing it as a shaping algorithm.",
+      "manual_page": 43,
+      "context": "general"
+    },
+    {
+      "label": "3.",
+      "text": "Multiple instances and combinations of function code 177 and 222 function blocks can utilize the same function code 1 function block as a shaping algorithm. The function code 1 shaping algorithm function block is not required to be in the same segment as the function code 177 or function code 222 blocks.",
+      "manual_page": 43,
+      "context": "general"
+    },
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 44,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 43,
+  "manual_pages": [
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "manual_section": "Function Code 1 - Function Generator",
+  "diagnostics": []
+}

@@ -47,7 +47,6 @@ export async function POST(req: NextRequest) {
     const zipPath = path.join(uploads, `${Date.now()}_${safeName}`);
     const buf = Buffer.from(await file.arrayBuffer());
     fs.writeFileSync(zipPath, buf);
-
     const workDir = path.join(ensureDataRoot(), "work", `${Date.now()}`);
     fs.mkdirSync(workDir, { recursive: true });
 
@@ -72,7 +71,7 @@ export async function POST(req: NextRequest) {
 
     // Ephemeral session only — no project library / index is maintained.
     saveProject(project);
-    const { errors } = await writeArtifacts(project);
+    const { errors } = await writeArtifacts(project, { extractDir: path.join(workDir, "extract") });
 
     console.info(
       JSON.stringify({

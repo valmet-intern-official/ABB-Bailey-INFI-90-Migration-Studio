@@ -1,0 +1,788 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 141,
+  "name": "Sequence Master",
+  "description": "The sequence master function code contains a series of masks selected by the step jump input. The masks define the states of the four boolean outputs for each step. A mask is specified as a series of zeroes, ones or twos. Each digit in the mask is associated with a specific output. A value of two represents the don't care state. When this state is selected, the output value assumes the value of the previous step's state. There is a disable mask in addition to the step masks. The disable mask defines the safe state of the outputs. The default mask is output for step zero. If additional steps are required, a sequence master block can be linked to a sequence slave block. Sequence slave blocks can also be linked together. Series of sequence master and slave blocks can be run in parallel to provide multiples of four boolean outputs.",
+  "description_lines": [
+    "The sequence master function code contains a series of masks",
+    "selected by the step jump input. The masks define the states of",
+    "the four boolean outputs for each step. A mask is specified as",
+    "a series of zeroes, ones or twos. Each digit in the mask is asso-",
+    "ciated with a specific output. A value of two represents the",
+    "don't care state. When this state is selected, the output value",
+    "assumes the value of the previous step's state. There is a dis-",
+    "able mask in addition to the step masks. The disable mask",
+    "defines the safe state of the outputs. The default mask is out-",
+    "put for step zero. If additional steps are required, a sequence",
+    "master block can be linked to a sequence slave block.",
+    "Sequence slave blocks can also be linked together. Series of",
+    "sequence master and slave blocks can be run in parallel to",
+    "provide multiples of four boolean outputs."
+  ],
+  "symbol": {
+    "title_raw": "S E Q M S T",
+    "title": "SEQMST",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3",
+      "N+4"
+    ],
+    "items": [
+      {
+        "x": 152.22,
+        "y": 595.02,
+        "s": "S E Q M S T"
+      },
+      {
+        "x": 189.48,
+        "y": 588.72,
+        "s": "(1 4 1 )"
+      },
+      {
+        "x": 130.86,
+        "y": 587.28,
+        "s": "S 1"
+      },
+      {
+        "x": 150.54,
+        "y": 584.16,
+        "s": "S S L"
+      },
+      {
+        "x": 180.84,
+        "y": 584.16,
+        "s": "1"
+      },
+      {
+        "x": 189.48,
+        "y": 579.84,
+        "s": "N"
+      },
+      {
+        "x": 130.86,
+        "y": 578.4,
+        "s": "S 2"
+      },
+      {
+        "x": 150.54,
+        "y": 575.28,
+        "s": "J"
+      },
+      {
+        "x": 178.2,
+        "y": 575.28,
+        "s": "1 0"
+      },
+      {
+        "x": 189.48,
+        "y": 571.14,
+        "s": "N + 1"
+      },
+      {
+        "x": 130.86,
+        "y": 569.22,
+        "s": "S 3"
+      },
+      {
+        "x": 150.54,
+        "y": 566.34,
+        "s": "J#"
+      },
+      {
+        "x": 175.32,
+        "y": 566.1,
+        "s": "1 00"
+      },
+      {
+        "x": 189.48,
+        "y": 562.26,
+        "s": "N + 2"
+      },
+      {
+        "x": 172.44,
+        "y": 557.22,
+        "s": "1 00 0"
+      },
+      {
+        "x": 189.48,
+        "y": 553.38,
+        "s": "N + 3"
+      },
+      {
+        "x": 173.88,
+        "y": 548.28,
+        "s": "S T P"
+      },
+      {
+        "x": 189.48,
+        "y": 544.44,
+        "s": "N + 4"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Ones digit of current mask",
+      "description_lines": [
+        "Ones digit of current mask"
+      ],
+      "manual_page": 481
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Tens digit of current mask",
+      "description_lines": [
+        "Tens digit of current mask"
+      ],
+      "manual_page": 481
+    },
+    {
+      "blk": "N+2",
+      "type": "B",
+      "description": "Hundreds digit of current mask",
+      "description_lines": [
+        "Hundreds digit of current mask"
+      ],
+      "manual_page": 481
+    },
+    {
+      "blk": "N+3",
+      "type": "B",
+      "description": "Thousands digit of current mask",
+      "description_lines": [
+        "Thousands digit of current mask"
+      ],
+      "manual_page": 481
+    },
+    {
+      "blk": "N+4",
+      "type": "R",
+      "description": "Current step number",
+      "description_lines": [
+        "Current step number"
+      ],
+      "manual_page": 481
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of sequence slave (0 = end)",
+      "description_lines": [
+        "Block address of sequence slave (0 = end)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 481
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of step jump trigger. Requires a 0 to 1 transition after start-up is complete.",
+      "description_lines": [
+        "Block address of step jump trigger. Requires a 0 to",
+        "1 transition after start-up is complete."
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 481
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of step jump number",
+      "description_lines": [
+        "Block address of step jump number"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 481
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Default mask",
+      "description_lines": [
+        "Default mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 481
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 1 mask",
+      "description_lines": [
+        "Step 1 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 481
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 2 mask",
+      "description_lines": [
+        "Step 2 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 481
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 3 mask",
+      "description_lines": [
+        "Step 3 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 481
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 4 mask",
+      "description_lines": [
+        "Step 4 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 481
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 5 mask",
+      "description_lines": [
+        "Step 5 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 6 mask",
+      "description_lines": [
+        "Step 6 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 7 mask",
+      "description_lines": [
+        "Step 7 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 8 mask",
+      "description_lines": [
+        "Step 8 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 9 mask",
+      "description_lines": [
+        "Step 9 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 10 mask",
+      "description_lines": [
+        "Step 10 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 11 mask",
+      "description_lines": [
+        "Step 11 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 12 mask",
+      "description_lines": [
+        "Step 12 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 13 mask",
+      "description_lines": [
+        "Step 13 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 14 mask",
+      "description_lines": [
+        "Step 14 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 19,
+      "label": "S19",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 15 mask",
+      "description_lines": [
+        "Step 15 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 20,
+      "label": "S20",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 16 mask",
+      "description_lines": [
+        "Step 16 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 21,
+      "label": "S21",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 17 mask",
+      "description_lines": [
+        "Step 17 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 22,
+      "label": "S22",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 18 mask",
+      "description_lines": [
+        "Step 18 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 23,
+      "label": "S23",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 19 mask",
+      "description_lines": [
+        "Step 19 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 24,
+      "label": "S24",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 20 mask",
+      "description_lines": [
+        "Step 20 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 25,
+      "label": "S25",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 21 mask",
+      "description_lines": [
+        "Step 21 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 26,
+      "label": "S26",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 22 mask",
+      "description_lines": [
+        "Step 22 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 27,
+      "label": "S27",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 23 mask",
+      "description_lines": [
+        "Step 23 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 28,
+      "label": "S28",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 24 mask",
+      "description_lines": [
+        "Step 24 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 29,
+      "label": "S29",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 25 mask",
+      "description_lines": [
+        "Step 25 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 30,
+      "label": "S30",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 26 mask",
+      "description_lines": [
+        "Step 26 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 31,
+      "label": "S31",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 27 mask",
+      "description_lines": [
+        "Step 27 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 32,
+      "label": "S32",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 28 mask",
+      "description_lines": [
+        "Step 28 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 33,
+      "label": "S33",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 29 mask",
+      "description_lines": [
+        "Step 29 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 34,
+      "label": "S34",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 30 mask",
+      "description_lines": [
+        "Step 30 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 35,
+      "label": "S35",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 31 mask",
+      "description_lines": [
+        "Step 31 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    },
+    {
+      "number": 36,
+      "label": "S36",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 2222",
+      "description": "Step 32 mask",
+      "description_lines": [
+        "Step 32 mask"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 482
+    }
+  ],
+  "spec_count": 36,
+  "max_spec_number": 36,
+  "notes": [
+    {
+      "label": "NOTE:",
+      "text": "If mask digit is two, then output equals previous step output value.",
+      "manual_page": 481,
+      "context": "outputs"
+    },
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 482,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 481,
+  "manual_pages": [
+    481,
+    482,
+    483,
+    484,
+    485
+  ],
+  "manual_section": "Function Code 141 - Sequence Master",
+  "diagnostics": []
+}

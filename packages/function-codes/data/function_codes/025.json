@@ -1,0 +1,136 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 25,
+  "name": "Analog Input (Periodic Sample)",
+  "description": "In the BRC-100 controller the analog input function code acquires an analog input signal from another module in the same PCU node via the Controlway/module bus. This analog input signal is updated at periodic intervals. The update time is specified by the periodic I/O sampling period (S13) of the segment control block located in the module containing function code 25. The HAC controller uses FC25 to acquire an analog input signal from another HAC controller via the peer-to-peer network. Specification S8 in FC 57 node statistics block is used to specify the maximum number of destination nodes the HAC controller may communicate with. This analog input signal is updated at periodic intervals. The update time is specified by the periodic I/O sampling period (S13) of the segment control block located in the module containing function code 25. To insure that the signal is successfully acquired from the source node/module, the analog signal generates a point quality flag. To test the quality of the signal, include a function code 31 (test quality) block in the configuration. The output of the test quality block can be used as an input to other digital processing blocks. Refer to Appendix H for a definition of point quality. NOTE: A block defined as an analog input reads a value for any existing analog output from a function block configured in the source node/module. No additional configuration in the source node/module is required.",
+  "description_lines": [
+    "In the BRC-100 controller the analog input function code",
+    "acquires an analog input signal from another module in the",
+    "same PCU node via the Controlway/module bus. This analog",
+    "input signal is updated at periodic intervals. The update time",
+    "is specified by the periodic I/O sampling period (S13) of the",
+    "segment control block located in the module containing func-",
+    "tion code 25.",
+    "The HAC controller uses FC25 to acquire an analog input sig-",
+    "nal from another HAC controller via the peer-to-peer network.",
+    "Specification S8 in FC 57 node statistics block is used to spec-",
+    "ify the maximum number of destination nodes the HAC con-",
+    "troller may communicate with. This analog input signal is",
+    "updated at periodic intervals. The update time is specified by",
+    "the periodic I/O sampling period (S13) of the segment control",
+    "block located in the module containing function code 25.",
+    "To insure that the signal is successfully acquired from the",
+    "source node/module, the analog signal generates a point qual-",
+    "ity flag. To test the quality of the signal, include a function",
+    "code 31 (test quality) block in the configuration. The output of",
+    "the test quality block can be used as an input to other digital",
+    "processing blocks. Refer to Appendix H for a definition of point",
+    "quality.",
+    "NOTE: A block defined as an analog input reads a value for any existing ana-",
+    "log output from a function block configured in the source node/module. No",
+    "additional configuration in the source node/module is required."
+  ],
+  "symbol": {
+    "title_raw": "A I/B",
+    "title": "AI/B",
+    "inputs": [],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 150.42,
+        "y": 597.48,
+        "s": "A I/B"
+      },
+      {
+        "x": 192.42,
+        "y": 590.64,
+        "s": "(2 5 )"
+      },
+      {
+        "x": 192.42,
+        "y": 582.72,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Output value and quality. Quality:; 0 = good; 1 = bad",
+      "description_lines": [
+        "Output value and quality. Quality:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 107
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Requested module address",
+      "description_lines": [
+        "Requested module address"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 108
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 2",
+      "description": "Requested block address",
+      "description_lines": [
+        "Requested block address"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 108
+    }
+  ],
+  "spec_count": 2,
+  "max_spec_number": 2,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Range values are: 0-31 for the BRC-100, IMMFP11/12 1-250 for the HAC",
+      "manual_page": 108,
+      "context": "specifications"
+    },
+    {
+      "label": "2.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 108,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 107,
+  "manual_pages": [
+    107,
+    108,
+    109,
+    110
+  ],
+  "manual_section": "Function Code 25 - Analog Input (Periodic Sample)",
+  "diagnostics": []
+}

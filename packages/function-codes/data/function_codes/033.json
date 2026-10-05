@@ -1,0 +1,94 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 33,
+  "name": "Not",
+  "description": "Function code 33 performs a logical negation of the input (the output is the opposite of the input).",
+  "description_lines": [
+    "Function code 33 performs a logical negation of the input (the",
+    "output is the opposite of the input)."
+  ],
+  "symbol": {
+    "title_raw": "N O T",
+    "title": "NOT",
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 190.8,
+        "y": 588.78,
+        "s": "(3 3 )"
+      },
+      {
+        "x": 133.02,
+        "y": 587.34,
+        "s": "S 1"
+      },
+      {
+        "x": 161.82,
+        "y": 583.74,
+        "s": "N O T"
+      },
+      {
+        "x": 190.8,
+        "y": 579.9,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "When input equals 1, output equals 0 When input equals 0, output equals 1",
+      "description_lines": [
+        "When input equals 1, output equals 0",
+        "When input equals 0, output equals 1"
+      ],
+      "manual_page": 121
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input",
+      "description_lines": [
+        "Block address of input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 121
+    }
+  ],
+  "spec_count": 1,
+  "max_spec_number": 1,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 121,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 121,
+  "manual_pages": [
+    121
+  ],
+  "manual_section": "Function Code 33 - Not",
+  "diagnostics": []
+}

@@ -1,0 +1,130 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 137,
+  "name": "C and BASIC Program Real Output With Quality",
+  "description": "The C and BASIC real output with quality function code provides a means of transmitting a real data value and its quality from a C or BASIC program to other function blocks. There are no specifications for this block. The BOUT command in the C or BASIC program defines the four outputs. This function code is similar to function code 93, except this code has a quality indicator. Quality can be measured only with a test quality block (function code 31). Quality is either good (zero) or bad (one). There are no specifications for this block. The BOUT command in the C or BASIC program defines the four outputs. Refer to the C Utility Program or the MFC BASIC Programming Language Reference for instructions on programming the modules.",
+  "description_lines": [
+    "The C and BASIC real output with quality function code pro-",
+    "vides a means of transmitting a real data value and its quality",
+    "from a C or BASIC program to other function blocks. There are",
+    "no specifications for this block. The BOUT command in the C",
+    "or BASIC program defines the four outputs. This function code",
+    "is similar to function code 93, except this code has a quality",
+    "indicator. Quality can be measured only with a test quality",
+    "block (function code 31). Quality is either good (zero) or bad",
+    "(one). There are no specifications for this block. The BOUT",
+    "command in the C or BASIC program defines the four outputs.",
+    "Refer to the C Utility Program or the MFC BASIC Programming",
+    "Language Reference for instructions on programming the",
+    "modules."
+  ],
+  "symbol": {
+    "title_raw": "B A S R O Q",
+    "title": "BASROQ",
+    "inputs": [],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3"
+    ],
+    "items": [
+      {
+        "x": 153.18,
+        "y": 594.54,
+        "s": "B A S R O Q"
+      },
+      {
+        "x": 190.86,
+        "y": 588.78,
+        "s": "(1 3 7 )"
+      },
+      {
+        "x": 190.86,
+        "y": 579.9,
+        "s": "N"
+      },
+      {
+        "x": 190.86,
+        "y": 570.96,
+        "s": "N + 1"
+      },
+      {
+        "x": 190.86,
+        "y": 562.08,
+        "s": "N + 2"
+      },
+      {
+        "x": 190.86,
+        "y": 553.2,
+        "s": "N + 3"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "C or BASIC program command BOUT sets the output value",
+      "description_lines": [
+        "C or BASIC program command BOUT sets the output",
+        "value"
+      ],
+      "manual_page": 461
+    },
+    {
+      "blk": "N+1",
+      "type": "R",
+      "description": "",
+      "description_lines": [],
+      "manual_page": 461
+    },
+    {
+      "blk": "N+2",
+      "type": "R",
+      "description": "",
+      "description_lines": [],
+      "manual_page": 461
+    },
+    {
+      "blk": "N+3",
+      "type": "R",
+      "description": "",
+      "description_lines": [],
+      "manual_page": 461
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Not used",
+      "description_lines": [
+        "Not used"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 461
+    }
+  ],
+  "spec_count": 1,
+  "max_spec_number": 1,
+  "notes": [],
+  "manual_page": 461,
+  "manual_pages": [
+    461
+  ],
+  "manual_section": "Function Code 137 - C and BASIC Program Real Output With Quality",
+  "diagnostics": []
+}

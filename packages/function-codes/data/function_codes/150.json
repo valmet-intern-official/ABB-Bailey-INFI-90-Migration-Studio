@@ -1,0 +1,637 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 150,
+  "name": "Hydraulic Servo Slave",
+  "description": "This function code interfaces a hydraulic servo slave (HSS) to a Harmony controller. The hydraulic servo slave provides the necessary inputs and outputs to position a hydraulic actuator. The value of the linear variable differential transformer (LVDT) differential voltages determined during the I/O module calibration cycle are stored permanently in S8 and S9 replacing the initial values or previous calibration values. On HSS module or controller restart, the calibration data from S8 and S9 is downloaded from the module to the HSS module. If necessary, new S8 and S9 values can be established via an interface device such as a HSI.",
+  "description_lines": [
+    "This function code interfaces a hydraulic servo slave (HSS) to a",
+    "Harmony controller.",
+    "The hydraulic servo slave provides the necessary inputs and",
+    "outputs to position a hydraulic actuator.",
+    "The value of the linear variable differential transformer (LVDT)",
+    "differential voltages determined during the I/O module cali-",
+    "bration cycle are stored permanently in S8 and S9 replacing",
+    "the initial values or previous calibration values. On HSS mod-",
+    "ule or controller restart, the calibration data from S8 and S9 is",
+    "downloaded from the module to the HSS module. If necessary,",
+    "new S8 and S9 values can be established via an interface",
+    "device such as a HSI."
+  ],
+  "symbol": {
+    "title_raw": "H S S",
+    "title": "HSS",
+    "inputs": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S11"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3",
+      "N+4",
+      "N+5",
+      "N+6",
+      "N+7",
+      "N+8",
+      "N+9",
+      "N+10",
+      "N+11"
+    ],
+    "items": [
+      {
+        "x": 160.56,
+        "y": 594.78,
+        "s": "H S S"
+      },
+      {
+        "x": 188.88,
+        "y": 588.78,
+        "s": "(1 5 0 )"
+      },
+      {
+        "x": 131.76,
+        "y": 587.58,
+        "s": "S 2"
+      },
+      {
+        "x": 176.4,
+        "y": 584.7,
+        "s": "% P"
+      },
+      {
+        "x": 150.96,
+        "y": 584.46,
+        "s": "% P D"
+      },
+      {
+        "x": 188.88,
+        "y": 579.9,
+        "s": "N"
+      },
+      {
+        "x": 131.76,
+        "y": 578.46,
+        "s": "S 3"
+      },
+      {
+        "x": 177.36,
+        "y": 575.58,
+        "s": "N P"
+      },
+      {
+        "x": 150.96,
+        "y": 575.34,
+        "s": "M S"
+      },
+      {
+        "x": 188.88,
+        "y": 570.78,
+        "s": "N + 1"
+      },
+      {
+        "x": 131.76,
+        "y": 569.58,
+        "s": "S 4"
+      },
+      {
+        "x": 171.12,
+        "y": 566.7,
+        "s": "A P S T"
+      },
+      {
+        "x": 150.96,
+        "y": 566.46,
+        "s": "H S"
+      },
+      {
+        "x": 188.88,
+        "y": 561.9,
+        "s": "N + 2"
+      },
+      {
+        "x": 131.76,
+        "y": 560.46,
+        "s": "S 5"
+      },
+      {
+        "x": 164.16,
+        "y": 557.82,
+        "s": "A D D A S T"
+      },
+      {
+        "x": 150.96,
+        "y": 557.58,
+        "s": "N S"
+      },
+      {
+        "x": 188.88,
+        "y": 552.78,
+        "s": "N + 3"
+      },
+      {
+        "x": 131.76,
+        "y": 551.58,
+        "s": "S 6"
+      },
+      {
+        "x": 174.48,
+        "y": 548.94,
+        "s": "P S T"
+      },
+      {
+        "x": 150.96,
+        "y": 548.46,
+        "s": "S S"
+      },
+      {
+        "x": 188.88,
+        "y": 543.9,
+        "s": "N + 4"
+      },
+      {
+        "x": 131.76,
+        "y": 542.46,
+        "s": "S 7"
+      },
+      {
+        "x": 174.48,
+        "y": 539.82,
+        "s": "S S T"
+      },
+      {
+        "x": 150.96,
+        "y": 539.58,
+        "s": "C C"
+      },
+      {
+        "x": 188.88,
+        "y": 534.78,
+        "s": "N + 5"
+      },
+      {
+        "x": 131.76,
+        "y": 533.34,
+        "s": "S 1 1"
+      },
+      {
+        "x": 175.2,
+        "y": 530.94,
+        "s": "1 S T"
+      },
+      {
+        "x": 150.96,
+        "y": 530.7,
+        "s": "N /A"
+      },
+      {
+        "x": 188.88,
+        "y": 525.9,
+        "s": "N + 6"
+      },
+      {
+        "x": 175.2,
+        "y": 522.06,
+        "s": "2 S T"
+      },
+      {
+        "x": 188.88,
+        "y": 516.78,
+        "s": "N + 7"
+      },
+      {
+        "x": 176.88,
+        "y": 512.94,
+        "s": "S M"
+      },
+      {
+        "x": 188.88,
+        "y": 507.66,
+        "s": "N + 8"
+      },
+      {
+        "x": 174.24,
+        "y": 504.06,
+        "s": "C S T"
+      },
+      {
+        "x": 188.88,
+        "y": 498.78,
+        "s": "N + 9"
+      },
+      {
+        "x": 170.88,
+        "y": 495.18,
+        "s": "S H S T"
+      },
+      {
+        "x": 188.88,
+        "y": 489.66,
+        "s": "N + 1 0"
+      },
+      {
+        "x": 163.2,
+        "y": 486.06,
+        "s": "S C W T S T"
+      },
+      {
+        "x": 188.88,
+        "y": 480.78,
+        "s": "N + 1 1"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Percent actuator position with quality",
+      "description_lines": [
+        "Percent actuator position with quality"
+      ],
+      "manual_page": 521
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "LVDT at null point:; 0 = no; 1 = yes",
+      "description_lines": [
+        "LVDT at null point:",
+        "0 = no",
+        "1 = yes"
+      ],
+      "manual_page": 521
+    },
+    {
+      "blk": "N+2",
+      "type": "B",
+      "description": "Actuator positioning status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "Actuator positioning status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 521
+    },
+    {
+      "blk": "N+3",
+      "type": "B",
+      "description": "A/D or D/A status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "A/D or D/A status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 521
+    },
+    {
+      "blk": "N+4",
+      "type": "B",
+      "description": "LVDT primary status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "LVDT primary status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 521
+    },
+    {
+      "blk": "N+5",
+      "type": "B",
+      "description": "LVDT secondary status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "LVDT secondary status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 521
+    },
+    {
+      "blk": "N+6",
+      "type": "B",
+      "description": "Output 1 status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "Output 1 status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 521
+    },
+    {
+      "blk": "N+7",
+      "type": "B",
+      "description": "Output 2 status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "Output 2 status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 521
+    },
+    {
+      "blk": "N+8",
+      "type": "B",
+      "description": "I/O module mode:; 0 = normal; 1 = E-STOP manual",
+      "description_lines": [
+        "I/O module mode:",
+        "0 = normal",
+        "1 = E-STOP manual"
+      ],
+      "manual_page": 522
+    },
+    {
+      "blk": "N+9",
+      "type": "B",
+      "description": "Calibrate status:; 0 = in progress; 1 = complete",
+      "description_lines": [
+        "Calibrate status:",
+        "0 = in progress",
+        "1 = complete"
+      ],
+      "manual_page": 522
+    },
+    {
+      "blk": "N+10",
+      "type": "B",
+      "description": "I/O module hardware status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "I/O module hardware status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 522
+    },
+    {
+      "blk": "N+11",
+      "type": "B",
+      "description": "I/O module communication and watchdog timer status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "I/O module communication and watchdog timer status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 522
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 63",
+      "description": "Expander bus address of I/O module",
+      "description_lines": [
+        "Expander bus address of I/O module"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 522
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of the percent position demand",
+      "description_lines": [
+        "Block address of the percent position demand"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 522
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of calibrate mode select:; 1 = calibrate",
+      "description_lines": [
+        "Block address of calibrate mode select:",
+        "1 = calibrate"
+      ],
+      "enumerations": [
+        {
+          "value": "1",
+          "meaning": "calibrate"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 522
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of the calibration go/hold select:; 0 = hold; 1 = go",
+      "description_lines": [
+        "Block address of the calibration",
+        "go/hold",
+        "select:",
+        "0 = hold",
+        "1 = go"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "hold"
+        },
+        {
+          "value": "1",
+          "meaning": "go"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 522
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of the LVDT null check mode select:; 0 = no; 1 = yes",
+      "description_lines": [
+        "Block address of the LVDT null check mode select:",
+        "0 = no",
+        "1 = yes"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no"
+        },
+        {
+          "value": "1",
+          "meaning": "yes"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 522
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "6",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of the calibration stroke time selection:; 1.0 = 30 secs; 2.0 = 60 secs; 3.0 = 35 min; 4.0 = 70 min",
+      "description_lines": [
+        "Block address of the calibration stroke time selection:",
+        "1.0 = 30 secs",
+        "2.0 = 60 secs",
+        "3.0 = 35 min",
+        "4.0 = 70 min"
+      ],
+      "enumerations": [
+        {
+          "value": "1.0",
+          "meaning": "30 secs"
+        },
+        {
+          "value": "2.0",
+          "meaning": "60 secs"
+        },
+        {
+          "value": "3.0",
+          "meaning": "35 min"
+        },
+        {
+          "value": "4.0",
+          "meaning": "70 min"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 522
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "6",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of the calibration cycles count (1.0 to 8.0 cycles)",
+      "description_lines": [
+        "Block address of the calibration cycles count (1.0 to",
+        "8.0 cycles)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 522
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "-10.000",
+      "type": "R",
+      "range": "Full",
+      "description": "LVDT differential voltage at 0% actuator position",
+      "description_lines": [
+        "LVDT differential voltage at 0% actuator position"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 522
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "+10.000",
+      "type": "R",
+      "range": "Full",
+      "description": "LVDT differential voltage at 100% actuator position",
+      "description_lines": [
+        "LVDT differential voltage at 100% actuator position"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 522
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare real parameter",
+      "description_lines": [
+        "Spare real parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 522
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Spare boolean block input",
+      "description_lines": [
+        "Spare boolean block input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 522
+    }
+  ],
+  "spec_count": 11,
+  "max_spec_number": 11,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 522,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 521,
+  "manual_pages": [
+    521,
+    522,
+    523,
+    524,
+    525
+  ],
+  "manual_section": "Function Code 150 - Hydraulic Servo Slave",
+  "diagnostics": []
+}

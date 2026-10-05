@@ -1,0 +1,120 @@
+/*
+ * Migration Studio design tokens.
+ * Every colour, size, radius, shadow and timing used by the landing page resolves to one of these.
+ * The green and graphite ramps extend the workspace palette (--accent #1f7a4d, --ink #15231c).
+ */
+:root {
+  /* Colour — neutral ramp */
+  --ds-white: #ffffff;
+  --ds-paper: #fafbfa;
+  --ds-mist: #f3f5f4;
+  --ds-graphite-950: #0d1311;
+  --ds-graphite-900: #141c19;
+  --ds-graphite-800: #1f2925;
+  --ds-graphite-700: #313c38;
+  --ds-graphite-600: #4a5651;
+  --ds-graphite-500: #64706b;
+  --ds-graphite-400: #8a948f;
+  --ds-graphite-300: #b8bfbc;
+  --ds-graphite-200: #dce1de;
+  --ds-graphite-100: #ebeeec;
+
+  /* Colour — industrial green */
+  --ds-green-800: #0b3d28;
+  --ds-green-700: #135a3a;
+  --ds-green-600: #1f7a4d;
+  --ds-green-500: #2f9463;
+  --ds-green-200: #cfe5d8;
+  --ds-green-100: #e6f1eb;
+  --ds-green-50: #f2f8f4;
+
+  /* Colour — supporting */
+  --ds-steel-600: #3e5664;
+  --ds-steel-400: #7c919e;
+  --ds-steel-100: #e9eef1;
+  --ds-signal-amber: #b7791f;
+
+  /* Colour — semantic */
+  --ds-text: var(--ds-graphite-900);
+  --ds-text-muted: var(--ds-graphite-600);
+  --ds-text-subtle: var(--ds-graphite-500);
+  --ds-text-inverse: var(--ds-white);
+  --ds-surface: var(--ds-white);
+  --ds-surface-alt: var(--ds-paper);
+  --ds-surface-sunken: var(--ds-mist);
+  --ds-surface-inverse: var(--ds-graphite-950);
+  --ds-border: var(--ds-graphite-200);
+  --ds-border-subtle: var(--ds-graphite-100);
+  --ds-border-strong: var(--ds-graphite-300);
+  --ds-accent: var(--ds-green-600);
+  --ds-accent-hover: var(--ds-green-700);
+  --ds-accent-strong: var(--ds-green-800);
+  --ds-accent-soft: var(--ds-green-100);
+  --ds-focus: var(--ds-green-500);
+
+  /* Typography */
+  /* next/font defines --font-* on <body>, so name the registered families as the fallback for :root. */
+  --ds-font-sans: var(--font-inter, "Inter"), "Segoe UI", system-ui, sans-serif;
+  --ds-font-mono: var(--font-plex-mono, "IBM Plex Mono"), ui-monospace, "Cascadia Mono", Consolas, monospace;
+  --ds-text-2xs: 0.6875rem; /* 11 */
+  --ds-text-xs: 0.75rem; /* 12 */
+  --ds-text-sm: 0.8125rem; /* 13 */
+  --ds-text-ui: 0.875rem; /* 14 */
+  --ds-text-base: 0.9375rem; /* 15 */
+  --ds-text-md: 1rem; /* 16 */
+  --ds-text-lg: 1.125rem; /* 18 */
+  --ds-text-xl: 1.25rem; /* 20 */
+  --ds-text-2xl: 1.5rem; /* 24 */
+  --ds-text-3xl: clamp(1.75rem, 1.2rem + 1.6vw, 2.5rem); /* 28 → 40 */
+  --ds-text-4xl: clamp(2rem, 1.3rem + 2.4vw, 3.25rem); /* 32 → 52 */
+  --ds-text-display: clamp(2.5rem, 1rem + 4vw, 5.25rem); /* 40 → 84 */
+  --ds-weight-regular: 400;
+  --ds-weight-medium: 500;
+  --ds-weight-semibold: 600;
+  --ds-weight-display: 680;
+  --ds-leading-tight: 1.02;
+  --ds-leading-snug: 1.2;
+  --ds-leading-body: 1.6;
+  --ds-tracking-display: -0.035em;
+  --ds-tracking-heading: -0.022em;
+  --ds-tracking-eyebrow: 0.14em;
+  --ds-measure: 34rem;
+
+  /* Spacing — 4 / 8 / 12 / 16 / 20 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 120 */
+  --ds-space-4: 0.25rem;
+  --ds-space-8: 0.5rem;
+  --ds-space-12: 0.75rem;
+  --ds-space-16: 1rem;
+  --ds-space-20: 1.25rem;
+  --ds-space-24: 1.5rem;
+  --ds-space-32: 2rem;
+  --ds-space-40: 2.5rem;
+  --ds-space-48: 3rem;
+  --ds-space-64: 4rem;
+  --ds-space-80: 5rem;
+  --ds-space-96: 6rem;
+  --ds-space-120: 7.5rem;
+  --ds-section-y: clamp(4.5rem, 3rem + 5vw, 7.5rem);
+
+  /* Layout */
+  --ds-container: 75rem; /* 1200 */
+  --ds-gutter: clamp(1.25rem, 4vw, 3rem);
+  --ds-header-h: 4rem;
+
+  /* Radius */
+  --ds-radius-control: 6px;
+  --ds-radius-card: 12px;
+  --ds-radius-media: 16px;
+
+  /* Elevation — borders first, shadows only for genuine layering */
+  --ds-shadow-1: 0 1px 2px rgba(13, 19, 17, 0.06);
+  --ds-shadow-2: 0 24px 48px -28px rgba(13, 19, 17, 0.28);
+
+  /* Motion */
+  --ds-ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ds-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ds-dur-fast: 160ms;
+  --ds-dur-base: 280ms;
+  --ds-dur-slow: 720ms;
+  --ds-lift: -2px;
+}

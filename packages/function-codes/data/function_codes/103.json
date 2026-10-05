@@ -1,0 +1,315 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 103,
+  "name": "Pulse Input/Frequency",
+  "description": "The pulse input/frequency function code interfaces a controller to a selected channel of an IMDSM04 Pulse Input Module. The IMDSM04 module conditions, converts and processes pulse inputs into analog signals. It has eight inputs that can be processed in three modes: period, frequency and totalization. Function code 103 configures a signal to output a frequency value. Function codes 102 and 104 process signals in the period and totalization modes, respectively. Function code 109 processes the duration of the input pulses. Each input channel must have only one pulse input block configured.",
+  "description_lines": [
+    "The pulse input/frequency function code interfaces a control-",
+    "ler to a selected channel of an IMDSM04 Pulse Input Module.",
+    "The IMDSM04 module conditions, converts and processes",
+    "pulse inputs into analog signals. It has eight inputs that can",
+    "be processed in three modes: period, frequency and totaliza-",
+    "tion. Function code 103 configures a signal to output a fre-",
+    "quency value. Function codes 102 and 104 process signals in",
+    "the period and totalization modes, respectively. Function code",
+    "109 processes the duration of the input pulses. Each input",
+    "channel must have only one pulse input block configured."
+  ],
+  "symbol": {
+    "title_raw": "P IF R E Q",
+    "title": "PIFREQ",
+    "inputs": [],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3"
+    ],
+    "items": [
+      {
+        "x": 154.44,
+        "y": 595.26,
+        "s": "P IF R E Q"
+      },
+      {
+        "x": 189.6,
+        "y": 589.02,
+        "s": "(1 0 3 )"
+      },
+      {
+        "x": 180.96,
+        "y": 584.22,
+        "s": "F"
+      },
+      {
+        "x": 189.6,
+        "y": 580.14,
+        "s": "N"
+      },
+      {
+        "x": 180.48,
+        "y": 575.28,
+        "s": "H"
+      },
+      {
+        "x": 189.6,
+        "y": 571.2,
+        "s": "N + 1"
+      },
+      {
+        "x": 181.44,
+        "y": 566.16,
+        "s": "L"
+      },
+      {
+        "x": 189.6,
+        "y": 562.32,
+        "s": "N + 2"
+      },
+      {
+        "x": 177.84,
+        "y": 557.28,
+        "s": "S T"
+      },
+      {
+        "x": 189.6,
+        "y": 553.44,
+        "s": "N + 3"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Frequency (Hz) × gain",
+      "description_lines": [
+        "Frequency (Hz) × gain"
+      ],
+      "manual_page": 301
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Frequency high alarm:; 0 = no alarm; 1 = high alarm",
+      "description_lines": [
+        "Frequency high alarm:",
+        "0 = no alarm",
+        "1 = high alarm"
+      ],
+      "manual_page": 301
+    },
+    {
+      "blk": "N+2",
+      "type": "B",
+      "description": "Frequency low alarm:; 0 = no alarm; 1 = low alarm",
+      "description_lines": [
+        "Frequency low alarm:",
+        "0 = no alarm",
+        "1 = low alarm"
+      ],
+      "manual_page": 301
+    },
+    {
+      "blk": "N+3",
+      "type": "B",
+      "description": "I/O module communication status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "I/O module communication status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 301
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 63",
+      "description": "Expander bus I/O module address of IMDSM04",
+      "description_lines": [
+        "Expander bus I/O module address of IMDSM04"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 301
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "1 - 8",
+      "description": "Selected channel",
+      "description_lines": [
+        "Selected channel"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 301
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "0 or 1",
+      "description": "Pulse trigger level:; 0 = low to high transitions; 1 = high to low transitions",
+      "description_lines": [
+        "Pulse trigger level:",
+        "0 = low to high transitions",
+        "1 = high to low transitions"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "low to high transitions"
+        },
+        {
+          "value": "1",
+          "meaning": "high to low transitions"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 301
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "1 - 6",
+      "description": "Expected frequency range:; 1 = 0.15 mHz - 10 mHz, ± 0.01 mHz; 2 = 1.5 mHz - 100 mHz, ± 0.1 mHz; 3 = 15 mHz - 1.0 Hz, ± 1 mHz; 4 = 0.1 Hz - 6.55 kHz, ± 0.1 Hz; 5 = 1.0 Hz - 50 kHz, ± 1.0 Hz; 6 = 10.0 Hz - 50 kHz, ± 10.0 Hz",
+      "description_lines": [
+        "Expected frequency range:",
+        "1 = 0.15 mHz - 10 mHz, ± 0.01 mHz",
+        "2 = 1.5 mHz - 100 mHz, ± 0.1 mHz",
+        "3 = 15 mHz - 1.0 Hz, ± 1 mHz",
+        "4 = 0.1 Hz - 6.55 kHz, ± 0.1 Hz",
+        "5 = 1.0 Hz - 50 kHz, ± 1.0 Hz",
+        "6 = 10.0 Hz - 50 kHz, ± 10.0 Hz"
+      ],
+      "enumerations": [
+        {
+          "value": "1",
+          "meaning": "0.15 mHz - 10 mHz, ± 0.01 mHz"
+        },
+        {
+          "value": "2",
+          "meaning": "1.5 mHz - 100 mHz, ± 0.1 mHz"
+        },
+        {
+          "value": "3",
+          "meaning": "15 mHz - 1.0 Hz, ± 1 mHz"
+        },
+        {
+          "value": "4",
+          "meaning": "0.1 Hz - 6.55 kHz, ± 0.1 Hz"
+        },
+        {
+          "value": "5",
+          "meaning": "1.0 Hz - 50 kHz, ± 1.0 Hz"
+        },
+        {
+          "value": "6",
+          "meaning": "10.0 Hz - 50 kHz, ± 10.0 Hz"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 302
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Gain",
+      "description_lines": [
+        "Gain"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 302
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "High alarm value",
+      "description_lines": [
+        "High alarm value"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 302
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "-9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "Low alarm value",
+      "description_lines": [
+        "Low alarm value"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 302
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare",
+      "description_lines": [
+        "Spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 302
+    }
+  ],
+  "spec_count": 8,
+  "max_spec_number": 8,
+  "notes": [],
+  "manual_page": 301,
+  "manual_pages": [
+    301,
+    302,
+    303,
+    304
+  ],
+  "manual_section": "Function Code 103 - Pulse Input/Frequency",
+  "diagnostics": []
+}

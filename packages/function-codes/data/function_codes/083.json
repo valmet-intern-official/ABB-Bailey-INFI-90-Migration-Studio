@@ -1,0 +1,337 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 83,
+  "name": "Digital Output Group",
+  "description": "This block writes a group of eight outputs to an IMDSO14 or IMDSO15 digital module.",
+  "description_lines": [
+    "This block writes a group of eight outputs to an IMDSO14 or",
+    "IMDSO15 digital module."
+  ],
+  "symbol": {
+    "title_raw": null,
+    "title": null,
+    "inputs": [
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11"
+    ],
+    "outputs": [],
+    "items": [
+      {
+        "x": 150.9,
+        "y": 587.34,
+        "s": "S 4"
+      },
+      {
+        "x": 150.9,
+        "y": 578.16,
+        "s": "S 5"
+      },
+      {
+        "x": 150.9,
+        "y": 569.28,
+        "s": "S 6"
+      },
+      {
+        "x": 150.9,
+        "y": 560.16,
+        "s": "S 7"
+      },
+      {
+        "x": 150.9,
+        "y": 551.28,
+        "s": "S 8"
+      },
+      {
+        "x": 150.9,
+        "y": 542.16,
+        "s": "S 9"
+      },
+      {
+        "x": 150.9,
+        "y": 533.28,
+        "s": "S 1 0"
+      },
+      {
+        "x": 150.9,
+        "y": 524.1,
+        "s": "S 1 1"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Status of output group:; 0 = good; 1 = bad (I/O module failed to respond)",
+      "description_lines": [
+        "Status of output group:",
+        "0 = good",
+        "1 = bad (I/O module failed to respond)"
+      ],
+      "manual_page": 239
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 63",
+      "description": "Expander bus I/O module address of digital I/O module",
+      "description_lines": [
+        "Expander bus I/O module address of digital I/O",
+        "module"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 239
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 120",
+      "description": "I/O module definition = hold + type + group Hold: (defaults set with function code 128):; 0XX = go to default values on loss of control module; 1XX = hold I/O module output on loss of control module Type:; X0X = IMDSM05; X1X = IMDSO04, IMDSO14, IMDSO15; X2X = IMDSO01, IMDSO02, IMDSO03 CSC01 group settings:; XX0 = outputs 0 - 7; XX1 = outputs 8 - 15",
+      "description_lines": [
+        "I/O module definition = hold + type + group",
+        "Hold: (defaults set with function code 128):",
+        "0XX = go to default values on loss of control",
+        "module",
+        "1XX = hold I/O module output on loss of control",
+        "module",
+        "Type:",
+        "X0X = IMDSM05",
+        "X1X = IMDSO04, IMDSO14, IMDSO15",
+        "X2X = IMDSO01, IMDSO02, IMDSO03",
+        "CSC01 group settings:",
+        "XX0 = outputs 0 - 7",
+        "XX1 = outputs 8 - 15"
+      ],
+      "enumerations": [
+        {
+          "value": "0XX",
+          "meaning": "go to default values on loss of control"
+        },
+        {
+          "value": "1XX",
+          "meaning": "hold I/O module output on loss of control"
+        },
+        {
+          "value": "X0X",
+          "meaning": "IMDSM05"
+        },
+        {
+          "value": "X1X",
+          "meaning": "IMDSO04, IMDSO14, IMDSO15"
+        },
+        {
+          "value": "X2X",
+          "meaning": "IMDSO01, IMDSO02, IMDSO03"
+        },
+        {
+          "value": "XX0",
+          "meaning": "outputs 0 - 7"
+        },
+        {
+          "value": "XX1",
+          "meaning": "outputs 8 - 15"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 239
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Action on I/O module failure:; 0 = trip control module; 1 = continue to operate",
+      "description_lines": [
+        "Action on I/O module failure:",
+        "0 = trip control module",
+        "1 = continue to operate"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "trip control module"
+        },
+        {
+          "value": "1",
+          "meaning": "continue to operate"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 239
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of value for first output",
+      "description_lines": [
+        "Block address of value for first output"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 239
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of value for second output",
+      "description_lines": [
+        "Block address of value for second output"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 239
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of value for third output",
+      "description_lines": [
+        "Block address of value for third output"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 239
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of value for fourth output",
+      "description_lines": [
+        "Block address of value for fourth output"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 239
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of value for fifth output",
+      "description_lines": [
+        "Block address of value for fifth output"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 240
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of value for sixth output",
+      "description_lines": [
+        "Block address of value for sixth output"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 240
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of value for seventh output",
+      "description_lines": [
+        "Block address of value for seventh output"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 240
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of value for eighth output",
+      "description_lines": [
+        "Block address of value for eighth output"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 240
+    }
+  ],
+  "spec_count": 11,
+  "max_spec_number": 11,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 240,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 239,
+  "manual_pages": [
+    239,
+    240,
+    241
+  ],
+  "manual_section": "Function Code 83 - Digital Output Group",
+  "diagnostics": [
+    "FC83: output table row with unrecognised block cell 'The control system must be carefully evaluated to estab-' on p.239; table ended"
+  ]
+}

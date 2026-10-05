@@ -1,0 +1,82 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 50,
+  "name": "Manual Set Switch",
+  "description": "This function provides an adjustable boolean output, either logic 1 or logic 0. This function enables the engineer or technician to turn devices ON or OFF through an operator interface device (e.g., Conductor NT HSI). Specification S1 is a tunable parameter that can be changed while the module is executing.",
+  "description_lines": [
+    "This function provides an adjustable boolean output, either",
+    "logic 1 or logic 0. This function enables the engineer or techni-",
+    "cian to turn devices ON or OFF through an operator interface",
+    "device (e.g., Conductor NT HSI). Specification S1 is a tunable",
+    "parameter that can be changed while the module is executing."
+  ],
+  "symbol": {
+    "title_raw": "O N /O F F",
+    "title": "ON/OFF",
+    "inputs": [],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 191.4,
+        "y": 588.48,
+        "s": "(5 0 )"
+      },
+      {
+        "x": 156.54,
+        "y": 583.44,
+        "s": "O N /O F F"
+      },
+      {
+        "x": 191.4,
+        "y": 579.6,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Output value equals S1",
+      "description_lines": [
+        "Output value equals S1"
+      ],
+      "manual_page": 147
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "B",
+      "range": "0 or 1",
+      "description": "Desired output value",
+      "description_lines": [
+        "Desired output value"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 147
+    }
+  ],
+  "spec_count": 1,
+  "max_spec_number": 1,
+  "notes": [],
+  "manual_page": 147,
+  "manual_pages": [
+    147
+  ],
+  "manual_section": "Function Code 50 - Manual Set Switch",
+  "diagnostics": []
+}

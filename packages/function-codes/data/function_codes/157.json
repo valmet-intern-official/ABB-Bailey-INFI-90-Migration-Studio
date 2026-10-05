@@ -1,0 +1,563 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 157,
+  "name": "General Digital Controller",
+  "description": "The general digital controller function code implements a fourth order difference equation with variable deadtime. This function block uses previous outputs and error signals (SP minus PV) to calculate the present output. The starting point for calculations can be initiated by time or trigger. This block can function as a digital controller, digital filter, or a digital process model for the implementation of sophisticated control schemes.",
+  "description_lines": [
+    "The general digital controller function code implements a",
+    "fourth order difference equation with variable deadtime. This",
+    "function block uses previous outputs and error signals (SP",
+    "minus PV) to calculate the present output. The starting point",
+    "for calculations can be initiated by time or trigger. This block",
+    "can function as a digital controller, digital filter, or a digital",
+    "process model for the implementation of sophisticated control",
+    "schemes."
+  ],
+  "symbol": {
+    "title_raw": "D T F",
+    "title": "DTF",
+    "inputs": [
+      "S2",
+      "S1",
+      "S4",
+      "S7",
+      "S3",
+      "S5"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 162.54,
+        "y": 594.54,
+        "s": "D T F"
+      },
+      {
+        "x": 190.38,
+        "y": 588.78,
+        "s": "(1 5 7 )"
+      },
+      {
+        "x": 133.02,
+        "y": 587.34,
+        "s": "S 2"
+      },
+      {
+        "x": 152.7,
+        "y": 583.98,
+        "s": "S P"
+      },
+      {
+        "x": 190.38,
+        "y": 579.9,
+        "s": "N"
+      },
+      {
+        "x": 133.02,
+        "y": 578.22,
+        "s": "S 1"
+      },
+      {
+        "x": 152.7,
+        "y": 575.1,
+        "s": "P V"
+      },
+      {
+        "x": 133.02,
+        "y": 569.28,
+        "s": "S 4"
+      },
+      {
+        "x": 152.7,
+        "y": 566.16,
+        "s": "F F"
+      },
+      {
+        "x": 133.02,
+        "y": 560.16,
+        "s": "S 7"
+      },
+      {
+        "x": 152.7,
+        "y": 557.04,
+        "s": "T"
+      },
+      {
+        "x": 133.02,
+        "y": 551.28,
+        "s": "S 3"
+      },
+      {
+        "x": 152.7,
+        "y": 548.16,
+        "s": "T R"
+      },
+      {
+        "x": 133.02,
+        "y": 542.16,
+        "s": "S 5"
+      },
+      {
+        "x": 152.7,
+        "y": 539.28,
+        "s": "T S"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "U(t)",
+      "description_lines": [
+        "U(t)"
+      ],
+      "manual_page": 583
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of process variable",
+      "description_lines": [
+        "Block address of process variable"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 583
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of set point",
+      "description_lines": [
+        "Block address of set point"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 583
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of track value",
+      "description_lines": [
+        "Block address of track value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 583
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of feedforward",
+      "description_lines": [
+        "Block address of feedforward"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 583
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of release/track flag:; 0 = track; 1 = release",
+      "description_lines": [
+        "Block address of release/track flag:",
+        "0 = track",
+        "1 = release"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "track"
+        },
+        {
+          "value": "1",
+          "meaning": "release"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 583
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "B",
+      "range": "0 or 1",
+      "description": "Execution mode:; 0 = trigger; 1 = time",
+      "description_lines": [
+        "Execution mode:",
+        "0 = trigger",
+        "1 = time"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "trigger"
+        },
+        {
+          "value": "1",
+          "meaning": "time"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 583
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of external trigger flag:; 1 = run",
+      "description_lines": [
+        "Block address of external trigger flag:",
+        "1 = run"
+      ],
+      "enumerations": [
+        {
+          "value": "1",
+          "meaning": "run"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 583
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1.000",
+      "type": "R",
+      "range": "0 - 9.2E18",
+      "description": "Time between runs (in secs)",
+      "description_lines": [
+        "Time between runs (in secs)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 583
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "105.000",
+      "type": "R",
+      "range": "Full",
+      "description": "High output limit",
+      "description_lines": [
+        "High output limit"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 583
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "-5.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Low output limit",
+      "description_lines": [
+        "Low output limit"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 583
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Coefficient a0",
+      "description_lines": [
+        "Coefficient a0"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 583
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Coefficient a1",
+      "description_lines": [
+        "Coefficient a1"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 583
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Coefficient a2",
+      "description_lines": [
+        "Coefficient a2"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 583
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Coefficient a3",
+      "description_lines": [
+        "Coefficient a3"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 583
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Coefficient a4",
+      "description_lines": [
+        "Coefficient a4"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 583
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Coefficient b0",
+      "description_lines": [
+        "Coefficient b0"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 584
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Coefficient b1",
+      "description_lines": [
+        "Coefficient b1"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 584
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Coefficient b2",
+      "description_lines": [
+        "Coefficient b2"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 584
+    },
+    {
+      "number": 19,
+      "label": "S19",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Coefficient b3",
+      "description_lines": [
+        "Coefficient b3"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 584
+    },
+    {
+      "number": 20,
+      "label": "S20",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Coefficient b4",
+      "description_lines": [
+        "Coefficient b4"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 584
+    },
+    {
+      "number": 21,
+      "label": "S21",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 255",
+      "description": "Numerator deadtime expressed as a number of sample intervals",
+      "description_lines": [
+        "Numerator deadtime expressed as a number of",
+        "sample intervals"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 584
+    },
+    {
+      "number": 22,
+      "label": "S22",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 255",
+      "description": "Denominator deadtime expressed as a number of sample intervals",
+      "description_lines": [
+        "Denominator deadtime expressed as a number of",
+        "sample intervals"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 584
+    },
+    {
+      "number": 23,
+      "label": "S23",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare parameter",
+      "description_lines": [
+        "Spare parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 584
+    },
+    {
+      "number": 24,
+      "label": "S24",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare parameter",
+      "description_lines": [
+        "Spare parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 584
+    }
+  ],
+  "spec_count": 24,
+  "max_spec_number": 24,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 584,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 583,
+  "manual_pages": [
+    583,
+    584,
+    585,
+    586,
+    587,
+    588,
+    589
+  ],
+  "manual_section": "Function Code 157 - General Digital Controller",
+  "diagnostics": []
+}

@@ -1,5 +1,5 @@
 import type { CadDrawEntity, CadSheetParse, M1GraphicParse } from "@infi90/core";
-import { renderEngineeringSvg } from "@infi90/cad-engine";
+import { getCadRenderEngine, renderEngineeringSvg } from "@infi90/cad-engine";
 
 function entityBounds(entities: CadDrawEntity[]): {
   maxX: number;
@@ -89,9 +89,21 @@ export function entitiesToSvg(
   return parts.join("\n");
 }
 
-export function cadSheetToSvg(sheet: CadSheetParse): string {
+export function cadSheetToSvg(
+  sheet: CadSheetParse,
+  opts: { engine?: "source" | "v1" | "v2" } = {}
+): string {
+  const engine = opts.engine ?? getCadRenderEngine();
+  // Golden-master reconstruct SVG (page-faithful A4) when the pipeline attached it.
+  if (engine === "source" && sheet.reconstructedSvg) {
+    return sheet.reconstructedSvg;
+  }
   if (sheet.engineeringModel && sheet.engineeringModel.blocks.length > 0) {
-    return renderEngineeringSvg(sheet.engineeringModel);
+    // source without a cached SVG falls back to v1 paint of the reconstruct model.
+    const paintEngine = engine === "source" ? "v1" : engine;
+    return renderEngineeringSvg(sheet.engineeringModel, {
+      engine: paintEngine,
+    });
   }
   return entitiesToSvg(sheet.drawEntities, {
     width: 900,

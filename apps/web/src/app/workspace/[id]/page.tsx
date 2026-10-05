@@ -3,8 +3,30 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useParams, useSearchParams } from "next/navigation";
-import { Suspense, useEffect, useMemo, useState, type ReactNode } from "react";
+import {
+  Suspense,
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+  type CSSProperties,
+  type KeyboardEvent as ReactKeyboardEvent,
+  type PointerEvent as ReactPointerEvent,
+  type ReactNode
+} from "react";
 import { apiUrl } from "@/lib/api-base";
+import { peekResult, resultKey } from "@/lib/result-cache";
+import {
+  buildIoIndex,
+  linksFromSheet,
+  lookupIo,
+  type IoNavHit,
+} from "@/lib/io-navigation";
+import { CadPdfView, centerInScroller, PDF_ZOOM_MAX, PDF_ZOOM_MIN } from "./cad-pdf-view";
+import { LoopListView } from "./loop-list-view";
+import { BlockSummaryView } from "./block-summary-view";
 
 type IoRecord = {
   id: string;
@@ -14,7 +36,9 @@ type IoRecord = {
   deviceTag?: string;
   rawIoTag: string;
   loopTag?: string;
+  loopTagNote?: string;
   description?: string;
+  descriptionNote?: string;
   cadFile?: string;
   direction?: string;
   destinationCads: string[];
@@ -94,16 +118,32 @@ type CadSheet = {
       crossRefCount: number;
       unresolvedConnections: number;
     };
+    crossReferences?: {
+      signal?: string;
+      address?: string;
+      targetIdentifier?: string;
+      targetSheet?: string;
+    }[];
     validation: { status: string; warnings: string[] };
   };
 };
 
-type Graphic = {
-  filename: string;
-  title?: string;
-  graphicId?: string;
-  tags: { tag: string; objectName?: string }[];
-  objectNames: string[];
+type SheetLogicBlock = {
+  block: number;
+  functionCode: number | null;
+  name: string | null;
+  symbol: string | null;
+  status: string;
+  specs: {
+    label: string;
+    value: string | null;
+    status: string;
+    type: string;
+    default: string;
+    range: string;
+    description: string;
+    meaning: string | null;
+  }[];
 };
 
 type Session = {
@@ -117,7 +157,6 @@ type Session = {
   };
   stats: {
     cadCount: number;
-    m1Count: number;
     ioByType: Record<string, number>;
     xrfExpectedCad?: number;
     unresolvedCount: number;
@@ -126,7 +165,6 @@ type Session = {
   ioRecords: IoRecord[];
   logicRecords: LogicRecord[];
   cadSheets: CadSheet[];
-  graphics: Graphic[];
   validation: {
     id: string;
     type: string;
@@ -136,37 +174,158 @@ type Session = {
   }[];
 };
 
-type Tab = "overview" | "io" | "logic" | "cad" | "graphics" | "validation";
+type Tab = "overview" | "io" | "loops" | "logic" | "cad";
+
+const DETAIL_WIDTH_KEY = "cad-viewer:detail-width";
+const DETAIL_MIN_WIDTH = 420;
+/** Sheet list plus the narrowest usable drawing. */
+const DETAIL_RESERVED_WIDTH = 220 + 380;
+const TABS: Tab[] = ["overview", "io", "loops", "logic", "cad"];
 
 function ViewerInner() {
   const params = useParams<{ id: string }>();
   const search = useSearchParams();
   const id = params.id;
-  const [session, setSession] = useState<Session | null>(null);
+  const [session, setSession] = useState<Session | null>(() => peekResult<Session>(resultKey.cadSession(id)) ?? null);
   const [error, setError] = useState<string | null>(null);
-  const [tab, setTab] = useState<Tab>((search.get("tab") as Tab) || "overview");
+  const [tab, setTab] = useState<Tab>(() => {
+    const requested = search.get("tab") as Tab;
+    if (requested === "io" && search.get("view") === "loops") return "loops";
+    return TABS.includes(requested) ? requested : "overview";
+  });
   const [ioFilter, setIoFilter] = useState<IoBucketFilter>("ALL");
-  const [logicFilter, setLogicFilter] = useState<string>("ALL");
   const [query, setQuery] = useState("");
-  const [logicQuery, setLogicQuery] = useState("");
-  const [selectedCad, setSelectedCad] = useState<string | null>(search.get("cad"));
-  const [selectedGraphic, setSelectedGraphic] = useState<string | null>(null);
+  const [selectedCad, setSelectedCad] = useState<string | null>(() => {
+    const requested = search.get("cad");
+    if (requested) return requested === "summary" ? null : requested;
+    return session?.cadSheets[0]?.filename ?? null;
+  });
   const [cadQuery, setCadQuery] = useState("");
-  const [m1Query, setM1Query] = useState("");
-  const [cadSvgMarkup, setCadSvgMarkup] = useState<string | null>(null);
+  const [cadSvgMarkup, setCadSvgMarkup] = useState<string | null>(() =>
+    selectedCad ? peekResult<string>(resultKey.cadSvg(id, selectedCad)) ?? null : null
+  );
+  const [cadZoom, setCadZoom] = useState(1);
   const [cadFitWidth, setCadFitWidth] = useState(true);
+  const cadCanvasRef = useRef<HTMLDivElement | null>(null);
   const [selectedBlockId, setSelectedBlockId] = useState<string | null>(null);
   const [selectedConnectionId, setSelectedConnectionId] = useState<string | null>(
     null
   );
-  const [sheetDetailTab, setSheetDetailTab] = useState<
-    "overview" | "io" | "logic" | "links"
-  >("overview");
-  const [graphicDetailTab, setGraphicDetailTab] = useState<
-    "overview" | "tags" | "io" | "logic"
-  >("overview");
-  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const cadViewerRef = useRef<HTMLElement | null>(null);
+  const [cadView, setCadView] = useState<"pdf" | "svg">("pdf");
+  const [cadSummary, setCadSummary] = useState(search.get("cad") === "summary");
+  const [sheetDetailTab, setSheetDetailTab] = useState<"io" | "logic">("io");
+  /** null means the stylesheet default width. */
+  const [detailWidth, setDetailWidth] = useState<number | null>(null);
+  const [resizingDetail, setResizingDetail] = useState(false);
+  const [ioNav, setIoNav] = useState<{
+    hit: IoNavHit;
+    links: ReturnType<typeof linksFromSheet>;
+    top: number;
+    left: number;
+  } | null>(null);
 
+  useEffect(() => {
+    const saved = Number(window.localStorage.getItem(DETAIL_WIDTH_KEY));
+    if (saved > 0) setDetailWidth(saved);
+  }, []);
+
+  const clampDetailWidth = useCallback((w: number) => {
+    const total = cadViewerRef.current?.getBoundingClientRect().width ?? window.innerWidth;
+    const max = Math.max(DETAIL_MIN_WIDTH, total - DETAIL_RESERVED_WIDTH);
+    return Math.round(Math.min(max, Math.max(DETAIL_MIN_WIDTH, w)));
+  }, []);
+
+  const commitDetailWidth = useCallback((w: number | null) => {
+    setDetailWidth(w);
+    if (w === null) window.localStorage.removeItem(DETAIL_WIDTH_KEY);
+    else window.localStorage.setItem(DETAIL_WIDTH_KEY, String(w));
+  }, []);
+
+  const startDetailResize = useCallback(
+    (e: ReactPointerEvent<HTMLDivElement>) => {
+      const viewer = cadViewerRef.current;
+      if (!viewer) return;
+      e.preventDefault();
+      const handle = e.currentTarget;
+      handle.setPointerCapture(e.pointerId);
+      setResizingDetail(true);
+      const right = viewer.getBoundingClientRect().right;
+      let latest = detailWidth;
+      const onMove = (ev: PointerEvent) => {
+        latest = clampDetailWidth(right - ev.clientX);
+        setDetailWidth(latest);
+      };
+      const onUp = () => {
+        handle.removeEventListener("pointermove", onMove);
+        handle.removeEventListener("pointerup", onUp);
+        handle.removeEventListener("pointercancel", onUp);
+        setResizingDetail(false);
+        commitDetailWidth(latest);
+      };
+      handle.addEventListener("pointermove", onMove);
+      handle.addEventListener("pointerup", onUp);
+      handle.addEventListener("pointercancel", onUp);
+    },
+    [clampDetailWidth, commitDetailWidth, detailWidth]
+  );
+
+  const onDetailResizeKey = useCallback(
+    (e: ReactKeyboardEvent<HTMLDivElement>) => {
+      const pane = cadViewerRef.current?.querySelector(".cad-viewer__right");
+      const current = detailWidth ?? pane?.getBoundingClientRect().width ?? DETAIL_MIN_WIDTH;
+      const step = e.shiftKey ? 80 : 20;
+      if (e.key === "ArrowLeft") commitDetailWidth(clampDetailWidth(current + step));
+      else if (e.key === "ArrowRight") commitDetailWidth(clampDetailWidth(current - step));
+      else if (e.key === "Home") commitDetailWidth(null);
+      else return;
+      e.preventDefault();
+    },
+    [clampDetailWidth, commitDetailWidth, detailWidth]
+  );
+  const [logicVersion, setLogicVersion] = useState(0);
+  const [reprocessing, setReprocessing] = useState(false);
+  /** undefined while loading, null when the session has no specifications. */
+  const [sheetBlocks, setSheetBlocks] = useState<SheetLogicBlock[] | null | undefined>(undefined);
+
+  useEffect(() => {
+    if (!selectedCad) {
+      setSheetBlocks([]);
+      return;
+    }
+    let cancelled = false;
+    const preloaded = logicVersion === 0 ? peekResult<SheetLogicBlock[]>(resultKey.cadBlocks(id, selectedCad)) : undefined;
+    if (preloaded) {
+      setSheetBlocks(preloaded);
+      return;
+    }
+    setSheetBlocks(undefined);
+    void (async () => {
+      const res = await fetch(
+        apiUrl(`/api/projects/${id}/cad-logic/${encodeURIComponent(selectedCad)}`)
+      );
+      if (cancelled) return;
+      if (!res.ok) {
+        setSheetBlocks(null);
+        return;
+      }
+      const data = (await res.json()) as { blocks: SheetLogicBlock[] };
+      if (!cancelled) setSheetBlocks(data.blocks);
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [id, selectedCad, logicVersion]);
+
+  const reprocessSession = useCallback(async () => {
+    setReprocessing(true);
+    try {
+      await fetch(apiUrl(`/api/projects/${id}/redecode`), { method: "POST" });
+    } finally {
+      setReprocessing(false);
+      setLogicVersion((v) => v + 1);
+    }
+  }, [id]);
   useEffect(() => {
     void (async () => {
       const res = await fetch(apiUrl(`/api/projects/${id}`));
@@ -179,14 +338,12 @@ function ViewerInner() {
       if (!selectedCad && data.cadSheets[0]) {
         setSelectedCad(data.cadSheets[0].filename);
       }
-      if (!selectedGraphic && data.graphics[0]) {
-        setSelectedGraphic(data.graphics[0].filename);
-      }
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   useEffect(() => {
+    setIoNav(null);
     if (!selectedCad) {
       setCadSvgMarkup(null);
       setSelectedBlockId(null);
@@ -194,6 +351,15 @@ function ViewerInner() {
       return;
     }
     let cancelled = false;
+    const preloaded = peekResult<string>(resultKey.cadSvg(id, selectedCad));
+    if (preloaded) {
+      setCadSvgMarkup(preloaded);
+      setSelectedBlockId(null);
+      setSelectedConnectionId(null);
+      setCadZoom(1);
+      setCadFitWidth(true);
+      return;
+    }
     void (async () => {
       const res = await fetch(
         apiUrl(`/api/projects/${id}/cad-svg/${encodeURIComponent(selectedCad)}`)
@@ -204,36 +370,120 @@ function ViewerInner() {
         setCadSvgMarkup(text);
         setSelectedBlockId(null);
         setSelectedConnectionId(null);
+        setCadZoom(1);
+        setCadFitWidth(true);
       }
     })();
     return () => {
       cancelled = true;
     };
   }, [id, selectedCad]);
+  const CAD_ZOOM_MIN = 0.25;
+  const CAD_ZOOM_MAX = 5;
+  const CAD_ZOOM_STEP = 1.2;
 
+  const cadSvgNatural = useMemo(() => {
+    if (!cadSvgMarkup) return { w: 1200, h: 800 };
+    const wm = /(?:\s|^)width="([\d.]+)"/.exec(cadSvgMarkup);
+    const hm = /(?:\s|^)height="([\d.]+)"/.exec(cadSvgMarkup);
+    return {
+      w: Math.max(100, Number(wm?.[1] || 1200)),
+      h: Math.max(100, Number(hm?.[1] || 800)),
+    };
+  }, [cadSvgMarkup]);
+
+  const clampCadZoom = useCallback((z: number) => {
+    return Math.min(CAD_ZOOM_MAX, Math.max(CAD_ZOOM_MIN, Math.round(z * 100) / 100));
+  }, []);
+
+  const currentCadBaseZoom = useCallback(() => {
+    if (!cadFitWidth) return cadZoom;
+    const el = cadCanvasRef.current;
+    const host = el?.querySelector(".cad-viewer__svg-host") as HTMLElement | null;
+    if (host && cadSvgNatural.w > 0) {
+      return Math.max(0.05, host.clientWidth / cadSvgNatural.w);
+    }
+    return 1;
+  }, [cadFitWidth, cadZoom, cadSvgNatural.w]);
+
+  const zoomCadBy = useCallback(
+    (factor: number) => {
+      const base = currentCadBaseZoom();
+      setCadFitWidth(false);
+      setCadZoom(clampCadZoom(base * factor));
+    },
+    [clampCadZoom, currentCadBaseZoom]
+  );
+
+  const zoomCadIn = useCallback(() => zoomCadBy(CAD_ZOOM_STEP), [zoomCadBy]);
+  const zoomCadOut = useCallback(() => zoomCadBy(1 / CAD_ZOOM_STEP), [zoomCadBy]);
+  const zoomCadReset = useCallback(() => {
+    setCadFitWidth(false);
+    setCadZoom(1);
+  }, []);
+  const zoomCadFit = useCallback(() => {
+    setCadFitWidth(true);
+    setCadZoom(1);
+  }, []);
+
+  /** PDF points to CSS pixels; null fits the page width. */
+  const [pdfZoom, setPdfZoom] = useState<number | null>(null);
+  const [pdfFitScale, setPdfFitScale] = useState(1);
+  const zoomPdfBy = useCallback(
+    (factor: number) => {
+      setPdfZoom((z) =>
+        Math.min(PDF_ZOOM_MAX, Math.max(PDF_ZOOM_MIN, (z ?? pdfFitScale) * factor))
+      );
+    },
+    [pdfFitScale]
+  );
   useEffect(() => {
-    if (!cadSvgMarkup) return;
-    const root = document.querySelector(".cad-viewer__svg-host svg");
-    if (!root) return;
-    root.querySelectorAll(".cad-block--selected").forEach((el) => {
-      el.classList.remove("cad-block--selected");
-    });
-    root.querySelectorAll(".cad-wire--selected").forEach((el) => {
-      el.classList.remove("cad-wire--selected");
-    });
-    if (selectedBlockId) {
-      root
-        .querySelector(`[data-block-id="${CSS.escape(selectedBlockId)}"]`)
-        ?.classList.add("cad-block--selected");
-    }
-    if (selectedConnectionId) {
-      root
-        .querySelectorAll(
-          `[data-connection-id="${CSS.escape(selectedConnectionId)}"]`
-        )
-        .forEach((el) => el.classList.add("cad-wire--selected"));
-    }
-  }, [cadSvgMarkup, selectedBlockId, selectedConnectionId]);
+    setPdfZoom(null);
+  }, [selectedCad]);
+
+  /** Drawing point (in unscaled SVG units) that must stay under the cursor after a wheel zoom. */
+  const cadZoomAnchorRef = useRef<{ ux: number; uy: number; x: number; y: number } | null>(null);
+  const cadBaseZoomRef = useRef(currentCadBaseZoom);
+  cadBaseZoomRef.current = currentCadBaseZoom;
+
+  const cadCanvasReady = tab === "cad" && !!session;
+  useEffect(() => {
+    const canvas = cadCanvasRef.current;
+    if (!cadCanvasReady || !canvas) return;
+    const onWheel = (e: WheelEvent) => {
+      if (!e.ctrlKey && !e.metaKey) return;
+      const host = canvas.querySelector(".cad-viewer__svg-host") as HTMLElement | null;
+      if (!host) return;
+      e.preventDefault();
+      const base = cadBaseZoomRef.current();
+      const pixels = e.deltaMode === 1 ? e.deltaY * 33 : e.deltaY;
+      const delta = Math.max(-120, Math.min(120, pixels));
+      const next = Math.min(CAD_ZOOM_MAX, Math.max(CAD_ZOOM_MIN, base * Math.exp(-delta * 0.0018)));
+      if (next === base) return;
+      const r = host.getBoundingClientRect();
+      cadZoomAnchorRef.current = {
+        ux: (e.clientX - r.left) / base,
+        uy: (e.clientY - r.top) / base,
+        x: e.clientX,
+        y: e.clientY,
+      };
+      setCadFitWidth(false);
+      setCadZoom(next);
+    };
+    canvas.addEventListener("wheel", onWheel, { passive: false });
+    return () => canvas.removeEventListener("wheel", onWheel);
+  }, [cadCanvasReady]);
+
+  useLayoutEffect(() => {
+    const anchor = cadZoomAnchorRef.current;
+    const canvas = cadCanvasRef.current;
+    const host = canvas?.querySelector(".cad-viewer__svg-host") as HTMLElement | null;
+    cadZoomAnchorRef.current = null;
+    if (!anchor || !canvas || !host) return;
+    const r = host.getBoundingClientRect();
+    canvas.scrollLeft += r.left + anchor.ux * cadZoom - anchor.x;
+    canvas.scrollTop += r.top + anchor.uy * cadZoom - anchor.y;
+  }, [cadZoom, cadFitWidth]);
 
   const kindSummary = useMemo(() => {
     if (!session) return [];
@@ -288,13 +538,9 @@ function ViewerInner() {
   const ioBucketCounts = useMemo(() => {
     const counts: Record<IoBucket, number> = {
       AI: 0,
-      AI800_: 0,
       AO: 0,
-      AO800_: 0,
       DI: 0,
-      DI800_: 0,
       DO: 0,
-      DO800_: 0,
     };
     if (!session) return counts;
     for (const r of session.ioRecords) {
@@ -304,93 +550,121 @@ function ViewerInner() {
     return counts;
   }, [session]);
 
-  const logicSummary = useMemo(() => {
-    const empty = {
-      total: 0,
-      cadSheets: 0,
-      functionCodes: 0,
-      withFormula: 0,
-      withDevice: 0,
-      withInputs: 0,
-      withOutputs: 0,
-      withSpecs: 0,
-      topCodes: [] as { code: string; count: number }[],
-    };
-    if (!session) return empty;
+  const cad = session?.cadSheets.find((c) => c.filename === selectedCad);
 
-    const cadSet = new Set<string>();
-    const fcMap = new Map<string, number>();
-    let withFormula = 0;
-    let withDevice = 0;
-    let withInputs = 0;
-    let withOutputs = 0;
-    let withSpecs = 0;
-
-    for (const r of session.logicRecords) {
-      if (r.cadFile) cadSet.add(r.cadFile);
-      const code = r.functionCode || "—";
-      fcMap.set(code, (fcMap.get(code) || 0) + 1);
-      if (r.logicFormula) withFormula += 1;
-      if (r.deviceTag) withDevice += 1;
-      if (r.inputRefs.length) withInputs += 1;
-      if (r.outputRefs.length) withOutputs += 1;
-      if (r.s1 || r.s2) withSpecs += 1;
-    }
-
-    return {
-      total: session.logicRecords.length,
-      cadSheets: cadSet.size,
-      functionCodes: fcMap.size,
-      withFormula,
-      withDevice,
-      withInputs,
-      withOutputs,
-      withSpecs,
-      topCodes: Array.from(fcMap.entries())
-        .sort((a, b) => b[1] - a[1])
-        .slice(0, 8)
-        .map(([code, count]) => ({ code, count })),
-    };
+  const ioIndex = useMemo(() => {
+    if (!session) return new Map<string, IoNavHit>();
+    return buildIoIndex(session.cadSheets, session.ioRecords);
   }, [session]);
 
-  const filteredLogic = useMemo(() => {
-    if (!session) return [];
-    return session.logicRecords.filter((r) => {
-      if (logicFilter !== "ALL" && (r.functionCode || "—") !== logicFilter) {
-        return false;
-      }
-      if (!logicQuery) return true;
-      const q = logicQuery.toLowerCase();
-      return (
-        r.cadFile.toLowerCase().includes(q) ||
-        r.blockId?.toLowerCase().includes(q) ||
-        r.functionCode?.toLowerCase().includes(q) ||
-        r.logicFormula?.toLowerCase().includes(q) ||
-        r.deviceTag?.toLowerCase().includes(q) ||
-        r.description?.toLowerCase().includes(q) ||
-        r.s1?.toLowerCase().includes(q) ||
-        r.s2?.toLowerCase().includes(q)
-      );
+  const cadSvgHtml = useMemo(() => {
+    if (!cadSvgMarkup) return "";
+    return cadSvgMarkup.replace(/<text\b([^>]*)>([^<]*)<\/text>/g, (whole, attrs: string, body: string) => {
+      const label = body
+        .replace(/&lt;/g, "<")
+        .replace(/&gt;/g, ">")
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/&amp;/g, "&");
+      const hit = lookupIo(ioIndex, label);
+      if (!hit || linksFromSheet(hit, selectedCad).length === 0) return whole;
+      const marked = /\bclass="/.test(attrs)
+        ? attrs.replace(/\bclass="/, 'class="cad-io-hot ')
+        : `${attrs} class="cad-io-hot"`;
+      return `<text${marked}>${body}</text>`;
     });
-  }, [session, logicFilter, logicQuery]);
+  }, [cadSvgMarkup, ioIndex, selectedCad]);
 
-  const cad = session?.cadSheets.find((c) => c.filename === selectedCad);
-  const graphic = session?.graphics.find((g) => g.filename === selectedGraphic);
+  useEffect(() => {
+    if (!cadSvgHtml) return;
+    const root = document.querySelector(".cad-viewer__svg-host svg");
+    if (!root) return;
+    root.querySelectorAll(".cad-block--selected").forEach((el) => {
+      el.classList.remove("cad-block--selected");
+    });
+    root.querySelectorAll(".cad-wire--selected").forEach((el) => {
+      el.classList.remove("cad-wire--selected");
+    });
+    if (selectedBlockId) {
+      root
+        .querySelector(`[data-block-id="${CSS.escape(selectedBlockId)}"]`)
+        ?.classList.add("cad-block--selected");
+    }
+    if (selectedConnectionId) {
+      root
+        .querySelectorAll(
+          `[data-connection-id="${CSS.escape(selectedConnectionId)}"]`
+        )
+        .forEach((el) => el.classList.add("cad-wire--selected"));
+    }
+  }, [cadSvgHtml, selectedBlockId, selectedConnectionId]);
 
-  const selectedBlock = useMemo(() => {
+  const [cadSearch, setCadSearch] = useState("");
+  const [cadSearchActive, setCadSearchActive] = useState(0);
+  const [pdfMatchCount, setPdfMatchCount] = useState(0);
+  const [svgMatchCount, setSvgMatchCount] = useState(0);
+  const cadSearchRef = useRef<HTMLInputElement | null>(null);
+  const cadMatchCount = cadView === "pdf" ? pdfMatchCount : svgMatchCount;
+  const cadMatchIndex = cadMatchCount
+    ? ((cadSearchActive % cadMatchCount) + cadMatchCount) % cadMatchCount
+    : 0;
+  const stepCadSearch = useCallback(
+    (dir: 1 | -1) => {
+      if (cadMatchCount) setCadSearchActive((i) => i + dir);
+    },
+    [cadMatchCount]
+  );
+
+  useEffect(() => {
+    setCadSearchActive(0);
+  }, [cadSearch, selectedCad, cadView]);
+
+  useEffect(() => {
+    const root = document.querySelector(".cad-viewer__svg-host svg");
+    if (!root) {
+      setSvgMatchCount(0);
+      return;
+    }
+    const nodes = Array.from(root.querySelectorAll("text"));
+    nodes.forEach((n) => n.classList.remove("cad-search-hit", "cad-search-current"));
+    const q = cadView === "svg" ? cadSearch.trim().toLowerCase() : "";
+    if (!q) {
+      setSvgMatchCount(0);
+      return;
+    }
+    const hits = nodes.filter((n) => (n.textContent ?? "").toLowerCase().includes(q));
+    hits.forEach((n) => n.classList.add("cad-search-hit"));
+    setSvgMatchCount(hits.length);
+    if (!hits.length) return;
+    const current = hits[((cadSearchActive % hits.length) + hits.length) % hits.length];
+    current.classList.add("cad-search-current");
+    if (cadCanvasRef.current) centerInScroller(current, cadCanvasRef.current);
+  }, [cadSvgHtml, cadSearch, cadSearchActive, cadView]);
+
+  useEffect(() => {
+    if (tab !== "cad") return;
+    const onKey = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "f" && cadSearchRef.current) {
+        e.preventDefault();
+        cadSearchRef.current.focus();
+        cadSearchRef.current.select();
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [tab]);
+
+  const selectedBlockNumber = useMemo(() => {
     if (!cad?.engineeringModel || !selectedBlockId) return null;
-    return (
-      cad.engineeringModel.blocks.find((b) => b.id === selectedBlockId) ?? null
-    );
+    const block = cad.engineeringModel.blocks.find((b) => b.id === selectedBlockId);
+    const n = Number(block?.blockNumber);
+    return Number.isFinite(n) ? n : null;
   }, [cad, selectedBlockId]);
 
-  const selectedConnection = useMemo(() => {
-    if (!cad?.engineeringModel || !selectedConnectionId) return null;
-    return (
-      cad.engineeringModel.connections.find((c) => c.id === selectedConnectionId) ??
-      null
-    );
-  }, [cad, selectedConnectionId]);
+  useEffect(() => {
+    if (sheetDetailTab !== "logic" || selectedBlockNumber == null || !sheetBlocks) return;
+    document.getElementById(`fb-${selectedBlockNumber}`)?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }, [sheetDetailTab, selectedBlockNumber, sheetBlocks]);
 
   const filteredCadSheets = useMemo(() => {
     if (!session) return [];
@@ -404,6 +678,21 @@ function ViewerInner() {
     );
   }, [session, cadQuery]);
 
+  const cadSheetByUpper = useMemo(
+    () => new Map((session?.cadSheets ?? []).map((s) => [s.filename.toUpperCase(), s])),
+    [session]
+  );
+  const cadSheetTitles = useMemo(
+    () => new Map([...cadSheetByUpper].map(([k, s]) => [k, s.title ?? ""])),
+    [cadSheetByUpper]
+  );
+
+  const openCadSheet = (file: string) => {
+    setSelectedCad(cadSheetByUpper.get(file.toUpperCase())?.filename ?? file);
+    setCadSummary(false);
+    setTab("cad");
+  };
+
   const sheetIo = useMemo(() => {
     if (!session || !selectedCad) return [];
     const key = selectedCad.toUpperCase();
@@ -413,92 +702,6 @@ function ViewerInner() {
       return r.destinationCads.some((d) => d.toUpperCase().includes(key.replace(/\.CAD$/i, "")));
     });
   }, [session, selectedCad]);
-
-  const sheetLogic = useMemo(() => {
-    if (!session || !selectedCad) return [];
-    const key = selectedCad.toUpperCase();
-    return session.logicRecords.filter(
-      (r) => (r.cadFile || "").toUpperCase() === key
-    );
-  }, [session, selectedCad]);
-
-  const sheetDevices = useMemo(() => {
-    const tags = new Set<string>();
-    cad?.deviceTags.forEach((t) => tags.add(t));
-    sheetIo.forEach((r) => {
-      if (r.deviceTag) tags.add(r.deviceTag);
-    });
-    sheetLogic.forEach((r) => {
-      if (r.deviceTag) tags.add(r.deviceTag);
-    });
-    return Array.from(tags).sort((a, b) => a.localeCompare(b));
-  }, [cad, sheetIo, sheetLogic]);
-
-  const filteredGraphics = useMemo(() => {
-    if (!session) return [];
-    if (!m1Query) return session.graphics;
-    const q = m1Query.toLowerCase();
-    return session.graphics.filter(
-      (g) =>
-        g.filename.toLowerCase().includes(q) ||
-        g.title?.toLowerCase().includes(q) ||
-        g.graphicId?.toLowerCase().includes(q) ||
-        g.tags.some((t) => t.tag.toLowerCase().includes(q))
-    );
-  }, [session, m1Query]);
-
-  const graphicTagRows = useMemo(() => {
-    if (!session || !graphic) return [];
-    return graphic.tags.map((t) => {
-      const io = session.ioRecords.find(
-        (r) =>
-          r.deviceTag?.toUpperCase() === t.tag.toUpperCase() ||
-          r.rawIoTag.toUpperCase().includes(t.tag.toUpperCase())
-      );
-      const logic = session.logicRecords.filter(
-        (r) =>
-          r.deviceTag?.toUpperCase() === t.tag.toUpperCase() ||
-          (io?.cadFile && r.cadFile.toUpperCase() === io.cadFile.toUpperCase())
-      );
-      return { ...t, io, logic };
-    });
-  }, [session, graphic]);
-
-  const graphicIo = useMemo(() => {
-    const seen = new Set<string>();
-    const rows: IoRecord[] = [];
-    for (const row of graphicTagRows) {
-      if (row.io && !seen.has(row.io.id)) {
-        seen.add(row.io.id);
-        rows.push(row.io);
-      }
-    }
-    return rows;
-  }, [graphicTagRows]);
-
-  const graphicLogic = useMemo(() => {
-    const seen = new Set<string>();
-    const rows: LogicRecord[] = [];
-    for (const row of graphicTagRows) {
-      for (const logic of row.logic) {
-        if (!seen.has(logic.id)) {
-          seen.add(logic.id);
-          rows.push(logic);
-        }
-      }
-    }
-    return rows;
-  }, [graphicTagRows]);
-
-  const graphicDevices = useMemo(() => {
-    const tags = new Set<string>();
-    graphic?.tags.forEach((t) => tags.add(t.tag));
-    graphic?.objectNames.forEach((n) => tags.add(n));
-    graphicIo.forEach((r) => {
-      if (r.deviceTag) tags.add(r.deviceTag);
-    });
-    return Array.from(tags).sort((a, b) => a.localeCompare(b));
-  }, [graphic, graphicIo]);
 
   if (error) {
     return (
@@ -544,13 +747,25 @@ function ViewerInner() {
       ),
     },
     {
+      id: "loops",
+      label: "Loop List",
+      icon: (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8">
+          <circle cx="6" cy="7" r="2.2" />
+          <circle cx="18" cy="17" r="2.2" />
+          <path d="M8.2 7H14a3 3 0 0 1 3 3v4.8" />
+          <path d="M6 9.2V14a3 3 0 0 0 3 3h6.8" />
+        </svg>
+      ),
+    },
+    {
       id: "logic",
       label: "Logic",
       icon: (
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8">
-          <rect x="3" y="5" width="7" height="5" rx="1" />
-          <rect x="14" y="14" width="7" height="5" rx="1" />
-          <path d="M10 7.5h2.5a2 2 0 0 1 2 2V16.5H14" />
+          <rect x="3" y="4" width="7" height="6" rx="1.2" />
+          <rect x="14" y="14" width="7" height="6" rx="1.2" />
+          <path d="M10 7h3a2 2 0 0 1 2 2v5" />
         </svg>
       ),
     },
@@ -564,33 +779,12 @@ function ViewerInner() {
         </svg>
       ),
     },
-    {
-      id: "graphics",
-      label: "M1 Graphics",
-      icon: (
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8">
-          <rect x="3" y="4" width="18" height="14" rx="2" />
-          <path d="m7 14 3-3 2.5 2.5L16 10l3 4" />
-          <circle cx="9" cy="8" r="1.2" fill="currentColor" stroke="none" />
-        </svg>
-      ),
-    },
-    {
-      id: "validation",
-      label: "Validation",
-      icon: (
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8">
-          <circle cx="12" cy="12" r="8.5" />
-          <path d="m8.5 12.2 2.4 2.4 4.6-5" />
-        </svg>
-      ),
-    },
   ];
 
   return (
     <div className="workspace-shell">
       <header className="site-header">
-        <div className="site-header__inner site-header__inner--wide">
+        <div className="site-header__inner site-header__inner--wide site-header__inner--workspace">
           <Link href="/" className="brand">
             <Image
               src="/valmet-logo.webp"
@@ -605,49 +799,6 @@ function ViewerInner() {
             </span>
             <span className="brand__product">ABB Bailey INFI 90 Migration Studio</span>
           </Link>
-          <div className="workspace-export">
-            <a className="btn btn-secondary btn-sm !ml-0" href={apiUrl(`/api/projects/${id}/artifacts/io-xlsx`)}>
-              I/O Excel
-            </a>
-            <a className="btn btn-secondary btn-sm !ml-0" href={apiUrl(`/api/projects/${id}/artifacts/logic-xlsx`)}>
-              Logic Excel
-            </a>
-            <a className="btn btn-secondary btn-sm !ml-0" href={apiUrl(`/api/projects/${id}/artifacts/cad-pdf`)}>
-              CAD PDF
-            </a>
-            <a className="btn btn-sm !ml-0" href={apiUrl(`/api/projects/${id}/artifacts/m1-pdf`)}>
-              Graphics PDF
-            </a>
-          </div>
-        </div>
-      </header>
-
-      <div
-        className={`workspace-layout ${sidebarCollapsed ? "workspace-layout--collapsed" : ""}`}
-      >
-        <aside className="workspace-sidebar">
-          <div className="workspace-sidebar__top">
-            <div className="workspace-sidebar__meta">
-              <p className="text-xs font-semibold tracking-[0.14em] text-[var(--accent)] uppercase">
-                Review session
-              </p>
-              <h1 className="mt-1 font-[family-name:var(--font-display)] text-lg font-semibold tracking-tight leading-snug">
-                {session.meta.name}
-              </h1>
-              <p className="mt-1 text-xs text-[var(--muted)] break-all">
-                {session.meta.sourceZipName}
-              </p>
-            </div>
-            <button
-              type="button"
-              className="workspace-sidebar__collapse"
-              onClick={() => setSidebarCollapsed((v) => !v)}
-              aria-label={sidebarCollapsed ? "Expand menu" : "Collapse menu"}
-              title={sidebarCollapsed ? "Expand menu" : "Collapse menu"}
-            >
-              {sidebarCollapsed ? "»" : "«"}
-            </button>
-          </div>
           <nav className="workspace-nav" aria-label="Workspace">
             {tabs.map((t) => (
               <button
@@ -655,8 +806,7 @@ function ViewerInner() {
                 type="button"
                 className={`workspace-nav__item ${tab === t.id ? "workspace-nav__item--active" : ""}`}
                 onClick={() => setTab(t.id)}
-                title={t.label}
-                aria-label={t.label}
+                aria-current={tab === t.id ? "page" : undefined}
               >
                 <span className="workspace-nav__icon" aria-hidden>
                   {t.icon}
@@ -665,17 +815,35 @@ function ViewerInner() {
               </button>
             ))}
           </nav>
-        </aside>
+          <div className="workspace-header__end">
+            {tab === "cad" && (
+              <a className="btn-pdf" href={apiUrl(`/api/projects/${id}/cad-pdf`)}>
+                <svg className="btn-pdf__icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" opacity=".15" d="M6 2.5h8.2L20 8.2V21a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1Z" />
+                  <path fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" d="M6 2.5h8.2L20 8.2V21a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1Z" />
+                  <path fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" d="M14 2.5V8h5.8" />
+                  <text x="12" y="17.2" textAnchor="middle" fill="currentColor" fontSize="5.4" fontWeight="700" fontFamily="Arial, sans-serif">PDF</text>
+                </svg>
+                <span className="btn-pdf__divider" aria-hidden="true" />
+                Export PDF
+              </a>
+            )}
+          </div>
+        </div>
+      </header>
 
         <main className="workspace-main">
         {tab === "overview" && (
           <section className="space-y-5">
             <div>
-              <h2 className="font-[family-name:var(--font-display)] text-2xl font-semibold tracking-tight">
-                Overview
-              </h2>
-              <p className="mt-1 text-sm text-[var(--muted)]">
-                Session file summary and complete inventory by category.
+              <p className="text-xs font-semibold tracking-[0.14em] text-[var(--accent)] uppercase">
+                Review session
+              </p>
+              <h1 className="mt-1 font-[family-name:var(--font-display)] text-2xl font-semibold tracking-tight">
+                {session.meta.name}
+              </h1>
+              <p className="mt-1 text-sm text-[var(--muted)] break-all">
+                {session.meta.sourceZipName} · session file summary and complete inventory by category.
               </p>
             </div>
 
@@ -755,17 +923,13 @@ function ViewerInner() {
 
         {tab === "io" && (
           <section className="space-y-4">
-            <div className="grid gap-3 grid-cols-2 md:grid-cols-4 xl:grid-cols-8">
+            <div className="grid gap-3 grid-cols-2 md:grid-cols-4">
               {(
                 [
                   ["AI", "Analog Input", ioBucketCounts.AI],
-                  ["AI800_", "AI800 series", ioBucketCounts.AI800_],
                   ["AO", "Analog Output", ioBucketCounts.AO],
-                  ["AO800_", "AO800 series", ioBucketCounts.AO800_],
                   ["DI", "Digital Input", ioBucketCounts.DI],
-                  ["DI800_", "DI800 series", ioBucketCounts.DI800_],
                   ["DO", "Digital Output", ioBucketCounts.DO],
-                  ["DO800_", "DO800 series", ioBucketCounts.DO800_],
                 ] as const
               ).map(([code, label, count]) => (
                 <button
@@ -797,13 +961,9 @@ function ViewerInner() {
                 [
                   "ALL",
                   "AI",
-                  "AI800_",
                   "AO",
-                  "AO800_",
                   "DI",
-                  "DI800_",
                   "DO",
-                  "DO800_",
                 ] as const
               ).map((t) => (
                 <button
@@ -821,6 +981,18 @@ function ViewerInner() {
                 placeholder="Search tags, CAD, description…"
                 className="min-w-[220px] flex-1 rounded-[10px] border border-[var(--line)] bg-white px-3 py-1.5 text-sm"
               />
+              <a className="btn-excel" href={apiUrl(`/api/projects/${id}/artifacts/io-xlsx`)}>
+                <svg className="btn-excel__icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" opacity=".18" d="M8 3h9l4 4v13a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" />
+                  <path fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" d="M8 3h9l4 4v13a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" />
+                  <path fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" d="M17 3v4h4" />
+                  <path fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" d="M14 11h4M14 14h4M14 17h4" />
+                  <rect x="2.5" y="8" width="10" height="10" rx="1.5" fill="currentColor" />
+                  <path fill="none" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" d="m5.5 10.5 4 5m0-5-4 5" />
+                </svg>
+                <span className="btn-excel__divider" aria-hidden="true" />
+                Export IO List
+              </a>
             </div>
             <div className="table-wrap excel-wrap">
               <table className="excel-table" style={{ ["--excel-cols" as string]: 7 }}>
@@ -851,10 +1023,7 @@ function ViewerInner() {
                               <button
                                 type="button"
                                 className="text-[var(--accent)] underline font-semibold"
-                                onClick={() => {
-                                  setSelectedCad(group.cadFile);
-                                  setTab("cad");
-                                }}
+                                onClick={() => openCadSheet(group.cadFile)}
                               >
                                 {group.cadFile}
                               </button>
@@ -867,8 +1036,8 @@ function ViewerInner() {
                         <td>{r.channel}</td>
                         <td>{r.slave}</td>
                         <td>{r.deviceTag}</td>
-                        <td>{r.loopTag}</td>
-                        <td title={r.description}>{r.description || "—"}</td>
+                        <td title={r.loopTagNote}>{r.loopTag}</td>
+                        <td title={r.descriptionNote}>{r.description || "—"}</td>
                       </tr>
                     ))
                   )}
@@ -879,125 +1048,35 @@ function ViewerInner() {
           </section>
         )}
 
-        {tab === "logic" && (
+        {tab === "loops" && (
           <section className="space-y-4">
-            <div className="grid gap-3 grid-cols-2 md:grid-cols-4 xl:grid-cols-8">
-              {(
-                [
-                  ["Total", "Logic blocks", logicSummary.total, "ALL"],
-                  ["CAD", "Sheets used", logicSummary.cadSheets, "ALL"],
-                  ["FC", "Function codes", logicSummary.functionCodes, "ALL"],
-                  ["Formula", "With formula", logicSummary.withFormula, "ALL"],
-                  ["Device", "With device tag", logicSummary.withDevice, "ALL"],
-                  ["Inputs", "With inputs", logicSummary.withInputs, "ALL"],
-                  ["Outputs", "With outputs", logicSummary.withOutputs, "ALL"],
-                  ["Specs", "With S1 / S2", logicSummary.withSpecs, "ALL"],
-                ] as const
-              ).map(([code, label, count]) => (
-                <div key={code} className="panel p-4">
-                  <span className="inline-flex rounded-md bg-[var(--accent-soft)] px-2 py-1 text-xs font-bold tracking-wide text-[var(--accent-dark)]">
-                    {code}
-                  </span>
-                  <p className="mt-2 text-2xl font-semibold tabular-nums">{count}</p>
-                  <p className="mt-1 text-[0.7rem] leading-snug text-[var(--muted)]">
-                    {label}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            <div className="panel overflow-hidden p-0">
-              <div className="flex flex-wrap gap-2 border-b border-[var(--line)] px-4 py-3">
-                <button
-                  type="button"
-                  className={`tab-btn ${logicFilter === "ALL" ? "tab-btn--active" : "border border-[var(--line)]"}`}
-                  onClick={() => setLogicFilter("ALL")}
-                >
-                  ALL
-                </button>
-                {logicSummary.topCodes.map(({ code, count }) => (
-                  <button
-                    key={code}
-                    type="button"
-                    className={`tab-btn ${logicFilter === code ? "tab-btn--active" : "border border-[var(--line)]"}`}
-                    onClick={() =>
-                      setLogicFilter((prev) => (prev === code ? "ALL" : code))
-                    }
-                  >
-                    {code} ({count})
-                  </button>
-                ))}
-                <input
-                  value={logicQuery}
-                  onChange={(e) => setLogicQuery(e.target.value)}
-                  placeholder="Search CAD, block, FC, formula…"
-                  className="min-w-[220px] flex-1 rounded-[10px] border border-[var(--line)] bg-white px-3 py-1.5 text-sm"
-                />
-              </div>
-              <div className="table-wrap excel-wrap">
-                <table className="excel-table" style={{ ["--excel-cols" as string]: 10 }}>
-                  <colgroup>
-                    {Array.from({ length: 10 }).map((_, i) => (
-                      <col key={i} />
-                    ))}
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th>CAD</th>
-                      <th>Block</th>
-                      <th>FC</th>
-                      <th>S1</th>
-                      <th>S2</th>
-                      <th>Formula</th>
-                      <th>Inputs</th>
-                      <th>Outputs</th>
-                      <th>Device</th>
-                      <th>Description</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {filteredLogic.map((r) => (
-                      <tr key={r.id}>
-                        <td>
-                          <button
-                            type="button"
-                            className="text-[var(--accent)] underline font-semibold"
-                            onClick={() => {
-                              setSelectedCad(r.cadFile);
-                              setTab("cad");
-                            }}
-                          >
-                            {r.cadFile}
-                          </button>
-                        </td>
-                        <td>{r.blockId || "—"}</td>
-                        <td>
-                          {r.functionCode || "—"}
-                          {r.functionCodeNumber != null && (
-                            <span className="text-[var(--muted)]">
-                              {" "}
-                              ({r.functionCodeNumber})
-                            </span>
-                          )}
-                        </td>
-                        <td>{r.s1 || "—"}</td>
-                        <td>{r.s2 || "—"}</td>
-                        <td title={r.logicFormula}>{r.logicFormula || "—"}</td>
-                        <td>{r.inputRefs.join(", ") || "—"}</td>
-                        <td>{r.outputRefs.join(", ") || "—"}</td>
-                        <td>{r.deviceTag || "—"}</td>
-                        <td>{r.description || "—"}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
+            <LoopListView projectId={id} onOpenCad={openCadSheet} />
           </section>
         )}
 
+        {tab === "logic" && (
+          <LogicSection
+            projectId={id}
+            sheets={session.cadSheets}
+            logicVersion={logicVersion}
+            reprocessing={reprocessing}
+            onReprocess={() => void reprocessSession()}
+            onOpenCad={openCadSheet}
+          />
+        )}
+
         {tab === "cad" && (
-          <section className="cad-viewer">
+          <section
+            ref={cadViewerRef}
+            className={`cad-viewer${resizingDetail ? " cad-viewer--resizing" : ""}`}
+            style={
+              detailWidth === null
+                ? undefined
+                : ({
+                    "--cad-detail-width": `max(${DETAIL_MIN_WIDTH}px, min(${detailWidth}px, calc(100% - ${DETAIL_RESERVED_WIDTH}px)))`
+                  } as CSSProperties)
+            }
+          >
             <aside className="cad-viewer__left">
               <div className="cad-viewer__pane-head">
                 <h3>CAD sheets</h3>
@@ -1011,16 +1090,23 @@ function ViewerInner() {
                 />
               </div>
               <div className="cad-viewer__list">
+                <button
+                  type="button"
+                  onClick={() => setCadSummary(true)}
+                  className={`cad-viewer__sheet cad-viewer__sheet--summary ${
+                    cadSummary ? "cad-viewer__sheet--active" : ""
+                  }`}
+                >
+                  <span className="cad-viewer__sheet-name">Block Summary</span>
+                  <span className="cad-viewer__sheet-title">Function blocks across all CAD files</span>
+                </button>
                 {filteredCadSheets.map((s) => (
                   <button
                     key={s.filename}
                     type="button"
-                    onClick={() => {
-                      setSelectedCad(s.filename);
-                      setSheetDetailTab("overview");
-                    }}
+                    onClick={() => openCadSheet(s.filename)}
                     className={`cad-viewer__sheet ${
-                      selectedCad === s.filename ? "cad-viewer__sheet--active" : ""
+                      !cadSummary && selectedCad === s.filename ? "cad-viewer__sheet--active" : ""
                     }`}
                   >
                     <span className="cad-viewer__sheet-name">{s.filename}</span>
@@ -1032,802 +1118,732 @@ function ViewerInner() {
               </div>
             </aside>
 
+            {cadSummary ? (
+              <div className="cad-viewer__summary">
+                <div className="cad-viewer__pane-head">
+                  <h3>Block Summary</h3>
+                  <p>Function blocks summed across every CAD file, mapped to the Function Code Application Manual · click a row to see where it is used</p>
+                </div>
+                <BlockSummaryView
+                  key={logicVersion}
+                  projectId={id}
+                  sheetTitles={cadSheetTitles}
+                  onOpenCad={openCadSheet}
+                />
+              </div>
+            ) : (
+            <>
             <div className="cad-viewer__middle">
               <div className="cad-viewer__pane-head">
-                <div>
+                <div className="min-w-0">
                   <h3>{cad?.filename || "Select a CAD sheet"}</h3>
-                  <p>Reconstructed engineering logic</p>
+                  <p>{cad?.title || "Original PDF, with an SVG view of the same sheet"}</p>
                 </div>
-                {cad && (
-                  <div className="cad-viewer__stats">
-                    <span>
-                      {cad.engineeringModel?.stats.blockCount ??
-                        cad.functionBlocks.length}{" "}
-                      blocks
-                    </span>
-                    <span>
-                      {cad.engineeringModel?.stats.connectionCount ?? 0} conn
-                    </span>
-                    <span>{sheetIo.length} I/O</span>
-                    <span>{sheetDevices.length} devices</span>
+                <div className="cad-viewer__stats">
+                  <div className="cad-view-switch" role="group" aria-label="Drawing view">
                     <button
                       type="button"
-                      onClick={() => setCadFitWidth((v) => !v)}
-                      className="tab-btn"
+                      className={cadView === "pdf" ? "is-active" : ""}
+                      aria-pressed={cadView === "pdf"}
+                      onClick={() => setCadView("pdf")}
                     >
-                      {cadFitWidth ? "Actual size" : "Fit width"}
+                      Original PDF
+                    </button>
+                    <button
+                      type="button"
+                      className={cadView === "svg" ? "is-active" : ""}
+                      aria-pressed={cadView === "svg"}
+                      onClick={() => setCadView("svg")}
+                    >
+                      SVG
                     </button>
                   </div>
-                )}
+                  {cad && cadView === "svg" && (
+                    <div className="cad-viewer__zoom" role="group" aria-label="CAD zoom">
+                      <button
+                        type="button"
+                        className="tab-btn"
+                        onClick={zoomCadOut}
+                        title="Zoom out"
+                        aria-label="Zoom out"
+                      >
+                        −
+                      </button>
+                      <button
+                        type="button"
+                        className="tab-btn cad-viewer__zoom-label"
+                        onClick={zoomCadReset}
+                        title="Reset to 100%"
+                        aria-label="Reset zoom to 100 percent"
+                      >
+                        {cadFitWidth ? "Fit" : `${Math.round(cadZoom * 100)}%`}
+                      </button>
+                      <button
+                        type="button"
+                        className="tab-btn"
+                        onClick={zoomCadIn}
+                        title="Zoom in"
+                        aria-label="Zoom in"
+                      >
+                        +
+                      </button>
+                      <button
+                        type="button"
+                        onClick={zoomCadFit}
+                        className={`tab-btn ${cadFitWidth ? "tab-btn--active" : ""}`}
+                        title="Fit sheet to width"
+                      >
+                        Fit width
+                      </button>
+                    </div>
+                  )}
+                  {selectedCad && cadView === "pdf" && (
+                    <div className="cad-viewer__zoom" role="group" aria-label="PDF zoom">
+                      <button
+                        type="button"
+                        className="tab-btn"
+                        onClick={() => zoomPdfBy(1 / CAD_ZOOM_STEP)}
+                        title="Zoom out"
+                        aria-label="Zoom out"
+                      >
+                        −
+                      </button>
+                      <button
+                        type="button"
+                        className="tab-btn cad-viewer__zoom-label"
+                        onClick={() => setPdfZoom(1)}
+                        title="Reset to 100%"
+                        aria-label="Reset zoom to 100 percent"
+                      >
+                        {pdfZoom == null ? "Fit" : `${Math.round(pdfZoom * 100)}%`}
+                      </button>
+                      <button
+                        type="button"
+                        className="tab-btn"
+                        onClick={() => zoomPdfBy(CAD_ZOOM_STEP)}
+                        title="Zoom in"
+                        aria-label="Zoom in"
+                      >
+                        +
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setPdfZoom(null)}
+                        className={`tab-btn ${pdfZoom == null ? "tab-btn--active" : ""}`}
+                        title="Fit sheet to width"
+                      >
+                        Fit width
+                      </button>
+                    </div>
+                  )}
+                </div>
               </div>
-              <div className="cad-viewer__canvas">
+              {cad && (
+                <div className="cad-search" role="search">
+                  <label className="cad-search__field">
+                    <svg viewBox="0 0 20 20" aria-hidden className="cad-search__icon">
+                      <circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" strokeWidth="1.8" />
+                      <path d="M12.6 12.6 17 17" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+                    </svg>
+                    <input
+                      ref={cadSearchRef}
+                      type="search"
+                      value={cadSearch}
+                      onChange={(e) => setCadSearch(e.target.value)}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter") {
+                          e.preventDefault();
+                          stepCadSearch(e.shiftKey ? -1 : 1);
+                        } else if (e.key === "Escape") {
+                          setCadSearch("");
+                        }
+                      }}
+                      placeholder={`Search ${cadView === "pdf" ? "the PDF" : "the SVG"}: tag, block, address…`}
+                      aria-label="Search this sheet"
+                    />
+                  </label>
+                  <div className="cad-search__tools">
+                  <span className="cad-search__count" aria-live="polite">
+                    {cadSearch.trim()
+                      ? cadMatchCount
+                        ? `${cadMatchIndex + 1} of ${cadMatchCount}`
+                        : "No matches"
+                      : ""}
+                  </span>
+                  <div className="cad-search__nav">
+                    <button
+                      type="button"
+                      className="tab-btn"
+                      onClick={() => stepCadSearch(-1)}
+                      disabled={!cadMatchCount}
+                      title="Previous match (Shift+Enter)"
+                      aria-label="Previous match"
+                    >
+                      ↑
+                    </button>
+                    <button
+                      type="button"
+                      className="tab-btn"
+                      onClick={() => stepCadSearch(1)}
+                      disabled={!cadMatchCount}
+                      title="Next match (Enter)"
+                      aria-label="Next match"
+                    >
+                      ↓
+                    </button>
+                  </div>
+                  </div>
+                </div>
+              )}
+              <div className={`cad-flip${cadView === "svg" ? " cad-flip--svg" : ""}`}>
+                <div className="cad-flip__face cad-flip__face--pdf">
+                  {selectedCad ? (
+                    <CadPdfView
+                      key={selectedCad}
+                      src={apiUrl(`/api/projects/${id}/cad-pdf/${encodeURIComponent(selectedCad)}`)}
+                      zoom={pdfZoom}
+                      onZoom={setPdfZoom}
+                      onFitScale={setPdfFitScale}
+                      query={cadView === "pdf" ? cadSearch : ""}
+                      activeMatch={cadSearchActive}
+                      onMatches={setPdfMatchCount}
+                    />
+                  ) : (
+                    <p className="cad-viewer__empty">Choose a sheet from the left panel</p>
+                  )}
+                </div>
+                <div className="cad-flip__face cad-flip__face--svg">
+              <div
+                className="cad-viewer__canvas"
+                ref={cadCanvasRef}
+              >
                 {cad && cadSvgMarkup ? (
                   <div
-                    className={`cad-viewer__svg-host ${
-                      cadFitWidth ? "cad-viewer__svg-host--fit" : ""
-                    }`}
-                    dangerouslySetInnerHTML={{ __html: cadSvgMarkup }}
-                    onClick={(e) => {
-                      const el = e.target as Element;
-                      const block = el.closest("[data-block-id]");
-                      if (block) {
-                        setSelectedBlockId(block.getAttribute("data-block-id"));
-                        setSelectedConnectionId(null);
-                        setSheetDetailTab("overview");
-                        return;
+                    className="cad-viewer__zoom-stage"
+                    style={
+                      cadFitWidth
+                        ? undefined
+                        : {
+                            width: cadSvgNatural.w * cadZoom,
+                            height: cadSvgNatural.h * cadZoom,
+                          }
+                    }
+                  >
+                    <div
+                      className={`cad-viewer__svg-host ${
+                        cadFitWidth ? "cad-viewer__svg-host--fit" : ""
+                      }`}
+                      style={
+                        cadFitWidth
+                          ? undefined
+                          : {
+                              width: cadSvgNatural.w,
+                              height: cadSvgNatural.h,
+                              transform: `scale(${cadZoom})`,
+                              transformOrigin: "0 0",
+                            }
                       }
-                      const wire = el.closest("[data-connection-id]");
-                      if (wire) {
-                        setSelectedConnectionId(
-                          wire.getAttribute("data-connection-id")
-                        );
+                      dangerouslySetInnerHTML={{ __html: cadSvgHtml }}
+                      onClick={(e) => {
+                        const el = e.target as Element;
+                        const label =
+                          el.closest("text")?.textContent?.trim() ||
+                          nearestSvgText(el, e.clientX, e.clientY);
+                        const hit = label ? lookupIo(ioIndex, label) : null;
+                        const links = hit ? linksFromSheet(hit, selectedCad) : [];
+                        if (hit && links.length) {
+                          const pane = (e.currentTarget as HTMLElement).closest(".cad-viewer__middle");
+                          const box = pane?.getBoundingClientRect();
+                          setIoNav({
+                            hit,
+                            links,
+                            top: box ? e.clientY - box.top + 8 : 48,
+                            left: box ? Math.min(e.clientX - box.left + 8, box.width - 280) : 16,
+                          });
+                          return;
+                        }
+                        setIoNav(null);
+                        const block = el.closest("[data-block-id]");
+                        if (block) {
+                          setSelectedBlockId(block.getAttribute("data-block-id"));
+                          setSelectedConnectionId(null);
+                          setSheetDetailTab("logic");
+                          return;
+                        }
+                        const wire = el.closest("[data-connection-id]");
+                        if (wire) {
+                          setSelectedConnectionId(
+                            wire.getAttribute("data-connection-id")
+                          );
+                          setSelectedBlockId(null);
+                          return;
+                        }
                         setSelectedBlockId(null);
-                        setSheetDetailTab("overview");
-                        return;
-                      }
-                      setSelectedBlockId(null);
-                      setSelectedConnectionId(null);
-                    }}
-                  />
+                        setSelectedConnectionId(null);
+                      }}
+                    />
+                  </div>
                 ) : cad ? (
                   <p className="cad-viewer__empty">Loading reconstructed sheet…</p>
                 ) : (
                   <p className="cad-viewer__empty">Choose a sheet from the left panel</p>
                 )}
               </div>
+              {ioNav && (
+                <div className="cad-io-nav" style={{ top: ioNav.top, left: ioNav.left }}>
+                  <div className="cad-io-nav__head">
+                    <div>
+                      <p className="cad-io-nav__type">
+                        {ioNav.hit.ioType ?? "I/O"}
+                        {ioNav.hit.channel ? ` · ch ${ioNav.hit.channel}` : ""}
+                        {ioNav.hit.slave ? ` · slave ${ioNav.hit.slave}` : ""}
+                      </p>
+                      <p className="cad-io-nav__label">{ioNav.hit.deviceTag || ioNav.hit.label}</p>
+                      {ioNav.hit.loopTag && <p className="cad-io-nav__loop">{ioNav.hit.loopTag}</p>}
+                    </div>
+                    <button type="button" className="cad-io-nav__close" onClick={() => setIoNav(null)} aria-label="Close">
+                      ×
+                    </button>
+                  </div>
+                  {ioNav.hit.description && <p className="cad-io-nav__desc">{ioNav.hit.description}</p>}
+                  <p className="cad-io-nav__kicker">Related CAD sheets</p>
+                  <div className="cad-io-nav__links">
+                    {ioNav.links.map((link) => (
+                      <button
+                        key={`${link.file}-${link.reason}`}
+                        type="button"
+                        className="cad-io-nav__link"
+                        onClick={() => setSelectedCad(link.file)}
+                      >
+                        <span>{link.file}</span>
+                        <span>{link.title || link.reason}</span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+                </div>
+              </div>
             </div>
 
             <aside className="cad-viewer__right">
+              <div
+                className="cad-viewer__resizer"
+                role="separator"
+                aria-orientation="vertical"
+                aria-label="Resize sheet details"
+                aria-valuenow={detailWidth ?? undefined}
+                aria-valuemin={DETAIL_MIN_WIDTH}
+                tabIndex={0}
+                title="Drag to resize · double-click to reset"
+                onPointerDown={startDetailResize}
+                onDoubleClick={() => commitDetailWidth(null)}
+                onKeyDown={onDetailResizeKey}
+              />
               <div className="cad-viewer__pane-head">
                 <h3>Sheet details</h3>
-                <p>{cad?.title || cad?.sheetId || "Selected sheet data"}</p>
+                <p>{cad?.title || cad?.filename || "I/O and logic for the selected sheet"}</p>
               </div>
-
               <div className="cad-viewer__tabs">
-                {(
-                  [
-                    ["overview", "Overview"],
-                    ["io", "I/O"],
-                    ["logic", "Logic S1/S2"],
-                    ["links", "Links"],
-                  ] as const
-                ).map(([idTab, label]) => (
-                  <button
-                    key={idTab}
-                    type="button"
-                    className={sheetDetailTab === idTab ? "is-active" : ""}
-                    onClick={() => setSheetDetailTab(idTab)}
-                  >
-                    {label}
-                  </button>
-                ))}
+                <button
+                  type="button"
+                  className={sheetDetailTab === "io" ? "is-active" : ""}
+                  onClick={() => setSheetDetailTab("io")}
+                >
+                  I/O list ({sheetIo.length})
+                </button>
+                <button
+                  type="button"
+                  className={sheetDetailTab === "logic" ? "is-active" : ""}
+                  onClick={() => setSheetDetailTab("logic")}
+                >
+                  Logic ({sheetBlocks?.length ?? cad?.engineeringModel?.stats.blockCount ?? 0})
+                </button>
               </div>
-
               <div className="cad-viewer__detail-body">
-                {!cad && (
-                  <p className="cad-viewer__empty">No sheet selected</p>
-                )}
-
-                {cad && sheetDetailTab === "overview" && (
-                  <div className="cad-viewer__sections">
-                    {selectedBlock && (
-                      <section className="cad-viewer__block-detail">
-                        <h4>Block details</h4>
-                        <dl className="cad-viewer__meta">
-                          <div>
-                            <dt>Block ID</dt>
-                            <dd>{selectedBlock.id}</dd>
-                          </div>
-                          <div>
-                            <dt>Function code</dt>
-                            <dd>
-                              {selectedBlock.functionCodeNumber != null
-                                ? `(${selectedBlock.functionCodeNumber}) `
-                                : ""}
-                              {selectedBlock.functionCode || "—"}
-                            </dd>
-                          </div>
-                          <div>
-                            <dt>Block #</dt>
-                            <dd>{selectedBlock.blockNumber || "—"}</dd>
-                          </div>
-                          <div>
-                            <dt>Inputs</dt>
-                            <dd>
-                              {selectedBlock.inputRefs.join(", ") || "—"}
-                            </dd>
-                          </div>
-                          <div>
-                            <dt>Outputs</dt>
-                            <dd>
-                              {selectedBlock.outputRefs.join(", ") || "—"}
-                            </dd>
-                          </div>
-                          <div>
-                            <dt>Tags</dt>
-                            <dd>
-                              {selectedBlock.deviceTags.join(", ") || "—"}
-                            </dd>
-                          </div>
-                          <div>
-                            <dt>Confidence</dt>
-                            <dd>
-                              {selectedBlock.trace
-                                ? `${Math.round(selectedBlock.trace.confidence * 100)}% / ${selectedBlock.trace.validationStatus}`
-                                : "—"}
-                            </dd>
-                          </div>
-                          {/* Provenance: the byte this block was decoded from. */}
-                          <div>
-                            <dt>Source evidence</dt>
-                            <dd>
-                              {selectedBlock.trace?.sourceIndex != null
-                                ? `${selectedBlock.trace.sourceFilename ?? cad.filename} @ byte ${selectedBlock.trace.sourceIndex}` +
-                                  (selectedBlock.trace.sourceMethod
-                                    ? ` (${selectedBlock.trace.sourceMethod})`
-                                    : "")
-                                : "—"}
-                            </dd>
-                          </div>
-                        </dl>
-                        {Object.keys(selectedBlock.parameters).length > 0 && (
-                          <>
-                            <h4 className="cad-viewer__subhead">S1… parameters</h4>
-                            <dl className="cad-viewer__meta">
-                              {Object.entries(selectedBlock.parameters).map(
-                                ([k, v]) => (
-                                  <div key={k}>
-                                    <dt>{k}</dt>
-                                    <dd>{v || "—"}</dd>
-                                  </div>
-                                )
-                              )}
-                            </dl>
-                          </>
-                        )}
-                        {selectedBlock.ports.length > 0 && (
-                          <>
-                            <h4 className="cad-viewer__subhead">Ports</h4>
-                            <ul className="cad-viewer__bullets">
-                              {selectedBlock.ports.map((p) => (
-                                <li key={p.id}>
-                                  {p.name} ({p.direction})
-                                  {p.signalName ? ` — ${p.signalName}` : ""}
-                                </li>
-                              ))}
-                            </ul>
-                          </>
-                        )}
-                      </section>
-                    )}
-
-                    {selectedConnection && (
-                      <section className="cad-viewer__block-detail">
-                        <h4>Connection details</h4>
-                        <dl className="cad-viewer__meta">
-                          <div>
-                            <dt>ID</dt>
-                            <dd>{selectedConnection.id}</dd>
-                          </div>
-                          <div>
-                            <dt>Source</dt>
-                            <dd>{selectedConnection.sourceBlockId || "—"}</dd>
-                          </div>
-                          <div>
-                            <dt>Target</dt>
-                            <dd>{selectedConnection.targetBlockId || "—"}</dd>
-                          </div>
-                          <div>
-                            <dt>Signal</dt>
-                            <dd>{selectedConnection.signalName || "—"}</dd>
-                          </div>
-                          <div>
-                            <dt>Resolved</dt>
-                            <dd>
-                              {selectedConnection.resolved ? "yes" : "no"}
-                            </dd>
-                          </div>
-                        </dl>
-                      </section>
-                    )}
-
-                    <section>
-                      <h4>Sheet data</h4>
-                      <dl className="cad-viewer__meta">
-                        <div>
-                          <dt>File</dt>
-                          <dd>{cad.filename}</dd>
-                        </div>
-                        <div>
-                          <dt>Title</dt>
-                          <dd>{cad.title || "—"}</dd>
-                        </div>
-                        <div>
-                          <dt>Sheet ID</dt>
-                          <dd>{cad.sheetId || "—"}</dd>
-                        </div>
-                        <div>
-                          <dt>Loop tags</dt>
-                          <dd>{cad.loopTags.join(", ") || "—"}</dd>
-                        </div>
-                        {cad.engineeringModel && (
-                          <>
-                            <div>
-                              <dt>Model status</dt>
-                              <dd>{cad.engineeringModel.validation.status}</dd>
-                            </div>
-                            <div>
-                              <dt>Unresolved xref</dt>
-                              <dd>
-                                {
-                                  cad.engineeringModel.stats
-                                    .unresolvedConnections
-                                }
-                              </dd>
-                            </div>
-                          </>
-                        )}
-                      </dl>
-                    </section>
-
-                    <section>
-                      <h4>Descriptions</h4>
-                      {cad.descriptions.length === 0 ? (
-                        <p className="cad-viewer__muted">No descriptions</p>
-                      ) : (
-                        <ul className="cad-viewer__bullets">
-                          {cad.descriptions.map((d) => (
-                            <li key={d}>{d}</li>
-                          ))}
-                        </ul>
-                      )}
-                    </section>
-
-                    <section>
-                      <h4>Device tags ({sheetDevices.length})</h4>
-                      {sheetDevices.length === 0 ? (
-                        <p className="cad-viewer__muted">No device tags</p>
-                      ) : (
-                        <div className="cad-viewer__chips">
-                          {sheetDevices.map((tag) => (
-                            <span key={tag}>{tag}</span>
-                          ))}
-                        </div>
-                      )}
-                    </section>
-
-                    <section>
-                      <h4>Function blocks ({cad.functionBlocks.length})</h4>
-                      {cad.functionBlocks.length === 0 ? (
-                        <p className="cad-viewer__muted">No function blocks</p>
-                      ) : (
-                        <div className="cad-viewer__mini-table-wrap">
-                          <table className="cad-viewer__mini-table">
-                            <thead>
-                              <tr>
-                                <th>Block</th>
-                                <th>FC</th>
-                                <th>S1</th>
-                                <th>S2</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              {cad.functionBlocks.map((b, i) => (
-                                <tr key={`${b.blockId ?? b.functionCode}-${i}`}>
-                                  <td>{b.blockId || "—"}</td>
-                                  <td>
-                                    {b.functionCode || "—"}
-                                    {b.functionCodeNumber != null && (
-                                      <span className="text-[var(--muted)]">
-                                        {" "}
-                                        ({b.functionCodeNumber})
-                                      </span>
-                                    )}
-                                  </td>
-                                  <td>{b.s1 || "—"}</td>
-                                  <td>{b.s2 || "—"}</td>
-                                </tr>
-                              ))}
-                            </tbody>
-                          </table>
-                        </div>
-                      )}
-                    </section>
-                  </div>
-                )}
-
+                {!cad && <p className="cad-viewer__empty">No sheet selected</p>}
                 {cad && sheetDetailTab === "io" && (
-                  <div className="cad-viewer__sections">
-                    <section>
-                      <h4>I/O on this sheet ({sheetIo.length})</h4>
-                      {sheetIo.length === 0 ? (
-                        <p className="cad-viewer__muted">No I/O mapped to this sheet</p>
-                      ) : (
-                        <div className="cad-viewer__mini-table-wrap">
-                          <table className="cad-viewer__mini-table">
-                            <thead>
-                              <tr>
-                                <th>Type</th>
-                                <th>Ch</th>
-                                <th>Slave</th>
-                                <th>Device</th>
-                                <th>Loop</th>
-                                <th>S1</th>
-                                <th>S2</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              {sheetIo.map((r) => (
-                                <tr key={r.id}>
-                                  <td>{r.ioType}</td>
-                                  <td>{r.channel || "—"}</td>
-                                  <td>{r.slave || "—"}</td>
-                                  <td>{r.deviceTag || "—"}</td>
-                                  <td>{r.loopTag || "—"}</td>
-                                  <td>{r.s1 || "—"}</td>
-                                  <td>{r.s2 || "—"}</td>
-                                </tr>
-                              ))}
-                            </tbody>
-                          </table>
-                        </div>
-                      )}
-                    </section>
-
-                    <section>
-                      <h4>Sheet I/O refs ({cad.ioRefs.length})</h4>
-                      {cad.ioRefs.length === 0 ? (
-                        <p className="cad-viewer__muted">No I/O refs on sheet</p>
-                      ) : (
-                        <ul className="cad-viewer__bullets">
-                          {cad.ioRefs.map((io) => (
-                            <li key={io.raw}>
-                              <strong>{io.ioType || "IO"}</strong> {io.raw}
-                            </li>
+                  sheetIo.length === 0 ? (
+                    <p className="cad-viewer__muted">No I/O mapped to this sheet</p>
+                  ) : (
+                    <div className="cad-viewer__mini-table-wrap">
+                      <table className="cad-viewer__mini-table">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Ch</th>
+                            <th>Slave</th>
+                            <th>Device</th>
+                            <th>Loop tag</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {sheetIo.map((r) => (
+                            <tr key={r.id}>
+                              <td>{r.ioType}</td>
+                              <td>{r.channel || "—"}</td>
+                              <td>{r.slave || "—"}</td>
+                              <td>{r.deviceTag || "—"}</td>
+                              <td title={r.loopTagNote}>{r.loopTag || "—"}</td>
+                              <td title={r.descriptionNote}>{r.description || "—"}</td>
+                            </tr>
                           ))}
-                        </ul>
-                      )}
-                    </section>
-                  </div>
+                        </tbody>
+                      </table>
+                    </div>
+                  )
                 )}
-
                 {cad && sheetDetailTab === "logic" && (
                   <div className="cad-viewer__sections">
-                    <section>
-                      <h4>Logic blocks with S1 / S2 ({sheetLogic.length})</h4>
-                      {sheetLogic.length === 0 ? (
-                        <p className="cad-viewer__muted">No logic records for this sheet</p>
-                      ) : (
-                        <div className="cad-viewer__mini-table-wrap">
-                          <table className="cad-viewer__mini-table">
-                            <thead>
-                              <tr>
-                                <th>Block</th>
-                                <th>FC</th>
-                                <th>S1</th>
-                                <th>S2</th>
-                                <th>Device</th>
-                                <th>Formula</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              {sheetLogic.map((r) => (
-                                <tr key={r.id}>
-                                  <td>{r.blockId || "—"}</td>
-                                  <td>{r.functionCode || "—"}</td>
-                                  <td>{r.s1 || "—"}</td>
-                                  <td>{r.s2 || "—"}</td>
-                                  <td>{r.deviceTag || "—"}</td>
-                                  <td>{r.logicFormula || "—"}</td>
-                                </tr>
-                              ))}
-                            </tbody>
-                          </table>
-                        </div>
-                      )}
-                    </section>
-                  </div>
-                )}
-
-                {cad && sheetDetailTab === "links" && (
-                  <div className="cad-viewer__sections">
-                    <section>
-                      <h4>Cross-sheet links ({cad.oreffs.length})</h4>
-                      {cad.oreffs.length === 0 ? (
-                        <p className="cad-viewer__muted">No OREF links</p>
-                      ) : (
-                        <ul className="cad-viewer__bullets">
-                          {cad.oreffs.map((o, i) => (
-                            <li key={`${o.raw}-${i}`}>
-                              {o.tag || o.raw}
-                              {o.targetCad ? (
-                                <>
-                                  {" → "}
-                                  <button
-                                    type="button"
-                                    className="cad-viewer__link"
-                                    onClick={() => {
-                                      const hit = session.cadSheets.find((c) =>
-                                        c.filename
-                                          .toUpperCase()
-                                          .startsWith(o.targetCad!.toUpperCase())
-                                      );
-                                      if (hit) setSelectedCad(hit.filename);
-                                    }}
-                                  >
-                                    {o.targetCad}
-                                  </button>
-                                </>
-                              ) : null}
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </section>
-                  </div>
-                )}
-              </div>
-            </aside>
-          </section>
-        )}
-
-        {tab === "graphics" && (
-          <section className="cad-viewer">
-            <aside className="cad-viewer__left">
-              <div className="cad-viewer__pane-head">
-                <h3>M1 graphics</h3>
-                <p>{session.graphics.length} graphics</p>
-              </div>
-              <div className="cad-viewer__search">
-                <input
-                  value={m1Query}
-                  onChange={(e) => setM1Query(e.target.value)}
-                  placeholder="Search graphics…"
-                />
-              </div>
-              <div className="cad-viewer__list">
-                {filteredGraphics.map((g) => (
-                  <button
-                    key={g.filename}
-                    type="button"
-                    onClick={() => {
-                      setSelectedGraphic(g.filename);
-                      setGraphicDetailTab("overview");
-                    }}
-                    className={`cad-viewer__sheet ${
-                      selectedGraphic === g.filename ? "cad-viewer__sheet--active" : ""
-                    }`}
-                  >
-                    <span className="cad-viewer__sheet-name">{g.filename}</span>
-                    {g.title && (
-                      <span className="cad-viewer__sheet-title">{g.title}</span>
+                    {sheetBlocks === undefined && <p className="cad-viewer__muted">Loading function blocks…</p>}
+                    {sheetBlocks === null && (
+                      <div className="fb-missing">
+                        <p className="cad-viewer__muted">
+                          Function-block specifications have not been generated for this session yet.
+                        </p>
+                        <button
+                          type="button"
+                          className="btn btn-sm !ml-0"
+                          disabled={reprocessing}
+                          onClick={() => void reprocessSession()}
+                        >
+                          {reprocessing ? "Processing… (can take a few minutes)" : "Generate from CAD"}
+                        </button>
+                      </div>
                     )}
-                  </button>
-                ))}
-              </div>
-            </aside>
-
-            <div className="cad-viewer__middle">
-              <div className="cad-viewer__pane-head">
-                <div>
-                  <h3>{graphic?.filename || "Select an M1 graphic"}</h3>
-                  <p>Reconstructed graphics view</p>
-                </div>
-                {graphic && (
-                  <div className="cad-viewer__stats">
-                    <span>{graphic.tags.length} tags</span>
-                    <span>{graphicIo.length} I/O</span>
-                    <span>{graphicLogic.length} logic</span>
-                    <span>{graphicDevices.length} devices</span>
-                  </div>
-                )}
-              </div>
-              <div className="cad-viewer__canvas">
-                {graphic ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={apiUrl(`/api/projects/${id}/m1-svg/${encodeURIComponent(graphic.filename)}`)}
-                    alt={graphic.filename}
-                  />
-                ) : (
-                  <p className="cad-viewer__empty">Choose a graphic from the left panel</p>
-                )}
-              </div>
-            </div>
-
-            <aside className="cad-viewer__right">
-              <div className="cad-viewer__pane-head">
-                <h3>Graphic details</h3>
-                <p>{graphic?.title || graphic?.graphicId || "Selected graphic data"}</p>
-              </div>
-
-              <div className="cad-viewer__tabs">
-                {(
-                  [
-                    ["overview", "Overview"],
-                    ["tags", "Tags"],
-                    ["io", "I/O"],
-                    ["logic", "Logic S1/S2"],
-                  ] as const
-                ).map(([idTab, label]) => (
-                  <button
-                    key={idTab}
-                    type="button"
-                    className={graphicDetailTab === idTab ? "is-active" : ""}
-                    onClick={() => setGraphicDetailTab(idTab)}
-                  >
-                    {label}
-                  </button>
-                ))}
-              </div>
-
-              <div className="cad-viewer__detail-body">
-                {!graphic && (
-                  <p className="cad-viewer__empty">No graphic selected</p>
-                )}
-
-                {graphic && graphicDetailTab === "overview" && (
-                  <div className="cad-viewer__sections">
-                    <section>
-                      <h4>Graphic data</h4>
-                      <dl className="cad-viewer__meta">
-                        <div>
-                          <dt>File</dt>
-                          <dd>{graphic.filename}</dd>
-                        </div>
-                        <div>
-                          <dt>Title</dt>
-                          <dd>{graphic.title || "—"}</dd>
-                        </div>
-                        <div>
-                          <dt>Graphic ID</dt>
-                          <dd>{graphic.graphicId || "—"}</dd>
-                        </div>
-                        <div>
-                          <dt>Tags</dt>
-                          <dd>{graphic.tags.length}</dd>
-                        </div>
-                      </dl>
-                    </section>
-
-                    <section>
-                      <h4>Device / object tags ({graphicDevices.length})</h4>
-                      {graphicDevices.length === 0 ? (
-                        <p className="cad-viewer__muted">No device tags</p>
-                      ) : (
-                        <div className="cad-viewer__chips">
-                          {graphicDevices.map((tag) => (
-                            <span key={tag}>{tag}</span>
-                          ))}
-                        </div>
-                      )}
-                    </section>
-
-                    <section>
-                      <h4>Object names ({graphic.objectNames.length})</h4>
-                      {graphic.objectNames.length === 0 ? (
-                        <p className="cad-viewer__muted">No object names</p>
-                      ) : (
-                        <ul className="cad-viewer__bullets">
-                          {graphic.objectNames.map((name) => (
-                            <li key={name}>{name}</li>
-                          ))}
-                        </ul>
-                      )}
-                    </section>
-                  </div>
-                )}
-
-                {graphic && graphicDetailTab === "tags" && (
-                  <div className="cad-viewer__sections">
-                    <section>
-                      <h4>Tags on graphic ({graphic.tags.length})</h4>
-                      {graphicTagRows.length === 0 ? (
-                        <p className="cad-viewer__muted">No tags on this graphic</p>
-                      ) : (
-                        <div className="cad-viewer__mini-table-wrap">
-                          <table className="cad-viewer__mini-table">
+                    {sheetBlocks && sheetBlocks.length === 0 && (
+                      <p className="cad-viewer__muted">No function blocks on this sheet</p>
+                    )}
+                    {sheetBlocks?.map((b) => (
+                      <section
+                        key={b.block}
+                        id={`fb-${b.block}`}
+                        className={`fb-card ${selectedBlockNumber === b.block ? "fb-card--selected" : ""}`}
+                      >
+                        <header className="fb-card__head">
+                          <span className="fb-card__id">Block {b.block}</span>
+                          <span className="fb-card__fc">
+                            {b.functionCode != null ? `FC ${b.functionCode}` : "No FC"}
+                          </span>
+                        </header>
+                        <p className="fb-card__name">
+                          {b.name ?? "No manual description for this function code"}
+                          {b.symbol && <span className="fb-card__symbol"> · {b.symbol}</span>}
+                        </p>
+                        {b.specs.length === 0 ? (
+                          <p className="cad-viewer__muted">No specification values in the CAD</p>
+                        ) : (
+                          <table className="fb-card__table">
                             <thead>
                               <tr>
-                                <th>Tag</th>
-                                <th>Object</th>
-                                <th>I/O</th>
-                                <th>CAD</th>
+                                <th>Spec</th>
+                                <th>Value</th>
+                                <th>Description</th>
                               </tr>
                             </thead>
                             <tbody>
-                              {graphicTagRows.map((t) => (
-                                <tr key={`${t.tag}-${t.objectName || ""}`}>
-                                  <td>{t.tag}</td>
-                                  <td>{t.objectName || "—"}</td>
-                                  <td>{t.io?.ioType || "—"}</td>
+                              {b.specs.map((s) => (
+                                <tr key={s.label}>
+                                  <td className="fb-card__label">{s.label}</td>
+                                  <td className="fb-card__value">{s.value ?? "—"}</td>
                                   <td>
-                                    {t.io?.cadFile ? (
-                                      <button
-                                        type="button"
-                                        className="cad-viewer__link"
-                                        onClick={() => {
-                                          setSelectedCad(t.io!.cadFile!);
-                                          setTab("cad");
-                                        }}
-                                      >
-                                        {t.io.cadFile}
-                                      </button>
-                                    ) : (
-                                      "—"
-                                    )}
+                                    {s.description || "—"}
+                                    {s.meaning && <span className="fb-card__meaning">= {s.meaning}</span>}
                                   </td>
                                 </tr>
                               ))}
                             </tbody>
                           </table>
-                        </div>
-                      )}
-                    </section>
-                  </div>
-                )}
-
-                {graphic && graphicDetailTab === "io" && (
-                  <div className="cad-viewer__sections">
-                    <section>
-                      <h4>I/O linked to this graphic ({graphicIo.length})</h4>
-                      {graphicIo.length === 0 ? (
-                        <p className="cad-viewer__muted">No linked I/O records</p>
-                      ) : (
-                        <div className="cad-viewer__mini-table-wrap">
-                          <table className="cad-viewer__mini-table">
-                            <thead>
-                              <tr>
-                                <th>Type</th>
-                                <th>Ch</th>
-                                <th>Slave</th>
-                                <th>Device</th>
-                                <th>Loop</th>
-                                <th>S1</th>
-                                <th>S2</th>
-                                <th>CAD</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              {graphicIo.map((r) => (
-                                <tr key={r.id}>
-                                  <td>{r.ioType}</td>
-                                  <td>{r.channel || "—"}</td>
-                                  <td>{r.slave || "—"}</td>
-                                  <td>{r.deviceTag || "—"}</td>
-                                  <td>{r.loopTag || "—"}</td>
-                                  <td>{r.s1 || "—"}</td>
-                                  <td>{r.s2 || "—"}</td>
-                                  <td>
-                                    {r.cadFile ? (
-                                      <button
-                                        type="button"
-                                        className="cad-viewer__link"
-                                        onClick={() => {
-                                          setSelectedCad(r.cadFile!);
-                                          setTab("cad");
-                                        }}
-                                      >
-                                        {r.cadFile}
-                                      </button>
-                                    ) : (
-                                      "—"
-                                    )}
-                                  </td>
-                                </tr>
-                              ))}
-                            </tbody>
-                          </table>
-                        </div>
-                      )}
-                    </section>
-                  </div>
-                )}
-
-                {graphic && graphicDetailTab === "logic" && (
-                  <div className="cad-viewer__sections">
-                    <section>
-                      <h4>Logic with S1 / S2 ({graphicLogic.length})</h4>
-                      {graphicLogic.length === 0 ? (
-                        <p className="cad-viewer__muted">No linked logic records</p>
-                      ) : (
-                        <div className="cad-viewer__mini-table-wrap">
-                          <table className="cad-viewer__mini-table">
-                            <thead>
-                              <tr>
-                                <th>CAD</th>
-                                <th>Block</th>
-                                <th>FC</th>
-                                <th>S1</th>
-                                <th>S2</th>
-                                <th>Device</th>
-                                <th>Formula</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              {graphicLogic.map((r) => (
-                                <tr key={r.id}>
-                                  <td>
-                                    <button
-                                      type="button"
-                                      className="cad-viewer__link"
-                                      onClick={() => {
-                                        setSelectedCad(r.cadFile);
-                                        setTab("cad");
-                                      }}
-                                    >
-                                      {r.cadFile}
-                                    </button>
-                                  </td>
-                                  <td>{r.blockId || "—"}</td>
-                                  <td>{r.functionCode || "—"}</td>
-                                  <td>{r.s1 || "—"}</td>
-                                  <td>{r.s2 || "—"}</td>
-                                  <td>{r.deviceTag || "—"}</td>
-                                  <td>{r.logicFormula || "—"}</td>
-                                </tr>
-                              ))}
-                            </tbody>
-                          </table>
-                        </div>
-                      )}
-                    </section>
+                        )}
+                      </section>
+                    ))}
                   </div>
                 )}
               </div>
             </aside>
+            </>
+            )}
           </section>
         )}
 
-        {tab === "validation" && (
-          <section className="panel p-4">
-            <div className="table-wrap">
-              <table className="data">
-                <thead>
-                  <tr>
-                    <th>Severity</th>
-                    <th>Type</th>
-                    <th>Message</th>
-                    <th>CAD</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {session.validation.map((v) => (
-                    <tr key={v.id}>
-                      <td>{v.severity}</td>
-                      <td>{v.type}</td>
-                      <td className="max-w-xl whitespace-normal">{v.message}</td>
-                      <td>{v.relatedCad}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </section>
-        )}
         </main>
-      </div>
     </div>
+  );
+}
+
+function nearestSvgText(el: Element, x: number, y: number): string | null {
+  const svg = el.closest("svg");
+  if (!svg) return null;
+  let bestD = 36;
+  let bestText: string | null = null;
+  svg.querySelectorAll("text").forEach((node) => {
+    const text = node.textContent?.trim();
+    if (!text) return;
+    const r = node.getBoundingClientRect();
+    const d = Math.hypot(x - (r.left + r.width / 2), y - (r.top + r.height / 2));
+    if (d < bestD) {
+      bestD = d;
+      bestText = text;
+    }
+  });
+  return bestText;
+}
+
+function blockMatches(b: SheetLogicBlock, q: string) {
+  const fc = /^fc\s*(\d+)$/.exec(q);
+  if (fc) return b.functionCode === Number(fc[1]);
+  return (
+    String(b.block).includes(q) ||
+    (b.functionCode != null && `fc ${b.functionCode}`.includes(q)) ||
+    (b.name ?? "").toLowerCase().includes(q) ||
+    (b.symbol ?? "").toLowerCase().includes(q) ||
+    b.specs.some((s) => s.description.toLowerCase().includes(q))
+  );
+}
+
+function LogicSection({
+  projectId,
+  sheets,
+  logicVersion,
+  reprocessing,
+  onReprocess,
+  onOpenCad,
+}: {
+  projectId: string;
+  sheets: CadSheet[];
+  logicVersion: number;
+  reprocessing: boolean;
+  onReprocess: () => void;
+  onOpenCad: (file: string) => void;
+}) {
+  /** undefined while loading, null when the session has no specifications. */
+  const [logic, setLogic] = useState<Record<string, SheetLogicBlock[]> | null | undefined>(undefined);
+  const [query, setQuery] = useState("");
+  const [selected, setSelected] = useState<string | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    setLogic(undefined);
+    void (async () => {
+      const res = await fetch(apiUrl(`/api/projects/${projectId}/cad-logic`));
+      if (cancelled) return;
+      if (!res.ok) {
+        setLogic(null);
+        return;
+      }
+      const data = (await res.json()) as { sheets: Record<string, SheetLogicBlock[]> };
+      if (!cancelled) setLogic(data.sheets);
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [projectId, logicVersion]);
+
+  const groups = useMemo(() => {
+    if (!logic) return [];
+    const q = query.trim().toLowerCase();
+    return sheets
+      .map((s) => {
+        const blocks = logic[s.filename.toUpperCase()] ?? [];
+        if (!q) return { sheet: s, blocks };
+        const sheetHit =
+          s.filename.toLowerCase().includes(q) || (s.title ?? "").toLowerCase().includes(q);
+        return { sheet: s, blocks: sheetHit ? blocks : blocks.filter((b) => blockMatches(b, q)) };
+      })
+      .filter(
+        (g) =>
+          !q ||
+          g.blocks.length > 0 ||
+          g.sheet.filename.toLowerCase().includes(q) ||
+          (g.sheet.title ?? "").toLowerCase().includes(q)
+      );
+  }, [logic, sheets, query]);
+
+  const current =
+    groups.find((g) => g.sheet.filename === selected) ??
+    groups.find((g) => g.blocks.length > 0) ??
+    groups[0];
+
+  const totals = useMemo(() => {
+    const all = logic ? Object.values(logic).flat() : [];
+    return {
+      sheets: logic ? Object.values(logic).filter((b) => b.length).length : 0,
+      blocks: all.length,
+      specs: all.reduce((n, b) => n + b.specs.length, 0),
+      codes: new Set(all.map((b) => b.functionCode).filter((c) => c != null)).size,
+    };
+  }, [logic]);
+
+  const blocks = current?.blocks ?? [];
+
+  return (
+    <section className="cad-viewer logic-viewer">
+      <aside className="cad-viewer__left">
+        <div className="cad-viewer__pane-head">
+          <h3>CAD sheets</h3>
+          <p>
+            {logic
+              ? `${totals.sheets} sheets · ${totals.blocks} blocks · ${totals.specs} S values`
+              : `${sheets.length} sheets`}
+          </p>
+        </div>
+        <div className="cad-viewer__search">
+          <input
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search sheet, block, FC 30, description…"
+          />
+        </div>
+        <div className="cad-viewer__list">
+          {groups.map(({ sheet, blocks: sheetBlocks }) => (
+            <button
+              key={sheet.filename}
+              type="button"
+              onClick={() => setSelected(sheet.filename)}
+              className={`cad-viewer__sheet logic-viewer__sheet ${
+                current?.sheet.filename === sheet.filename ? "cad-viewer__sheet--active" : ""
+              } ${logic && sheetBlocks.length === 0 ? "logic-viewer__sheet--empty" : ""}`}
+            >
+              <span className="logic-viewer__sheet-row">
+                <span className="cad-viewer__sheet-name">{sheet.filename}</span>
+                {logic && <span className="logic-viewer__count">{sheetBlocks.length}</span>}
+              </span>
+              {sheet.title && <span className="cad-viewer__sheet-title">{sheet.title}</span>}
+            </button>
+          ))}
+          {groups.length === 0 && (
+            <p className="cad-viewer__empty">No sheets match “{query}”.</p>
+          )}
+        </div>
+      </aside>
+
+      <div className="logic-viewer__main">
+        <div className="cad-viewer__pane-head logic-viewer__head">
+          <div className="min-w-0">
+            <h3>{current?.sheet.filename ?? "Logic"}</h3>
+            <p>{current?.sheet.title ?? "Function blocks and S values from the CAD"}</p>
+          </div>
+          <div className="logic-viewer__actions">
+            {logic && current && (
+              <button
+                type="button"
+                className="btn-cad-open"
+                onClick={() => onOpenCad(current.sheet.filename)}
+              >
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+                  <path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                Open in CAD viewer
+              </button>
+            )}
+            {logic && (
+              <a className="btn-pdf" href={apiUrl(`/api/projects/${projectId}/logic-report`)}>
+                <svg className="btn-pdf__icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" opacity=".15" d="M6 2.5h8.2L20 8.2V21a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1Z" />
+                  <path fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" d="M6 2.5h8.2L20 8.2V21a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1Z" />
+                  <path fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" d="M14 2.5V8h5.8" />
+                  <text x="12" y="17.2" textAnchor="middle" fill="currentColor" fontSize="5.4" fontWeight="700" fontFamily="Arial, sans-serif">PDF</text>
+                </svg>
+                <span className="btn-pdf__divider" aria-hidden="true" />
+                Generate Report
+              </a>
+            )}
+          </div>
+        </div>
+
+        <div key={current?.sheet.filename} className="logic-viewer__body">
+          {logic === undefined && <p className="cad-viewer__empty">Loading logic…</p>}
+          {logic === null && (
+            <div className="flex flex-col items-start gap-3 p-5">
+              <p className="text-sm text-[var(--muted)]">
+                Function-block specifications have not been generated for this session yet.
+              </p>
+              <button type="button" className="btn btn-sm !ml-0" disabled={reprocessing} onClick={onReprocess}>
+                {reprocessing ? "Processing… (can take a few minutes)" : "Generate from CAD"}
+              </button>
+            </div>
+          )}
+          {logic && !current && <p className="cad-viewer__empty">Choose a sheet from the left panel</p>}
+          {logic && current && blocks.length === 0 && (
+            <p className="cad-viewer__empty">No function blocks on this sheet</p>
+          )}
+
+          {logic && current && blocks.length > 0 && (
+            <table className="logic-table">
+              <colgroup>
+                <col style={{ width: "7%" }} />
+                <col style={{ width: "6%" }} />
+                <col style={{ width: "19%" }} />
+                <col style={{ width: "6%" }} />
+                <col style={{ width: "11%" }} />
+                <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Block</th>
+                  <th>FC</th>
+                  <th>Block description</th>
+                  <th>Spec</th>
+                  <th>Value</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              {blocks.map((b) => {
+                const rows = b.specs.length || 1;
+                const head = (
+                  <>
+                    <td rowSpan={rows} className="logic-table__block">{b.block}</td>
+                    <td rowSpan={rows} className="logic-table__merge">
+                      {b.functionCode ?? "—"}
+                    </td>
+                    <td rowSpan={rows} className="logic-table__merge">
+                      {b.name ?? "No manual description"}
+                      {b.symbol && <span className="logic-table__symbol">{b.symbol}</span>}
+                    </td>
+                  </>
+                );
+                return (
+                  <tbody key={b.block} className="logic-table__group">
+                    {b.specs.length === 0 ? (
+                      <tr>
+                        {head}
+                        <td colSpan={3} className="text-[var(--muted)]">
+                          No specification values in the CAD
+                        </td>
+                      </tr>
+                    ) : (
+                      b.specs.map((s, i) => (
+                        <tr key={s.label}>
+                          {i === 0 && head}
+                          <td className="logic-table__label">{s.label}</td>
+                          <td
+                            className="logic-table__value"
+                            title={[
+                              s.type && `Type ${s.type}`,
+                              s.default && `Default ${s.default}`,
+                              s.range && `Range ${s.range}`,
+                            ]
+                              .filter(Boolean)
+                              .join(" · ")}
+                          >
+                            {s.value ?? "—"}
+                          </td>
+                          <td>
+                            {s.description || "—"}
+                            {s.meaning && <span className="logic-table__meaning">= {s.meaning}</span>}
+                          </td>
+                        </tr>
+                      ))
+                    )}
+                  </tbody>
+                );
+              })}
+            </table>
+          )}
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -1837,15 +1853,7 @@ function formatSize(bytes: number) {
   return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
 }
 
-type IoBucket =
-  | "AI"
-  | "AI800_"
-  | "AO"
-  | "AO800_"
-  | "DI"
-  | "DI800_"
-  | "DO"
-  | "DO800_";
+type IoBucket = "AI" | "AO" | "DI" | "DO";
 
 type IoBucketFilter = "ALL" | IoBucket;
 
@@ -1853,13 +1861,6 @@ function resolveIoBucket(r: IoRecord): IoBucket | null {
   const sources = [r.rawIoTag, r.deviceTag, r.loopTag, r.ioType]
     .filter(Boolean)
     .map((s) => String(s).toUpperCase());
-
-  for (const src of sources) {
-    if (src.startsWith("AI800_")) return "AI800_";
-    if (src.startsWith("AO800_")) return "AO800_";
-    if (src.startsWith("DI800_")) return "DI800_";
-    if (src.startsWith("DO800_")) return "DO800_";
-  }
 
   for (const src of sources) {
     if (src === "AI" || src.startsWith("AI")) return "AI";

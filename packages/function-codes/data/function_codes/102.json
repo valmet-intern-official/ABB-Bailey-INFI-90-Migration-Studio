@@ -1,0 +1,316 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 102,
+  "name": "Pulse Input/Period",
+  "description": "The pulse input/period function code interfaces a controller to a selected channel of an IMDSM04 pulse input I/O module. The IMDSM04 module conditions, converts and processes pulse inputs into analog signals. It has eight input channels whose inputs can be processed in three modes: period, frequency or totalization. Function code 102 processes a signal in the period mode. Function codes 103 and 104 process signals in the frequency and totalization modes, respectively. Function code 109 processes the duration of the input pulses. Each input channel must have one and only one pulse input block configured.",
+  "description_lines": [
+    "The pulse input/period function code interfaces a controller to",
+    "a selected channel of an IMDSM04 pulse input I/O module.",
+    "The IMDSM04 module conditions, converts and processes",
+    "pulse inputs into analog signals. It has eight input channels",
+    "whose inputs can be processed in three modes: period, fre-",
+    "quency or totalization. Function code 102 processes a signal in",
+    "the period mode. Function codes 103 and 104 process signals",
+    "in the frequency and totalization modes, respectively. Function",
+    "code 109 processes the duration of the input pulses. Each",
+    "input channel must have one and only one pulse input block",
+    "configured."
+  ],
+  "symbol": {
+    "title_raw": "P IP E R",
+    "title": "PIPER",
+    "inputs": [],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3"
+    ],
+    "items": [
+      {
+        "x": 157.62,
+        "y": 595.26,
+        "s": "P IP E R"
+      },
+      {
+        "x": 190.56,
+        "y": 588.78,
+        "s": "(1 0 2 )"
+      },
+      {
+        "x": 180.96,
+        "y": 583.74,
+        "s": "H"
+      },
+      {
+        "x": 190.56,
+        "y": 579.9,
+        "s": "N"
+      },
+      {
+        "x": 181.2,
+        "y": 574.8,
+        "s": "P"
+      },
+      {
+        "x": 190.56,
+        "y": 570.96,
+        "s": "N + 1"
+      },
+      {
+        "x": 181.92,
+        "y": 565.92,
+        "s": "L"
+      },
+      {
+        "x": 190.56,
+        "y": 562.08,
+        "s": "N + 2"
+      },
+      {
+        "x": 178.32,
+        "y": 556.8,
+        "s": "S T"
+      },
+      {
+        "x": 190.56,
+        "y": 553.2,
+        "s": "N + 3"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Period (seconds) × gain",
+      "description_lines": [
+        "Period (seconds) × gain"
+      ],
+      "manual_page": 297
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Period high alarm:; 0 = no alarm; 1 = high alarm",
+      "description_lines": [
+        "Period high alarm:",
+        "0 = no alarm",
+        "1 = high alarm"
+      ],
+      "manual_page": 297
+    },
+    {
+      "blk": "N+2",
+      "type": "B",
+      "description": "Period low alarm:; 0 = no alarm; 1 = low alarm",
+      "description_lines": [
+        "Period low alarm:",
+        "0 = no alarm",
+        "1 = low alarm"
+      ],
+      "manual_page": 297
+    },
+    {
+      "blk": "N+3",
+      "type": "B",
+      "description": "I/O module communication status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "I/O module communication status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 297
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 63",
+      "description": "Expander bus I/O module address of IMDSM04",
+      "description_lines": [
+        "Expander bus I/O module address of IMDSM04"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 297
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "1 - 8",
+      "description": "Selected channel",
+      "description_lines": [
+        "Selected channel"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 297
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "0 or 1",
+      "description": "Pulse trigger level:; 0 = low to high transitions; 1 = high to low transitions",
+      "description_lines": [
+        "Pulse trigger level:",
+        "0 = low to high transitions",
+        "1 = high to low transitions"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "low to high transitions"
+        },
+        {
+          "value": "1",
+          "meaning": "high to low transitions"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 297
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "1 - 6",
+      "description": "Expected period range:; 1 = 0.1 msec - 6.553 secs, ± 0.1 msec; 2 = 1.0 msec - 65.53 secs, ± 1.0 msec; 3 = 10.0 msecs - 655.3 secs, ± 10.0 msecs; 4 = 0.1 sec - 6.553 ksecs, ± 0.1 sec; 5 = 1.0 sec - 65.53 ksecs, ± 1.0 sec; 6 = 10.0 secs -1 655.3 ksecs, ± 10.0 secs",
+      "description_lines": [
+        "Expected period range:",
+        "1 = 0.1 msec - 6.553 secs, ± 0.1 msec",
+        "2 = 1.0 msec - 65.53 secs, ± 1.0 msec",
+        "3 = 10.0 msecs - 655.3 secs, ± 10.0 msecs",
+        "4 = 0.1 sec - 6.553 ksecs, ± 0.1 sec",
+        "5 = 1.0 sec - 65.53 ksecs, ± 1.0 sec",
+        "6 = 10.0 secs -1 655.3 ksecs, ± 10.0 secs"
+      ],
+      "enumerations": [
+        {
+          "value": "1",
+          "meaning": "0.1 msec - 6.553 secs, ± 0.1 msec"
+        },
+        {
+          "value": "2",
+          "meaning": "1.0 msec - 65.53 secs, ± 1.0 msec"
+        },
+        {
+          "value": "3",
+          "meaning": "10.0 msecs - 655.3 secs, ± 10.0 msecs"
+        },
+        {
+          "value": "4",
+          "meaning": "0.1 sec - 6.553 ksecs, ± 0.1 sec"
+        },
+        {
+          "value": "5",
+          "meaning": "1.0 sec - 65.53 ksecs, ± 1.0 sec"
+        },
+        {
+          "value": "6",
+          "meaning": "10.0 secs -1 655.3 ksecs, ± 10.0 secs"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 298
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Gain",
+      "description_lines": [
+        "Gain"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 298
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "High alarm value",
+      "description_lines": [
+        "High alarm value"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 298
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "-9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "Low alarm value",
+      "description_lines": [
+        "Low alarm value"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 298
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare",
+      "description_lines": [
+        "Spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 298
+    }
+  ],
+  "spec_count": 8,
+  "max_spec_number": 8,
+  "notes": [],
+  "manual_page": 297,
+  "manual_pages": [
+    297,
+    298,
+    299,
+    300
+  ],
+  "manual_section": "Function Code 102 - Pulse Input/Period",
+  "diagnostics": []
+}

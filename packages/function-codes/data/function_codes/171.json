@@ -1,0 +1,179 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 171,
+  "name": "Trigonometric",
+  "description": "The trigonometric function code calculates the standard trigonometric functions. Sine. Cosine. Tangent. Cotangent. Secant. Cosecant. The input may be expressed in either degrees or radians. The output is the selected trigonometric function of the input value multiplied by the gain factor. Use trigonometric functions for performance calculations and monitoring.",
+  "description_lines": [
+    "The trigonometric function code calculates the standard trigo-",
+    "nometric functions.",
+    "Sine.",
+    "Cosine.",
+    "Tangent.",
+    "Cotangent.",
+    "Secant.",
+    "Cosecant.",
+    "The input may be expressed in either degrees or radians. The",
+    "output is the selected trigonometric function of the input value",
+    "multiplied by the gain factor.",
+    "Use trigonometric functions for performance calculations and",
+    "monitoring."
+  ],
+  "symbol": {
+    "title_raw": "T R IG",
+    "title": "TRIG",
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 192.12,
+        "y": 588.9,
+        "s": "(1 7 1 )"
+      },
+      {
+        "x": 134.28,
+        "y": 587.46,
+        "s": "S 1"
+      },
+      {
+        "x": 161.64,
+        "y": 583.62,
+        "s": "T R IG"
+      },
+      {
+        "x": 192.12,
+        "y": 579.96,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Trigonometric value multiplied by the gain factor",
+      "description_lines": [
+        "Trigonometric value multiplied by the gain factor"
+      ],
+      "manual_page": 635
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input",
+      "description_lines": [
+        "Block address of input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 635
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Type in input <S1>:; 0 = radians; 1 = degrees",
+      "description_lines": [
+        "Type in input <S1>:",
+        "0 = radians",
+        "1 = degrees"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "radians"
+        },
+        {
+          "value": "1",
+          "meaning": "degrees"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 635
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 5",
+      "description": "Trigonometric function performed on input <S1>:; 0 = sine 3 = cotangent; 1 = cosine 4 = secant; 2 = tangent 5 = cosecant",
+      "description_lines": [
+        "Trigonometric function performed on input <S1>:",
+        "0 = sine 3 = cotangent",
+        "1 = cosine 4 = secant",
+        "2 = tangent 5 = cosecant"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "sine 3 = cotangent"
+        },
+        {
+          "value": "1",
+          "meaning": "cosine 4 = secant"
+        },
+        {
+          "value": "2",
+          "meaning": "tangent 5 = cosecant"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 635
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Gain factor",
+      "description_lines": [
+        "Gain factor"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 635
+    }
+  ],
+  "spec_count": 4,
+  "max_spec_number": 4,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 635,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 635,
+  "manual_pages": [
+    635
+  ],
+  "manual_section": "Function Code 171 - Trigonometric",
+  "diagnostics": []
+}

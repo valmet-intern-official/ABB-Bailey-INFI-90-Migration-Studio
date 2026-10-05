@@ -1,0 +1,1005 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 55,
+  "name": "Hydraulic Servo",
+  "description": "The hydraulic servo function code defines startup, run-time, calibration, mode select, and failure mode specifications for the IMHSS03 Hydraulic Servo Module. This function code is used as an interface to the BRC-100 and HAC controllers. Individual block addresses are specified by this function code to provide position demand, calibration function and mode select parameters. The function block has ten outputs. The outputs display valve position, module status, process control status, as well as the status of the components within the turbine control loop such as servo coil status and linear variable differential transformer (LVDT) status.",
+  "description_lines": [
+    "The hydraulic servo function code defines startup, run-time,",
+    "calibration, mode select, and failure mode specifications for",
+    "the IMHSS03 Hydraulic Servo Module. This function code is",
+    "used as an interface to the BRC-100 and HAC controllers.",
+    "Individual block addresses are specified by this function code",
+    "to provide position demand, calibration function and mode",
+    "select parameters.",
+    "The function block has ten outputs. The outputs display valve",
+    "position, module status, process control status, as well as the",
+    "status of the components within the turbine control loop such",
+    "as servo coil status and linear variable differential transformer",
+    "(LVDT) status."
+  ],
+  "symbol": {
+    "title_raw": "H S S 0 3",
+    "title": "HSS03",
+    "inputs": [
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11",
+      "S12",
+      "S13",
+      "S14"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3",
+      "N+4",
+      "N+5",
+      "N+6",
+      "N+7"
+    ],
+    "items": [
+      {
+        "x": 158.28,
+        "y": 594.54,
+        "s": "H S S 0 3"
+      },
+      {
+        "x": 133.8,
+        "y": 588.78,
+        "s": "S 6"
+      },
+      {
+        "x": 191.1,
+        "y": 588.54,
+        "s": "(5 5 )"
+      },
+      {
+        "x": 152.76,
+        "y": 584.46,
+        "s": "% P D"
+      },
+      {
+        "x": 178.14,
+        "y": 584.46,
+        "s": "% P"
+      },
+      {
+        "x": 133.8,
+        "y": 579.66,
+        "s": "S 7"
+      },
+      {
+        "x": 191.1,
+        "y": 579.66,
+        "s": "N"
+      },
+      {
+        "x": 152.76,
+        "y": 575.58,
+        "s": "N S"
+      },
+      {
+        "x": 177.42,
+        "y": 575.34,
+        "s": "D /A"
+      },
+      {
+        "x": 133.8,
+        "y": 570.78,
+        "s": "S 8"
+      },
+      {
+        "x": 191.1,
+        "y": 570.78,
+        "s": "N + 1"
+      },
+      {
+        "x": 152.76,
+        "y": 566.46,
+        "s": "S S"
+      },
+      {
+        "x": 173.34,
+        "y": 566.46,
+        "s": "S 1C 1"
+      },
+      {
+        "x": 191.1,
+        "y": 561.9,
+        "s": "N + 2"
+      },
+      {
+        "x": 133.8,
+        "y": 561.66,
+        "s": "S 9"
+      },
+      {
+        "x": 152.76,
+        "y": 557.58,
+        "s": "C C"
+      },
+      {
+        "x": 173.34,
+        "y": 557.58,
+        "s": "S 1C 2"
+      },
+      {
+        "x": 191.1,
+        "y": 553.02,
+        "s": "N + 3"
+      },
+      {
+        "x": 133.8,
+        "y": 552.54,
+        "s": "S 1 0"
+      },
+      {
+        "x": 152.76,
+        "y": 548.76,
+        "s": "C T"
+      },
+      {
+        "x": 173.34,
+        "y": 548.52,
+        "s": "S 2C 1"
+      },
+      {
+        "x": 191.1,
+        "y": 544.2,
+        "s": "N + 4"
+      },
+      {
+        "x": 133.8,
+        "y": 543.72,
+        "s": "S 1 1"
+      },
+      {
+        "x": 152.76,
+        "y": 539.88,
+        "s": "M S"
+      },
+      {
+        "x": 173.34,
+        "y": 539.64,
+        "s": "S 2C 2"
+      },
+      {
+        "x": 191.1,
+        "y": 535.32,
+        "s": "N + 5"
+      },
+      {
+        "x": 133.8,
+        "y": 534.6,
+        "s": "S 1 2"
+      },
+      {
+        "x": 152.76,
+        "y": 530.76,
+        "s": "H S"
+      },
+      {
+        "x": 170.52,
+        "y": 530.76,
+        "s": "S LV S T"
+      },
+      {
+        "x": 191.1,
+        "y": 526.44,
+        "s": "N + 6"
+      },
+      {
+        "x": 133.8,
+        "y": 525.72,
+        "s": "S 1 3"
+      },
+      {
+        "x": 152.76,
+        "y": 521.88,
+        "s": "M A N"
+      },
+      {
+        "x": 167.16,
+        "y": 521.64,
+        "s": "LV D T S T"
+      },
+      {
+        "x": 191.1,
+        "y": 517.56,
+        "s": "N + 7"
+      },
+      {
+        "x": 133.8,
+        "y": 516.6,
+        "s": "S 1 4"
+      },
+      {
+        "x": 152.76,
+        "y": 513,
+        "s": "N /A"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Percent or volts actuator position with quality",
+      "description_lines": [
+        "Percent or volts actuator position with quality"
+      ],
+      "manual_page": 153
+    },
+    {
+      "blk": "N+1",
+      "type": "R",
+      "description": "IMHSS03 D/A converter output with quality (expressed as % of span)",
+      "description_lines": [
+        "IMHSS03 D/A converter output with quality (expressed as",
+        "% of span)"
+      ],
+      "manual_page": 153
+    },
+    {
+      "blk": "N+2",
+      "type": "R",
+      "description": "Servo 1 coil 1 output current in % or volts, with quality",
+      "description_lines": [
+        "Servo 1 coil 1 output current in % or volts, with quality"
+      ],
+      "manual_page": 153
+    },
+    {
+      "blk": "N+3",
+      "type": "R",
+      "description": "Servo 1 coil 2 output current in % or volts, with quality",
+      "description_lines": [
+        "Servo 1 coil 2 output current in % or volts, with quality"
+      ],
+      "manual_page": 153
+    },
+    {
+      "blk": "N+4",
+      "type": "R",
+      "description": "Servo 2 coil 1 output current in % or volts, with quality",
+      "description_lines": [
+        "Servo 2 coil 1 output current in % or volts, with quality"
+      ],
+      "manual_page": 153
+    },
+    {
+      "blk": "N+5",
+      "type": "R",
+      "description": "Servo 2 coil 2 output current in % or volts, with quality",
+      "description_lines": [
+        "Servo 2 coil 2 output current in % or volts, with quality"
+      ],
+      "manual_page": 153
+    },
+    {
+      "blk": "N+6",
+      "type": "R",
+      "description": "Module status",
+      "description_lines": [
+        "Module status"
+      ],
+      "manual_page": 153
+    },
+    {
+      "blk": "N+7",
+      "type": "R",
+      "description": "LVDT status",
+      "description_lines": [
+        "LVDT status"
+      ],
+      "manual_page": 153
+    },
+    {
+      "blk": "N+8",
+      "type": "B",
+      "description": "Module hardware status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "Module hardware status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 153
+    },
+    {
+      "blk": "N+9",
+      "type": "B",
+      "description": "Module communication and watchdog timer status:; 0 = good; 1 = bad",
+      "description_lines": [
+        "Module communication and watchdog timer status:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 153
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 63",
+      "description": "Module bus address of module",
+      "description_lines": [
+        "Module bus address of module"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 154
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 5",
+      "description": "Output device select:; 0 = output 1 active servo output, output 2 unused; 1 = output 1 unused, output 2 active servo output; 2 = output 1 active servo, output 2 redundant servo output; 3 = output 1 active servo, output 2 redundant servo at 20% standby; 4 = output 1 active 4-20 mA I/H converter output; 5 = output 1 active 20-160 mA I/H converter output",
+      "description_lines": [
+        "Output device select:",
+        "0 = output 1 active servo output, output 2 unused",
+        "1 = output 1 unused, output 2 active servo output",
+        "2 = output 1 active servo, output 2 redundant",
+        "servo output",
+        "3 = output 1 active servo, output 2 redundant",
+        "servo at 20% standby",
+        "4 = output 1 active 4-20 mA I/H converter output",
+        "5 = output 1 active 20-160 mA I/H converter output"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "output 1 active servo output, output 2 unused"
+        },
+        {
+          "value": "1",
+          "meaning": "output 1 unused, output 2 active servo output"
+        },
+        {
+          "value": "2",
+          "meaning": "output 1 active servo, output 2 redundant"
+        },
+        {
+          "value": "3",
+          "meaning": "output 1 active servo, output 2 redundant"
+        },
+        {
+          "value": "4",
+          "meaning": "output 1 active 4-20 mA I/H converter output"
+        },
+        {
+          "value": "5",
+          "meaning": "output 1 active 20-160 mA I/H converter output"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 154
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 4",
+      "description": "LVDT select:; 0 = input 1 LVDT, input 2 unused; 1 = input 1 unused, input 2 LVDT; 2 = input 1 primary LVDT, input 2 backup LVDT; 3 = input 1 backup LVDT, input 2 primary LVDT; 4 = input 1 LVDT I/H display only, input 2 4-20 mA contingency error monitor",
+      "description_lines": [
+        "LVDT select:",
+        "0 = input 1 LVDT, input 2 unused",
+        "1 = input 1 unused, input 2 LVDT",
+        "2 = input 1 primary LVDT, input 2 backup LVDT",
+        "3 = input 1 backup LVDT, input 2 primary LVDT",
+        "4 = input 1 LVDT I/H display only, input 2 4-20 mA",
+        "contingency error monitor"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "input 1 LVDT, input 2 unused"
+        },
+        {
+          "value": "1",
+          "meaning": "input 1 unused, input 2 LVDT"
+        },
+        {
+          "value": "2",
+          "meaning": "input 1 primary LVDT, input 2 backup LVDT"
+        },
+        {
+          "value": "3",
+          "meaning": "input 1 backup LVDT, input 2 primary LVDT"
+        },
+        {
+          "value": "4",
+          "meaning": "input 1 LVDT I/H display only, input 2 4-20 mA"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 154
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 3",
+      "description": "Output action on LVDT error:; 0 = valve closes to 0% position: 0 V in servo mode 4 mA in 4-20 mA mode 20 mA in 20-160 mA mode; 1 = valve opens to 100% position: max V in servo mode 20 mA in 4-20 mA mode 160 mA in 20-160 mA mode; 2 = valve remains at current position (I/H mode only); 3 = valve moves to null position (I/H mode only)",
+      "description_lines": [
+        "Output action on LVDT error:",
+        "0 = valve closes to 0% position:",
+        "0 V in servo mode",
+        "4 mA in 4-20 mA mode",
+        "20 mA in 20-160 mA mode",
+        "1 = valve opens to 100% position:",
+        "max V in servo mode",
+        "20 mA in 4-20 mA mode",
+        "160 mA in 20-160 mA mode",
+        "2 = valve remains at current position (I/H mode only)",
+        "3 = valve moves to null position (I/H mode only)"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "valve closes to 0% position:"
+        },
+        {
+          "value": "1",
+          "meaning": "valve opens to 100% position:"
+        },
+        {
+          "value": "2",
+          "meaning": "valve remains at current position (I/H mode only)"
+        },
+        {
+          "value": "3",
+          "meaning": "valve moves to null position (I/H mode only)"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 154
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1.0",
+      "type": "R",
+      "range": "0.0 or 0.4-15.0",
+      "description": "LVDT frequency select in KHz:; 0.0 = DC LVDT mode",
+      "description_lines": [
+        "LVDT frequency select in KHz:",
+        "0.0 = DC LVDT mode"
+      ],
+      "enumerations": [
+        {
+          "value": "0.0",
+          "meaning": "DC LVDT mode"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 154
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "0 - 9998",
+      "description": "Block address of the percent position demand",
+      "description_lines": [
+        "Block address of the percent position demand"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 154
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "0 - 9998",
+      "description": "Block address of LVDT null check mode select:; 0 = do not stop calibration at null point; 1 = stop at null for primary LVDT; 2 = stop at null for secondary LVDT",
+      "description_lines": [
+        "Block address of LVDT null check mode select:",
+        "0 = do not stop calibration at null point",
+        "1 = stop at null for primary LVDT",
+        "2 = stop at null for secondary LVDT"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "do not stop calibration at null point"
+        },
+        {
+          "value": "1",
+          "meaning": "stop at null for primary LVDT"
+        },
+        {
+          "value": "2",
+          "meaning": "stop at null for secondary LVDT"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 154
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "6",
+      "type": "I",
+      "range": "0 - 9998",
+      "description": "Block address of calibration stroke time select (in secs)",
+      "description_lines": [
+        "Block address of calibration stroke time select (in secs)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 154
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "6",
+      "type": "I",
+      "range": "0 - 9998",
+      "description": "Block address of calibration cycles count (1.0 to 8.0)",
+      "description_lines": [
+        "Block address of calibration cycles count (1.0 to 8.0)"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 154
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "0 - 9998",
+      "description": "Block address of calibration type select:; 0 = full calibration. Record both 0% and 100% calibration values; 1 = 0% calibration. Record only 0% LVDT value; 2 = 100% calibration. Record only 100% LVDT value",
+      "description_lines": [
+        "Block address of calibration type select:",
+        "0 = full calibration. Record both 0% and 100%",
+        "calibration values",
+        "1 = 0% calibration. Record only 0% LVDT value",
+        "2 = 100% calibration. Record only 100% LVDT value"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "full calibration. Record both 0% and 100%"
+        },
+        {
+          "value": "1",
+          "meaning": "0% calibration. Record only 0% LVDT value"
+        },
+        {
+          "value": "2",
+          "meaning": "100% calibration. Record only 100% LVDT value"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 154
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 9998",
+      "description": "Block address of calibrate mode enable: 0 to 1 transition = calibrate",
+      "description_lines": [
+        "Block address of calibrate mode enable:",
+        "0 to 1 transition = calibrate"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 155
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 9998",
+      "description": "Block address of calibrate GO/HOLD select:; 0 = hold; 1 = go",
+      "description_lines": [
+        "Block address of calibrate GO/HOLD select:",
+        "0 = hold",
+        "1 = go"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "hold"
+        },
+        {
+          "value": "1",
+          "meaning": "go"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 155
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 9998",
+      "description": "Block address of hard manual mode select:; 0 = auto mode; 1 = hard manual mode",
+      "description_lines": [
+        "Block address of hard manual mode select:",
+        "0 = auto mode",
+        "1 = hard manual mode"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "auto mode"
+        },
+        {
+          "value": "1",
+          "meaning": "hard manual mode"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 155
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 9998",
+      "description": "Spare boolean block address parameter",
+      "description_lines": [
+        "Spare boolean block address parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 155
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 3",
+      "description": "Block output display units:; 0 = output N in %, outputs N+2 to N+5 in %; 1 = output N in volts, outputs N+2 to N+5 in %; 2 = output N in %, outputs N+2 to N+5 in volts; 3 = output N in volts, outputs N+2 to N+5 in volts",
+      "description_lines": [
+        "Block output display units:",
+        "0 = output N in %, outputs N+2 to N+5 in %",
+        "1 = output N in volts, outputs N+2 to N+5 in %",
+        "2 = output N in %, outputs N+2 to N+5 in volts",
+        "3 = output N in volts, outputs N+2 to N+5 in volts"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "output N in %, outputs N+2 to N+5 in %"
+        },
+        {
+          "value": "1",
+          "meaning": "output N in volts, outputs N+2 to N+5 in %"
+        },
+        {
+          "value": "2",
+          "meaning": "output N in %, outputs N+2 to N+5 in volts"
+        },
+        {
+          "value": "3",
+          "meaning": "output N in volts, outputs N+2 to N+5 in volts"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 155
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1",
+      "type": "I",
+      "range": "0 - 31",
+      "description": "Demodulator gain constant:; 0 = auto-tuning enabled; 1 = 2.0 12 = 36.3 23 = 87.7; 2 = 4.0 13 = 40.0 24 = 93.6; 3 = 5.9 14 = 44.0 25 = 100.9; 4 = 7.8 15 = 48.8 26 = 108.0; 5 = 10.0 16 = 52.0 27 = 118.0; 6 = 11.8 17 = 54.9 28 = 126.2; 7 = 16.0 18 = 61.5 29 = 132.0; 8 = 21.1 19 = 64.2 30 = 141.3; 9 = 24.7 20 = 69.8 31 = 152.0; 10 = 28.3 21 = 72.0; 11 = 32.0 22 = 78.6",
+      "description_lines": [
+        "Demodulator gain constant:",
+        "0 = auto-tuning enabled",
+        "1 = 2.0 12 = 36.3 23 = 87.7",
+        "2 = 4.0 13 = 40.0 24 = 93.6",
+        "3 = 5.9 14 = 44.0 25 = 100.9",
+        "4 = 7.8 15 = 48.8 26 = 108.0",
+        "5 = 10.0 16 = 52.0 27 = 118.0",
+        "6 = 11.8 17 = 54.9 28 = 126.2",
+        "7 = 16.0 18 = 61.5 29 = 132.0",
+        "8 = 21.1 19 = 64.2 30 = 141.3",
+        "9 = 24.7 20 = 69.8 31 = 152.0",
+        "10 = 28.3 21 = 72.0",
+        "11 = 32.0 22 = 78.6"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "auto-tuning enabled"
+        },
+        {
+          "value": "1",
+          "meaning": "2.0 12 = 36.3 23 = 87.7"
+        },
+        {
+          "value": "2",
+          "meaning": "4.0 13 = 40.0 24 = 93.6"
+        },
+        {
+          "value": "3",
+          "meaning": "5.9 14 = 44.0 25 = 100.9"
+        },
+        {
+          "value": "4",
+          "meaning": "7.8 15 = 48.8 26 = 108.0"
+        },
+        {
+          "value": "5",
+          "meaning": "10.0 16 = 52.0 27 = 118.0"
+        },
+        {
+          "value": "6",
+          "meaning": "11.8 17 = 54.9 28 = 126.2"
+        },
+        {
+          "value": "7",
+          "meaning": "16.0 18 = 61.5 29 = 132.0"
+        },
+        {
+          "value": "8",
+          "meaning": "21.1 19 = 64.2 30 = 141.3"
+        },
+        {
+          "value": "9",
+          "meaning": "24.7 20 = 69.8 31 = 152.0"
+        },
+        {
+          "value": "10",
+          "meaning": "28.3 21 = 72.0"
+        },
+        {
+          "value": "11",
+          "meaning": "32.0 22 = 78.6"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 155
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1",
+      "type": "I",
+      "range": "0 - 31",
+      "description": "Control gain proportional constant: 0 or 1 = 1.0 12 = 18.1 23 = 43.8; 2 = 2.0 13 = 20.0 24 = 43.8; 3 = 2.9 14 = 22.0 25 = 50.4; 4 = 3.9 15 = 24.4 26 = 54.0; 5 = 5.0 16 = 26.0 27 = 59.4; 6 = 5.9 17 = 27.4 28 = 63.1; 7 = 8.0 18 = 30.7 29 = 66.0; 8 = 10.5 19 = 32.1 30 = 70.6; 9 = 12.3 20 = 34.9 31 = 76.0; 10 = 14.1 21 = 36.0; 11 = 16.0 22 = 39.3",
+      "description_lines": [
+        "Control gain proportional constant:",
+        "0 or 1 = 1.0 12 = 18.1 23 = 43.8",
+        "2 = 2.0 13 = 20.0 24 = 43.8",
+        "3 = 2.9 14 = 22.0 25 = 50.4",
+        "4 = 3.9 15 = 24.4 26 = 54.0",
+        "5 = 5.0 16 = 26.0 27 = 59.4",
+        "6 = 5.9 17 = 27.4 28 = 63.1",
+        "7 = 8.0 18 = 30.7 29 = 66.0",
+        "8 = 10.5 19 = 32.1 30 = 70.6",
+        "9 = 12.3 20 = 34.9 31 = 76.0",
+        "10 = 14.1 21 = 36.0",
+        "11 = 16.0 22 = 39.3"
+      ],
+      "enumerations": [
+        {
+          "value": "2",
+          "meaning": "2.0 13 = 20.0 24 = 43.8"
+        },
+        {
+          "value": "3",
+          "meaning": "2.9 14 = 22.0 25 = 50.4"
+        },
+        {
+          "value": "4",
+          "meaning": "3.9 15 = 24.4 26 = 54.0"
+        },
+        {
+          "value": "5",
+          "meaning": "5.0 16 = 26.0 27 = 59.4"
+        },
+        {
+          "value": "6",
+          "meaning": "5.9 17 = 27.4 28 = 63.1"
+        },
+        {
+          "value": "7",
+          "meaning": "8.0 18 = 30.7 29 = 66.0"
+        },
+        {
+          "value": "8",
+          "meaning": "10.5 19 = 32.1 30 = 70.6"
+        },
+        {
+          "value": "9",
+          "meaning": "12.3 20 = 34.9 31 = 76.0"
+        },
+        {
+          "value": "10",
+          "meaning": "14.1 21 = 36.0"
+        },
+        {
+          "value": "11",
+          "meaning": "16.0 22 = 39.3"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 155
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "-10.0",
+      "type": "R",
+      "range": "Full",
+      "description": "LVDT 1 differential voltage at 0% actuator position",
+      "description_lines": [
+        "LVDT 1 differential voltage at 0% actuator position"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 155
+    },
+    {
+      "number": 19,
+      "label": "S19",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "+10.0",
+      "type": "R",
+      "range": "Full",
+      "description": "LVDT 1 differential voltage at 100% actuator position",
+      "description_lines": [
+        "LVDT 1 differential voltage at 100% actuator position"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 156
+    },
+    {
+      "number": 20,
+      "label": "S20",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "-10.0",
+      "type": "R",
+      "range": "Full",
+      "description": "LVDT 2 differential voltage at 0% actuator position",
+      "description_lines": [
+        "LVDT 2 differential voltage at 0% actuator position"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 156
+    },
+    {
+      "number": 21,
+      "label": "S21",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "+10.0",
+      "type": "R",
+      "range": "Full",
+      "description": "LVDT 2 differential voltage at 100% actuator position",
+      "description_lines": [
+        "LVDT 2 differential voltage at 100% actuator position"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 156
+    },
+    {
+      "number": 22,
+      "label": "S22",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "5.0",
+      "type": "R",
+      "range": "0 - 100",
+      "description": "Contingency deadband in %",
+      "description_lines": [
+        "Contingency deadband in %"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 156
+    },
+    {
+      "number": 23,
+      "label": "S23",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.0",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare real parameter",
+      "description_lines": [
+        "Spare real parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 156
+    }
+  ],
+  "spec_count": 23,
+  "max_spec_number": 23,
+  "notes": [],
+  "manual_page": 153,
+  "manual_pages": [
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166
+  ],
+  "manual_section": "Function Code 55 - Hydraulic Servo",
+  "diagnostics": []
+}

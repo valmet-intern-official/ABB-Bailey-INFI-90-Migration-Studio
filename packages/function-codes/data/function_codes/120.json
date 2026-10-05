@@ -1,0 +1,349 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 120,
+  "name": "Real Signal Multiplexer",
+  "description": "The real signal multiplexer function code selects a real signal from a group of inputs, and provides this signal as the block output. Any number of real signal multiplexer blocks can be joined to multiplex any number of signals. Each block contains ten real inputs. The first block in the link list is the group master. The master accepts a select input and searches the other blocks in the link list to find the selected input. The ten values in the master block are zero through nine. The range of parameters associated with the next block in the link list is ten through 19, and so on. If several blocks are in series, the output always comes from the first block in the series. The outputs of the rest of the blocks in the series are unused.",
+  "description_lines": [
+    "The real signal multiplexer function code selects a real signal",
+    "from a group of inputs, and provides this signal as the block",
+    "output. Any number of real signal multiplexer blocks can be",
+    "joined to multiplex any number of signals. Each block con-",
+    "tains ten real inputs.",
+    "The first block in the link list is the group master. The master",
+    "accepts a select input and searches the other blocks in the link",
+    "list to find the selected input. The ten values in the master",
+    "block are zero through nine. The range of parameters associ-",
+    "ated with the next block in the link list is ten through 19, and",
+    "so on. If several blocks are in series, the output always comes",
+    "from the first block in the series. The outputs of the rest of the",
+    "blocks in the series are unused."
+  ],
+  "symbol": {
+    "title_raw": "R M U X",
+    "title": "RMUX",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 159,
+        "y": 594.78,
+        "s": "R M U X"
+      },
+      {
+        "x": 191.82,
+        "y": 588.3,
+        "s": "(1 2 0 )"
+      },
+      {
+        "x": 133.32,
+        "y": 587.82,
+        "s": "S 1"
+      },
+      {
+        "x": 191.82,
+        "y": 579.42,
+        "s": "N"
+      },
+      {
+        "x": 133.32,
+        "y": 578.7,
+        "s": "S 2"
+      },
+      {
+        "x": 133.32,
+        "y": 569.58,
+        "s": "S 3"
+      },
+      {
+        "x": 133.32,
+        "y": 560.7,
+        "s": "S 4"
+      },
+      {
+        "x": 133.32,
+        "y": 551.58,
+        "s": "S 5"
+      },
+      {
+        "x": 133.32,
+        "y": 542.7,
+        "s": "S 6"
+      },
+      {
+        "x": 133.32,
+        "y": 533.58,
+        "s": "S 7"
+      },
+      {
+        "x": 133.32,
+        "y": 524.7,
+        "s": "S 8"
+      },
+      {
+        "x": 133.32,
+        "y": 515.58,
+        "s": "S 9"
+      },
+      {
+        "x": 133.32,
+        "y": 506.7,
+        "s": "S 1 0"
+      },
+      {
+        "x": 133.32,
+        "y": 497.58,
+        "s": "S 1 1"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Input value selected. If the input number selected is invalid, the value of the nearest valid parameter is the output.",
+      "description_lines": [
+        "Input value selected. If the input number selected is invalid,",
+        "the value of the nearest valid parameter is the output."
+      ],
+      "manual_page": 353
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 0",
+      "description_lines": [
+        "Block address of input 0"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 353
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 1",
+      "description_lines": [
+        "Block address of input 1"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 353
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 2",
+      "description_lines": [
+        "Block address of input 2"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 353
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 3",
+      "description_lines": [
+        "Block address of input 3"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 353
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 4",
+      "description_lines": [
+        "Block address of input 4"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 353
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 5",
+      "description_lines": [
+        "Block address of input 5"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 353
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 6",
+      "description_lines": [
+        "Block address of input 6"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 353
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 7",
+      "description_lines": [
+        "Block address of input 7"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 353
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 8",
+      "description_lines": [
+        "Block address of input 8"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 353
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input 9",
+      "description_lines": [
+        "Block address of input 9"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 353
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input select signal",
+      "description_lines": [
+        "Block address of input select signal"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 353
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of next block (next function code 120); 0 = no more multiplexer blocks",
+      "description_lines": [
+        "Block address of next block (next function code 120)",
+        "0 = no more multiplexer blocks"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no more multiplexer blocks"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 354
+    }
+  ],
+  "spec_count": 12,
+  "max_spec_number": 12,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 354,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 353,
+  "manual_pages": [
+    353,
+    354,
+    355
+  ],
+  "manual_section": "Function Code 120 - Real Signal Multiplexer",
+  "diagnostics": []
+}

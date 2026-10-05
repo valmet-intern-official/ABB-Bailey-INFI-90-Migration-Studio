@@ -1,0 +1,417 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 95,
+  "name": "Module Status Monitor",
+  "description": "This function code monitors the status of a designated node or module. A module either monitors the status of itself or another module in the same HCU, or another HAC controller on the same peer-to-peer network (HAC only). Function code 95 monitors selected bits from one of the five or 16 module status bytes. Specification S3 identifies the status byte, and S5 through S12 identify the bits to be monitored. Module mode can be monitored by selecting S4 equals one. If the communication status of the target module is good, it sets the output quality to good, and outputs a logical ORed value. The values of the selected bits in the status byte determine the logical ORed output. If the communication status of the target module is bad, it sets the output quality to bad and the output value is a logic 1. This block generates a problem report when a communication failure exists.",
+  "description_lines": [
+    "This function code monitors the status of a designated node or",
+    "module. A module either monitors the status of itself or",
+    "another module in the same HCU, or another HAC controller",
+    "on the same peer-to-peer network (HAC only). Function code",
+    "95 monitors selected bits from one of the five or 16 module",
+    "status bytes. Specification S3 identifies the status byte, and",
+    "S5 through S12 identify the bits to be monitored. Module",
+    "mode can be monitored by selecting S4 equals one. If the com-",
+    "munication status of the target module is good, it sets the out-",
+    "put quality to good, and outputs a logical ORed value. The",
+    "values of the selected bits in the status byte determine the log-",
+    "ical ORed output. If the communication status of the target",
+    "module is bad, it sets the output quality to bad and the output",
+    "value is a logic 1. This block generates a problem report when",
+    "a communication failure exists."
+  ],
+  "symbol": {
+    "title_raw": "M O D S T",
+    "title": "MODST",
+    "inputs": [],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 190.98,
+        "y": 589.2,
+        "s": "(9 5 )"
+      },
+      {
+        "x": 156.36,
+        "y": 583.68,
+        "s": "M O D S T"
+      },
+      {
+        "x": 190.98,
+        "y": 580.32,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Selected quality and value:; 0 = good; 1 = bad",
+      "description_lines": [
+        "Selected quality and value:",
+        "0 = good",
+        "1 = bad"
+      ],
+      "manual_page": 273
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Note 1",
+      "description": "Sample period (in seconds)",
+      "description_lines": [
+        "Sample period (in seconds)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 273
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 2",
+      "description": "Target node/module address",
+      "description_lines": [
+        "Target node/module address"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 273
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 4 or 0 - 15",
+      "description": "Module status byte number (refer to Appendix G and note following S3 explanation)",
+      "description_lines": [
+        "Module status byte number (refer to Appendix G",
+        "and note following S3 explanation)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 273
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "3"
+      ],
+      "default": "0",
+      "type": "I",
+      "range": "00,01,10 or 11",
+      "description": "Configuration flags: Target offline detection flag:; X0 = no; X1 = yes Target rank (HAC only); 0X = monitor primary module status; 1X = monitor backup module status",
+      "description_lines": [
+        "Configuration flags:",
+        "Target offline detection flag:",
+        "X0 = no",
+        "X1 = yes",
+        "Target rank (HAC only)",
+        "0X = monitor primary module status",
+        "1X = monitor backup module status"
+      ],
+      "enumerations": [
+        {
+          "value": "X0",
+          "meaning": "no"
+        },
+        {
+          "value": "X1",
+          "meaning": "yes"
+        },
+        {
+          "value": "0X",
+          "meaning": "monitor primary module status"
+        },
+        {
+          "value": "1X",
+          "meaning": "monitor backup module status"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 273
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "4"
+      ],
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Bit 0 of selected monitored byte:; 0 = no; 1 = yes",
+      "description_lines": [
+        "Bit 0 of selected monitored byte:",
+        "0 = no",
+        "1 = yes"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no"
+        },
+        {
+          "value": "1",
+          "meaning": "yes"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 273
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Bit 1 of selected monitored byte:; 0 = no; 1 = yes",
+      "description_lines": [
+        "Bit 1 of selected monitored byte:",
+        "0 = no",
+        "1 = yes"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no"
+        },
+        {
+          "value": "1",
+          "meaning": "yes"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 274
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Bit 2 of selected monitored byte:; 0 = no; 1 = yes",
+      "description_lines": [
+        "Bit 2 of selected monitored byte:",
+        "0 = no",
+        "1 = yes"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no"
+        },
+        {
+          "value": "1",
+          "meaning": "yes"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 274
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Bit 3 of selected monitored byte:; 0 = no; 1 = yes",
+      "description_lines": [
+        "Bit 3 of selected monitored byte:",
+        "0 = no",
+        "1 = yes"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no"
+        },
+        {
+          "value": "1",
+          "meaning": "yes"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 274
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Bit 4 of selected monitored byte:; 0 = no; 1 = yes",
+      "description_lines": [
+        "Bit 4 of selected monitored byte:",
+        "0 = no",
+        "1 = yes"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no"
+        },
+        {
+          "value": "1",
+          "meaning": "yes"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 274
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Bit 5 of selected monitored byte:; 0 = no; 1 = yes",
+      "description_lines": [
+        "Bit 5 of selected monitored byte:",
+        "0 = no",
+        "1 = yes"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no"
+        },
+        {
+          "value": "1",
+          "meaning": "yes"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 274
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Bit 6 of selected monitored byte:; 0 = no; 1 = yes",
+      "description_lines": [
+        "Bit 6 of selected monitored byte:",
+        "0 = no",
+        "1 = yes"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no"
+        },
+        {
+          "value": "1",
+          "meaning": "yes"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 274
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Bit 7 of selected monitored byte:; 0 = no; 1 = yes",
+      "description_lines": [
+        "Bit 7 of selected monitored byte:",
+        "0 = no",
+        "1 = yes"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "no"
+        },
+        {
+          "value": "1",
+          "meaning": "yes"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 274
+    }
+  ],
+  "spec_count": 12,
+  "max_spec_number": 12,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "The range is the positive real value range, however the practical lower limit is determined by the Base Sample Period defined in the extended executive (FC 90, block 20, S3).",
+      "manual_page": 274,
+      "context": "specifications"
+    },
+    {
+      "label": "2.",
+      "text": "Range values are: 0-31 for the BRC-100, IMMFP11/12 1-250 for the HAC",
+      "manual_page": 274,
+      "context": "specifications"
+    },
+    {
+      "label": "3.",
+      "text": "The tens digit of S4 is non tunable.",
+      "manual_page": 274,
+      "context": "specifications"
+    },
+    {
+      "label": "4.",
+      "text": "Valid only when S2 is configured to monitor the same node address as the controller in which the function code 95 resides.",
+      "manual_page": 274,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 273,
+  "manual_pages": [
+    273,
+    274,
+    275,
+    276,
+    277
+  ],
+  "manual_section": "Function Code 95 - Module Status Monitor",
+  "diagnostics": []
+}

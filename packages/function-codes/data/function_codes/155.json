@@ -1,0 +1,734 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 155,
+  "name": "Regression",
+  "description": "The regression block correlates up to four independent variables to a single dependent variable. Data can be collected on a time or trigger basis, and buffered either sequentially or in bins. The size of the data buffer is configurable. A goodness of fit is specified. This output disables the updating of parameter estimates when a mismatch between the collected data and the estimated curve is beyond the specified goodness of fit. A reset input provides the ability to suspend the start data collection when flagged. Calculation and edit are the two operating modes. In both modes, the first four outputs are dedicated to the computed coefficients. The remaining outputs are dependent on the mode. The calculation mode outputs information about the current calculation. The edit mode identifies the inputs to the calculation and allows the operator to change the quality of a row of data in the regression matrix.",
+  "description_lines": [
+    "The regression block correlates up to four independent vari-",
+    "ables to a single dependent variable. Data can be collected on",
+    "a time or trigger basis, and buffered either sequentially or in",
+    "bins. The size of the data buffer is configurable.",
+    "A goodness of fit is specified. This output disables the updat-",
+    "ing of parameter estimates when a mismatch between the col-",
+    "lected data and the estimated curve is beyond the specified",
+    "goodness of fit.",
+    "A reset input provides the ability to suspend the start data col-",
+    "lection when flagged.",
+    "Calculation and edit are the two operating modes. In both",
+    "modes, the first four outputs are dedicated to the computed",
+    "coefficients. The remaining outputs are dependent on the",
+    "mode. The calculation mode outputs information about the",
+    "current calculation. The edit mode identifies the inputs to the",
+    "calculation and allows the operator to change the quality of a",
+    "row of data in the regression matrix."
+  ],
+  "symbol": {
+    "title_raw": "R E G R E S",
+    "title": "REGRES",
+    "inputs": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S1",
+      "S11",
+      "S15",
+      "S16",
+      "S17",
+      "S18"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2",
+      "N+3",
+      "N+4",
+      "N+5",
+      "N+6",
+      "N+7",
+      "N+8",
+      "N+9"
+    ],
+    "items": [
+      {
+        "x": 153.84,
+        "y": 594.78,
+        "s": "R E G R E S"
+      },
+      {
+        "x": 190.38,
+        "y": 588.78,
+        "s": "(1 5 5 )"
+      },
+      {
+        "x": 132.96,
+        "y": 587.58,
+        "s": "S 2"
+      },
+      {
+        "x": 179.1,
+        "y": 583.26,
+        "s": "P 1"
+      },
+      {
+        "x": 190.38,
+        "y": 579.9,
+        "s": "N"
+      },
+      {
+        "x": 132.96,
+        "y": 578.7,
+        "s": "S 3"
+      },
+      {
+        "x": 179.1,
+        "y": 574.38,
+        "s": "P 2"
+      },
+      {
+        "x": 190.38,
+        "y": 570.78,
+        "s": "N + 1"
+      },
+      {
+        "x": 132.96,
+        "y": 569.58,
+        "s": "S 4"
+      },
+      {
+        "x": 179.1,
+        "y": 565.5,
+        "s": "P 3"
+      },
+      {
+        "x": 190.38,
+        "y": 561.9,
+        "s": "N + 2"
+      },
+      {
+        "x": 132.96,
+        "y": 560.7,
+        "s": "S 5"
+      },
+      {
+        "x": 179.1,
+        "y": 556.38,
+        "s": "P 4"
+      },
+      {
+        "x": 190.38,
+        "y": 553.02,
+        "s": "N + 3"
+      },
+      {
+        "x": 132.96,
+        "y": 551.58,
+        "s": "S 1"
+      },
+      {
+        "x": 183.9,
+        "y": 547.5,
+        "s": "I"
+      },
+      {
+        "x": 190.38,
+        "y": 543.9,
+        "s": "N + 4"
+      },
+      {
+        "x": 132.96,
+        "y": 542.46,
+        "s": "S 1 1"
+      },
+      {
+        "x": 178.86,
+        "y": 538.62,
+        "s": "D 1"
+      },
+      {
+        "x": 190.38,
+        "y": 535.02,
+        "s": "N + 5"
+      },
+      {
+        "x": 132.96,
+        "y": 533.58,
+        "s": "S 1 5"
+      },
+      {
+        "x": 178.86,
+        "y": 529.74,
+        "s": "D 2"
+      },
+      {
+        "x": 190.38,
+        "y": 526.14,
+        "s": "N + 6"
+      },
+      {
+        "x": 132.96,
+        "y": 524.46,
+        "s": "S 1 6"
+      },
+      {
+        "x": 178.86,
+        "y": 520.62,
+        "s": "D 3"
+      },
+      {
+        "x": 190.38,
+        "y": 517.26,
+        "s": "N + 7"
+      },
+      {
+        "x": 132.96,
+        "y": 515.58,
+        "s": "S 1 7"
+      },
+      {
+        "x": 178.86,
+        "y": 511.74,
+        "s": "D 4"
+      },
+      {
+        "x": 190.38,
+        "y": 508.14,
+        "s": "N + 8"
+      },
+      {
+        "x": 132.96,
+        "y": 506.46,
+        "s": "S 1 8"
+      },
+      {
+        "x": 181.26,
+        "y": 502.86,
+        "s": "Q"
+      },
+      {
+        "x": 190.38,
+        "y": 499.26,
+        "s": "N + 9"
+      }
+    ]
+  },
+  "outputs": [],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of dependent variable",
+      "description_lines": [
+        "Block address of dependent variable"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 550
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of first independent variable",
+      "description_lines": [
+        "Block address of first independent variable"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 550
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of second independent variable",
+      "description_lines": [
+        "Block address of second independent variable"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 550
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of third independent variable",
+      "description_lines": [
+        "Block address of third independent variable"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 550
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of fourth independent variable",
+      "description_lines": [
+        "Block address of fourth independent variable"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 550
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "1 - 4",
+      "description": "Number of independent variables to use in calculation",
+      "description_lines": [
+        "Number of independent variables to use in",
+        "calculation"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 550
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "5 - 32",
+      "description": "Number of sets of data to buffer",
+      "description_lines": [
+        "Number of sets of data to buffer"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 550
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "5 - 32",
+      "description": "Minimum number of good sets of data required for calculation",
+      "description_lines": [
+        "Minimum number of good sets of data required",
+        "for calculation"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 550
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "B",
+      "range": "Full",
+      "description": "Trigger or time mode flag:; 0 = trigger; 1 = time",
+      "description_lines": [
+        "Trigger or time mode flag:",
+        "0 = trigger",
+        "1 = time"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "trigger"
+        },
+        {
+          "value": "1",
+          "meaning": "time"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 550
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1.000",
+      "type": "R",
+      "range": "0.0 - 9.2 E18",
+      "description": "Time interval between calculations (minutes)",
+      "description_lines": [
+        "Time interval between calculations (minutes)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 550
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of external trigger",
+      "description_lines": [
+        "Block address of external trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 550
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "B",
+      "range": "Full",
+      "description": "Data storage mode flag:; 0 = sequential; 1 = bins",
+      "description_lines": [
+        "Data storage mode flag:",
+        "0 = sequential",
+        "1 = bins"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "sequential"
+        },
+        {
+          "value": "1",
+          "meaning": "bins"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 550
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "100.000",
+      "type": "R",
+      "range": "Full",
+      "description": "High range of first independent variable for bin storage",
+      "description_lines": [
+        "High range of first independent variable for bin",
+        "storage"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 550
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Low range of first independent variable for bin storage",
+      "description_lines": [
+        "Low range of first independent variable for bin",
+        "storage"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 550
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of edit mode switch:; 0 = calculate; 1 = edit",
+      "description_lines": [
+        "Block address of edit mode switch:",
+        "0 = calculate",
+        "1 = edit"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "calculate"
+        },
+        {
+          "value": "1",
+          "meaning": "edit"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 550
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of set to edit value",
+      "description_lines": [
+        "Block address of set to edit value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 550
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of set quality toggle flag:; 1 = toggle quality",
+      "description_lines": [
+        "Block address of set quality toggle flag:",
+        "1 = toggle quality"
+      ],
+      "enumerations": [
+        {
+          "value": "1",
+          "meaning": "toggle quality"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 550
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of reset flag:; 1 = reset",
+      "description_lines": [
+        "Block address of reset flag:",
+        "1 = reset"
+      ],
+      "enumerations": [
+        {
+          "value": "1",
+          "meaning": "reset"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 550
+    },
+    {
+      "number": 19,
+      "label": "S19",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Initial default for first parameter",
+      "description_lines": [
+        "Initial default for first parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 550
+    },
+    {
+      "number": 20,
+      "label": "S20",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Initial default for second parameter",
+      "description_lines": [
+        "Initial default for second parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 550
+    },
+    {
+      "number": 21,
+      "label": "S21",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Initial default for third parameter",
+      "description_lines": [
+        "Initial default for third parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 550
+    },
+    {
+      "number": 22,
+      "label": "S22",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Initial default for fourth parameter",
+      "description_lines": [
+        "Initial default for fourth parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 550
+    },
+    {
+      "number": 23,
+      "label": "S23",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "0.000 - 1.000",
+      "description": "Desired goodness of fit",
+      "description_lines": [
+        "Desired goodness of fit"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 550
+    },
+    {
+      "number": 24,
+      "label": "S24",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Default update",
+      "description_lines": [
+        "Default update"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 550
+    },
+    {
+      "number": 25,
+      "label": "S25",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Full spare",
+      "description_lines": [
+        "Full spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 551
+    },
+    {
+      "number": 26,
+      "label": "S26",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Full spare",
+      "description_lines": [
+        "Full spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 551
+    },
+    {
+      "number": 27,
+      "label": "S27",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Full spare",
+      "description_lines": [
+        "Full spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 551
+    }
+  ],
+  "spec_count": 27,
+  "max_spec_number": 27,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 551,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 549,
+  "manual_pages": [
+    549,
+    550,
+    551,
+    552,
+    553,
+    554,
+    555,
+    556,
+    557,
+    558,
+    559,
+    560,
+    561,
+    562
+  ],
+  "manual_section": "Function Code 155 - Regression",
+  "diagnostics": []
+}

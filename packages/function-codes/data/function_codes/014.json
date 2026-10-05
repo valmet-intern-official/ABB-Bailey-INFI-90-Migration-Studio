@@ -1,0 +1,160 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 14,
+  "name": "Summer (4-Input)",
+  "description": "This function computes the algebraic sum of up to four inputs with unity gain. The output equation is:",
+  "description_lines": [
+    "This function computes the algebraic sum of up to four inputs",
+    "with unity gain.",
+    "The output equation is:"
+  ],
+  "symbol": {
+    "title_raw": "S",
+    "title": "S",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 133.74,
+        "y": 598.62,
+        "s": "S 1"
+      },
+      {
+        "x": 133.74,
+        "y": 589.68,
+        "s": "S 2"
+      },
+      {
+        "x": 191.7,
+        "y": 586.8,
+        "s": "(1 4 )"
+      },
+      {
+        "x": 167.16,
+        "y": 581.28,
+        "s": "S"
+      },
+      {
+        "x": 133.74,
+        "y": 580.56,
+        "s": "S 3"
+      },
+      {
+        "x": 191.7,
+        "y": 578.16,
+        "s": "N"
+      },
+      {
+        "x": 133.74,
+        "y": 571.62,
+        "s": "S 4"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Output value is the algebraic sum of the four input signals",
+      "description_lines": [
+        "Output value is the algebraic sum of the four input signals"
+      ],
+      "manual_page": 85
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of first input",
+      "description_lines": [
+        "Block address of first input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 85
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of second input",
+      "description_lines": [
+        "Block address of second input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 85
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of third input",
+      "description_lines": [
+        "Block address of third input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 85
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of fourth input",
+      "description_lines": [
+        "Block address of fourth input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 85
+    }
+  ],
+  "spec_count": 4,
+  "max_spec_number": 4,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 85,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 85,
+  "manual_pages": [
+    85
+  ],
+  "manual_section": "Function Code 14 - Summer (4-Input)",
+  "diagnostics": []
+}

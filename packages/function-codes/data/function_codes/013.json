@@ -1,0 +1,152 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 13,
+  "name": "Integer Transfer",
+  "description": "This function provides a means for switching integer values. When <S3> equals zero, the output equals <S1>. When <S3> equals one, the output equals <S2>. NOTE: This is different from the analog transfer (function code 9), which has an optional transfer time feature.",
+  "description_lines": [
+    "This function provides a means for switching integer values.",
+    "When <S3> equals zero, the output equals <S1>. When <S3>",
+    "equals one, the output equals <S2>.",
+    "NOTE: This is different from the analog transfer (function code 9), which has",
+    "an optional transfer time feature."
+  ],
+  "symbol": {
+    "title_raw": "T-IN T",
+    "title": "T-INT",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 133.08,
+        "y": 596.46,
+        "s": "S 1"
+      },
+      {
+        "x": 190.98,
+        "y": 588.54,
+        "s": "(1 3 )"
+      },
+      {
+        "x": 133.08,
+        "y": 587.34,
+        "s": "S 2"
+      },
+      {
+        "x": 160.44,
+        "y": 583.44,
+        "s": "T-IN T"
+      },
+      {
+        "x": 190.98,
+        "y": 579.6,
+        "s": "N"
+      },
+      {
+        "x": 133.08,
+        "y": 578.4,
+        "s": "S 3"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "I",
+      "description": "Output equals one of two possible inputs",
+      "description_lines": [
+        "Output equals one of two possible inputs"
+      ],
+      "manual_page": 83
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of first input",
+      "description_lines": [
+        "Block address of first input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 83
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of second input",
+      "description_lines": [
+        "Block address of second input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 83
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of transfer signal:; 0 = S1; 1 = S2",
+      "description_lines": [
+        "Block address of transfer signal:",
+        "0 = S1",
+        "1 = S2"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "S1"
+        },
+        {
+          "value": "1",
+          "meaning": "S2"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 83
+    }
+  ],
+  "spec_count": 3,
+  "max_spec_number": 3,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 83,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 83,
+  "manual_pages": [
+    83,
+    84
+  ],
+  "manual_section": "Function Code 13 - Integer Transfer",
+  "diagnostics": []
+}

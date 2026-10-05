@@ -1,0 +1,420 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 151,
+  "name": "Text Selector",
+  "description": "Function code 151 sends message numbers and color (selected by logic) to a human system interface (HSI). The message numbers correspond to text strings configured in the HSI message list. Message number and color reporting occur using Symphony exception reporting techniques. The text selector can operate in one of two modes. The first mode uses the message number input, color input and blink input to select the message number and attributes. The second mode uses the value of a control status input to select one of three predefined message numbers and attributes. Control status reflects the current operating state of a device as good (0.0), bad (1.0) or waiting (2.0). The text selector block references a control status output contained in function codes 123, 125, 129 and 136. This reference automatically selects the second mode of operation. A set of specifications that define the message number, color and blink are associated with each state of the device control status. The message number, color and blink are then set according to the current status of the device. Table 151-1 lists the HSI color codes for a Conductor VMS HSI. NOTE: In the HSI tag database, the text selector tag number must be defined as type real.",
+  "description_lines": [
+    "Function code 151 sends message numbers and color (selected",
+    "by logic) to a human system interface (HSI). The message",
+    "numbers correspond to text strings configured in the HSI mes-",
+    "sage list. Message number and color reporting occur using",
+    "Symphony exception reporting techniques.",
+    "The text selector can operate in one of two modes. The first",
+    "mode uses the message number input, color input and blink",
+    "input to select the message number and attributes. The sec-",
+    "ond mode uses the value of a control status input to select one",
+    "of three predefined message numbers and attributes. Control",
+    "status reflects the current operating state of a device as good",
+    "(0.0), bad (1.0) or waiting (2.0). The text selector block refer-",
+    "ences a control status output contained in function codes 123,",
+    "125, 129 and 136. This reference automatically selects the",
+    "second mode of operation. A set of specifications that define",
+    "the message number, color and blink are associated with each",
+    "state of the device control status. The message number, color",
+    "and blink are then set according to the current status of the",
+    "device. Table 151-1 lists the HSI color codes for a Conductor",
+    "VMS HSI.",
+    "NOTE: In the HSI tag database, the text selector tag number must be defined",
+    "as type real."
+  ],
+  "symbol": {
+    "title_raw": "T E X T",
+    "title": "TEXT",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 159.78,
+        "y": 595.26,
+        "s": "T E X T"
+      },
+      {
+        "x": 189.84,
+        "y": 588.78,
+        "s": "(1 5 1 )"
+      },
+      {
+        "x": 132.6,
+        "y": 587.58,
+        "s": "S 1"
+      },
+      {
+        "x": 152.34,
+        "y": 584.46,
+        "s": "M N"
+      },
+      {
+        "x": 189.84,
+        "y": 579.9,
+        "s": "N"
+      },
+      {
+        "x": 132.6,
+        "y": 578.46,
+        "s": "S 2"
+      },
+      {
+        "x": 152.34,
+        "y": 575.58,
+        "s": "C S"
+      },
+      {
+        "x": 132.6,
+        "y": 569.58,
+        "s": "S 3"
+      },
+      {
+        "x": 152.34,
+        "y": 566.46,
+        "s": "B S"
+      },
+      {
+        "x": 132.6,
+        "y": 560.46,
+        "s": "S 4"
+      },
+      {
+        "x": 152.34,
+        "y": 557.58,
+        "s": "C S T"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Message number",
+      "description_lines": [
+        "Message number"
+      ],
+      "manual_page": 527
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of message number",
+      "description_lines": [
+        "Block address of message number"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 527
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of color select",
+      "description_lines": [
+        "Block address of color select"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 527
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of blink select:; 0 = solid; 1 = blink",
+      "description_lines": [
+        "Block address of blink select:",
+        "0 = solid",
+        "1 = blink"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "solid"
+        },
+        {
+          "value": "1",
+          "meaning": "blink"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 527
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "2",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of control status:; 0.0 = good; 1.0 = bad; 2.0 = wait",
+      "description_lines": [
+        "Block address of control status:",
+        "0.0 = good",
+        "1.0 = bad",
+        "2.0 = wait"
+      ],
+      "enumerations": [
+        {
+          "value": "0.0",
+          "meaning": "good"
+        },
+        {
+          "value": "1.0",
+          "meaning": "bad"
+        },
+        {
+          "value": "2.0",
+          "meaning": "wait"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 528
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "0 - 65535.000",
+      "description": "Good control status message",
+      "description_lines": [
+        "Good control status message"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 528
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "0 - 127.000",
+      "description": "Good control status color",
+      "description_lines": [
+        "Good control status color"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 528
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Good control status blink",
+      "description_lines": [
+        "Good control status blink"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 528
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "0 - 65535.000",
+      "description": "Bad control status message",
+      "description_lines": [
+        "Bad control status message"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 528
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1.000",
+      "type": "R",
+      "range": "0 - 127.000",
+      "description": "Bad control status color",
+      "description_lines": [
+        "Bad control status color"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 528
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Bad control status blink",
+      "description_lines": [
+        "Bad control status blink"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 528
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "0 - 65535.000",
+      "description": "Wait control status message",
+      "description_lines": [
+        "Wait control status message"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 528
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "3.000",
+      "type": "R",
+      "range": "0 - 127.000",
+      "description": "Wait control status color",
+      "description_lines": [
+        "Wait control status color"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 528
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Wait control status blink",
+      "description_lines": [
+        "Wait control status blink"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 528
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Spare integer parameter",
+      "description_lines": [
+        "Spare integer parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 528
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare real parameter",
+      "description_lines": [
+        "Spare real parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 528
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare real parameter",
+      "description_lines": [
+        "Spare real parameter"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 528
+    }
+  ],
+  "spec_count": 16,
+  "max_spec_number": 16,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 528,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 527,
+  "manual_pages": [
+    527,
+    528,
+    529
+  ],
+  "manual_section": "Function Code 151 - Text Selector",
+  "diagnostics": []
+}

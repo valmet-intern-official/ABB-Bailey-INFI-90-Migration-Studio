@@ -1,0 +1,216 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 96,
+  "name": "Redundant Analog Input",
+  "description": "The redundant analog input (REDAI) function code is a transfer between a pair of redundant analog signals. An external logic select input <S3> controls the transfer. The output value is equal to the input value selected with <S3>. Function code 96 checks the difference between the two inputs and the rate of change of the selected input. Output quality is bad if the quality of the selected input is bad, if the rate of change exceeds the rate limit specified by S5, or if the difference between the two inputs is larger than S4. To test the quality of the signal, include a function code 31 (test quality) block in the configuration. The quality of the point cannot be used as an input to any other type of block. However, the output value can be used as an input to other blocks. Refer to Appendix H for a definition of point quality.",
+  "description_lines": [
+    "The redundant analog input (REDAI) function code is a trans-",
+    "fer between a pair of redundant analog signals. An external",
+    "logic select input <S3> controls the transfer. The output value",
+    "is equal to the input value selected with <S3>.",
+    "Function code 96 checks the difference between the two inputs",
+    "and the rate of change of the selected input. Output quality is",
+    "bad if the quality of the selected input is bad, if the rate of",
+    "change exceeds the rate limit specified by S5, or if the differ-",
+    "ence between the two inputs is larger than S4. To test the",
+    "quality of the signal, include a function code 31 (test quality)",
+    "block in the configuration. The quality of the point cannot be",
+    "used as an input to any other type of block. However, the out-",
+    "put value can be used as an input to other blocks. Refer to",
+    "Appendix H for a definition of point quality."
+  ],
+  "symbol": {
+    "title_raw": "R E DA I",
+    "title": "REDAI",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 158.34,
+        "y": 595.02,
+        "s": "R E DA I"
+      },
+      {
+        "x": 191.04,
+        "y": 588.96,
+        "s": "(9 6 )"
+      },
+      {
+        "x": 132.66,
+        "y": 587.52,
+        "s": "S 1"
+      },
+      {
+        "x": 152.34,
+        "y": 584.88,
+        "s": "1"
+      },
+      {
+        "x": 191.04,
+        "y": 580.08,
+        "s": "N"
+      },
+      {
+        "x": 132.66,
+        "y": 578.64,
+        "s": "S 2"
+      },
+      {
+        "x": 152.34,
+        "y": 576,
+        "s": "2"
+      },
+      {
+        "x": 132.66,
+        "y": 569.46,
+        "s": "S 3"
+      },
+      {
+        "x": 152.34,
+        "y": 567.06,
+        "s": "S"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Output N = <S1> if <S3> = 0 Output N = <S2> if <S3> = 1",
+      "description_lines": [
+        "Output N = <S1> if <S3> = 0",
+        "Output N = <S2> if <S3> = 1"
+      ],
+      "manual_page": 279
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of first input",
+      "description_lines": [
+        "Block address of first input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 279
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of second input",
+      "description_lines": [
+        "Block address of second input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 279
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of select input; 0 = <S1>, 1 = <S2>",
+      "description_lines": [
+        "Block address of select input; 0 = <S1>, 1 = <S2>"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 279
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "Deviation limit (same units as <S1> and <S2>)",
+      "description_lines": [
+        "Deviation limit (same units as <S1> and <S2>)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 279
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "Rate limit (same units as <S1> and <S2> per sec)",
+      "description_lines": [
+        "Rate limit (same units as <S1> and <S2> per sec)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 279
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "Full",
+      "description": "Rate error deadband (same units as <S1> and <S2>)",
+      "description_lines": [
+        "Rate error deadband (same units as <S1> and",
+        "<S2>)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 279
+    }
+  ],
+  "spec_count": 6,
+  "max_spec_number": 6,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 279,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 279,
+  "manual_pages": [
+    279,
+    280,
+    281
+  ],
+  "manual_section": "Function Code 96 - Redundant Analog Input",
+  "diagnostics": []
+}

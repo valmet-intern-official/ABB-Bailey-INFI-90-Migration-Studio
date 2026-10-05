@@ -1,0 +1,364 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 160,
+  "name": "Inferential Smith Controller",
+  "description": "The inferential smith controller (ISC) function code provides predictive control on an error signal developed from the process variable and set point inputs measured against an internal model of the process. The ISC controller utilizes a first order dynamic model with deadtime to predict the current value of the process variable based on past values of the control output. The ISC controller function block provides regulatory process control similar to a PID algorithm. However, the ISC controller has the added advantage of effective control for processes with a significant transport delay (deadtime). The ISC controller prevents controller windup by limiting control output to operator specified high and low limits. The ISC controller also prevents windup in cascade configurations with the use of an external reference value. Processes with long deadtimes are difficult to control with PID controllers using traditional tuning methods. The ISC controller algorithm functionally replaces the standard PID controller function. The ISC controller easily deals with process deadtime and tunes with a single tuning parameter.",
+  "description_lines": [
+    "The inferential smith controller (ISC) function code provides",
+    "predictive control on an error signal developed from the pro-",
+    "cess variable and set point inputs measured against an inter-",
+    "nal model of the process. The ISC controller utilizes a first",
+    "order dynamic model with deadtime to predict the current",
+    "value of the process variable based on past values of the con-",
+    "trol output. The ISC controller function block provides regula-",
+    "tory process control similar to a PID algorithm. However, the",
+    "ISC controller has the added advantage of effective control for",
+    "processes with a significant transport delay (deadtime). The",
+    "ISC controller prevents controller windup by limiting control",
+    "output to operator specified high and low limits. The ISC con-",
+    "troller also prevents windup in cascade configurations with the",
+    "use of an external reference value.",
+    "Processes with long deadtimes are difficult to control with PID",
+    "controllers using traditional tuning methods. The ISC control-",
+    "ler algorithm functionally replaces the standard PID controller",
+    "function. The ISC controller easily deals with process deadtime",
+    "and tunes with a single tuning parameter."
+  ],
+  "symbol": {
+    "title_raw": "S M IT H",
+    "title": "SMITH",
+    "inputs": [
+      "S2",
+      "S1",
+      "S5",
+      "S3",
+      "S4"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 158.1,
+        "y": 594.78,
+        "s": "S M IT H"
+      },
+      {
+        "x": 190.56,
+        "y": 589.2,
+        "s": "(1 6 0 )"
+      },
+      {
+        "x": 133.32,
+        "y": 587.04,
+        "s": "S 2"
+      },
+      {
+        "x": 152.4,
+        "y": 584.4,
+        "s": "S P"
+      },
+      {
+        "x": 190.56,
+        "y": 580.32,
+        "s": "N"
+      },
+      {
+        "x": 133.32,
+        "y": 578.16,
+        "s": "S 1"
+      },
+      {
+        "x": 152.4,
+        "y": 575.52,
+        "s": "P V"
+      },
+      {
+        "x": 133.32,
+        "y": 569.28,
+        "s": "S 5"
+      },
+      {
+        "x": 152.4,
+        "y": 566.64,
+        "s": "C"
+      },
+      {
+        "x": 133.32,
+        "y": 560.16,
+        "s": "S 3"
+      },
+      {
+        "x": 152.4,
+        "y": 557.46,
+        "s": "T R"
+      },
+      {
+        "x": 133.32,
+        "y": 551.22,
+        "s": "S 4"
+      },
+      {
+        "x": 152.4,
+        "y": 548.58,
+        "s": "T S"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Control output (CO)",
+      "description_lines": [
+        "Control output (CO)"
+      ],
+      "manual_page": 591
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of process variable",
+      "description_lines": [
+        "Block address of process variable"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 591
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of set point",
+      "description_lines": [
+        "Block address of set point"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 591
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of track reference value",
+      "description_lines": [
+        "Block address of track reference value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 591
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of track switch signal:; 0 = track; 1 = release",
+      "description_lines": [
+        "Block address of track switch signal:",
+        "0 = track",
+        "1 = release"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "track"
+        },
+        {
+          "value": "1",
+          "meaning": "release"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 591
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of (cascade) external reference value",
+      "description_lines": [
+        "Block address of (cascade) external reference value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 591
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "External reference flag:; 0 = normal; 1 = use external reference",
+      "description_lines": [
+        "External reference flag:",
+        "0 = normal",
+        "1 = use external reference"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "normal"
+        },
+        {
+          "value": "1",
+          "meaning": "use external reference"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 591
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Process model gain",
+      "description_lines": [
+        "Process model gain"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 592
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "0 - 9.2 E18",
+      "description": "Process model deadtime (in secs)",
+      "description_lines": [
+        "Process model deadtime (in secs)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 592
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "0 - 9.2 E18",
+      "description": "Process model lag time constant (in secs)",
+      "description_lines": [
+        "Process model lag time constant (in secs)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 592
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "9.2 E18",
+      "type": "R",
+      "range": "0 - 9.2 E18",
+      "description": "Controller tuning time constant (in secs)",
+      "description_lines": [
+        "Controller tuning time constant (in secs)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 592
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "105.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Control output high limit",
+      "description_lines": [
+        "Control output high limit"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 592
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "-5.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Control output low limit",
+      "description_lines": [
+        "Control output low limit"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 592
+    }
+  ],
+  "spec_count": 12,
+  "max_spec_number": 12,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 592,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 591,
+  "manual_pages": [
+    591,
+    592,
+    593,
+    594,
+    595,
+    596,
+    597,
+    598
+  ],
+  "manual_section": "Function Code 160 - Inferential Smith Controller",
+  "diagnostics": []
+}

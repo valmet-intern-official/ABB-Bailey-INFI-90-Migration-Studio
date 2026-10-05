@@ -1,40 +1,41 @@
 /**
- * `.LBR` symbol library decoder.
+ * `.LBR` symbol library decoder — CONFIRMED.
  *
  * CAD sheets reference symbols by an 8-character name only; the drawn shape
- * lives in the library. Decoding it is what lets the renderer draw authentic
- * engineering symbols instead of bounding boxes.
+ * lives in the library named at CAD header offset 0x090.
  *
- * Directory — CONFIRMED. Entries run at a fixed 16-byte stride from +528:
+ * File layout. The file is a sequence of 512-byte blocks. Directory blocks
+ * are recognised by their 16-byte header, whose word 6 is 1 and word 7 is the
+ * entry count (1..31); entries follow at a 16-byte stride:
  *   +0  char[8] name
- *   +8  uint16  offsetHi     body offset = offsetHi * 256 + offsetLo
- *   +10 uint16  offsetLo
+ *   +8  uint16  block      1-based 512-byte block number
+ *   +10 uint16  word       1-based word index within that block
  *   +12 uint16  = 6
- *   +14 uint16  length       body length in bytes
- * Verified by chaining: every entry's offset equals the previous entry's
- * offset plus its length, with zero breaks across every library.
+ *   +14 uint16  lengthWords
+ * so the body starts at byte (block - 1) * 512 + (word - 1) * 2.
  *
- * Bodies are a variable-length primitive stream, so they are NOT a fixed
- * stride (a `BOX2` body even embeds a nested `TITLE` symbol reference). The
- * line primitive is confirmed as a 16-byte record:
- *   +0 x1  +2 y1  +4 x2  +6 y2  then the literal bytes 01 00 08 00 02 00 00 00
+ * Symbol body:
+ *   +0  uint16  = 9
+ *   +2  uint16  = 6
+ *   +4  uint16  headerWords   (17)
+ *   +6  uint16  streamWords   headerWords + streamWords = lengthWords
+ *   +8  x1 y1 x2 y2           definition bounding box
+ *   +16 char[8] name
+ *   +24 uint16  insertionX
+ *   +26 uint16  insertionY
+ *   then a record stream in exactly the `.CAD` record grammar
+ *   (1 polyline, 2/3 two-point, 4 arc, 5 text, 9 nested symbol instance).
  *
- * UNRESOLVED — the unit of the directory offset/length fields.
- * Read as bytes, the directory region (528..1024) overlaps the first body
- * offset (769), which is impossible. Read as 16-bit words, `BAI` and `LEY`
- * (the two halves of the Bailey logo) decode to 85 and 87 segments covering
- * 70% and 79% of their bodies — strong evidence — but `LINE`, `BOX1` and
- * `BOX2` then yield nothing, while at byte offsets those same three produce
- * perfectly formed primitives. Neither reading explains every entry, so
- * `segments` is reported as EXPERIMENTAL and callers must not treat it as
- * authoritative symbol geometry. Consumers should rely on the confirmed
- * per-instance bounding box from the CAD record instead, which is exact.
+ * Validation: every body in every library in the archive chains exactly to
+ * its declared length (7107LIB1 186/186, SAMA 133/133, ...). A wrong address
+ * unit or header size desynchronises within one record, so this is a
+ * mechanical confirmation. Placing the `DBORDH` definition by the translation
+ * (instance insertion - definition insertion) reproduces the CAD instance
+ * bounding box exactly.
  */
+import { decodeRecordRange, type RawCadRecord } from "../records/decode";
 
-const DIR_START = 528;
-const DIR_STRIDE = 16;
-/** Trailing descriptor that marks a 16-byte line primitive. */
-const LINE_SIGNATURE = Buffer.from([0x01, 0x00, 0x08, 0x00, 0x02, 0x00, 0x00, 0x00]);
+const BLOCK = 512;
 
 export interface LbrSegment {
   x1: number;
@@ -47,28 +48,28 @@ export interface LbrSymbol {
   name: string;
   /** Source library file name. */
   library: string;
-  /** Byte offset of the body — provenance for every extracted segment. */
+  /** Byte offset of the body — provenance for every primitive. */
   offset: number;
-  length: number;
-  /**
-   * EXPERIMENTAL. Line primitives found by signature scan. The body offset
-   * unit is unresolved (see the file header), so these are not authoritative
-   * and must not be used to draw symbols.
-   */
+  lengthWords: number;
+  bbox: { x1: number; y1: number; x2: number; y2: number };
+  insertionX: number;
+  insertionY: number;
+  /** Body records, decoded with the CAD record grammar, in definition space. */
+  records: RawCadRecord[];
+  /** True when the body's record chain consumed exactly `lengthWords`. */
+  clean: boolean;
+  /** Straight segments of type 1 records, kept for older callers. */
   segments: LbrSegment[];
-  /** Extent of the extracted geometry in the library's coordinate space. */
-  extent?: { minX: number; minY: number; maxX: number; maxY: number };
-  /** Body bytes not accounted for by the line primitive. */
-  undecodedBytes: number;
-  /** Names of symbols this body references, when detectable. */
+  /** Names of nested symbol instances. */
   references: string[];
 }
 
 export interface LbrLibrary {
   name: string;
   symbols: Map<string, LbrSymbol>;
-  /** Directory entries whose offset did not chain from the previous entry. */
-  chainBreaks: number;
+  directoryEntries: number;
+  /** Bodies whose record chain did not end exactly on the declared length. */
+  uncleanBodies: string[];
 }
 
 function readName(buf: Buffer, at: number): string | null {
@@ -79,104 +80,82 @@ function readName(buf: Buffer, at: number): string | null {
   return t.length > 0 ? t : null;
 }
 
-/** Parse the symbol directory. */
+/** Every directory entry, from every directory block. */
 export function readLbrDirectory(
   buf: Buffer
-): Array<{ name: string; offset: number; length: number }> {
-  const out: Array<{ name: string; offset: number; length: number }> = [];
-  for (let at = DIR_START; at + DIR_STRIDE <= buf.length; at += DIR_STRIDE) {
-    const name = readName(buf, at);
-    if (!name) break;
-    const hi = buf.readUInt16LE(at + 8);
-    const lo = buf.readUInt16LE(at + 10);
-    const length = buf.readUInt16LE(at + 14);
-    const offset = hi * 256 + lo;
-    if (offset + length > buf.length) break;
-    out.push({ name, offset, length });
+): Array<{ name: string; offset: number; lengthWords: number; directoryAt: number }> {
+  const out: Array<{ name: string; offset: number; lengthWords: number; directoryAt: number }> = [];
+  for (let base = BLOCK; base + 16 <= buf.length; base += BLOCK) {
+    const count = buf.readUInt16LE(base + 14);
+    if (buf.readUInt16LE(base + 12) !== 1 || count < 1 || count > 31) continue;
+    const local: typeof out = [];
+    let ok = true;
+    for (let i = 0; i < count; i++) {
+      const at = base + 16 + i * 16;
+      const name = readName(buf, at);
+      if (!name || buf.readUInt16LE(at + 12) !== 6) {
+        ok = false;
+        break;
+      }
+      const block = buf.readUInt16LE(at + 8);
+      const word = buf.readUInt16LE(at + 10);
+      const lengthWords = buf.readUInt16LE(at + 14);
+      const offset = (block - 1) * BLOCK + (word - 1) * 2;
+      if (block < 1 || word < 1 || offset + lengthWords * 2 > buf.length) {
+        ok = false;
+        break;
+      }
+      local.push({ name, offset, lengthWords, directoryAt: at });
+    }
+    if (ok) out.push(...local);
   }
   return out;
 }
 
-/** Extract every confirmed line primitive from a symbol body. */
-function extractSegments(body: Buffer): {
-  segments: LbrSegment[];
-  undecodedBytes: number;
-  references: string[];
-} {
-  const segments: LbrSegment[] = [];
-  const claimed = new Uint8Array(body.length);
-  const references: string[] = [];
-
-  // A line primitive is identified by its trailing descriptor, which makes the
-  // scan robust to the variable-length records interleaved around it.
-  for (let at = 0; at + 16 <= body.length; at += 2) {
-    if (!body.subarray(at + 8, at + 16).equals(LINE_SIGNATURE)) continue;
-    segments.push({
-      x1: body.readUInt16LE(at),
-      y1: body.readUInt16LE(at + 2),
-      x2: body.readUInt16LE(at + 4),
-      y2: body.readUInt16LE(at + 6),
-    });
-    for (let i = at; i < at + 16; i++) claimed[i] = 1;
-    at += 14; // continue past this primitive
-  }
-
-  // Nested symbol references show up as 8-byte padded names in the body.
-  for (let at = 0; at + 8 <= body.length; at += 2) {
-    if (claimed[at]) continue;
-    const n = readName(body, at);
-    if (n && /^[A-Z][A-Z0-9/_.\-+=()#]*$/i.test(n)) references.push(n);
-  }
-
-  let undecoded = 0;
-  for (let i = 0; i < body.length; i++) if (!claimed[i]) undecoded++;
-
-  return { segments, undecodedBytes: undecoded, references: [...new Set(references)] };
-}
-
 export function parseLbrLibrary(buf: Buffer, name: string): LbrLibrary {
-  const dir = readLbrDirectory(buf);
   const symbols = new Map<string, LbrSymbol>();
-  let chainBreaks = 0;
-
-  for (let i = 0; i < dir.length; i++) {
-    const e = dir[i];
-    if (i > 0 && e.offset !== dir[i - 1].offset + dir[i - 1].length) chainBreaks++;
-
-    const body = buf.subarray(e.offset, e.offset + e.length);
-    const { segments, undecodedBytes, references } = extractSegments(body);
-
-    let extent: LbrSymbol["extent"];
-    if (segments.length > 0) {
-      let minX = Infinity;
-      let minY = Infinity;
-      let maxX = -Infinity;
-      let maxY = -Infinity;
-      for (const s of segments) {
-        minX = Math.min(minX, s.x1, s.x2);
-        minY = Math.min(minY, s.y1, s.y2);
-        maxX = Math.max(maxX, s.x1, s.x2);
-        maxY = Math.max(maxY, s.y1, s.y2);
-      }
-      extent = { minX, minY, maxX, maxY };
-    }
-
+  const uncleanBodies: string[] = [];
+  const dir = readLbrDirectory(buf);
+  for (const e of dir) {
+    const h = e.offset;
+    const headerWords = buf.readUInt16LE(h + 4);
+    const streamWords = buf.readUInt16LE(h + 6);
+    const end = h + e.lengthWords * 2;
+    const { records, clean } = decodeRecordRange(buf, h + headerWords * 2, end);
+    const consumed = records.length
+      ? records[records.length - 1].offset + records[records.length - 1].lengthBytes
+      : h + headerWords * 2;
+    const exact = clean && headerWords + streamWords === e.lengthWords && consumed === end;
+    if (!exact) uncleanBodies.push(e.name);
     symbols.set(e.name.toUpperCase(), {
       name: e.name,
       library: name,
-      offset: e.offset,
-      length: e.length,
-      segments,
-      extent,
-      undecodedBytes,
-      references,
+      offset: h,
+      lengthWords: e.lengthWords,
+      bbox: {
+        x1: buf.readUInt16LE(h + 8),
+        y1: buf.readUInt16LE(h + 10),
+        x2: buf.readUInt16LE(h + 12),
+        y2: buf.readUInt16LE(h + 14),
+      },
+      insertionX: buf.readUInt16LE(h + 24),
+      insertionY: buf.readUInt16LE(h + 26),
+      records,
+      clean: exact,
+      segments: records
+        .filter((r) => r.kind === "polyline")
+        .flatMap((r) =>
+          r.points.slice(1).map((p, i) => ({ x1: r.points[i].x, y1: r.points[i].y, x2: p.x, y2: p.y }))
+        ),
+      references: [
+        ...new Set(records.filter((r) => r.kind === "symbol" && r.symbolName).map((r) => r.symbolName!)),
+      ],
     });
   }
-
-  return { name, symbols, chainBreaks };
+  return { name, symbols, directoryEntries: dir.length, uncleanBodies };
 }
 
-/** Several libraries searched as one registry. */
+/** Several libraries searched as one registry, first library wins. */
 export class SymbolRegistry {
   private readonly byName = new Map<string, LbrSymbol>();
   readonly libraries: string[] = [];
@@ -184,11 +163,7 @@ export class SymbolRegistry {
   add(lib: LbrLibrary) {
     this.libraries.push(lib.name);
     for (const [key, sym] of lib.symbols) {
-      const existing = this.byName.get(key);
-      // Prefer the definition that actually yielded geometry.
-      if (!existing || existing.segments.length < sym.segments.length) {
-        this.byName.set(key, sym);
-      }
+      if (!this.byName.has(key)) this.byName.set(key, sym);
     }
   }
 
@@ -197,14 +172,18 @@ export class SymbolRegistry {
     return this.byName.get(name.trim().toUpperCase());
   }
 
+  has(name: string | undefined): boolean {
+    return this.get(name) !== undefined;
+  }
+
   get size(): number {
     return this.byName.size;
   }
 
-  /** Symbols that yielded at least one confirmed segment. */
+  /** Symbols whose body chained exactly. */
   get drawable(): number {
     let n = 0;
-    for (const s of this.byName.values()) if (s.segments.length > 0) n++;
+    for (const s of this.byName.values()) if (s.clean) n++;
     return n;
   }
 }

@@ -7,3 +7,6 @@ export * from "./err";
 export * from "./cad";
 export * from "./m1";
 export * from "./pipeline";
+export * from "./tag-map";
+export * from "./loop-tags";
+export * from "./loop-list";

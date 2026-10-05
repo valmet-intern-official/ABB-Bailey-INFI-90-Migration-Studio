@@ -1,0 +1,147 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 26,
+  "name": "Analog Input/Loop",
+  "description": "The analog input/loop function code acquires analog signals via the communication highway in the same control network. The input points are located in other Harmony control units (HCUs) and must have an exception report defined (e.g., analog exception report, function code 30). Updates are on an exception report basis. Exception report intervals are specified in the executive block or the segment control block. Use function code 121 for communication to other control networks. To insure that the signal is successfully acquired from the Controlway/module bus, the analog signal generates a point quality flag. To test the quality of the signal, include a function code 31 in the configuration. The quality of the point cannot be used as an input to any other type of block. However, the output of the test quality block, representing the quality, can be used as an input to other analog processing blocks. Refer to Appendix H for a definition of point quality. Use function code 69 to test the alarm associated with the analog input/loop function block.",
+  "description_lines": [
+    "The analog input/loop function code acquires analog signals",
+    "via the communication highway in the same control network.",
+    "The input points are located in other Harmony control units",
+    "(HCUs) and must have an exception report defined (e.g., ana-",
+    "log exception report, function code 30). Updates are on an",
+    "exception report basis. Exception report intervals are specified",
+    "in the executive block or the segment control block. Use func-",
+    "tion code 121 for communication to other control networks.",
+    "To insure that the signal is successfully acquired from the",
+    "Controlway/module bus, the analog signal generates a point",
+    "quality flag. To test the quality of the signal, include a function",
+    "code 31 in the configuration. The quality of the point cannot be",
+    "used as an input to any other type of block. However, the out-",
+    "put of the test quality block, representing the quality, can be",
+    "used as an input to other analog processing blocks. Refer to",
+    "Appendix H for a definition of point quality.",
+    "Use function code 69 to test the alarm associated with the",
+    "analog input/loop function block."
+  ],
+  "symbol": {
+    "title_raw": "A I/L",
+    "title": "AI/L",
+    "inputs": [],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 150.42,
+        "y": 597.72,
+        "s": "A I/L"
+      },
+      {
+        "x": 191.94,
+        "y": 591.12,
+        "s": "(2 6 )"
+      },
+      {
+        "x": 191.94,
+        "y": 583.44,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Analog output value",
+      "description_lines": [
+        "Analog output value"
+      ],
+      "manual_page": 111
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 31",
+      "description": "Requested module address",
+      "description_lines": [
+        "Requested module address"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 111
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Requested block address",
+      "description_lines": [
+        "Requested block address"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 111
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 249",
+      "description": "Requested node address",
+      "description_lines": [
+        "Requested node address"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 111
+    }
+  ],
+  "spec_count": 3,
+  "max_spec_number": 3,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Function code 26 cannot connect to a function code 30 in a different Cnet control network. Use function code 121 to connect with another loop.",
+      "manual_page": 111,
+      "context": "outputs"
+    },
+    {
+      "label": "2.",
+      "text": "If a controller utilizes an imported analog value from the loop in several instances, the function blocks that utilize this analog value must be connected to one analog input/loop function block that handles the importation of this point. It is not possible to import exception reports from a particular address to more than one destination analog input/loop function block within a single controller configuration.",
+      "manual_page": 111,
+      "context": "outputs"
+    },
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC.",
+      "manual_page": 111,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 111,
+  "manual_pages": [
+    111,
+    112
+  ],
+  "manual_section": "Function Code 26 - Analog Input/Loop",
+  "diagnostics": []
+}

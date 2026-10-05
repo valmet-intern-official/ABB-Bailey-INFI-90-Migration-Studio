@@ -1,0 +1,116 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 144,
+  "name": "C Allocation",
+  "description": "The C allocation function code declares the amount of volatile and nonvolatile memory allocated for C programs in the module. The declarations serve as a marker for module memory utilization calculations. Specification S1 sets the amount of random access memory (RAM) in one-kilobyte increments. Specification S1 should be greater than or equal to the total RAM allocated to C specification for memory format defined in the C utility program. For more information on memory specification refer to the product instruction C Utility Program . Specification S2 sets the amount of nonvolatile random access memory (NVRAM). This should be greater than or equal to the total NVRAM allocated to C specification for memory format defined in the C utility program. For more information on memory specification refer to the product instruction C Utility Program .",
+  "description_lines": [
+    "The C allocation function code declares the amount of volatile",
+    "and nonvolatile memory allocated for C programs in the mod-",
+    "ule. The declarations serve as a marker for module memory",
+    "utilization calculations.",
+    "Specification S1 sets the amount of random access memory",
+    "(RAM) in one-kilobyte increments. Specification S1 should be",
+    "greater than or equal to the total RAM allocated to C specifica-",
+    "tion for memory format defined in the C utility program. For",
+    "more information on memory specification refer to the product",
+    "instruction C Utility Program .",
+    "Specification S2 sets the amount of nonvolatile random access",
+    "memory (NVRAM). This should be greater than or equal to the",
+    "total NVRAM allocated to C specification for memory format",
+    "defined in the C utility program. For more information on",
+    "memory specification refer to the product instruction C Utility",
+    "Program ."
+  ],
+  "symbol": {
+    "title_raw": "C A L L O C",
+    "title": "CALLOC",
+    "inputs": [],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 191.88,
+        "y": 589.02,
+        "s": "(1 4 4 )"
+      },
+      {
+        "x": 155.1,
+        "y": 583.44,
+        "s": "C A L L O C"
+      },
+      {
+        "x": 191.88,
+        "y": 580.08,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Unused",
+      "description_lines": [
+        "Unused"
+      ],
+      "manual_page": 493
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 320",
+      "description": "RAM allocation in 1 kbyte increments",
+      "description_lines": [
+        "RAM allocation in 1 kbyte increments"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 493
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 80",
+      "description": "NVRAM allocation in 1 kbyte increments",
+      "description_lines": [
+        "NVRAM allocation in 1 kbyte increments"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 493
+    }
+  ],
+  "spec_count": 2,
+  "max_spec_number": 2,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 493,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 493,
+  "manual_pages": [
+    493
+  ],
+  "manual_section": "Function Code 144 - C Allocation",
+  "diagnostics": []
+}

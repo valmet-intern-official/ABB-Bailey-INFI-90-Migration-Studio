@@ -1,0 +1,163 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 40,
+  "name": "OR (4-Input)",
+  "description": "The 4-input OR function code is used to perform the logical OR function. The output is logic 1 when one or more inputs equal logic 1. When no inputs equal logic 1, the output is logic 0.",
+  "description_lines": [
+    "The 4-input OR function code is used to perform the logical",
+    "OR function. The output is logic 1 when one or more inputs",
+    "equal logic 1. When no inputs equal logic 1, the output is",
+    "logic 0."
+  ],
+  "symbol": {
+    "title_raw": "O R",
+    "title": "OR",
+    "inputs": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 152.1,
+        "y": 597.54,
+        "s": "S 1"
+      },
+      {
+        "x": 152.1,
+        "y": 587.46,
+        "s": "S 2"
+      },
+      {
+        "x": 192.36,
+        "y": 583.98,
+        "s": "(4 0 )"
+      },
+      {
+        "x": 174.12,
+        "y": 577.92,
+        "s": "O R"
+      },
+      {
+        "x": 152.1,
+        "y": 577.62,
+        "s": "S 3"
+      },
+      {
+        "x": 192.36,
+        "y": 574.2,
+        "s": "N"
+      },
+      {
+        "x": 152.1,
+        "y": 567.54,
+        "s": "S 4"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Refer to truth table (Table 40-1) Inputs Output N Output N",
+      "description_lines": [
+        "Refer to truth table (Table 40-1)",
+        "Inputs",
+        "Output N Output N"
+      ],
+      "manual_page": 135
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of first input",
+      "description_lines": [
+        "Block address of first input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 135
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of second input",
+      "description_lines": [
+        "Block address of second input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 135
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of third input",
+      "description_lines": [
+        "Block address of third input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 135
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of fourth input",
+      "description_lines": [
+        "Block address of fourth input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 135
+    }
+  ],
+  "spec_count": 4,
+  "max_spec_number": 4,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 135,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 135,
+  "manual_pages": [
+    135
+  ],
+  "manual_section": "Function Code 40 - OR (4-Input)",
+  "diagnostics": []
+}

@@ -1,0 +1,37 @@
+{
+  "decoderRevision": "m1-decoder/1.1.0",
+  "file": "1324-131ps24.m1",
+  "inputSha256": "14e4f8dd5bed87148372027f006d41dce016420e0d4e4e2e9a158901d74bc2e4",
+  "records": 734,
+  "classes": {
+    "Model": 1,
+    "G_Rect_30": 10,
+    "Marker": 1,
+    "ModInst": 120,
+    "Text": 17,
+    "Group": 10,
+    "G_TRect_30": 9,
+    "G_Line_30": 4,
+    "PtArray": 24,
+    "Scal2d": 118,
+    "Point": 19,
+    "Mat2x3": 14,
+    "G_StrConst_30": 339,
+    "G_IntConst_30": 48
+  },
+  "fieldStatusBytes": {
+    "KNOWN": 30270,
+    "CANDIDATE": 9088,
+    "UNRESOLVED": 1232
+  },
+  "sceneNodes": 161,
+  "placeholders": 120,
+  "tags": 45,
+  "digests": {
+    "records": "d95b285c2ada87d1522fc59630d7e7a4123bf0706625575e82b99e62d4f23690",
+    "fields": "c7113c20a6e89b59fb6a6d68a28dd6070da82c7f26c78feb80830bb83c91b52d",
+    "links": "91cef85c0d63212e235f11000ce43a9f8b8b5a5d1f7f95fcdec9abe7ec3aa41f",
+    "properties": "dcb6437e26d7dceff69ff6896ca8b6b8cdb6f1dd918c98ad4f824ae2e4cb5fd4",
+    "svg": "b8a65f1d32242876073ff5950d1d6696bae9ae77717f56df1fedc0d6eebc44ad"
+  }
+}

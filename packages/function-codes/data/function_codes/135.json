@@ -1,0 +1,873 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 135,
+  "name": "Sequence Manager",
+  "description": "The sequence manager function code controls the access to a subsequence from several main sequences. It identifies the step in a sequence monitor block or the phase in a multi-sequence monitor block that the other sequences access. Each sequence manager block can accommodate eight requests. For more than eight inserted steps in a sequence, link several sequence monitor blocks with S1. The block defines the manager type as first in first out (FIFO), or priority (lowest active request processed first) basis and executes requests accordingly. Requests become active on a zero to one transition of the request trigger. NOTE: If multiple FC135s are linked together to be loaded into a IMMFP01/ IMMFP02 controller, they must be linked in ascending block order to prevent a configuration error.",
+  "description_lines": [
+    "The sequence manager function code controls the access to a",
+    "subsequence from several main sequences. It identifies the",
+    "step in a sequence monitor block or the phase in a",
+    "multi-sequence monitor block that the other sequences",
+    "access. Each sequence manager block can accommodate eight",
+    "requests. For more than eight inserted steps in a sequence,",
+    "link several sequence monitor blocks with S1. The block",
+    "defines the manager type as first in first out (FIFO), or priority",
+    "(lowest active request processed first) basis and executes",
+    "requests accordingly. Requests become active on a zero to one",
+    "transition of the request trigger.",
+    "NOTE: If multiple FC135s are linked together to be loaded into a IMMFP01/",
+    "IMMFP02 controller, they must be linked in ascending block order to prevent a",
+    "configuration error."
+  ],
+  "symbol": {
+    "title_raw": "S E Q M G R",
+    "title": "SEQMGR",
+    "inputs": [
+      "S3",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17",
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "outputs": [
+      "N",
+      "N+1",
+      "N+2"
+    ],
+    "items": [
+      {
+        "x": 152.28,
+        "y": 595.5,
+        "s": "S E Q M G R"
+      },
+      {
+        "x": 190.5,
+        "y": 589.02,
+        "s": "(1 3 5 )"
+      },
+      {
+        "x": 131.4,
+        "y": 587.58,
+        "s": "S 3"
+      },
+      {
+        "x": 151.32,
+        "y": 584.94,
+        "s": "H /R"
+      },
+      {
+        "x": 172.98,
+        "y": 583.98,
+        "s": "H /R T"
+      },
+      {
+        "x": 190.5,
+        "y": 580.38,
+        "s": "N"
+      },
+      {
+        "x": 131.4,
+        "y": 578.46,
+        "s": "S 5"
+      },
+      {
+        "x": 151.32,
+        "y": 575.82,
+        "s": "R 1 T"
+      },
+      {
+        "x": 174.18,
+        "y": 574.86,
+        "s": "S P N"
+      },
+      {
+        "x": 190.5,
+        "y": 571.5,
+        "s": "N + 1"
+      },
+      {
+        "x": 131.4,
+        "y": 569.58,
+        "s": "S 6"
+      },
+      {
+        "x": 151.32,
+        "y": 566.94,
+        "s": "R 2 T"
+      },
+      {
+        "x": 173.94,
+        "y": 565.98,
+        "s": "A R N"
+      },
+      {
+        "x": 190.5,
+        "y": 562.62,
+        "s": "N + 2"
+      },
+      {
+        "x": 131.4,
+        "y": 560.46,
+        "s": "S 7"
+      },
+      {
+        "x": 151.32,
+        "y": 557.82,
+        "s": "R 3 T"
+      },
+      {
+        "x": 131.4,
+        "y": 551.58,
+        "s": "S 8"
+      },
+      {
+        "x": 151.32,
+        "y": 548.94,
+        "s": "R 4 T"
+      },
+      {
+        "x": 131.4,
+        "y": 542.46,
+        "s": "S 9"
+      },
+      {
+        "x": 151.32,
+        "y": 539.82,
+        "s": "R 5 T"
+      },
+      {
+        "x": 131.4,
+        "y": 533.58,
+        "s": "S 1 0"
+      },
+      {
+        "x": 151.32,
+        "y": 530.7,
+        "s": "R 6 T"
+      },
+      {
+        "x": 131.4,
+        "y": 524.46,
+        "s": "S 1 1"
+      },
+      {
+        "x": 151.32,
+        "y": 521.82,
+        "s": "R 7 T"
+      },
+      {
+        "x": 131.4,
+        "y": 515.58,
+        "s": "S 1 2"
+      },
+      {
+        "x": 151.32,
+        "y": 512.76,
+        "s": "R 8 T"
+      },
+      {
+        "x": 131.4,
+        "y": 506.52,
+        "s": "S 1 3"
+      },
+      {
+        "x": 151.32,
+        "y": 503.88,
+        "s": "C 1 T"
+      },
+      {
+        "x": 131.4,
+        "y": 497.64,
+        "s": "S 1 4"
+      },
+      {
+        "x": 151.32,
+        "y": 494.76,
+        "s": "C 2 T"
+      },
+      {
+        "x": 131.4,
+        "y": 488.52,
+        "s": "S 1 5"
+      },
+      {
+        "x": 151.32,
+        "y": 485.88,
+        "s": "C 3 T"
+      },
+      {
+        "x": 131.4,
+        "y": 479.4,
+        "s": "S 1 6"
+      },
+      {
+        "x": 151.32,
+        "y": 476.76,
+        "s": "C 4 T"
+      },
+      {
+        "x": 131.4,
+        "y": 470.52,
+        "s": "S 1 7"
+      },
+      {
+        "x": 151.32,
+        "y": 467.88,
+        "s": "C 5 T"
+      },
+      {
+        "x": 131.4,
+        "y": 461.4,
+        "s": "S 1 8"
+      },
+      {
+        "x": 151.32,
+        "y": 458.76,
+        "s": "C 6 T"
+      },
+      {
+        "x": 131.4,
+        "y": 452.52,
+        "s": "S 1 9"
+      },
+      {
+        "x": 151.32,
+        "y": 449.64,
+        "s": "C 7 T"
+      },
+      {
+        "x": 131.4,
+        "y": 443.4,
+        "s": "S 2 0"
+      },
+      {
+        "x": 151.32,
+        "y": 440.76,
+        "s": "C 8 T"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "B",
+      "description": "Hold/reset trigger:; 0 = reset; 1 = hold",
+      "description_lines": [
+        "Hold/reset trigger:",
+        "0 = reset",
+        "1 = hold"
+      ],
+      "manual_page": 443
+    },
+    {
+      "blk": "N+1",
+      "type": "R",
+      "description": "Starting phase number",
+      "description_lines": [
+        "Starting phase number"
+      ],
+      "manual_page": 443
+    },
+    {
+      "blk": "N+2",
+      "type": "R",
+      "description": "Active request number",
+      "description_lines": [
+        "Active request number"
+      ],
+      "manual_page": 443
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block number of next sequence manager block",
+      "description_lines": [
+        "Block number of next sequence manager block"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 443
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 or 1",
+      "description": "Manager type:; 0 = FIFO; 1 = lowest active request number first",
+      "description_lines": [
+        "Manager type:",
+        "0 = FIFO",
+        "1 = lowest active request number first"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "FIFO"
+        },
+        {
+          "value": "1",
+          "meaning": "lowest active request number first"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 443
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of hold/reset input:; 0 = reset; 1 = hold",
+      "description_lines": [
+        "Block address of hold/reset input:",
+        "0 = reset",
+        "1 = hold"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "reset"
+        },
+        {
+          "value": "1",
+          "meaning": "hold"
+        }
+      ],
+      "is_block_address": true,
+      "manual_page": 443
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Hold output status for no active request:; 0 = do not hold; 1 = put sequence monitor into hold/reset (step 0)",
+      "description_lines": [
+        "Hold output status for no active request:",
+        "0 = do not hold",
+        "1 = put sequence monitor into hold/reset (step 0)"
+      ],
+      "enumerations": [
+        {
+          "value": "0",
+          "meaning": "do not hold"
+        },
+        {
+          "value": "1",
+          "meaning": "put sequence monitor into hold/reset (step 0)"
+        }
+      ],
+      "is_block_address": false,
+      "manual_page": 443
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of request no. 1 trigger",
+      "description_lines": [
+        "Block address of request no. 1 trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 443
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of request no. 2 trigger",
+      "description_lines": [
+        "Block address of request no. 2 trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 444
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of request no. 3 trigger",
+      "description_lines": [
+        "Block address of request no. 3 trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 444
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of request no. 4 trigger",
+      "description_lines": [
+        "Block address of request no. 4 trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 444
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of request no. 5 trigger",
+      "description_lines": [
+        "Block address of request no. 5 trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 444
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of request no. 6 trigger",
+      "description_lines": [
+        "Block address of request no. 6 trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 444
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of request no. 7 trigger",
+      "description_lines": [
+        "Block address of request no. 7 trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 444
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of request no. 8 trigger",
+      "description_lines": [
+        "Block address of request no. 8 trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 444
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of no. 1 complete trigger",
+      "description_lines": [
+        "Block address of no. 1 complete trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 444
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of no. 2 complete trigger",
+      "description_lines": [
+        "Block address of no. 2 complete trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 444
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of no. 3 complete trigger",
+      "description_lines": [
+        "Block address of no. 3 complete trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 444
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of no. 4 complete trigger",
+      "description_lines": [
+        "Block address of no. 4 complete trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 444
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of no. 5 complete trigger",
+      "description_lines": [
+        "Block address of no. 5 complete trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 444
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of no. 6 complete trigger",
+      "description_lines": [
+        "Block address of no. 6 complete trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 444
+    },
+    {
+      "number": 19,
+      "label": "S19",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of no. 7 complete trigger",
+      "description_lines": [
+        "Block address of no. 7 complete trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 444
+    },
+    {
+      "number": 20,
+      "label": "S20",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of no. 8 complete trigger",
+      "description_lines": [
+        "Block address of no. 8 complete trigger"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 444
+    },
+    {
+      "number": 21,
+      "label": "S21",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Request no. 1 starting phase number",
+      "description_lines": [
+        "Request no. 1 starting phase number"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 444
+    },
+    {
+      "number": 22,
+      "label": "S22",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Request no. 2 starting phase number",
+      "description_lines": [
+        "Request no. 2 starting phase number"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 444
+    },
+    {
+      "number": 23,
+      "label": "S23",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Request no. 3 starting phase number",
+      "description_lines": [
+        "Request no. 3 starting phase number"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 444
+    },
+    {
+      "number": 24,
+      "label": "S24",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Request no. 4 starting phase number",
+      "description_lines": [
+        "Request no. 4 starting phase number"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 444
+    },
+    {
+      "number": 25,
+      "label": "S25",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Request no. 5 starting phase number",
+      "description_lines": [
+        "Request no. 5 starting phase number"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 444
+    },
+    {
+      "number": 26,
+      "label": "S26",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Request no. 6 starting phase number",
+      "description_lines": [
+        "Request no. 6 starting phase number"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 444
+    },
+    {
+      "number": 27,
+      "label": "S27",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Request no. 7 starting phase number",
+      "description_lines": [
+        "Request no. 7 starting phase number"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 444
+    },
+    {
+      "number": 28,
+      "label": "S28",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Request no. 8 starting phase number",
+      "description_lines": [
+        "Request no. 8 starting phase number"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 444
+    },
+    {
+      "number": 29,
+      "label": "S29",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Spare",
+      "description_lines": [
+        "Spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 444
+    },
+    {
+      "number": 30,
+      "label": "S30",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "Full",
+      "description": "Spare",
+      "description_lines": [
+        "Spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 444
+    },
+    {
+      "number": 31,
+      "label": "S31",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare",
+      "description_lines": [
+        "Spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 444
+    },
+    {
+      "number": 32,
+      "label": "S32",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Spare",
+      "description_lines": [
+        "Spare"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 444
+    }
+  ],
+  "spec_count": 32,
+  "max_spec_number": 32,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 444,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 443,
+  "manual_pages": [
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454
+  ],
+  "manual_section": "Function Code 135 - Sequence Manager",
+  "diagnostics": []
+}

@@ -1,0 +1,137 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 15,
+  "name": "Summer (2-Input)",
+  "description": "This function performs a weighted sum of two inputs. By choosing the proper gains and inputs this block can perform Σ proportional, bias or difference functions. It also can be used as a scaler for non-zero based signals by referencing the second input to a constant block. The following equation describes the operation of this function:",
+  "description_lines": [
+    "This function performs a weighted sum of two inputs. By",
+    "choosing the proper gains and inputs this block can perform",
+    "Σ",
+    "proportional, bias or difference functions. It also can be used",
+    "as a scaler for non-zero based signals by referencing the sec-",
+    "ond input to a constant block.",
+    "The following equation describes the operation of this function:"
+  ],
+  "symbol": {
+    "title_raw": null,
+    "title": null,
+    "inputs": [
+      "S1",
+      "S2"
+    ],
+    "outputs": [],
+    "items": [
+      {
+        "x": 133.68,
+        "y": 591.9,
+        "s": "S 1"
+      },
+      {
+        "x": 133.68,
+        "y": 582.72,
+        "s": "S 2"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Output value is the weighted algebraic sum of the two input signals",
+      "description_lines": [
+        "Output value is the weighted algebraic sum of the two",
+        "input signals"
+      ],
+      "manual_page": 87
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of first input",
+      "description_lines": [
+        "Block address of first input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 87
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of second input",
+      "description_lines": [
+        "Block address of second input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 87
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Gain parameter of first input",
+      "description_lines": [
+        "Gain parameter of first input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 87
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": true,
+      "tune_raw": "Y",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Gain parameter of second input",
+      "description_lines": [
+        "Gain parameter of second input"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 87
+    }
+  ],
+  "spec_count": 4,
+  "max_spec_number": 4,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 87,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 87,
+  "manual_pages": [
+    87,
+    88
+  ],
+  "manual_section": "Function Code 15 - Summer (2-Input)",
+  "diagnostics": []
+}

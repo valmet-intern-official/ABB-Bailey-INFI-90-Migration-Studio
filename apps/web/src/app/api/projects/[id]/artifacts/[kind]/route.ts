@@ -1,15 +1,19 @@
 import fs from "node:fs";
 import path from "node:path";
 import { NextResponse } from "next/server";
-import { projectArtifactsDir } from "@/lib/store";
+import { exportBlockSummaryExcel, exportIoListExcel, exportLoopListExcel } from "@infi90/exporters";
+import { LOOP_LIST_XLSX } from "@/lib/artifacts";
+import { BLOCK_SUMMARY_XLSX, loadBlockSummary } from "@/lib/block-summary";
+import { loadLoopList } from "@/lib/loop-list";
+import { loadProject, projectArtifactsDir } from "@/lib/store";
 
 export const runtime = "nodejs";
 
 const ALLOWED: Record<string, string> = {
   "io-xlsx": "IO_List.xlsx",
-  "logic-xlsx": "Logic_Specification.xlsx",
+  "loop-xlsx": LOOP_LIST_XLSX,
+  "blocks-xlsx": BLOCK_SUMMARY_XLSX,
   "cad-pdf": "CAD_Logic.pdf",
-  "m1-pdf": "M1_Graphics.pdf",
 };
 
 export async function GET(
@@ -22,6 +26,19 @@ export async function GET(
     return NextResponse.json({ error: "Unknown artifact" }, { status: 400 });
   }
   const filePath = path.join(projectArtifactsDir(id), filename);
+  if (kind === "io-xlsx") {
+    const project = loadProject(id);
+    if (project) await exportIoListExcel(project, filePath);
+  }
+  if (kind === "loop-xlsx") {
+    // Built per download so sessions decoded before the Loop List existed still get one.
+    const list = loadLoopList(id);
+    if (list) await exportLoopListExcel(list, filePath);
+  }
+  if (kind === "blocks-xlsx") {
+    const summary = loadBlockSummary(id);
+    if (summary) await exportBlockSummaryExcel(summary, filePath);
+  }
   if (!fs.existsSync(filePath)) {
     return NextResponse.json({ error: "Artifact missing" }, { status: 404 });
   }

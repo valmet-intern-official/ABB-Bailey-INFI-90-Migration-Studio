@@ -1,0 +1,764 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 168,
+  "name": "Interpolator",
+  "description": "The interpolator function code outputs a value determined by a two dimensional linear interpolation of the two inputs. The coordinates of the values within a defined five-by-five table are the basis of the interpolation. If either input is outside the table, the first output becomes the largest possible number. The second output is a boolean value that indicates if the input points are in the five-by-five table range. If either input is outside the table, the second output becomes a one.",
+  "description_lines": [
+    "The interpolator function code outputs a value determined by",
+    "a two dimensional linear interpolation of the two inputs. The",
+    "coordinates of the values within a defined five-by-five table are",
+    "the basis of the interpolation. If either input is outside the",
+    "table, the first output becomes the largest possible number.",
+    "The second output is a boolean value that indicates if the",
+    "input points are in the five-by-five table range. If either input is",
+    "outside the table, the second output becomes a one."
+  ],
+  "symbol": {
+    "title_raw": "IN P O L",
+    "title": "INPOL",
+    "inputs": [
+      "S1",
+      "S2"
+    ],
+    "outputs": [
+      "N",
+      "N+1"
+    ],
+    "items": [
+      {
+        "x": 158.7,
+        "y": 595.2,
+        "s": "IN P O L"
+      },
+      {
+        "x": 191.16,
+        "y": 588.9,
+        "s": "(1 6 8 )"
+      },
+      {
+        "x": 133.02,
+        "y": 587.46,
+        "s": "S 1"
+      },
+      {
+        "x": 182.04,
+        "y": 584.1,
+        "s": "R"
+      },
+      {
+        "x": 152.7,
+        "y": 583.86,
+        "s": "X"
+      },
+      {
+        "x": 191.16,
+        "y": 579.96,
+        "s": "N"
+      },
+      {
+        "x": 133.02,
+        "y": 578.28,
+        "s": "S 2"
+      },
+      {
+        "x": 182.52,
+        "y": 575.16,
+        "s": "B"
+      },
+      {
+        "x": 152.7,
+        "y": 574.92,
+        "s": "Y"
+      },
+      {
+        "x": 191.16,
+        "y": 571.02,
+        "s": "N + 1"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Interpolated output value",
+      "description_lines": [
+        "Interpolated output value"
+      ],
+      "manual_page": 623
+    },
+    {
+      "blk": "N+1",
+      "type": "B",
+      "description": "Range of inputs:; 0 = good; 1 = at least one input is out of range",
+      "description_lines": [
+        "Range of inputs:",
+        "0 = good",
+        "1 = at least one input is out of range"
+      ],
+      "manual_page": 623
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "6",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of X value",
+      "description_lines": [
+        "Block address of",
+        "X",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 623
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "6",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of Y value",
+      "description_lines": [
+        "Block address of",
+        "Y",
+        "value"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 623
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Minimum value of X ( X coordinate of Z )",
+      "description_lines": [
+        "Minimum value of",
+        "X",
+        "(",
+        "X",
+        "coordinate of",
+        "Z",
+        ")"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 623
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "11"
+      ],
+      "default": "100.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Maximum value of Y ( Y coordinate of Z )",
+      "description_lines": [
+        "Maximum value of",
+        "Y",
+        "(",
+        "Y",
+        "coordinate of",
+        "Z",
+        ")"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 623
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "11"
+      ],
+      "default": "100.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Maximum value of X ( X coordinate of Z )",
+      "description_lines": [
+        "Maximum value of",
+        "X",
+        "(",
+        "X",
+        "coordinate of",
+        "Z",
+        ")"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 623
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": false,
+      "tune_raw": "N",
+      "note_refs": [
+        "55"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Minimum value of Y ( Y coordinate of Z )",
+      "description_lines": [
+        "Minimum value of",
+        "Y",
+        "(",
+        "Y",
+        "coordinate of",
+        "Z",
+        ")"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 623
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "55"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 623
+    },
+    {
+      "number": 8,
+      "label": "S8",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "11"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 623
+    },
+    {
+      "number": 9,
+      "label": "S9",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "12"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 623
+    },
+    {
+      "number": 10,
+      "label": "S10",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "13"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 623
+    },
+    {
+      "number": 11,
+      "label": "S11",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "14"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 623
+    },
+    {
+      "number": 12,
+      "label": "S12",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "15"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 623
+    },
+    {
+      "number": 13,
+      "label": "S13",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "21"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 623
+    },
+    {
+      "number": 14,
+      "label": "S14",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "22"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 623
+    },
+    {
+      "number": 15,
+      "label": "S15",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "23"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 623
+    },
+    {
+      "number": 16,
+      "label": "S16",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "24"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 623
+    },
+    {
+      "number": 17,
+      "label": "S17",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "25"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 624
+    },
+    {
+      "number": 18,
+      "label": "S18",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "31"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 624
+    },
+    {
+      "number": 19,
+      "label": "S19",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "32"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 624
+    },
+    {
+      "number": 20,
+      "label": "S20",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "33"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 624
+    },
+    {
+      "number": 21,
+      "label": "S21",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "34"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 624
+    },
+    {
+      "number": 22,
+      "label": "S22",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "35"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 624
+    },
+    {
+      "number": 23,
+      "label": "S23",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "41"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 624
+    },
+    {
+      "number": 24,
+      "label": "S24",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "42"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 624
+    },
+    {
+      "number": 25,
+      "label": "S25",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "43"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 624
+    },
+    {
+      "number": 26,
+      "label": "S26",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "44"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 624
+    },
+    {
+      "number": 27,
+      "label": "S27",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "45"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 624
+    },
+    {
+      "number": 28,
+      "label": "S28",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "51"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 624
+    },
+    {
+      "number": 29,
+      "label": "S29",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "52"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 624
+    },
+    {
+      "number": 30,
+      "label": "S30",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "53"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 624
+    },
+    {
+      "number": 31,
+      "label": "S31",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "54"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Z table entry",
+      "description_lines": [
+        "Z",
+        "table entry"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 624
+    }
+  ],
+  "spec_count": 31,
+  "max_spec_number": 31,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 624,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 623,
+  "manual_pages": [
+    623,
+    624,
+    625,
+    626,
+    627,
+    628
+  ],
+  "manual_section": "Function Code 168 - Interpolator",
+  "diagnostics": []
+}

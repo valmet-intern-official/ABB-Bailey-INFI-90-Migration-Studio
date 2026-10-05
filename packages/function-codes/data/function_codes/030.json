@@ -1,0 +1,222 @@
+{
+  "source": {
+    "document": "WBPEEUI210504D1_V1",
+    "title": "Composer ™ for Harmony Function Code Application Manual Volume 1 (Function Codes 1 to 174)",
+    "file": "CAD Manual.pdf",
+    "sha256": "c330672770a4293df0a3e266aa50aac468bd62630dc65d4d37f138091dc7a10d",
+    "pages": 734
+  },
+  "function_code": 30,
+  "name": "Analog Exception Report",
+  "description": "The analog exception report function code allows an analog value to be sent on the communication highway if the value changes outside a configured deadband. This function also generates an alarm if the high or low limit values are reached. The analog exception report is transmitted after a time limit that is configured in the modules executive or segment control block. This function does not perform any conversion of its input. Specifications S3 and S4 (zero and span of input) are used internally, and significant change (S7) is used to report to other Harmony control units (HCUs) or operator interface devices. Specification S2 (engineering units) is used for reporting to these higher level devices. To insure that the signal is successfully transferred, the analog signal generates a point quality flag. To test the quality of the signal, include a function code 31 in the configuration. The quality of the point cannot be used as an input to any other type of block. The analog output value can be used as an input to any analog processing block. Refer to Appendix H for a definition of point quality.",
+  "description_lines": [
+    "The analog exception report function code allows an analog",
+    "value to be sent on the communication highway if the value",
+    "changes outside a configured deadband. This function also",
+    "generates an alarm if the high or low limit values are reached.",
+    "The analog exception report is transmitted after a time limit",
+    "that is configured in the modules executive or segment control",
+    "block.",
+    "This function does not perform any conversion of its input.",
+    "Specifications S3 and S4 (zero and span of input) are used",
+    "internally, and significant change (S7) is used to report to",
+    "other Harmony control units (HCUs) or operator interface",
+    "devices. Specification S2 (engineering units) is used for report-",
+    "ing to these higher level devices.",
+    "To insure that the signal is successfully transferred, the ana-",
+    "log signal generates a point quality flag. To test the quality of",
+    "the signal, include a function code 31 in the configuration. The",
+    "quality of the point cannot be used as an input to any other",
+    "type of block. The analog output value can be used as an input",
+    "to any analog processing block. Refer to Appendix H for a",
+    "definition of point quality."
+  ],
+  "symbol": {
+    "title_raw": "A O /L",
+    "title": "AO/L",
+    "inputs": [
+      "S1"
+    ],
+    "outputs": [
+      "N"
+    ],
+    "items": [
+      {
+        "x": 192.3,
+        "y": 588.42,
+        "s": "(3 0 )"
+      },
+      {
+        "x": 133.86,
+        "y": 587.46,
+        "s": "S 1"
+      },
+      {
+        "x": 162,
+        "y": 583.62,
+        "s": "A O /L"
+      },
+      {
+        "x": 192.3,
+        "y": 579.72,
+        "s": "N"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "blk": "N",
+      "type": "R",
+      "description": "Analog output value and quality",
+      "description_lines": [
+        "Analog output value and quality"
+      ],
+      "manual_page": 113
+    }
+  ],
+  "specifications": [
+    {
+      "number": 1,
+      "label": "S1",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "5",
+      "type": "I",
+      "range": "Note 1",
+      "description": "Block address of input",
+      "description_lines": [
+        "Block address of input"
+      ],
+      "enumerations": [],
+      "is_block_address": true,
+      "manual_page": 113
+    },
+    {
+      "number": 2,
+      "label": "S2",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0",
+      "type": "I",
+      "range": "0 - 255",
+      "description": "Engineering unit identifier",
+      "description_lines": [
+        "Engineering unit identifier"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 113
+    },
+    {
+      "number": 3,
+      "label": "S3",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Zero of <S1> in engineering units",
+      "description_lines": [
+        "Zero of <S1> in engineering units"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 113
+    },
+    {
+      "number": 4,
+      "label": "S4",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "100.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Span of <S1> in engineering units",
+      "description_lines": [
+        "Span of <S1> in engineering units"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 113
+    },
+    {
+      "number": 5,
+      "label": "S5",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "2"
+      ],
+      "default": "100.000",
+      "type": "R",
+      "range": "Full",
+      "description": "High alarm point limit value",
+      "description_lines": [
+        "High alarm point limit value"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 113
+    },
+    {
+      "number": 6,
+      "label": "S6",
+      "tune": true,
+      "tune_raw": "Y",
+      "note_refs": [
+        "2"
+      ],
+      "default": "0.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Low alarm point limit value",
+      "description_lines": [
+        "Low alarm point limit value"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 113
+    },
+    {
+      "number": 7,
+      "label": "S7",
+      "tune": false,
+      "tune_raw": "N",
+      "default": "1.000",
+      "type": "R",
+      "range": "Full",
+      "description": "Significant change (% of span)",
+      "description_lines": [
+        "Significant change (% of span)"
+      ],
+      "enumerations": [],
+      "is_block_address": false,
+      "manual_page": 114
+    }
+  ],
+  "spec_count": 7,
+  "max_spec_number": 7,
+  "notes": [
+    {
+      "label": "1.",
+      "text": "Maximum values are: 9,998 for the BRC-100, IMMFP11/12 31,998 for the HAC",
+      "manual_page": 114,
+      "context": "specifications"
+    },
+    {
+      "label": "2.",
+      "text": "All alarm limits are tunable, but not adaptable. Function code 24 cannot be used to adapt the values of alarm limits.",
+      "manual_page": 114,
+      "context": "specifications"
+    }
+  ],
+  "manual_page": 113,
+  "manual_pages": [
+    113,
+    114,
+    115,
+    116
+  ],
+  "manual_section": "Function Code 30 - Analog Exception Report",
+  "diagnostics": []
+}
