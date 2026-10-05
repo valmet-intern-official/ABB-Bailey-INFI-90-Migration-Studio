@@ -38,9 +38,7 @@ export function Footer() {
         </div>
 
         <div className="lp-footer__base">
-          <p>© {new Date().getFullYear()} Valmet · ABB Bailey INFI 90 Migration Studio</p>
-          <p>ABB and Bailey are trademarks of their respective owners.</p>
-        </div>
+          <p>© {new Date().getFullYear()} Valmet · ABB Bailey INFI 90 Migration Studio</p>        </div>
       </div>
     </footer>
   );

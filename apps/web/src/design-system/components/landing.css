@@ -2341,9 +2341,10 @@
 .lp-footer__base {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: var(--ds-space-12);
   margin-top: var(--ds-space-64);
+  text-align: center;
   padding-top: var(--ds-space-24);
   border-top: 1px solid var(--ds-border-subtle);
   font-size: var(--ds-text-xs);
