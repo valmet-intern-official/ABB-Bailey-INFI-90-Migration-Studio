@@ -36,7 +36,7 @@ ENV NEXT_PUBLIC_API_BASE_URL=
 ENV CAD_LIBRARY_ROOT="/app/Guiding Material/Raw Data from Controller/CAD/project"
 
 RUN mkdir -p /data && chown -R node:node /data
-COPY --from=builder /app ./
+COPY --from=builder --chown=node:node /app ./
 USER node
 EXPOSE 3000
 HEALTHCHECK --interval=30s --timeout=5s --start-period=40s --retries=3 \
