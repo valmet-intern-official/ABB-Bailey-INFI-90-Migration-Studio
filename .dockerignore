@@ -10,6 +10,8 @@ Input
 Output
 Guiding Material
 !Guiding Material/Raw Data from Controller/Display/*/submodels
+!Guiding Material/Raw Data from Controller/CAD/project/*.LBR
+!Guiding Material/Raw Data from Controller/CAD/project/L*/*.LBR
 tools
 "Raw Data from Controller"
 fixtures

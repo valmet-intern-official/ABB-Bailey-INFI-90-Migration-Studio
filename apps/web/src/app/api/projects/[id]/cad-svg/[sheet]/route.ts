@@ -33,8 +33,14 @@ export async function GET(
   }
 
   const name = decoded.replace(/\.CAD$/i, ".svg");
-  const filePath = path.join(projectArtifactsDir(id), "cad-svg", name);
-  if (!fs.existsSync(filePath)) {
+  const svgDir = path.resolve(projectArtifactsDir(id), "cad-svg");
+  const filePath = path.resolve(svgDir, name);
+  if (
+    name !== path.basename(name) ||
+    !/\.svg$/i.test(name) ||
+    path.dirname(filePath) !== svgDir ||
+    !fs.existsSync(filePath)
+  ) {
     return NextResponse.json({ error: "SVG not found" }, { status: 404 });
   }
   const svg = fs.readFileSync(filePath, "utf8");

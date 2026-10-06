@@ -24,7 +24,7 @@ export async function healthResponse(req: NextRequest) {
       migrationEngine: {
         status: "ok",
         mode: "in-process",
-        note: "CAD parse/export runs synchronously in the API process",
+        note: "CAD parse/export runs synchronously in the API request; M1 graphics extraction runs as an in-process background job",
       },
     },
   };

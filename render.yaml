@@ -1,33 +1,25 @@
 # Render Blueprint — ABB Bailey INFI 90 Migration Studio
-# Deploys the Next.js app (UI + migration API) with persistent disk storage.
+# Mirrors the live service: the Next.js app (UI + migration API) built from the
+# root Dockerfile. Runtime env vars (STORAGE_ROOT, CORS_ORIGINS, CAD_LIBRARY_ROOT, …)
+# are set in the Dockerfile.
 # Account: valmet.intern@gmail.com
+#
+# Storage: the free plan has no persistent disk, so /data (sessions, uploads,
+# artifacts) is lost on every restart or deploy. For persistent sessions use a
+# paid plan and add:
+#   disk:
+#     name: infi90-data
+#     mountPath: /data
+#     sizeGB: 10
 
 services:
   - type: web
     name: infi90-migration-api
-    runtime: node
-    plan: starter
+    runtime: docker
+    plan: free
     region: oregon
-    rootDir: .
-    buildCommand: npm ci && npm run build
-    startCommand: npm run start -w @infi90/web -- -H 0.0.0.0 -p $PORT
+    branch: main
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
     healthCheckPath: /api/v1/health
-    disk:
-      name: infi90-data
-      mountPath: /data
-      sizeGB: 10
-    envVars:
-      - key: NODE_ENV
-        value: production
-      - key: SERVICE_NAME
-        value: infi90-migration-api
-      - key: STORAGE_ROOT
-        value: /data
-      - key: MAX_UPLOAD_MB
-        value: "100"
-      - key: CORS_ORIGINS
-        value: https://abb-bailey-infi90-migration-studio.vercel.app,https://infi90-migration-studio.vercel.app,https://abb-bailey-infi-90-migration-studio.vercel.app
-      - key: FRONTEND_ORIGIN
-        value: https://abb-bailey-infi90-migration-studio.vercel.app
-      - key: NEXT_PUBLIC_API_BASE_URL
-        value: ""
+    autoDeploy: true

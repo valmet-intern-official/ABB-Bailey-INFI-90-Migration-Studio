@@ -32,6 +32,7 @@ ENV MAX_UPLOAD_MB=100
 ENV CORS_ORIGINS=https://abb-bailey-infi90-migration-studio.vercel.app,https://infi90-migration-studio.vercel.app,https://abb-bailey-infi-90-migration-studio.vercel.app
 ENV FRONTEND_ORIGIN=https://abb-bailey-infi90-migration-studio.vercel.app
 ENV NEXT_PUBLIC_API_BASE_URL=
+ENV CAD_LIBRARY_ROOT="/app/Guiding Material/Raw Data from Controller/CAD/project"
 
 RUN mkdir -p /data && chown -R node:node /data
 COPY --from=builder /app ./
@@ -39,4 +40,4 @@ USER node
 EXPOSE 3000
 HEALTHCHECK --interval=30s --timeout=5s --start-period=40s --retries=3 \
   CMD node -e "fetch('http://127.0.0.1:'+(process.env.PORT||3000)+'/api/v1/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
-CMD ["npm", "run", "start", "-w", "@infi90/web", "--", "-H", "0.0.0.0", "-p", "3000"]
+CMD ["sh", "-c", "exec npm run start -w @infi90/web -- -H 0.0.0.0 -p ${PORT:-3000}"]
