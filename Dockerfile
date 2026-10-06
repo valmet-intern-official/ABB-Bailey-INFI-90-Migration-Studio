@@ -16,7 +16,8 @@ RUN npm ci
 
 FROM node:20-bookworm-slim AS builder
 WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
+# Workspace-local node_modules (e.g. apps/web's pdfjs-dist 6.x) must come along, not just the root.
+COPY --from=deps /app ./
 COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
 RUN npm run build
