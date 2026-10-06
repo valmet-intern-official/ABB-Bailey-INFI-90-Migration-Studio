@@ -104,7 +104,7 @@ export function BlockSummaryView({
           </a>
         </div>
 
-        <div className="table-wrap excel-wrap block-summary__wrap">
+        <div className="table-wrap excel-wrap excel-wrap--page block-summary__wrap">
           <table className="excel-table" style={{ ["--excel-cols" as string]: COLS }}>
             <colgroup>
               {Array.from({ length: COLS }, (_, i) => (

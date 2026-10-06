@@ -834,91 +834,12 @@ function ViewerInner() {
 
         <main className="workspace-main">
         {tab === "overview" && (
-          <section className="space-y-5">
-            <div>
-              <p className="text-xs font-semibold tracking-[0.14em] text-[var(--accent)] uppercase">
-                Review session
-              </p>
-              <h1 className="mt-1 font-[family-name:var(--font-display)] text-2xl font-semibold tracking-tight">
-                {session.meta.name}
-              </h1>
-              <p className="mt-1 text-sm text-[var(--muted)] break-all">
-                {session.meta.sourceZipName} · session file summary and complete inventory by category.
-              </p>
-            </div>
-
-            <div className="panel p-5">
-              <div className="mb-4 flex flex-wrap items-end justify-between gap-2">
-                <div>
-                  <h3 className="text-lg font-semibold">Category summary</h3>
-                  <p className="text-sm text-[var(--muted)]">
-                    File counts grouped by engineering category
-                  </p>
-                </div>
-                <p className="text-sm font-semibold text-[var(--accent)]">
-                  {session.inventory.length} files total
-                </p>
-              </div>
-              <div className="grid gap-3 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5">
-                {kindSummary.map(([kind, count]) => (
-                  <div
-                    key={kind}
-                    className="rounded-xl border border-[var(--line)] bg-white px-4 py-3 shadow-[0_4px_12px_rgba(15,40,28,0.04)]"
-                  >
-                    <span className="inline-flex rounded-md bg-[var(--accent-soft)] px-2.5 py-1 text-sm font-bold tracking-wide text-[var(--accent-dark)]">
-                      {kind}
-                    </span>
-                    <p className="mt-2.5 text-2xl font-semibold tabular-nums text-[var(--ink)]">
-                      {count}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="panel overflow-hidden">
-              <div className="border-b border-[var(--line)] px-5 py-4">
-                <h3 className="text-lg font-semibold">All files</h3>
-                <p className="text-sm text-[var(--muted)]">
-                  Complete package inventory with file name and category
-                </p>
-              </div>
-              <div className="table-wrap max-h-[min(70vh,720px)]">
-                <table className="data inventory-table">
-                  <colgroup>
-                    <col />
-                    <col />
-                    <col />
-                    <col />
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>File name</th>
-                      <th>Category</th>
-                      <th>Size</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {session.inventory.map((f, index) => (
-                      <tr key={`${f.kind}-${f.filename}-${index}`}>
-                        <td className="text-[var(--muted)]">{index + 1}</td>
-                        <td className="font-medium">{f.filename}</td>
-                        <td>
-                          <span className="inline-flex rounded-md bg-[var(--accent-soft)] px-2 py-0.5 text-xs font-semibold text-[var(--accent-dark)]">
-                            {f.kind}
-                          </span>
-                        </td>
-                        <td className="tabular-nums text-[var(--muted)]">
-                          {formatSize(f.size)}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </section>
+          <OverviewSection
+            name={session.meta.name}
+            sourceZipName={session.meta.sourceZipName}
+            inventory={session.inventory}
+            kindSummary={kindSummary}
+          />
         )}
 
         {tab === "io" && (
@@ -994,7 +915,7 @@ function ViewerInner() {
                 Export IO List
               </a>
             </div>
-            <div className="table-wrap excel-wrap">
+            <div className="table-wrap excel-wrap excel-wrap--page">
               <table className="excel-table" style={{ ["--excel-cols" as string]: 7 }}>
                 <colgroup>
                   <col /><col /><col /><col /><col /><col /><col />
@@ -1068,7 +989,9 @@ function ViewerInner() {
         {tab === "cad" && (
           <section
             ref={cadViewerRef}
-            className={`cad-viewer${resizingDetail ? " cad-viewer--resizing" : ""}`}
+            className={`cad-viewer${resizingDetail ? " cad-viewer--resizing" : ""}${
+              cadSummary ? " cad-viewer--summary" : ""
+            }`}
             style={
               detailWidth === null
                 ? undefined
@@ -1677,105 +1600,129 @@ function LogicSection({
 
   const blocks = current?.blocks ?? [];
 
+  if (logic === undefined) {
+    return (
+      <section>
+        <p className="panel px-4 py-6 text-sm text-[var(--muted)]">Loading logic…</p>
+      </section>
+    );
+  }
+
+  if (logic === null) {
+    return (
+      <section>
+        <div className="panel flex flex-col items-start gap-3 px-4 py-6">
+          <p className="text-sm text-[var(--muted)]">
+            Function-block specifications have not been generated for this session yet.
+          </p>
+          <button type="button" className="btn btn-sm !ml-0" disabled={reprocessing} onClick={onReprocess}>
+            {reprocessing ? "Processing… (can take a few minutes)" : "Generate from CAD"}
+          </button>
+        </div>
+      </section>
+    );
+  }
+
   return (
-    <section className="cad-viewer logic-viewer">
-      <aside className="cad-viewer__left">
+    <section className="logic-page">
+      <aside className="cad-viewer__left logic-page__nav">
         <div className="cad-viewer__pane-head">
           <h3>CAD sheets</h3>
-          <p>
-            {logic
-              ? `${totals.sheets} sheets · ${totals.blocks} blocks · ${totals.specs} S values`
-              : `${sheets.length} sheets`}
-          </p>
+          <p>{sheets.length} sheets</p>
         </div>
         <div className="cad-viewer__search">
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search sheet, block, FC 30, description…"
+            placeholder="Search sheets, blocks…"
           />
         </div>
         <div className="cad-viewer__list">
-          {groups.map(({ sheet, blocks: sheetBlocks }) => (
+          {groups.map(({ sheet }) => (
             <button
               key={sheet.filename}
               type="button"
-              onClick={() => setSelected(sheet.filename)}
-              className={`cad-viewer__sheet logic-viewer__sheet ${
+              onClick={() => {
+                setSelected(sheet.filename);
+                window.scrollTo({ top: 0 });
+              }}
+              className={`cad-viewer__sheet ${
                 current?.sheet.filename === sheet.filename ? "cad-viewer__sheet--active" : ""
-              } ${logic && sheetBlocks.length === 0 ? "logic-viewer__sheet--empty" : ""}`}
+              }`}
             >
-              <span className="logic-viewer__sheet-row">
-                <span className="cad-viewer__sheet-name">{sheet.filename}</span>
-                {logic && <span className="logic-viewer__count">{sheetBlocks.length}</span>}
-              </span>
+              <span className="cad-viewer__sheet-name">{sheet.filename}</span>
               {sheet.title && <span className="cad-viewer__sheet-title">{sheet.title}</span>}
             </button>
           ))}
-          {groups.length === 0 && (
-            <p className="cad-viewer__empty">No sheets match “{query}”.</p>
-          )}
+          {groups.length === 0 && <p className="cad-viewer__empty">No sheets match “{query}”.</p>}
         </div>
       </aside>
 
-      <div className="logic-viewer__main">
-        <div className="cad-viewer__pane-head logic-viewer__head">
-          <div className="min-w-0">
-            <h3>{current?.sheet.filename ?? "Logic"}</h3>
-            <p>{current?.sheet.title ?? "Function blocks and S values from the CAD"}</p>
+      <div className="logic-page__content space-y-4">
+      <div className="grid gap-3 grid-cols-2 md:grid-cols-4">
+        {(
+          [
+            ["Sheets", totals.sheets, "CAD sheets with logic"],
+            ["Blocks", totals.blocks, "Function blocks"],
+            ["S values", totals.specs, "Specification values"],
+            ["FC", totals.codes, "Distinct function codes"],
+          ] as const
+        ).map(([code, count, label]) => (
+          <div key={code} className="panel p-4">
+            <span className="inline-flex rounded-md bg-[var(--accent-soft)] px-2 py-1 text-xs font-bold tracking-wide text-[var(--accent-dark)]">
+              {code}
+            </span>
+            <p className="mt-2 text-2xl font-semibold tabular-nums">{count}</p>
+            <p className="mt-1 text-[0.7rem] leading-snug text-[var(--muted)]">{label}</p>
           </div>
-          <div className="logic-viewer__actions">
-            {logic && current && (
-              <button
-                type="button"
-                className="btn-cad-open"
-                onClick={() => onOpenCad(current.sheet.filename)}
-              >
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
-                  <path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                Open in CAD viewer
-              </button>
-            )}
-            {logic && (
-              <a className="btn-pdf" href={apiUrl(`/api/projects/${projectId}/logic-report`)}>
-                <svg className="btn-pdf__icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill="currentColor" opacity=".15" d="M6 2.5h8.2L20 8.2V21a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1Z" />
-                  <path fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" d="M6 2.5h8.2L20 8.2V21a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1Z" />
-                  <path fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" d="M14 2.5V8h5.8" />
-                  <text x="12" y="17.2" textAnchor="middle" fill="currentColor" fontSize="5.4" fontWeight="700" fontFamily="Arial, sans-serif">PDF</text>
-                </svg>
-                <span className="btn-pdf__divider" aria-hidden="true" />
-                Generate Report
-              </a>
-            )}
+        ))}
+      </div>
+
+      <div className="panel overflow-hidden p-0">
+        <div className="flex flex-wrap items-center gap-2 border-b border-[var(--line)] px-4 py-3">
+          <div className="min-w-0 flex-1">
+            <p className="truncate text-sm">
+              <span className="font-semibold text-[var(--ink)]">{current?.sheet.filename ?? "No sheet"}</span>
+              {current?.sheet.title && <span className="text-[var(--muted)]"> · {current.sheet.title}</span>}
+            </p>
+            <p className="text-xs text-[var(--muted)] tabular-nums">{blocks.length} blocks</p>
           </div>
+          {current && (
+            <button
+              type="button"
+              className="btn-cad-open"
+              onClick={() => onOpenCad(current.sheet.filename)}
+            >
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+                <path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              Open in CAD viewer
+            </button>
+          )}
+          <a className="btn-pdf" href={apiUrl(`/api/projects/${projectId}/logic-report`)}>
+            <svg className="btn-pdf__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" opacity=".15" d="M6 2.5h8.2L20 8.2V21a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1Z" />
+              <path fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" d="M6 2.5h8.2L20 8.2V21a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1Z" />
+              <path fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" d="M14 2.5V8h5.8" />
+              <text x="12" y="17.2" textAnchor="middle" fill="currentColor" fontSize="5.4" fontWeight="700" fontFamily="Arial, sans-serif">PDF</text>
+            </svg>
+            <span className="btn-pdf__divider" aria-hidden="true" />
+            Generate Report
+          </a>
         </div>
-
-        <div key={current?.sheet.filename} className="logic-viewer__body">
-          {logic === undefined && <p className="cad-viewer__empty">Loading logic…</p>}
-          {logic === null && (
-            <div className="flex flex-col items-start gap-3 p-5">
-              <p className="text-sm text-[var(--muted)]">
-                Function-block specifications have not been generated for this session yet.
-              </p>
-              <button type="button" className="btn btn-sm !ml-0" disabled={reprocessing} onClick={onReprocess}>
-                {reprocessing ? "Processing… (can take a few minutes)" : "Generate from CAD"}
-              </button>
-            </div>
-          )}
-          {logic && !current && <p className="cad-viewer__empty">Choose a sheet from the left panel</p>}
-          {logic && current && blocks.length === 0 && (
-            <p className="cad-viewer__empty">No function blocks on this sheet</p>
+        <div key={current?.sheet.filename} className="table-wrap excel-wrap excel-wrap--page">
+          {!current && <p className="px-4 py-6 text-sm text-[var(--muted)]">No sheets match “{query}”.</p>}
+          {current && blocks.length === 0 && (
+            <p className="px-4 py-6 text-sm text-[var(--muted)]">No function blocks on this sheet</p>
           )}
 
-          {logic && current && blocks.length > 0 && (
+          {current && blocks.length > 0 && (
             <table className="logic-table">
               <colgroup>
                 <col style={{ width: "7%" }} />
                 <col style={{ width: "6%" }} />
                 <col style={{ width: "19%" }} />
-                <col style={{ width: "6%" }} />
+                <col style={{ width: "4.5rem" }} />
                 <col style={{ width: "11%" }} />
                 <col />
               </colgroup>
@@ -1840,6 +1787,107 @@ function LogicSection({
                 );
               })}
             </table>
+          )}
+        </div>
+      </div>
+      </div>
+    </section>
+  );
+}
+
+function OverviewSection({
+  name,
+  sourceZipName,
+  inventory,
+  kindSummary,
+}: {
+  name: string;
+  sourceZipName: string;
+  inventory: Session["inventory"];
+  kindSummary: [string, number][];
+}) {
+  const [kind, setKind] = useState<string | null>(null);
+  const [query, setQuery] = useState("");
+
+  const rows = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return inventory
+      .map((f, index) => ({ f, index }))
+      .filter(({ f }) => !kind || f.kind === kind)
+      .filter(({ f }) => !q || f.filename.toLowerCase().includes(q) || f.kind.toLowerCase().includes(q));
+  }, [inventory, kind, query]);
+
+  return (
+    <section className="space-y-4">
+      <div className="grid gap-3 grid-cols-3 sm:grid-cols-4 md:grid-cols-6 xl:grid-cols-8">
+        {kindSummary.map(([k, count]) => (
+          <button
+            key={k}
+            type="button"
+            className={`panel p-4 text-left transition ${
+              kind === k ? "ring-2 ring-[var(--accent)] border-[var(--accent)]" : ""
+            }`}
+            onClick={() => setKind((prev) => (prev === k ? null : k))}
+          >
+            <span className="inline-flex rounded-md bg-[var(--accent-soft)] px-2 py-1 text-xs font-bold tracking-wide text-[var(--accent-dark)]">
+              {k}
+            </span>
+            <p className="mt-2 text-2xl font-semibold tabular-nums">{count}</p>
+            <p className="mt-1 text-[0.7rem] leading-snug text-[var(--muted)]">
+              {((count / Math.max(inventory.length, 1)) * 100).toFixed(1)}% of files
+            </p>
+          </button>
+        ))}
+      </div>
+
+      <div className="panel overflow-hidden p-0">
+        <div className="flex flex-wrap items-center gap-2 border-b border-[var(--line)] px-4 py-3">
+          <span className="text-sm text-[var(--muted)] tabular-nums">
+            {rows.length} of {inventory.length} files
+          </span>
+          <input
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search file name or category…"
+            className="min-w-[220px] flex-1 rounded-[10px] border border-[var(--line)] bg-white px-3 py-1.5 text-sm"
+          />
+        </div>
+        <p className="border-b border-[var(--line)] px-4 py-2 text-sm text-[var(--muted)] break-all">
+          <span className="font-semibold text-[var(--ink)]">{name}</span> · {sourceZipName}
+        </p>
+        <div className="table-wrap excel-wrap excel-wrap--page">
+          <table className="excel-table inventory-excel" style={{ ["--excel-cols" as string]: 4 }}>
+            <colgroup>
+              <col style={{ width: "8%" }} />
+              <col />
+              <col style={{ width: "16%" }} />
+              <col style={{ width: "14%" }} />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>File name</th>
+                <th>Category</th>
+                <th>Size</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map(({ f, index }) => (
+                <tr key={`${f.kind}-${f.filename}-${index}`}>
+                  <td className="text-[var(--muted)] tabular-nums">{index + 1}</td>
+                  <td className="font-medium">{f.filename}</td>
+                  <td>
+                    <span className="inline-flex rounded-md bg-[var(--accent-soft)] px-2 py-0.5 text-xs font-semibold text-[var(--accent-dark)]">
+                      {f.kind}
+                    </span>
+                  </td>
+                  <td className="tabular-nums text-[var(--muted)]">{formatSize(f.size)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          {rows.length === 0 && (
+            <p className="px-4 py-6 text-sm text-[var(--muted)]">No files match “{query}”.</p>
           )}
         </div>
       </div>

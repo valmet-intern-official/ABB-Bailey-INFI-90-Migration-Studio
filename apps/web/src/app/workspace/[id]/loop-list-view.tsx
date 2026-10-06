@@ -163,7 +163,7 @@ export function LoopListView({
           Export Loop List
         </a>
       </div>
-      <div className="table-wrap excel-wrap loop-wrap">
+      <div className="table-wrap excel-wrap excel-wrap--page">
         <table className="excel-table loop-table" style={{ ["--excel-cols" as string]: COLUMNS.length }}>
           <thead>
             <tr>
